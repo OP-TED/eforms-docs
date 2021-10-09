@@ -13,5 +13,5 @@ For each version of the eForms SDK, a separate branch is maintained in this repo
 of the documentation for the respective version of SDK. 
 This allows us to retrospectively fix errors in previous versions of the SDK documentation (fixing broken links for example).  
 
-Branch names indicate only the major and minor version number of the eForms SDK to the deocumentation of which their content corresponds.
+Branch names indicate only the major and minor version number of the eForms SDK to the deocumentation to which their content corresponds.
 The documentation of the latest revision of each minor version of the SDK is always available to you in the  [**TED Developer Docs**](https://docs.ted.europa.eu/) portal.  
