@@ -5,4 +5,4 @@ nav:
 - modules/ROOT/nav.adoc
 - modules/codelists/nav.adoc
 - modules/fields/nav.adoc
-- modules/labels/nav.adoc
+- modules/translations/nav.adoc
