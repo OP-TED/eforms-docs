@@ -602,8 +602,7 @@ _Cf. <<lotTenderLevelSection>>_
 
 | | 
 
-|*Tender Identifier (BT-3201)* |An identifier of a tender. The
-information in the tender section refers to this tender. |*1* a|
+|*Tender Technical Identifier (OPT-321)* |A unique technical identifier of a tender. Shall follow the TEN-XXXX scheme. |*1* a|
 [source,xpath,subs=attributes]
 ----
 cbc:ID
@@ -837,6 +836,13 @@ Shall follow the appropriate scheme "LOT-XXXX" or "GLO-XXXX"
 efac:TenderLot{zwsp}/cbc:ID 
 ----
 
+|*Tender Identifier (BT-3201)* |An identifier of a tender. The
+information in the tender section refers to this tender. |*1* a|
+[source,xpath,subs=attributes]
+----
+efac:TenderReference{zwsp}/cbc:ID
+---- 
+
 4+a|
 
 *Context:*
@@ -891,6 +897,9 @@ An XML instance excerpt is provided below for illustration:
         <efac:TenderLot>
             <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
         </efac:TenderLot>
+        <efac:TenderReference>
+            <cbc:ID>BID ABD/GHI-SN/2020-002</cbc:ID>
+        </efac:TenderReference>
     </efac:LotTender>
     <efac:LotTender>
         <cbc:ID schemeName="tender">TEN-0002</cbc:ID>
@@ -947,10 +956,7 @@ image::image017.jpg[image,width=306,height=358]
 
 |*_Contract Modification_* | | |
 
-|*Contract Identifier (BT-150)* |An identifier of the contract or, in
-case of voluntary-ex ante transparency notices and design contest result
-notices, of the decision. The information in the contract section refers
-to this contract or decision. |*1* a|
+|*Contract Technical Identifier (OPT-316)* |Unique contract technica ID. Shall follow the CON-XXXX scheme |*1* a|
 [source,xpath,subs=attributes]
 ----
 cbc:ID
@@ -1023,6 +1029,14 @@ or another result that led to this contract. |*+* a|
 efac:LotTender{zwsp}/cbc:ID
 ----
 
+|*Contract Identifier (BT-150)* |An identifier of the contract or, in
+case of voluntary-ex ante transparency notices and design contest result
+notices, of the decision. The information in the contract section refers
+to this contract or decision. |*1* a|
+[source,xpath,subs=attributes]
+----
+efac:ContractReference{zwsp}/cbc:ID
+---- 
 
 |*_Assets related contract extension indicator (OPP-020)_* |Extended
 contract duration due to essential assets necessary for the provision of
@@ -1116,6 +1130,9 @@ An XML instance excerpt is provided below for illustration:
                 <cbc:ID schemeName="organization">ORG-0003</cbc:ID>
             </cac:PartyIdentification>
         </cac:SignatoryParty>
+        <efac:Contractreference>
+            <cbc:ID>CRN ABC:EFG/2020-01</cbc:ID>
+        </efac:Contractreference>
         <efac:LotTender>
             <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
         </efac:LotTender>
@@ -1128,7 +1145,6 @@ An XML instance excerpt is provided below for illustration:
         </efac:Funding>
     </efac:SettledContract>
     <efac:SettledContract>
-        <!-- Contract Identifier (BT-150) -->
         <cbc:ID schemeName="contract">CON-0002</cbc:ID>
         <!-- Interrupted MarkUp -->
     </efac:SettledContract>

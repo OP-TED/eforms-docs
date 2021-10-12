@@ -1734,7 +1734,7 @@ is provided here:
         </cac:PartyIdentification>
         <cac:ServiceProviderParty>
             <!-- The service provider is a Procurement Service Provider -->
-            <cbc:ServiceTypeCode listName="organisation-subrole">proc-serv-prov</cbc:ServiceTypeCode>
+            <cbc:ServiceTypeCode listName="organisation-role">proc-serv-prov</cbc:ServiceTypeCode>
             <cac:Party>
                 <cac:PartyIdentification>
                     <!-- Reference (Technical ID) to the legal organization acting as a PSP. -->
@@ -1744,7 +1744,7 @@ is provided here:
         </cac:ServiceProviderParty>
         <cac:ServiceProviderParty>
             <!-- The service provider is an eSender -->
-            <cbc:ServiceTypeCode listName="organisation-subrole">ted-esn</cbc:ServiceTypeCode>
+            <cbc:ServiceTypeCode listName="organisation-role">ted-esn</cbc:ServiceTypeCode>
             <cac:Party>
                 <cac:PartyIdentification>
                     <!-- Reference (Tech. ID) to the legal organization acting as an eSender. -->

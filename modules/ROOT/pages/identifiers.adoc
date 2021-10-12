@@ -39,14 +39,14 @@ LotsGroup
 
 |BT-150 |Contract Identifier |Defined and encoded by the Contracting
 Authority. Should be unique between all Contract Identifiers of the
-procedure |contract |CON-XXXX
+procedure |NA |No restriction yet
 
 |BT-22 |Internal Identifier |CAs define it. No restriction besides
 string length. |NA |100 characters max.
 
 |BT-3201 |Tender Identifier |Defined and encoded by the Contracting
 Authority. Should be unique between all Tender Identifiers of the
-procedure |tender |TEN-XXXX
+procedure |NA |No restriction yet
 
 |BT-501 |Organisation Identifier |Discussions ongoing. It will be
 encoded by the Contracting Authority | |No restriction yet
@@ -99,6 +99,15 @@ notice to refer to the Ultimate Beneficial Owner |ubo |UBO-XXXX
 |OPT-210 |Tendering Party ID |Technical ID allowing reference from the
 LotResult (or from the the LotTender) to the Tendering Party with its
 composition (Tenderers and sucontractors). |Tendering-party |TPA-XXXX
+
+|OPT-316 |Contract Technical ID |Technical ID allowing reference to the contract. 
+Should be unique between all contract technical Identifiers of the
+procedure|contract |CON-XXXX
+
+|OPT-321 |Tender Technical Identifier |Technical ID allowing reference to the tender. 
+Should be unique between all Tender technical identifiers of the
+procedure |tender |TEN-XXXX
+
 |===
 
 [[IDsReferencesSection]]
@@ -167,7 +176,7 @@ A single contract modification per notice
 Unpublished Business Terms Codes | |Cf. <<withheldPublicationOfInformationSection>>.
 
 |BT-3202 |Contract Tender Identifier |Points to one of the existing
-(Lot-) Tenders (BT-3201) |tender |TEN-XXXX
+(Lot-) Tenders (OPT-321) |tender |TEN-XXXX
 
 |BT-330 |Group Identifier |Points to a defined Group of lots (BT-137,
 GLO-XXXX) |LotsGroup |GLO-XXXX
