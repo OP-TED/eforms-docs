@@ -1,12 +1,21 @@
-= Procurement labels
+= Procurement labels and translations
 
 == Introduction
 
-We use the term "procurement label" to refer to all natural language text (names, descriptions, tooltips etc.) associated with any business term or related entity that is defined in the eForms Regulation. The Publications Office is compiling and will continue to maintain a list of all procurement labels and their translations in all official EU languages. 
+We use the term "procurement labels" to refer to all natural language texts (names, descriptions, tooltips etc.) associated with any business term or related entity that is defined in the eForms Regulation. The Publications Office is compiling and will continue to maintain a list of all procurement labels and their translations in all official EU languages.
 
 In order to help implementors in the localization/internationalization of their applications, the eForms SDK contains the latest update of all procurement labels maintained by the Publications Office, in all official EU languages.
 
-The labels are distributed in several files under the "labels" folder. Each file contains a specific type of label as identified by its filename (see <<File naming conventions>> below).
+The labels are distributed in several files under the "translations" folder.
+Each file contains a specific type of label, in one language, as identified by
+its filename (see <<File naming conventions>> below).
+
+[WARNING]
+====
+The texts provided are not final and are subject ot change. In particular,
+languages other than English have often been obtained via automated translation,
+and have not been reviewed yet.
+====
 
 == File naming conventions
 
@@ -35,9 +44,9 @@ The language identifier used is the standard 2 letter code in lowercase.
 
 The file format used is XML, with the structure used for https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html[Java Properties], with UTF-8 encoding.
 
-Each label is represented by an `entry` XML element. Each `entry` element has a
-`key` attribute which identifies the specific label. The label text for the
-specific language is encoded the element's text content.
+Each translation is represented by an `entry` XML element. Each `entry` element
+has a `key` attribute which identifies the specific label. The translated text
+for the specific language is encoded the element's text content.
 
 .Example
 [source,xml]
@@ -56,7 +65,7 @@ specific language is encoded the element's text content.
 ----
 <1> Document type definition
 <2> Label key
-<3> Label text
+<3> Translated text
 
 Each label key is composed of three parts separated by a pipe character "|":
 
