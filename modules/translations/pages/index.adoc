@@ -85,7 +85,9 @@ Allows the same asset to have different labels associated with it for different 
 +
 Label types currently in use include:
 +
-* name: The formal name of the element (i.e. as defined by the eForms regulation). 
+* name: The formal name of the element (i.e. as defined by the eForms
+regulation).
+* value: The short text corresponding to a specific code in a codelist.
 
 +
 In the future we plan to include additional label types such as (non-exhaustive list):
