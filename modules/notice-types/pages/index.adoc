@@ -1,0 +1,135 @@
+= Notice Types
+
+[WARNING]
+====
+The structure and content of the Notice Types described below are driven by
+the specific needs of our various applications.
+
+As we think it could be useful for others, we are sharing it publicly, and you are
+free to make use of it. However we currently do not guarantee the stability
+of the structure or content described here.
+====
+
+The Notice Types contain the definition of the notice forms that the web users will fill in. It is defined as JSON documents referencing fields by ID, which are defined in the Field Repository. We are using these files to provide the definition of all notices to our form-filling application (eNotices2). Each form is then specified by one of these JSON files.
+
+== Notice Types definition
+
+The JSON snippet <<list-json-root>> describes the overall structure of a Notice Type definition.
+It's split into a metadata part, which contains fixed fields that are automatically set by the system and the content part, which defines the actual form that web users will fill in.
+
+[#list-json-root]
+.Notice Type Form - JSON Root Structure
+[source,json]
+----
+{
+  "metadata": {
+    "groupId": "GR-Metadata",
+    "name": "Metadata",
+    "fields": []
+  },
+  "content": {
+    "groupId": "GR-Content",
+    "name": "Content",
+    "fields": []
+  }
+}
+----
+
+The metadata part is a array of fields, as described in <<list-json-metadata>>.
+
+[#list-json-metadata]
+.Notice Type Form - JSON Metadata Structure
+[source,json]
+----
+{
+  "groupId": "GR-Metadata",
+  "name": "Metadata",
+  "fields": [
+    {
+      "fieldId": "BT-02-notice",
+      "name": "Notice Type",
+      "readOnly": true
+    },
+    {
+      "fieldId": "BT-03-notice",
+      "name": "Form Type",
+      "readOnly": true
+    },
+    {
+      "fieldId": "BT-701-notice",
+      "name": "Notice Identifier",
+      "readOnly": true
+    }
+  ]
+}
+----
+
+The form content is a tree structure, composed of nested groups (i.e. branches) and fields (i.e. leaves), as described in <<list-json-content>>. The fields must reference a valid field of the Field Repository by `+fieldId+`, whereas the `+groupId+` can be freely defined, as long as its value is unique. The group and fields names are there for the ease of readiness, they are then not used for further processing.
+
+All direct child groups of the *Content* node are treated as sections which can optionally define the groups of the next layer as subsection by specifying `+"section": true+`.
+
+[#list-json-content]
+.Notice Type Form - JSON Content Structure
+[source,json]
+----
+{
+  "groupId": "GR-Content",
+  "name": "Content",
+  "fields": [
+    {
+      "groupId": "GR-Procedure",
+      "name": "Procedure",
+      "section": true,
+      "fields": [
+        {
+          "groupId": "GR-Procedure-Purpose",
+          "name": "Purpose",
+          "section": true,
+          "fields": [
+            {
+              "groupId": "GR-Procedure-MainLegalBasis",
+              "name": "Main Legal Basis",
+              "fields": [
+                {
+                  "fieldId": "BT-01-notice",
+                  "name": "Procedure Legal Basis"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+----
+
+The following table lists all available group/field properties.
+
+[cols="2,1,1,5,10"]
+|===
+|Property |Group |Field |Values |Description
+
+|repeatable   |x |x |false (default), true |The group/field is repeatable and the user can create one or multiple instances.
+|section      |x |- |false (default), true |The group is displayed as section/subsection.
+|readOnly     |- |x |false (default), true |The field is visible, but not editable.
+|hidden       |- |x |false (default), true |The field not visible and thus not editable.
+|displayType  |- |x |CHECKBOX, COMBOBOX, RADIO, TEXT_FIELD, TEXTAREA |The field is rendered as the specified input element.
+The default values depend on the field's datatype and not all values are allowed for every datatype e.g. a date cannot be displayed as radio buttons, but code list can.
+|instanceList |x |- |any string e.g. "LOT" |The schema/prefix used by the form filling tool to create an instance list with the corresponding name that keeps track of all existing instances of that group.
+|valueList    |- |x |any string e.g. "LOT" |The schema/prefix used by the form filling tool to select a value from the corresponding instance list.
+Instead of a free-text input field, a select box with all the existing instance IDs is displayed.
+|instanceIdField  |- |x |any string e.g. "LOT" | This property flags a field as the one containing the instance ID of the specified schema/prefix. Those fields are not handled by the form filling tool because the instance ID is handled differently, but filled by the back-end service on saving a notice. They must be contained in a notice to create a valid XML notice, but can be hidden to the user.
+|===
+
+== JSON and XML structure constraints
+
+The purpose of the Notice Type Form definition is to abstract the notice form displayed to a web user from the eForms XML notice generated by the system. While it can be slightly customized, it cannot have an arbitrary structure, it must be aligned with the eForms XML schema to some extent.
+
+For instance, the *number of repeatable groups* (in a path from the content root to a field) in the JSON structure *must match* the *number of repeatable parent elements* (in a path from the document root to the field element/attribute) in the eForms XML schema.
+
+There is no constraint on non-repeatable groups.
+An arbitrary number of intermediate, non-repeatable groups can be created to organize the notice fields in a more convenient way. Moreover, the fields of the same level of the repeatable structure (ignoring non-repeatable groups) can be specified in an arbitrary order.
+
+It is even possible to split a repeatable XML element group into multiple repeatable JSON groups.
+In such case, the XML element group must contain an (instance) identifier field (e.g. BT-137-Lot - Purpose Lot Identifier), which is also contained in every JSON group part.
