@@ -96,8 +96,8 @@ In the future we plan to include additional label types such as (non-exhaustive 
 * tooltip: to provide information on how the user should interact with the element (i.e. enter information).
 
 `<asset&#8209;id>`::
-
-Indicates the identifier of the asset (i.e. business term, field etc.). The asset identifiers are indicated in the <<fields:index.adoc, field metadata repository>> (JSON).
+:
+Indicates the identifier of the asset (i.e. business term, field etc.). The asset identifiers are indicated in the <<fields::index.adoc, field metadata repository>> (JSON).
 
 To resolve a label you will need the label identifier which you can construct
 from the current context of your application using the appropriate
