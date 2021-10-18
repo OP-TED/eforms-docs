@@ -97,7 +97,7 @@ In the future we plan to include additional label types such as (non-exhaustive 
 
 `<asset&#8209;id>`::
 :
-Indicates the identifier of the asset (i.e. business term, field etc.). The asset identifiers are indicated in the <<fields::index.adoc, field metadata repository>> (JSON).
+Indicates the identifier of the asset (i.e. business term, field etc.). The asset identifiers are indicated in the xref:fields:index.adoc[field metadata] (JSON).
 
 To resolve a label you will need the label identifier which you can construct
 from the current context of your application using the appropriate
