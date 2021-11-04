@@ -170,7 +170,7 @@ fields.
                         <efbc:GroupFrameworkValueAmount currencyID="EUR">1200000</efbc:GroupFrameworkValueAmount>
                         <!-- # UNPUB-04 : Group Maximum Value Lot Identifier (BT-556) publication will be delayed -->
                         <efac:TenderLot>
-                            <cbc:IDcschemeName="LotsGroup">GLO-0001</cbc:ID>
+                            <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
                         </efac:TenderLot>
                     </efac:GroupFramework>
                     <!-- Interrupted mark-up -->
