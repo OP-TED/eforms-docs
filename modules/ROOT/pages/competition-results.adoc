@@ -1130,9 +1130,9 @@ An XML instance excerpt is provided below for illustration:
                 <cbc:ID schemeName="organization">ORG-0003</cbc:ID>
             </cac:PartyIdentification>
         </cac:SignatoryParty>
-        <efac:Contractreference>
+        <efac:ContractReference>
             <cbc:ID>CRN ABC:EFG/2020-01</cbc:ID>
-        </efac:Contractreference>
+        </efac:ContractReference>
         <efac:LotTender>
             <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
         </efac:LotTender>

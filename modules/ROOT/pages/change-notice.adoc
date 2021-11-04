@@ -172,7 +172,7 @@ well as information about changes to procurement documents:
                             <efbc:ChangeDescription languageID="EN">Updated procurement documents</efbc:ChangeDescription>
                         </efac:Change>
                         <efac:ChangeReason>
-                            <efbc:ReasonCode listName="change-corrig-justification">update-add </efbc:ReasonCode>
+                            <cbc:ReasonCode listName="change-corrig-justification">update-add </cbc:ReasonCode>
                             <efbc:ReasonDescription languageID="EN">Clerical corrections of ...</efbc:ReasonDescription>
                         </efac:ChangeReason>
                     </efac:Changes>
