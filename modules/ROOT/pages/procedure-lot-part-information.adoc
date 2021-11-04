@@ -2201,7 +2201,7 @@ cac:OpenTenderEvent{zwsp}/cbc:Description
 a|
 [source,xpath,subs=attributes]
 ----
-cac:OpenTenderEvent{zwsp}/cac:OccurrenceLocation{zwsp}/cbc:Description
+cac:OpenTenderEvent{zwsp}/cac:OccurenceLocation{zwsp}/cbc:Description
 ----
 
 
@@ -2616,7 +2616,7 @@ Planning notice is of type "PIN only";
 * Since a Lot may be defined based on multiple Parts, and Parts
 may belong to different "PIN only" notices,
 "cac:NoticeDocumentReference" and
-"cbc:ReferencedDocumentInternal-Address" are repeatable;
+"cbc:ReferencedDocumentInternalAddress" are repeatable;
 
 * Two "cac:NoticeDocumentReference" elements with the same parent (i.e. leading by combination to the definition of a given Lot) shall have different notice identifiersfootnote:[It is not enough to have a different version number, the UUID part of the notice identification should differ. For a given Notice, since the reference to Parts is repeatable, all Parts needed are identified together without referring multiple times to the same notice.];
 
