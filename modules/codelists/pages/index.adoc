@@ -70,6 +70,51 @@ codelists. Since these codelists have no relevance or use outside the
 context of eForms, they are not published on the EU Vocabularies website, but 
 are published as part of the https://github.com/OP-TED/eForms-SDK[eForms SDK].
 
+
+For example, the eProcurement 
+https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language["Language"] 
+codelist has codes for thousands of languages. BT-702 Notice Official Language designates an EU Official language in which the notice is officially available. Only one of the 24 EU Official languages is permitted. So a tailored codelist, "Eu Official Language" has been created, which contains the entries for these 24 languages copied from the parent "Language" codelist.
+
+BT-10 Activity Authority and BT-610 Activity Entity use different codes from the same eProcurement 
+https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/main-activity["Main activity"]  
+codelist. Two new tailored codelists have been created, "Authority Activity" and "Entity Activity", which each contain the relevant codes.
+
+===== Naming convention of Tailored codelist Genericode files
+
+The filenames of the tailored codelists are composed of two parts: the name of the parent codelist, from which the codes are copied, and the name of the tailored codelist, separated by an underscore character "_". Each part follows the same convention as used for the eProcurement codelists: the name of the codelist, with spaces replaced by hyphens, and all in lower case.
+
+[[codelistNamingTable]]
+[width="100%",cols="<.^15%,<.^25%,<.^25%,<.^35%,options="header",]
+|===
+^|*Parent codelist name* ^|*Parent codelist Genericode filename* ^|*Tailored codelist name* ^|*Tailored codelist Genericode filename* 
+|Language |language.gc | Eu Official Language | language_eu-official-language.gc
+
+|Main activity |main-activity.gc | Authority Activity | main-activity_authority-activity.gc
+
+|Main activity |main-activity.gc | Entity Activity | main-activity_entity-activity.gc
+
+|===
+
+===== Additional XML elements in tailored Genericode files
+
+Some new elements have been added to the <Identification> element in the tailored Genericode codelist files. 
+
+[source, xml]
+----
+<LongName Identifier="listId">http://publications.europa.eu/resource/authority/main-activity</LongName>
+<LongName Identifier="eFormsParentId">main-activity</LongName>
+<Version>0.2.19</Version>
+----
+
+Two of these provide users with clear links between the tailored codelists and the parent eVocabularies codelists from which they are derived. The LongName element with the Identifier attribute set to the value "listId" contains the URI of the parent codelist. The LongName element with the Identifier attribute set to the value "eFormsParentId" contains the value of the LongName element of the parent codelist.
+
+The third element is a version identifier of the tailored codelist, of the form Major.Minor.Patch. This follows the same versioning convention used throughout the eForms SDK.
+
+
+
+
+
+
 ==== Technical codelists
 
 The UBL schema was chosen to define the XML structure for eforms Notices due 
