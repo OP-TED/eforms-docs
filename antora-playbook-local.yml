@@ -1,12 +1,14 @@
+# This Antora playbook can be used to build the documentation pages locally,
+# It uses the currently checked out HEAD of the local repository
+
 site:
   title: eForms SDK
   start_page: eforms::index.adoc
 content:
   edit_url: false
   sources:
-  - url: https://github.com/OP-TED/eForms-SDK.git
-    start_path: docs
-    branches: main
+  - url: .
+    branches: HEAD
 ui:
   bundle:
     url: https://github.com/OP-TED/antora-eui/releases/download/ui-bundle/eForms-SDK-customisations/ui-bundle.zip
