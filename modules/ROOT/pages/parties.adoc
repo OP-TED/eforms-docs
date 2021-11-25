@@ -1561,7 +1561,7 @@ general* 3+|*PIN CFC social* |*QS* 4+|*CN general* 2+|*CN social*
 |O |O |O |O |O |O |O |O
 
 |Beneficial owner |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |--
-|-- |-- |-- |-- |-- |-- |O |O |O |O |O |O |O |O |O |0 |O |O |O |O |O |O
+|-- |-- |-- |-- |-- |-- |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O
 
 |*Acquiring CPB (#)* |*—* |*—* |*—* |*EM* |*EM* |*O* |*EM* |*EM* |*O*
 |*EM* |*O* |*O* |*EM* |*—* |*O* |*EM* |*EM* |*O* |*—* |*O* |*EM* |*O*
