@@ -10,7 +10,9 @@ free to make use of it. However we currently do not guarantee the stability
 of the structure or content described here.
 ====
 
-The Notice Types contain the definition of the notice forms that the web users will fill in. It is defined as JSON documents referencing fields by ID, which are defined in the Field Repository. We are using these files to provide the definition of all notices to our form-filling application (eNotices2). Each form is then specified by one of these JSON files.
+The Notice Types contain the definition of the notice forms that the web users will fill in. It is defined as JSON documents referencing fields by ID, which are defined in the Field Repository. We are using these files to provide the definition of all notices to our form-filling application (eNotices2). Each form is then specified by one of these JSON files. They are available in `+/notice-types+` and are named as follow: `+<id>_<formType>_<type>_<legalBasis>.json+`
+
+The `+<placeholders>+` allowed values are listed in the file `+/notice-types/notice-types.json+`. This file contains a flat list of all notice sub-types metadata together with the list of their associated schema metadata.
 
 == Notice Types definition
 
