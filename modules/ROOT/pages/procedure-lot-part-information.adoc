@@ -2863,7 +2863,7 @@ should be specified.
 
 When, for a Group of Lots, a framework agreement (FA) is foreseen (PIN & CN) for the execution:
 
-* the Group Framework Estimated Maximum Value (BT-157)footnote:[Evaluation at start of the call for competition, only in the context of a group when this group has a foreseen framework agreement.], and
+* the Group Framework Estimated Maximum Value (BT-157)footnote:[Evaluation at start of the call for competition, only in the context of a group when this group has a foreseen framework agreement.]
 
 should be specified.
 
