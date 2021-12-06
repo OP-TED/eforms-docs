@@ -2832,32 +2832,17 @@ then, when the information is expected, it may be reported as follows:
 </cac:ContractingSystem>
 ----
 
-When, for a Lot (or Group of Lots), a framework agreement (FA) is
-foreseen (PIN & CN) for the execution:
+When, for a Lot, a framework agreement (FA) is foreseen (PIN & CN) for the execution:
 
-* the type of FA along with the possible maximum number of participants (BT-113)footnote:[Its specification implies a "true" value for BT-778.],
+* the type of FA (BT-765) along with 
 
-* the duration justification (BT-109)footnote:[This information is to be provided only when the duration exceeds 4 years for general directive (Dir. 24), 7 years for defence (Dir. 81) and 8 years for the sectoral directive (Dir. 25).],
+* the possible maximum number of participants (BT-113)footnote:[Its specification implies a "true" value for BT-778.],
 
-* the Group Framework Estimated Maximum Value (BT-157)footnote:[Evaluation at start of the call for competition, only in the context of a group when this group has a foreseen framework agreement.], and
+* the duration justification (BT-109)footnote:[This information is to be provided only when the duration exceeds 4 years for general directive (Dir. 24), 7 years for defence (Dir. 81) and 8 years for the sectoral directive (Dir. 25).], and
 
 * the buyers categories (BT-111)
 
 should be specified.
-
-* The maximum number of participants shall be an integer;
-
-* the duration justification shall be of type text,
-
-* the estimated framework maximum value for the Group of Lots
-shall be a monetary value,
-
-* the buyer categories shall be of type text; and
-
-* the framework agreement type shall be one of the values listed
-in the
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/framework-agreement[framework-agreement]
-codelist.
 
 [source,xml]
 ----
@@ -2865,7 +2850,6 @@ codelist.
     <cbc:MaximumOperatorQuantity>50</cbc:MaximumOperatorQuantity>
     <cbc:Justification languageID="ENG">The exceptional duration of ...</cbc:Justification>
     <cbc:Justification languageID="FRA">La durée exceptionnelle de ...</cbc:Justification>
-    <cbc:EstimatedMaximumValueAmount currencyID="EUR">200000</cbc:EstimatedMaximumValueAmount>
     <cac:SubsequentProcessTenderRequirement>
         <cbc:Name>buyer-categories</cbc:Name>
         <cbc:Description languageID="ENG">Offices of the "greater region" ...</cbc:Description>
@@ -2877,11 +2861,37 @@ codelist.
 </cac:ContractingSystem>
 ----
 
-For a CAN, when a Framework Agreement is involved, only the following
-information is expected at the level of the Lot/Group of Lots
-definition:
+When, for a Group of Lots, a framework agreement (FA) is foreseen (PIN & CN) for the execution:
 
-* Group Framework Estimated Maximum Value (BT-157),
+* the Group Framework Estimated Maximum Value (BT-157)footnote:[Evaluation at start of the call for competition, only in the context of a group when this group has a foreseen framework agreement.], and
+
+should be specified.
+
+[source,xml]
+----
+<cac:FrameworkAgreement>
+    <cbc:EstimatedMaximumValueAmount currencyID="EUR">200000</cbc:EstimatedMaximumValueAmount>
+</cac:FrameworkAgreement>
+----
+
+Generally:
+
+* The maximum number of participants (BT-113) shall be an integer;
+
+* the duration justification (BT-109) shall be of type text,
+
+* the estimated framework maximum value for the Group of Lots (BT-157)
+shall be a monetary value,
+
+* the buyer categories shall be of type text; and
+
+* the framework agreement type (BT-765) shall be one of the values listed
+in the
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/framework-agreement[framework-agreement]
+codelist.
+
+For a CAN, when, for a given Lot, a Framework Agreement is involved, only the following
+information is expected at the level of the Lot definition:
 
 * The framework buyer categories (BT-111), and
 
@@ -2890,7 +2900,6 @@ definition:
 [source,xml]
 ----
 <cac:FrameworkAgreement>
-    <cbc:EstimatedMaximumValueAmount currencyID="EUR">200000</cbc:EstimatedMaximumValueAmount>
     <cac:SubsequentProcessTenderRequirement>
         <cbc:Name>buyer-categories</cbc:Name>
         <cbc:Description languageID="ENG">Offices of the "greater region" ...</cbc:Description>
@@ -2901,6 +2910,21 @@ definition:
     <cbc:ContractingSystemTypeCode listName="framework-agreement">fa-wo-rc</cbc:ContractingSystemTypeCode>
 </cac:ContractingSystem>
 ----
+
+For a CAN, when, for a given Group of Lots, a Framework Agreement is involved, only the following
+information is expected at the level of the Group of Lots
+definition:
+
+* Group Framework Estimated Maximum Value (BT-157).
+
+[source,xml]
+----
+<cac:FrameworkAgreement>
+    <cbc:EstimatedMaximumValueAmount currencyID="EUR">200000</cbc:EstimatedMaximumValueAmount>
+</cac:FrameworkAgreement>
+----
+
+For a CAN, when Lots with Framework Agreements have been awarded, further Framework Agreement related information is to be expected in the Result section (cf. <<competitionResultsSection>>).
 
 [[DPSSection]]
 === Dynamic Purchasing System (BT-766)
