@@ -26,6 +26,7 @@ For the example above, the fields defined for BT-27 are:
 * BT-27-Part : estimated value of a part
 * BT-27-LotsGroup : estimated value of a group of lots 
 
+[#field-repository]
 == The field repository
 
 [WARNING]
@@ -51,10 +52,10 @@ The field repository is an array of fields, preceded by some version information
 ----
 {
   "ublVersion": "2.3", // <1>
-  "sdkVersion" : "eforms-sdk-0.4.1", // <2>
+  "sdkVersion" : "eforms-sdk-0.5.0", // <2>
   "metadataDatabase": { // <3>
-    "version": "0.0.4",
-    "createdOn": "2021-08-20T16:46:39"
+    "version": "0.2.53",
+    "createdOn": "2021-11-20T16:46:39"
   },
   "fields": [ // <4>
     { ... },
@@ -126,18 +127,18 @@ field are also indicated.
 Those constraints correspond to a subset of the validation rules of an eForms
 notice.
 
-=== Presence constraints
+=== Forbidden and mandatory constraints
 
-Presence constraints indicate for which notice types the field is mandatory or
-not allowed (forbidden).
+These constraints indicate for which notice types and under which conditions the field is forbidden or mandatory.
 
-If no specific presence constraint exists for a notice type, the field is
-considered optional: it can be present but is not required.
+If no specific forbidden or mandatory constraint exists for a notice type, the field is considered optional: it can be present but is not required.
 
 Please note that the UBL specification does not permit XML documents
-to contain empty elements or attributes. So a field being mandatory means that it must contain a value.
+to contain empty elements or attributes. So a field being mandatory means that the corresponding XML element must contain a value.
 
-.Simple presence constraints
+If the constraint does not depend on anything other that the notice type, the condition is indicated as "true".
+
+.Simple constraints
 [source,json]
 ----
     {
@@ -145,31 +146,36 @@ to contain empty elements or attributes. So a field being mandatory means that i
       ...
       "constraints": [
         {
-          "presence": "FORBIDDEN",
-          "noticeTypes": [ "38", "39", "40" ]
+          "noticeTypes" : [ "38", "39", "40" ],
+          "forbidden" : "true"
         },
         {
-          "presence": "MANDATORY",
-          "noticeTypes": [ "1", "4" ]
+          "noticeTypes": [ "1", "4" ],
+          "mandatory" : "true"
         }
       ]
     }
 ----
 
-The presence constraint of a field can also depend on more complex conditions:
+The forbidden or mandatory constraint of a field can also depend on more complex conditions:
 the presence or value of another field, etc.
 
 .Constraint with a condition
 [source,json]
 ----
     {
-      "condition" : "field('BT-740-Procedure-Buyer') == 'not-cont-ent'", // <1>
-      "presence" : "MANDATORY",
-      "noticeTypes" : [ "2", "5" ]
+      "noticeTypes" : [ "2", "5" ],
+      "forbidden" : "!(field('BT-740-Procedure-Buyer')=='cont-ent')" // <1>
+    },
+    {
+      "noticeTypes" : [ "1", "2", "4", "5" ],
+      "mandatory" : "true" // <2>
     }
 ----
-<1> This field must be present if the field BT-740-Procedure-Buyer
-contains 'not-cont-ent'.
+<1> This field is forbidden for notices "2" and "5" if the field BT-740-Procedure-Buyer does not contain the value 'cont-ent'.
+<2> If allowed, this field is mandatory for notices "1", "2", "4" and "5".
+
+NOTE: The forbidden and mandatory constraints must be considered together: a field must first be allowed (not forbidden) before it can be considered mandatory.
 
 For more details on the syntax of conditions, see <<Syntax for conditions>> below.
 
@@ -219,10 +225,12 @@ a constraint.
 
 === Syntax for conditions
 
-A condition must be a boolean expression.
+The value of the `forbidden` and `mandatory` properties is a string representing a boolean expression.
 
-The syntax is based on the
+The syntax of the expression is based on the
 https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions[Spring
 Expression Language (SpEL)], limited to a small number of boolean and comparison operators.
+
+As indicated above, if there is no specific condition, the value indicated is `true`, which is also a valid SpEL expression.
 
 A field can be referenced using its identifier: `field('BT-31-Procedure')`.
