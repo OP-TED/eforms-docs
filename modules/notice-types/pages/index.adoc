@@ -2,7 +2,7 @@
 
 [WARNING]
 ====
-The structure and content of the Notice Types described below are driven by
+The structure and content of the files described below are driven by
 the specific needs of our various applications.
 
 As we think it could be useful for others, we are sharing it publicly, and you are
@@ -10,37 +10,103 @@ free to make use of it. However we currently do not guarantee the stability
 of the structure or content described here.
 ====
 
-The Notice Types contain the definition of the notice forms that the web users will fill in. It is defined as JSON documents referencing fields by ID, which are defined in the Field Repository. We are using these files to provide the definition of all notices to our form-filling application (eNotices2). Each form is then specified by one of these JSON files. They are available in `+/notice-types+` and are named as follow: `+<id>_<formType>_<type>_<legalBasis>.json+`
+== Notice subtypes
 
-The `+<placeholders>+` allowed values are listed in the file `+/notice-types/notice-types.json+`. This file contains a flat list of all notice sub-types metadata together with the list of their associated schema metadata.
+The https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R1780[eForms Regulation] defines, in table 1 of its annex, a list of types of procurement notices.
 
-== Notice Types definition
+In order to avoid confusion with the more general notion of "notice type" (contract notice, contract award, PIN, etc.), we are designating each specific item as "notice subtype".
 
-The JSON snippet <<list-json-root>> describes the overall structure of a Notice Type definition.
-It's split into a metadata part, which contains fixed fields that are automatically set by the system and the content part, which defines the actual form that web users will fill in.
+The https://github.com/OP-TED/eForms-SDK[eForms SDK] provides this information in the `notice-types` folder, as a structured JSON file named `notice-types.json`.
 
-[#list-json-root]
-.Notice Type Form - JSON Root Structure
+This files contains some metadata, followed by the list of notice subtypes, and the indication of the corresponding XML schema.
+
+.Structure of notice-types.json
+[source,json]
+----
+{
+  "ublVersion" : "2.3", // <1>
+  "sdkVersion" : "eforms-sdk-0.5.0", // <2>
+  "metadataDatabase" : { // <3>
+    "version" : "0.2.16",
+    "createdOn" : "2021-11-04T11:11:11"
+  },
+  "noticeSubTypes" : [
+    {
+      "documentType" : "PIN", // <4>
+      "legalBasis" : "32014L0024", // <5>
+      "formType" : "planning", // <6>
+      "type" : "pin-buyer", // <7>
+      "description" : "Notice of the publication of a prior (...)", // <8>
+      "subTypeId" : "1" // <9>
+    },
+    ...
+  ],
+  "documentTypes" : [
+    {
+      "id" : "PIN", // <10>
+      "namespace" : "urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2", // <11>
+      "rootElement" : "PriorInformationNotice" // <12>
+    },
+    ... 
+  ]
+}
+----
+<1> Version of the UBL standard used.
+<2> Version of the eForms SDK the file belongs to.
+<3> Version number and date of the data used to create this file.
+<4> Document type of this notice subtype, used to determine the XML namespace and root element of the XML notice.
+<5> Legal basis for this notice subtype.
+<6> The standard form for this notice subtype.
+<7> The notice for this notice subtype. Values are from the "notice type" codelist.
+<8> Description of the notice subtype, from the eForms regulation.
+<9> Identifier of the notice subtype.
+<10> Identifier of the document type
+<11> XML namespace for this document type
+<12> Root XML element for this document type. 
+
+From the information visible in the example above, we can see that the notice subtype 1 has the document type `PIN`, so the root element in the XML is `PriorInformationNotice`.
+The definition of each root element is in the corresponding file present in the folder `schemas/maindoc` in the eForms SDK.
+
+
+== Definition of a notice subtype
+
+For each notices subtype, we define the content and structure of the form that notice authors will fill in. We provide this definition as a set of JSON files, with one file per notice subtype.
+Those are available in the https://github.com/OP-TED/eForms-SDK[eForms SDK], in the folder `+/notice-types+`, and are named as follows:
+`+<id>_<formType>_<type>_<legalBasis>.json+`
+
+We are using these files to provide the definition of all notices to our form-filling application (eNotices2).
+
+These files reference the fields present in the form via their identifier. The information for every field is centralized in xref:fields:index.adoc#field-repository[the field repository].
+
+The definition of a notice subtype has 2 parts:
+
+* metadata, containing fixed fields that are automatically set by the system
+* content, defining the actual form that notice authors will fill in.
+
+.JSON overall structure
 [source,json]
 ----
 {
   "metadata": {
     "groupId": "GR-Metadata",
     "name": "Metadata",
-    "fields": []
+    "fields": [
+      ...
+    ]
   },
   "content": {
     "groupId": "GR-Content",
     "name": "Content",
-    "fields": []
+    "fields": [
+      ...
+    ]
   }
 }
 ----
 
-The metadata part is a array of fields, as described in <<list-json-metadata>>.
+The metadata part is a list of fields.
 
-[#list-json-metadata]
-.Notice Type Form - JSON Metadata Structure
+.Metadata Structure
 [source,json]
 ----
 {
@@ -61,17 +127,20 @@ The metadata part is a array of fields, as described in <<list-json-metadata>>.
       "fieldId": "BT-701-notice",
       "name": "Notice Identifier",
       "readOnly": true
-    }
+    },
+    ...
   ]
 }
 ----
 
-The form content is a tree structure, composed of nested groups (i.e. branches) and fields (i.e. leaves), as described in <<list-json-content>>. The fields must reference a valid field of the Field Repository by `+fieldId+`, whereas the `+groupId+` can be freely defined, as long as its value is unique. The group and fields names are there for the ease of readiness, they are then not used for further processing.
+The form content is a tree structure, composed of nested groups and fields, as shown below.
+The fields must reference a valid field of the field repository by `+fieldId+`.
+The `+groupId+` can be freely defined, as long as its value is unique in the file.
+The `name` property for groups and fields is to complement the identifier, for readability, it is not used for further processing.
 
-All direct child groups of the *Content* node are treated as sections which can optionally define the groups of the next layer as subsection by specifying `+"section": true+`.
+All direct child groups of the *Content* node are treated as sections which can optionally define the groups they contain as subsection by specifying `+"section": true+`.
 
-[#list-json-content]
-.Notice Type Form - JSON Content Structure
+.JSON Content Structure
 [source,json]
 ----
 {
@@ -106,27 +175,29 @@ All direct child groups of the *Content* node are treated as sections which can 
 }
 ----
 
-The following table lists all available group/field properties.
+The following table lists all available properties for groups and fields.
 
-[cols="2,1,1,5,10"]
+[cols="3,1,1,5,10"]
 |===
 |Property |Group |Field |Values |Description
 
 |repeatable   |x |x |false (default), true |The group/field is repeatable and the user can create one or multiple instances.
 |section      |x |- |false (default), true |The group is displayed as section/subsection.
 |readOnly     |- |x |false (default), true |The field is visible, but not editable.
-|hidden       |- |x |false (default), true |The field not visible and thus not editable.
+|hidden       |- |x |false (default), true |The field is not visible and thus not editable.
 |displayType  |- |x |CHECKBOX, COMBOBOX, RADIO, TEXT_FIELD, TEXTAREA |The field is rendered as the specified input element.
-The default values depend on the field's datatype and not all values are allowed for every datatype e.g. a date cannot be displayed as radio buttons, but code list can.
-|instanceList |x |- |any string e.g. "LOT" |The schema/prefix used by the form filling tool to create an instance list with the corresponding name that keeps track of all existing instances of that group.
-|valueList    |- |x |any string e.g. "LOT" |The schema/prefix used by the form filling tool to select a value from the corresponding instance list.
+The default values depend on the field's datatype and not all values are allowed for every datatype: a date cannot be displayed as radio buttons, but a codelist can.
+|instanceList |x |- |any string e.g. "LOT" |The prefix used by the form filling tool to create an instance list with the corresponding name that keeps track of all existing instances of that group.
+|valueList    |- |x |any string e.g. "LOT" |The prefix used by the form filling tool to select a value from the corresponding instance list.
 Instead of a free-text input field, a select box with all the existing instance IDs is displayed.
-|instanceIdField  |- |x |any string e.g. "LOT" | This property flags a field as the one containing the instance ID of the specified schema/prefix. Those fields are not handled by the form filling tool because the instance ID is handled differently, but filled by the back-end service on saving a notice. They must be contained in a notice to create a valid XML notice, but can be hidden to the user.
+|instanceIdField  |- |x |any string e.g. "LOT" | This property flags a field as the one containing the instance ID of the specified prefix. Those fields must be contained in a notice to create a valid XML notice, but can be hidden to the user.
 |===
+
 
 == JSON and XML structure constraints
 
-The purpose of the Notice Type Form definition is to abstract the notice form displayed to a web user from the eForms XML notice generated by the system. While it can be slightly customized, it cannot have an arbitrary structure, it must be aligned with the eForms XML schema to some extent.
+The purpose of the notice subtype definition is to abstract the form displayed to a notice author from the eForms XML notice generated by the system.
+While it can be slightly customized, it cannot have an arbitrary structure, it must be aligned with the eForms XML schema to some extent.
 
 For instance, the *number of repeatable groups* (in a path from the content root to a field) in the JSON structure *must match* the *number of repeatable parent elements* (in a path from the document root to the field element/attribute) in the eForms XML schema.
 
