@@ -36,7 +36,7 @@ codes, do not have such translations.
 https://op.europa.eu/en/web/eu-vocabularies/controlled-vocabularies[EU Vocabularies]
 provides the codelists in a number of different formats for use in different
 applications. The format chosen for use in the eForms SDK is the 
-http://docs.oasis-open.org/codelist/cs-genericode-1.0/doc/oasis-code-list-representation-genericode.html[OASIS Genericode]
+https://docs.oasis-open.org/codelist/genericode/v1.0/genericode-v1.0.html[OASIS Genericode]
 XML format, which was designed for the interchange of machine-readable codelists.
 
 === Types of codelists
@@ -94,9 +94,9 @@ Each part follows the same convention as used for the eProcurement codelists: th
 ^|*Parent codelist name* ^|*Parent codelist filename* ^|*Tailored codelist name* ^|*Tailored codelist filename* 
 |Language |language.gc | EU Official Language | language_eu-official-language.gc
 
-|Main activity |main-activity.gc | Authority Activity | main-activity_authority-activity.gc
+.2+|Main activity .2+|main-activity.gc | Authority Activity | main-activity_authority-activity.gc
 
-|Main activity |main-activity.gc | Entity Activity | main-activity_entity-activity.gc
+| Entity Activity | main-activity_entity-activity.gc
 
 |===
 
