@@ -14,11 +14,11 @@ of the structure or content described here.
 
 The https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R1780[eForms Regulation] defines, in table 1 of its annex, a list of types of procurement notices.
 
-In order to avoid confusion with the more general notion of "notice type" (contract notice, contract award, PIN, etc.), we are designating each specific item as "notice subtype".
+In order to avoid confusion with the more general notion of "notice type" (contract notice, contract award, PIN, etc.), we are designating each specific item as "notice subtype". So a notice subtype corresponds to a specific column in table 2 of the annex to the eForms regulation.
 
 The https://github.com/OP-TED/eForms-SDK[eForms SDK] provides this information in the `notice-types` folder, as a structured JSON file named `notice-types.json`.
 
-This files contains some metadata, followed by the list of notice subtypes, and the indication of the corresponding XML schema.
+This file contains some metadata, followed by the list of notice subtypes, and the indication of the corresponding XML schema.
 
 .Structure of notice-types.json
 [source,json]
@@ -54,15 +54,15 @@ This files contains some metadata, followed by the list of notice subtypes, and 
 <1> Version of the UBL standard used.
 <2> Version of the eForms SDK the file belongs to.
 <3> Version number and date of the data used to create this file.
-<4> Document type of this notice subtype, used to determine the XML namespace and root element of the XML notice.
-<5> Legal basis for this notice subtype.
-<6> The standard form for this notice subtype.
-<7> The notice for this notice subtype. Values are from the "notice type" codelist.
+<4> Document type of the notice subtype, used to determine the XML namespace and root element of the XML notice.
+<5> Legal basis for the notice subtype.
+<6> The standard form for the notice subtype.
+<7> The notice type for the notice subtype. Values are from the "notice type" codelist.
 <8> Description of the notice subtype, from the eForms regulation.
 <9> Identifier of the notice subtype.
 <10> Identifier of the document type
-<11> XML namespace for this document type
-<12> Root XML element for this document type. 
+<11> XML namespace for the document type
+<12> Root XML element for the document type. 
 
 From the information visible in the example above, we can see that the notice subtype 1 has the document type `PIN`, so the root element in the XML is `PriorInformationNotice`.
 The definition of each root element is in the corresponding file present in the folder `schemas/maindoc` in the eForms SDK.
@@ -70,13 +70,13 @@ The definition of each root element is in the corresponding file present in the 
 
 == Definition of a notice subtype
 
-For each notices subtype, we define the content and structure of the form that notice authors will fill in. We provide this definition as a set of JSON files, with one file per notice subtype.
-Those are available in the https://github.com/OP-TED/eForms-SDK[eForms SDK], in the folder `+/notice-types+`, and are named as follows:
+For each notice subtype, we define the content and structure of the form that notice authors will fill in. We provide this definition as a set of JSON files, with one file per notice subtype.
+Those files are available in the https://github.com/OP-TED/eForms-SDK[eForms SDK], in the folder `+/notice-types+`, and are named as follows:
 `+<id>_<formType>_<type>_<legalBasis>.json+`
 
 We are using these files to provide the definition of all notices to our form-filling application (eNotices2).
 
-These files reference the fields present in the form via their identifier. The information for every field is centralized in xref:fields:index.adoc#field-repository[the field repository].
+These files reference the fields present in the form via their identifier. The information for every field is centralised in xref:fields:index.adoc#field-repository[the field repository].
 
 The definition of a notice subtype has 2 parts:
 
@@ -104,7 +104,7 @@ The definition of a notice subtype has 2 parts:
 }
 ----
 
-The metadata part is a list of fields.
+The metadata part is a flat list of fields.
 
 .Metadata Structure
 [source,json]
