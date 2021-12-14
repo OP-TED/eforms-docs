@@ -991,7 +991,7 @@ NB: A winner may be a single organization or a grouping of organizations
 a|Only provided as an example (+++*+++):
 [source,xpath,subs=attributes]
 ----
-/ContractAwardNotice{zwsp}/ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:NoticeResult{zwsp}/efac:TenderingParty[cbc:ID{zwsp}/text()=..{zwsp}/efac:LotTender[cbc:ID{zwsp}/text()=../efac:SettledContract[cbc:ID{zwsp}/text()=../efac:LotResult[efac:TenderLot{zwsp}/cbc:ID{zwsp}/text()='LOT-0001']{zwsp}/efac:SettledContract{zwsp}/cbc:ID{zwsp}/text()]{zwsp}/efac:LotTender{zwsp}/cbc:ID{zwsp}/text()]{zwsp}/efac:TenderingParty{zwsp}/cbc:ID{zwsp}/text()]
+/ContractAwardNotice{zwsp}/ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:NoticeResult{zwsp}/efac:TenderingParty[cbc:ID{zwsp}/text()=..{zwsp}/efac:LotTender[cbc:ID{zwsp}/text()=../efac:LotResult[efac:TenderLot{zwsp}/cbc:ID{zwsp}/text()='LOT-0001']{zwsp}/efac:LotTender{zwsp}/cbc:ID{zwsp}/text()]{zwsp}[not(cbc:TenderRank/text()='0')]{zwsp}/efac:TenderingParty{zwsp}/cbc:ID{zwsp}/text()]
 ----
 
 |*_Tendering Partyfootnote:[This role, not referenced in eForms, is needed to understand and deal with situations where economic operators tender together (e.g. consortium)]_*
@@ -1441,18 +1441,20 @@ The results are provided per lot.
 
 For a given lot, winners are the Tendering Parties for which the tender:
 
-* Was submitted for that lot,
+* Was submitted for that lot, and
 
-* Has been selected as part of the winning tenders, and
+* Has been selected as part of the winning tenders (i.e. is not a non-winning tender, hence does not have a tender Rank set to zero.).
 
-* A contract has been signed.
+NB: Tenders are only listed once the award decision has been made and any tender listed with a not null rank are considered winning tenders.
 
 Therefore to identify a winner, there is a need to successively:
 
-. Look for contracts referenced at the Lot Result,
+. Look for tenders referenced at the Lot Result,
 
-. Identify the Tender that lead to the contract and is applied to
-the lot covered by the Lot Resultfootnote:[While a Tender (let's call it global tender) may be submitted for multiple Lots and Group of lots, the concept of Tender in eForms (let's call it individual tender) is limited to the fragment of that global tender that relates to a single Lot or Group of lots. A signed Contract, however may cover multiple of these "individual" tenders.],
+. Identify the Tender that have a not null rank and is applied to
+the lot covered by the Lot Resultfootnote:[While a Tender (let's call it global tender) may be submitted for multiple Lots and 
+Group of lots, the concept of Tender in eForms (let's call it individual tender) is limited to the fragment of that global 
+tender that relates to a single Lot or Group of lots.],
 
 . From the identified tender identify its associated Tendering
 Party.
@@ -1953,7 +1955,7 @@ Agreement),
 
 Therefore, when identifying a specific winner of a lot (i.e. Tendering
 Party associated to a winning tender for this lot), it is important to
-identify the contract and its associated relevant tender.
+identify the tender and and check this is a winning one.
 
 === Contract Signatory
 
