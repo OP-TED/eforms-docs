@@ -21,7 +21,7 @@ The list is the one defined for the ESPD.
 
 The codes are reported in the table below; the ones in bold are highly recommended. 
 From the EU legislation perspective, these are mandatory, however derogations are 
-possible (cf. <<dir24>> – art. 57). To identify precisely which value to use, 
+possible (cf. <<codelists-and-fields-R1>> – art. 57). To identify precisely which value to use, 
 the contracting authority shall also consider local legislation.
 
 [[exclusionGroundCodesTable]]
@@ -54,3 +54,13 @@ the contracting authority shall also consider local legislation.
 |CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.MISINTERPRETATION |Guilty of misinterpretation, withheld information, unable to provide required documents and obtained confidential information of this procedure
 |CRITERION.EXCLUSION.NATIONAL.OTHER |Purely national exclusion grounds
 |===
+
+[bibliography]
+== References
+
+* [[[codelists-and-fields-R1, R1]]] **Directive 2014/24/EU of the European Parliament and of the
+Council of 26 February 2014 on public procurement and repealing
+Directive 2004/18/EC, Text with EEA relevance, **__Official Journal of
+The European Union__, OJ L 94, 28.3.2014, pp. 65 - 242, Available at
+http://data.europa.eu/eli/dir/2014/24/oj[http://data.europa.eu/eli/dir/2014/24/oj],
+accessed February 11^th^, 2020.

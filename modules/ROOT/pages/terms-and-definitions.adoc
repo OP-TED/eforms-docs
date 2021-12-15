@@ -21,7 +21,7 @@ activities for other procuring entities." (eProcurement Ontology)
 Concession directive:: 
 Directive 2014/23/EU of the European Parliament
 and of the Council of 26 February 2014 on the award of concession
-contracts, Text with EEA relevance <<dir23>>
+contracts, Text with EEA relevance <<terms-and-definitions-R1>>
 
 Defence directive:: 
 Directive 2009/81/EC of the European Parliament
@@ -29,12 +29,12 @@ and of the Council of 13 July 2009 on the coordination of procedures for
 the award of certain works contracts, supply contracts and service
 contracts by contracting authorities or entities in the fields of
 defence and security, and amending Directives 2004/17/EC and 2004/18/EC
-(Text with EEA relevance) <<dir81>>
+(Text with EEA relevance) <<terms-and-definitions-R4>>
 
 General directive:: 
 Directive 2014/24/EU of the European Parliament
 and of the Council of 26 February 2014 on public procurement and
-repealing Directive 2004/18/EC Text with EEA relevance <<dir24>>
+repealing Directive 2004/18/EC Text with EEA relevance <<terms-and-definitions-R2>>
 
 Joint procurement::
 Combined procurement actions of two or more contracting authorities with
@@ -74,4 +74,37 @@ Sectoral directive::
 Directive 2014/25/EU of the European Parliament
 and of the Council of 26 February 2014 on procurement by entities
 operating in the water, energy, transport and postal services sectors
-and repealing Directive 2004/17/EC, Text with EEA relevance <<dir25>>
+and repealing Directive 2004/17/EC, Text with EEA relevance <<terms-and-definitions-R3>>
+
+[bibliography]
+== References
+
+
+* [[[terms-and-definitions-R1,R1]]] **Directive 2014/23/EU of the European Parliament and of the
+Council of 26 February 2014 on the award of concession contracts, Text
+with EEA relevance, **__Official Journal of The European Union__, OJ L
+94, March 28^th^, 2014, pp. 1 - 64, accessible at
+http://data.europa.eu/eli/dir/2014/23/oj[http://data.europa.eu/eli/dir/2014/23/oj],
+accessed February 11^th^, 2020
+* [[[terms-and-definitions-R2,R2]]] **Directive 2014/24/EU of the European Parliament and of the
+Council of 26 February 2014 on public procurement and repealing
+Directive 2004/18/EC, Text with EEA relevance, **__Official Journal of
+The European Union__, OJ L 94, 28.3.2014, pp. 65 - 242, Available at
+http://data.europa.eu/eli/dir/2014/24/oj[http://data.europa.eu/eli/dir/2014/24/oj],
+accessed February 11^th^, 2020.
+* [[[terms-and-definitions-R3,R3]]] **Directive 2014/25/EU of the European Parliament and of the
+Council of 26 February 2014 on procurement by entities operating in the
+water, energy, transport and postal services sectors and repealing
+Directive 2004/17/EC, Text with EEA relevance. **__Official Journal of
+The European Union__, OJ L 94, 28.3.2014, pp. 243 - 374, available at
+http://data.europa.eu/eli/dir/2014/25/oj[http://data.europa.eu/eli/dir/2014/25/oj],
+accessed February 11^th^, 2020.
+* [[[terms-and-definitions-R4,R4]]] **Directive 2009/81/EC of the European Parliament and of the
+Council of 13 July 2009 on the coordination of procedures for the award
+of certain works contracts, supply contracts and service contracts by
+contracting authorities or entities in the fields of defence and
+security, and amending Directives 2004/17/EC and 2004/18/EC (Text with
+EEA relevance),**__ Official Journal of The European Union__, OJ L 216,
+20.8.2009, pp. 76 - 136, accessible at
+http://data.europa.eu/eli/dir/2009/81/oj[http://data.europa.eu/eli/dir/2009/81/oj],
+accessed February 11^th^, 2020.
