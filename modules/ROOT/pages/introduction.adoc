@@ -32,11 +32,11 @@ discussed in detail.
 == The Regulation
 
 A regulation on Public Procurement (eForms) has been drafted, proposed,
-adopted and published in October 2019 <<eFormsReg>>. It will replace the
-Implementing Regulation from November 2015 <<oldForms>>.
+adopted and published in October 2019 <<introduction-R1,>>. It will replace the
+Implementing Regulation from November 2015 <<introduction-R2>>.
 
 eForms is part of the Single Market Strategy of the European Commission
-<<comComm>> and will help collect, manage and analyze procurement related data;
+<<introduction-R3>> and will help collect, manage and analyze procurement related data;
 this will populate a meaningful source of information for Member States
 to support their initiatives on _Public Procurement Governance_
 improvement with amplified efficiency, transparency and integrity.
@@ -126,3 +126,30 @@ Regarding illustration, samples have been provided using 2 linguistic
 versions; this has been done for clarification purpose regarding
 encoding of multilingual notices. There is no requirement to have
 exactly two such linguistic versions.
+
+[bibliography]
+== References
+
+
+* [[[introduction-R1, R1]]] **Commission Implementing Regulation (EU) 2019/1780 of 23
+September 2019 establishing standard forms for the publication of
+notices in the field of public procurement and repealing Implementing
+Regulation (EU) 2015/1986 (eForms) (Text with EEA relevance)** ,
+_Official Journal of The European Union_, OJ L 272, Oct. 25^th^, 2019,
+pp. 7 - 73, available at
+[.MsoHyperlink]##http://data.europa.eu/eli/reg_impl/2019/1780/oj##,
+accessed January 27^th,^ 2020.
+* [[[introduction-R2, R2]]] **Commission Implementing Regulation (EU) 2015/1986 of 11
+November 2015 establishing standard forms for the publication of notices
+in the field of public procurement and repealing Implementing Regulation
+(EU) No 842/2011**, _Official Journal of The European Union_, OJ L 296,
+Nov. 12^th^, 2015, pp. 1 - 146, available at
+http://data.europa.eu/eli/reg_impl/2015/1986/oj##,
+accessed January 27^th,^ 2020
+* [[[introduction-R3,R3]]] **Communication From The Commission To The European Parliament,
+The Council, The European Economic And Social Committee And The
+Committee Of The Regions, Upgrading the Single Market: more
+opportunities for people and business**, Oct. 28^th^, 2015, 23 p.,
+available at
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52015DC0550[https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52015DC0550],
+accessed January 27^th,^ 2020
