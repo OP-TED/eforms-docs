@@ -1,1 +1,36 @@
 = eForms SDK documentation
+// Disable Antora TOC
+:page-toclevels: -1  
+// The following lines create a redirection from "/eforms/latest/" to this page
+// if the {eforms_latest_version} as specified in the antora-playbook.yml 
+// is equal to the {eforms_version} as specified in antora.yml.
+ifeval::[{eforms_latest_version} == {eforms_version}]
+:page-aliases: latest@index.adoc
+endif::[]
+
+eForms is the notification standard for public procurement procedures in the EU. The eForms SDK is a collection of resources providing the foundation for building eForms applications.
+ifeval::[{eforms_latest_version} != {eforms_version}]
+
+IMPORTANT: You are currently reading the documentation that was published for eFroms SDK version *{eforms_version}*. +
+The latest version of eForms SDK is xref:{eforms_latest_version}@ROOT:index.adoc[*{eforms_latest_version}*]. 
+endif::[]
+
+== Topics
+The following topics are included in this version of the eForms Documentation:
+
+* xref:schema:index.adoc[The eForms Schema] +
+Extensive documentation of the XML Schema used by eFroms.
+* xref:fields:index.adoc[Field Metadata] +
+Learn what a field is, and how its properties and behaviours are  defined.
+* xref:codelists:index.adoc[Codelists in the SDK] +
+Find out why we include every codelist in the SDK and learn how to use them.
+* xref:translations:index.adoc[Translations] +
+Find out which translations are included in the SDK and learn how to use them.
+* xref:notice-types:index.adoc[Notice Structure] +
+How each notice type is structured.
+
+
+TIP: For every release of the eForms SDK, a copy of the corresponding documentation is maintained in this website. You can select the version of documentation that you want to consult by selecting the corresponding version of the SDK either in the dropdown menu available on the top right of this page, or the component navigation panel available on the bottom left of each page. +
+ifeval::[{eforms_latest_version} == {eforms_version}]
+You are currently reading the documentation published for the latest version of eFroms SDK ({eforms_version}).
+endif::[]
