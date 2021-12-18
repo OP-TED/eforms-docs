@@ -3,6 +3,7 @@ title: eForms SDK
 version: '0.5.0'
 nav:
 - modules/ROOT/nav.adoc
+- modules/schema/nav.adoc
 - modules/fields/nav.adoc
 - modules/codelists/nav.adoc
 - modules/translations/nav.adoc
