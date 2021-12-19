@@ -1,0 +1,486 @@
+= eForms FAQ
+:page-aliases: home:FAQ:eforms.adoc
+
+== General overview of eForms 
+[qanda]
+ 
+
+Is there a general presentation of eForms available?:: 
+
+The policy background of eForms is available link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[on the DG GROW website].
++
+The link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar] provided an updated overview of eForms implementation.
+ 
+ 
+ 
+
+What is the planned transition for eForms implementation on the TED portal?:: 
+
+Starting on 14 November 2022, usage of eForms by Contracting Authorities
+and Contracting Entities is optional and the Publications Office will
+accept both the current TED schema notices and new eForms notices. The
+TED portal will show both the current TED schema and eForms notices. 
++
+From 25 October 2023 onwards, the usage of eForms is mandatory and the
+Publications Office will no longer accept the current TED schema notices
+but only eForms notices. The TED portal will continue to show the TED
+schema notices that will have been published until 25 October 2023. 
+
+ 
+
+Which systems will be available for eSenders during the transition period?:: 
+
+Notices sent to the current eSentool will continue to be accepted until
+25 October 2023 and published on TED. As of 14 November 2022, eSenders
+will have the possibility to send Notices in the new format; however,
+this will not become mandatory before 25 October 2023. 
++
+From 14 November 2022 until 25 October 2023, the Publications Office
+will run two systems in parallel, but it is up to the eSenders to
+implement changes on their systems as and when best suits them during
+this time. TED will be adapted to publish notices in both formats for
+the duration of the transitional period. 
+
+ 
+
+Until when will the current eNotices application be available?:: 
+
+Implementing Regulation (EU) 2015/1986 will be repealed on 25 October 2023. 
+The current eNotices application will be available until that date. 
++
+The new eNotices2 application will be available as of 14 November 2022
+and run in parallel with the current eNotices application during the
+transition period. 
+
+ 
+
+What is the earliest possible time by when eForms could be introduced on a national level?:: 
+
+The transposition of the eForms regulation into national legislation is
+not under the control of the Publications Office or the European
+Commission. We assume that in any case the earliest possible time by
+when eForms could be introduced at a national level would be the same as
+for the EU level, namely 14 November 2022. 
++
+See also the section on link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[implementation in EU countries].
+
+
+ 
+
+What sources of information are available for eForms?:: 
+
+The following websites cover the various aspects of eForms: 
++
+--
+* Legal basis: Commission Implementing Regulation establishing standard
+forms for the publication of notices in the field of public procurement (eForms) +
+link:https://eur-lex.europa.eu/eli/reg_impl/2019/1780/oj[]
++
+* Policy background from the European Commission (DG GROW: Directorate
+General for Internal Market, Industry, Entrepreneurship, and SME) +
+https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en
++
+* SIMAP: information about European public procurement +
+https://simap.ted.europa.eu/web/simap/eforms
++
+* eForms presentations from the TED eSenders webinar in November 2021 +
+https://op.europa.eu/en/web/ted-esenders-webinar-2021/agenda
++
+* TED developer documentation portal +
+https://docs.ted.europa.eu/
++
+* eForms Software Development Kit on GitHub +
+https://github.com/OP-TED/eForms-SDK
+--
++
+For any questions or issues, please contact the TED helpdesk at: ted@publications.europa  
+
+ 
+
+== Forms and procedures 
+[qanda]
+
+ 
+Will eSenders have to send eForms for procedures that were started with the current standard forms?::
+If so, how will the previous publication field be filled in, given that Procedure Identifier is not used in the current forms?:: 
+
+Once the use of eForms becomes mandatory, eSenders will be required to
+send eForms notices for any procedures that were started with the
+current standard forms. As there is no Procedure Identifier in the
+current forms, in these cases the notice number of the previous TED XML
+notice (as published in the OJS) must be entered in the Previous
+Publication field in the eForms notice. 
+
+ 
+
+What is meant by E1, E2, E3, E4 and E5 in the Excel document annexed to the eForms regulation?:: 
+
+E1, E2, E3, E4 and E5 refer to forms that are not part of
+the eForms regulation, but they were included in the “extended annex” to
+regulation 2019/1780 available at: https://ec.europa.eu/docsroom/documents/43488
++
+These forms will be implemented after eForms are mandatory in October
+2023 and their use, which has no EU legal basis, will be optional. 
++
+They would extend (E) the set of the other forms and correspond to the
+following notices:  
++
+- Preliminary Market Consultation (E1) 
+- PIN below threshold (E2) 
+- CN below threshold (E3) 
+- CAN below threshold (E4) 
+- Contract Completion (E5) 
+
+
+
+What is the notice variant Business registration information used for?:: 
+
+The “Business Registration Information Notice” scheme refers to European
+Company and European Economic Interest Grouping notices, currently
+available as interactive PDFs only. 
+
+ 
+
+Currently an F14 may not be submitted until its previous notice is published. Will there be a change with eForms?::
+
+With eForms there will be a Change notice, which is a reproduction of its parent notice with an extra section to advertise changes to the 
+procurement and procurement documents and for correction of clerical errors. A Change form will only be possible for notices whose parent notice 
+has been published to avoid the possibility that different users may act on the same notice at the same time. 
+If the parent notice has not yet been published, users can stop publication and re-submit. 
++
+In case of many clerical errors, it will be possible to “void” a notice, which will cancel the notice itself, but not the procedure. 
+The user can - in this case - republish the same notice. To cancel the procedure, we would expect a Contract Award Notice with no winner.
+
+
+
+How will tailoring by Member States be handled by TED and the EU Publications Office?:: 
+
+National specificities and their implementation at national, regional
+and local level are outside the OP's remit. 
++
+In the eNotices2 form-filling tool UI, users will be able to fill in and
+send notices based on the eForms regulation. eNotices2 is not aware of
+and does not apply any compliance with Member State tailoring; for
+example, it will not check if an optional field (according to the EU
+regulation) is mandatory at national level.  +
+The same applies to notices sent by eSenders via the future eNotices API
+(the successor of eSentool). All notices go through the same checks of
+the future Central Validation Service, not applying any Member State
+tailoring. It is up to each user (or eSender) to ensure that their
+notices comply with the national implementation of eForms.  +
+ 
+
+== Planning and development 
+[qanda]
+ 
+
+What are the update cycles and how is change management (minor/major releases etc.) carried out for eForms?:: 
+
+The governance structure and life-cycle management for eForms are currently being updated and will be published soon.
+
+ 
+
+Has development of eNotices2 started?::  
+
+The development of eNotices2 started in 2020 and the application is
+foreseen to be in production for November 2022. 
++
+The scope of the application is to implement the eForms requirements in
+a product that will allow at least the same functionalities that are
+available in the current eNotices and the main functionalities that
+are currently available in eSentool.  
++
+The application will also have a number of new features that will make
+it easier and more streamlined for contracting parties to publish
+notices, while mitigating the inherent complexity of the eForms
+regulation as much as possible.
++
+Updated presentations are available at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar].
+
+ 
+
+== Visualisation and display of eForms notices 
+[qanda]
+ 
+
+Will a standard visual display be applied for the eForms? Is it possible for the Publications Office to share (PDF) templates of eForms?:: 
+
+The eForms will be displayed as standard forms, both within the
+application that will be used to create and submit them (eNotices2) and
+for their display on the TED website. The visual display will focus on
+user-friendliness. As part of the ongoing development of eForms, we have
+published the provisional samples of the 40 mandatory notices in PDF format at:
+https://simap.ted.europa.eu/documents/10184/320101/eForms+notice+PDF+samples+2021-07-22/c6785da3-8907-4071-9980-bb670b8ae9b8
+
+ 
+
+How will eForms notices be published and displayed on the TED website?:: 
+
+For information about the future changes planned for the TED website, please refer to the relevant presentation in the 2021 eSenders Seminar: 
+https://op.europa.eu/documents/8651547/0/eForms-in-TED-and-the-future-TED-2-0-2021-eSenders-seminar.pptx/317c4f15-9a18-58c3-a38e-be283206b977?t=1636106124942.
+
+ 
+ 
+What will be the retention period for the display of the eForms notices published on TED?:: 
+
+The retention period for displaying all notices (including eForms
+notices) on the TED website is 10 years (data available as of
+1/1/2014). 
+
+ 
+
+== Technical documentation and Software Development Kit 
+[qanda]
+ 
+
+Where can I find the latest technical documentation published on eForms (schemas, business or validation rules and other relevant information)?:: 
+
+Technical information on eForms, relevant to developers and experts, can
+be found in the eForms Software Development Kit (SDK) on GitHub at https://github.com/OP-TED/eForms-SDK 
+
+ 
+
+What is the purpose and governance of the SDK?:: 
+
+Provisional releases of the eForms Schema and eForms Documentation were
+provided in 2019 and 2020 through separate announcements on SIMAP. In
+order to assist eSenders and eForms developers, new releases of the
+eForms artefacts are now bundled together in the form of a Software
+Development Kit (SDK). This includes the eForms schema, Schematron
+validation rules, eForms documentation and sample XML documents. All
+artefacts are versioned together with the version number of the eForms
+SDK. 
++
+The eForms documentation will indicate the version of the eForms SDK
+that modified it. Likewise, the sample XML files will indicate the
+version of the eForms SDK used when they were created or last modified. 
++
+The purpose of the SDK is to assist eForms developers in creating applications that generate eForms notices in order to send them to eNotices2 in the future through TED API. 
+The components of the SDK are intended to be directly consumed by these applications. Multiple versions of the SDK will be maintained and remain available as long as they are 
+supported by the Legislation, allowing for more flexibility on the timing of upgrades on the eSenders’ applications. Updating applications to use new versions of the SDK 
+should require minimal effort if the applications are built to integrate the SDK components.
++
+More information about the SDK was presented at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar].
+
+
+
+If we were to use the SDK, would there be the need to customise for the national adoptions?::
+
+Yes, customisations and tailoring would need to be applied locally, on the user’s application.
+
+
+[NOTE]
+====
+Please note that the eForms SDK is updated regularly. 
+Updates are announced on link:https://simap.ted.europa.eu/web/simap/eforms[SIMAP]  
+and on the link:https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?spaceKey=TEDeSender&title=TED+eSenders[TED eSenders Workspace].
+
+You can also use the "watch" repository feature of Github to receive notifications for new releases.
+====
+
+
+
+== APIs and Web Services 
+[qanda]
+ 
+
+Will there be a TED qualification environment available for eForms? When will there be a way to test the submission of eForms notices?:: 
+
+Unlike the current standard forms in eSentool, there will be no
+qualification procedure for eForms. A Central Validation Service (CVS)
+will be remotely available so that you can check the validity of eForms
+notices. The current qualification procedure will be phased out.  
++
+The CVS is not expected to be made available before mid-2022. 
++
+Any announcements will be made via SIMAP at +
+https://simap.ted.europa.eu/web/simap/eforms
+
+  
+
+Will the URL to which we send the messages remain the same?::  
+
+The URL used for eForms notices will be different to the one used for
+the current notices in eSentool.  
++
+The new URL will be communicated when it becomes available. 
+
+ 
+
+== Schema and field definitions 
+[qanda]
+ 
+
+What is the release date for the eForms schema version that will be used for production in the future?:: 
+
+The latest version of the schema is close to the version that will be
+used for production.  The remaining unstated requirements
+are being identified. 
++
+Please consult the link:https://github.com/OP-TED/eForms-SDK[eForms Software Development Kit (SDK)] for more
+details on the latest version of the schema and other technical components.
+
+ 
+
+How to fill in BT-3201 Tender Identifier?:: 
+
+For TenderID, as for most identifiers, a dedicated scheme similar
+to that defined for other identifiers, has been specified. 
+Information is available in the documentation in the link:https://github.com/OP-TED/eForms-SDK[eForms SDK].
+
+ 
+
+What happens when CA_ACTIVITY_OTHER is given in F02?:: 
+
+The current TED XML element CA_ACTIVITY_OTHER allows free-text content.
+This often leads to inconsistencies in reporting the main activity of
+the contracting authority.  
++
+In eForms, this possibility has been removed and only one value from the
+list of values in the "main-activity" code list is allowed. 
+
+ 
+
+How can I deal with multiple NUTS codes in OBJECT_DESCR?:: 
+
+In the current TED XML, the location(s) of each Lot is indicated with
+only one MAIN_SITE element, but multiple NUTS elements.  
++
+In eForms, there is the possibility to have more information about each
+location: a full address, a description and a NUTS code. These are held
+in the cac:RealizedLocation element. This element is repeatable within
+each Lot. 
+
+  
+
+== Business and validation rules 
+[qanda]
+ 
+What are referred to as business rules in the context of eForms?::
+
+Business Rules are business-driven rules used to ensure a certain
+quality of the reported information. They define or constrain the
+existence of business information in a procurement notice (e.g. whether
+some information is mandatory, the possible values of a field, etc.).
+They have their origin in the Directives and the eForms Regulation or
+are based on common sense (e.g. an end date is later than a start date)
+as well as on the legal bases, the public procurement Directives and the
+eForms Regulation: 
++
+* https://ec.europa.eu/growth/single-market/public-procurement/rules-implementation_en 
+* https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en 
+
+ 
+When will the business rules and field validation rules be made available?::
+
+The current Schematron validation rules together with some examples of
+valid and invalid XML files are published on GitHub as part of the link:https://github.com/OP-TED/eForms-SDK[eForms SDK]. 
++
+We will keep updating these artefacts regularly as they evolve. 
+
+ 
+
+What are Schematron files for eForms?  Can you provide samples of them?::  
+
+The eForms schema applies basic structural rules to the XML notices.
+Schematron files are used to apply further validation rules to the XML
+notices, ensuring that for each notice type, mandatory fields are
+present and correct field values are used. Schematron files are
+available as part of the eForms SDK in the GitHub repository. 
++
+As the creation of Schematron files is a work in progress and they will
+not be ready for official publication for some time, the versions in the
+SDK only contain a preview. They are provided as-is, without any
+commitments from the Publications Office for their completeness or
+stability and without any documentation or support at this stage.
+The SDK in the repository will be updated periodically. 
+
+
+If a field is mandatory but left empty or if a code choice is mandatory but not chosen, will the notice be rejected and not published? Are there no "content" checks beyond that, for example if a monetary value doesn't make sense?::  
+
+If mandatory fields are not filled in, it will not be possible to submit
+the corresponding notice and the notice will, therefore, be rejected.
+There will be several additional business rules that will check the
+validity of the content of different fields, i.e., combinations of
+fields, in a way equivalent to what is done today with the existing
+forms.  
++
+As with the current TED notices, there will be rules that will block
+(reject) the submission of eForms notices, particularly in cases that
+violate or contradict the Procurement Directives. All these rules are
+currently under construction and implemented using Schematron. Only
+after 14 November 2022, when eForms are introduced, will the
+Publications Office inform users in advance of any new rules to come. 
+
+ 
+
+From a technical point of view, would an eForms notice be rejected if the names of some business terms and descriptions are changed at the national level?:: 
+
+The eForms notices submitted for publication on TED should conform to
+the eForms schema, Xpaths and field IDs, which are the same for all
+Member States. This means that any notice submitted that doesn't conform
+to this schema will be rejected by definition. 
++
+On the other hand, what is done and published at national level is under
+the responsibility and control of the National Authorities, which means
+that a notice published at national level may not look exactly the
+same on the national site (which follows the national
+terminology) as on TED (which follows the EU terminology). 
+
+  
+
+== Code lists 
+[qanda] 
+
+Why are you adding codes to eForms Business Terms and how often this will be done?::
+
+Some BTs represent fields whose values come from predefined lists. These
+values are represented by codes.  Such code lists are not specific to
+eForms and they can be used in other domains. Code lists are dynamic and
+can be updated. Standard releases and release dates can be found at +
+https://op.europa.eu/en/web/eu-vocabularies/releases
++
+The concepts in the EU Vocabularies authority tables and taxonomies that
+are used in eForms are indicated in the XML and SKOS formats by the
+”EFORMS” use context. These formats are available for each vocabulary
+under the “Downloads” tab.  
++
+For example, in the case of contract-nature available at: 
+https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/contract-nature.
++
+The XML file does not indicate the “EFORMS” context for the "combined"
+concept, therefore combined is not used in eForms:  
++
+[source, xml]
+----
+<start.use>2021-03-17</start.use>  
+<use.context>TED</use.context>  
+----
++
+whereas the XML file indicates the use eForms context for the "services"
+concept, therefore "services" can be used in eForms: 
++
+[source, xml]
+----
+<start.use>2019-09-18</start.use>  
+<use.context>CODIF_DATA</use.context>  
+<use.context>EFORMS</use.context>  
+<use.context>TED</use.context> 
+----
+     
+     
+== ESPD 
+
+[qanda]
+Could you provide a clarification about the integration of ESPD into eForms (BG-701 and BG-702):: 
+The possibility of some level of integration of ESPD requests into
+eForms notices (avoiding multiple encoding of the same information
+by reusing it) has been considered and the feasibility of this is still
+being evaluated. However, it will not be a complete substitution, and
+ESPD requests will remain necessary. 
++
+For more information, please see section 4.1.2.1 
+of the link:https://op.europa.eu/en/publication-detail/-/publication/73a78487-cc8b-11ea-adf7-01aa75ed71a1[eForms Policy Implementation Handbook].
+ 
+ 
+ 

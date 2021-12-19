@@ -1,0 +1,11 @@
+= eForms SDK Roadmap
+
+This page tries to outline the changes and additions to the eForms SDK planned for the upcoming releases. Despite its name, it is not actually organised as a release roadmap. Our goal with this page is to give you a heads-up of the most important things that we plan to change or add in the SDK so that you know what to expect. 
+
+== eForms SDK 0.4.2
+The upcoming eForms SDK 0.5.0 will introduce a breaking change in the format of the `fields.json` file. To allow existing implementations to benefit from the updated metadata as soon as possible, we decided to (almost) simultaneously release a backwards compatible update of the eForms SDK 0.4.x.
+
+This update will also introduce additional metadata in `fields.json` that will allow implementers to correctly  determine the XML structure of the notices they generate. 
+
+== eForms SDK 0.5.0
+eForms SDK 0.5.0 will introduce a breaking change in the format of the `fields.json` file. This change was deemed necessary to remove ambiguities in the interpretation of the metadata. It will also make  importing and processing of the file easier by implementers.
