@@ -2031,10 +2031,12 @@ These roles are to be found at the Lot level:
     <cac:TenderingTerms>
         <!-- Interrupted Mark-Up -->
         <cac:FiscalLegislationDocumentReference>
+            <!-- ID mandated by schema, but unused in eForms -->
+            <cbc:ID>Fiscal1</cbc:ID>
             <cac:Attachment>
                 <cac:ExternalReference>
                     <!-- URL to the legislation -->
-                    <cbc:URI>http:fiscal-legislation.gov.stat</cbc:URI>
+                    <cbc:URI>https://fiscal-legislation.gov.stat</cbc:URI>
                 </cac:ExternalReference>
             </cac:Attachment>
             <cac:IssuerParty>
@@ -2045,6 +2047,8 @@ These roles are to be found at the Lot level:
             </cac:IssuerParty>
         </cac:FiscalLegislationDocumentReference>
         <cac:EnvironmentalLegislationDocumentReference>
+            <!-- ID mandated by schema, but unused in eForms -->
+            <cbc:ID>Env1</cbc:ID>
             <cac:Attachment>
                 <cac:ExternalReference>
                     <!-- URL to the legislation -->
@@ -2059,6 +2063,8 @@ These roles are to be found at the Lot level:
             </cac:IssuerParty>
         </cac:EnvironmentalLegislationDocumentReference>
         <cac:EmploymentLegislationDocumentReference>
+            <!-- ID mandated by schema, but unused in eForms -->
+            <cbc:ID>Empl1</cbc:ID>
             <cac:Attachment>
                 <cac:ExternalReference>
                     <!-- URL to the legislation -->
