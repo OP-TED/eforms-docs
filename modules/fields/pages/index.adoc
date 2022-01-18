@@ -125,9 +125,9 @@ The properties that are assigned with static values are listed below:
 * `type`
 * `legalType`
 
-Static properties are always assigned with a scalar value (a string, a boolean, a number etc.).
+Static properties are always assigned with a scalar value (a string, a boolean, a number, etc.).
 
-Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different conditions like the notice type it is used in, or the values of other fields in the same notice etc.
+Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different factors, for example the notice type it is used in, or the values of other fields in the same notice.
 
 Dynamic values are represented with a JSON object. The object always contains a `value` property which indicates the default value for the  dynamic property and, when necessary, a `constraints` list that indicates the conditions under which the dynamic property may take different values.
 
@@ -141,7 +141,7 @@ In the following snippet, a dynamic value is assigned to the `forbidden` dynamic
 [source,json]
 ----
 "forbidden" : {
-  "value" : false,  // <1>
+  "value" : false, // <1>
   "constraints" : [ { // <2>
     "noticeTypes" : [ "22", "38", "39", "40", "X01", "X02" ], // <3>
     "value" : true, // <4>
@@ -155,7 +155,7 @@ In the following snippet, a dynamic value is assigned to the `forbidden` dynamic
 },
 ----
 <1> The default value of the property will be false in this example
-<2> A list of constraints is provided.  
+<2> List of constraints for this property.
 <3> The first constraint in this example specifies a different value than the default one in case the field is used in one of the notice types indicated.
 <4> The value of this dynamic field in case the constraint is applicable is indicated here.
 <5> The second constraint in this example, does not only require specific notice types but also indicates specific condition that need to be true for the constraint to be applicable.
@@ -165,7 +165,7 @@ All dynamic values are always represented in the same was as in the example abov
 
 [source,json]
 ----
-"propertyName" : {  
+"propertyName" : {
   "value" : "scalar1", // <1>
   "constraints" : [ // <2>
     {
@@ -212,7 +212,7 @@ The possible technical data types for a field are:
 
 === Repeatable
 
-The `repeatable` property indicates whether or not a field can appear more than once inside its container. The current version of the eForms SDK  does not contain any fields that are only repeatable under certain conditions. However the `repeatable` property is a dynamic property so that  constraints can added to this property if needed in the future.
+The `repeatable` property indicates whether or not a field can appear more than once inside its container. The current version of the eForms SDK does not contain any fields that are only repeatable under certain conditions. However the `repeatable` property is a dynamic property so that constraints can be added to this property if needed in the future.
 
 [source,json]
 ----
@@ -259,9 +259,9 @@ The `mandatory` property indicates whether or not a field is required to have a 
 
 
 NOTE: The UBL specification does not permit XML documents
-to contain empty elements or attributes. So a field being mandatory means that the corresponding XML element must contain a value.
+to contain empty elements or attributes. So if a field is not mandatory and no value has been filled it, then the corresponding XML element must be omitted from the XML notice.
 
-CAUTION: The value of the `forbidden` property must take precedence over the value the `mandatory` property. If a field is forbidden, then it should not be present in the notice regardless of the value of its `mandatory` property. You should always check first if a field is forbidden or not.Then, consider whether the is mandatory or optional only if the field is not forbidden.
+CAUTION: The value of the `forbidden` property must take precedence over the value the `mandatory` property. If a field is forbidden, then it should not be present in the notice regardless of the value of its `mandatory` property. You should always check first if a field is forbidden or not. Then, consider whether the field is mandatory or optional only if the field is not forbidden.
 
 === Codelist
 
@@ -270,12 +270,13 @@ CAUTION: The value of the `forbidden` property must take precedence over the val
 "codeList" : {
   "value" : {
     "id" : "accelerated-procedure",
-    "type" : "flat",
-    "parentId" : "indicator" // <1>
+    "type" : "flat", // <1>
+    "parentId" : "indicator" // <2>
   }
 }
 ----
-<1> Indicates the parent codelist. Provided only for tailored codelists.
+<1> Indicates that the codelist is a simple list of values. The few codelists that have a structure, like NUTS and CPV, are indicated as "hierarchical".
+<2> Indicates the parent codelist. Provided only for tailored codelists.
 
 
 === Pattern
@@ -294,7 +295,5 @@ The value of the `condition` property of a constraint is a string representing a
 The syntax of the expression is based on the
 https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions[Spring
 Expression Language (SpEL)], limited to a small number of boolean and comparison operators.
-
-As indicated above, if there is no specific condition, the value indicated is `true`, which is also a valid SpEL expression.
 
 A field is referenced using its identifier: `field('BT-31-Procedure')`.
