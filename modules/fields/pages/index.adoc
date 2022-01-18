@@ -68,7 +68,7 @@ The field repository is an array of fields, preceded by some version information
 <3> version number and date of the data used to create this file
 <4> list of fields
 
-== Field characteristics (properties)
+== Field properties
 
 For each field, various of its characteristics are indicated as properties of the JSON object that represents it.
 
@@ -167,13 +167,15 @@ All dynamic values are always represented in the same was as in the example abov
 ----
 "propertyName" : {
   "value" : "scalar1", // <1>
+  "severity" : "ERROR", // <6>
   "constraints" : [ // <2>
     {
       "noticeTypes" : [ "noticeType1", "noticeType2" ], // <3>
       "condition": "Boolean expression in SpEL", // <4>
-      "value" : "scalar2" // <5>
+      "value" : "scalar2", // <5>
+      "severity" : "ERROR" // <6>
     },
-    ... // <6>
+    ... // <7>
   ]
 }
 ----
@@ -182,7 +184,8 @@ All dynamic values are always represented in the same was as in the example abov
 <3> This constraint only applies for these notice types. Every constraint specifies the notice types for which it applies. 
 <4> This condition must evaluate to true for the constraint to be applicable. A condition is provided only when one is needed. 
 <5> This is the value that the property should take if the constraint is applicable.
-<6> Multiple constraints may be provided. If none applies, then use the default value provided for the property.
+<6> The severity is provided for validation systems. It may be either "ERROR" or "WARN". "WARN" indicates that a notice that does not comply with the provided value is still considered valid.
+<7> Multiple constraints may be provided. If none applies, then use the default value provided for the property.
 
 
 For more details on the syntax of conditions, see <<Syntax for conditions>> below.
@@ -217,7 +220,8 @@ The `repeatable` property indicates whether or not a field can appear more than 
 [source,json]
 ----
 "repeatable" : {
-  "value" : false
+  "value" : false,
+  "severity" : "ERROR"
 }
 ----
 
@@ -229,6 +233,7 @@ The `forbidden` property indicates whether or not the field can be used in speci
 ----
 "forbidden" : {
   "value" : false, // <1>
+  "severity" : "ERROR", // <2>
   "constraints" : [ {
     "noticeTypes" : [ "38", "39", "40", "X01", "X02" ],
     "value" : true,
@@ -259,7 +264,7 @@ The `mandatory` property indicates whether or not a field is required to have a 
 
 
 NOTE: The UBL specification does not permit XML documents
-to contain empty elements or attributes. So if a field is not mandatory and no value has been filled it, then the corresponding XML element must be omitted from the XML notice.
+to contain empty elements or attributes. So if a field is not mandatory and no value has been filled in, then the corresponding XML element must be omitted from the XML notice.
 
 CAUTION: The value of the `forbidden` property must take precedence over the value the `mandatory` property. If a field is forbidden, then it should not be present in the notice regardless of the value of its `mandatory` property. You should always check first if a field is forbidden or not. Then, consider whether the field is mandatory or optional only if the field is not forbidden.
 
@@ -271,7 +276,8 @@ CAUTION: The value of the `forbidden` property must take precedence over the val
   "value" : {
     "id" : "accelerated-procedure",
     "type" : "flat", // <1>
-    "parentId" : "indicator" // <2>
+    "parentId" : "indicator", // <2>
+    "severity" : "ERROR"
   }
 }
 ----
