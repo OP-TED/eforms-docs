@@ -68,35 +68,124 @@ The field repository is an array of fields, preceded by some version information
 <3> version number and date of the data used to create this file
 <4> list of fields
 
-== Field characteristics
+== Field characteristics (properties)
 
-For each field, various characteristics of the field are indicated.
+For each field, various of its characteristics are indicated as properties of the JSON object that represents it.
 
 [source,json]
 ----
-    {
-      "id": "BT-01-notice", // <1>
-      "name": "Procedure Legal Basis", // <2>
-      "btId": "BT-01", // <3>
-      "xpath": "/*/cbc:RegulatoryDomain", // <4>
-      "type": "internal-code", // <5>
-      "legalType": "CODE", // <6>
-      "description": "", // <7>
-      "repeatable": false, // <8>
-      "codeList": "legal-basis" // <9>
-	  ...
+{
+  {
+    "id" : "BT-01-notice", // <1>
+    "parentNodeId" : "ND-0", // <2>
+    "name" : "Procedure Legal Basis", // <3>
+    "btId" : "BT-01", // <4>
+    "xpathAbsolute" : "/*/cbc:RegulatoryDomain", // <5>
+    "xpathRelative" : "cbc:RegulatoryDomain", // <6>
+    "type" : "internal-code", // <7>
+    "legalType" : "CODE", // <8>
+    "repeatable" : { // <9>
+      "value" : false
+    },
+    "codeList" : { // <10>
+      "value" : {
+        "id" : "legal-basis",
+        "type" : "flat"
+      }
     }
+  },
+...
+}
 ----
 <1> Identifier of the field.
-<2> Short name of the field.
-<3> Identifier of the business term to which the field corresponds.
-<4> Location of the field in an XML notice, as an XPath.
-<5> Technical data type of the field.
-<6> Data type of the business term, as indicated in the eForms Regulation.
-<7> Description of the field (currently not used).
-<8> Indicates if the field can appear more than once inside its container
-<9> Identifier of the code list from which the field value must belong.
+<2> Identifier of the node (XML element) that contains the field.
+<3> Short name of the field.
+<4> Identifier of the business term to which the field corresponds.
+<5> Location of the field in an XML notice, as an absolute xPath.
+<6> Location of the field in an XML notice, relative to its parent node.
+<7> Technical data type of the field.
+<8> Data type of the business term, as indicated in the eForms Regulation.
+<9> Indicates if the field can appear more than once inside its container
+<10> Identifier of the code list from which the field value must belong.
 Applicable only for fields of type "code" or "internal-code"
+
+
+=== Property Values
+
+Some properties are assigned with a static value; a value that does not depend on any conditions and does not change. For example the "btId" property (indicating the business term associated with the field) is assigned a static value because it is always the same. 
+
+The properties that are assigned with static values are listed below:
+
+* `id`
+* `parentNodeId`
+* `name`
+* `btId`
+* `xpathAbsolute`
+* `xpathRelative`
+* `type`
+* `legalType`
+
+Static properties are always assigned with a scalar value (a string, a boolean, a number etc.).
+
+Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different conditions like the notice type it is used in, or the values of other fields in the same notice etc.
+
+Dynamic values are represented with a JSON object. The object always contains a `value` property which indicates the default value for the  dynamic property and, when necessary, a `constraints` list that indicates the conditions under which the dynamic property may take different values.
+
+
+.Dynamic property value example
+[example]
+====
+
+In the following snippet, a dynamic value is assigned to the `forbidden` dynamic property:
+
+[source,json]
+----
+"forbidden" : {
+  "value" : false,  // <1>
+  "constraints" : [ { // <2>
+    "noticeTypes" : [ "22", "38", "39", "40", "X01", "X02" ], // <3>
+    "value" : true, // <4>
+    "severity" : "ERROR"
+  }, {
+    "noticeTypes" : [ "2", "5", "8", "11", "14", "15", "17", "19", "24", "30", "32", "35", "37" ], 
+    "condition" : "!(field('BT-740-Procedure-Buyer')=='not-cont-ent')", // <5>
+    "value" : true, // <4>
+    "severity" : "ERROR"
+  } ]
+},
+----
+<1> The default value of the property will be false in this example
+<2> A list of constraints is provided.  
+<3> The first constraint in this example specifies a different value than the default one in case the field is used in one of the notice types indicated.
+<4> The value of this dynamic field in case the constraint is applicable is indicated here.
+<5> The second constraint in this example, does not only require specific notice types but also indicates specific condition that need to be true for the constraint to be applicable.
+====
+
+All dynamic values are always represented in the same was as in the example above. The structure of this object is illustrated in the abstract snippet below:
+
+[source,json]
+----
+"propertyName" : {  
+  "value" : "scalar1", // <1>
+  "constraints" : [ // <2>
+    {
+      "noticeTypes" : [ "noticeType1", "noticeType2" ], // <3>
+      "condition": "Boolean expression in SpEL", // <4>
+      "value" : "scalar2" // <5>
+    },
+    ... // <6>
+  ]
+}
+----
+<1> Use this default value for the property if none of the provided constraints applies. This value is always provided.
+<2> A list of constraints will be provided if needed. If not, the use the default value provided.
+<3> This constraint only applies for these notice types. Every constraint specifies the notice types for which it applies. 
+<4> This condition must evaluate to true for the constraint to be applicable. A condition is provided only when one is needed. 
+<5> This is the value that the property should take if the constraint is applicable.
+<6> Multiple constraints may be provided. If none applies, then use the default value provided for the property.
+
+
+For more details on the syntax of conditions, see <<Syntax for conditions>> below.
 
 === Field data types
 
@@ -119,113 +208,88 @@ The possible technical data types for a field are:
 * `text`: language independent string
 * `text-multilingual`: string that can be translated in multiple languages
 
-== Field constraints
+== Dynamic properties
 
-In addition to the information described above, constraints that apply to a
-field are also indicated.
+=== Repeatable
 
-Those constraints correspond to a subset of the validation rules of an eForms
-notice.
+The `repeatable` property indicates whether or not a field can appear more than once inside its container. The current version of the eForms SDK  does not contain any fields that are only repeatable under certain conditions. However the `repeatable` property is a dynamic property so that  constraints can added to this property if needed in the future.
 
-=== Forbidden and mandatory constraints
+[source,json]
+----
+"repeatable" : {
+  "value" : false
+}
+----
 
-These constraints indicate for which notice types and under which conditions the field is forbidden or mandatory.
+=== Forbidden
 
-If no specific forbidden or mandatory constraint exists for a notice type, the field is considered optional: it can be present but is not required.
+The `forbidden` property indicates whether or not the field can be used in specific notice types. 
 
-Please note that the UBL specification does not permit XML documents
+[source,json]
+----
+"forbidden" : {
+  "value" : false, // <1>
+  "constraints" : [ {
+    "noticeTypes" : [ "38", "39", "40", "X01", "X02" ],
+    "value" : true,
+    "severity" : "ERROR" // <2>
+  } ]
+}
+----
+<1> Every field is allowed by default in all notice types unless a constraint forbids it.
+<2> The severity can be either "ERROR" or "WARNING" and is provided for use by validation systems.
+
+=== Mandatory
+
+The `mandatory` property indicates whether or not a field is required to have a value. 
+
+[source,json]
+----
+"mandatory" : {
+  "value" : false, // <1>
+  "constraints" : [ {
+    "noticeTypes" : [ "1", "4", "7", "10", "14", "16", "19", "23", "29", "32", "35", "36", "CEI", "T01", "T02" ],
+    "value" : true,
+    "severity" : "ERROR" // <2>
+  } ]
+}
+----
+<1> Every field is optional by default in all notice types unless a constraint specifies otherwise.
+<2> The severity can be either "ERROR" or "WARNING" and is provided for use by validation systems.
+
+
+NOTE: The UBL specification does not permit XML documents
 to contain empty elements or attributes. So a field being mandatory means that the corresponding XML element must contain a value.
 
-If the constraint does not depend on anything other that the notice type, the condition is indicated as "true".
+CAUTION: The value of the `forbidden` property must take precedence over the value the `mandatory` property. If a field is forbidden, then it should not be present in the notice regardless of the value of its `mandatory` property. You should always check first if a field is forbidden or not.Then, consider whether the is mandatory or optional only if the field is not forbidden.
 
-.Simple constraints
+=== Codelist
+
 [source,json]
 ----
-    {
-      "id": "BT-11-Procedure-Buyer",
-      ...
-      "constraints": [
-        {
-          "noticeTypes" : [ "38", "39", "40" ],
-          "forbidden" : "true"
-        },
-        {
-          "noticeTypes": [ "1", "4" ],
-          "mandatory" : "true"
-        }
-      ]
-    }
+"codeList" : {
+  "value" : {
+    "id" : "accelerated-procedure",
+    "type" : "flat",
+    "parentId" : "indicator" // <1>
+  }
+}
 ----
+<1> Indicates the parent codelist. Provided only for tailored codelists.
 
-The forbidden or mandatory constraint of a field can also depend on more complex conditions:
-the presence or value of another field, etc.
 
-.Constraint with a condition
+=== Pattern
+
 [source,json]
 ----
-    {
-      "noticeTypes" : [ "2", "5" ],
-      "forbidden" : "!(field('BT-740-Procedure-Buyer')=='cont-ent')" // <1>
-    },
-    {
-      "noticeTypes" : [ "1", "2", "4", "5" ],
-      "mandatory" : "true" // <2>
-    }
+
 ----
-<1> This field is forbidden for notices "2" and "5" if the field BT-740-Procedure-Buyer does not contain the value 'cont-ent'.
-<2> If allowed, this field is mandatory for notices "1", "2", "4" and "5".
 
-NOTE: The forbidden and mandatory constraints must be considered together: a field must first be allowed (not forbidden) before it can be considered mandatory.
 
-For more details on the syntax of conditions, see <<Syntax for conditions>> below.
-
-=== Value constraints
-
-If the value of a field must follow a specific format, it is indicated as a
-regular expression.
-
-.Regular expression constraint
-[source,json]
-----
-    {
-      "id" : "BT-137-Lot",
-      ...
-      "constraints" : [
-        {
-          "regex" : "^LOT-\\d{4}$" // <1>
-        }
-      ]
-    }
-----
-<1> The value of this field must be "LOT-" followed by 4 digits.
-
-In the regular expression, the backslash character "\" is escaped as "\\".
-
-=== Interval constraints
-
-For numerical fields, the minimum and maximum allowed value can be specified as
-a constraint.
-
-.Regular expression constraint
-[source,json]
-----
-    {
-      "id" : "BT-31-Procedure",
-      "type" : "number",
-      ...
-      "constraints" : [
-        {
-          "minNumber" : 1,
-          "maxNumber" : 999999 // <1>
-        }
-      ]
-    }
-----
-<1> The value of this field must be between 1 and 999999.
 
 === Syntax for conditions
 
-The value of the `forbidden` and `mandatory` properties is a string representing a boolean expression.
+The value of the `condition` property of a constraint is a string representing a boolean expression.
 
 The syntax of the expression is based on the
 https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions[Spring
@@ -233,4 +297,4 @@ Expression Language (SpEL)], limited to a small number of boolean and comparison
 
 As indicated above, if there is no specific condition, the value indicated is `true`, which is also a valid SpEL expression.
 
-A field can be referenced using its identifier: `field('BT-31-Procedure')`.
+A field is referenced using its identifier: `field('BT-31-Procedure')`.
