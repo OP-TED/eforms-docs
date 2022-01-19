@@ -59,14 +59,19 @@ The field repository is an array of fields, preceded by some version information
   },
   "fields": [ // <4>
     { ... },
-	...
+    ...
+  ],
+  "xmlStructure" : [ // <5>
+    { ... },
+    ...
   ]
 }
 ----
-<1> version of the UBL standard used
-<2> version of the eForms SDK the file belongs to
-<3> version number and date of the data used to create this file
-<4> list of fields
+<1> Version of the UBL standard used.
+<2> Version of the eForms SDK the file belongs to.
+<3> Version number and date of the data used to create this file.
+<4> List of fields.
+<5> General structure of XML notices. See the xref:xml-structure.adoc[] page.
 
 == Field properties
 
