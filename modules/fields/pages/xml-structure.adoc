@@ -1,0 +1,72 @@
+= XML Structure
+
+== Introduction
+
+The field metadata in the fields repository file (fields.json) describe the properties and behaviour of each field. Each field, representing an element in an XML document, is ultimately part of a greater tree-like structure. Actually, there are more than one such structures that each field is a part of:
+
+* The physical structure in which each field is stored inside the notice XML file.
+This page documents how this physical structure is represented in the SDK.
+* The visual structure that is used to present a notice on the screen for filling it in.
+This structure is provided by the xref:notice-types:index.adoc[notice type definitions].
+* The visual structure that is used to visualise a notice (e.g. in PDF or HTML).
+This structure will be provided in the form of notice templates in a future release of the SDK.
+
+This physical structure (XML structure) is included in the eForms SDK to allow implementers to discern the location of a field when creating or validating a notice XML file.
+
+== XML structure in the field repository
+
+The XML structure is provided as a flat list of "nodes" at the end of the field repository file (fields.json). Every node represents an XML element. Each node can "contain" other nodes and/or fields. Every field provides a `parentNodeId` property which points to its parent node in the XML structure. Every node provides a `parentId` property which points to its parent node. Using this information you can reconstruct the entire XML tree. The absolute XPath of each node is also provided as well as the XPath relative to its parent node.
+
+NOTE: The `xmlStructure` list provided in fields.json is a flat list. The logical hierarchy of the nodes is represented using the `parentId` property.
+
+NOTE: Not every possible XML element is represented with a node in the provided structure. Some XML elements have been omitted (actually combined with their only child element) because they do not directly contain more than one child nodes or any fields of their own.
+
+NOTE: The XPath provided for some nodes in the `xmlStructure` specifies a predicate (within square brackets). This is because the same XML element may have different semantics depending on some condition. This variation in semantics is significant for the physical structure of the notice (XML structure) and is represented with separate nodes in the `xmlStructure` list.
+
+In the abstract therefore:
+
+* The physical structure of an XML notice is represented in the SDK with the use of a hierarchy of "nodes" and "fields".
+* Each node represents an XML element that contains other nodes or fields.
+* XML elements that contain only one child element, are combined together with their only child element into one "node".
+* XML elements with conditionally varying semantics are represented by multiple "nodes" (one for each variant).
+
+
+== Properties of a node
+
+The following snippet shows the information provided for each node.
+
+[source,json]
+----
+  {
+    "id" : "ND-493", // <1>
+    "parentId" : "ND-594", // <2>
+    "xpathAbsolute" : "/*/cac:ProcurementProject/cac:RealizedLocation", // <3>
+    "xpathRelative" : "cac:RealizedLocation", // <4>
+    "repeatable" : true // <5>
+  }
+----
+<1> Identifier of the node.
+<2> Identifier of the direct parent node that contains the node.
+<3> Location of the node in an XML notice, as an absolute XPath.
+<4> Location of the node in an XML notice, as an XPath relative to its parent node.
+<5> Indicates if the node can be repeated inside its parent.
+
+The absolute XPath of a node can be constructed from the XPaths of its parent and successive ancestors. We provide it for each node as a convenience.
+
+== Document root
+
+In the eForms schema, there are several elements that can be used as document root, depending on the type of notice: `PriorInformationNotice`, `ContractNotice`, etc.
+
+As the structure of the XML is consistent and quite similar between those various document roots, we have chosen to not make a distinction between them in our description of the XML structure. So there is a single root node, indicated as follows:
+
+[source,json]
+----
+  {
+    "id" : "ND-0",
+    "xpathAbsolute" : "/*",
+    "xpathRelative" : "/*",
+    "repeatable" : false
+  }
+----
+
+The xref:notice-types:index.adoc[notice type definitions] indicate the root element that must be used for each specific notice type.

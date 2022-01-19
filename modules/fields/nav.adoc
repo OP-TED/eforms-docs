@@ -1,1 +1,2 @@
 * xref:index.adoc[Field metadata]
+** xref:xml-structure.adoc[XML Structure]
