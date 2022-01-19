@@ -101,7 +101,7 @@ For each field, various of its characteristics are indicated as properties of th
 <2> Identifier of the node (XML element) that contains the field.
 <3> Short name of the field.
 <4> Identifier of the business term to which the field corresponds.
-<5> Location of the field in an XML notice, as an absolute xPath.
+<5> Location of the field in an XML notice, as an absolute XPath.
 <6> Location of the field in an XML notice, relative to its parent node.
 <7> Technical data type of the field.
 <8> Data type of the business term, as indicated in the eForms Regulation.
@@ -157,8 +157,8 @@ In the following snippet, a dynamic value is assigned to the `forbidden` dynamic
 <1> The default value of the property will be false in this example
 <2> List of constraints for this property.
 <3> The first constraint in this example specifies a different value than the default one in case the field is used in one of the notice types indicated.
-<4> The value of this dynamic field in case the constraint is applicable is indicated here.
-<5> The second constraint in this example, does not only require specific notice types but also indicates specific condition that need to be true for the constraint to be applicable.
+<4> The value of this dynamic property in case the constraint applies is indicated here.
+<5> The second constraint in this example, does not only require specific notice types but also indicates a specific condition that needs to be true for the constraint to be applicable.
 ====
 
 All dynamic values are always represented in the same was as in the example above. The structure of this object is illustrated in the abstract snippet below:
@@ -242,7 +242,7 @@ The `forbidden` property indicates whether or not the field can be used in speci
 }
 ----
 <1> Every field is allowed by default in all notice types unless a constraint forbids it.
-<2> The severity can be either "ERROR" or "WARNING" and is provided for use by validation systems.
+<2> The severity can be either "ERROR" or "WARN" and is provided for use by validation systems.
 
 === Mandatory
 
@@ -252,6 +252,7 @@ The `mandatory` property indicates whether or not a field is required to have a 
 ----
 "mandatory" : {
   "value" : false, // <1>
+  "severity" : "ERROR", // <2>
   "constraints" : [ {
     "noticeTypes" : [ "1", "4", "7", "10", "14", "16", "19", "23", "29", "32", "35", "36", "CEI", "T01", "T02" ],
     "value" : true,
@@ -260,7 +261,7 @@ The `mandatory` property indicates whether or not a field is required to have a 
 }
 ----
 <1> Every field is optional by default in all notice types unless a constraint specifies otherwise.
-<2> The severity can be either "ERROR" or "WARNING" and is provided for use by validation systems.
+<2> The severity can be either "ERROR" or "WARN" and is provided for use by validation systems.
 
 
 NOTE: The UBL specification does not permit XML documents
@@ -270,15 +271,19 @@ CAUTION: The value of the `forbidden` property must take precedence over the val
 
 === Codelist
 
+The `codeList` property indicates that the field only accepts a specific set of values, and these values are codes from in a specific xref:codelists:index.adoc[codelist defined for eForms].
+
+The value is a JSON object that contains the identifier of the codelist, and some information about this codelist.
+
 [source,json]
 ----
 "codeList" : {
   "value" : {
     "id" : "accelerated-procedure",
     "type" : "flat", // <1>
-    "parentId" : "indicator", // <2>
-    "severity" : "ERROR"
-  }
+    "parentId" : "indicator" // <2>
+  },
+  "severity" : "ERROR"
 }
 ----
 <1> Indicates that the codelist is a simple list of values. The few codelists that have a structure, like NUTS and CPV, are indicated as "hierarchical".
@@ -287,11 +292,18 @@ CAUTION: The value of the `forbidden` property must take precedence over the val
 
 === Pattern
 
+The `pattern` property indicates that the value of the field must match a specific regular expression pattern.
+
 [source,json]
 ----
-
+"pattern" : {
+  "value" : "^LOT-\\d{4}$", // <1>
+  "severity" : "ERROR"
+}
 ----
+<1> The value of this field must be "LOT-" followed by 4 digits.
 
+In the regular expression, the backslash character "\" is escaped as "\\".
 
 
 === Syntax for conditions
