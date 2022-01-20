@@ -15,7 +15,7 @@ different location in the XML, and will be subject to different rules, than the
 estimated value of the whole procedure.
 
 The notion of fields was added to resolve those ambiguities. Each field is
-related to one single business term, and corresponds to a more precise
+related to one single business term in a particular context, and corresponds to a more precise
 definition of the information it contains. The identifier of a field always
 starts with the identifier of the corresponding business term.
 
@@ -120,8 +120,8 @@ The possible technical data types for a field are:
 * `email`: string representing an e-mail address
 * `phone`: string representing a phone number
 * `url`: string representing a URL
-* `text`: language independent string
-* `text-multilingual`: string that can be translated in multiple languages
+* `text`: language-independent string
+* `text-multilingual`: string that can be translated into multiple languages
 
 == Field constraints
 
