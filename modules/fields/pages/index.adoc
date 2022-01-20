@@ -15,7 +15,7 @@ different location in the XML, and will be subject to different rules, than the
 estimated value of the whole procedure.
 
 The notion of fields was added to resolve those ambiguities. Each field is
-related to one single business term, and corresponds to a more precise
+related to one single business term in a particular context, and corresponds to a more precise
 definition of the information it contains. The identifier of a field always
 starts with the identifier of the corresponding business term.
 
@@ -75,7 +75,7 @@ The field repository is an array of fields, preceded by some version information
 
 == Field properties
 
-For each field, various of its characteristics are indicated as properties of the JSON object that represents it.
+For each field, it's various characteristics are indicated as properties of the JSON object that represents it.
 
 [source,json]
 ----
@@ -161,12 +161,12 @@ In the following snippet, a dynamic value is assigned to the `forbidden` dynamic
 ----
 <1> The default value of the property will be false in this example
 <2> List of constraints for this property.
-<3> The first constraint in this example specifies a different value than the default one in case the field is used in one of the notice types indicated.
-<4> The value of this dynamic property in case the constraint applies is indicated here.
+<3> The first constraint in this example specifies a different value than the default one in the case that the field is used in one of the notice types indicated.
+<4> The value of this dynamic property in the case that the constraint applies is indicated here.
 <5> The second constraint in this example, does not only require specific notice types but also indicates a specific condition that needs to be true for the constraint to be applicable.
 ====
 
-All dynamic values are always represented in the same was as in the example above. The structure of this object is illustrated in the abstract snippet below:
+All dynamic values are always represented in the same way as in the example above. The structure of this object is illustrated in the abstract snippet below:
 
 [source,json]
 ----
@@ -185,12 +185,12 @@ All dynamic values are always represented in the same was as in the example abov
 }
 ----
 <1> Use this default value for the property if none of the provided constraints applies. This value is always provided.
-<2> A list of constraints will be provided if needed. If not, the use the default value provided.
+<2> A list of constraints will be provided if needed. If not, use the default value provided.
 <3> This constraint only applies for these notice types. Every constraint specifies the notice types for which it applies. 
 <4> This condition must evaluate to true for the constraint to be applicable. A condition is provided only when one is needed. 
 <5> This is the value that the property should take if the constraint is applicable.
 <6> The severity is provided for validation systems. It may be either "ERROR" or "WARN". "WARN" indicates that a notice that does not comply with the provided value is still considered valid.
-<7> Multiple constraints may be provided. If none applies, then use the default value provided for the property.
+<7> Multiple constraints may be provided. If none apply, then use the default value provided for the property.
 
 
 For more details on the syntax of conditions, see <<Syntax for conditions>> below.
@@ -213,8 +213,8 @@ The possible technical data types for a field are:
 * `email`: string representing an e-mail address
 * `phone`: string representing a phone number
 * `url`: string representing a URL
-* `text`: language independent string
-* `text-multilingual`: string that can be translated in multiple languages
+* `text`: language-independent string
+* `text-multilingual`: string that can be translated into multiple languages
 
 == Dynamic properties
 
@@ -276,7 +276,7 @@ CAUTION: The value of the `forbidden` property must take precedence over the val
 
 === Codelist
 
-The `codeList` property indicates that the field only accepts a specific set of values, and these values are codes from in a specific xref:codelists:index.adoc[codelist defined for eForms].
+The `codeList` property indicates that the field only accepts a specific set of values, and these values are codes from a specific xref:codelists:index.adoc[codelist defined for eForms].
 
 The value is a JSON object that contains the identifier of the codelist, and some information about this codelist.
 
