@@ -75,7 +75,7 @@ The field repository is an array of fields, preceded by some version information
 
 == Field properties
 
-For each field, it's various characteristics are indicated as properties of the JSON object that represents it.
+The various characteristics of each field are indicated as properties of the JSON object that represents it.
 
 [source,json]
 ----
