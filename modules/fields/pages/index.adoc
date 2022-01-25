@@ -80,26 +80,28 @@ For each field, various characteristics of the field are indicated.
 ----
     {
       "id": "BT-01-notice", // <1>
-      "name": "Procedure Legal Basis", // <2>
-      "btId": "BT-01", // <3>
-      "xpath": "/*/cbc:RegulatoryDomain", // <4>
-      "type": "internal-code", // <5>
-      "legalType": "CODE", // <6>
-      "description": "", // <7>
-      "repeatable": false, // <8>
-      "codeList": "legal-basis" // <9>
+      "parentNodeId" : "ND-0", // <2>
+      "name": "Procedure Legal Basis", // <3>
+      "btId": "BT-01", // <4>
+      "xpath": "/*/cbc:RegulatoryDomain", // <5>
+      "type": "internal-code", // <6>
+      "legalType": "CODE", // <7>
+      "description": "", // <8>
+      "repeatable": false, // <9>
+      "codeList": "legal-basis" // <10>
 	  ...
     }
 ----
 <1> Identifier of the field.
-<2> Short name of the field.
-<3> Identifier of the business term to which the field corresponds.
-<4> Location of the field in an XML notice, as an XPath.
-<5> Technical data type of the field.
-<6> Data type of the business term, as indicated in the eForms Regulation.
-<7> Description of the field (currently not used).
-<8> Indicates if the field can appear more than once inside its container
-<9> Identifier of the code list from which the field value must belong.
+<2> Identifier of the node (XML element) that contains the field.
+<3> Short name of the field.
+<4> Identifier of the business term to which the field corresponds.
+<5> Location of the field in an XML notice, as an XPath.
+<6> Technical data type of the field.
+<7> Data type of the business term, as indicated in the eForms Regulation.
+<8> Description of the field (currently not used).
+<9> Indicates if the field can appear more than once inside its container
+<10> Identifier of the code list from which the field value must belong.
 Applicable only for fields of type "code" or "internal-code"
 
 === Field data types
