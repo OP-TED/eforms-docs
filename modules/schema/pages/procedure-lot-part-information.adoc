@@ -853,13 +853,13 @@ cac:LotDistribution{zwsp}/cbc:MaximumLotsSubmittedNumeric
 
 11+^|*Group definition* 
 
-|*Group Identifier (BT-330)* | xref:maxLotsSection[xrefstyle=short] h|1 |-- |-- |-- |-- |-- |-- |-- a|
+|*Group Identifier (BT-330)* | xref:maxLotsSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:LotDistribution{zwsp}/cac:LotsGroup{zwsp}/cbc:ID
 ----
 
-|*Group Lot Identifier (BT-1375)* | xref:maxLotsSection[xrefstyle=short] h|1 |-- |-- |-- |-- |-- |-- |-- 
+|*Group Lot Identifier (BT-1375)* | xref:maxLotsSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
@@ -2248,6 +2248,13 @@ a|
 cac:FrameworkAgreement{zwsp}/cbc:EstimatedMaximumValueAmount
 ----
 
+|*Buyer Categories (OPT-090)* |xref:frameworkAgreementSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- h|? 
+a|
+[source,xpath,subs=attributes]
+----
+cac:FrameworkAgreement{zwsp}/cac:SubsequentProcessTenderRequirement{zwsp}/cbc:Name[./text()='buyer-categories']
+----
+
 |*Framework Buyer Categories (BT-111)* |xref:frameworkAgreementSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- h|? 
 a|
 [source,xpath,subs=attributes]
@@ -2320,7 +2327,7 @@ communication.
 This optional element is to be used, for PIN and CN notices only, in
 conjunction with BT-724 & BT-124. It shall be marked using the extension
 mechanism at the level of the "_cac:TenderingProcess_" element of the
-Lot or Group of Lots it applies to.
+Lot or Part it applies to.
 
 [source,xml]
 ----
@@ -2893,7 +2900,7 @@ codelist.
 For a CAN, when, for a given Lot, a Framework Agreement is involved, only the following
 information is expected at the level of the Lot definition:
 
-* The framework buyer categories (BT-111), and
+* The framework buyer categories (BT-111) with its associated technical field (OPT-090), and
 
 * The Framework Agreement type (BT-765).
 
