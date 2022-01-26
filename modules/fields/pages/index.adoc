@@ -88,7 +88,10 @@ For each field, various characteristics of the field are indicated.
       "legalType": "CODE", // <7>
       "description": "", // <8>
       "repeatable": false, // <9>
-      "codeList": "legal-basis" // <10>
+      "codeList" : { // <10>
+        "id" : "legal-basis",
+        "type" : "flat"
+      },
 	  ...
     }
 ----
