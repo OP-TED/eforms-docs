@@ -11,7 +11,7 @@ endif::[]
 eForms is the notification standard for public procurement procedures in the EU. The eForms SDK is a collection of resources providing the foundation for building eForms applications.
 ifeval::[{eforms_latest_version} != {eforms_version}]
 
-IMPORTANT: You are currently reading the documentation that was published for eFroms SDK version *{eforms_version}*. +
+IMPORTANT: You are currently reading the documentation that was published for eForms SDK version *{eforms_version}*. +
 The latest version of eForms SDK is xref:{eforms_latest_version}@ROOT:index.adoc[*{eforms_latest_version}*]. 
 endif::[]
 
@@ -19,7 +19,7 @@ endif::[]
 The following topics are included in this version of the eForms Documentation:
 
 * xref:schema:index.adoc[The eForms Schema] +
-Extensive documentation of the XML Schema used by eFroms.
+Extensive documentation of the XML Schema used by eForms.
 * xref:fields:index.adoc[Field Metadata] +
 Learn what a field is, and how its properties and behaviours are  defined.
 * xref:codelists:index.adoc[Codelists in the SDK] +
@@ -32,5 +32,5 @@ How each notice type is structured.
 
 TIP: For every release of the eForms SDK, a copy of the corresponding documentation is maintained in this website. You can select the version of documentation that you want to consult by selecting the corresponding version of the SDK either in the dropdown menu available on the top right of this page, or the component navigation panel available on the bottom left of each page. +
 ifeval::[{eforms_latest_version} == {eforms_version}]
-You are currently reading the documentation published for the latest version of eFroms SDK ({eforms_version}).
+You are currently reading the documentation published for the latest version of eForms SDK ({eforms_version}).
 endif::[]
