@@ -517,11 +517,11 @@ An XML instance excerpt is provided below for illustration:
             <cbc:MaximumValueAmount currencyID="EUR">12345</cbc:MaximumValueAmount>
         </efac:FrameworkAgreementValues>
         <efac:ReceivedSubmissionsStatistics>
-            <efbc:StatisticsCode>sme</efbc:StatisticsCode>
+            <efbc:StatisticsCode listName="received-submission-type">tenders</efbc:StatisticsCode>
             <efbc:StatisticsNumeric>12</efbc:StatisticsNumeric>
         </efac:ReceivedSubmissionsStatistics>
         <efac:ReceivedSubmissionsStatistics>
-            <efbc:StatisticsCode>eu</efbc:StatisticsCode>
+            <efbc:StatisticsCode listName="received-submission-type">t-sme</efbc:StatisticsCode>
             <efbc:StatisticsNumeric>6</efbc:StatisticsNumeric>
         </efac:ReceivedSubmissionsStatistics>
         <efac:SettledContract>

@@ -399,7 +399,7 @@ fields.
             <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
         </efac:FieldsPrivacy>
         <!-- # UNPUB-16 : Received Submissions Type (BT-760) publication will be delayed -->
-        <efbc:StatisticsCode>sme</efbc:StatisticsCode>
+        <efbc:StatisticsCode listName="received-submission-type">t-sme</efbc:StatisticsCode>
         <!-- # UNPUB-17 : Received Submissions Count (BT-759) publication will be delayed -->
         <efbc:StatisticsNumeric>12</efbc:StatisticsNumeric>
     </efac:ReceivedSubmissionsStatistics>
