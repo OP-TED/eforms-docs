@@ -10,10 +10,11 @@ notice (also often referred to as Corrigenda),
 * Inform about changes to information not inside the notice
 (e.g. changed procurement documents),
 
-Changes may apply to notices of any form type. A change notice may only
-concern a single notice and  contains all the information from that
-initial notice with applied changes in addition to the information on
-those changes.
+While changes may apply to notices of any form type, the Change notice 
+Form Type and Notice Type values must respectively correspond to 
+"change" and "corr". A change notice may only concern a single notice 
+and  contains all the information from that initial notice with applied 
+changes in addition to the information on those changes.
 
 When a change is applied to a previous change notice, the consolidated
 text must integrate all changes from previous versions, and only the

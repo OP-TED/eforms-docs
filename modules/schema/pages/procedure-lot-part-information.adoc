@@ -978,7 +978,7 @@ element "_efbc:SecondStageIndicator_" (BT-40), with its value set to
 "true". This element should be omitted when the criteria/criterion is 
 not used for selection of candidates for a second stage. If the element
 is present, then details about the criteria/criterion associated numbers 
-must be provided (BT-7531, BT-7532, BT-752).
+may be provided (BT-7531, BT-7532, BT-752).
 
 These details are reported in the efac:CriterionParameter element. The 
 type of criterion is indicated by the efbc:ParameterCode element, with 
