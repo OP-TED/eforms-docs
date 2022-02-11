@@ -761,7 +761,7 @@ efbc:NaturalPersonIndicator
 ----
 efbc:ListedOnRegulatedMarketIndicator
 ----
-|Only for tenderer and winner
+|Only for tenderer and winner. Only two values are possible "true" and "false". 
 
 |*Beneficial Owner Reference (OPT-302)* ^|O
 a|

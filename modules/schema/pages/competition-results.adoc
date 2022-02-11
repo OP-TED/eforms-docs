@@ -252,7 +252,7 @@ cbc:TenderResultCode
 purchasing system is terminated. No further contracts, besides those
 published in this notice, will be awarded in the dynamic purchasing
 system. This field can be used even if no contracts are awarded in the
-contract award notice. |*?* a|
+contract award notice. Only two values are possible "true" and "false". |*?* a|
 [source,xpath,subs=attributes]
 ----
 efbc:DPSTerminationIndicator
@@ -790,7 +790,7 @@ efac:SubcontractingTerm{zwsp}/efbc:TermPercent
 ---- 
 
 |*Subcontracting (BT-773)* |Whether at least a part of the contract will
-be subcontracted |*?* a|
+be subcontracted. Possible values are from the "applicability" codelist and restricted to "yes" and "no". |*?* a|
 [source,xpath,subs=attributes]
 ----
 efac:SubcontractingTerm{zwsp}/efbc:TermCode
@@ -798,7 +798,7 @@ efac:SubcontractingTerm{zwsp}/efbc:TermCode
 
 |*Subcontracting Percentage Known (BT-731)* |The buyer knows at least
 the estimated percentage of the contract that the contractor will
-subcontract to third parties compared to the whole contract. |*?*
+subcontract to third parties compared to the whole contract. Only two values are possible "true" and "false". |*?*
 a|
 [source,xpath,subs=attributes]
 ----
@@ -807,7 +807,7 @@ efac:SubcontractingTerm{zwsp}/efbc:PercentageKnownIndicator
 
 |*Subcontracting Value Known (BT-730)* |The buyer knows at least the
 estimated value of the part of the contract that the contractor will
-subcontract to third parties. |*?*
+subcontract to third parties. Only two values are possible "true" and "false". |*?*
 a|
 [source,xpath,subs=attributes]
 ----
@@ -998,7 +998,7 @@ cbc:URI
 ---- 
 
 |*Contract Framework Agreement (BT-768)* |The contract is awarded within
-a framework agreement. |*?* a|
+a framework agreement. Only two values are possible "true" and "false". |*?* a|
 [source,xpath,subs=attributes]
 ----
 efbc:ContractFrameworkIndicator

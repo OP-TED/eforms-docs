@@ -201,7 +201,7 @@ This covers the withheld publication of:
 
 * Tender Value Highest (BT-711),
 
-* Review Requests (BT-712).
+* Buyer Review Complainants (BT-712).
 
 The codes to be used to identify the field and the location where the
 unpublish components are to be found are given in <<codesForUnpublishedFieldsAtLotResultLevelTable>>.
@@ -260,7 +260,7 @@ a|
 {LotResult}/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='ten-val-hig']
 ----
 
-|**re**v**-req** |Review Requests (BT-712)
+|*rev-req* |Buyer Review Complainants (BT-712)
 a|
 [source,xpath,subs=attributes]
 ----
@@ -333,7 +333,7 @@ fields.
     </cac:PayerParty>
     <efac:AppealRequestsStatistics>
         <efac:FieldsPrivacy>
-            <!-- # UNPUB-13 : Review Requests (BT-712) will not be published until March 2nd, 2022 -->
+            <!-- # UNPUB-13 : Buyer Review Complainants (BT-712) will not be published until March 2nd, 2022 -->
             <efbc:FieldIdentifierCode listName="non-publication-identifier">rev-req</efbc:FieldIdentifierCode>
             <cbc:ReasonCode listName="non-publication-justification"></cbc:ReasonCode>
             <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
@@ -341,7 +341,7 @@ fields.
             <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
         </efac:FieldsPrivacy>
         <efbc:StatisticsCode listName="..">..</efbc:StatisticsCode>
-        <!-- # UNPUB-13 : Review Requests (BT-712) publication will be delayed -->
+        <!-- # UNPUB-13 : Buyer Review Complainants (BT-712) publication will be delayed -->
         <efbc:StatisticsNumeric>2</efbc:StatisticsNumeric>
     </efac:AppealRequestsStatistics>
     <efac:AppealRequestsStatistics>
