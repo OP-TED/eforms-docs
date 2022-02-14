@@ -3586,12 +3586,13 @@ This group may contain the following information:
 
 * Street (BT-5101)
 
-* Code (BT-5141)
+* Country Code (BT-5141)
 
 Use "_cbc:Region_" and a code from the codelist
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/other-place-service[other-place-service]
 to identify regions not covered with the _cbc:CountrySubentityCode_
-(e.g. "country wide", "EEA wide", "anywhere")
+(e.g. "country wide", "EEA wide", "anywhere"). When Place Performance Services Other (BT-727) has the value "anyw-cou",
+the Place Performance Country Code (BT-5141) is mandatory.
 
 [source,xml]
 ----
@@ -3609,7 +3610,7 @@ to identify regions not covered with the _cbc:CountrySubentityCode_
             <cbc:Line>3rd floor</cbc:Line>
         </cac:AddressLine>
         <cac:Country>
-            <cbc:IdentificationCode>GBR</cbc:IdentificationCode>
+            <cbc:IdentificationCode listName="country">GBR</cbc:IdentificationCode>
         </cac:Country>
     </cac:Address>
 </cac:RealizedLocation>

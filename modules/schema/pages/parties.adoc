@@ -216,7 +216,7 @@ An example of mark-up for a buyer is provided below.
             <cbc:PostalZone>2345</cbc:PostalZone>
             <cbc:CountrySubentityCode listName="nuts">XY374</cbc:CountrySubentityCode>
             <cac:Country>
-                <cbc:IdentificationCode>XYZ</cbc:IdentificationCode>
+                <cbc:IdentificationCode listName="country">XYZ</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:PartyLegalEntity>
@@ -242,7 +242,7 @@ An example of mark-up for a buyer is provided below.
             <cbc:PostalZone>2345</cbc:PostalZone>
             <cbc:CountrySubentityCode listName="nuts">XY374</cbc:CountrySubentityCode>
             <cac:Country>
-                <cbc:IdentificationCode>XYZ</cbc:IdentificationCode>
+                <cbc:IdentificationCode listName="country">XYZ</cbc:IdentificationCode>
             </cac:Country>
         </cac:PostalAddress>
         <cac:Contact>
@@ -299,7 +299,7 @@ image::image023.png[image,width=233,height=220]
                 <cbc:PostalZone>87267</cbc:PostalZone>
                 <cbc:CountrySubentityCode listName="nuts">AB123</cbc:CountrySubentityCode>
                 <cac:Country>
-                    <cbc:IdentificationCode>ABC</cbc:IdentificationCode>
+                    <cbc:IdentificationCode listName="country">ABC</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyLegalEntity>
@@ -324,7 +324,7 @@ image::image023.png[image,width=233,height=220]
                 <cbc:PostalZone>2345</cbc:PostalZone>
                 <cbc:CountrySubentityCode listName="nuts">XY374</cbc:CountrySubentityCode>
                 <cac:Country>
-                    <cbc:IdentificationCode>XYZ</cbc:IdentificationCode>
+                    <cbc:IdentificationCode listName="country">XYZ</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             <cac:Contact>
@@ -394,7 +394,7 @@ image::image024.png[image,width=314,height=270]
                 <cbc:PostalZone>87267</cbc:PostalZone>
                 <cbc:CountrySubentityCode listName="nuts">AB123</cbc:CountrySubentityCode>
                 <cac:Country>
-                    <cbc:IdentificationCode>ABC</cbc:IdentificationCode>
+                    <cbc:IdentificationCode listName="country">ABC</cbc:IdentificationCode>
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyLegalEntity>
@@ -438,7 +438,7 @@ reported should satisfy the requirements as expressed in <<organizationDetailsRe
             <cbc:Line>2nd floor</cbc:Line>
         </cac:AddressLine>
         <cac:Country>
-            <cbc:IdentificationCode>GBR</cbc:IdentificationCode>
+            <cbc:IdentificationCode listName="country">GBR</cbc:IdentificationCode>
         </cac:Country>
     </cac:ResidenceAddress>
     <!-- Winner Owner Nationality (BT-706) -->
@@ -1834,7 +1834,7 @@ The Ultimate Beneficial Owners of the organization are:
             <cbc:Line>2nd floor</cbc:Line>
         </cac:AddressLine>
         <cac:Country>
-            <cbc:IdentificationCode>GBR</cbc:IdentificationCode>
+            <cbc:IdentificationCode listName="country">GBR</cbc:IdentificationCode>
         </cac:Country>
     </cac:ResidenceAddress>
     <!-- Winner Owner Nationality (BT-706) -->
