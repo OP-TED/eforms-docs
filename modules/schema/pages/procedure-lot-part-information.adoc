@@ -839,13 +839,13 @@ cac:Language{zwsp}/cbc:ID
 
 11+^|*Lots distribution (+++**+++)*
 
-|*Lots Max Awarded (BT-33)* | xref:maxLotsSection[xrefstyle=short] h|1 |-- |-- |-- |-- |-- |-- |-- a|
+|*Lots Max Awarded (BT-33)* | xref:maxLotsSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:LotDistribution{zwsp}/cbc:MaximumLotsAwardedNumeric
 ----
 
-|*Lots Max Allowed (BT-31)* | xref:maxLotsSection[xrefstyle=short] h|1 |-- |-- |-- |-- |-- |-- |-- a|
+|*Lots Max Allowed (BT-31)* | xref:maxLotsSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:LotDistribution{zwsp}/cbc:MaximumLotsSubmittedNumeric
@@ -1479,7 +1479,7 @@ Whether or not the use of electronic signaturefootnote:[as defined in Regulation
 ----
 
 [[maxLotsSection]]
-=== Lots Max Awarded (BT-33), Lots Max Allowed (BT-31) & Group of ##Lots definition
+=== Lots Max Awarded (BT-33), Lots Max Allowed (BT-31) & Group of Lots definition
 
 Regarding Lots distribution, relevant information is:
 
