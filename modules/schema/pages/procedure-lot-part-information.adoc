@@ -3630,11 +3630,11 @@ the Place Performance Country Code (BT-5141) is mandatory.
 
 Multiple exclusive ways exist to report the Procurement duration:
 
-* Specifying the duration,
+* indicating a code (for the special cases where duration is "unknown" or "unlimited"),
 
-* using start & end dates, or
+* Specifying the duration, or
 
-* other means.
+* using start & end dates,
 
 and the most suitable one shall be adopted.
 
