@@ -1405,10 +1405,11 @@ codelist.
 
 This element is used to specify whether the procurement execution is
 reserved or not, or whether this is not yet known. The element must be
-specified everywhere mandated by the Regulation. The values should be
-"yes", "no" or "not-known". Values come from the
+specified everywhere mandated by the Regulation. The "listName"
+attribute of the cbc:ExecutionRequirementCode element should be set 
+to "reserved-execution". The element possible values are the ones of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/applicability[applicability]
-codelist:
+codelist (i.e. "yes", "no" or "not-known")
 
 [source,xml]
 ----
@@ -1421,8 +1422,8 @@ codelist:
 === Electronic Invoicing (BT-743)
 
 Use of e-invoicing for the contract execution is encoded with the
-"_cbc:ExecutionRequirementCode_" element, the code value selected from
-the
+"_cbc:ExecutionRequirementCode_" element, having its "listName" attribute set to "ecatalog-submission",
+the code value selected from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/permission[permission]
 codelist:
 

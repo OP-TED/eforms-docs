@@ -259,14 +259,11 @@ An example of mark-up for a buyer is provided below.
 This section refers to organizations active during the Public
 Procurement Procedure neither being a buyer nor a tenderer.
 
-When the organization is an economic operator, an indicator may be used
-to specify whether the legal person is a natural person or not (BT-633).
+An indicator may be used to specify whether the legal person is a natural
+person or not (BT-633).
 
-The element "_efbc:NaturalPersonIndicator_" must either
-be omitted for all Non-Tenderer, Non-Buyer organizations, or included 
-for all Non-Tenderer, Non-Buyer organizations. It is not allowed with 
-the value "true" for an organization that has the BT-746 Winner Listed 
-"_efbc:ListedOnRegulatedMarketIndicator_" element with value "true".
+The Winner Listed (BT-746) "_efbc:ListedOnRegulatedMarketIndicator_"
+element is not allowed for Non-Tenderer, Non-Buyer organizations.
 
 The "_efac:Company_" element groups all the elements relative to the legal
 organization and the "_efac:TouchPoint_" element groups the contact
@@ -283,7 +280,6 @@ image::image023.png[image,width=233,height=220]
 [source,xml]
 ----
 <efac:Organization>
-    <!-- Winner Listed (BT-746) -->
     <efbc:NaturalPersonIndicator>false</efbc:NaturalPersonIndicator>
     <efac:Company>
         <cbc:WebsiteURI>http://www.psp.com</cbc:WebsiteURI>
@@ -372,7 +368,7 @@ image::image024.png[image,width=314,height=270]
 <efac:Organization>
     <!-- Winner Listed (BT-746) -->
     <efbc:ListedOnRegulatedMarketIndicator>false</efbc:ListedOnRegulatedMarketIndicator>
-    <!-- When not listed, and not a natural-person, then shall be linked to at least one Beneficial Owner -->
+    <!-- When not listed, and not a natural-person, then may be linked to at least one Beneficial Owner -->
     <efac:UltimateBeneficialOwner>
         <cbc:ID schemeName="ubo">UBO-0001</cbc:ID>
     </efac:UltimateBeneficialOwner>
