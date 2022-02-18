@@ -561,7 +561,7 @@ cac:AllowedSubcontractTerms{zwsp}/cbc:MinimumPercent
 
 11+^|*Execution requirements (+++**+++)*
 
-|*Reserved Execution (BT-736)* | xref:reservedExecutionSection[xrefstyle=short] |-- |-- h|1 |-- |-- h|1 |-- |--
+|*Reserved Execution (BT-736)* | xref:reservedExecutionSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |--
 a|
 [source,xpath,subs=attributes]
 ----
