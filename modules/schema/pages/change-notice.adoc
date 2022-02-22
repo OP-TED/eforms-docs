@@ -63,8 +63,8 @@ A change may cover one or more sections of a notice and the element used to
 reference sections (i.e. BT-13716) is repeatable.
 
 The procurement documents-related elements indicate whether these
-documents have changed and when. For the indicator, both values “true”
-and “false” are allowed; when the value is set to “true”, the date the
+documents have changed and when. For the indicator, either of the two values “true”
+and “false” is used; when the value is set to “true”, the date the
 procurement documents have been changed must be specified, else the
 specification of this date is not allowed. 
 
@@ -164,17 +164,17 @@ well as information about changes to procurement documents:
                         <efbc:ChangedNoticeIdentifier schemeName="notice-id-ref">755db7f6-6aa1-453b-9087-1df5f7725112-02</efbc:ChangedNoticeIdentifier>
                         <efac:Change>
                             <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
-                            <efbc:ChangeDescription languageID="EN">The changes have been applied to ...</efbc:ChangeDescription>
+                            <efbc:ChangeDescription languageID="ENG">The changes have been applied to ...</efbc:ChangeDescription>
                         </efac:Change>
                         <efac:Change>
                             <efbc:ChangedSectionIdentifier>LOT-0002</efbc:ChangedSectionIdentifier>
                             <efbc:ProcurementDocumentsChangeDate>2019-10-24+01:00</efbc:ProcurementDocumentsChangeDate>    
                             <efbc:ProcurementDocumentsChangeIndicator>true</efbc:ProcurementDocumentsChangeIndicator>
-                            <efbc:ChangeDescription languageID="EN">Updated procurement documents</efbc:ChangeDescription>
+                            <efbc:ChangeDescription languageID="ENG">Updated procurement documents</efbc:ChangeDescription>
                         </efac:Change>
                         <efac:ChangeReason>
                             <cbc:ReasonCode listName="change-corrig-justification">update-add </cbc:ReasonCode>
-                            <efbc:ReasonDescription languageID="EN">Clerical corrections of ...</efbc:ReasonDescription>
+                            <efbc:ReasonDescription languageID="ENG">Clerical corrections of ...</efbc:ReasonDescription>
                         </efac:ChangeReason>
                     </efac:Changes>
                 </efext:EformsExtension>
