@@ -1138,7 +1138,7 @@ a|[source,xpath,subs=attributes]
 ----
 /*/cac:ContractingParty{zwsp}/cac:ServiceProviderParty{zwsp}/cbc:ServiceTypeCode
 ----
-set to "ProcurementServiceProvider"
+set to "serv-prov"
 
 |*TED eSender (#)* |Economic operator providing data transfer services
 to contracting authorities
@@ -1147,7 +1147,7 @@ a|[source,xpath,subs=attributes]
 /*/cac:ContractingParty{zwsp}/cac:ServiceProviderParty{zwsp}/cbc:ServiceTypeCode
 ----
 set
-to "TEDeSender"
+to "ted-esen"
 |===
 
 
@@ -1732,7 +1732,7 @@ is provided here:
         </cac:PartyIdentification>
         <cac:ServiceProviderParty>
             <!-- The service provider is a Procurement Service Provider -->
-            <cbc:ServiceTypeCode listName="organisation-role">proc-serv-prov</cbc:ServiceTypeCode>
+            <cbc:ServiceTypeCode listName="organisation-role">serv-prov</cbc:ServiceTypeCode>
             <cac:Party>
                 <cac:PartyIdentification>
                     <!-- Reference (Technical ID) to the legal organization acting as a PSP. -->
@@ -1742,7 +1742,7 @@ is provided here:
         </cac:ServiceProviderParty>
         <cac:ServiceProviderParty>
             <!-- The service provider is an eSender -->
-            <cbc:ServiceTypeCode listName="organisation-role">ted-esn</cbc:ServiceTypeCode>
+            <cbc:ServiceTypeCode listName="organisation-role">ted-esen</cbc:ServiceTypeCode>
             <cac:Party>
                 <cac:PartyIdentification>
                     <!-- Reference (Tech. ID) to the legal organization acting as an eSender. -->
