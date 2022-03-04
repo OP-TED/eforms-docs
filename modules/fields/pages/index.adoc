@@ -89,10 +89,11 @@ The various characteristics of each field are indicated as properties of the JSO
     "xpathRelative" : "cbc:RegulatoryDomain", // <6>
     "type" : "internal-code", // <7>
     "legalType" : "CODE", // <8>
-    "repeatable" : { // <9>
+    "maxLength" : 400, // <9>
+    "repeatable" : { // <10>
       "value" : false
     },
-    "codeList" : { // <10>
+    "codeList" : { // <11>
       "value" : {
         "id" : "legal-basis",
         "type" : "flat"
@@ -110,8 +111,9 @@ The various characteristics of each field are indicated as properties of the JSO
 <6> Location of the field in an XML notice, relative to its parent node.
 <7> Technical data type of the field.
 <8> Data type of the business term, as indicated in the eForms Regulation.
-<9> Indicates if the field can appear more than once inside its container
-<10> Identifier of the code list from which the field value must belong.
+<9> Maximum number of characters allowed in the value of the field, optional. 
+<10> Indicates if the field can appear more than once inside its container
+<11> Identifier of the code list from which the field value must belong.
 Applicable only for fields of type "code" or "internal-code"
 
 
@@ -129,8 +131,9 @@ The properties that are assigned with static values are listed below:
 * `xpathRelative`
 * `type`
 * `legalType`
+* `maxLength`
 
-Static properties are always assigned with a scalar value (a string, a boolean, a number, etc.).
+Static properties are always assigned with a scalar value (a string, a boolean, a number, etc.). If there is no value defined, the property is omitted.
 
 Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different factors, for example the notice type it is used in, or the values of other fields in the same notice.
 
