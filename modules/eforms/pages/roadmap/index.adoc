@@ -2,10 +2,19 @@
 
 This page tries to outline the changes and additions to the eForms SDK planned for the upcoming releases. Despite its name, it is not actually organised as a release roadmap. Our goal with this page is to give you a heads-up of the most important things that we plan to change or add in the SDK so that you know what to expect. 
 
-== eForms SDK 0.4.2
-The upcoming eForms SDK 0.5.0 will introduce a breaking change in the format of the `fields.json` file. To allow existing implementations to benefit from the updated metadata as soon as possible, we decided to (almost) simultaneously release a backwards compatible update of the eForms SDK 0.4.x.
+== eForms SDK 0.6.0
+The main theme of SDK 0.6.0 will be to add templates that you can use to visualize an existing notice. We have already identified and detailed internally the necessary views that will be used by our own TED Viewer. This version of the SDK will formalise these views and provide them in the form of templates. A specialised grammar will be introduced for drafting these templates. 
 
-This update will also introduce additional metadata in `fields.json` that will allow implementers to correctly  determine the XML structure of the notices they generate. 
+To allow you to work with this new grammar (we call it EFXT) and to transform these templates to the actual views that you need for your applications, the SDK will not only include the grammar definition and documentation, but it will also be accompanied by a sample application which can read a "notice view template" and generate an HTML page for any given notice XML. 
 
-== eForms SDK 0.5.0
-eForms SDK 0.5.0 will introduce a breaking change in the format of the `fields.json` file. This change was deemed necessary to remove ambiguities in the interpretation of the metadata. It will also make  importing and processing of the file easier by implementers.
+Another goal of this release of the eForms SDK is to improve our ability to express the conditions associated with business rules. You already have seen these conditions in fields.json expressed in SpEL. The trouble with SpEL is that it is not expressive enough for our needs. As a result conditions expressed in SpEL quickly become too complicated as well as ambiguous. To address this, we have been looking for something simpler but more expressive at the same time. What we came up with is a domain specific language that we defined to serve our purposes. We call it "eForms Expression Language" or EFX in short.  
+
+=== eForms Expressions Language (EFX) 
+Our goal in creating the EFX grammar was to come up with a syntax that is as expressive and unambiguous as xPath, but simpler to read and write. To define the language we are using https://www.antlr.org/[ANTRL4] which is a stable tool with a very long history in the field.
+
+To allow you to work with EFX, we will publish in GitHub not only the grammar specification and documentation, but also the source code of our own parser and the translator which we use to convert EFX expressions to xPath for Schematron validation. Our own tools are written in Java, but ANTRL4 can automatically generate for you an EFX parser for C#, Python, JavaScript, Go, C++, Swift, PHP or DART. 
+
+EFX is also the basis of EFXT which as I mentioned earlier is used to define the notice view templates. EFXT expressions are the same as EFX expressions; however, EFXT also provides additional syntax to convey information about layout structure as well as static resources like translations.
+
+We are working hard to finish the work for eForms SDK 0.6.0 during March 2022 so that we can release it sometime in April.
+
