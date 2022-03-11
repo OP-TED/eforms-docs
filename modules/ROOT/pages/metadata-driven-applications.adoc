@@ -1,0 +1,80 @@
+= Creating  eForms applications
+ifeval::[{eforms_latest_version} == {eforms_version}]
+:page-aliases: latest@metadata-driven-applications.adoc
+endif::[]
+
+Before considering how to create eForms applications, let's define what an eForms application is, along with a few other necessary concepts. 
+
+eForms Application::
+In general terms, an eForms application is an application that:
+
+* can create a _valid eForms notice_,
+* can manipulate (read, modify, transform) an existing eForms notice,
+* can use the TED API to submit, validate or retrieve eForms notices. 
+
+Valid eForms Notice::
+A valid eForms notice is an XML file that:
+    
+* conforms to the eForms Schema (by means of XSD validation)
+* conforms to the eForms regulation by means of _TED CVS validation_
+
+TED CVS::
+TED CVS, (short for TED Central Validation Service), is a web service in the TED Ecosystem that verifies the conformance of a notice XML file with the eForms regulation. To perform this validation, apart from verifying conformance with the eForms Schema, TED CVS crucially uses a series of tests designed to verify the conformance of the structure and content of the notice XML with every applicable _business rule_.
+
+Business Rule::
+A business rule is a testable logical statement constraining the structure or content of information contained in an eForms notice. The business rules constitute in essence the implementation of the eForms Regulation. 
+
+== Considerations
+Based on the above definitions, the main criterion for a properly functioning eForms application, is whether or not it can create an eForms notice that can successfully pass TED CVS validation.
+
+As easy and straight forward as this may seem, in practice there are several considerations that need to be addressed:
+
+* The implementation of the eForms regulation is still ongoing and there are still several moving parts. 
+* The number of active business rules is in the order of thousands. 
+* The number of fields is in the hundreds with several different configurations across the 40+ notice types. 
+* Regardless of how stable the eForms implementation is, there will inevitably be several changes, adaptations or improvements in the regulation itself in the future. These will effectively keep changing the business rules, set of fields, notices etc.
+
+Before creating an eForms application, therefore, one must consider and select an effective strategy for adopting to the inevitable change.
+
+== Paradigm
+Considering the complexity of this issue for all our eSenders (as well as for our own eForms applications), in the Publications Office we have decided to adopt, promote and support the principles of metadata driven application design.
+
+Metadata driven applications::
+A metadata driven application is an application that adopts its behaviour to a given set of metadata. Changes in these metadata automatically alter the behaviour of the application without any developer intervention.
+
+Metadata::
+Metadata are data about data. Metadata are used to describe the properties of and behaviours attached to the actual data.
+
+For an eForms application, data is the content of an eForms notice. Metadata is the content of the eForms SDK. The eForms SDK contains machine readable descriptions of the properties and behaviours associated with every data element in an eForms notice.
+
+A metadata driven approach to developing an eForms application is therefore a design in which the application is agnostic of the actual types of notices, combinations of fields or business rules that it manipulates. A metadata driven application only needs to know how to obtain this information from the eForms SDK and automatically adopts its behaviour to this information.
+
+== In practice
+Your eForms application needs to be able to read the eForms SDK. The necessary developer documentation is maintained on this site and will keep being updated as the SDK evolves. 
+
+Apart from being able to read the SDK, your application must use the information in the SDK to drive its behaviour.
+
+.Example
+****
+Let's assume that your application wants to allow its user to fill-in a notice. The first thing the application needs to do is ask the user what kind of notice they want to create. Your application should look in the SDK for the available notice types and present the user with the option to select the one they are interested in.
+
+After the user has selected the type of notice your application needs to display a form on the screen for filling-in the notice. Instead of hard-coding each different type of form, your application should look in the SDK to retrieve all the information about which fields need to be displayed on the user's screen, in which order, what the type of each field is, what restrictions apply to each field and so on.
+
+This way, when a change in the regulation takes effect, your application will only need to read the new version of the SDK and it will automatically display the correct form on the screen without having to be modified or re-deployed itself. This will have a huge positive impact in the maintainability of your application and its resilience to change.
+****
+
+== Takeaways 
+There is even more complexity hidden behind the choice of following a metadata driven application design approach or not.
+
+Consider that your application needs to modify a notice (or continue a procedure) that was created several months ago using a codelist that has since been modified. How do you know which is the right version of the codelist to use unless you put in place a mechanism of managing all this information? It gets even more difficult when you consider that some business rules may have changed since the specific notice was created. How do you know which ones? 
+
+The solution to this and several other similar problems is abandoning the idea of hard-coding eForms field by field into your applications and favouring instead a metadata driven design. Creating a metadata driven application will be far easier than implementing the entire regulation form  by form, field by field. It will allow you to finish your developments faster and it will leave you with a much more maintainable application. 
+
+.Paradigm shift
+****
+The paradigm shift therefore is: 
+
+* instead of having several implementations of the regulation (one in each eSender application), we concentrate on one central implementation, shared among all applications in the form of the SDK.  
+* instead of having thousands of direct dependencies of every eSender application to every detail of the eForms regulation, we favour a small set of much simpler, more stable, more controlled and more predictable dependencies to the eForms SDK.
+* instead of having to synchronise months of software updates and re-deployment of all eSender applications to adopt a small change in the regulation, we only update the applications' configuration centrally by publishing a new version of the eForms SDK.   
+****

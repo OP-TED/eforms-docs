@@ -18,6 +18,8 @@ endif::[]
 == Topics
 The following topics are included in this version of the eForms Documentation:
 
+* xref::metadata-driven-applications.adoc[Creating eForms Applications] +
+How to approach the creation of your eForms Application.
 * xref:schema:index.adoc[The eForms Schema] +
 Extensive documentation of the XML Schema used by eForms.
 * xref:fields:index.adoc[Field Metadata] +
