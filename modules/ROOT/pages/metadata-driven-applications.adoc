@@ -58,7 +58,7 @@ Apart from being able to read the SDK, your application must use the information
 ****
 Let's assume that your application wants to allow its user to fill-in a notice. The first thing the application needs to do is ask the user what kind of notice they want to create. Your application should look in the SDK for the available notice types and present the user with the option to select the one they are interested in.
 
-After the user has selected the type of notice your application needs to display a form on the screen for filling-in the notice. Instead of hard-coding each different type of form, your application should look in the SDK to retrieve all the information about which fields need to be displayed on the user's screen, in which order, what the type of each field is, what restrictions apply to each field and so on.
+After the user has selected the type of notice, your application needs to display a form on the screen for filling-in the notice. Instead of hard-coding each different type of form, your application should look in the SDK to retrieve all the information about which fields need to be displayed on the user's screen, in which order, what the type of each field is, what restrictions apply to each field and so on.
 
 This way, when a change in the regulation takes effect, your application will only need to read the new version of the SDK and it will automatically display the correct form on the screen without having to be modified or re-deployed itself. This will have a huge positive impact in the maintainability of your application and its resilience to change.
 ****
@@ -66,7 +66,7 @@ This way, when a change in the regulation takes effect, your application will on
 == Takeaways 
 There is even more complexity hidden behind the choice of following a metadata driven application design approach or not.
 
-Consider that your application needs to modify a notice (or continue a procedure) that was created several months ago using a codelist that has since been modified. How do you know which is the right version of the codelist to use unless you put in place a mechanism of managing all this information? It gets even more difficult when you consider that some business rules may have changed since the specific notice was created. How do you know which ones? 
+Consider that your application needs to modify a notice (or continue a procedure) that was created several months ago using a codelist that has since been modified. How do you know which is the right version of the codelist to use unless you put in place a mechanism for managing all this information? It gets even more difficult when you consider that some business rules may have changed since the specific notice was created. How do you know which ones? 
 
 The solution to this and several other similar problems is abandoning the idea of hard-coding eForms field by field into your applications and favouring instead a metadata driven design. Creating a metadata driven application will be far easier than implementing the entire regulation form  by form, field by field. It will allow you to finish your developments faster and it will leave you with a much more maintainable application. 
 
