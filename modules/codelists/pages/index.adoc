@@ -37,7 +37,21 @@ https://op.europa.eu/en/web/eu-vocabularies/controlled-vocabularies[EU Vocabular
 provides the codelists in a number of different formats for use in different
 applications. The format chosen for use in the eForms SDK is the 
 https://docs.oasis-open.org/codelist/genericode/v1.0/genericode-v1.0.html[OASIS Genericode]
-XML format, which was designed for the interchange of machine-readable codelists.
+XML format, which was designed for the interchange of machine-readable 
+codelists.
+
+
+=== Identifier of a codelist
+
+In eForms, codelists are referenced using their identifier. The identifier is 
+held in the codelist Genericode files in the "LongName" element which has no 
+attributes:
+
+[source, xml]
+----
+<LongName>no-esubmission-justification</LongName>
+----
+
 
 === Types of codelists
 
@@ -72,26 +86,36 @@ are published as part of the https://github.com/OP-TED/eForms-SDK[eForms SDK].
 
 For example, the
 https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language["language"]
-codelist has codes for thousands of languages. The business term BT-702 "Notice Official Language" designates an EU Official language in which the notice is officially available.
-Only one of the 24 EU Official languages is permitted. So a tailored codelist named "EU Official Language" has been created. This codelist contains the entries for these 24 EU languages, copied from the parent "Language" codelist.
+codelist has codes for thousands of languages. The business term BT-702 
+"Notice Official Language" designates an EU Official language in which 
+the notice is officially available. Only one of the 24 EU Official languages 
+is permitted. So a tailored codelist named "EU Official Language" has been 
+created. This codelist contains the entries for these 24 EU languages, copied 
+from the parent "Language" codelist.
 
-As another example, the business terms BT-10 "Activity Authority" and BT-610 "Activity Entity" each use a different subset of codes from the same eProcurement
+As another example, the business terms BT-10 "Activity Authority" and BT-610 
+"Activity Entity" each use a different subset of codes from the same 
+eProcurement
 https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/main-activity["Main activity"]  
-codelist. Two new tailored codelists have been created, "Authority Activity" and "Entity Activity", which each contain the relevant codes.
+codelist. Two new tailored codelists have been created, "Authority Activity" 
+and "Entity Activity", which each contain the relevant codes.
 
 ===== Filenames of tailored codelist
 
-The filenames of the tailored codelists are composed of two parts, separated by an underscore character "_":
+The filenames of the tailored codelists are composed of two parts, separated 
+by an underscore character "_":
 
 * the name of the parent codelist, from which the codes are copied,
 * the name of the tailored codelist.
 
-Each part follows the same convention as used for the eProcurement codelists: the name of the codelist, with spaces replaced by hyphens, and all in lower case.
+Each part follows the same convention as used for the eProcurement codelists: 
+the name of the codelist, with spaces replaced by hyphens, and all in lower 
+case.
 
 [[codelistNamingTable]]
 [width="100%",cols="<.^15%,<.^25%,<.^25%,<.^35%,options="header",]
 |===
-^|*Parent codelist name* ^|*Parent codelist filename* ^|*Tailored codelist name* ^|*Tailored codelist filename* 
+|*Parent codelist name* |*Parent codelist filename* |*Tailored codelist name* |*Tailored codelist filename* 
 |Language |language.gc | EU Official Language | language_eu-official-language.gc
 
 .2+|Main activity .2+|main-activity.gc | Authority Activity | main-activity_authority-activity.gc
@@ -102,7 +126,8 @@ Each part follows the same convention as used for the eProcurement codelists: th
 
 ===== Additional information in genericode files
 
-Some new elements have been under the <Identification> element in the genericode files for tailored codelists.
+Some new elements have been added within the <Identification> element in the 
+genericode files for tailored codelists.
 
 [source, xml]
 ----
@@ -112,7 +137,7 @@ Some new elements have been under the <Identification> element in the genericode
 ----
 
 <1> URI of the parent codelist
-<2> LongName of the parent codelist
+<2> Identifier of the parent codelist
 <3> Version number of the data used to create this file
 
 
@@ -131,8 +156,8 @@ are also published in the https://github.com/OP-TED/eForms-SDK[eForms SDK].
 
 In eForms XML, codes and codelists are mostly referenced using elements 
 designed for that purpose. The elements have names which end in "Code", and 
-have the attribute "listName". This attribute is used to hold the name of 
-the codelist, and the code value required is set as the content of the 
+have the attribute "listName". This attribute is used to hold the identifier 
+of the codelist, and the code value required is set as the content of the 
 element. In eForms, only codes from one codelist are allowed for any 
 specific element.
 
@@ -154,3 +179,4 @@ rules check that for each element which should reference a code:
 
 * the correct codelist is named in the "listName" attribute
 * the content of the element is one of the codes from that codelist
+
