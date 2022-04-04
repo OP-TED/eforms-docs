@@ -413,6 +413,11 @@ mandatory. When the National authority enforces the report of further
 information or when a Buyer wishes to do so, then the information
 reported should satisfy the requirements as expressed in <<organizationDetailsRequirementsTable>>.
 
+The Winner Owner Nationality (BT-706) is expressed using the 
+cbc:NationalityID element. Values must come from the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/country[country]
+codelist.
+
 [source,xml]
 ----
 <efac:UltimateBeneficialOwner>
@@ -439,10 +444,10 @@ reported should satisfy the requirements as expressed in <<organizationDetailsRe
     </cac:ResidenceAddress>
     <!-- Winner Owner Nationality (BT-706) -->
     <efac:Nationality>
-        <cbc:NationalityID>DFH</cbc:NationalityID>
+        <cbc:NationalityID listName="country">FIN</cbc:NationalityID>
     </efac:Nationality>
     <efac:Nationality>
-        <cbc:NationalityID>AJZ</cbc:NationalityID>
+        <cbc:NationalityID listName="country">DEU</cbc:NationalityID>
     </efac:Nationality>
 </efac:UltimateBeneficialOwner>
 
@@ -450,7 +455,7 @@ reported should satisfy the requirements as expressed in <<organizationDetailsRe
     <cbc:ID schemeName="ubo">UBO-0002</cbc:ID>
     <!-- Interrupted MarkUp -->
     <efac:Nationality>
-        <cbc:NationalityID></cbc:NationalityID>
+        <cbc:NationalityID listName="country">FRA</cbc:NationalityID>
     </efac:Nationality>
 </efac:UltimateBeneficialOwner>
 ----
@@ -637,9 +642,11 @@ a|
 ----
 efac:Company{zwsp}/cac:PostalAddress{zwsp}/cac:Country{zwsp}/cbc:IdentificationCode
 ---- a|
-Use of country authority code
-
 Country host of legal organization
+
+Values must come from the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/country[country]
+codelist 
 
 ^|T
 a|
@@ -648,6 +655,10 @@ a|
 efac:TouchPoint{zwsp}/cac:PostalAddress{zwsp}/cac:Country{zwsp}/cbc:IdentificationCode
 ----
 |Country where mails shall be sent
+
+Values must come from the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/country[country]
+codelist 
 
 .2+|*Organization Contact Point (BT-502)* ^|C
 a|
@@ -1835,10 +1846,10 @@ The Ultimate Beneficial Owners of the organization are:
     </cac:ResidenceAddress>
     <!-- Winner Owner Nationality (BT-706) -->
     <efac:Nationality>
-        <cbc:NationalityID>DFH</cbc:NationalityID>
+        <cbc:NationalityID listName="country">FIN</cbc:NationalityID>
     </efac:Nationality>
     <efac:Nationality>
-        <cbc:NationalityID>AJZ</cbc:NationalityID>
+        <cbc:NationalityID listName="country">DEU</cbc:NationalityID>
     </efac:Nationality>
 </efac:UltimateBeneficialOwner>
 
@@ -1846,7 +1857,7 @@ The Ultimate Beneficial Owners of the organization are:
     <cbc:ID schemeName="ubo">UBO-0002</cbc:ID>
     <!-- Interrupted MarkUp -->
     <efac:Nationality>
-        <cbc:NationalityID>FRA</cbc:NationalityID>
+        <cbc:NationalityID listName="country">FRA</cbc:NationalityID>
     </efac:Nationality>
 </efac:UltimateBeneficialOwner>
 ----
