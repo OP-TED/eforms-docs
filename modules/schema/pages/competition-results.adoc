@@ -681,7 +681,9 @@ _Cf. <<lotTenderLevelSection>>_
 | |
 
 |*Country Origin (BT-191)* |A country of origin of the product or the
-service. |*?* a|
+service. Values must come from the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/country[country]
+codelist. |*?* a|
 [source,xpath,subs=attributes]
 ----
 efac:Origin{zwsp}/efbc:AreaCode

@@ -3598,7 +3598,10 @@ Use "_cbc:Region_" and a code from the codelist
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/other-place-service[other-place-service]
 to identify regions not covered with the _cbc:CountrySubentityCode_
 (e.g. "country wide", "EEA wide", "anywhere"). When Place Performance Services Other (BT-727) has the value "anyw-cou",
-the Place Performance Country Code (BT-5141) is mandatory.
+the Place Performance Country Code (BT-5141) is mandatory. Values must come from the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/country[country]
+codelist.
+
 
 [source,xml]
 ----
