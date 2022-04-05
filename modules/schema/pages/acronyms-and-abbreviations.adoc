@@ -18,6 +18,8 @@
 |*FA* |Framework Agreement
 |*OJEU* |Official Journal of the European Union
 |*OP* |Publications Office of the European Union
+|*OPP* | OP Production Term
+|*OPT* | OP Technical Term
 |*PIN* |Prior Information Notice or Periodic Indicative Notice
 |*QS* |Qualification System
 |*RTL / TL* |Reduce Time Limit / Time Limit
