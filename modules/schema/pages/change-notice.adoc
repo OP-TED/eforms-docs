@@ -47,7 +47,7 @@ To identify the changed notice, the following business term is used:
 [[changeSection]]
 == Change
 
-A change may contain all the following elements:
+A change may contain all the following business terms:
 
 * Change Previous Section Identifier (BT-13716)
 

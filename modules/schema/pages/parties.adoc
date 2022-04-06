@@ -59,7 +59,7 @@ procurement procedure:
 In the XML, they are all under the same element "_efac:Organizations_"
 in the extensions. Their content is somewhat different as an
 Organization is most of the time a juridical person while the Ultimate
-Beneficial Owner is always a natural one
+Beneficial Owner is always a natural one.
 
 [[organizationSection]]
 == Organization
@@ -265,7 +265,7 @@ person or not (BT-633).
 The Winner Listed (BT-746) "_efbc:ListedOnRegulatedMarketIndicator_"
 element is not allowed for Non-Tenderer, Non-Buyer organizations.
 
-The "_efac:Company_" element groups all the elements relative to the legal
+The "_efac:Company_" element groups all the elements related to the legal
 organization and the "_efac:TouchPoint_" element groups the contact
 details for a given function assumed by the organization when these
 differ from the ones of the legal organization.
@@ -1127,7 +1127,7 @@ indicators
 .Roles marked using Codes/indicators
 [cols="<.^25%,<.^45%,<.^30%",options="header",]
 |===
-^|*Role* ^|*Description* ^|*XSD element (w. code)*
+^|*Role* ^|*Description* ^|*XSD element (with code)*
 |*Acquiring CPB (#)* |Central purchasing body acquiring supplies and/or
 services intended for other buyers
 a|[source,xpath,subs=attributes]
