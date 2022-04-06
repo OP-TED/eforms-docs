@@ -973,11 +973,11 @@ limit" and "PIN CFC" notices. Further information is marked with the
 "_cbc:Description_" element.
 
 The indication that the criteria/criterion is used for 
-selection of candidates for a second stage is the presence of the 
+selection of candidates for a second stage is given by the presence of the 
 element "_efbc:SecondStageIndicator_" (BT-40), with its value set to 
-"true". This element should be omitted when the criteria/criterion is 
+"true". This element should be set to 'false' when the criteria/criterion is 
 not used for selection of candidates for a second stage. If the element
-is present, then details about the criteria/criterion associated numbers 
+is set to 'true', then details about the criteria/criterion associated numbers 
 may be provided (BT-7531, BT-7532, BT-752).
 
 These details are reported in the efac:CriterionParameter element. The 
