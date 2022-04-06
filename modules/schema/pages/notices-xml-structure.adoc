@@ -105,5 +105,5 @@ is the abbreviation for the Publications Office of the European Union as
 defined above. "P" stands for Production; these fields are required for the 
 production processes, particularly for the non-standard forms (not defined in 
 the eForms regulations) that also use the eForms schema. "T" stands for 
-Technical, these are required by our use of UBL as the base schema for eForms.
-
+Technical, these are required for some technical constraints and chosen 
+design options.
