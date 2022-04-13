@@ -687,7 +687,7 @@ cac:AwardingTerms{zwsp}/cac:AwardingCriterion{zwsp}/cac:SubordinateAwardingCrite
 
 11+^|*Jury (+++**+++)*
 
-|*Jury Member Name (BT-46)* | xref:jurySection[xrefstyle=short] |-- |-- |-- |-- |-- h|+ |-- |-- a|
+|*Jury Member Name (BT-46)* | xref:jurySection[xrefstyle=short] |-- |-- |-- |-- |-- h|*** |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:AwardingTerms{zwsp}/cac:TechnicalCommitteePerson{zwsp}/cbc:FamilyName
