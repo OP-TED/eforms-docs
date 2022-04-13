@@ -1656,15 +1656,15 @@ shall hold the value associated with that dimension.
 
 The number dimension shall be:
 
-* for weights (BT-5421), a value from the
+* for weights (BT-5421), a code from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-weight[number-weight]
 codelist;
 
-* for fixed values (BT-5422), a value from the
+* for fixed values (BT-5422), a code from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-fixed[number-fixed]
 codelist; and
 
-* for threshold values (BT-5423), a value from the
+* for threshold values (BT-5423), a code from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-threshold[number-threshold]
 codelist.
 
