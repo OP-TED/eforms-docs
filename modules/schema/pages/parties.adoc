@@ -444,10 +444,10 @@ codelist.
     </cac:ResidenceAddress>
     <!-- Winner Owner Nationality (BT-706) -->
     <efac:Nationality>
-        <cbc:NationalityID listName="country">FIN</cbc:NationalityID>
+        <cbc:NationalityID>FIN</cbc:NationalityID>
     </efac:Nationality>
     <efac:Nationality>
-        <cbc:NationalityID listName="country">DEU</cbc:NationalityID>
+        <cbc:NationalityID>DEU</cbc:NationalityID>
     </efac:Nationality>
 </efac:UltimateBeneficialOwner>
 
@@ -455,7 +455,7 @@ codelist.
     <cbc:ID schemeName="ubo">UBO-0002</cbc:ID>
     <!-- Interrupted MarkUp -->
     <efac:Nationality>
-        <cbc:NationalityID listName="country">FRA</cbc:NationalityID>
+        <cbc:NationalityID>FRA</cbc:NationalityID>
     </efac:Nationality>
 </efac:UltimateBeneficialOwner>
 ----
@@ -1846,10 +1846,10 @@ The Ultimate Beneficial Owners of the organization are:
     </cac:ResidenceAddress>
     <!-- Winner Owner Nationality (BT-706) -->
     <efac:Nationality>
-        <cbc:NationalityID listName="country">FIN</cbc:NationalityID>
+        <cbc:NationalityID>FIN</cbc:NationalityID>
     </efac:Nationality>
     <efac:Nationality>
-        <cbc:NationalityID listName="country">DEU</cbc:NationalityID>
+        <cbc:NationalityID>DEU</cbc:NationalityID>
     </efac:Nationality>
 </efac:UltimateBeneficialOwner>
 
@@ -1857,7 +1857,7 @@ The Ultimate Beneficial Owners of the organization are:
     <cbc:ID schemeName="ubo">UBO-0002</cbc:ID>
     <!-- Interrupted MarkUp -->
     <efac:Nationality>
-        <cbc:NationalityID listName="country">FRA</cbc:NationalityID>
+        <cbc:NationalityID>FRA</cbc:NationalityID>
     </efac:Nationality>
 </efac:UltimateBeneficialOwner>
 ----
