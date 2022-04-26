@@ -1040,13 +1040,13 @@ a|[source,xpath,subs=attributes]
 |*Mediation organization* |Third party helping with Alternative Dispute
 Resolution a|[source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:AppealTerms{zwsp}/cac:MediationParty
+/*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:AppealTerms{zwsp}/cac:MediationParty
 ----
 
 |*Review organization (#)* |Organization dealing with review requests.
 a|[source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:AppealTerms{zwsp}/cac:AppealReceiverParty
+/*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:AppealTerms{zwsp}/cac:AppealReceiverParty
 ----
 
 |*_Tax legislation information provider_* |Organization providing
@@ -1054,14 +1054,14 @@ information concerning the general regulatory framework for taxes
 applicable in the place where the contract is to be performed. a|
 [source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:FiscalLegislationDocumentReference{zwsp}/cac:Attachment{zwsp}/cac:ExternalReference{zwsp}/cbc:URI
+/*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:FiscalLegislationDocumentReference{zwsp}/cac:Attachment{zwsp}/cac:ExternalReference{zwsp}/cbc:URI
 ----
 
 And
 
 [source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:FiscalLegislationDocumentReference{zwsp}/cac:IssuerParty
+/*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:FiscalLegislationDocumentReference{zwsp}/cac:IssuerParty
 ----
 
 |*_Environment legislation information provider_* <|Organization
@@ -1070,14 +1070,14 @@ environmental protection applicable in the place where the contract is
 to be performed. a|
 [source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:EnvironmentalLegislationDocumentReference{zwsp}/cac:Attachment{zwsp}/cac:ExternalReference{zwsp}/cbc:URI
+/*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:EnvironmentalLegislationDocumentReference{zwsp}/cac:Attachment{zwsp}/cac:ExternalReference{zwsp}/cbc:URI
 ----
 
 _And_
 
 [source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:EnvironmentalLegislationDocumentReference{zwsp}/cac:IssuerParty
+/*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:EnvironmentalLegislationDocumentReference{zwsp}/cac:IssuerParty
 ----
 
 |*_Employment legislation information provider_* <|Organization providing
@@ -1086,14 +1086,14 @@ protection and working conditions applicable in the place where the
 contract is to be performed. a|
 [source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:EmploymentLegislationDocumentReference{zwsp}/cac:Attachment{zwsp}/cac:ExternalReference{zwsp}/cbc:URI
+/*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:EmploymentLegislationDocumentReference{zwsp}/cac:Attachment{zwsp}/cac:ExternalReference{zwsp}/cbc:URI
 ----
 
 _And_
 
 [source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:EmploymentLegislationDocumentReference{zwsp}/cac:IssuerParty
+/*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:EmploymentLegislationDocumentReference{zwsp}/cac:IssuerParty
 ----
 
 |*Review Requester* <|Organization that requested a review request.
@@ -1204,47 +1204,47 @@ For winning consortium
 additional information about the procurement procedure
 a|[source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:AdditionalInformationParty
+/*/cac:ProcurementProjectLot/cac:TenderingTerms{zwsp}/cac:AdditionalInformationParty
 ----
 
 |*Documents provider organization* |Organization providing offline
 access to the procurement documents
 a|[source,xpath,subs=attributes]
 ----
-/*/cac:TenderingTerms{zwsp}/cac:DocumentProviderParty
+/*/cac:ProcurementProjectLot/cac:TenderingTerms{zwsp}/cac:DocumentProviderParty
 ----
 
 |*Review Information Providing Organization* |Organization providing
 more information on the time limits for review procedures
 a|[source,xpath,subs=attributes]
 ----
-/*/cac:AppealTerms{zwsp}/cac:AppealInformationParty
+/*/cac:ProcurementProjectLot/cac:TenderingTerms{zwsp}/cac:AppealTerms{zwsp}/cac:AppealInformationParty
 ----
 
 |*Requests to participate Recipient Organization* |Organization
 receiving requests to participate (+++*+++)
 a|[source,xpath,subs=attributes]
 ----
-/*/TenderingTerms{zwsp}/cac:TenderRecipientParty 
+/*/cac:ProcurementProjectLot/cac:TenderingTerms{zwsp}/cac:TenderRecipientParty
 ----
 
 |*Requests to participate processing Organization* |Organization
 processing requests to participate (+++*+++)
 a|[source,xpath,subs=attributes]
 ----
-/*/TenderingTerms{zwsp}/cac:TenderEvaluationParty 
+/*/cac:ProcurementProjectLot/cac:TenderingTerms{zwsp}/cac:TenderEvaluationParty
 ----
 
 |*Tender Recipient Organization* |Organization receiving tenders (+++*+++)
 a|[source,xpath,subs=attributes]
 ----
-/*/TenderingTerms{zwsp}/cac:TenderRecipientParty 
+/*/cac:ProcurementProjectLot/cac:TenderingTerms{zwsp}/cac:TenderRecipientParty
 ----
 
 |*Tender Evaluation Organization* |Organization processing tenders (+++*+++)
 a|[source,xpath,subs=attributes]
 ----
-/*/TenderingTerms{zwsp}/cac:TenderEvaluationParty 
+/*/cac:ProcurementProjectLot/cac:TenderingTerms{zwsp}/cac:TenderEvaluationParty
 ----
 
 |*Contract Signatory* |Organization signing the contract
@@ -1344,11 +1344,11 @@ Subco / QS / Design 3+|VEAT 3+|CAN general / social 3+|Design 3+|CAN +
 |Tender Evaluation Organisation |S | | |1 | |1 | |1 | | | |
 | | | | | | | | | | | | | | |
 
-|Financing Organisation |S | | | | | | | | |{+} |1 | |{+}
-|1 | |{+} |1 | |{+} |1 | |{+} |1 | | | |
+|Financing Organisation |S | | | | | | | | |{+} | | |{+}
+| | |{+} | | |{+} | | |{+} | | | | |
 
-|Paying Organisation |S | | | | | | | | |{+} |1 | |{+} |1
-| |{+} |1 | |{+} |1 | |{+} |1 | | | |
+|Paying Organisation |S | | | | | | | | |{+} | | |{+} | 
+| |{+} | | |{+} | | |{+} | | | | |
 
 |Winner |P | | | | | | | | |{+} | | |{+} | | |{+}
 | | |{+} | | |{+} | | |{+} | |
