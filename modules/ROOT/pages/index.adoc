@@ -18,6 +18,8 @@ endif::[]
 == Topics
 The following topics are included in this version of the eForms Documentation:
 
+* xref::metadata-driven-applications.adoc[Creating eForms Applications] +
+How to approach the creation of your eForms Application.
 * xref:schema:index.adoc[The eForms Schema] +
 Extensive documentation of the XML Schema used by eForms.
 * xref:fields:index.adoc[Field Metadata] +
@@ -28,7 +30,8 @@ Find out why we include every codelist in the SDK and learn how to use them.
 Find out which translations are included in the SDK and learn how to use them.
 * xref:notice-types:index.adoc[Notice Structure] +
 How each notice type is structured.
-
+* xref::versioning.adoc[eForms SDK Versioning] +
+Learn about breaking changes and the significance of SDK version numbers.
 
 TIP: For every release of the eForms SDK, a copy of the corresponding documentation is maintained in this website. You can select the version of documentation that you want to consult by selecting the corresponding version of the SDK either in the dropdown menu available on the top right of this page, or the component navigation panel available on the bottom left of each page. +
 ifeval::[{eforms_latest_version} == {eforms_version}]

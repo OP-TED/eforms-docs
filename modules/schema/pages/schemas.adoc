@@ -95,41 +95,4 @@ specific extension basic components
 [[versioningSection]]
 == Versioning
 
-The versioning is based on the following scheme:
-
-[.text-center]
-*eforms-sdk-x.y.z*
-
-where:
-
-* "**eforms-sdk-**": fixed prefix,
-
-* "**x**": major version number (increased every time backward
-compatibility is affected),
-
-* "**y**": minor version number,
-
-* "**z**": rules tuning related number.
-
-Any new release with affected backward compatibility leads to:
-
-* an increment of the major version number, and
-
-* a restart of the minor version numbering.
-
-Major version numbering starts from one, while minor version numbering
-starts from zero.
-
-The whole set (i.e. schema and associated rules) will be available for
-download and uniquely identified with the above proposed scheme; for
-given "**x**" and "**y**", the set with the highest "**z**" value (i.e.
-the latest available set) should be used.
-
-Rules tuning will not affect backward compatibility, hence in the XML
-instance only the major and minor version numbers will be reported.
-
-Reference to the version inside the XML instance should be limited to
-the following expression:
-
-[.text-center]
-*eforms-sdk-x.y*
+Please consult the versioning information provided in detail xref:ROOT:versioning.adoc[here].
