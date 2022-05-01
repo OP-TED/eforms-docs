@@ -1,0 +1,40 @@
+= eForms Expression Language
+
+The eForms Expression Language (EFX) is a domain specific language used to formally express and communicate the eForms business rules.
+
+== Needs covered by EFX
+Every business rule is associated with a logical condition that determines whether the rule is applicable or not in a certain situation. Moreover, every business rule involves and additional logical operation to determine weather the rule is respected or not. While some of these logical operations are simple enough to be defined indirectly, many of them require a formal language that allows for ad hoc calculations as well as logical expressions. EFX is used therefore to express non-trivial logical operations necessary for notice validation.
+
+Additionally, EFX is used to define templates for notice visualisation. The visual structure of a notice is not the same as the physical structure of the XML file. Moreover, in many cases, combining values of several fields is necessary to visualise a particular piece of information. The templating features of EFX allow us to overcome these difficulties in defining and maintaining correct and reusable notice visualisation templates. 
+
+== Why create a DSL
+We decided to develop a domain specific language (DSL) to cover these needs, as it would allow us to create a language that was simple enough to read and write and expressive enough to cover all our present and future needs. At the same time a DSL allows to us, and to the diverse ecosystem of our eSenders, to create parsers and translators targeting several different programming languages and development environments.
+
+== Features of EFX
+* First and foremost, EFX supports the definition of expressions that involve references to eForms fields, nodes, codelists. In EFX you reference a field using its identifier.
+* EFX supports all the data types used in eForms and provides operators and functions to manipulate them.
+* Crucially, EFX is also context sensitive and manages implicit context changes as necessary allowing for simpler expressions.
+* The syntax of EFX expressions is inspired by XPath; however, it is simpler to read, write and translate. 
+* Apart from writing expressions, EFX allows the creation of templates that can be translated to any markup language such as XSLT. 
+* EFX templates allow the hierarchical grouping and positioning of visual elements including simplified referencing of labels (translations), field values and EFX expressions.
+
+== How to parse EFX
+
+EFX is defined using ANTLR v4. ANTLR is a well established parser generator that can generate parsers in Java, C#, Python, JavaScript, Go, C++, Swift, PHP and DART. 
+
+To create an EFX parser you need the EFX grammar (included in the eForms SDK), as well as the ANTLR developer tools targetting your development environment.
+
+ANTLR will generate for you, in the target language of your choice, the source code of an EFX lexical analyser and parser. It will also generate a listener and/or visitor base-class, which you should extend to create translators that can translate EFX expressions to the scripting language of your choice (one that your eForms application can execute). 
+
+For our own needs at the Publications Office we have developed translators that translate EFX expressions to XPath, and EFX templates to XSLT. These translators are available in Github for you to reuse, improve or use as an inspiration for creating your own.
+
+== EFX Resources
+
+EFX grammar::
+The EFX grammar is available in the eForms SDK. The grammar is defined as an ANTLR v4 grammar. 
+
+EFX Parser and Translators in Java::
+The parser and translators that we have created for our own needs are available in this Github repository. Our EFX expression translator, translates EFX expressions to XPath. The translator is also designed in a way that allows you to reuse it for translating to other target languages.
+
+Notice Viewer sample application::
+To demonstrate how an EFX template translator can be created and used, we have developed a sample application for notice visualisation. You can use it as an inspiration or as a basis for creating your own notice viewer. You can find the Notice Viewer sample in this Github repository.
