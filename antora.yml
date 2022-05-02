@@ -12,3 +12,4 @@ nav:
 - modules/translations/nav.adoc
 - modules/notice-types/nav.adoc
 - modules/efx/nav.adoc
+- modules/notice-viewer/nav.adoc
