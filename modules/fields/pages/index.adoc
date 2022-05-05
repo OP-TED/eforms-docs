@@ -156,7 +156,7 @@ In the following snippet, a dynamic value is assigned to the `forbidden` dynamic
     "severity" : "ERROR"
   }, {
     "noticeTypes" : [ "2", "5", "8", "11", "14", "15", "17", "19", "24", "30", "32", "35", "37" ], 
-    "condition" : "!(field('BT-740-Procedure-Buyer')=='not-cont-ent')", // <5>
+    "condition" : "BT-105-Procedure in ('open','restricted')", // <5>
     "value" : true, // <4>
     "severity" : "ERROR"
   } ]
@@ -179,7 +179,7 @@ All dynamic values are always represented in the same way as in the example abov
   "constraints" : [ // <2>
     {
       "noticeTypes" : [ "noticeType1", "noticeType2" ], // <3>
-      "condition": "Boolean expression in SpEL", // <4>
+      "condition": "Boolean expression in EFX", // <4>
       "value" : "scalar2", // <5>
       "severity" : "ERROR" // <6>
     },
@@ -316,10 +316,6 @@ In the regular expression, the backslash character "\" is escaped as "\\".
 
 === Syntax for conditions
 
-The value of the `condition` property of a constraint is a string representing a boolean expression.
+The value of the `condition` property of a constraint is a string representing a boolean expression in the xref:efx:index.adoc[eForms expression language (EFX)].
 
-The syntax of the expression is based on the
-https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions[Spring
-Expression Language (SpEL)], limited to a small number of boolean and comparison operators.
 
-A field is referenced using its identifier: `field('BT-31-Procedure')`.
