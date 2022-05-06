@@ -1,0 +1,21 @@
+= eForms Preview environment
+
+== Scope and purpose
+
+The Publications Office (OP) is developing a range of applications to manage the collection, validation, processing, visualisation and dissemination of eForms notices.
+
+OP will progressively make available the relevant applications through a “Preview” environment that will help eSenders to develop and test their own applications.
+
+The OP applications are: 
+
+* eNotices2 is the reception system for eForms. Notices can be submitted and managed through the web front-end or via API (by eSenders), replacing the current eNotices and eSentool applications. It uses CVS to validate notices before sending them to TED Monitor 2022 for publication.
+
+* CVS is the Central Validation Service for eForms. This API runs all the technical and business validation rules to check that an eForms notice is valid. It is called by eNotices2 when a notice is submitted but it can also be called at any point in a notice’s lifecycle, e.g. to check before submission.
+
+* TED Viewer 2022 provides an API that returns an HTML or PDF rendition of an eForms XML notice at any stage of its lifecycle, e.g. before validation or after publication.
+
+* TED API allows external parties to get a key to call OP APIs and it ensures the authentication of API calls by external parties.
+
+* TED Monitor 2022 is the internal application used by OP to process and prepare the daily export of notices of the Supplement of the Official Journal (OJ S) that is published on TED. It also allows OP to check the lawfulness of certain notices and to mask unpublished fields. This application is not exposed in the Preview environment.
+
+* TED is the public dissemination website for European procurement notices in the OJ S. It is being adapted to handle eForms notices and will be replaced by a new TED 2.0 website in spring 2023. There is no Preview environment for TED.
