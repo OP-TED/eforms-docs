@@ -20,7 +20,7 @@ We decided to develop a domain specific language (DSL) to cover these needs, as 
 
 == How to parse EFX
 
-EFX is defined using ANTLR v4. ANTLR is a well established parser generator that can generate parsers in Java, C#, Python, JavaScript, Go, C++, Swift, PHP and DART. 
+EFX is defined using ANTLR v4. https://www.antlr.org[ANTLR] is a well established parser generator that can generate parsers in Java, C#, Python, JavaScript, Go, C++, Swift, PHP and DART. 
 
 To create an EFX parser you need the EFX grammar (included in the eForms SDK), as well as the ANTLR developer tools targetting your development environment.
 
@@ -31,10 +31,10 @@ For our own needs at the Publications Office we have developed translators that 
 == EFX Resources
 
 https://github.com/OP-TED/eForms-SDK/tree/main/efx-grammar[EFX grammar]::
-The EFX grammar is available in the https://github.com/OP-TED/eForms-SDK/tree/main/fields[eForms SDK]. The grammar is defined as an ANTLR v4 grammar. 
+The EFX grammar is available in the https://github.com/OP-TED/eForms-SDK[eForms SDK]. The grammar is defined as an ANTLR v4 grammar.
 
-https://github.com/OP-TED/eforms-expression-language[EFX Parser and Translators in Java]::
-The parser and translators that we have created for our own needs are available in https://github.com/OP-TED/eforms-expression-language[Github]. Our EFX expression translator, translates EFX expressions to XPath. The translator is also designed in a way that allows you to reuse it for translating to other target languages.
+https://github.com/OP-TED/efx-toolkit-java[EFX Parser and Translators in Java]::
+The parser and translators that we have created for our own needs are available in https://github.com/OP-TED/efx-toolkit-java[Github]. Our EFX expression translator, translates EFX expressions to XPath. The translator is also designed in a way that allows you to reuse it for translating to other target languages.
 
 https://github.com/OP-TED/eforms-notice-viewer[Notice Viewer sample application]::
 To demonstrate how an EFX template translator can be created and used, we have developed a sample application for notice visualisation. You can use it as an inspiration or as a basis for creating your own notice viewer. You can find the Notice Viewer sample in https://github.com/OP-TED/eforms-notice-viewer[Github].
