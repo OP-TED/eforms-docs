@@ -1,21 +1,20 @@
+= Notice View Templates
 ifeval::[{eforms_latest_version} == {eforms_version}]
 :page-aliases: latest@index.adoc
 endif::[]
 
-= Notice View Templates
-
 To standardise the way a notice can be visualised, independently of the media format used (PDF, HTML etc.), we have decided to create and share with our developer community a set of "view templates".
 
-Every notice  sub-type can be associated with one or more different view templates. These templates are available in the `view-templates` folder in the eForms SDK. To create these template files, we use the EFX template language.
+Every notice subtype can be associated with one or more different view templates. These templates are available in the `view-templates` folder in the eForms SDK. To create these template files, we use the EFX template language.
 
 == How the files are organised
 
-The view templates are available in the `view-template` folder of the SDK. Every template file is named using the notice sub-type identifier and has the extension `.efx`.
-For this version of the eForms SDK there is only one template available for every notice sub-type. An additional template tha can be used for any notice sub-type is the `summary.efx` template, which as the name implies generates a summarised view of the notice.
+The view templates are available in the `view-template` folder of the SDK. Every template file is named using the notice subtype identifier and has the extension `.efx`.
+For this version of the eForms SDK there is only one template available for every notice subtype. An additional template that can be used for any notice subtype is the `summary.efx` template, which as the name implies generates a summarised view of the notice.
 
 == Template language syntax
 
-As the file extension implies, the template language used inside the template, is EFX. 
+As the file extension implies, the language used inside the template is EFX. 
 
 EFX, short for "eForms expression language", is a domain specific language that we have developed to allow us to easily and unambiguously express the eForms business rules, as well as to enable us to define these view templates. EFX templates provide the structural information necessary to visualise the notice and use EFX expressions to convey content information.
 

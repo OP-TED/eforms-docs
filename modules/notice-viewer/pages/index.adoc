@@ -15,9 +15,9 @@ The goal of the application is to create an HTML visualisation of any given XML 
 
 The notice-viewer is a command line application written in Java. It takes as a parameter the pathname of the notice XML file to visualise. The target language can also be specified (the default is English).  
 
-The application opens the given XML file to determine the version number of the eForms SDK needed to visualise it, as well as the notice sub-type that the notice corresponds to.
+The application opens the given XML file to determine the version number of the eForms SDK needed to visualise it, as well as the notice subtype that the notice corresponds to.
 
-Using the notice sub-type, the notice-viewer infers the appropriate EFX template needed to visualise the notice. 
+Using the notice subtype, the notice-viewer infers the appropriate EFX template needed to visualise the notice. 
 
 The application loads the eForms metadata from the eForms SDK and uses the EFX translator to translate the selected EFX template to XSLT.
 
