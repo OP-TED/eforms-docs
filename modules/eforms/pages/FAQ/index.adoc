@@ -689,7 +689,7 @@ in most cases this is a way to associate a Business Group (and its content) to o
 In the XML, this information is pointless by design as the information of the Business Group may be found inside the element representing the lot.
 +
 Some of the BTs for identifiers are not needed due to the way that the schema has been developed. There is a list of these in the documentation, 
-under the section "Pointless due to design".
+under the section https://docs.ted.europa.eu/eforms/0.5.0/schema/identifiers.html#pointlessDueToDesignSection["Pointless due to design"].
 
 
 
@@ -844,7 +844,8 @@ We have not published a list of these regular expressions, but they can be found
 Are all eForms codelists published on the EU Vocabularies site?::
 
 There are codelists that have no relevance or use outside the context of eForms; these are not published on the EU Vocabularies website, 
-but are published as part of the eForms SDK. For more information, see Tailored Codelists in the documentation.
+but are published as part of the eForms SDK. For more information, see https://docs.ted.europa.eu/eforms/0.5.0/codelists/index.html[Tailored Codelists] 
+in the documentation.
 
 
 
