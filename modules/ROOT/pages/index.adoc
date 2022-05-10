@@ -30,6 +30,14 @@ Find out why we include every codelist in the SDK and learn how to use them.
 Find out which translations are included in the SDK and learn how to use them.
 * xref:notice-types:index.adoc[Notice Structure] +
 How each notice type is structured.
+* xref:viewer-templates:index.adoc[Notice View Templates] +
+Reusable templates for visualising notices.
+* xref:efx:index.adoc[eForms Expression Language] +
+The formal language used to express business rules.
+* xref:efx-toolkit:index.adoc[EFX Toolkit for Java] +
+A toolkit that you can use to translate EFX expressions and templates for your runtime environment.
+* xref:notice-viewer:index.adoc[Notice Viewer sample application] +
+See how you can create a metadata driven application for visualising any eForms notice.
 * xref::versioning.adoc[eForms SDK Versioning] +
 Learn about breaking changes and the significance of SDK version numbers.
 

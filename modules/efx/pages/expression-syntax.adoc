@@ -1,0 +1,123 @@
+= EFX expression syntax
+
+EFX expressions are used to navigate, read and manipulate data inside eForms notice XML documents. Arguably, one does not need any language other than XPath in order to achieve the same goal. To understand why we had to move away from XPath xref:efx:index.adoc[follow this link]. EFX expression syntax is, however, inspired by XPath and tries to simplify things and focus expressions on the specific domain of eForms. 
+
+== Data types & literals
+
+EFX uses the following data types:
+
+String:: This is the equivalent of TEXT data type. String literals appear in single (`'`) or double (`"`) quotes. There are several EFX expressions and functions that allow the manipulation of strings.
+Number:: EFX treats both integer and decimal numbers the same. The decimal separator is the dot (`.`). 
+Boolean:: Boolean literals are `TRUE` and `FALSE`. EFX also interprets the literal `ALWAYS` to mean `TRUE` and the literal `NEVER` to mean `FALSE`.
+Date, Time:: In eForms, date and time are always stored in separate fields. Therefore there is no EFX data type that combines date and time together. `Date` and `Time` are two separate data types. 
++
+*Unlike XPath*, EFX date and time literals are not included in quotes.
+Duration:: In EFX, durations (a.k.a. measures), are similar to XPath durations. Duration literals use a similar syntax for example: `P3D` denotes "3 days". `P3Y` stands for "3 years". Four different units are supported for duration measures: years (`P1Y`), months (`P1M`), weeks (`P1W`) and days (`P1D`).
++
+[source,antlr4]
+----
+DayTimeDurationLiteral: '-'? 'P' INTEGER ('W' | 'D');
+YearMonthDurationLiteral: '-'? 'P' INTEGER ('Y' | 'M');
+---- 
++
+*Unlike XPath*, finer granularity for durations in hours, minutes or seconds is *not supported*.
++
+Negative durations are also supported (e.g. `-P3W` is a valid negative duration of three weeks). Negative durations are useful in calculations.
++
+*Unlike XPath*, measure units cannot be combined in one duration expression. For example you *cannot* write a duration of `P2Y3M` to denote a duration of two years and three months.
+ 
+
+== Identifiers
+
+EFX can recognise identifiers of eForms business terms, fields and nodes by taking advantage of the naming conventions used for them by the SDK. Codelist identifiers are included in parenthesis.
+
+[source, antlr4]
+----
+BtId: ('BT' | 'OPP' | 'OPT') '-' [0-9]+;
+FieldId: BtId ('(' (('BT' '-' [0-9]+) | [a-z]) ')')? ('-' ([a-zA-Z_] ([a-zA-Z_] | [0-9])*))+;
+NodeId: 'ND' '-' [0-9]+;
+
+codelistReference: OpenParenthesis codelistId CloseParenthesis;
+codelistId: Identifier;
+
+Identifier: IdentifierPart ('-' IdentifierPart)*;
+IdentifierPart: [a-zA-Z_] ([a-zA-Z_] | [0-9])*;
+
+----
+
+== Referencing eForms fields and nodes
+You can reference an eForms field in EFX by using its identifier. The same for referencing an eForms node. 
+
+This makes expressions simpler to read and write and also prevents us from having to change existing expressions if the schema changes in the future.
+
+Just like in XPath, these references actually represent an `XML node set`.
+
+.Simplified excerpt from EFX grammar
+[source, antlr4]
+----
+fieldReferenceWithPredicate: simpleFieldReference OpenBracket predicate CloseBracket;
+simpleFieldReference: FieldId;
+
+nodeReferenceWithPredicate: simpleNodeReference OpenBracket predicate CloseBracket;
+simpleNodeReference: NodeId;
+
+BtId: ('BT' | 'OPP' | 'OPT') '-' [0-9]+;
+FieldId: BtId ('(' (('BT' '-' [0-9]+) | [a-z]) ')')? ('-' ([a-zA-Z_] ([a-zA-Z_] | [0-9])*))+;
+NodeId: 'ND' '-' [0-9]+;
+----
+
+== Predicates 
+A field or node reference can be complimented with a predicate that restricts the `XML nodes` it matches. 
+
+Just like in XPath, EFX predicates are EFX logical (boolean) EFX expressions included in square brackets.
+
+[source, antlr4]
+----
+predicate: booleanExpression;
+----
+
+== Logical expressions
+EFX supports boolean expressions including:
+
+* boolean literals (`TRUE`, `FALSE`)
+* comparisons (`==`, `!=`, `>`, `>=`, `<`, `<=`)
+* logical operations (`and`, `or`, `not`)
+* regular expression pattern matching
+* checking for empty values
+* checking for presence of XML elements
+* check for presence of values in lists
+
+.Simplified excerpt from EFX grammar
+[source, antlr4]
+----
+booleanExpression
+	: OpenParenthesis booleanExpression CloseParenthesis
+	| booleanExpression Or booleanExpression
+	| booleanExpression And booleanExpression
+	| stringExpression Not? In list
+	| stringExpression Is Not? Empty
+	| setReference Is Not? Present
+	| stringExpression Not? Like pattern=STRING
+	| fieldValueReference Comparison fieldValueReference
+	| booleanExpression Comparison booleanExpression
+	| numericExpression Comparison numericExpression
+	| stringExpression Comparison stringExpression
+	| dateExpression Comparison dateExpression
+	| timeExpression Comparison timeExpression
+	| durationExpression Comparison durationExpression
+	| booleanLiteral
+	| booleanFunction
+	| BooleanTypeCast? fieldValueReference
+	;
+
+    booleanLiteral: Always | True | Never | False;
+
+    Comparison: '==' | '!=' | '>' | '>=' | '<' | '<=';
+
+----
+
+
+'''
+*See also:*
+
+* xref:efx:template-syntax.adoc[EFX template syntax]

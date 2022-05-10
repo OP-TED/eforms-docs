@@ -1,0 +1,207 @@
+= Transpiling EFX
+
+A transpiler, is a form of translator that takes as input the source code written in an input programming language and outputs the equivalent source code in a target output language. A famous transpiler is the one of TypeScript, which takes as input TypeScript source code and transpiles it to plain JavaScript.
+
+EFX was not designed to drive an EFX template engine or to be executed directly in an EFX runtime environment. There is no EFX runtime or EFX template processor. Instead EFX was designed to be translatable to several other languages that target existing runtime environments and template engines. 
+
+In other words EFX was designed so that it can be automatically translated to the languages and runtime environments chosen by each individual eSender or application developer.
+
+TIP: Typically, there is no reason to translate the EFX expressions and templates at runtime. The recommended approach would be to translate all EFX code to the target languages of your choice only once: at the time you import a new version of the eForms SDK into your application. 
+
+== Available EFX transpilers
+The EFX Toolkit for Java Developers, contains a generic translator that can be reused to translate EFX to several different target languages. See xref:_create_your_own_translations_using_the_efx_toolkit[next section] for more details.
+
+The toolkit, provides an implementation of the `ScriptGenerator` interface that targets *XPath* (see `XPathScriptGenerator`). This is the same implementation used by the Publications Office to generate the Schematron files included in the eForms SDK. 
+
+Additionally, the Notice Viewer sample application, contains an implementation of the `MarkupGenerator` interface that targets *XSLT* (for transpiling EFX templates). Although the implementation in this sample application is too simplistic to be suitable for reuse without modifications, you can always use it as an inspiration or as the starting point to create a `MarkupGenerator` for XSLT that satisfies your production requirements.
+
+== Create your own translations using the EFX Toolkit 
+
+The EFX Toolkit contains two reusable transpilers:
+
+* The `EfxExpressionTranslator` can be used to translate Efx expressions to a target language of your choice.
+* The `EfxTemplateTranslator`, extends `EfxExpressionTranslator` to add the capability to transpile EFX templates.
+
+Both transpilers were designed so that they can be reused to translate to several different target languages. To achieve that, three different interfaces have been defined to abstract the specifics of different possible translations:
+
+* The `ScriptGenerator` interface, abstracts the specifics of the target scripting language for transpiling EFX expressions.
+* The `MarkupGenerator` interface, abstracts the specifics ot the target markup language for transpiling EFX templates.
+* Finally, the `SymbolResolver` is used to abstract symbol resolution (e.g. field identifiers etc.).
+
+=== Implementing the SymbolResolver interface
+The SymbolResolver provides to the transpiler, access to the eForms metadata available in the dForm SDK.
+
+An implementation of the `SymbolResolver` interface that reads data directly from the eForms SDK is available in the Notice Viewer sample application.
+
+The `SymbolResolver` implementation requires the implementation of only a few methods that resolve symbols and provide information on them like: 
+
+* the location (e.g. XPath) of the value corresponding to the symbol in the data source (e.g. notice XML). 
+* the data type associated with a symbol
+* the relation of the symbol with other symbols like its parent node.
+
+Below is a simplified listing of the `SymbolResolver` interface for quick reference. You can find https://github.com/OP-TED/efx-toolkit-java/blob/develop/src/main/java/eu/europa/ted/efx/interfaces/SymbolResolver.java[the actual definition in Github].
+
+[source, java]
+----
+package eu.europa.ted.efx.interfaces;
+
+import java.util.List;
+import eu.europa.ted.efx.model.Expression.PathExpression;
+
+public interface SymbolResolver {
+    public String getParentNodeOfField(String fieldId);
+    public PathExpression getRelativePathOfField(String fieldId, PathExpression contextPath);
+    public PathExpression getRelativePathOfNode(String nodeId, PathExpression contextPath);
+    public PathExpression getAbsolutePathOfField(String fieldId);
+    public PathExpression getAbsolutePathOfNode(String nodeId);
+    public String getTypeOfField(String fieldId);
+    public String getRootCodelistOfField(String fieldId);
+    public List<String> expandCodelist(String codelistId);
+}
+----
+
+The reason we abstract this functionality away from the transpiler implementation is because, some applications, may not read metadata directly from the SDK. Instead your application may combine the SDK metadata with other information in a proprietary metadata store. Implementing this interface allows you to reuse the existing transpiler in your application. 
+
+NOTE: You will notice that some methods require you to return a `PathExpression`. Typically, this would be an XPath. However, it does not have to be an XPath if your data source is not XML. Whatever "path" these methods return will be passed along to the `ScriptGenerator` interface to dereference field values. So, as long as the paths that you return can be used to dereference field values in your target language, you are on the right track.
+
+NOTE: The interface is easy to implement. However there is one detail that needs attention. There are two methods that require you to return a relative path. If the path you are returning is not an XPath, then you need to craft your implementation carefully so that relative paths are calculated correctly. If, however, you use XPath then you can reuse the `XPathContextualizer` provided in the EFX Toolkit.
+
+
+=== Implementing the ScriptGenerator interface
+The `ScriptGenerator` interface provides to the transpiler the proper syntax, in your target language, for specific operations. For example, if the transpiler wants to generate code for concatenating strings in the target language, then it will call the `composeStringConcatenation` method of the `ScriptGenerator` that return the code corresponding to the specific operation.
+
+NOTE: All methods in this interface return an object of type `Expression` (or a derived type). The `Expression` class and  its subclasses are defined in the `eu.europa.ted.efx.model` package. Their goal is to enforce type safety. The `Expression` is an abstraction of an "expression" in the target scripting language. It only stores the target language script in its `script` field and along with it, it conveys data type information. This makes the code more readable and more type-safe. 
+
+Most methods in this interface, start with the verb "compose". You will notice that these methods take as parameters `Expression` objects. These `Expression` objects are actually the return values of other methods of the same interface. The goal of the "composeXyz" methods is to "compose" the target language script that appropriately combines the passed `Expression` objects to perform a specific operation.
+
+The methods that do not start with "compose" in this interface follow the naming convention "getXyzEquivalent". These methods take as a parameter a string that is typically an EFX literal, and are expected to return the equivalent script for that literal in the target language.
+
+Although this interface requires you to implement 40+ methods, its implementation is not as hard as it might seem. All methods can typically be implemented in one or two lines of code. Se the implementation of `XPathScriptGenerator` in the EFX Toolkit for inspiration on how to implement this interface for target languages other than XPath.
+
+Below is a simplified listing of the `ScriptGenerator` interface for quick reference. You can find https://github.com/OP-TED/efx-toolkit-java/blob/develop/src/main/java/eu/europa/ted/efx/interfaces/ScriptGenerator.java[the actual definition in Github].
+
+[source, java]
+----
+package eu.europa.ted.efx.interfaces;
+
+import java.util.List;
+import eu.europa.ted.efx.model.Expression;
+import eu.europa.ted.efx.model.Expression.*;
+
+public interface ScriptGenerator {
+
+    public <T extends Expression> T composeNodeReferenceWithPredicate(PathExpression nodeReference, BooleanExpression predicate, Class<T> type);
+    public <T extends Expression> T composeFieldReferenceWithPredicate(PathExpression fieldReference, BooleanExpression predicate, Class<T> type);
+    public <T extends Expression> T composeFieldValueReference(PathExpression fieldReference, Class<T> type);
+    public <T extends Expression> T composeFieldAttributeReference(PathExpression fieldReference, String attribute, Class<T> type);
+    public StringListExpression composeListOfStrings(List<StringExpression> list);
+    public BooleanExpression getBooleanEquivalent(boolean value);
+    public BooleanExpression composeLogicalAnd(BooleanExpression leftOperand, BooleanExpression rightOperand);
+    public BooleanExpression composeLogicalOr(BooleanExpression leftOperand, BooleanExpression rightOperand);
+    public BooleanExpression composeLogicalNot(BooleanExpression condition);
+    public BooleanExpression composeContainsCondition(StringExpression needle, StringListExpression haystack);
+    public BooleanExpression composePatternMatchCondition(StringExpression expression, String regexPattern);
+    public <T extends Expression> T composeParenthesizedExpression(T expression, Class<T> type);
+    public PathExpression composeExternalReference(StringExpression externalReference);
+    public PathExpression composeFieldInExternalReference(PathExpression externalReference, PathExpression fieldReference);
+    public PathExpression joinPaths(PathExpression first, PathExpression second);
+    public StringExpression getStringLiteralFromUnquotedString(String value);
+    public BooleanExpression composeComparisonOperation(Expression leftOperand, String operator, Expression rightOperand);
+    public NumericExpression composeNumericOperation(NumericExpression leftOperand, String operator, NumericExpression rightOperand);
+    public NumericExpression getNumericLiteralEquivalent(String efxLiteral);
+    public StringExpression getStringLiteralEquivalent(String efxLiteral);
+    public DateExpression getDateLiteralEquivalent(String efxLiteral);
+    public TimeExpression getTimeLiteralEquivalent(String efxLiteral);
+    public DurationExpression getDurationLiteralEquivalent(String efxLiteral);
+    public NumericExpression composeCountOperation(PathExpression set);
+    public NumericExpression composeToNumberConversion(StringExpression text);
+    public NumericExpression composeSumOperation(PathExpression setReference);
+    public NumericExpression composeStringLengthCalculation(StringExpression text);
+    public StringExpression composeStringConcatenation(List<StringExpression> list);
+    public BooleanExpression composeEndsWithCondition(StringExpression text, StringExpression endsWith);
+    public BooleanExpression composeStartsWithCondition(StringExpression text, StringExpression startsWith);
+    public BooleanExpression composeContainsCondition(StringExpression haystack, StringExpression needle);
+    public StringExpression composeSubstringExtraction(StringExpression text, NumericExpression start);
+    public StringExpression composeSubstringExtraction(StringExpression text, NumericExpression start, NumericExpression length);
+    public StringExpression composeToStringConversion(NumericExpression number);
+    public BooleanExpression composeExistsCondition(PathExpression reference);
+    public DateExpression composeToDateConversion(StringExpression pop);
+    public DateExpression composeAddition(DateExpression date, DurationExpression duration);
+    public DateExpression composeSubtraction(DateExpression date, DurationExpression duration);
+    public TimeExpression composeToTimeConversion(StringExpression pop);
+    public DurationExpression composeSubtraction(DateExpression startDate,DateExpression endDate);
+    public StringExpression composeNumberFormatting(NumericExpression number, StringExpression format);
+    public DurationExpression composeMultiplication(NumericExpression number, DurationExpression duration);
+    public DurationExpression composeAddition(DurationExpression left, DurationExpression right);
+    public DurationExpression composeSubtraction(DurationExpression left, DurationExpression right);
+}
+
+----
+
+=== Implementing the MarkupGenerator interface
+The `MarkupGenerator` interface is used to provide to the transpiler the proper syntax in the target templating language for specific operations.
+
+An example implementation of the `MarkupGenerator` interface that generates XSLT script, can be found in the Notice Viewer sample application (see `XslMarkupGenerator`).
+
+NOTE: You will notice that all methods in this interface return objects of type `Markup`. Just like the `Expression` abstraction in the `ScriptGenerator`, these `Markup` object abstract the notion of target markup language script. They are introduced to improve  clarity and readability of code.
+
+Similarly to the `ScriptGenerator` interface, some methods in this interface also start with the verb "compose". These methods take as parameters `Markup` objects that have been previously returned by other methods in the same interface. Their goal is to appropriately combine these `Markup` parameters into new markup for a specific scenario.
+
+The remaining methods in this interface start with the verb "render". You will notice that these methods take as a parameter `Expression` objects that have been returned by your `ScriptGenerator` implementation. These methods are expected to return the target language markup for rendering these expressions in the output template.
+
+Below is a simplified listing of the `MarkupGenerator` interface for quick reference. You can find https://github.com/OP-TED/efx-toolkit-java/blob/develop/src/main/java/eu/europa/ted/efx/interfaces/MarkupGenerator.java[the actual definition in Github].
+[source, java]
+----
+package eu.europa.ted.efx.interfaces;
+
+import java.util.List;
+import eu.europa.ted.efx.model.Expression;
+import eu.europa.ted.efx.model.Markup;
+import eu.europa.ted.efx.model.Expression.PathExpression;
+import eu.europa.ted.efx.model.Expression.StringExpression;
+
+public interface MarkupGenerator {
+    Markup composeOutputFile(final List<Markup> content, final List<Markup> fragments);
+    Markup renderVariableExpression(final Expression variableExpression);
+    Markup renderLabelFromKey(final StringExpression key);
+    Markup renderLabelFromExpression(final Expression expression);
+    Markup renderFreeText(final String freeText);
+    Markup composeFragmentDefinition(final String name, String number, Markup content);
+    Markup renderFragmentInvocation(final String name, final PathExpression context);
+}
+
+----
+== Creating your own transpilers from scratch
+If our application is written in Java, or you can include the EFX Toolkit for Java in your workflow then you don't need to write your own transpilers. 
+
+In case you want to create a transpiler in C# or any of the other languages supported by ANTLR4, then you will need to download the ANTLR4 developer tools for your platform and use the EFX grammar provided in the eForm SDK as input to ANTRL4 to generate an EFX parser. You can https://www.antlr.org/download.html[download ANTLR4 developer tools] for the following languages:
+
+* Java, 
+* C#, 
+* Python, 
+* JavaScript, 
+* Go, 
+* C++, 
+* Swift, 
+* PHP 
+* DART
+
+Apart from a lexical analyser and a parser ANTLR4 will also generate for you an `EfxListener` and/or `EfxVisitor` which can be used as a basis for creating your translator. In our own implementation we chose to use the listener model. You can use the source code of the EFX Toolkit for Java to see how we approached the creation of our translator in Java. 
+
+The way the translation process would work is that first the lexical analyser (lexer) will tokenise the EFX input. Then the tokens will be parsed by the parser to produce a parse tree. Finally a walker will walk the parse tree to produce the translation. If you choose to use the walker provided by ANTRL4, then you can use the EfListener generated by ANTLR4 to handle the events raised by the walker as it walks the parse tree. Alternatively, you can use the `EfxVisitor` which will allow you explicitly visit the nodes in the parse tree to produce the translated code.
+
+[TIP] 
+====
+Creating a transpiler is not trivial but is not rocket science either. If you can avoid writing your own transpiler, all the better. The trickiest parts of the implementation are:
+
+* properly handing indentation in EFX templates,
+* leveraging stacks to maintain context
+
+When in doubt, use the EFX Translator implementations available in the EFX Toolkit as an example. 
+====
+
+'''
+*See also:*
+
+* xref:efx-toolkit:index.adoc[EFX Toolkit for Java]
+* xref:notice-viewer:index.adoc[Notice Viewer sample application]

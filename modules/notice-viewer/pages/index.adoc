@@ -69,3 +69,10 @@ The section numbers displayed in the HTML notice are automatically generated (ap
 NOTE: The application tries to implement a mechanism for using multiple versions of the eForms SDK in parallel. However, this first version of the application can only work with one version of the SDK as currently there is no other version of the eForms SDK that contains any view templates. Therefore, the current implementation of the mechanism that handles multiple versions of the SDK in parallel is incomplete. 
 
 WARNING: The view templates currently included in SDK 0.6.0 are a "work in progress". You may find templates that contain mistakes or even "to-do" comments included in this version of the SDK.
+
+'''
+*See also:*
+
+* xref:viewer-templates:index.adoc[Notice View Templates]
+* xref:efx-toolkit:index.adoc[EFX Toolkit for Java]
+* xref:efx:template-syntax.adoc[EFX template syntax]

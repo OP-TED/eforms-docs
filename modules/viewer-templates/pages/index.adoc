@@ -8,24 +8,27 @@ To standardise the way a notice can be visualised, independently of the media fo
 Every notice subtype can be associated with one or more different view templates. These templates are available in the `view-templates` folder in the eForms SDK. To create these template files, we use the EFX template language.
 
 == How the files are organised
-
 The view templates are available in the `view-template` folder of the SDK. Every template file is named using the notice subtype identifier and has the extension `.efx`.
 For this version of the eForms SDK there is only one template available for every notice subtype. An additional template that can be used for any notice subtype is the `summary.efx` template, which as the name implies generates a summarised view of the notice.
 
 == Template language syntax
+As the `.efx` file extension implies, the language used to write the template is EFX. 
 
-As the file extension implies, the language used inside the template is EFX. 
+EFX, short for "eForms expression language", is a domain specific language that we have developed to allow us to easily and unambiguously express the eForms business rules, as well as to enable us to define these view templates. EFX templates provide the structural information necessary to visualise the notice. The template uses EFX expressions to convey content information.
 
-EFX, short for "eForms expression language", is a domain specific language that we have developed to allow us to easily and unambiguously express the eForms business rules, as well as to enable us to define these view templates. EFX templates provide the structural information necessary to visualise the notice and use EFX expressions to convey content information.
+For details on the EFX template language syntax xref:efx:template-syntax.adoc[follow this link].
 
-Every template file is organized in `template lines`. Every `template line`, contains two main pieces of information:
+== How to reuse the templates
+If you could take advantage of these view templates to automatically visualise any notice, you would avoid having to recode your hardcoded visualisations every time a new version of eForms is released. Moreover, you could even aim at reusing the same template system for the visualisation of notices tailored for you Member State. So how can that be achieved?
 
-* the `context` of the line.
-* the `content` that will be displayed in the output generated for the specific line.
+The general idea is that you would need to automatically translate the eForms view templates to the templating system of your choice. Then use the automatically generated templates to visualise any notice.
 
-Below is en excerpt from the EFX grammar that expresses this:
 
-[source]
-----
-templateLine: (OutlineNumber | Tabs | Spaces | MixedIndent)? contextDeclarationBlock template CRLF;
-----
+For details on how to translate the provided EFX templates to the template language of your choice, see xref:efx:transpiling-efx.adoc[Transpiling EFX].
+
+
+'''
+*See also:*
+
+* xref:efx-toolkit:index.adoc[EFX Toolkit for Java]
+* xref:notice-viewer:index.adoc[Notice Viewer sample application]

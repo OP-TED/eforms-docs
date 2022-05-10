@@ -1,0 +1,34 @@
+= EFX template syntax
+
+An EFX view template is stored in a text file with a .efx extension. 
+
+== Expected output
+The goal of the template file is to provide instructions for the visualisation of a notice in a web or document page. The output is therefore expected to be a series of lines of text containing information from the notice being visualised.
+Moreover, the output is expected to have some visual structure that represents the logical grouping of information contained in the notice. 
+The visual structure of the output is expected to be hierarchical, with some lines acting as group or sub-group headings for a set of lines that follow it.
+
+== Template content
+Each line in the template file is called a "template line" and it represents a line of text in the output file. All template lines have the same syntax regardless of whether they represent group headings or not. Grouped lines appear nested under their heading line in the template using standard Python style indentation (tabs or spaces). This way all the content and structure of the output file is represented in the template file.
+
+== Syntax
+Each template line contains the following three parts.
+
+Indentation::
+Intentation can be done using either tabs or spaces. However, you cannot mix tab-based with space-based indentation in the same template file. The indentation style that is used in the first indented line in the file, is expected to be used throughout the file. Indentation is optional as root-level lines do not need it. 
+
+Context Declaration::
+The context declaration should effectively point to the notice XML element that is needed as a context for the EFX expressions that follow. Typicaly either a node or field identifiier are used to declare the context. The context declaration may also include a predicate if needed. The context declaration is enclosed in curly brackets without any prefix `{...}`.
+
+Content Template::
+The content template is composed by a combination of what we call "template fragments". Template fragments can be i18n labels, free text, or EFX espressions indicating information extracted from the notice. The template fragments are combined as needed to compose the text that will be presented in the output line.
++
+--
+Free text fragments:: Any text you include in the  content template will be copied verbatim to the output. Whitespace is significant.
+Label fragments:: A label reference inserts a i18n label in the output. A label is referenced using its identifier enclosed in curly braces prefixed by a sharp symbol `#{...}`. 
+Expression fragments:: Content from the notice is included in the output via the use of EFX expressions. EFX expressions are included in curly braces prefixed by a dolar symbol `${...}`.
+--
+
+'''
+*See also:*
+
+* xref:efx:expression-syntax.adoc[EFX expression syntax]
