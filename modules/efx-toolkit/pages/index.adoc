@@ -25,7 +25,7 @@ An implementation of the `MarkupGenerator` interface that targets *XSLT* can als
 
 Finally, an implementation of the `SymbolResolver` interface that uses directly the eForms SDK can also be found in the Notice Viewer Sample application. If however, you organise the eForms metadata provided with the SDK to your own custom metadata repository, then you can implement the same interface in your own class and reuse the existing translators.
 
-Implementing these three interfaces (or reusing the existing ones) should be enough for you to be able to translate EFX expressions and templates for your target runtime environment. This will allow you to
+Implementing these three interfaces (or reusing the existing ones) should be enough for you to be able to translate EFX expressions and templates for your target runtime environment. For more details on implementing these interfaces xref:efx:transpiling-efx.adoc[follow this link].
 
 == Supporting multiple versions of the eForms SDK
 
