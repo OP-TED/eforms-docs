@@ -20,11 +20,9 @@ DayTimeDurationLiteral: '-'? 'P' INTEGER ('W' | 'D');
 YearMonthDurationLiteral: '-'? 'P' INTEGER ('Y' | 'M');
 ---- 
 +
-*Unlike XPath*, finer granularity for durations in hours, minutes or seconds is *not supported*.
+*Unlike XPath*, finer granularity for durations in hours, minutes or seconds is *not supported*. In addition, measure units cannot be combined in one duration expression. For example you *cannot* write a duration of `P2Y3M` to denote a duration of two years and three months.
 +
 Negative durations are also supported (e.g. `-P3W` is a valid negative duration of three weeks). Negative durations are useful in calculations.
-+
-*Unlike XPath*, measure units cannot be combined in one duration expression. For example you *cannot* write a duration of `P2Y3M` to denote a duration of two years and three months.
  
 
 == Identifiers

@@ -19,7 +19,7 @@ Additionally, the Notice Viewer sample application, contains an implementation o
 
 The EFX Toolkit contains two reusable transpilers:
 
-* The `EfxExpressionTranslator` can be used to translate Efx expressions to a target language of your choice.
+* The `EfxExpressionTranslator` can be used to translate EFX expressions to a target language of your choice.
 * The `EfxTemplateTranslator`, extends `EfxExpressionTranslator` to add the capability to transpile EFX templates.
 
 Both transpilers were designed so that they can be reused to translate to several different target languages. To achieve that, three different interfaces have been defined to abstract the specifics of different possible translations:

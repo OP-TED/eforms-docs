@@ -14,18 +14,18 @@ Each line in the template file is called a "template line" and it represents a l
 Each template line contains the following three parts.
 
 Indentation::
-Intentation can be done using either tabs or spaces. However, you cannot mix tab-based with space-based indentation in the same template file. The indentation style that is used in the first indented line in the file, is expected to be used throughout the file. Indentation is optional as root-level lines do not need it. 
+Indentation can be done using either tabs or spaces. However, you cannot mix tab-based with space-based indentation in the same template file. The indentation style that is used in the first indented line in the file, is expected to be used throughout the file. Indentation is optional as root-level lines do not need it. 
 
 Context Declaration::
-The context declaration should effectively point to the notice XML element that is needed as a context for the EFX expressions that follow. Typicaly either a node or field identifiier are used to declare the context. The context declaration may also include a predicate if needed. The context declaration is enclosed in curly brackets without any prefix `{...}`.
+The context declaration should effectively point to the notice XML element that is needed as a context for the EFX expressions that follow. Typically either a node or field identifier are used to declare the context. The context declaration may also include a predicate if needed. The context declaration is enclosed in curly brackets without any prefix `{...}`.
 
 Content Template::
-The content template is composed by a combination of what we call "template fragments". Template fragments can be i18n labels, free text, or EFX espressions indicating information extracted from the notice. The template fragments are combined as needed to compose the text that will be presented in the output line.
+The content template is composed by a combination of what we call "template fragments". Template fragments can be i18n labels, free text, or EFX expressions indicating information extracted from the notice. The template fragments are combined as needed to compose the text that will be presented in the output line.
 +
 --
 Free text fragments:: Any text you include in the  content template will be copied verbatim to the output. Whitespace is significant.
 Label fragments:: A label reference inserts a i18n label in the output. A label is referenced using its identifier enclosed in curly braces prefixed by a sharp symbol `#{...}`. 
-Expression fragments:: Content from the notice is included in the output via the use of EFX expressions. EFX expressions are included in curly braces prefixed by a dolar symbol `${...}`.
+Expression fragments:: Content from the notice is included in the output via the use of EFX expressions. EFX expressions are included in curly braces prefixed by a dollar symbol `${...}`.
 --
 
 '''
