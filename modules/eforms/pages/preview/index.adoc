@@ -148,7 +148,7 @@ Partial rending of HTML and PDF.
 
 == TED API 
 
-Website: to come 
+Website: https://developer.preview.ted.europa.eu/home 
 
 Documentation: a dedicated section of docs.ted.europa.eu will document all APIs. 
 
