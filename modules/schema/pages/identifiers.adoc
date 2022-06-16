@@ -12,7 +12,7 @@ In the sections below, the different identifiers are listed.
 .Identifiers
 [width="100%",cols="<.^10%,<.^20%,<.^40%,<.^10%,<.^20%",options="header",]
 |===
-^|*Field* ^|*Name of the field* ^|*Description* ^|*schemeName* ^|*ID format*
+^|*Business Term* ^|*Name of the Business Term* ^|*Description* ^|*schemeName* ^|*ID format*
 |BT-01 |Procedure Legal Basis (ELI - celex) | a|
 ELI,
 
@@ -119,7 +119,7 @@ procedure |tender |TEN-XXXX
 .References
 [width="100%",cols="<.^10%,<.^20%,<.^40%,<.^10%,<.^20%",options="header",]
 |===
-^|*Field* ^|*Name of the field* ^|*Defined by* ^|*schemeName* ^|*ID format*
+^|*Business Term* ^|*Name of the Business Term* ^|*Defined by* ^|*schemeName* ^|*ID format*
 .2+|BT-125 .2+|Previous Planning Identifier |A combination of the Notice 
 Identifier (BT-701) and the Notice Version (BT-757) of the previous
 planning notice |notice-id-ref |UUID-XX
