@@ -7,7 +7,7 @@
 
 The objective of this document is to provide the person in charge of the
 XML generation with the information necessary for integration of the
-schemas
+schemas.
 
 There are three schemas foreseen to cover the 40 situations listed in
 the eForms Regulation
@@ -20,8 +20,8 @@ the eForms Regulation
 
 * Contract Award Notice (CAN).
 
-The schemas are based on OASIS UBL v2.3 with some extensions for eForms
-specific elements.
+The schemas are based on OASIS UBL v2.3 with some extensions for 
+eForms-specific information.
 
 Codelists, validation rules and technical integration are outside the
 scope of the present document; although, if there are references to some

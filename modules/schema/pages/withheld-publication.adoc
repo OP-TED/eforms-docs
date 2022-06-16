@@ -18,7 +18,7 @@ and a description. The field whose information publication shall be
 withhold is identified using a code as specified in the following
 subsections.
 
-To activate the mechanism, four elements have to be used:
+To activate the mechanism, four business terms have to be used:
 
 * Unpublished Identifier (BT-195)
 

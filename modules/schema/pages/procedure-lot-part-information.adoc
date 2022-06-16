@@ -79,7 +79,7 @@ Procurement Procedure;
 
 * The group composition (i.e. the exhaustive list of Lots a
 group contains) is specified in the Tendering Terms at root level using
-sub-elements of "_cac:LotDistribution_" as described in <<maxLotsSection>>;
+child elements of "_cac:LotDistribution_" as described in <<maxLotsSection>>;
 
 * Other information about a Group of Lots is located separately
 from its composition, under a dedicated "_cac:ProcurementProjectLot_"
@@ -1377,7 +1377,7 @@ multiplication of the parent element "_cac:AllowedSubcontractTerms_".
 
 Subcontracting Tender Indication (BT-651) provides information about
 subcontracting information a tenderer shall specify in its tender; this
-is marked with the "_efbc:TenderSubcontractingRequirementsCode_" element;
+is marked with the "_efbc:TenderSubcontractingRequirementsCode_" element.
 Allowed code values are listed in the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/subcontracting-indication[subcontracting-indication]
 codelist.
@@ -1403,13 +1403,13 @@ codelist.
 [[reservedExecutionSection]]
 === Reserved Execution (BT-736)
 
-This element is used to specify whether the procurement execution is
-reserved or not, or whether this is not yet known. The element must be
+This business term is used to specify whether the procurement execution is 
+reserved or not, or whether this is not yet known. The business term must be
 specified everywhere mandated by the Regulation. The "listName"
 attribute of the cbc:ExecutionRequirementCode element should be set 
 to "reserved-execution". The element possible values are the ones of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/applicability[applicability]
-codelist (i.e. "yes", "no" or "not-known")
+codelist (i.e. "yes", "no" or "not-known"):
 
 [source,xml]
 ----
@@ -1656,15 +1656,15 @@ shall hold the value associated with that dimension.
 
 The number dimension shall be:
 
-* for weights (BT-5421), elements from the
+* for weights (BT-5421), a code from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-weight[number-weight]
 codelist;
 
-* for fixed values (BT-5422), elements from the
+* for fixed values (BT-5422), a code from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-fixed[number-fixed]
 codelist; and
 
-* for threshold values (BT-5423), elements from the
+* for threshold values (BT-5423), a code from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-threshold[number-threshold]
 codelist.
 
@@ -1779,7 +1779,7 @@ Other parties that can be involved in processing tenders are:
 * the organization evaluating tenders
 ("_cac:TenderEvaluationParty_").
 
-They may then be coded in the instance using elements shown below.
+They may then be coded in the instance using the elements shown below.
 
 [source,xml]
 ----
@@ -2386,7 +2386,7 @@ This business term describes the main features of the whole Procedure;
 it provides information on the individual stage(s) and the availability
 of the whole set of applicable rules.
 
-The element applies to the whole Procedure (i.e. does not apply per Lot
+The business term applies to the whole Procedure (i.e. does not apply per Lot
 or Group of Lots), and is mandatory when the procedure is not one of
 those mentioned in the procurement Directives (i.e. for values
 "oth-mult" and "oth-single" of the
@@ -2461,7 +2461,7 @@ This term is used to specify that any tenderer must submit tenders for
 all Lots. This element shall be used when and only when tendering for
 all existing Lots is mandatory. For this, the
 "_cbc:PartPresentationCode_" element is used with a single possible
-value: "_all_"
+value: "_all_".
 
 [source,xml]
 ----
@@ -3469,7 +3469,7 @@ lots, Lot, or Part, is not suitable for SMEs by using a value of "false".
 
 For the Procedure, Part, Lot, or Group of Lots, any additional
 information not reported elsewhere may be marked using the "_cbc:Note_"
-child of the appropriate "_cac:ProcurementProject_"element.
+child of the appropriate "_cac:ProcurementProject_" element.
 
 [source,xml]
 ----
@@ -3654,7 +3654,7 @@ The "_cbc:DescriptionCode_" element shall be used with the respective
 code value "UNLIMITED" or "UNKNOWN". In this specific context, any other
 value from the
 https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/timeperiod[timeperiod]
-codelist is prohibited
+codelist is prohibited:
 
 [source,xml]
 ----

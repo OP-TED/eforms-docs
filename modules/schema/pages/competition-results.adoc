@@ -10,7 +10,7 @@ awarded.
 
 == Notice Result
 
-The Notice Result section of a Result notice contains different
+The Notice Result section of a Result notice contains various
 information (cf. <<noticeResultStructureFigure>>):
 
 * The result for a lot for which the decision was recently made
@@ -28,7 +28,7 @@ whose awarding decision has been made and is shared in the notice.
 * The aggregated amounts covering all awarded lots of the
 notice.
 
-All these elements will be further detailed in the following sections.
+All these topics will be further detailed in the following sections.
 
 [[noticeResultStructureFigure]]
 .Overall structure of the Notice Result section
@@ -412,8 +412,8 @@ efac:ReceivedSubmissionsStatistics{zwsp}/efbc:StatisticsNumeric
 
 |*_Contract Identifier Reference (OPT-315)_* a|
 _Identifier to refer to the appropriate settled contract. +
-If the lot has been awarded (i.e. "selec-w" result code), then there
-shall be at least one of such element._
+If the lot has been awarded (i.e. "selec-w" result code), then this
+element shall occur at least once._
 
 _Shall follow the scheme "CON-XXXX"_
 
