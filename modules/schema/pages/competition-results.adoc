@@ -576,7 +576,7 @@ only),
 
 * Subcontracting terms,
 
-* Reference to the "Contracting Party" that submitted the
+* Reference to the "Tendering Party" that submitted the
 tender,
 
 * Reference to the Lot or Group of lots the tender is about
