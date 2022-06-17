@@ -1612,7 +1612,11 @@ general* 3+|*PIN CFC social* |*QS* 4+|*CN general* 2+|*CN social*
 
 41+<|*SUBROLES* 
 
-|Group leader |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |--
+|Group leader (Buyer) |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM
+|EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM |EM
+|EM |EM
+
+|Group leader (Tenderer) |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |--
 |-- |-- |-- |-- |-- |CM |CM |CM |CM |CM |CM |CM |CM |CM |CM |CM |CM |CM |CM
 |CM |CM
 
