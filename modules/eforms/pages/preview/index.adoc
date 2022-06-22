@@ -98,9 +98,9 @@ In the notice sections a search feature has been added and pagination for up to 
 
 == CVS 
 
-API: to come 
+API endpoint: https://cvs.preview.ted.europa.eu/v1/notices/validation
 
-Documentation: Swagger UI to come 
+Documentation: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 === Current status 
 
@@ -114,7 +114,7 @@ Release: Phase 3
 
 Indicative planning: July 2022 
 
-SDK: tbc 
+SDK: 0.6.2
 
 Complete implementation, including the execution of the validation rules (Schematron). 
 
