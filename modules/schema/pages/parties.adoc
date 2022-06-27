@@ -756,6 +756,13 @@ efac:TouchPoint{zwsp}/cbc:EndpointID
 ----
 |Edelivery gateway touchpoint
 
+|*Winner Size (BT-165)* ^|O a|
+[source,xpath,subs=attributes]
+----
+efac:Company/efbc:CompanySizeCode
+----
+|Only for tenderers, winners and subcontractors; Code from the "economic-operator-size" codelist
+
 |*Organization Natural Person (BT-633)* ^|O a|
 [source,xpath,subs=attributes]
 ----
