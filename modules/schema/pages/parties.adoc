@@ -761,7 +761,9 @@ efac:TouchPoint{zwsp}/cbc:EndpointID
 ----
 efac:Company/efbc:CompanySizeCode
 ----
-|Only for tenderers, winners and subcontractors; Code from the "economic-operator-size" codelist
+|Only for tenderers, winners and subcontractors; Code from the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/economic-operator-size[economic-operator-size] 
+codelist
 
 |*Organization Natural Person (BT-633)* ^|O a|
 [source,xpath,subs=attributes]
