@@ -4,8 +4,9 @@
 
 As indicated previously, the purpose of change notices is multifold:
 
-* Correct a value reported in a previous version of the same
-notice (also often referred to as Corrigenda),
+* Correct a value reported in the previous Change notice, or if this is 
+the first Change notice, the original notice (also often referred to as 
+Corrigenda),
 
 * Inform about changes to information not inside the notice
 (e.g. changed procurement documents),
@@ -17,19 +18,19 @@ and  contains all the information from that initial notice with applied
 changes in addition to the information on those changes.
 
 When a change is applied to a previous change notice, the consolidated
-text must integrate all changes from previous versions, and only the
-latest changes are described in the changes section. This section will
-allow to report:
+text must integrate all changes from the original notice and previous
+Change notices, and only the latest changes are described in the changes 
+section. This section will allow to report:
 
 * The identifier of the changed notice,
 
 * The changes that may individually apply to one or more sections,
 concern procurement documents and other information,
 
-* The main reason that led to the Change Notice creation.
+* The main reason that led to the Change notice creation.
 
-A change notice will have its own identifier and version; its identifier
-will differ from the one of the changed notice.
+A change notice will have its own Notice Identifier (BT-701); this will 
+differ from the one of the changed notice.
 
 When applying changes, it is essential to ensure that the variations do
 not need the start of a new procedure instead.
@@ -96,8 +97,9 @@ changes and their corresponding elements.
 |===
 ^|*eForms BT* ^|*Description* |*Cardin.* ^|*XSD element* 
 
-|*Change Notice Version Identifier (BT-758)* |Reference to the Changed
-Notice Version |*1* a|
+|*Change Notice Version Identifier (BT-758)* |Reference to the notice being 
+changed (a combination of the Notice Identifier (BT-701) and the Notice 
+Version (BT-757)) |*1* a|
 [source,xpath]
 ----
 efbc:ChangedNoticeIdentifier

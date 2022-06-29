@@ -184,10 +184,12 @@ GLO-XXXX) |LotsGroup |GLO-XXXX
 |BT-556 |Group Framework Value Lot Identifier |Reference to the Group of
 lots the Framework applies to. |LotsGroup |GLO-XXXX
 
-.2+|BT-758 .2+|Change Notice Version Identifier |eForms notices only
+.2+|BT-758 .2+|Change Notice Version Identifier |A combination of the 
+Notice Identifier (BT-701) and the Notice Version (BT-757) of the notice 
+being changed (eForms notices only).  
 |notice-id-ref |UUID-vv
 
-|Publication ID of the notice to be amended. eForms or TEDXML
+|Publication ID of the notice being changed. eForms or TEDXML
 notices. |ojs-notice-id |XXXXXXXX-YYYY
 
 .2+a|

@@ -111,8 +111,8 @@ the modifications applied to the contract.
 Change forms are used to produce change notices. The purpose of change
 notices is multifold:
 
-* Correct information reported in a previous version of the same
-notice (also often referred as "_Corrigenda_"),
+* Correct information reported in a previous Change notice or the 
+original notice (also often referred as "Corrigenda"),
 
 * Inform about changes to information not inside the notice
 (e.g. changed procurement documents),
@@ -120,8 +120,8 @@ notice (also often referred as "_Corrigenda_"),
 Changes may apply to notices of any form type. A Change notice contains
 all the information from the initial notice with integrated changes
 (i.e. consolidated text), as well as information on applied changes.
-When a change is applied to a previous change notice, it must aggregate
-all changes from previous versions, and only have the latest changes
+When a change is applied to a previous change notice, it must  integrate 
+all changes from all previous change notices, and only have the latest changes
 described in the change section.
 
 When applying changes, it is essential to ensure that the changes do not
