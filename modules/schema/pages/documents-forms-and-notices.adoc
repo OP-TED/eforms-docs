@@ -112,7 +112,7 @@ Change forms are used to produce change notices. The purpose of change
 notices is multifold:
 
 * Correct information reported in a previous Change notice or the 
-original notice (also often referred as "Corrigenda"),
+original notice,
 
 * Inform about changes to information not inside the notice
 (e.g. changed procurement documents),

@@ -5,8 +5,7 @@
 As indicated previously, the purpose of change notices is multifold:
 
 * Correct a value reported in the previous Change notice, or if this is 
-the first Change notice, the original notice (also often referred to as 
-Corrigenda),
+the first Change notice, the original notice,
 
 * Inform about changes to information not inside the notice
 (e.g. changed procurement documents),
@@ -18,9 +17,9 @@ and  contains all the information from that initial notice with applied
 changes in addition to the information on those changes.
 
 When a change is applied to a previous change notice, the consolidated
-text must integrate all changes from the original notice and previous
-Change notices, and only the latest changes are described in the changes 
-section. This section will allow to report:
+text must integrate all changes from previous Change notices, and only 
+the latest changes are described in the changes section. This section 
+will allow the reporting of:
 
 * The identifier of the changed notice,
 
