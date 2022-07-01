@@ -132,11 +132,13 @@ The properties that are assigned with static values are listed below:
 * `btId`
 * `xpathAbsolute`
 * `xpathRelative`
-* `type`
+* `type` (see Field data types)
 * `legalType`
 * `maxLength`
+* `idScheme`: string representing the type of element the id refers to, example: "TPO" for touch point. It may be present if the type is `id`
+* `idSchemes`: array of strings, representing what id types a field of type `id-ref` can refer to. It is always present if `id-ref` is present
 
-Static properties are always assigned with a scalar value (a string, a boolean, a number, etc.). If there is no value defined, the property is omitted.
+Static properties are always assigned with a scalar value (a string, a boolean, a number, array of strings, etc.). If there is no value defined, the property is omitted.
 
 Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different factors, for example the notice type it is used in, or the values of other fields in the same notice.
 
@@ -203,10 +205,10 @@ For more details on the syntax of conditions, see <<Syntax for conditions>> belo
 
 === Field data types
 
-The possible technical data types for a field are:
+The possible technical values for a field type are:
 
-* `id`: string representing an identifier
-* `id-ref`: string representing a reference to an identifier
+* `id`: string representing an identifier (may have an associated `idScheme`)
+* `id-ref`: string representing a reference to an identifier (has an associated `idSchemes`)
 * `indicator`: boolean (true or false)
 * `integer`: whole-valued positive number
 * `number`: numerical value, with optional decimal places.
