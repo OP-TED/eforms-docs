@@ -81,101 +81,143 @@ We are using these files to provide the definition of all notices to our form-fi
 
 These files reference the fields present in the form via their identifier. The information for every field is centralised in xref:fields:index.adoc#field-repository[the field repository].
 
+=== Usage of underscore in key names
+
+Data which could be derived from other existing data is indicated using keys starting with an underscore character.
+This means that we provide this data for convenience but that it could be obtained through other provided data.
+
+Example: `"_label" : "field|name|BT-02-notice"`, could be found in the translations by looking up `BT-02-notice`, it is provided so that you just have to use `_label` and not worry about how to build the proper identifier.
+
+=== Overall structure
+
 The definition of a notice subtype has 2 parts:
 
 * metadata, containing fixed fields that are automatically set by the system
 * content, defining the actual form that notice authors will fill in.
 
-.JSON overall structure
 [source,json]
 ----
 {
-  "metadata": {
-    "groupId": "GR-Metadata",
-    "name": "Metadata",
-    "fields": [
-      ...
-    ]
+  "ublVersion" : "2.3",
+  "sdkVersion" : "0.7.0",
+  "metadataDatabase" : {
+    "version" : "0.4.179",
+    "createdOn" : "2022-06-30T17:37:21"
   },
-  "content": {
-    "groupId": "GR-Content",
-    "name": "Content",
-    "fields": [
-      ...
-    ]
-  }
+  "noticeId" : "10",
+  "metadata" : [
+    {
+      "id" : "BT-02-notice",
+      "contentType" : "field",
+      "displayType" : "COMBOBOX",
+      "description" : "Notice Type",
+      "_label" : "field|name|BT-02-notice",
+      "readOnly" : true
+    }, 
+    ... (more fields)
+  ],
+  "content" : [ {
+    "id" : "GR-ContractingAuthority",
+    "contentType" : "group",
+    "displayType" : "SECTION",
+    "description" : "Contracting Authority",
+    "_label" : "group|name|GR-ContractingAuthority",
+    "content" : [ 
+      ... (nested content here)
+    ]}
+  ]
 }
 ----
+
+==== Metadata Structure
 
 The metadata part is a flat list of fields.
 
-.Metadata Structure
 [source,json]
 ----
-{
-  "groupId": "GR-Metadata",
-  "name": "Metadata",
-  "fields": [
-    {
-      "fieldId": "BT-02-notice",
-      "name": "Notice Type",
-      "readOnly": true
-    },
-    {
-      "fieldId": "BT-03-notice",
-      "name": "Form Type",
-      "readOnly": true
-    },
-    {
-      "fieldId": "BT-701-notice",
-      "name": "Notice Identifier",
-      "readOnly": true
-    },
-    ...
-  ]
-}
+[
+  {
+    "id" : "BT-02-notice",
+    "contentType" : "field",
+    "displayType" : "COMBOBOX",
+    "description" : "Notice Type",
+    "_label" : "field|name|BT-02-notice",
+    "readOnly" : true
+  }, {
+    "id" : "BT-03-notice",
+    "contentType" : "field",
+    "displayType" : "COMBOBOX",
+    "description" : "Form Type",
+    "_label" : "field|name|BT-03-notice",
+    "readOnly" : true
+  }, {
+    "id" : "BT-04-notice",
+    "contentType" : "field",
+    "displayType" : "TEXTBOX",
+    "description" : "Procedure Identifier",
+    "_label" : "field|name|BT-04-notice",
+    "readOnly" : true
+  },
+  ...
+]
 ----
 
-The form content is a tree structure, composed of nested groups and fields, as shown below.
+==== Content Structure
+
+A content is either a group or a field. A group has nested content, a field cannot have nested content.
+The `contentType` indicates if is a `group` or `field`.
+The form content is an array of root level content objects, composed of nested groups and fields, as shown below.
 The fields must reference a valid field of the field repository by `+fieldId+`.
 The `+groupId+` can be freely defined, as long as its value is unique in the file.
-The `name` property for groups and fields is to complement the identifier, for readability, it is not used for further processing.
+The `+nodeId+` can reference an `xmlStructure` node, it may be present for some groups.
+The `description` property for groups and fields is to complement the identifier for readability, it should not be shown to application users or used in a technical way.
+The `_label` property is a translation identifier referencing a translated label, this is to be used in applications.
 
-All direct child groups of the *Content* node are treated as sections which can optionally define the groups they contain as subsection by specifying `+"section": true+`.
+All direct elements of the *content* array are treated as sections which can optionally define the groups they contain as subsection by specifying `+"displayType": "SECTION"+`.
 
-.JSON Content Structure
 [source,json]
 ----
-{
-  "groupId": "GR-Content",
-  "name": "Content",
-  "fields": [
-    {
-      "groupId": "GR-Procedure",
-      "name": "Procedure",
-      "section": true,
-      "fields": [
-        {
-          "groupId": "GR-Procedure-Purpose",
-          "name": "Purpose",
-          "section": true,
-          "fields": [
-            {
-              "groupId": "GR-Procedure-MainLegalBasis",
-              "name": "Main Legal Basis",
-              "fields": [
-                {
-                  "fieldId": "BT-01-notice",
-                  "name": "Procedure Legal Basis"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+ "content" : [ {
+    "id" : "GR-ContractingAuthority",
+    "contentType" : "group",
+    "displayType" : "SECTION",
+    "description" : "Contracting Authority",
+    "_label" : "group|name|GR-ContractingAuthority",
+    "content" : [ {
+      "id" : "GR-ContractingAuthority-Buyer",
+      "contentType" : "group",
+      "nodeId" : "ND-ContractingParty",
+      "displayType" : "GROUP",
+      "description" : "Contracting Party related Information (URL, Legal Type, Contracting Type, Activity, …)",
+      "_label" : "node|name|ND-ContractingParty",
+      "_repeatable" : true,
+      "content" : [ {
+        "id" : "OPT-300-Procedure-Buyer",
+        "contentType" : "field",
+        "displayType" : "TEXTBOX",
+        "description" : "Buyer Technical Identifier Reference",
+        "_label" : "field|name|OPT-300-Procedure-Buyer"
+      }, {
+        "id" : "BT-11-Procedure-Buyer",
+        "contentType" : "field",
+        "displayType" : "COMBOBOX",
+        "description" : "Buyer Legal Type",
+        "_label" : "field|name|BT-11-Procedure-Buyer"
+      }, {
+        "id" : "BT-10-Procedure-Buyer",
+        "contentType" : "field",
+        "displayType" : "COMBOBOX",
+        "description" : "Activity Authority",
+        "_label" : "field|name|BT-10-Procedure-Buyer"
+      }, {
+        "id" : "BT-508-Procedure-Buyer",
+        "contentType" : "field",
+        "displayType" : "TEXTBOX",
+        "description" : "Buyer Profile URL",
+        "_label" : "field|name|BT-508-Procedure-Buyer"
+    }, ...]
+  }, ...]
+}, ...]
 ----
 
 The following table lists all available properties for groups and fields.
@@ -184,18 +226,17 @@ The following table lists all available properties for groups and fields.
 |===
 |Property |Group |Field |Values |Description
 
-|repeatable   |x |x |false (default), true |The group/field is repeatable and the user can create one or multiple instances.
-|section      |x |- |false (default), true |The group is displayed as section/subsection.
+|_repeatable   |x |x |false (default), true |The group/field is repeatable and the user can create one or multiple instances.
 |readOnly     |- |x |false (default), true |The field is visible, but not editable.
 |hidden       |- |x |false (default), true |The field is not visible and thus not editable.
-|displayType  |- |x |CHECKBOX, COMBOBOX, RADIO, TEXT_FIELD, TEXTAREA |The field is rendered as the specified input element.
+|displayType  |- |x |GROUP, SECTION, CHECKBOX, COMBOBOX, RADIO, TEXTBOX, TEXTAREA |The field is rendered as the specified input element, SECTION may be applied to groups.
 The default values depend on the field's datatype and not all values are allowed for every datatype: a date cannot be displayed as radio buttons, but a codelist can.
-|instanceList |x |- |any string e.g. "LOT" |The prefix used by the form filling tool to create an instance list with the corresponding name that keeps track of all existing instances of that group.
-|valueList    |- |x |any string e.g. "LOT" |The prefix used by the form filling tool to select a value from the corresponding instance list.
+|_idScheme |x |- |any string e.g. "LOT" |The prefix used by the form filling tool to create an instance list with the corresponding name that keeps track of all existing instances of that group.
+|idSchemes    |- |x |any string e.g. "LOT" |The prefix used by the form filling tool to select a value from the corresponding `idScheme`.
 Instead of a free-text input field, a select box with all the existing instance IDs is displayed.
 |instanceIdField  |- |x |any string e.g. "LOT" | This property flags a field as the one containing the instance ID of the specified prefix. Those fields must be contained in a notice to create a valid XML notice, but can be hidden to the user.
+|valueSource  |- |x |any string e.g. "BT-137-LotsGroup" | This property indicates that the source of the value for this field should come from the specified field
 |===
-
 
 == JSON and XML structure constraints
 
