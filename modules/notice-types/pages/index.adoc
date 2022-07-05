@@ -42,7 +42,7 @@ This file contains some metadata, followed by the list of notice subtypes, and t
       "description" : "Notice of the publication of a prior (...)", // <8>
       "subTypeId" : "1" // <9>
     },
-    ...
+    // ...
   ],
   "documentTypes" : [
     {
@@ -50,7 +50,7 @@ This file contains some metadata, followed by the list of notice subtypes, and t
       "namespace" : "urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2", // <11>
       "rootElement" : "PriorInformationNotice" // <12>
     },
-    ... 
+    // ... 
   ]
 }
 ----
@@ -104,8 +104,8 @@ The definition of a notice subtype has 2 parts:
     "version" : "0.4.179",
     "createdOn" : "2022-06-30T17:37:21"
   },
-  "noticeId" : "10",
-  "metadata" : [
+  "noticeId" : "10", // <1>
+  "metadata" : [ // <2>
     {
       "id" : "BT-02-notice",
       "contentType" : "field",
@@ -114,24 +114,29 @@ The definition of a notice subtype has 2 parts:
       "_label" : "field|name|BT-02-notice",
       "readOnly" : true
     }, 
-    ... (more fields)
+    // ... (more fields)
   ],
-  "content" : [ {
+  "content" : [ { // <3>
     "id" : "GR-ContractingAuthority",
     "contentType" : "group",
     "displayType" : "SECTION",
     "description" : "Contracting Authority",
     "_label" : "group|name|GR-ContractingAuthority",
-    "content" : [ 
-      ... (nested content here)
+    "content" : [ // <4>
+      // ... (nested content here)
     ]}
   ]
 }
 ----
+<1> `noticeId` is the notice subtype id, so something like 1,2,3, ... T01, T02, CEI, ... you could get it from the filename, but we provide it inside the document
+<2> `metadata` is an array of fields
+<3> `content` is an array of content objects, a content object can be a field or a group
+<4> a `content` object can contain more content objects
 
 ==== Metadata Structure
 
 The metadata part is a flat list of fields.
+Those fields are marked as `readOnly`, `hidden` and occasionally as `_repeatable`.
 
 [source,json]
 ----
@@ -158,7 +163,7 @@ The metadata part is a flat list of fields.
     "_label" : "field|name|BT-04-notice",
     "readOnly" : true
   },
-  ...
+  // ... (more fields)
 ]
 ----
 
@@ -169,11 +174,11 @@ The `contentType` indicates if is a `group` or `field`.
 The form content is an array of root level content objects, composed of nested groups and fields, as shown below.
 The fields must reference a valid field of the field repository by `+fieldId+`.
 The `+groupId+` can be freely defined, as long as its value is unique in the file.
-The `+nodeId+` can reference an `xmlStructure` node, it may be present for some groups.
+The `+nodeId+` must reference an xref:fields:xml-structure.adoc[xmlStructure] node, it may be present for some groups.
 The `description` property for groups and fields is to complement the identifier for readability, it should not be shown to application users or used in a technical way.
-The `_label` property is a translation identifier referencing a translated label, this is to be used in applications.
+The `_label` property is an identifier referencing a translated text, this is to be used in applications. For details see xref:translations:index.adoc[Translations].
 
-All direct elements of the *content* array are treated as sections which can optionally define the groups they contain as subsection by specifying `+"displayType": "SECTION"+`.
+All direct elements of the top level *content* array are treated as sections which can optionally define the groups they contain as subsection by specifying `+"displayType": "SECTION"+`.
 
 [source,json]
 ----
@@ -215,27 +220,30 @@ All direct elements of the *content* array are treated as sections which can opt
         "displayType" : "TEXTBOX",
         "description" : "Buyer Profile URL",
         "_label" : "field|name|BT-508-Procedure-Buyer"
-    }, ...]
-  }, ...]
-}, ...]
+    }, // ...
+    ]
+  }, // ...
+  ]
+}, // ...
+]
 ----
 
-The following table lists all available properties for groups and fields.
+The following table lists all available properties for groups and fields:
 
 [cols="3,1,1,5,10"]
 |===
 |Property |Group |Field |Values |Description
 
-|_repeatable   |x |x |false (default), true |The group/field is repeatable and the user can create one or multiple instances.
-|readOnly     |- |x |false (default), true |The field is visible, but not editable.
-|hidden       |- |x |false (default), true |The field is not visible and thus not editable.
-|displayType  |- |x |GROUP, SECTION, CHECKBOX, COMBOBOX, RADIO, TEXTBOX, TEXTAREA |The field is rendered as the specified input element, SECTION may be applied to groups.
+|`_repeatable`   |&check; |&check; |`false` (default), `true` |The group/field is repeatable and the user can create one or multiple instances.
+|`readOnly`     |- |&check; |`false` (default), `true` |The field is visible, but not editable.
+|`hidden`       |- |&check; |`false` (default), `true` |The field is not visible and thus not editable.
+|`displayType`  |- |&check; |`GROUP, SECTION, CHECKBOX, COMBOBOX, RADIO, TEXTBOX, TEXTAREA` |The field is rendered as the specified input element, `SECTION` may be applied to groups.
 The default values depend on the field's datatype and not all values are allowed for every datatype: a date cannot be displayed as radio buttons, but a codelist can.
-|_idScheme |x |- |any string e.g. "LOT" |The prefix used by the form filling tool to create an instance list with the corresponding name that keeps track of all existing instances of that group.
-|idSchemes    |- |x |any string e.g. "LOT" |The prefix used by the form filling tool to select a value from the corresponding `idScheme`.
+|`_idScheme` |&check; |- |any string e.g. `"LOT"` |The prefix used by the form filling tool to create an instance list with the corresponding name that keeps track of all existing instances of that group.
+|`idSchemes`    |- |&check; |any string e.g. `"LOT"` |The prefix used by the form filling tool to select a value from the corresponding `idScheme`.
 Instead of a free-text input field, a select box with all the existing instance IDs is displayed.
-|instanceIdField  |- |x |any string e.g. "LOT" | This property flags a field as the one containing the instance ID of the specified prefix. Those fields must be contained in a notice to create a valid XML notice, but can be hidden to the user.
-|valueSource  |- |x |any string e.g. "BT-137-LotsGroup" | This property indicates that the source of the value for this field should come from the specified field
+|`instanceIdField`  |- |&check; |any string e.g. `"LOT"` | This property flags a field as the one containing the instance ID of the specified prefix. Those fields must be contained in a notice to create a valid XML notice, but can be hidden to the user.
+|`valueSource`  |- |&check; |any string e.g. `"BT-137-LotsGroup"` | This property indicates that the source of the value for this field should come from the specified field.
 |===
 
 == JSON and XML structure constraints
@@ -249,4 +257,4 @@ There is no constraint on non-repeatable groups.
 An arbitrary number of intermediate, non-repeatable groups can be created to organize the notice fields in a more convenient way. Moreover, the fields of the same level of the repeatable structure (ignoring non-repeatable groups) can be specified in an arbitrary order.
 
 It is even possible to split a repeatable XML element group into multiple repeatable JSON groups.
-In such case, the XML element group must contain an (instance) identifier field (e.g. BT-137-Lot - Purpose Lot Identifier), which is also contained in every JSON group part.
+In such case, the XML element group must contain an (instance) identifier field (e.g. `BT-137-Lot - Purpose Lot Identifier`), which is also contained in every JSON group part.
