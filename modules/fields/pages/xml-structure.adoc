@@ -38,11 +38,12 @@ The following snippet shows the information provided for each node.
 [source,json]
 ----
   {
-    "id" : "ND-493", // <1>
-    "parentId" : "ND-594", // <2>
-    "xpathAbsolute" : "/*/cac:ProcurementProject/cac:RealizedLocation", // <3>
-    "xpathRelative" : "cac:RealizedLocation", // <4>
-    "repeatable" : true // <5>
+    "id" : "ND-Lot", // <1>
+    "parentId" : "ND-Root", // <2>
+    "xpathAbsolute" : "/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']", // <3>
+    "xpathRelative" : "cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']", // <4>
+    "repeatable" : true, // <5>
+    "identifierFieldId" : "BT-137-Lot" // <6>
   }
 ----
 <1> Identifier of the node.
@@ -50,6 +51,7 @@ The following snippet shows the information provided for each node.
 <3> Location of the node in an XML notice, as an absolute XPath.
 <4> Location of the node in an XML notice, as an XPath relative to its parent node.
 <5> Indicates if the node can be repeated inside its parent.
+<6> Indicates the field of type `id` that identifies this node, only present if applicable.
 
 The absolute XPath of a node can be constructed from the XPaths of its parent and successive ancestors. We provide it for each node as a convenience.
 
@@ -62,7 +64,7 @@ As the structure of the XML is consistent and quite similar between those variou
 [source,json]
 ----
   {
-    "id" : "ND-0",
+    "id" : "ND-Root",
     "xpathAbsolute" : "/*",
     "xpathRelative" : "/*",
     "repeatable" : false

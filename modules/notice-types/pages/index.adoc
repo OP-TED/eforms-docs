@@ -3,20 +3,20 @@ ifeval::[{eforms_latest_version} == {eforms_version}]
 :page-aliases: latest@index.adoc
 endif::[]
 
-[WARNING]
+[CAUTION]
 ====
-The structure and content of the files described below are driven by
-the specific needs of our various applications.
+eForms SDK 0.7.0 introduces a *new file format* for notice type definitions.
 
-As we think it could be useful for others, we are sharing it publicly, and you are
-free to make use of it. However we currently do not guarantee the stability
-of the structure or content described here.
+The notice type definition files included in earlier versions of the eForms SDK were originally created to cover the needs of our form filling application (eNotices2) and have now been moved temporarily to the `/notice-types/legacy` sub-folder. 
+
+The notice type definitions in the `/notice-types/legacy` sub-folder *should not be used by eSenders* as they will be removed when eForms SDK 1.0.0 is released.
 ====
 
 == Notice subtypes
 
 The https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R1780[eForms Regulation] defines, in table 1 of its annex, a list of types of procurement notices.
 
+[NOTE]
 In order to avoid confusion with the more general notion of "notice type" (contract notice, contract award, PIN, etc.), we are designating each specific item as "notice subtype". So a notice subtype corresponds to a specific column in table 2 of the annex to the eForms regulation.
 
 The https://github.com/OP-TED/eForms-SDK[eForms SDK] provides this information in the `notice-types` folder, as a structured JSON file named `notice-types.json`.
@@ -50,7 +50,7 @@ This file contains some metadata, followed by the list of notice subtypes, and t
       "namespace" : "urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2", // <11>
       "rootElement" : "PriorInformationNotice" // <12>
     },
-    ... 
+    ...
   ]
 }
 ----
@@ -75,126 +75,233 @@ The definition of each root element is in the corresponding file present in the 
 
 For each notice subtype, we define the content and structure of the form that notice authors will fill in. We provide this definition as a set of JSON files, with one file per notice subtype.
 Those files are available in the https://github.com/OP-TED/eForms-SDK[eForms SDK], in the folder `+/notice-types+`, and are named as follows:
-`+<id>_<formType>_<type>_<legalBasis>.json+`
+`+<subTypeId>.json+`
 
-We are using these files to provide the definition of all notices to our form-filling application (eNotices2).
+These files reference the fields contained in the form via their identifier. The information for every field is centralised in xref:fields:index.adoc#field-repository[the field repository].
 
-These files reference the fields present in the form via their identifier. The information for every field is centralised in xref:fields:index.adoc#field-repository[the field repository].
+=== Overall structure
 
 The definition of a notice subtype has 2 parts:
 
-* metadata, containing fixed fields that are automatically set by the system
-* content, defining the actual form that notice authors will fill in.
+* `metadata`, contains a flat list of readonly or hidden fields the values of which are known before the notice is created (and therefore can be pre-filled). 
+* `content`, contains the fields that should be rendered on the screen for notice authors to fill-in. The fields are organised in nested groups providing in this way a hierarchical structure that the notice author should be presented with, in order to navigate the notice while filling it in.
 
-.JSON overall structure
 [source,json]
 ----
 {
-  "metadata": {
-    "groupId": "GR-Metadata",
-    "name": "Metadata",
-    "fields": [
-      ...
-    ]
+  "ublVersion" : "2.3",
+  "sdkVersion" : "0.7.0",
+  "metadataDatabase" : {
+    "version" : "0.4.179",
+    "createdOn" : "2022-06-30T17:37:21"
   },
-  "content": {
-    "groupId": "GR-Content",
-    "name": "Content",
-    "fields": [
-      ...
-    ]
-  }
-}
-----
-
-The metadata part is a flat list of fields.
-
-.Metadata Structure
-[source,json]
-----
-{
-  "groupId": "GR-Metadata",
-  "name": "Metadata",
-  "fields": [
+  "noticeId" : "10", // <1>
+  "metadata" : [ // <2>
     {
-      "fieldId": "BT-02-notice",
-      "name": "Notice Type",
-      "readOnly": true
-    },
-    {
-      "fieldId": "BT-03-notice",
-      "name": "Form Type",
-      "readOnly": true
-    },
-    {
-      "fieldId": "BT-701-notice",
-      "name": "Notice Identifier",
-      "readOnly": true
-    },
+      "id" : "BT-02-notice",
+      "contentType" : "field",
+      "displayType" : "COMBOBOX",
+      "description" : "Notice Type",
+      "_label" : "field|name|BT-02-notice",
+      "readOnly" : true
+    }, 
     ...
+  ],
+  "content" : [ { // <3>
+    "id" : "GR-ContractingAuthority",
+    "contentType" : "group",
+    "displayType" : "SECTION",
+    "description" : "Contracting Authority",
+    "_label" : "group|name|GR-ContractingAuthority",
+    "content" : [
+      ... // <4>
+    ]}
   ]
 }
 ----
+<1> `noticeId` is the notice subtype identifier (the same as the filename). 
+<2> `metadata` is a flat list of fields with known values.
+<3> `content` is a hierarchical list of of "content elements" (`fields` organised in a hierarchy of `groups`) forming the visual structure of the notice..
+<4> Content elements can be nested.
 
-The form content is a tree structure, composed of nested groups and fields, as shown below.
-The fields must reference a valid field of the field repository by `+fieldId+`.
-The `+groupId+` can be freely defined, as long as its value is unique in the file.
-The `name` property for groups and fields is to complement the identifier, for readability, it is not used for further processing.
+=== Structure of `metadata` Section
 
-All direct child groups of the *Content* node are treated as sections which can optionally define the groups they contain as subsection by specifying `+"section": true+`.
+The metadata section is a flat list of fields, the values of which are known before the notice is created. The fields are either marked as `readOnly` or `hidden`. A field is marked as `_repeatable` if it can occur multiple times in the metadata.
 
-.JSON Content Structure
 [source,json]
 ----
-{
-  "groupId": "GR-Content",
-  "name": "Content",
-  "fields": [
-    {
-      "groupId": "GR-Procedure",
-      "name": "Procedure",
-      "section": true,
-      "fields": [
-        {
-          "groupId": "GR-Procedure-Purpose",
-          "name": "Purpose",
-          "section": true,
-          "fields": [
-            {
-              "groupId": "GR-Procedure-MainLegalBasis",
-              "name": "Main Legal Basis",
-              "fields": [
-                {
-                  "fieldId": "BT-01-notice",
-                  "name": "Procedure Legal Basis"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id" : "BT-02-notice",
+    "contentType" : "field",
+    "displayType" : "COMBOBOX",
+    "description" : "Notice Type",
+    "_label" : "field|name|BT-02-notice",
+    "readOnly" : true
+  }, {
+    "id" : "BT-03-notice",
+    "contentType" : "field",
+    "displayType" : "COMBOBOX",
+    "description" : "Form Type",
+    "_label" : "field|name|BT-03-notice",
+    "readOnly" : true
+  }, {
+    "id" : "BT-04-notice",
+    "contentType" : "field",
+    "displayType" : "TEXTBOX",
+    "description" : "Procedure Identifier",
+    "_label" : "field|name|BT-04-notice",
+    "readOnly" : true
+  },
+   ...
+]
 ----
 
-The following table lists all available properties for groups and fields.
+=== Structure of `content` Section 
 
-[cols="3,1,1,5,10"]
-|===
-|Property |Group |Field |Values |Description
+A _content element_ can either represent a `field` or a `group` of fields as indicated by its `contentType` property. A _content element_ of type `group` can contain nested `group` elements (as well as `field` elements).
 
-|repeatable   |x |x |false (default), true |The group/field is repeatable and the user can create one or multiple instances.
-|section      |x |- |false (default), true |The group is displayed as section/subsection.
-|readOnly     |- |x |false (default), true |The field is visible, but not editable.
-|hidden       |- |x |false (default), true |The field is not visible and thus not editable.
-|displayType  |- |x |CHECKBOX, COMBOBOX, RADIO, TEXT_FIELD, TEXTAREA |The field is rendered as the specified input element.
-The default values depend on the field's datatype and not all values are allowed for every datatype: a date cannot be displayed as radio buttons, but a codelist can.
-|instanceList |x |- |any string e.g. "LOT" |The prefix used by the form filling tool to create an instance list with the corresponding name that keeps track of all existing instances of that group.
-|valueList    |- |x |any string e.g. "LOT" |The prefix used by the form filling tool to select a value from the corresponding instance list.
-Instead of a free-text input field, a select box with all the existing instance IDs is displayed.
-|instanceIdField  |- |x |any string e.g. "LOT" | This property flags a field as the one containing the instance ID of the specified prefix. Those fields must be contained in a notice to create a valid XML notice, but can be hidden to the user.
-|===
+Every `field` element represents a valid eForms field. The `id` property of `field` elements always contains the _eForms field's_ identifier and can be used to retrieve the field's metadata from the field repository (`fields.json`).
+
+Every `group` element is primarily a visual/logical structure element. However,  in some cases, a `group` element may also correspond to an _XML element_ (`node`) in the notice XML file. In this case, a `nodeId` property is provided indicating the identifier of the `node` which can be used to retrieve node metadata from the xref:fields:xml-structure.adoc[`xmlStructure`] section of `fields.json`.
+
+[NOTE]
+The identifiers of `group` elements (indicated by their `id` property) always start with "GR-" and, (in contrast with the identifiers of `field` elements), do not point to any elements in `fields.json`. They are used however to encode the 'group` labels (translations).  
+
+[source,json]
+----
+ "content" : [ {
+    "id" : "GR-ContractingAuthority",
+    "contentType" : "group",
+    "displayType" : "SECTION",
+    "description" : "Contracting Authority",
+    "_label" : "group|name|GR-ContractingAuthority",
+    "content" : [ {
+      "id" : "GR-ContractingAuthority-Buyer",
+      "contentType" : "group",
+      "nodeId" : "ND-ContractingParty",
+      "displayType" : "GROUP",
+      "description" : "Contracting Party related Information (URL, Legal Type, Contracting Type, Activity, …)",
+      "_label" : "node|name|ND-ContractingParty",
+      "_repeatable" : true,
+      "content" : [ {
+        "id" : "OPT-300-Procedure-Buyer",
+        "contentType" : "field",
+        "displayType" : "TEXTBOX",
+        "description" : "Buyer Technical Identifier Reference",
+        "_label" : "field|name|OPT-300-Procedure-Buyer"
+      }, {
+        "id" : "BT-11-Procedure-Buyer",
+        "contentType" : "field",
+        "displayType" : "COMBOBOX",
+        "description" : "Buyer Legal Type",
+        "_label" : "field|name|BT-11-Procedure-Buyer"
+      }, {
+        "id" : "BT-10-Procedure-Buyer",
+        "contentType" : "field",
+        "displayType" : "COMBOBOX",
+        "description" : "Activity Authority",
+        "_label" : "field|name|BT-10-Procedure-Buyer"
+      }, {
+        "id" : "BT-508-Procedure-Buyer",
+        "contentType" : "field",
+        "displayType" : "TEXTBOX",
+        "description" : "Buyer Profile URL",
+        "_label" : "field|name|BT-508-Procedure-Buyer"
+    }, 
+    ...
+    ]
+  }, 
+  ...
+  ]
+}, 
+...
+]
+----
+
+
+The following table lists all available properties for groups and fields:
+
+
+=== Properties of `group` elements
+
+
+[horizontal]
+
+`id`:: The identifier of the group. +
+value: a text string prefixed by "GR-"
+
+`description`:: The description of the `group` element in english. The property is included for the convenience of anyone reading the file. It should not be used by your application (see `_label` property). +
+value: a text string
+
+`contentType`:: Indicates that this content element is a group element. +
+value: `"group"`
+
+`displayType`:: Indicates whether this `group` element should be rendered as a _notice section_ rather than a simple _group of fields_.
+Only root level groups can be marked as _notice sections_. +
+value: `"GROUP"` or `"SECTION"`
+
+`nodeId`:: The property is only present in `group` elements that can be associated with a `node` in the xref:fields:xml-structure.adoc[xmlStructure]. When present, it indicates the identifier of the corresponding `node` which can be used to retrieve further node metadata from `fields.json`. +
+value: a `node` identifier (a text string like `"ND-LotResult"`)
+
+`_identifierFieldId`:: Appears only if `_repeatable` is `true`. This property provides the identifier of the field that should be used to store the identifier generated for each instance of this repeatable `group`. The `identifierFieldId` can be retrieved through metadata of the associated `node` (`fields.json`) but it is provided also here for convenience. +
+value: a `field` identifier (a text string like `"BT-11-Procedure-Buyer"`)
+
+`_idScheme`:: Appears only if `_repeatable` is `true`. Indicates the identifier scheme associated with the field in this `group` where the identifier of the `group` must be stored. It should be used as a prefix of identifiers generated for the instances of this repeatable group (e.g. `"LOT-0001"`). The value can be retrieved through the `field` metadata  (`fields.json`) but is provided also here for convenience.  +
+value: an `idScheme` identifier (a text string like `"LOT"`)
+
+`_repeatable`:: Indicates that the user should be allowed to add multiple occurrences of this `group` element. The property is present only when its value is `true` (different than its default value). A repeatable `group` element is always associated with a repeatable `node`. The value can be retrieved from the `node` metadata (`fields.json`) but is also provided here for convenience. +
+values:  `true` or `false` _(default)_
+
+`_label`:: The identifier of the label that should be used for this `field` in the user interface of your application. +
+value: a label identifier
+
+=== Properties of `field` elements
+
+[horizontal]
+
+`id`:: The identifier of the _eForms field_ associated with this `field` element. As every _eForms field_ appears once in every notice subtype, the field's identifier is used to also identify the `field` element itself. +
+value: a text string prefixed by "GR-"
+
+`description`:: The description of the `field` element in english. The property is included for the convenience of anyone reading the file. It should not be used by your application (which should instead use the appropriate translation indicated by the `_label` property). +
+value: a text string
+
+`contentType`:: Indicates that this content element is a `field` element. +
+value: `"field"`
+
+`displayType`:: Provides a hint on what type of input element should be displayed on the screen for filling the field. + 
+value: `TEXTBOX`, `TEXTAREA`, `COMBOBOX`, `RADIO`, or `CHECKBOX`
+
+`readOnly`:: Indicates whether or not the field should be editable by the user. The property is present only when its value is `true` (different than its default value). +
+values:  `true` or `false` _(default)_
+
+`hidden`:: Indicates whether or not the field should be visible on the user's screen. The property is present only when its value is `true` (different than its default value). +
+values:  `true` or `false`  _(default)_
+
+`valueSource`:: This property indicates that the value of this field should be a copy of the value of another field. It provides the identifier of the referenced field whose value should be copied over. It is most commonly used for hidden fields of type `id-ref`. +
+value: any string (e.g. `"BT-137-LotsGroup"`)
+
+`_idScheme`:: It appears only for the fields of type `id` (identifier) which are intended to store the identifier of a repeatable `group` element. The value can be retrieved from the `field` metadata (`fields.json`) but is also provided here for convenience. +
+value: any string (e.g. `"LOT"`)
+
+`_idSchemes`:: This property appears only for fields of type `id-ref` (identifier reference). Such fields will typically have their `displayType` set to `COMBOBOX` with the intention of providing the user with a list of valid existing identifiers to chose from. The property provides a list of identifier prefixes (`idSchemes`) that can be used to find all available valid identifiers in the notice which can be used to populate the options of the combobox. 
+The value can be retrieved from the `field` metadata (`fields.json`) but is also provided here for convenience. +
+value: any string (e.g. `"LOT"`)
+
+`_repeatable`:: Indicates whether or not the user should be allowed to create multiple instances of this field. The property is present only when its value is `true` (different than its default value). +
+values:  `true` or `false` _(default)_ 
+
+`_label`:: The identifier of the label that should be used for this `field` in the user interface of your application. +
+value: a label identifier
+
+.Property names starting with underscore 
+****
+You may be wondering why some property names (like `_repeatable`) start with an underscore, while others (like `hidden` or `readOnly`) do not. What is the difference?
+
+The difference is that the `_repeatable` property is a *complementary property* that could have been omitted without any information loss. This is because a `group` element is repeatable if and only if it is associated with a repeatable `node`. Therefore using the provided `nodeId` property value, one can always determine whether the `group` should be repeatable or not, by looking up the information in the xref:fields:xml-structure.adoc[`xmlStructure`] (in `fields.json`).
+
+However, having to look-up some specific additional information is very common while processing this file. For convenience, we decided therefore to include some complementary properties that help you avoid some common look-ups. To make these properties stand-out we decided to use a slightly different naming convention: starting their names with an underscore character (`_`).
+****
 
 
 == JSON and XML structure constraints
@@ -208,4 +315,4 @@ There is no constraint on non-repeatable groups.
 An arbitrary number of intermediate, non-repeatable groups can be created to organize the notice fields in a more convenient way. Moreover, the fields of the same level of the repeatable structure (ignoring non-repeatable groups) can be specified in an arbitrary order.
 
 It is even possible to split a repeatable XML element group into multiple repeatable JSON groups.
-In such case, the XML element group must contain an (instance) identifier field (e.g. BT-137-Lot - Purpose Lot Identifier), which is also contained in every JSON group part.
+In such case, the XML element group must contain an (instance) identifier field (e.g. `BT-137-Lot - Purpose Lot Identifier`), which is also contained in every JSON group part.
