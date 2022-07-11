@@ -1,0 +1,14 @@
+= `requirement-stage` codelist
+This table describes when and whether a given requirement must be provided in a procedure.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/requirement-stage
+Structure:: flat
+Used in:: xref:business-terms/BT-79.adoc[`BT-79`] Performing Staff Qualification
+
+== Codes
+[horizontal]
+  `not-requ`::: Not required
+  `nyk`::: Not yet known
+  `par-requ`::: Request to participate requirement
+  `t-requ`::: Tender requirement

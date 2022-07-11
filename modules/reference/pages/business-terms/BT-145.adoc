@@ -1,0 +1,6 @@
+= `BT-145`: Contract Conclusion Date
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-145-Contract`:: Contract Conclusion Date

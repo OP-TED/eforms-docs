@@ -1,0 +1,6 @@
+= `BT-65`: Subcontracting Obligation
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-65-Lot`:: Subcontracting Obligation

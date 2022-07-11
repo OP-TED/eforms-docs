@@ -1,0 +1,10 @@
+= `buyer-categories` codelist
+List of codes used to characterize the buyers for the subsequent contracts of a given Framework Agreement. 
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/OPT-090.adoc[`OPT-090`] Buyer Categories
+
+== Codes
+[horizontal]
+  `buyer-categories`::: Buyer Categories

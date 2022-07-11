@@ -1,0 +1,3 @@
+= `BT-1377`: Rewards Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

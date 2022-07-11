@@ -1,0 +1,9 @@
+= `BT-507`: Organisation Country Subdivision
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-507-Business`:: NUTS code
+  `BT-507-Organization-Company`:: Organisation Country Subdivision
+  `BT-507-Organization-TouchPoint`:: Country Subdivision
+  `BT-507-UBO`:: Country Subdivision

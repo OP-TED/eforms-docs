@@ -1,0 +1,5 @@
+= `OPP-012`: OJEU Publication Date
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-012-notice`:: OJEU Publication Date

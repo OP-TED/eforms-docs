@@ -1,0 +1,6 @@
+= `BT-119`: Dynamic Purchasing System Termination
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-119-LotResult`:: Dynamic Purchasing System Termination

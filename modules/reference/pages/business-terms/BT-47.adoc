@@ -1,0 +1,6 @@
+= `BT-47`: Participant Name
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-47-Lot`:: Participant Name

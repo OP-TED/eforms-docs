@@ -1,0 +1,6 @@
+= `BT-17`: Submission Electronic
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-17-Lot`:: SubmissionElectronic

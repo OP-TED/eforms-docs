@@ -1,0 +1,6 @@
+= `BT-19`: Submission Nonelectronic Justification
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-19-Lot`:: Submission Nonelectronic Justification

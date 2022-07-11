@@ -1,0 +1,3 @@
+= `BT-1371`: Previous Planning Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

@@ -1,0 +1,6 @@
+= `BT-751`: Guarantee Required
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-751-Lot`:: Guarantee Required

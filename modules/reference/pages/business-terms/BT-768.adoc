@@ -1,0 +1,6 @@
+= `BT-768`: Contract Framework Agreement
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-768-Contract`:: Contract Framework Agreement

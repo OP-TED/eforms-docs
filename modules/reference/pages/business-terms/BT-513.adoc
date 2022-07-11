@@ -1,0 +1,9 @@
+= `BT-513`: Organisation City
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-513-Business`:: Town
+  `BT-513-Organization-Company`:: Organisation City
+  `BT-513-Organization-TouchPoint`:: City
+  `BT-513-UBO`:: City

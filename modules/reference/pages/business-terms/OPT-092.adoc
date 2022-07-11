@@ -1,0 +1,6 @@
+= `OPT-092`: Party Type Description
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-092-ReviewBody`:: Review Body Type Description
+  `OPT-092-ReviewReq`:: Review Requester Type Description

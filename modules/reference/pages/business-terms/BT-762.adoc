@@ -1,0 +1,6 @@
+= `BT-762`: Change Reason Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-762-notice`:: Change Reason Description

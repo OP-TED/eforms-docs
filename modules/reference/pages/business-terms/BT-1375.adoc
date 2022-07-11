@@ -1,0 +1,6 @@
+= `BT-1375`: Group Lot Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-1375-Procedure`:: Group Lot Identifier

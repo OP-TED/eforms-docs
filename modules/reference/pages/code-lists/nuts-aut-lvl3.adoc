@@ -1,0 +1,46 @@
+= `nuts-aut-lvl3` codelist
+List of level 3 NUTS codes for Austria
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `AT111`::: Mittelburgenland
+  `AT112`::: Nordburgenland
+  `AT113`::: Südburgenland
+  `AT121`::: Mostviertel-Eisenwurzen
+  `AT122`::: Niederösterreich-Süd
+  `AT123`::: Sankt Pölten
+  `AT124`::: Waldviertel
+  `AT125`::: Weinviertel
+  `AT126`::: Wiener Umland/Nordteil
+  `AT127`::: Wiener Umland/Südteil
+  `AT130`::: Wien
+  `AT211`::: Klagenfurt-Villach
+  `AT212`::: Oberkärnten
+  `AT213`::: Unterkärnten
+  `AT221`::: Graz
+  `AT222`::: Liezen
+  `AT223`::: Östliche Obersteiermark
+  `AT224`::: Oststeiermark
+  `AT225`::: West- und Südsteiermark
+  `AT226`::: Westliche Obersteiermark
+  `AT311`::: Innviertel
+  `AT312`::: Linz-Wels
+  `AT313`::: Mühlviertel
+  `AT314`::: Steyr-Kirchdorf
+  `AT315`::: Traunviertel
+  `AT321`::: Lungau
+  `AT322`::: Pinzgau-Pongau
+  `AT323`::: Salzburg und Umgebung
+  `AT331`::: Außerfern
+  `AT332`::: Innsbruck
+  `AT333`::: Osttirol
+  `AT334`::: Tiroler Oberland
+  `AT335`::: Tiroler Unterland
+  `AT341`::: Bludenz-Bregenzer Wald
+  `AT342`::: Rheintal-Bodenseegebiet
+  `ATZZZ`::: Extra-Regio NUTS 3

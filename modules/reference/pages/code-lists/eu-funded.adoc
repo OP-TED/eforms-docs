@@ -1,0 +1,11 @@
+= `eu-funded` codelist
+List of codes to specify whether a procurement would be financed using EU funds.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-60.adoc[`BT-60`] EU Funds
+
+== Codes
+[horizontal]
+  `eu-funds`::: Procurement Project partly financed with EU Funds.
+  `no-eu-funds`::: Procurement Project not financed with EU Funds.

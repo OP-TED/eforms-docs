@@ -1,0 +1,6 @@
+= `BT-797`: Review Request Withdrawn Date
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-797-Review`:: Review Request Withdrawn Date

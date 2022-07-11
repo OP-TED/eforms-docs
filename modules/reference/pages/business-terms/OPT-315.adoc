@@ -1,0 +1,5 @@
+= `OPT-315`: Contract Identifier Reference
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-315-LotResult`:: Contract Identifier Reference

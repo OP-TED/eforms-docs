@@ -1,0 +1,6 @@
+= `BT-142`: Winner Chosen
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-142-LotResult`:: Winner Chosen

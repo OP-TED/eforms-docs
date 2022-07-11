@@ -1,0 +1,6 @@
+= `BT-745`: Submission Nonelectronic Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-745-Lot`:: Submission Nonelectronic Description

@@ -1,0 +1,5 @@
+= `OPP-121`: Title of the announcement
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-121-Business`:: Title of the announcement

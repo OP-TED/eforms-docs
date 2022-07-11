@@ -1,0 +1,5 @@
+= `OPP-112`: Place of registration - Country
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-112-Business`:: Place of registration - Country

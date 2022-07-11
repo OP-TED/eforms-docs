@@ -1,0 +1,6 @@
+= `BT-644`: Prize Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-644-Lot`:: Prize Value

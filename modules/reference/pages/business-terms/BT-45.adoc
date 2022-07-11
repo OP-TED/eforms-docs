@@ -1,0 +1,6 @@
+= `BT-45`: Rewards Other
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-45-Lot`:: Rewards Other

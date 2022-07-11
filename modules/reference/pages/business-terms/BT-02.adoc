@@ -1,0 +1,6 @@
+= `BT-02`: Notice Type
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-02-notice`:: Notice Type

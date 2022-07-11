@@ -1,0 +1,6 @@
+= `BT-10`: Activity Authority
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-10-Procedure-Buyer`:: Activity Authority

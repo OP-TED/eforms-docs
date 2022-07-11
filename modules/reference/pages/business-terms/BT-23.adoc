@@ -1,0 +1,8 @@
+= `BT-23`: Main Nature
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-23-Lot`:: Main Nature
+  `BT-23-Part`:: Main Nature
+  `BT-23-Procedure`:: Main Nature

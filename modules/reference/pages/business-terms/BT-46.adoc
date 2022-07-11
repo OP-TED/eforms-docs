@@ -1,0 +1,6 @@
+= `BT-46`: Jury Member Name
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-46-Lot`:: Jury Member Name

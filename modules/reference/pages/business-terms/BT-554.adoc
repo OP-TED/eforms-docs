@@ -1,0 +1,6 @@
+= `BT-554`: Subcontracting Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-554-Tender`:: Subcontracting Description

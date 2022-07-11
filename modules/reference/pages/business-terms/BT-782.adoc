@@ -1,0 +1,6 @@
+= `BT-782`: Tender Penalties
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-782-Tender`:: Tender Penalties

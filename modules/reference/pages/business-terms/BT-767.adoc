@@ -1,0 +1,6 @@
+= `BT-767`: Electronic Auction
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-767-Lot`:: Electronic Auction

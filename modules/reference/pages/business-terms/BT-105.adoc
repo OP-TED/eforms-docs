@@ -1,0 +1,6 @@
+= `BT-105`: Procedure Type
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-105-Procedure`:: Procedure Type

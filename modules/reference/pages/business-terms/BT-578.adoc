@@ -1,0 +1,6 @@
+= `BT-578`: Security Clearance
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-578-Lot`:: Security Clearance

@@ -1,0 +1,6 @@
+= `BT-732`: Security Clearance Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-732-Lot`:: Security Clearance Description

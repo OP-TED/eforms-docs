@@ -1,0 +1,6 @@
+= `BT-748`: Selection Criteria Used
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-748-Lot`:: Selection Criteria Used

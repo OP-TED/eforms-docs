@@ -1,0 +1,6 @@
+= `BT-710`: Tender Value Lowest
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-710-LotResult`:: Tender Value Lowest

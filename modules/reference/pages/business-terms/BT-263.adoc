@@ -1,0 +1,8 @@
+= `BT-263`: Additional Classification Codes
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-263-Lot`:: Additional Classification Code
+  `BT-263-Part`:: Additional Classification Code
+  `BT-263-Procedure`:: Additional Classification Code

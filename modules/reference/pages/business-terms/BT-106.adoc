@@ -1,0 +1,6 @@
+= `BT-106`: Procedure Accelerated
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-106-Procedure`:: Procedure Accelerated

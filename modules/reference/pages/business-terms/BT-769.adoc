@@ -1,0 +1,6 @@
+= `BT-769`: Multiple Tenders
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-769-Lot`:: Multiple Tenders

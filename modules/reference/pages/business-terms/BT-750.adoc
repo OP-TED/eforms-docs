@@ -1,0 +1,6 @@
+= `BT-750`: Selection Criteria Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-750-Lot`:: Selection Criteria Description

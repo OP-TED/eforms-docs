@@ -1,0 +1,12 @@
+= `nuts-lie-lvl3` codelist
+List of level 3 NUTS codes for Lichtenstein
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `LI000`::: Liechtenstein
+  `LIZZZ`::: Extra-Regio NUTS 3

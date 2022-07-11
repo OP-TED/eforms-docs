@@ -1,0 +1,6 @@
+= `BT-785`: Review Previous Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-785-Review`:: Review Previous Identifier

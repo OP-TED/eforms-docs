@@ -1,0 +1,6 @@
+= `BT-755`: Accessibility Justification
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-755-Lot`:: Accessibility Justification

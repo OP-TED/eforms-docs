@@ -1,0 +1,6 @@
+= `BT-792`: Review Remedy Type
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-792-Review`:: Review Remedy Type

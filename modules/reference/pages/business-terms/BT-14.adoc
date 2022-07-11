@@ -1,0 +1,7 @@
+= `BT-14`: Documents Restricted
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-14-Lot`:: Documents Restricted
+  `BT-14-Part`:: Documents Restricted

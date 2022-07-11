@@ -1,0 +1,11 @@
+= `review-status` codelist
+List of codes for the status of a given review request.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-783.adoc[`BT-783`] Review Request or Decision
+
+== Codes
+[horizontal]
+  `decided`::: Decision has been made by the Review Body regarding the current request.
+  `requested`::: Review has been requested and is still under process

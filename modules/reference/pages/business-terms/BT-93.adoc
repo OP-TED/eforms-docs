@@ -1,0 +1,6 @@
+= `BT-93`: Electronic Payment
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-93-Lot`:: Electronic Payment

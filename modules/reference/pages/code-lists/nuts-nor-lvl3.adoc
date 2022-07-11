@@ -1,0 +1,24 @@
+= `nuts-nor-lvl3` codelist
+List of level 3 NUTS codes for Norway
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `NO020`::: Innlandet
+  `NO060`::: Trøndelag
+  `NO071`::: Nordland
+  `NO074`::: Troms og Finnmark
+  `NO081`::: Oslo
+  `NO082`::: Viken
+  `NO091`::: Vestfold og Telemark
+  `NO092`::: Agder
+  `NO0A1`::: Rogaland
+  `NO0A2`::: Vestland
+  `NO0A3`::: Møre og Romsdal
+  `NO0B1`::: Jan Mayen
+  `NO0B2`::: Svalbard
+  `NOZZZ`::: Extra-Regio NUTS 3

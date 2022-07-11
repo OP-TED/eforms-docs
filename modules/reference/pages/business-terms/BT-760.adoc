@@ -1,0 +1,6 @@
+= `BT-760`: Received Submissions Type
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-760-LotResult`:: Received Submissions Type

@@ -1,0 +1,6 @@
+= `BT-144`: Not Awarded Reason
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-144-LotResult`:: Not Awarded Reason

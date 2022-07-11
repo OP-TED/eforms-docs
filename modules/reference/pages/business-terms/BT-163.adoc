@@ -1,0 +1,6 @@
+= `BT-163`: Concession Value Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-163-Tender`:: Concession Value Description

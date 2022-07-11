@@ -1,0 +1,14 @@
+= `contract-nature` codelist
+List of codes used to specify the main and additional natures of a purchase
+[horizontal]
+Version:: 20210317-0
+URI:: http://publications.europa.eu/resource/dataset/contract-nature
+Tailored by:: xref:code-lists/eforms-contract-nature.adoc[`eforms-contract-nature`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `combined`::: Combined
+  `services`::: Services
+  `supplies`::: Supplies
+  `works`::: Works

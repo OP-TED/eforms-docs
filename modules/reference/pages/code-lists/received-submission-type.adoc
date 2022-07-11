@@ -1,0 +1,22 @@
+= `received-submission-type` codelist
+This table provides the list of relevant categories used to classify tenders or requests to participate received within the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/received-submission-type
+Structure:: flat
+Used in:: xref:business-terms/BT-760.adoc[`BT-760`] Received Submissions Type
+
+== Codes
+[horizontal]
+  `part-req`::: Requests to participate
+  `t-esubm`::: Tenders submitted electronically
+  `t-med`::: Tenders from medium tenderers
+  `t-micro`::: Tenders from micro tenderers
+  `t-no-eea`::: Tenders from tenders registered in countries outside of the European Economic Area
+  `t-no-verif`::: Tenders for which it has not been verified if they are admissible or inadmissible
+  `t-oth-eea`::: Tenders from tenderers registered in other European Economic Area countries than the country of the buyer
+  `t-small`::: Tenders from small tenderers
+  `t-sme`::: Tenders from micro, small or medium tenderers
+  `t-verif-inad`::: Tenders verified and inadmissible
+  `t-verif-inad-low`::: Tenders verified and inadmissible because of an abnormally low price or cost
+  `tenders`::: Tenders

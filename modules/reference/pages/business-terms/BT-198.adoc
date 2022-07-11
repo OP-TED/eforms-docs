@@ -1,0 +1,56 @@
+= `BT-198`: Unpublished Accessibility Date
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-198(BT-09)-Procedure`:: Unpublished Accessibility Date
+  `BT-198(BT-105)-Procedure`:: Unpublished Accessibility Date
+  `BT-198(BT-106)-Procedure`:: Unpublished Accessibility Date
+  `BT-198(BT-118)-NoticeResult`:: Unpublished Accessibility Date
+  `BT-198(BT-1252)-Procedure`:: Unpublished Accessibility Date
+  `BT-198(BT-135)-Procedure`:: Unpublished Accessibility Date
+  `BT-198(BT-1351)-Procedure`:: Unpublished Accessibility Date
+  `BT-198(BT-136)-Procedure`:: Unpublished Accessibility Date
+  `BT-198(BT-142)-LotResult`:: Unpublished Accessibility Date
+  `BT-198(BT-144)-LotResult`:: Unpublished Accessibility Date
+  `BT-198(BT-156)-NoticeResult`:: Unpublished Accessibility Date
+  `BT-198(BT-160)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-161)-NoticeResult`:: Unpublished Accessibility Date
+  `BT-198(BT-162)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-163)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-171)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-191)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-193)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-539)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-539)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-540)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-540)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-541)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-541)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-5421)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-5421)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-5422)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-5422)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-5423)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-5423)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-543)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-543)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-553)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-554)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-555)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-556)-NoticeResult`:: Unpublished Accessibility Date
+  `BT-198(BT-709)-LotResult`:: Unpublished Accessibility Date
+  `BT-198(BT-710)-LotResult`:: Unpublished Accessibility Date
+  `BT-198(BT-711)-LotResult`:: Unpublished Accessibility Date
+  `BT-198(BT-712)-LotResult`:: Unpublished Accessibility Date
+  `BT-198(BT-720)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-730)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-731)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-733)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-733)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-734)-Lot`:: Unpublished Accessibility Date
+  `BT-198(BT-734)-LotsGroup`:: Unpublished Accessibility Date
+  `BT-198(BT-759)-LotResult`:: Unpublished Accessibility Date
+  `BT-198(BT-760)-LotResult`:: Unpublished Accessibility Date
+  `BT-198(BT-773)-Tender`:: Unpublished Accessibility Date
+  `BT-198(BT-88)-Procedure`:: Unpublished Accessibility Date

@@ -1,0 +1,5 @@
+= `OPP-022`: Significance (%)
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-022-Contract`:: Significance (%)

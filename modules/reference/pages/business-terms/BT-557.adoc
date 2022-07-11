@@ -1,0 +1,3 @@
+= `BT-557`: Group Framework Estimated Maximum Value Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

@@ -1,0 +1,8 @@
+= `BT-726`: Suitable For SMEs
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-726-Lot`:: Suitable For SMEs
+  `BT-726-LotsGroup`:: Suitable For SMEs
+  `BT-726-Part`:: Suitable For SMEs

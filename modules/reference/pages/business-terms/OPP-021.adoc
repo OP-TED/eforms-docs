@@ -1,0 +1,5 @@
+= `OPP-021`: Used asset
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-021-Contract`:: Used asset

@@ -1,0 +1,20 @@
+= `non-award-justification` codelist
+This table provides the list of reasons of the buyer for not choosing a winner in the procurement procedure.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/non-award-justification
+Structure:: flat
+Used in:: xref:business-terms/BT-144.adoc[`BT-144`] Not Awarded Reason
+
+== Codes
+[horizontal]
+  `all-rej`::: All tenders, requests to participate or projects were withdrawn or found inadmissible
+  `chan-need`::: Decision of the buyer, because of a change in needs
+  `ins-fund`::: Decision of the buyer, because of insufficient funds
+  `no-rece`::: No tenders, requests to participate or projects were received
+  `no-signed`::: The highest ranked tenderer(s) refused to sign the contract.
+  `one-admis`::: Only one admissible tender, request to participate or project was received.
+  `other`::: Other
+  `rev-body`::: Decision of a review body or another judicial body
+  `rev-buyer`::: Decision of the buyer following a tenderer's request to review the award
+  `tch-pr-error`::: Decision of the buyer, not following a tenderer's request to review the award, because of technical or procedural errors

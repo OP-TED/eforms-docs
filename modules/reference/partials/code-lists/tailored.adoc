@@ -1,0 +1,919 @@
+=== `accelerated-procedure`
+List of codes to specify whether a procedure is accelerated or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/accelerated-procedure.adoc[details & codes]
+
+'''
+
+=== `authority-activity`
+List of Main Activity codes allowed for a Contracting Authority
+[horizontal]
+Subset of:: <<_main_activity,`main-activity`>>
+Version:: 20220316-0
+
+See xref:code-lists/authority-activity.adoc[details & codes]
+
+'''
+
+=== `bri`
+List of allowed Notice Type codes for a Business Register Information document
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/bri.adoc[details & codes]
+
+'''
+
+=== `brin-ecs`
+List of allowed Notice Subtype codes for a notice concerning a European Company or a European Cooperative Society registration processing.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/brin-ecs.adoc[details & codes]
+
+'''
+
+=== `brin-eeig`
+List of allowed Notice Subtype codes for a notice concerning a European Economic Interest Grouping registration procesing.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/brin-eeig.adoc[details & codes]
+
+'''
+
+=== `can-desg`
+List of allowed Notice Subtype codes for a notice of CAN Design Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-desg.adoc[details & codes]
+
+'''
+
+=== `can-modif`
+List of allowed Notice Subtype codes for a notice of Contract Modification Notice Type .
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-modif.adoc[details & codes]
+
+'''
+
+=== `can-social`
+List of allowed Notice Subtype codes for a notice of CAN Social Notice Type .
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-social.adoc[details & codes]
+
+'''
+
+=== `can-standard`
+List of allowed Notice Subtype codes for a notice of CAN Standard Notice Type .
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-standard.adoc[details & codes]
+
+'''
+
+=== `can-tran`
+List of allowed Notice Subtype codes for a notice of CAN Public Transport Service Notice Type .
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-tran.adoc[details & codes]
+
+'''
+
+=== `change`
+List of allowed Notice Subtype codes for a notice of Change Notice Type .
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/change.adoc[details & codes]
+
+'''
+
+=== `cn-desg`
+List of allowed Notice Subtype codes for a notice of CN Design Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/cn-desg.adoc[details & codes]
+
+'''
+
+=== `cn-social`
+List of allowed Notice Subtype codes for a notice of CN Social Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/cn-social.adoc[details & codes]
+
+'''
+
+=== `cn-standard`
+List of allowed Notice Subtype codes for a notice of CN Standard Design Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/cn-standard.adoc[details & codes]
+
+'''
+
+=== `competition`
+List of allowed Notice Type codes for a notice of Competition Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/competition.adoc[details & codes]
+
+'''
+
+=== `cont-modif`
+List of allowed Notice Type codes for a notice of Contract Modification Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/cont-modif.adoc[details & codes]
+
+'''
+
+=== `corr`
+List of allowed Notice Subtype codes for a notice of CN Design Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/corr.adoc[details & codes]
+
+'''
+
+=== `dir-awa-pre`
+List of allowed Notice Type codes for a Direct Award Preannouncement Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/dir-awa-pre.adoc[details & codes]
+
+'''
+
+=== `duration`
+List of codes for undefined duration
+[horizontal]
+Subset of:: <<_timeperiods,`timeperiods`>>
+Version:: 20190918-0
+
+See xref:code-lists/duration.adoc[details & codes]
+
+'''
+
+=== `duration-unit`
+List of codes for eforms allowed duration unit of measure
+[horizontal]
+Subset of:: <<_timeperiods,`timeperiods`>>
+Version:: 20190918-0
+
+See xref:code-lists/duration-unit.adoc[details & codes]
+
+'''
+
+=== `ecatalog-submission`
+List of codes to specify whether the submission of electronic catalogues is allowed or not.
+[horizontal]
+Subset of:: <<_permission,`permission`>>
+Version:: 20220316-0
+
+See xref:code-lists/ecatalog-submission.adoc[details & codes]
+
+'''
+
+=== `eea-country`
+List of codes of the European Economic Area countries
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20220316-0
+
+See xref:code-lists/eea-country.adoc[details & codes]
+
+'''
+
+=== `eforms-contract-nature`
+List of eforms allowed codes to specify the main and additional natures of a purchase
+[horizontal]
+Subset of:: <<_contract_nature,`contract-nature`>>
+Version:: 20210317-0
+
+See xref:code-lists/eforms-contract-nature.adoc[details & codes]
+
+'''
+
+=== `eforms-country`
+List of country codes allowed in eforms
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20220316-0
+
+See xref:code-lists/eforms-country.adoc[details & codes]
+
+'''
+
+=== `eforms-language`
+List of language codes allowed in eforms
+[horizontal]
+Subset of:: <<_language,`language`>>
+Version:: 20220316-0
+
+See xref:code-lists/eforms-language.adoc[details & codes]
+
+'''
+
+=== `eforms-legal-basis`
+List of Legal Basis codes allowed in eForms
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20210616-0
+
+See xref:code-lists/eforms-legal-basis.adoc[details & codes]
+
+'''
+
+=== `einvoicing`
+List of codes to specify whether the use of electronic invoicing is allowed or not.
+[horizontal]
+Subset of:: <<_permission,`permission`>>
+Version:: 20220316-0
+
+See xref:code-lists/einvoicing.adoc[details & codes]
+
+'''
+
+=== `entity-activity`
+List of Main Activity codes allowed for a Contracting Entity
+[horizontal]
+Subset of:: <<_main_activity,`main-activity`>>
+Version:: 20220316-0
+
+See xref:code-lists/entity-activity.adoc[details & codes]
+
+'''
+
+=== `eppn-country`
+List of codes for the European Plant Phenotyping Network countries
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20220316-0
+
+See xref:code-lists/eppn-country.adoc[details & codes]
+
+'''
+
+=== `esignature-submission`
+List of codes to dpecify whether electronic signature may be used or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/esignature-submission.adoc[details & codes]
+
+'''
+
+=== `esubmission`
+List of codes to specify whether the electronic submission is allowed or not.
+[horizontal]
+Subset of:: <<_permission,`permission`>>
+Version:: 20220316-0
+
+See xref:code-lists/esubmission.adoc[details & codes]
+
+'''
+
+=== `eu-country`
+List of codes of the EU countries
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20220316-0
+
+See xref:code-lists/eu-country.adoc[details & codes]
+
+'''
+
+=== `eu-official-language`
+List of codes of the EU official languages
+[horizontal]
+Subset of:: <<_language,`language`>>
+Version:: 20220316-0
+
+See xref:code-lists/eu-official-language.adoc[details & codes]
+
+'''
+
+=== `linguistic-status`
+List of codes to specify whether a linguistic version has or not a legal status.
+[horizontal]
+Subset of:: <<_document_status,`document-status`>>
+Version:: 1.0
+
+See xref:code-lists/linguistic-status.adoc[details & codes]
+
+'''
+
+=== `no-esubmission-justification`
+List of codes to justify the impossibility to submit electronically
+[horizontal]
+Subset of:: <<_communication_justification,`communication-justification`>>
+Version:: 20220316-0
+
+See xref:code-lists/no-esubmission-justification.adoc[details & codes]
+
+'''
+
+=== `nuts-alb-lvl3`
+List of level 3 NUTS codes for Albania
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-alb-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-aut-lvl3`
+List of level 3 NUTS codes for Austria
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-aut-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-bel-lvl3`
+List of level 3 NUTS codes for Belgium
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-bel-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-bgr-lvl3`
+List of level 3 NUTS codes for Bulgaria
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-bgr-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-che-lvl3`
+List of level 3 NUTS codes for Switzerland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-che-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-country`
+List of codes for Countries having NUTS codes
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20220316-0
+
+See xref:code-lists/nuts-country.adoc[details & codes]
+
+'''
+
+=== `nuts-cyp-lvl3`
+List of level 3 NUTS codes for Cyprus
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-cyp-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-cze-lvl3`
+List of level 3 NUTS codes for Czech Republic
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-cze-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-deu-lvl3`
+List of level 3 NUTS codes for Germany
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-deu-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-dnk-lvl3`
+List of level 3 NUTS codes for Denmark
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-dnk-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-esp-lvl3`
+List of level 3 NUTS codes for Spain
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-esp-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-est-lvl3`
+List of level 3 NUTS codes for Estonia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-est-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-fin-lvl3`
+List of level 3 NUTS codes for Finland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-fin-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-fra-lvl3`
+List of level 3 NUTS codes for France
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-fra-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-gbr-lvl3`
+List of level 3 NUTS codes for United Kingdom
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-gbr-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-grc-lvl3`
+List of level 3 NUTS codes for Greece
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-grc-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-hrv-lvl3`
+List of level 3 NUTS codes for Croatia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-hrv-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-hun-lvl3`
+List of level 3 NUTS codes for Hungary
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-hun-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-irl-lvl3`
+List of level 3 NUTS codes for Ireland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-irl-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-isl-lvl3`
+List of level 3 NUTS codes for Iceland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-isl-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-ita-lvl3`
+List of level 3 NUTS codes for Italy
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-ita-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-lie-lvl3`
+List of level 3 NUTS codes for Lichtenstein
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-lie-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-ltu-lvl3`
+List of level 3 NUTS codes for Lithuania
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-ltu-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-lux-lvl3`
+List of level 3 NUTS codes for Luxembourg
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-lux-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-lva-lvl3`
+List of level 3 NUTS codes for Latvia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-lva-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-lvl3`
+List of all level 3 NUTS codes
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-mkd-lvl3`
+List of level 3 NUTS codes for Former Yugoslav Republic of Macedonia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-mkd-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-mlt-lvl3`
+List of level 3 NUTS codes for Malta
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-mlt-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-mne-lvl3`
+List of level 3 NUTS codes for Montenegro
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-mne-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-nld-lvl3`
+List of level 3 NUTS codes for Netherlands
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-nld-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-nor-lvl3`
+List of level 3 NUTS codes for Norway
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-nor-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-pol-lvl3`
+List of level 3 NUTS codes for Poland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-pol-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-prt-lvl3`
+List of level 3 NUTS codes for Portugal
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-prt-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-rou-lvl3`
+List of level 3 NUTS codes for Romania
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-rou-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-srb-lvl3`
+List of level 3 NUTS codes for Serbia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-srb-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-svk-lvl3`
+List of level 3 NUTS codes for Slovakia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-svk-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-svn-lvl3`
+List of level 3 NUTS codes for Slovenia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-svn-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-swe-lvl3`
+List of level 3 NUTS codes for Sweden
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-swe-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-tur-lvl3`
+List of level 3 NUTS codes for Turkey
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2021
+
+See xref:code-lists/nuts-tur-lvl3.adoc[details & codes]
+
+'''
+
+=== `organisation-role-service`
+List of possible service codes for Procurement Service Providers
+[horizontal]
+Subset of:: <<_organisation_role,`organisation-role`>>
+Version:: 20210616-0
+
+See xref:code-lists/organisation-role-service.adoc[details & codes]
+
+'''
+
+=== `pin-buyer`
+List of allowed Notice Subtype codes for a notice of PIN Buyer Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-buyer.adoc[details & codes]
+
+'''
+
+=== `pin-cfc-social`
+List of allowed Notice Subtype codes for a notice of PIN Call for Competition Social Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-cfc-social.adoc[details & codes]
+
+'''
+
+=== `pin-cfc-standard`
+List of allowed Notice Subtype codes for a notice of PIN Call for Competition Standard Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-cfc-standard.adoc[details & codes]
+
+'''
+
+=== `pin-only`
+List of allowed Notice Subtype codes for a notice of PIN Only Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-only.adoc[details & codes]
+
+'''
+
+=== `pin-rtl`
+List of allowed Notice Subtype codes for a notice of PIN Reduced Time Limit Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-rtl.adoc[details & codes]
+
+'''
+
+=== `pin-tran`
+List of allowed Notice Subtype codes for a notice of PIN for Public Transportation Service Contract Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-tran.adoc[details & codes]
+
+'''
+
+=== `planning`
+List of allowed Notice Type codes for a Planning Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/planning.adoc[details & codes]
+
+'''
+
+=== `postcode-country`
+List of country codes for countries having postcodes and requiring their use
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20220316-0
+
+See xref:code-lists/postcode-country.adoc[details & codes]
+
+'''
+
+=== `qu-sy`
+List of allowed Notice Subtype codes for a notice of Qualification System Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/qu-sy.adoc[details & codes]
+
+'''
+
+=== `required`
+List of codes to specify whether the associated requirement applies or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/required.adoc[details & codes]
+
+'''
+
+=== `reserved-execution`
+List of codes to express whether a contract execution is reserved or not.
+[horizontal]
+Subset of:: <<_applicability,`applicability`>>
+Version:: 20220316-0
+
+See xref:code-lists/reserved-execution.adoc[details & codes]
+
+'''
+
+=== `result`
+List of allowed Notice Type codes for a Result Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/result.adoc[details & codes]
+
+'''
+
+=== `social-service-cpv`
+[horizontal]
+Subset of:: <<_cpv,`cpv`>>
+Version:: 2008
+
+See xref:code-lists/social-service-cpv.adoc[details & codes]
+
+'''
+
+=== `subco`
+List of allowed Notice Subtype codes for a notice of Subcontracting Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/subco.adoc[details & codes]
+
+'''
+
+=== `subcontracting-allowed`
+List of codes to specify whether subcontracting is allowed or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/subcontracting-allowed.adoc[details & codes]
+
+'''
+
+=== `tender-guarantee-required`
+List of codes to specify whether a Tender Guarantee is required or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/tender-guarantee-required.adoc[details & codes]
+
+'''
+
+=== `veat`
+List of allowed Notice Subtype codes for a notice of Voluntary ex-ante Transparency Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/veat.adoc[details & codes]
+
+'''
+

@@ -1,0 +1,6 @@
+= `BT-58`: Renewal Maximum
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-58-Lot`:: Renewal Maximum

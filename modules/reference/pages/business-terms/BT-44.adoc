@@ -1,0 +1,6 @@
+= `BT-44`: Prize Rank
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-44-Lot`:: Prize Rank

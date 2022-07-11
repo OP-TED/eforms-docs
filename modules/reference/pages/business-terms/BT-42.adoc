@@ -1,0 +1,6 @@
+= `BT-42`: Jury Decision Binding
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-42-Lot`:: Jury Decision Binding

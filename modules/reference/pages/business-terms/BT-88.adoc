@@ -1,0 +1,6 @@
+= `BT-88`: Procedure Features
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-88-Procedure`:: Procedure Features

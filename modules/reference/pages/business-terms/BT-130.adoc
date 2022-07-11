@@ -1,0 +1,6 @@
+= `BT-130`: Dispatch Invitation Tender
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-130-Lot`:: Dispatch Invitation Tender

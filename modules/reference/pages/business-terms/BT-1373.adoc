@@ -1,0 +1,3 @@
+= `BT-1373`: Duration Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

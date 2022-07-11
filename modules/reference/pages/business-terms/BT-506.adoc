@@ -1,0 +1,9 @@
+= `BT-506`: Organisation Contact Email Address
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-506-Business`:: e-mail
+  `BT-506-Organization-Company`:: Organisation Contact Email Address
+  `BT-506-Organization-TouchPoint`:: Contact Email Address
+  `BT-506-UBO`:: UBO Email Address

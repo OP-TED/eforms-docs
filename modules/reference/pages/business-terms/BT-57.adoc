@@ -1,0 +1,6 @@
+= `BT-57`: Renewal Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-57-Lot`:: Renewal Description

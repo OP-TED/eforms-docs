@@ -1,0 +1,6 @@
+= `BT-109`: Framework Duration Justification
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-109-Lot`:: Framework Duration Justification

@@ -1,0 +1,7 @@
+= `BT-630`: Deadline Receipt Expressions
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-630(d)-Lot`:: Deadline Receipt Expressions
+  `BT-630(t)-Lot`:: Deadline Receipt Expressions

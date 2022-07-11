@@ -1,0 +1,13 @@
+= `duration-unit` codelist
+List of codes for eforms allowed duration unit of measure
+[horizontal]
+Version:: 20190918-0
+Subset of:: xref:code-lists/timeperiods.adoc[`timeperiods`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `DAY`::: (_S | Day) (_P | Days)
+  `MONTH`::: (_S | Month) (_P | Months)
+  `WEEK`::: Week
+  `YEAR`::: (_S | Year) (_P | Years)

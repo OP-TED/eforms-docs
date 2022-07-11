@@ -1,0 +1,6 @@
+= `BT-790`: Review Decision Type
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-790-Review`:: Review Decision Type

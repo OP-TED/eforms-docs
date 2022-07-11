@@ -1,0 +1,6 @@
+= `BT-118`: Notice Framework Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-118-NoticeResult`:: Notice Framework Value

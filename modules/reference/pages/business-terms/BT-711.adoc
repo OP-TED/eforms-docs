@@ -1,0 +1,6 @@
+= `BT-711`: Tender Value Highest
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-711-LotResult`:: Tender Value Highest

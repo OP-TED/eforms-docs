@@ -1,0 +1,123 @@
+= `social-service-cpv` codelist
+[horizontal]
+Version:: 2008
+Subset of:: xref:code-lists/cpv.adoc[`cpv`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `75121000`::: Administrative educational services
+  `75122000`::: Administrative healthcare services
+  `75123000`::: Administrative housing services
+  `79622000`::: Supply services of domestic help personnel
+  `79624000`::: Supply services of nursing personnel
+  `79625000`::: Supply services of medical personnel
+  `80110000`::: Pre-school education services
+  `80300000`::: Higher education services
+  `80420000`::: E-learning services
+  `80430000`::: Adult-education services at university level
+  `80511000`::: Staff training services
+  `80520000`::: Training facilities
+  `80590000`::: Tutorial services
+  `85000000`::: Health and social work services
+  `85100000`::: Health services
+  `85110000`::: Hospital and related services
+  `85111000`::: Hospital services
+  `85111100`::: Surgical hospital services
+  `85111200`::: Medical hospital services
+  `85111300`::: Gynaecological hospital services
+  `85111310`::: In vitro fertilisation services
+  `85111320`::: Obstetrical hospital services
+  `85111400`::: Rehabilitation hospital services
+  `85111500`::: Psychiatric hospital services
+  `85111600`::: Orthotic services
+  `85111700`::: Oxygen-therapy services
+  `85111800`::: Pathology services
+  `85111810`::: Blood analysis services
+  `85111820`::: Bacteriological analysis services
+  `85111900`::: Hospital dialysis services
+  `85112000`::: Hospital support services
+  `85112100`::: Hospital-bedding services
+  `85112200`::: Outpatient care services
+  `85120000`::: Medical practice and related services
+  `85121000`::: Medical practice services
+  `85121100`::: General-practitioner services
+  `85121200`::: Medical specialist services
+  `85121210`::: Gyneacologic or obstetric services
+  `85121220`::: Nephrology or nervous system specialist services
+  `85121230`::: Cardiology services or pulmonary specialists services
+  `85121231`::: Cardiology services
+  `85121232`::: Pulmonary specialists services
+  `85121240`::: ENT or audiologist services
+  `85121250`::: Gastroenterologist and geriatric services
+  `85121251`::: Gastroenterologist services
+  `85121252`::: Geriatric services
+  `85121270`::: Psychiatrist or psychologist services
+  `85121271`::: Home for the psychologically disturbed services
+  `85121280`::: Ophthalmologist, dermatology or orthopedics services
+  `85121281`::: Ophthalmologist services
+  `85121282`::: Dermatology services
+  `85121283`::: Orthopaedic services
+  `85121290`::: Paediatric or urologist services
+  `85121291`::: Paediatric services
+  `85121292`::: Urologist services
+  `85121300`::: Surgical specialist services
+  `85130000`::: Dental practice and related services
+  `85131000`::: Dental-practice services
+  `85131100`::: Orthodontic services
+  `85131110`::: Orthodontic-surgery services
+  `85140000`::: Miscellaneous health services
+  `85141000`::: Services provided by medical personnel
+  `85141100`::: Services provided by midwives
+  `85141200`::: Services provided by nurses
+  `85141210`::: Home medical treatment services
+  `85141211`::: Dialysis home medical treatment services
+  `85141220`::: Advisory services provided by nurses
+  `85142000`::: Paramedical services
+  `85142100`::: Physiotherapy services
+  `85142200`::: Homeopathic services
+  `85142300`::: Hygiene services
+  `85142400`::: Home delivery of incontinence products
+  `85143000`::: Ambulance services
+  `85144000`::: Residential health facilities services
+  `85144100`::: Residential nursing care services
+  `85145000`::: Services provided by medical laboratories
+  `85146000`::: Services provided by blood banks
+  `85146100`::: Services provided by sperm banks
+  `85146200`::: Services provided by transplant organ banks
+  `85147000`::: Company health services
+  `85148000`::: Medical analysis services
+  `85149000`::: Pharmacy services
+  `85150000`::: Medical imaging services
+  `85160000`::: Optician services
+  `85170000`::: Acupuncture and chiropractor services
+  `85171000`::: Acupuncture services
+  `85172000`::: Chiropractor services
+  `85200000`::: Veterinary services
+  `85210000`::: Domestic animal nurseries
+  `85300000`::: Social work and related services
+  `85310000`::: Social work services
+  `85311000`::: Social work services with accommodation
+  `85311100`::: Welfare services for the elderly
+  `85311200`::: Welfare services for the handicapped
+  `85311300`::: Welfare services for children and young people
+  `85312000`::: Social work services without accommodation
+  `85312100`::: Daycare services
+  `85312110`::: Child daycare services
+  `85312120`::: Daycare services for handicapped children and young people
+  `85312200`::: Homedelivery of provisions
+  `85312300`::: Guidance and counselling services
+  `85312310`::: Guidance services
+  `85312320`::: Counselling services
+  `85312330`::: Family-planning services
+  `85312400`::: Welfare services not delivered through residential institutions
+  `85312500`::: Rehabilitation services
+  `85312510`::: Vocational rehabilitation services
+  `85320000`::: Social services
+  `85321000`::: Administrative social services
+  `85322000`::: Community action programme
+  `85323000`::: Community health services
+  `92500000`::: Library, archives, museums and other cultural services
+  `92600000`::: Sporting services
+  `98133000`::: Services furnished by social membership organisations
+  `98133110`::: Services provided by youth associations

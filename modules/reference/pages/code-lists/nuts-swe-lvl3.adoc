@@ -1,0 +1,32 @@
+= `nuts-swe-lvl3` codelist
+List of level 3 NUTS codes for Sweden
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `SE110`::: Stockholms län
+  `SE121`::: Uppsala län
+  `SE122`::: Södermanlands län
+  `SE123`::: Östergötlands län
+  `SE124`::: Örebro län
+  `SE125`::: Västmanlands län
+  `SE211`::: Jönköpings län
+  `SE212`::: Kronobergs län
+  `SE213`::: Kalmar län
+  `SE214`::: Gotlands län
+  `SE221`::: Blekinge län
+  `SE224`::: Skåne län
+  `SE231`::: Hallands län
+  `SE232`::: Västra Götalands län
+  `SE311`::: Värmlands län
+  `SE312`::: Dalarnas län
+  `SE313`::: Gävleborgs län
+  `SE321`::: Västernorrlands län
+  `SE322`::: Jämtlands län
+  `SE331`::: Västerbottens län
+  `SE332`::: Norrbottens län
+  `SEZZZ`::: Extra-Regio NUTS 3

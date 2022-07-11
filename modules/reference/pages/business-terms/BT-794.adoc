@@ -1,0 +1,6 @@
+= `BT-794`: Review URL
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-794-Review`:: Review URL

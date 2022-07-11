@@ -1,0 +1,6 @@
+= `OPT-110`: URL to Fiscal Legislation
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-110-Lot-FiscalLegis`:: URL to Fiscal Legislation
+  `OPT-110-Part-FiscalLegis`:: URL to Fiscal Legislation

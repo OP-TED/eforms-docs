@@ -1,0 +1,8 @@
+= `BT-01`: Procedure Legal Basis
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-01-notice`:: Procedure Legal Basis
+  `BT-01(c)-Procedure`:: Procedure Legal Basis (ELI - celex)
+  `BT-01(d)-Procedure`:: Procedure Legal Basis (text)

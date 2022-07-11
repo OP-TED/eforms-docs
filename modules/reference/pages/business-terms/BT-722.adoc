@@ -1,0 +1,6 @@
+= `BT-722`: Contract EU Funds Name
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-722-Contract`:: Contract EU Funds Name

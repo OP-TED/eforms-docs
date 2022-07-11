@@ -1,0 +1,5 @@
+= `OPT-072`: Quality Target Description
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-072-Lot`:: Quality Target Description

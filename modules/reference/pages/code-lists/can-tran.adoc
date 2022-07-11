@@ -1,0 +1,10 @@
+= `can-tran` codelist
+List of allowed Notice Subtype codes for a notice of CAN Public Transport Service Notice Type .
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/notice-subtype.adoc[`notice-subtype`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `T02`::: t02

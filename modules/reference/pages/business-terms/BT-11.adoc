@@ -1,0 +1,6 @@
+= `BT-11`: Buyer Legal Type
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-11-Procedure-Buyer`:: Buyer Legal Type

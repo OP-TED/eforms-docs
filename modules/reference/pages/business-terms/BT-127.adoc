@@ -1,0 +1,6 @@
+= `BT-127`: Future Notice
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-127-notice`:: Future Notice

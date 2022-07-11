@@ -1,0 +1,39 @@
+= `nuts-bgr-lvl3` codelist
+List of level 3 NUTS codes for Bulgaria
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `BG311`::: Видин (Vidin)
+  `BG312`::: Монтана (Montana)
+  `BG313`::: Враца (Vratsa)
+  `BG314`::: Плевен (Pleven)
+  `BG315`::: Ловеч (Lovech)
+  `BG321`::: Велико Търново (Veliko Tarnovo)
+  `BG322`::: Габрово (Gabrovo)
+  `BG323`::: Русе (Ruse)
+  `BG324`::: Разград (Razgrad)
+  `BG325`::: Силистра (Silistra)
+  `BG331`::: Варна (Varna)
+  `BG332`::: Добрич (Dobrich)
+  `BG333`::: Шумен (Shumen)
+  `BG334`::: Търговище (Targovishte)
+  `BG341`::: Бургас (Burgas)
+  `BG342`::: Сливен (Sliven)
+  `BG343`::: Ямбол (Yambol)
+  `BG344`::: Стара Загора (Stara Zagora)
+  `BG411`::: София (столица) (Sofia (stolitsa))
+  `BG412`::: София (Sofia)
+  `BG413`::: Благоевград (Blagoevgrad)
+  `BG414`::: Перник (Pernik)
+  `BG415`::: Кюстендил (Kyustendil)
+  `BG421`::: Пловдив (Plovdiv)
+  `BG422`::: Хасково (Haskovo)
+  `BG423`::: Пазарджик (Pazardzhik)
+  `BG424`::: Смолян (Smolyan)
+  `BG425`::: Кърджали (Kardzhali)
+  `BGZZZ`::: Extra-Regio NUTS 3

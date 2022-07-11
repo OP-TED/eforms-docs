@@ -1,0 +1,15 @@
+= `economic-operator-size` codelist
+This table provides the different categories in which the tenderers to whom a contract can be awarded are classified, according to their size (using as criteria the number of employees).
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/economic-operator-size
+Structure:: flat
+Used in:: xref:business-terms/BT-165.adoc[`BT-165`] Winner Size
+
+== Codes
+[horizontal]
+  `large`::: Large
+  `medium`::: Medium
+  `micro`::: Micro
+  `small`::: Small
+  `sme`::: Micro, small, or medium

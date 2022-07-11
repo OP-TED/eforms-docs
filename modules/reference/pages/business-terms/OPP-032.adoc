@@ -1,0 +1,5 @@
+= `OPP-032`: Revenues Allocation
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-032-Tender`:: Revenues Allocation

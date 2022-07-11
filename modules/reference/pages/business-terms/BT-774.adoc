@@ -1,0 +1,6 @@
+= `BT-774`: Green Procurement
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-774-Lot`:: Green Procurement

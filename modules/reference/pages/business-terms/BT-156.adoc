@@ -1,0 +1,6 @@
+= `BT-156`: Group Framework Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-156-NoticeResult`:: Group Framework Value

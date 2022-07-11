@@ -1,0 +1,6 @@
+= `BT-798`: Review Request Withdrawn Reasons
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-798-Review`:: Review Request Withdrawn Reasons

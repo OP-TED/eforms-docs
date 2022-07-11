@@ -1,0 +1,6 @@
+= `BT-787`: Review Date
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-787-Review`:: Review Date

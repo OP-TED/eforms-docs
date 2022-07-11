@@ -1,0 +1,5 @@
+= `OPT-200`: Company Technical Identifier
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-200-Organization-Company`:: Company Technical Identifier

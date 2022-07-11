@@ -1,0 +1,3 @@
+= `BT-1378`: Selection Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

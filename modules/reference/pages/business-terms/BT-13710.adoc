@@ -1,0 +1,3 @@
+= `BT-13710`: Award Criteria Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

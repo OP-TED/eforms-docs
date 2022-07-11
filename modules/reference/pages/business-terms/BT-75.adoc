@@ -1,0 +1,6 @@
+= `BT-75`: Guarantee Required Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-75-Lot`:: Guarantee Required Description

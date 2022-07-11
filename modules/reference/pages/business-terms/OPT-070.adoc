@@ -1,0 +1,5 @@
+= `OPT-070`: Reserved Execution Justification
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-070-Lot`:: Reserved Execution justification

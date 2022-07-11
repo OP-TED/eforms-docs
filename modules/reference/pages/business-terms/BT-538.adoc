@@ -1,0 +1,7 @@
+= `BT-538`: Duration Other
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-538-Lot`:: Duration Other
+  `BT-538-Part`:: Duration Other

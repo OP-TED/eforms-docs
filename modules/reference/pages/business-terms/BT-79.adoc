@@ -1,0 +1,6 @@
+= `BT-79`: Performing Staff Qualification
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-79-Lot`:: Performing Staff Qualification

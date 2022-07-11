@@ -1,0 +1,3 @@
+= `BT-715`: Vehicles
+[horizontal]
+Type:: NUMBER

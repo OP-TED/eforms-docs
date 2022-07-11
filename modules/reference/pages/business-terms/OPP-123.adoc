@@ -1,0 +1,5 @@
+= `OPP-123`: Date of publication
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-123-Business`:: Date of publication

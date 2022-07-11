@@ -1,0 +1,6 @@
+= `BT-660`: Framework Estimated Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-660-LotResult`:: Framework Estimated Value

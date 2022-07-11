@@ -1,0 +1,6 @@
+= `BT-756`: PIN Competition Termination
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-756-Procedure`:: PIN Competition Termination

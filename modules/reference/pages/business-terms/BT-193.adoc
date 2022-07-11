@@ -1,0 +1,6 @@
+= `BT-193`: Tender Variant
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-193-Tender`:: Tender Variant

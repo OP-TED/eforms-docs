@@ -1,0 +1,14 @@
+= `applicability` codelist
+This table provides a list of the options pertinent to be chosen for a matter concerning the applicability of predefined fields. It is designed for but not restricted to the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/applicability
+Tailored by:: xref:code-lists/reserved-execution.adoc[`reserved-execution`]
+Structure:: flat
+Used in:: xref:business-terms/BT-736.adoc[`BT-736`] Reserved Execution, xref:business-terms/BT-773.adoc[`BT-773`] Subcontracting
+
+== Codes
+[horizontal]
+  `no`::: No
+  `not-known`::: Not yet known
+  `yes`::: Yes

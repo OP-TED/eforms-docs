@@ -1,0 +1,8 @@
+= `BT-5141`: Place Performance Country Code
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-5141-Lot`:: Place Performance Country Code
+  `BT-5141-Part`:: Place Performance Country Code
+  `BT-5141-Procedure`:: Place Performance Country Code

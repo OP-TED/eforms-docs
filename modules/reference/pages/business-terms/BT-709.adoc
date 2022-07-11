@@ -1,0 +1,6 @@
+= `BT-709`: Framework Maximum Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-709-LotResult`:: Framework Maximum Value

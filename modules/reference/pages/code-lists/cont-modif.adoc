@@ -1,0 +1,10 @@
+= `cont-modif` codelist
+List of allowed Notice Type codes for a notice of Contract Modification Form Type
+[horizontal]
+Version:: 20210929-0
+Subset of:: xref:code-lists/notice-type.adoc[`notice-type`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `can-modif`::: Contract modification notice

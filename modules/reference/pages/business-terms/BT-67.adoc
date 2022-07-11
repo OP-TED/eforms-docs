@@ -1,0 +1,7 @@
+= `BT-67`: Exclusion Grounds
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-67(a)-Procedure`:: Exclusion Grounds
+  `BT-67(b)-Procedure`:: Exclusion Grounds

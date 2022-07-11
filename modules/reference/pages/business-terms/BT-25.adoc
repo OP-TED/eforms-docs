@@ -1,0 +1,6 @@
+= `BT-25`: Quantity
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-25-Lot`:: Quantity

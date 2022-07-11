@@ -1,0 +1,7 @@
+= `BT-712`: Buyer Review Complainants
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-712(a)-LotResult`:: Buyer Review Complainants (Code)
+  `BT-712(b)-LotResult`:: Buyer Review Complainants (Number)

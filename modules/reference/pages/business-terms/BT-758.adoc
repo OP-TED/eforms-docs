@@ -1,0 +1,6 @@
+= `BT-758`: Change Notice Version Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-758-notice`:: Change Notice Version Identifier

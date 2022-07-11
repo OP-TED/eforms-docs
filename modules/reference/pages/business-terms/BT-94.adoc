@@ -1,0 +1,6 @@
+= `BT-94`: Recurrence
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-94-Lot`:: Recurrence

@@ -1,0 +1,6 @@
+= `BT-60`: EU Funds
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-60-Lot`:: EU Funds

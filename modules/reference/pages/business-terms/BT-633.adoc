@@ -1,0 +1,6 @@
+= `BT-633`: Organisation Natural Person
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-633-Organization`:: Organisation Natural Person

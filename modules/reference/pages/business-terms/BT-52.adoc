@@ -1,0 +1,6 @@
+= `BT-52`: Successive Reduction
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-52-Lot`:: Successive Reduction Indicator (Lot)

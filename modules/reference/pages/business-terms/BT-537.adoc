@@ -1,0 +1,7 @@
+= `BT-537`: Duration End Date
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-537-Lot`:: Duration End Date
+  `BT-537-Part`:: Duration End Date

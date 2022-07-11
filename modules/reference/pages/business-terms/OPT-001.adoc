@@ -1,0 +1,5 @@
+= `OPT-001`: UBL version ID (UBL)
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-001-notice`:: UBL version ID (UBL)

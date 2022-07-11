@@ -1,0 +1,6 @@
+= `BT-165`: Winner Size
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-165-Organization-Company`:: Winner Size

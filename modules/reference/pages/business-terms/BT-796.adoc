@@ -1,0 +1,6 @@
+= `BT-796`: Review Request Withdrawn
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-796-Review`:: Review Request Withdrawn

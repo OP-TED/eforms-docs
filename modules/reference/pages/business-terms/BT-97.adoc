@@ -1,0 +1,6 @@
+= `BT-97`: Submission Language
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-97-Lot`:: Submission Language

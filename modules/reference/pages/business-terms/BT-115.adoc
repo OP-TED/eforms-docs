@@ -1,0 +1,7 @@
+= `BT-115`: GPA Coverage
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-115-Lot`:: GPA Coverage
+  `BT-115-Part`:: GPA Coverage

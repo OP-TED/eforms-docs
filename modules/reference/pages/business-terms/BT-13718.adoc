@@ -1,0 +1,3 @@
+= `BT-13718`: Documents Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

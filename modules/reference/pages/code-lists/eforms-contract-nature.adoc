@@ -1,0 +1,13 @@
+= `eforms-contract-nature` codelist
+List of eforms allowed codes to specify the main and additional natures of a purchase
+[horizontal]
+Version:: 20210317-0
+Subset of:: xref:code-lists/contract-nature.adoc[`contract-nature`]
+Structure:: flat
+Used in:: xref:business-terms/BT-23.adoc[`BT-23`] Main Nature, xref:business-terms/BT-531.adoc[`BT-531`] Additional Nature
+
+== Codes
+[horizontal]
+  `services`::: Services
+  `supplies`::: Supplies
+  `works`::: Works

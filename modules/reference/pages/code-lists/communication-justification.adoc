@@ -1,0 +1,16 @@
+= `communication-justification` codelist
+This table provides the justification for restricting access rights to resources within the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/communication-justification
+Tailored by:: xref:code-lists/no-esubmission-justification.adoc[`no-esubmission-justification`]
+Structure:: flat
+Used in:: xref:business-terms/BT-707.adoc[`BT-707`] Documents Restricted Justification
+
+== Codes
+[horizontal]
+  `ipr-iss`::: Intellectual property right issues
+  `phy-mod`::: Inclusion of a physical model
+  `sen-info`::: Protection of particularly sensitive information
+  `sp-of-eq`::: Buyer would need specialised office equipment
+  `tdf-non-av`::: Tools, devices, or file formats not generally available

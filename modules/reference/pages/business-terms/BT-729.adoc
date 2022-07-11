@@ -1,0 +1,6 @@
+= `BT-729`: Subcontracting Obligation Maximum
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-729-Lot`:: Subcontracting Obligation Maximum

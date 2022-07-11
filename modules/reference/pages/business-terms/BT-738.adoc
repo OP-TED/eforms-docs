@@ -1,0 +1,6 @@
+= `BT-738`: Notice Publication Date Preferred
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-738-notice`:: Notice Publication Date Preferred

@@ -1,0 +1,6 @@
+= `BT-13714`: Tender Lot Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-13714-Tender`:: Tender Lot Identifier

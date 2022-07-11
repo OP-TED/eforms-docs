@@ -1,0 +1,6 @@
+= `BT-63`: Variants
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-63-Lot`:: Variants

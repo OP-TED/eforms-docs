@@ -1,0 +1,5 @@
+= `OPP-030`: Contract conditions Code
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-030-Tender`:: Contract conditions Code

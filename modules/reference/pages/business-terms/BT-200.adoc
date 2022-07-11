@@ -1,0 +1,6 @@
+= `BT-200`: Modification Reason Code
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-200-Contract`:: Modification Reason Code

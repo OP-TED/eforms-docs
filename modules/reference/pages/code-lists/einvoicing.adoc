@@ -1,0 +1,13 @@
+= `einvoicing` codelist
+List of codes to specify whether the use of electronic invoicing is allowed or not.
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/permission.adoc[`permission`]
+Structure:: flat
+Used in:: xref:business-terms/BT-743.adoc[`BT-743`] Electronic Invoicing
+
+== Codes
+[horizontal]
+  `allowed`::: Allowed
+  `not-allowed`::: Not allowed
+  `required`::: Required

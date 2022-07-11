@@ -1,0 +1,20 @@
+= `authority-activity` codelist
+List of Main Activity codes allowed for a Contracting Authority
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/main-activity.adoc[`main-activity`]
+Structure:: flat
+Used in:: xref:business-terms/BT-10.adoc[`BT-10`] Activity Authority
+
+== Codes
+[horizontal]
+  `defence`::: Defence
+  `econ-aff`::: Economic affairs
+  `education`::: Education
+  `env-pro`::: Environmental protection
+  `gen-pub`::: General public services
+  `hc-am`::: Housing and community amenities
+  `health`::: Health
+  `pub-os`::: Public order and safety
+  `rcr`::: Recreation, culture and religion
+  `soc-pro`::: Social protection

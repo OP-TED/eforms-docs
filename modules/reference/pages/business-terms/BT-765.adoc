@@ -1,0 +1,7 @@
+= `BT-765`: Framework Agreement
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-765-Lot`:: Framework Agreement
+  `BT-765-Part`:: Framework Agreement

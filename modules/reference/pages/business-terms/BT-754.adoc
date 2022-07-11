@@ -1,0 +1,6 @@
+= `BT-754`: Accessibility
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-754-Lot`:: Accessibility

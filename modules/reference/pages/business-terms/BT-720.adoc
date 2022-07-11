@@ -1,0 +1,6 @@
+= `BT-720`: Tender Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-720-Tender`:: Tender Value

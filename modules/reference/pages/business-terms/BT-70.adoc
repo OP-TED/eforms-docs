@@ -1,0 +1,6 @@
+= `BT-70`: Terms Performance
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-70-Lot`:: Terms Performance

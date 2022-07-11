@@ -1,0 +1,7 @@
+= `BT-5422`: Award Criterion Number Fixed
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-5422-Lot`:: Award Criterion Number Fixed
+  `BT-5422-LotsGroup`:: Award Criterion Number Fixed

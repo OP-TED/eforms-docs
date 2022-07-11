@@ -1,0 +1,6 @@
+= `BT-03`: Form Type
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-03-notice`:: Form Type

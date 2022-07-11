@@ -1,0 +1,6 @@
+= `BT-99`: Review Deadline Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-99-Lot`:: Review Deadline Description

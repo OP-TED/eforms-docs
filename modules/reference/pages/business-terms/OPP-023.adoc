@@ -1,0 +1,5 @@
+= `OPP-023`: Predominance (%)
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-023-Contract`:: Predominance (%)

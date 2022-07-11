@@ -1,0 +1,6 @@
+= `BT-775`: Social Procurement
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-775-Lot`:: Social Procurement

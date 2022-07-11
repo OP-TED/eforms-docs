@@ -1,0 +1,8 @@
+= `BT-501`: Organisation Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-501-Business-European`:: EU Registration Number
+  `BT-501-Business-National`:: National registration number
+  `BT-501-Organization-Company`:: Organisation Identifier

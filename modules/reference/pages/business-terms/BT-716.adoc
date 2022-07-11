@@ -1,0 +1,3 @@
+= `BT-716`: Vehicles Clean
+[horizontal]
+Type:: NUMBER

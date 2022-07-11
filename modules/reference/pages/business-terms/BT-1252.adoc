@@ -1,0 +1,6 @@
+= `BT-1252`: Direct Award Justification Previous Procedure Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-1252-Procedure`:: Direct Award Justification Previous Procedure Identifier

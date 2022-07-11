@@ -1,0 +1,7 @@
+= `BT-734`: Award Criterion Name
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-734-Lot`:: Award Criterion Name
+  `BT-734-LotsGroup`:: Award Criterion Name

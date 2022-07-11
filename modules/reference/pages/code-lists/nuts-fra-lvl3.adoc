@@ -1,0 +1,112 @@
+= `nuts-fra-lvl3` codelist
+List of level 3 NUTS codes for France
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `FR101`::: Paris
+  `FR102`::: Seine-et-Marne
+  `FR103`::: Yvelines
+  `FR104`::: Essonne
+  `FR105`::: Hauts-de-Seine
+  `FR106`::: Seine-Saint-Denis
+  `FR107`::: Val-de-Marne
+  `FR108`::: Val-d’Oise
+  `FRB01`::: Cher
+  `FRB02`::: Eure-et-Loir
+  `FRB03`::: Indre
+  `FRB04`::: Indre-et-Loire
+  `FRB05`::: Loir-et-Cher
+  `FRB06`::: Loiret
+  `FRC11`::: Côte-d’Or
+  `FRC12`::: Nièvre
+  `FRC13`::: Saône-et-Loire
+  `FRC14`::: Yonne
+  `FRC21`::: Doubs
+  `FRC22`::: Jura
+  `FRC23`::: Haute-Saône
+  `FRC24`::: Territoire de Belfort
+  `FRD11`::: Calvados
+  `FRD12`::: Manche
+  `FRD13`::: Orne
+  `FRD21`::: Eure
+  `FRD22`::: Seine-Maritime
+  `FRE11`::: Nord
+  `FRE12`::: Pas-de-Calais
+  `FRE21`::: Aisne
+  `FRE22`::: Oise
+  `FRE23`::: Somme
+  `FRF11`::: Bas-Rhin
+  `FRF12`::: Haut-Rhin
+  `FRF21`::: Ardennes
+  `FRF22`::: Aube
+  `FRF23`::: Marne
+  `FRF24`::: Haute-Marne
+  `FRF31`::: Meurthe-et-Moselle
+  `FRF32`::: Meuse
+  `FRF33`::: Moselle
+  `FRF34`::: Vosges
+  `FRG01`::: Loire-Atlantique
+  `FRG02`::: Maine-et-Loire
+  `FRG03`::: Mayenne
+  `FRG04`::: Sarthe
+  `FRG05`::: Vendée
+  `FRH01`::: Côtes-d’Armor
+  `FRH02`::: Finistère
+  `FRH03`::: Ille-et-Vilaine
+  `FRH04`::: Morbihan
+  `FRI11`::: Dordogne
+  `FRI12`::: Gironde
+  `FRI13`::: Landes
+  `FRI14`::: Lot-et-Garonne
+  `FRI15`::: Pyrénées-Atlantiques
+  `FRI21`::: Corrèze
+  `FRI22`::: Creuse
+  `FRI23`::: Haute-Vienne
+  `FRI31`::: Charente
+  `FRI32`::: Charente-Maritime
+  `FRI33`::: Deux-Sèvres
+  `FRI34`::: Vienne
+  `FRJ11`::: Aude
+  `FRJ12`::: Gard
+  `FRJ13`::: Hérault
+  `FRJ14`::: Lozère
+  `FRJ15`::: Pyrénées-Orientales
+  `FRJ21`::: Ariège
+  `FRJ22`::: Aveyron
+  `FRJ23`::: Haute-Garonne
+  `FRJ24`::: Gers
+  `FRJ25`::: Lot
+  `FRJ26`::: Hautes-Pyrénées
+  `FRJ27`::: Tarn
+  `FRJ28`::: Tarn-et-Garonne
+  `FRK11`::: Allier
+  `FRK12`::: Cantal
+  `FRK13`::: Haute-Loire
+  `FRK14`::: Puy-de-Dôme
+  `FRK21`::: Ain
+  `FRK22`::: Ardèche
+  `FRK23`::: Drôme
+  `FRK24`::: Isère
+  `FRK25`::: Loire
+  `FRK26`::: Rhône
+  `FRK27`::: Savoie
+  `FRK28`::: Haute-Savoie
+  `FRL01`::: Alpes-de-Haute-Provence
+  `FRL02`::: Hautes-Alpes
+  `FRL03`::: Alpes-Maritimes
+  `FRL04`::: Bouches-du-Rhône
+  `FRL05`::: Var
+  `FRL06`::: Vaucluse
+  `FRM01`::: Corse-du-Sud
+  `FRM02`::: Haute-Corse
+  `FRY10`::: Guadeloupe
+  `FRY20`::: Martinique
+  `FRY30`::: Guyane
+  `FRY40`::: La Réunion
+  `FRY50`::: Mayotte
+  `FRZZZ`::: Extra-Regio NUTS 3

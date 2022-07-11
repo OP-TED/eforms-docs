@@ -1,0 +1,3 @@
+= `BT-724`: Tool Atypical
+[horizontal]
+Type:: INDICATOR

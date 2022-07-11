@@ -1,0 +1,12 @@
+= `esignature-submission` codelist
+List of codes to dpecify whether electronic signature may be used or not.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+Used in:: xref:business-terms/BT-744.adoc[`BT-744`] Submission Electronic Signature
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

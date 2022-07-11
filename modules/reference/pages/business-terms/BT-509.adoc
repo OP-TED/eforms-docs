@@ -1,0 +1,7 @@
+= `BT-509`: Organisation eDelivery Gateway
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-509-Organization-Company`:: Organisation eDelivery Gateway
+  `BT-509-Organization-TouchPoint`:: eDelivery Gateway

@@ -1,0 +1,6 @@
+= `BT-610`: Activity Entity
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-610-Procedure-Buyer`:: Activity Entity

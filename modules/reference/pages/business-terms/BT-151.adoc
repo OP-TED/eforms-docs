@@ -1,0 +1,6 @@
+= `BT-151`: Contract URL
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-151-Contract`:: Contract URL

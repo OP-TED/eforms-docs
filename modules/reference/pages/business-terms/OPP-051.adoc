@@ -1,0 +1,5 @@
+= `OPP-051`: Awarding CPB Buyer Indicator
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-051-Organization`:: Awarding CPB Buyer Indicator

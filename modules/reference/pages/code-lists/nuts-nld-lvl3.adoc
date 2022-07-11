@@ -1,0 +1,51 @@
+= `nuts-nld-lvl3` codelist
+List of level 3 NUTS codes for Netherlands
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `NL111`::: Oost-Groningen
+  `NL112`::: Delfzijl en omgeving
+  `NL113`::: Overig Groningen
+  `NL124`::: Noord-Friesland
+  `NL125`::: Zuidwest-Friesland
+  `NL126`::: Zuidoost-Friesland
+  `NL131`::: Noord-Drenthe
+  `NL132`::: Zuidoost-Drenthe
+  `NL133`::: Zuidwest-Drenthe
+  `NL211`::: Noord-Overijssel
+  `NL212`::: Zuidwest-Overijssel
+  `NL213`::: Twente
+  `NL221`::: Veluwe
+  `NL224`::: Zuidwest-Gelderland
+  `NL225`::: Achterhoek
+  `NL226`::: Arnhem/Nijmegen
+  `NL230`::: Flevoland
+  `NL310`::: Utrecht
+  `NL321`::: Kop van Noord-Holland
+  `NL323`::: IJmond
+  `NL324`::: Agglomeratie Haarlem
+  `NL325`::: Zaanstreek
+  `NL327`::: Het Gooi en Vechtstreek
+  `NL328`::: Alkmaar en omgeving
+  `NL329`::: Groot-Amsterdam
+  `NL332`::: Agglomeratie ’s-Gravenhage
+  `NL333`::: Delft en Westland
+  `NL337`::: Agglomeratie Leiden en Bollenstreek
+  `NL33A`::: Zuidoost-Zuid-Holland
+  `NL33B`::: Oost-Zuid-Holland
+  `NL33C`::: Groot-Rijnmond
+  `NL341`::: Zeeuwsch-Vlaanderen
+  `NL342`::: Overig Zeeland
+  `NL411`::: West-Noord-Brabant
+  `NL412`::: Midden-Noord-Brabant
+  `NL413`::: Noordoost-Noord-Brabant
+  `NL414`::: Zuidoost-Noord-Brabant
+  `NL421`::: Noord-Limburg
+  `NL422`::: Midden-Limburg
+  `NL423`::: Zuid-Limburg
+  `NLZZZ`::: Extra-Regio NUTS 3

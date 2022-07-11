@@ -1,0 +1,7 @@
+= `BT-05`: Notice Dispatch Date
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-05(a)-notice`:: Notice Dispatch Date
+  `BT-05(b)-notice`:: Notice Dispatch Time

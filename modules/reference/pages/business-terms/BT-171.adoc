@@ -1,0 +1,6 @@
+= `BT-171`: Tender Rank
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-171-Tender`:: Tender Rank

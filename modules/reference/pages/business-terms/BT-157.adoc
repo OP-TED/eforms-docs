@@ -1,0 +1,6 @@
+= `BT-157`: Group Framework Estimated Maximum Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-157-LotsGroup`:: Group Framework Estimated Maximum Value

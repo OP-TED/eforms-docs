@@ -1,0 +1,6 @@
+= `BT-3202`: Contract Tender Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-3202-Contract`:: Contract Tender ID (Reference)

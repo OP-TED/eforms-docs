@@ -1,0 +1,6 @@
+= `BT-743`: Electronic Invoicing
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-743-Lot`:: Electronic Invoicing

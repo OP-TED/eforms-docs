@@ -1,0 +1,6 @@
+= `BT-764`: Submission Electronic Catalogue
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-764-Lot`:: Submission Electronic Catalogue

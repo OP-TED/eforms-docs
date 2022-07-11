@@ -1,0 +1,6 @@
+= `BT-553`: Subcontracting Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-553-Tender`:: Subcontracting Value

@@ -1,0 +1,13 @@
+= `award-criterion-type` codelist
+List of award criterion codes for award decisions within public procurement procedures.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/award-criterion-type
+Structure:: flat
+Used in:: xref:business-terms/BT-539.adoc[`BT-539`] Award Criterion Type
+
+== Codes
+[horizontal]
+  `cost`::: Cost
+  `price`::: Price
+  `quality`::: Quality

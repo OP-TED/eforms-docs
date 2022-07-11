@@ -1,0 +1,6 @@
+= `BT-133`: Public Opening Place
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-133-Lot`:: Public Opening Place

@@ -1,0 +1,10 @@
+= `classification-type` codelist
+List of commodity classifications
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-26.adoc[`BT-26`] Classification Type
+
+== Codes
+[horizontal]
+  `cpv`::: Common Procurement Vocabulary

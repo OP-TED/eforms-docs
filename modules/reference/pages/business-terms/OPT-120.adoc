@@ -1,0 +1,6 @@
+= `OPT-120`: URL to Environmental Legislation
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-120-Lot-EnvironLegis`:: URL to Environmental Legislation
+  `OPT-120-Part-EnvironLegis`:: URL to Environmental Legislation

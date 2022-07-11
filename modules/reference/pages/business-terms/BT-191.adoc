@@ -1,0 +1,6 @@
+= `BT-191`: Country Origin
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-191-Tender`:: Country Origin

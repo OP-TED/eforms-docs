@@ -1,0 +1,6 @@
+= `BT-18`: Submission URL
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-18-Lot`:: Submission URL

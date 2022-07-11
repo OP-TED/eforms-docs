@@ -1,0 +1,7 @@
+= `BT-543`: Award Criteria Complicated
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-543-Lot`:: Award Criteria Complicated
+  `BT-543-LotsGroup`:: Award Criteria Complicated

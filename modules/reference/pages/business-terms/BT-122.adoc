@@ -1,0 +1,6 @@
+= `BT-122`: Electronic Auction Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-122-Lot`:: Electronic Auction Description

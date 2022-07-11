@@ -1,0 +1,6 @@
+= `BT-651`: Subcontracting Tender Indication
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-651-Lot`:: Subcontracting Tender Indication

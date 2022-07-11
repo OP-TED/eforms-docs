@@ -1,0 +1,6 @@
+= `BT-746`: Winner Listed
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-746-Organization`:: Winner Listed

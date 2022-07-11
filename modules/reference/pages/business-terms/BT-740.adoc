@@ -1,0 +1,6 @@
+= `BT-740`: Buyer Contracting Entity
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-740-Procedure-Buyer`:: Buyer Contracting Entity

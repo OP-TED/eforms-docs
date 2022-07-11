@@ -1,0 +1,31 @@
+= `nuts-hun-lvl3` codelist
+List of level 3 NUTS codes for Hungary
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `HU110`::: Budapest
+  `HU120`::: Pest
+  `HU211`::: Fejér
+  `HU212`::: Komárom-Esztergom
+  `HU213`::: Veszprém
+  `HU221`::: Győr-Moson-Sopron
+  `HU222`::: Vas
+  `HU223`::: Zala
+  `HU231`::: Baranya
+  `HU232`::: Somogy
+  `HU233`::: Tolna
+  `HU311`::: Borsod-Abaúj-Zemplén
+  `HU312`::: Heves
+  `HU313`::: Nógrád
+  `HU321`::: Hajdú-Bihar
+  `HU322`::: Jász-Nagykun-Szolnok
+  `HU323`::: Szabolcs-Szatmár-Bereg
+  `HU331`::: Bács-Kiskun
+  `HU332`::: Békés
+  `HU333`::: Csongrád
+  `HUZZZ`::: Extra-Regio NUTS 3

@@ -1,0 +1,7 @@
+= `BT-1251`: Previous Planning Part Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-1251-Lot`:: Previous Planning Part Identifier
+  `BT-1251-Part`:: Previous Planning Part Identifier

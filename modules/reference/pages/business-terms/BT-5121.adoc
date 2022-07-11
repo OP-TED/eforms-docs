@@ -1,0 +1,8 @@
+= `BT-5121`: Place Performance Post Code
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-5121-Lot`:: Place Performance Post Code
+  `BT-5121-Part`:: Place Performance Post Code
+  `BT-5121-Procedure`:: Place Performance Post Code

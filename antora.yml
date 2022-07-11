@@ -1,0 +1,14 @@
+#
+# This file is part of a distributed component configuration.
+# It only needs to specify the component name and version.
+# The title and nav configuration keys should only be kept in the main antora.yml
+# which is located in the eforms-docs repository
+#
+name: eforms
+# title: eForms SDK
+version: &ver '0.7.0' # don't remove the &ver anchor. It is needed for the "/eforms/latest/" redirection in ROOT:index.adoc.
+# asciidoc:
+#   attributes:
+#     eforms_version: *ver # don't modify/remove this attribute. It is used in ROOT:index.adoc
+# nav:
+# - modules/reference/nav.adoc

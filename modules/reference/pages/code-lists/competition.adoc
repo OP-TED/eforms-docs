@@ -1,0 +1,16 @@
+= `competition` codelist
+List of allowed Notice Type codes for a notice of Competition Form Type
+[horizontal]
+Version:: 20210929-0
+Subset of:: xref:code-lists/notice-type.adoc[`notice-type`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `cn-desg`::: Design contest notice
+  `cn-social`::: Contract notice – light regime
+  `cn-standard`::: Contract or concession notice – standard regime
+  `pin-cfc-social`::: Prior information notice or a periodic indicative notice used as a call for competition – light regime
+  `pin-cfc-standard`::: Prior information notice or a periodic indicative notice used as a call for competition – standard regime
+  `qu-sy`::: Notice on the existence of a qualification system
+  `subco`::: Subcontracting notice

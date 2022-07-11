@@ -1,0 +1,53 @@
+= `nuts-rou-lvl3` codelist
+List of level 3 NUTS codes for Romania
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `RO111`::: Bihor
+  `RO112`::: Bistriţa-Năsăud
+  `RO113`::: Cluj
+  `RO114`::: Maramureş
+  `RO115`::: Satu Mare
+  `RO116`::: Sălaj
+  `RO121`::: Alba
+  `RO122`::: Braşov
+  `RO123`::: Covasna
+  `RO124`::: Harghita
+  `RO125`::: Mureş
+  `RO126`::: Sibiu
+  `RO211`::: Bacău
+  `RO212`::: Botoşani
+  `RO213`::: Iaşi
+  `RO214`::: Neamţ
+  `RO215`::: Suceava
+  `RO216`::: Vaslui
+  `RO221`::: Brăila
+  `RO222`::: Buzău
+  `RO223`::: Constanţa
+  `RO224`::: Galaţi
+  `RO225`::: Tulcea
+  `RO226`::: Vrancea
+  `RO311`::: Argeş
+  `RO312`::: Călăraşi
+  `RO313`::: Dâmboviţa
+  `RO314`::: Giurgiu
+  `RO315`::: Ialomiţa
+  `RO316`::: Prahova
+  `RO317`::: Teleorman
+  `RO321`::: Bucureşti
+  `RO322`::: Ilfov
+  `RO411`::: Dolj
+  `RO412`::: Gorj
+  `RO413`::: Mehedinţi
+  `RO414`::: Olt
+  `RO415`::: Vâlcea
+  `RO421`::: Arad
+  `RO422`::: Caraş-Severin
+  `RO423`::: Hunedoara
+  `RO424`::: Timiş
+  `ROZZZ`::: Extra-Regio NUTS 3

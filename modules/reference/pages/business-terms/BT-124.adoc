@@ -1,0 +1,7 @@
+= `BT-124`: Tool Atypical URL
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-124-Lot`:: Tool Atypical URL
+  `BT-124-Part`:: Tool Atypical URL

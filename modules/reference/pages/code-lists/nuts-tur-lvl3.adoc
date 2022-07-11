@@ -1,0 +1,92 @@
+= `nuts-tur-lvl3` codelist
+List of level 3 NUTS codes for Turkey
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `TR100`::: İstanbul
+  `TR211`::: Tekirdağ
+  `TR212`::: Edirne
+  `TR213`::: Kırklareli
+  `TR221`::: Balıkesir
+  `TR222`::: Çanakkale
+  `TR310`::: İzmir
+  `TR321`::: Aydın
+  `TR322`::: Denizli
+  `TR323`::: Muğla
+  `TR331`::: Manisa
+  `TR332`::: Afyonkarahisar
+  `TR333`::: Kütahya
+  `TR334`::: Uşak
+  `TR411`::: Bursa
+  `TR412`::: Eskişehir
+  `TR413`::: Bilecik
+  `TR421`::: Kocaeli
+  `TR422`::: Sakarya
+  `TR423`::: Düzce
+  `TR424`::: Bolu
+  `TR425`::: Yalova
+  `TR510`::: Ankara
+  `TR521`::: Konya
+  `TR522`::: Karaman
+  `TR611`::: Antalya
+  `TR612`::: Isparta
+  `TR613`::: Burdur
+  `TR621`::: Adana
+  `TR622`::: Mersin
+  `TR631`::: Hatay
+  `TR632`::: Kahramanmaraş
+  `TR633`::: Osmaniye
+  `TR711`::: Kırıkkale
+  `TR712`::: Aksaray
+  `TR713`::: Niğde
+  `TR714`::: Nevşehir
+  `TR715`::: Kırşehir
+  `TR721`::: Kayseri
+  `TR722`::: Sivas
+  `TR723`::: Yozgat
+  `TR811`::: Zonguldak
+  `TR812`::: Karabük
+  `TR813`::: Bartın
+  `TR821`::: Kastamonu
+  `TR822`::: Çankırı
+  `TR823`::: Sinop
+  `TR831`::: Samsun
+  `TR832`::: Tokat
+  `TR833`::: Çorum
+  `TR834`::: Amasya
+  `TR901`::: Trabzon
+  `TR902`::: Ordu
+  `TR903`::: Giresun
+  `TR904`::: Rize
+  `TR905`::: Artvin
+  `TR906`::: Gümüşhane
+  `TRA11`::: Erzurum
+  `TRA12`::: Erzincan
+  `TRA13`::: Bayburt
+  `TRA21`::: Ağrı
+  `TRA22`::: Kars
+  `TRA23`::: Iğdır
+  `TRA24`::: Ardahan
+  `TRB11`::: Malatya
+  `TRB12`::: Elazığ
+  `TRB13`::: Bingöl
+  `TRB14`::: Tunceli
+  `TRB21`::: Van
+  `TRB22`::: Muş
+  `TRB23`::: Bitlis
+  `TRB24`::: Hakkari
+  `TRC11`::: Gaziantep
+  `TRC12`::: Adıyaman
+  `TRC13`::: Kilis
+  `TRC21`::: Şanlıurfa
+  `TRC22`::: Diyarbakır
+  `TRC31`::: Mardin
+  `TRC32`::: Batman
+  `TRC33`::: Şırnak
+  `TRC34`::: Siirt
+  `TRZZZ`::: Extra-Regio NUTS 3

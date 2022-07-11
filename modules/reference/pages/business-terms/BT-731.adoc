@@ -1,0 +1,6 @@
+= `BT-731`: Subcontracting Percentage Known
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-731-Tender`:: Subcontracting Percentage Known

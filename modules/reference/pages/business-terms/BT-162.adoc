@@ -1,0 +1,6 @@
+= `BT-162`: Concession Revenue User
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-162-Tender`:: Concession Revenue User

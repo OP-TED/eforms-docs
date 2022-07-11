@@ -1,0 +1,5 @@
+= `OPT-999`: Dummy Tender Award Date
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-999`:: Dummy Tender Award Date

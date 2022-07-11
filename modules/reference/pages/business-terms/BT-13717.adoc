@@ -1,0 +1,3 @@
+= `BT-13717`: Terms Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

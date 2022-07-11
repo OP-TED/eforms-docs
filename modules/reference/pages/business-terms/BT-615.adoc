@@ -1,0 +1,7 @@
+= `BT-615`: Documents Restricted URL
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-615-Lot`:: Documents Restricted URL
+  `BT-615-Part`:: Documents Restricted URL

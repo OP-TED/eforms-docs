@@ -1,0 +1,10 @@
+= `change` codelist
+List of allowed Notice Subtype codes for a notice of Change Notice Type .
+[horizontal]
+Version:: 20210929-0
+Subset of:: xref:code-lists/notice-type.adoc[`notice-type`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `corr`::: Change notice

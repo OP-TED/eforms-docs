@@ -1,0 +1,5 @@
+= `OPT-310`: Tendering Party ID Reference
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-310-Tender`:: Tendering Party ID Reference

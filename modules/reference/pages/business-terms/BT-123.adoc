@@ -1,0 +1,6 @@
+= `BT-123`: Electronic Auction URL
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-123-Lot`:: Electronic Auction URL

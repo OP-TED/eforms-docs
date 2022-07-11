@@ -1,0 +1,8 @@
+= `BT-505`: Organisation Internet Address
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-505-Business`:: Internet address
+  `BT-505-Organization-Company`:: Organisation Internet Address
+  `BT-505-Organization-TouchPoint`:: Internet Address

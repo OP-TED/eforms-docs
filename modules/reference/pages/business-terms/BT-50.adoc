@@ -1,0 +1,6 @@
+= `BT-50`: Minimum Candidates
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-50-Lot`:: Minimum Candidates

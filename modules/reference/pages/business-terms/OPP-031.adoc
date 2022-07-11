@@ -1,0 +1,5 @@
+= `OPP-031`: Contract conditions Decription (other than revenue allocation)
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-031-Tender`:: Contract Conditions Description (other than revenue allocation)

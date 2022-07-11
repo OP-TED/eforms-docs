@@ -1,0 +1,6 @@
+= `BT-793`: Review Remedy Value
+[horizontal]
+Type:: VALUE
+== Fields
+[horizontal]
+  `BT-793-Review`:: Review Remedy Value

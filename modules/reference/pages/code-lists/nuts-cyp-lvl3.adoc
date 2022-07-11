@@ -1,0 +1,12 @@
+= `nuts-cyp-lvl3` codelist
+List of level 3 NUTS codes for Cyprus
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `CY000`::: Κύπρος (Kypros)
+  `CYZZZ`::: Extra-Regio NUTS 3

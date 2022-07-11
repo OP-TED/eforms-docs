@@ -1,0 +1,7 @@
+= `BT-36`: Duration Period
+[horizontal]
+Type:: DURATION
+== Fields
+[horizontal]
+  `BT-36-Lot`:: Duration Period
+  `BT-36-Part`:: Duration Period

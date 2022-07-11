@@ -1,0 +1,6 @@
+= `BT-41`: Following Contract
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-41-Lot`:: Following Contract

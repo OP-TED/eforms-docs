@@ -1,0 +1,6 @@
+= `BT-631`: Dispatch Invitation Interest
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-631-Lot`:: Dispatch Invitation Interest

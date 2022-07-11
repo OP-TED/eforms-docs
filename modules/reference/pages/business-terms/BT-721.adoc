@@ -1,0 +1,6 @@
+= `BT-721`: Contract Title
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-721-Contract`:: Contract Title

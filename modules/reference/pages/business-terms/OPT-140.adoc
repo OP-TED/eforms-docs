@@ -1,0 +1,6 @@
+= `OPT-140`: Procurement Documents ID
+[horizontal]
+== Fields
+[horizontal]
+  `OPT-140-Lot`:: Procurement Documents ID
+  `OPT-140-Part`:: Procurement Documents ID

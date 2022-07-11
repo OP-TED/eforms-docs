@@ -1,0 +1,7 @@
+= `BT-09`: Cross Border Law
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-09(a)-Procedure`:: Cross Border Law
+  `BT-09(b)-Procedure`:: Cross Border Law

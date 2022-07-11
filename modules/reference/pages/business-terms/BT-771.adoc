@@ -1,0 +1,6 @@
+= `BT-771`: Late Tenderer Information
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-771-Lot`:: Late Tenderer Information

@@ -1,0 +1,3 @@
+= `BT-1376`: Second Stage Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

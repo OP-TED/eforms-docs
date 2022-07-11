@@ -1,0 +1,6 @@
+= `BT-134`: Public Opening Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-134-Lot`:: Public Opening Description

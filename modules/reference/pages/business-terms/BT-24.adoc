@@ -1,0 +1,9 @@
+= `BT-24`: Description
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-24-Lot`:: Description
+  `BT-24-LotsGroup`:: Description
+  `BT-24-Part`:: Description
+  `BT-24-Procedure`:: Description

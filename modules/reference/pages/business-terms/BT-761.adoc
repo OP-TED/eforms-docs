@@ -1,0 +1,6 @@
+= `BT-761`: Tenderer Legal Form
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-761-Lot`:: Tenderer Legal Form

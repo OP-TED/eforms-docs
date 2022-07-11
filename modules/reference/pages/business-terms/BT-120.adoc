@@ -1,0 +1,6 @@
+= `BT-120`: No Negotiation Necessary
+[horizontal]
+Type:: INDICATOR
+== Fields
+[horizontal]
+  `BT-120-Lot`:: No Negotiation Necessary

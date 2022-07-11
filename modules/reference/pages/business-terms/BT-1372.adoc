@@ -1,0 +1,3 @@
+= `BT-1372`: Place Performance Lot Identifier
+[horizontal]
+Type:: IDENTIFIER

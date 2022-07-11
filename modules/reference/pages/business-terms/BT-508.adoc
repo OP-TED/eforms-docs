@@ -1,0 +1,6 @@
+= `BT-508`: Buyer Profile URL
+[horizontal]
+Type:: URL
+== Fields
+[horizontal]
+  `BT-508-Procedure-Buyer`:: Buyer Profile URL

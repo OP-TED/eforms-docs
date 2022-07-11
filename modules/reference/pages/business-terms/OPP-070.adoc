@@ -1,0 +1,5 @@
+= `OPP-070`: Notice Subtype
+[horizontal]
+== Fields
+[horizontal]
+  `OPP-070-notice`:: Notice Subtype

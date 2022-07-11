@@ -1,0 +1,16 @@
+= `innovative-acquisition` codelist
+This table provides the codes and values used for the type of innovative works, supplies or services being procured within the context of public procurement.
+[horizontal]
+Version:: 20190918-0
+URI:: http://publications.europa.eu/resource/dataset/innovative-acquisition
+Structure:: flat
+Used in:: xref:business-terms/BT-776.adoc[`BT-776`] Innovative Procurement
+
+== Codes
+[horizontal]
+  `buy-eff`::: The procured works, supplies or services are likely to make the work of the buyer more effective.
+  `fp-requ`::: The technical specifications are primarily based on functional and performance requirements, not on describing the technical solution.
+  `mar-nov`::: The procured works, supplies or services are novel for the whole market.
+  `org-nov`::: The procured works, supplies or services are novel for the organisation.
+  `other`::: Other
+  `rd-act`::: The procured works, supplies or services involve research and development activities.

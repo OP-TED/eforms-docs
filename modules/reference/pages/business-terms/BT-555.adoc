@@ -1,0 +1,6 @@
+= `BT-555`: Subcontracting Percentage
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-555-Tender`:: Subcontracting Percentage

@@ -1,0 +1,5 @@
+= `period-listname` codelist
+-/-
+[horizontal]
+Version:: 1.0
+Structure:: flat

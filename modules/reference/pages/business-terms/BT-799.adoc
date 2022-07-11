@@ -1,0 +1,6 @@
+= `BT-799`: Review Body Type
+[horizontal]
+Type:: CODE
+== Fields
+[horizontal]
+  `BT-799-ReviewBody`:: Review Body Type

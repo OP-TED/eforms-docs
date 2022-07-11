@@ -1,0 +1,6 @@
+= `BT-98`: Tender Validity Deadline
+[horizontal]
+Type:: DURATION
+== Fields
+[horizontal]
+  `BT-98-Lot`:: Tender Validity Deadline

@@ -1,0 +1,8 @@
+= `BT-5131`: Place Performance City
+[horizontal]
+Type:: TEXT
+== Fields
+[horizontal]
+  `BT-5131-Lot`:: Place Performance City
+  `BT-5131-Part`:: Place Performance City
+  `BT-5131-Procedure`:: Place Performance City

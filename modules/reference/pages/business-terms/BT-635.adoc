@@ -1,0 +1,6 @@
+= `BT-635`: Buyer Review Requests Count
+[horizontal]
+Type:: NUMBER
+== Fields
+[horizontal]
+  `BT-635-LotResult`:: Buyer Review Requests Count

@@ -1,0 +1,9 @@
+= `BT-13`: Additional Information Deadline
+[horizontal]
+Type:: DATE
+== Fields
+[horizontal]
+  `BT-13(d)-Lot`:: Additional Information Deadline
+  `BT-13(d)-Part`:: Additional Information Deadline
+  `BT-13(t)-Lot`:: Additional Information Deadline
+  `BT-13(t)-Part`:: Additional Information Deadline

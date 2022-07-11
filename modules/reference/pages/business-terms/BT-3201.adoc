@@ -1,0 +1,6 @@
+= `BT-3201`: Tender Identifier
+[horizontal]
+Type:: IDENTIFIER
+== Fields
+[horizontal]
+  `BT-3201-Tender`:: Tender Identifier

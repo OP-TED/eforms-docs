@@ -1,0 +1,12 @@
+= `duration` codelist
+List of codes for undefined duration
+[horizontal]
+Version:: 20190918-0
+Subset of:: xref:code-lists/timeperiods.adoc[`timeperiods`]
+Structure:: flat
+Used in:: xref:business-terms/BT-538.adoc[`BT-538`] Duration Other
+
+== Codes
+[horizontal]
+  `UNKNOWN`::: Unknown
+  `UNLIMITED`::: Unlimited
