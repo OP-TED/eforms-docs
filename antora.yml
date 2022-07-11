@@ -12,6 +12,7 @@ nav:
 - modules/translations/nav.adoc
 - modules/notice-types/nav.adoc
 - modules/viewer-templates/nav.adoc
+- modules/reference/nav.adoc
 - modules/efx/nav.adoc
 - modules/efx-toolkit/nav.adoc
 - modules/notice-viewer/nav.adoc
