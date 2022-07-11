@@ -102,8 +102,67 @@ The various characteristics of each field are indicated as properties of the JSO
         "type" : "flat"
       }
     }
-  },
-...
+  }, {
+    "id" : "BT-137-Lot",
+    "parentNodeId" : "ND-Lot",
+    "name" : "Purpose Lot Identifier",
+    "btId" : "BT-137",
+    "xpathAbsolute" : "/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cbc:ID",
+    "xpathRelative" : "cbc:ID",
+    "type" : "id",
+    "idScheme" : "LOT", // <12>
+    "legalType" : "IDENTIFIER",
+    "repeatable" : {
+      "value" : false,
+      "severity" : "ERROR"
+    },
+    "forbidden" : { // <13>
+      "value" : false,
+      "severity" : "ERROR",
+      "constraints" : [ {
+        "noticeTypes" : [ "1", "2", "3", "4", "5", "6", "X01", "X02" ],
+        "value" : true,
+        "severity" : "ERROR"
+      } ]
+    },
+    "mandatory" : { // <14>
+      "value" : false,
+      "severity" : "ERROR",
+      "constraints" : [ {
+        "noticeTypes" : [ "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "CEI", "T01", "T02" ],
+        "value" : true,
+        "severity" : "ERROR"
+      } ]
+    },
+    "pattern" : { // <15>
+      "value" : "^LOT-\\d{4}$",
+      "severity" : "ERROR"
+    }
+  }, {
+    "id" : "BT-13714-Tender",
+    "parentNodeId" : "ND-LotTender",
+    "name" : "Tender Lot Identifier",
+    "btId" : "BT-13714",
+    "xpathAbsolute" : "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeResult/efac:LotTender/efac:TenderLot/cbc:ID",
+    "xpathRelative" : "efac:TenderLot/cbc:ID",
+    "type" : "id-ref",
+    "idSchemes" : [ "LOT", "GLO" ], // <16>
+    "legalType" : "IDENTIFIER",
+    "repeatable" : {
+      "value" : false,
+      "severity" : "ERROR"
+    },
+    "forbidden" : {
+      ...
+    },
+    "mandatory" : {
+      ... 
+    },
+    "pattern" : {
+      ...
+    }
+  }
+  ...
 }
 ----
 <1> Identifier of the field.
@@ -118,6 +177,11 @@ The various characteristics of each field are indicated as properties of the JSO
 <10> Indicates if the field can appear more than once inside its container
 <11> Identifier of the code list from which the field value must belong.
 Applicable only for fields of type "code" or "internal-code"
+<12> Identifier scheme used by a field with `"type" : "id"`.
+<13> This property provides information on when a field's presence is forbidden.
+<14> This property provides information on when a field's value is mandatory.
+<15> A RegEx pattern the field's value must match.
+<16> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "ìd-ref"`) can reference.
 
 
 === Property Values
@@ -126,24 +190,115 @@ Some properties are assigned with a static value; a value that does not depend o
 
 The properties that are assigned with static values are listed below:
 
-* `id`
-* `parentNodeId`
-* `name`
-* `btId`
-* `xpathAbsolute`
-* `xpathRelative`
-* `type` (see Field data types)
-* `legalType`
-* `maxLength`
-* `idScheme`: string representing the type of element the id refers to, example: "TPO" for touch point. It may be present if the type is `id`
-* `idSchemes`: array of strings, representing what id types a field of type `id-ref` can refer to. It is always present if `id-ref` is present
+=== Static Properties
+
+[horizontal]
+`id`:: A string specifying the identifier of a field.
+`parentNodeId`:: The identifier of the the parent node of the field. All nodes are listed in the `xmlStructure` section of `fields.json`. See xref:fields/xml-structure.adoc[XML Structure]. 
+`name`:: The name of the field. It is provided to improve readability of the `fields.json`. In your applications you should the appropriate label for the field. 
+`btId`:: The identifier of the Business Term that this field instantiates.
+`xpathAbsolute`:: The absolute XPath of the field. This value is calculated by combining all the relative XPaths in the hierarchy of nodes that include this field. See `parentNodeId`.
+`xpathRelative`:: The XPath of the field relative to its parent `node`. See `parentNodeId`.
+`type`:: The data type of the field. xref:#data-types[See Field data types].
+`legalType`:: The data type of the Business Term associated with the field as defined by the eForms Regulation.
+`maxLength`:: The maximum number of characters that the field can hold.
+`idScheme`:: Applicable only to fields of type `id`. Indicates the identifier scheme for this `id` field (e.g. "TPO" for Touch Point).
+`idSchemes`:: Applicable only to fields of type `id-ref`. Provides an array of valid identifier schemes that this `id-ref` field can reference.
 
 Static properties are always assigned with a scalar value (a string, a boolean, a number, array of strings, etc.). If there is no value defined, the property is omitted.
+
+=== Dynamic properties
 
 Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different factors, for example the notice type it is used in, or the values of other fields in the same notice.
 
 Dynamic values are represented with a JSON object. The object always contains a `value` property which indicates the default value for the  dynamic property and, when necessary, a `constraints` list that indicates the conditions under which the dynamic property may take different values.
 
+
+`repeatable`::
+The `repeatable` property indicates whether or not a field can appear more than once inside its container. The current version of the eForms SDK does not contain any fields that are only repeatable under certain conditions. However the `repeatable` property is a dynamic property so that constraints can be added to this property if needed in the future.
++
+[source,json]
+----
+"repeatable" : {
+  "value" : false,
+  "severity" : "ERROR"
+}
+----
+
+`forbidden`::
+The `forbidden` property indicates whether or not the field can be used in specific notice types. 
++
+[source,json]
+----
+"forbidden" : {
+  "value" : false, // <1>
+  "severity" : "ERROR", // <2>
+  "constraints" : [ {
+    "noticeTypes" : [ "38", "39", "40", "X01", "X02" ],
+    "value" : true,
+    "severity" : "ERROR" // <2>
+  } ]
+}
+----
+<1> Every field is allowed by default in all notice types unless a constraint forbids it.
+<2> The severity can be either "ERROR" or "WARN" and is provided for use by validation systems.
+
+`mandatory`::
+The `mandatory` property indicates whether or not a field is required to have a value. 
++
+[source,json]
+----
+"mandatory" : {
+  "value" : false, // <1>
+  "severity" : "ERROR", // <2>
+  "constraints" : [ {
+    "noticeTypes" : [ "1", "4", "7", "10", "14", "16", "19", "23", "29", "32", "35", "36", "CEI", "T01", "T02" ],
+    "value" : true,
+    "severity" : "ERROR" // <2>
+  } ]
+}
+----
+<1> Every field is optional by default in all notice types unless a constraint specifies otherwise.
+<2> The severity can be either "ERROR" or "WARN" and is provided for use by validation systems.
++
+NOTE: The UBL specification does not permit XML documents
+to contain empty elements or attributes. So if a field is not mandatory and no value has been filled in, then the corresponding XML element must be omitted from the XML notice.
++
+CAUTION: The value of the `forbidden` property must take precedence over the value the `mandatory` property. If a field is forbidden, then it should not be present in the notice regardless of the value of its `mandatory` property. You should always check first if a field is forbidden or not. Then, consider whether the field is mandatory or optional only if the field is not forbidden.
+
+`codelist`::
+The `codeList` property indicates that the field only accepts a specific set of values, and these values are codes from a specific xref:codelists:index.adoc[codelist defined for eForms].
++
+The value is a JSON object that contains the identifier of the codelist, and some information about this codelist.
++
+[source,json]
+----
+"codeList" : {
+  "value" : {
+    "id" : "accelerated-procedure",
+    "type" : "flat", // <1>
+    "parentId" : "indicator" // <2>
+  },
+  "severity" : "ERROR"
+}
+----
+<1> Indicates that the codelist is a simple list of values. The few codelists that have a structure, like NUTS and CPV, are indicated as "hierarchical".
+<2> Indicates the parent codelist. Provided only for tailored codelists.
+
+
+`pattern`::
+The `pattern` property indicates that the value of the field must match a specific regular expression pattern.
++
+[source,json]
+----
+"pattern" : {
+  "value" : "^LOT-\\d{4}$", // <1>
+  "severity" : "ERROR"
+}
+----
+<1> The value of this field must be "LOT-" followed by 4 digits.
++
+In the regular expression, the backslash character "\" is escaped as "\\".
 
 .Dynamic property value example
 [example]
@@ -200,127 +355,34 @@ All dynamic values are always represented in the same way as in the example abov
 <6> The severity is provided for validation systems. It may be either "ERROR" or "WARN". "WARN" indicates that a notice that does not comply with the provided value is still considered valid.
 <7> Multiple constraints may be provided. If none apply, then use the default value provided for the property.
 
-
 For more details on the syntax of conditions, see <<Syntax for conditions>> below.
-
-=== Field data types
-
-The possible technical values for a field type are:
-
-* `id`: string representing an identifier (may have an associated `idScheme`)
-* `id-ref`: string representing a reference to an identifier (has an associated `idSchemes`)
-* `indicator`: boolean (true or false)
-* `integer`: whole-valued positive number
-* `number`: numerical value, with optional decimal places.
-* `amount`: monetary amount, comprised of a numerical value and a currency
-* `measure`: numerical value associated with a measurement unit
-* `code`: string representing a concept in a code list
-* `internal-code`: string representing a concept in an internal code list
-* `zoned-date`: date with timezone
-* `zoned-time`: time with timezone
-* `email`: string representing an e-mail address
-* `phone`: string representing a phone number
-* `url`: string representing a URL
-* `text`: language-independent string
-* `text-multilingual`: string that can be translated into multiple languages
-
-== Dynamic properties
-
-=== Repeatable
-
-The `repeatable` property indicates whether or not a field can appear more than once inside its container. The current version of the eForms SDK does not contain any fields that are only repeatable under certain conditions. However the `repeatable` property is a dynamic property so that constraints can be added to this property if needed in the future.
-
-[source,json]
-----
-"repeatable" : {
-  "value" : false,
-  "severity" : "ERROR"
-}
-----
-
-=== Forbidden
-
-The `forbidden` property indicates whether or not the field can be used in specific notice types. 
-
-[source,json]
-----
-"forbidden" : {
-  "value" : false, // <1>
-  "severity" : "ERROR", // <2>
-  "constraints" : [ {
-    "noticeTypes" : [ "38", "39", "40", "X01", "X02" ],
-    "value" : true,
-    "severity" : "ERROR" // <2>
-  } ]
-}
-----
-<1> Every field is allowed by default in all notice types unless a constraint forbids it.
-<2> The severity can be either "ERROR" or "WARN" and is provided for use by validation systems.
-
-=== Mandatory
-
-The `mandatory` property indicates whether or not a field is required to have a value. 
-
-[source,json]
-----
-"mandatory" : {
-  "value" : false, // <1>
-  "severity" : "ERROR", // <2>
-  "constraints" : [ {
-    "noticeTypes" : [ "1", "4", "7", "10", "14", "16", "19", "23", "29", "32", "35", "36", "CEI", "T01", "T02" ],
-    "value" : true,
-    "severity" : "ERROR" // <2>
-  } ]
-}
-----
-<1> Every field is optional by default in all notice types unless a constraint specifies otherwise.
-<2> The severity can be either "ERROR" or "WARN" and is provided for use by validation systems.
-
-
-NOTE: The UBL specification does not permit XML documents
-to contain empty elements or attributes. So if a field is not mandatory and no value has been filled in, then the corresponding XML element must be omitted from the XML notice.
-
-CAUTION: The value of the `forbidden` property must take precedence over the value the `mandatory` property. If a field is forbidden, then it should not be present in the notice regardless of the value of its `mandatory` property. You should always check first if a field is forbidden or not. Then, consider whether the field is mandatory or optional only if the field is not forbidden.
-
-=== Codelist
-
-The `codeList` property indicates that the field only accepts a specific set of values, and these values are codes from a specific xref:codelists:index.adoc[codelist defined for eForms].
-
-The value is a JSON object that contains the identifier of the codelist, and some information about this codelist.
-
-[source,json]
-----
-"codeList" : {
-  "value" : {
-    "id" : "accelerated-procedure",
-    "type" : "flat", // <1>
-    "parentId" : "indicator" // <2>
-  },
-  "severity" : "ERROR"
-}
-----
-<1> Indicates that the codelist is a simple list of values. The few codelists that have a structure, like NUTS and CPV, are indicated as "hierarchical".
-<2> Indicates the parent codelist. Provided only for tailored codelists.
-
-
-=== Pattern
-
-The `pattern` property indicates that the value of the field must match a specific regular expression pattern.
-
-[source,json]
-----
-"pattern" : {
-  "value" : "^LOT-\\d{4}$", // <1>
-  "severity" : "ERROR"
-}
-----
-<1> The value of this field must be "LOT-" followed by 4 digits.
-
-In the regular expression, the backslash character "\" is escaped as "\\".
-
 
 === Syntax for conditions
 
 The value of the `condition` property of a constraint is a string representing a boolean expression in the xref:efx:index.adoc[eForms expression language (EFX)].
+
+
+[#data-types]
+== Field data types
+
+The possible technical values for a field type are:
+
+[horizontal]
+`id`:: string representing an identifier (may have an associated `idScheme`)
+`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes`)
+`indicator`:: boolean (true or false)
+`integer`:: whole-valued positive number
+`number`:: numerical value, with optional decimal places.
+`amount`:: monetary amount, comprised of a numerical value and a currency
+`measure`:: numerical value associated with a measurement unit
+`code`:: string representing a concept in a code list
+`internal-code`:: string representing a concept in an internal code list
+`zoned-date`:: date with timezone
+`zoned-time`:: time with timezone
+`email`:: string representing an e-mail address
+`phone`:: string representing a phone number
+`url`:: string representing a URL
+`text`:: language-independent string
+`text-multilingual`:: string that can be translated into multiple languages
 
 
