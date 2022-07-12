@@ -178,7 +178,7 @@ Release: Phase 3
 
 SDK: 0.4.1 and 0.5.0 
 
-Indicative planning: June 2022 
+Indicative planning: July 2022 
 
 The release will include display results page, homepage overview (Follow-up notices), advanced search, notice information. 
 
