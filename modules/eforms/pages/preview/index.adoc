@@ -32,9 +32,9 @@ Documentation: https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/
 
 === Current status
 
-Release: NRP-A1
+Release: NRP-A2
 
-SDK: 0.4.1 
+SDK: 0.4.2 
 
 
 The application requires a user account in the EU Login acceptance environment https://ecas.acceptance.ec.europa.eu/cas  
@@ -76,11 +76,11 @@ The eNotices2 API for this release is not yet available for external access. The
 
 === Planned 
 
-Release: NRP-A2
+Release: NRP+1
 
-Indicative planning: June 2022
+Indicative planning: August 2022
 
-SDK: 0.4.2
+SDK: 0.6.2
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
