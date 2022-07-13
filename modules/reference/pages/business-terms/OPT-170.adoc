@@ -1,5 +1,8 @@
 = `OPT-170`: Tendering Party Leader 
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-170-Tenderer`:: Tendering Party Leader 

@@ -1,4 +1,6 @@
 = `social-objective` codelist
+:navtitle: Codelists
+
 List of codes for values  linked to any social objective promoted by the specifications, award / selection criteria or contract performance conditions included in a procurement.
 [horizontal]
 Version:: 20220316-0

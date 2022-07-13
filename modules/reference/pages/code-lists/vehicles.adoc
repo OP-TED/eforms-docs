@@ -1,4 +1,6 @@
 = `vehicles` codelist
+:navtitle: Codelists
+
 List of codes for vehicle categories.
 [horizontal]
 Version:: 1.0

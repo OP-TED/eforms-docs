@@ -1,6 +1,9 @@
 = `BT-719`: Change Procurement Documents Date
+:navtitle: Business Terms
+
 [horizontal]
 Type:: DATE
+
 == Fields
 [horizontal]
   `BT-719-notice`:: Change Procurement Documents Date

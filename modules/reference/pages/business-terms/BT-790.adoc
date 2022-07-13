@@ -1,6 +1,9 @@
 = `BT-790`: Review Decision Type
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-790-Review`:: Review Decision Type

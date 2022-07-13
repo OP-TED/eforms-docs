@@ -1,6 +1,9 @@
 = `BT-730`: Subcontracting Value Known
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR
+
 == Fields
 [horizontal]
   `BT-730-Tender`:: Subcontracting Value Known

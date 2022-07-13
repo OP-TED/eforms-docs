@@ -1,6 +1,9 @@
 = `BT-1311`: Deadline Receipt Requests
+:navtitle: Business Terms
+
 [horizontal]
 Type:: DATE
+
 == Fields
 [horizontal]
   `BT-1311(d)-Lot`:: Deadline Receipt Requests

@@ -1,6 +1,9 @@
 = `BT-707`: Documents Restricted Justification
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-707-Lot`:: Documents Restricted Justification

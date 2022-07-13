@@ -1,6 +1,9 @@
 = `BT-195`: Unpublished Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER
+
 == Fields
 [horizontal]
   `BT-195(BT-09)-Procedure`:: Unpublished Identifier

@@ -1,4 +1,6 @@
 = `received-submission-type` codelist
+:navtitle: Codelists
+
 This table provides the list of relevant categories used to classify tenders or requests to participate received within the context of public procurement.
 [horizontal]
 Version:: 20220316-0

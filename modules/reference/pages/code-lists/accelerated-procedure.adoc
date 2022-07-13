@@ -1,4 +1,6 @@
 = `accelerated-procedure` codelist
+:navtitle: Codelists
+
 List of codes to specify whether a procedure is accelerated or not.
 [horizontal]
 Version:: 1.0

@@ -1,4 +1,6 @@
 = `eu-country` codelist
+:navtitle: Codelists
+
 List of codes of the EU countries
 [horizontal]
 Version:: 20220316-0

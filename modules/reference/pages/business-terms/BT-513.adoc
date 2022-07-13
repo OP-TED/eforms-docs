@@ -1,6 +1,9 @@
 = `BT-513`: Organisation City
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-513-Business`:: Town

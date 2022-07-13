@@ -1,4 +1,6 @@
 = `reserved-execution` codelist
+:navtitle: Codelists
+
 List of codes to express whether a contract execution is reserved or not.
 [horizontal]
 Version:: 20220316-0

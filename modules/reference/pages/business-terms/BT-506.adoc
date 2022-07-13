@@ -1,6 +1,9 @@
 = `BT-506`: Organisation Contact Email Address
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-506-Business`:: e-mail

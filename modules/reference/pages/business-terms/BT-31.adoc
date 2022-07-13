@@ -1,6 +1,9 @@
 = `BT-31`: Lots Max Allowed
+:navtitle: Business Terms
+
 [horizontal]
 Type:: NUMBER
+
 == Fields
 [horizontal]
   `BT-31-Procedure`:: Lots Max Allowed

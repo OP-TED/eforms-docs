@@ -1,4 +1,6 @@
 = `organisation-role` codelist
+:navtitle: Codelists
+
 This table provides the list of the different  functions of the organisations in a procurement procedure.
 [horizontal]
 Version:: 20210616-0

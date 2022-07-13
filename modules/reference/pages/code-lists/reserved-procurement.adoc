@@ -1,4 +1,6 @@
 = `reserved-procurement` codelist
+:navtitle: Codelists
+
 List of codes to specify whether participation is reserved or not.
 [horizontal]
 Version:: 20220316-0

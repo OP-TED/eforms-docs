@@ -1,6 +1,9 @@
 = `BT-165`: Winner Size
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-165-Organization-Company`:: Winner Size

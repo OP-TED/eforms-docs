@@ -1,6 +1,9 @@
 = `BT-06`: Strategic Procurement
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-06-Lot`:: Strategic Procurement

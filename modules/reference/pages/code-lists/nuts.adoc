@@ -1,4 +1,6 @@
 = `nuts` codelist
+:navtitle: Codelists
+
 List of codes for the geographical nomenclature subdivision of the economic territory of the European Union (EU) into regions at three different levels (NUTS 1, 2 and 3 respectively, moving from larger to smaller territorial units).
 [horizontal]
 Version:: 2021

@@ -1,6 +1,9 @@
 = `BT-538`: Duration Other
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-538-Lot`:: Duration Other

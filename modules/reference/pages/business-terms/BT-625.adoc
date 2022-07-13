@@ -1,6 +1,9 @@
 = `BT-625`: Unit
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-625-Lot`:: Unit

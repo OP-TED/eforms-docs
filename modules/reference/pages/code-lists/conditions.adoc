@@ -1,4 +1,6 @@
 = `conditions` codelist
+:navtitle: Codelists
+
 [horizontal]
 Version:: 1.0
 Structure:: flat

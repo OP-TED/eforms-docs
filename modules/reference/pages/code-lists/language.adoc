@@ -1,4 +1,6 @@
 = `language` codelist
+:navtitle: Codelists
+
 List of three characters language codes correlated with the ISO 639 international standard with additional codes for some languages without assigned ISO code.
 [horizontal]
 Version:: 20220316-0

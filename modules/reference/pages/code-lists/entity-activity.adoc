@@ -1,4 +1,6 @@
 = `entity-activity` codelist
+:navtitle: Codelists
+
 List of Main Activity codes allowed for a Contracting Entity
 [horizontal]
 Version:: 20220316-0

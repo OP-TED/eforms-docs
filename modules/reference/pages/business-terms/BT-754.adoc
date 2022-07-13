@@ -1,6 +1,9 @@
 = `BT-754`: Accessibility
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-754-Lot`:: Accessibility

@@ -1,4 +1,6 @@
 = `procurement-procedure-type` codelist
+:navtitle: Codelists
+
 This table provides a list of activities leading to the conclusion of public contracts used in public procurement according to the legislation.
 [horizontal]
 Version:: 20210929-0

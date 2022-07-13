@@ -1,6 +1,9 @@
 = `BT-505`: Organisation Internet Address
+:navtitle: Business Terms
+
 [horizontal]
 Type:: URL
+
 == Fields
 [horizontal]
   `BT-505-Business`:: Internet address

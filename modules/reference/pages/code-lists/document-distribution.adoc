@@ -1,4 +1,6 @@
 = `document-distribution` codelist
+:navtitle: Codelists
+
 List of codes to specify whether the document distribution is restricted or not.
 [horizontal]
 Version:: 1.0

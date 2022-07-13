@@ -1,3 +1,5 @@
 = `BT-715`: Vehicles
+:navtitle: Business Terms
+
 [horizontal]
 Type:: NUMBER

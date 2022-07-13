@@ -1,3 +1,5 @@
 = `BT-725`: Vehicles Zero Emission
+:navtitle: Business Terms
+
 [horizontal]
 Type:: NUMBER

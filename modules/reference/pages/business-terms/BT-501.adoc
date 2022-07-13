@@ -1,6 +1,9 @@
 = `BT-501`: Organisation Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER
+
 == Fields
 [horizontal]
   `BT-501-Business-European`:: EU Registration Number

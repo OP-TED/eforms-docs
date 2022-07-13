@@ -1,5 +1,8 @@
 = `OPT-113`: Employment Legislation Document ID
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-113-Lot-EmployLegis`:: Employment Legislation Document ID

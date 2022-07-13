@@ -1,4 +1,6 @@
 = `authority-activity` codelist
+:navtitle: Codelists
+
 List of Main Activity codes allowed for a Contracting Authority
 [horizontal]
 Version:: 20220316-0

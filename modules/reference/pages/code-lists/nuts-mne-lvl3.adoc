@@ -1,4 +1,6 @@
 = `nuts-mne-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Montenegro
 [horizontal]
 Version:: 2021

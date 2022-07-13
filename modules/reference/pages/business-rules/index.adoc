@@ -1199,7 +1199,7 @@ a|Value must be one of the codes in xref:code-lists/vehicles.adoc[`vehicles`] co
 |====
 h| Field h|Details h|Severity 
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1209,7 +1209,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1219,7 +1219,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1229,7 +1229,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1239,7 +1239,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1249,7 +1249,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1259,7 +1259,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1269,7 +1269,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1279,7 +1279,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1289,7 +1289,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-02-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1299,7 +1299,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-05(a)-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1309,7 +1309,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-05(a)-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1319,7 +1319,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1329,7 +1329,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1339,7 +1339,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1349,7 +1349,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1359,7 +1359,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1369,7 +1369,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1379,7 +1379,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1389,7 +1389,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1399,7 +1399,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-105-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1408,8 +1408,72 @@ a|co-constraint.
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-105-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-105-Procedure in ('open', 'restricted', 'neg-w-call')
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2014/24/EU' and Procedure is accelerated (BT-106-Procedure is true).
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-106-Procedure == 'true') and (OPP-070-notice in ('1','4','7','8','9','10','12','16','17','18','19','20','23','25','29','33','36','38')) and (BT-105-Procedure is present)
+----
+|`ERROR`
+h|`BT-105-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-105-Procedure in ('restricted', 'neg-w-call')
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2009/81/EU' and Procedure is accelerated (BT-106-Procedure is true).
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-106-Procedure == 'true') and (OPP-070-notice in ('3','6','9','18','22','27','31')) and (BT-105-Procedure is present)
+----
+|`ERROR`
+h|`BT-105-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-105-Procedure == 'open'
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2014/25/EU' and Procedure is accelerated (BT-106-Procedure is true).
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-106-Procedure == 'true') and (OPP-070-notice in ('2','5','8','11','13','15','17','21','24','26','30','34','37','39')) and (BT-105-Procedure is present)
+----
+|`ERROR`
+h|`BT-115-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-115-Lot == FALSE
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2014/23/EU' and Main Nature (BT-23) value is equal to 'services'.
+
+.Condition in EFX
+[source, EFX]
+----
+OPP-070-notice in ('14','19','28','32','35','40') and (BT-115-Lot is present) and (BT-23-Lot == 'services')
+----
+|`ERROR`
 h|`BT-127-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1419,7 +1483,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-130-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1428,8 +1492,120 @@ a|co-constraint.
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-131(d)-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-13(d)-Lot <= BT-131(d)-Lot
+----
+*Applies if* Additional Information Deadline (BT-13(d)-Lot) and Deadline Receipt Tenders (BT-131(d)-Lot) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-131(d)-Lot is present) and (BT-13(d)-Lot is present)
+----
+|`ERROR`
+h|`BT-131(d)-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-131(d)-Lot > BT-05(a)-notice
+----
+*Applies if* Deadline Receipt Tenders (BT-131(d)-Lot) and Notice Dispatch Date (BT-05(a)-notice) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-131(d)-Lot is present) and (BT-05(a)-notice is present)
+----
+|`ERROR`
+h|`BT-1311(d)-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-1311(d)-Lot == BT-537-Lot
+----
+*Applies if* a DPS (BT-766-Lot), Duration End Date (BT-537-Lot) and Deadline Receipt Requests (BT-1311(d)-Lot) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-766-Lot in ('dps-list', 'dps-nlist')) and (BT-537-Lot is present) and (BT-1311(d)-Lot is present) 
+----
+|`ERROR`
+h|`BT-1311(d)-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+(BT-1311(d)-Lot > BT-130-Lot)
+----
+*Applies if* Deadline Receipt Requests (BT-1311(d)-Lot) and Dispatch Invitation Tender (BT-130-Lot) are present.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-1311(d)-Lot is present) and (BT-130-Lot is present)
+----
+|`ERROR`
+h|`BT-1311(d)-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-13(d)-Lot <= BT-1311(d)-Lot
+----
+*Applies if* Additional Information Deadline (BT-13(d)-Lot) and Deadline Receipt Requests (BT-1311(d)-Lot) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-1311(d)-Lot is present) and (BT-13(d)-Lot is present)
+----
+|`ERROR`
+h|`BT-132(d)-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-132(d)-Lot > BT-1311(d)-Lot
+----
+*Applies if* Public Opening Date (BT-132(d)-Lot) and Deadline Receipt Requests (BT-1311(d)-Lot) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-132(d)-Lot is present) and (BT-1311(d)-Lot is present)
+----
+|`ERROR`
+h|`BT-132(d)-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-132(d)-Lot >= BT-131(d)-Lot
+----
+*Applies if* Deadline Receipt Tenders (BT-131(d)-Lot) and Public Opening Date (BT-132(d)-Lot) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-132(d)-Lot is present) and (BT-131(d)-Lot is present)
+----
+|`ERROR`
 h|`BT-137-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1439,7 +1615,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-137-Lot`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1455,7 +1631,7 @@ BT-137-Lot == 'LOT-0000'
 ----
 |`ERROR`
 h|`BT-137-Lot`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1471,7 +1647,7 @@ BT-137-Lot != 'LOT-0000'
 ----
 |`ERROR`
 h|`BT-137-Lot`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1487,7 +1663,7 @@ a|co_constraint.
 ----
 |`ERROR`
 h|`BT-137-LotsGroup`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1497,7 +1673,7 @@ a|co_constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-137-Part`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1513,7 +1689,7 @@ BT-137-Part == 'PAR-0000'
 ----
 |`ERROR`
 h|`BT-137-Part`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1529,7 +1705,7 @@ BT-137-Part != 'PAR-0000'
 ----
 |`ERROR`
 h|`BT-13713-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1539,7 +1715,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-13713-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1549,7 +1725,7 @@ BT-759-LotResult[BT-760-LotResult == 'tenders'] >= (BT-759-LotResult[BT-760-LotR
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-13713-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1559,7 +1735,7 @@ BT-759-LotResult[BT-760-LotResult == 't-sme'] == (BT-759-LotResult[BT-760-LotRes
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-13713-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1569,7 +1745,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-13713-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1579,7 +1755,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-13713-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1589,7 +1765,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-13713-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1599,7 +1775,7 @@ BT-13713-LotResult == /BT-137-Lot
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-13714-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1609,7 +1785,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-1375-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1619,7 +1795,7 @@ BT-1375-Procedure == BT-137-Lot
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-1375-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1629,7 +1805,7 @@ count(BT-1375-Procedure) > 1
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-1375-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1644,8 +1820,72 @@ every text:$lot in BT-1375-Procedure satisfies ($lot == /BT-137-Lot)
 BT-1375-Procedure is present
 ----
 |`ERROR`
+h|`BT-145-Contract`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-145-Contract < BT-05(a)-notice
+----
+*Applies if* Contract Conclusion Date (BT-145-Contract) and notice dispatch date (BT-05(a)-notice) exist and form is Result, Contract Modification or Contract Completion..
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-145-Contract is present) and (BT-05(a)-notice is present) and (OPP-070-notice in ('29','30','31','32','E4','T02','33','34','35','36','37','38','39','40','E5'))
+----
+|`ERROR`
+h|`BT-145-Contract`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+(BT-05(a)-notice - BT-145-Contract) <= P60D
+----
+*Applies if* Contract Conclusion Date (BT-145-Contract) and notice dispatch date (BT-05(a)-notice) exist and form is Result..
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-145-Contract is present) and (BT-05(a)-notice is present) and (OPP-070-notice in ('29','30','31','32','E4','T02','33','34','35','36','37'))
+----
+|`WARN`
+h|`BT-1451-Contract`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-1451-Contract < BT-145-Contract
+----
+*Applies if* Winner Decision Date (BT-1451-Contract) and Contract Conclusion Date (BT-145-Contract) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-1451-Contract is present) and (BT-145-Contract is present)
+----
+|`ERROR`
+h|`BT-1451-Contract`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-1451-Contract < BT-05(a)-notice
+----
+*Applies if* Winner decision date (BT-1451-Contract) and notice dispatch date (BT-05(a)-notice) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-1451-Contract is present) and (BT-05(a)-notice is present)
+----
+|`ERROR`
 h|`BT-171-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1655,7 +1895,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-171-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1665,7 +1905,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-09)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1675,7 +1915,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-09)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1685,7 +1925,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-105)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1695,7 +1935,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-105)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1705,7 +1945,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-105)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1715,7 +1955,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-106)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1725,7 +1965,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-106)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1735,7 +1975,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-106)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1745,7 +1985,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-118)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1755,7 +1995,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-118)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1765,7 +2005,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-118)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1775,7 +2015,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-1252)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1785,7 +2025,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-1252)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1795,7 +2035,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-1252)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1805,7 +2045,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-135)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1815,7 +2055,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-135)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1825,7 +2065,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-135)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1835,7 +2075,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-1351)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1845,7 +2085,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-1351)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1855,7 +2095,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-1351)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1865,7 +2105,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-136)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1875,7 +2115,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-136)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1885,7 +2125,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-136)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1895,7 +2135,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-142)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1905,7 +2145,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-142)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1915,7 +2155,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-142)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1925,7 +2165,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-144)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1935,7 +2175,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-144)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1945,7 +2185,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-144)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1955,7 +2195,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-156)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1965,7 +2205,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-156)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1975,7 +2215,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-156)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1985,7 +2225,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-160)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -1995,7 +2235,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-160)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2005,7 +2245,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-160)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2015,7 +2255,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-161)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2025,7 +2265,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-161)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2035,7 +2275,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-161)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2045,7 +2285,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-162)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2055,7 +2295,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-162)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2065,7 +2305,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-162)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2075,7 +2315,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-163)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2085,7 +2325,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-163)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2095,7 +2335,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-163)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2105,7 +2345,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-171)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2115,7 +2355,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-171)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2125,7 +2365,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-171)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2135,7 +2375,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-191)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2145,7 +2385,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-191)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2155,7 +2395,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-191)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2165,7 +2405,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-193)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2175,7 +2415,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-193)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2185,7 +2425,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-193)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2195,7 +2435,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-539)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2205,7 +2445,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-539)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2215,7 +2455,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-539)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2225,7 +2465,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-539)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2235,7 +2475,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-539)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2245,7 +2485,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-539)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2255,7 +2495,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-540)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2265,7 +2505,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-540)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2275,7 +2515,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-540)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2285,7 +2525,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-540)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2295,7 +2535,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-540)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2305,7 +2545,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-540)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2315,7 +2555,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-541)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2325,7 +2565,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-541)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2335,7 +2575,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-541)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2345,7 +2585,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-541)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2355,7 +2595,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-541)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2365,7 +2605,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-541)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2375,7 +2615,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5421)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2385,7 +2625,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5421)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2395,7 +2635,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5421)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2405,7 +2645,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5421)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2415,7 +2655,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5421)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2425,7 +2665,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5421)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2435,7 +2675,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5422)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2445,7 +2685,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5422)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2455,7 +2695,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5422)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2465,7 +2705,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5422)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2475,7 +2715,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5422)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2485,7 +2725,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5422)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2495,7 +2735,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5423)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2505,7 +2745,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5423)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2515,7 +2755,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5423)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2525,7 +2765,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5423)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2535,7 +2775,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5423)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2545,7 +2785,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-5423)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2555,7 +2795,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-543)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2565,7 +2805,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-543)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2575,7 +2815,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-543)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2585,7 +2825,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-543)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2595,7 +2835,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-543)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2605,7 +2845,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-543)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2615,7 +2855,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-553)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2625,7 +2865,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-553)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2635,7 +2875,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-553)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2645,7 +2885,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-554)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2655,7 +2895,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-554)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2665,7 +2905,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-554)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2675,7 +2915,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-555)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2685,7 +2925,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-555)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2695,7 +2935,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-555)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2705,7 +2945,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-556)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2715,7 +2955,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-556)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2725,7 +2965,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-556)-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2735,7 +2975,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-709)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2745,7 +2985,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-709)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2755,7 +2995,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-709)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2765,7 +3005,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-710)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2775,7 +3015,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-710)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2785,7 +3025,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-710)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2795,7 +3035,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-711)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2805,7 +3045,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-711)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2815,7 +3055,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-711)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2825,7 +3065,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-712)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2835,7 +3075,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-712)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2845,7 +3085,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-712)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2855,7 +3095,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-720)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2865,7 +3105,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-720)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2875,7 +3115,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-720)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2885,7 +3125,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-730)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2895,7 +3135,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-730)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2905,7 +3145,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-730)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2915,7 +3155,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-731)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2925,7 +3165,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-731)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2935,7 +3175,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-731)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2945,7 +3185,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-733)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2955,7 +3195,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-733)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2965,7 +3205,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-733)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2975,7 +3215,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-733)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2985,7 +3225,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-733)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -2995,7 +3235,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-733)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3005,7 +3245,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-734)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3015,7 +3255,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-734)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3025,7 +3265,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-734)-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3035,7 +3275,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-734)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3045,7 +3285,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-734)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3055,7 +3295,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-734)-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3065,7 +3305,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-759)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3075,7 +3315,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-759)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3085,7 +3325,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-759)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3095,7 +3335,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-760)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3105,7 +3345,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-760)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3115,7 +3355,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-760)-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3125,7 +3365,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-773)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3135,7 +3375,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-773)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3145,7 +3385,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-773)-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3155,7 +3395,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-88)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3165,7 +3405,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-88)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3175,7 +3415,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-198(BT-88)-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3184,8 +3424,328 @@ a|co-constraint.
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-23-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-23-Lot != 'supplies'
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2014/23/EU' and Main Nature (BT-23-Lot) exists..
+
+.Condition in EFX
+[source, EFX]
+----
+(OPP-070-notice in ('14','19','28','32','35','40')) and (BT-23-Lot is present)
+----
+|`ERROR`
+h|`BT-23-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-23-Lot != BT-531-Lot
+----
+*Applies if* Lot Main Nature (BT-23) and Additional Nature (BT-531) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Lot is present) and (BT-531-Lot is present)
+----
+|`ERROR`
+h|`BT-23-Part`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-23-Part != BT-531-Part
+----
+*Applies if* Part Main Nature (BT-23) and Additional Nature (BT-531) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Part is present) and (BT-531-Part is present)
+----
+|`ERROR`
+h|`BT-23-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-23-Procedure != 'supplies'
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2014/23/EU' and Main Nature (BT-23-Lot) exists..
+
+.Condition in EFX
+[source, EFX]
+----
+(OPP-070-notice in ('14','19','28','32','35','40')) and (BT-23-Procedure is present)
+----
+|`ERROR`
+h|`BT-23-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-23-Procedure != BT-531-Procedure
+----
+*Applies if* Procedure Main Nature (BT-23) and Additional Nature (BT-531) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Procedure is present) and (BT-531-Procedure is present)
+----
+|`ERROR`
+h|`BT-262-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-262-Lot in ('75121000', '75122000', '75123000', '79622000', '79624000', '79625000', '80110000', '80300000', '80420000', '80430000', '80511000', '80520000', '80590000', '85000000', '85100000', '85110000', '85111000', '85111100', '85111200', '85111300', '85111310', '85111320', '85111400', '85111500', '85111600', '85111700', '85111800', '85111810', '85111820', '85111900', '85112000', '85112100', '85112200', '85120000', '85121000', '85121100', '85121200', '85121210', '85121220', '85121230', '85121231', '85121232', '85121240', '85121250', '85121251', '85121252', '85121270', '85121271', '85121280', '85121281', '85121282', '85121283', '85121290', '85121291', '85121292', '85121300', '85130000', '85131000', '85131100', '85131110', '85140000', '85141000', '85141100', '85141200', '85141210', '85141211', '85141220', '85142000', '85142100', '85142200', '85142300', '85142400', '85143000', '85144000', '85144100', '85145000', '85146000', '85146100', '85146200', '85147000', '85148000', '85149000', '85150000', '85160000', '85170000', '85171000', '85172000', '85200000', '85210000', '85300000', '85310000', '85311000', '85311100', '85311200', '85311300', '85312000', '85312100', '85312110', '85312120', '85312200', '85312300', '85312310', '85312320', '85312330', '85312400', '85312500', '85312510', '85320000', '85321000', '85322000', '85323000',  '92500000', '92600000', '98133000', '98133110')
+----
+*Applies if* Reserved Procurement (BT-71) value is equal to 'Participation in the procedure is reserved to organisations pursuing a public service mission and fulfilling other relevant conditions in the legislation.' and Main Commodity (BT-262-Lot) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-71-Lot == 'res-pub-ser') and (BT-262-Lot is present)
+----
+|`ERROR`
+h|`BT-262-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Lot,'0') or starts-with(BT-262-Lot,'1') or starts-with(BT-262-Lot,'2') or starts-with(BT-262-Lot,'3') or starts-with(BT-262-Lot,'40') or starts-with(BT-262-Lot,'41') or starts-with(BT-262-Lot,'42') or starts-with(BT-262-Lot,'43') or starts-with(BT-262-Lot,'44') or starts-with(BT-262-Lot,'48')
+----
+*Applies if* Procedure Main Nature (BT-23-Lot) is of type Supplies and Main CPV (BT-262-Lot) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Lot == 'supplies') and (BT-262-Lot is present)
+----
+|`ERROR`
+h|`BT-262-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Lot,'45')
+----
+*Applies if* Procedure Main Nature (BT-23-Lot) is of type works and Main CPV (BT-262-Lot) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Lot == 'works') and (BT-262-Lot is present)
+----
+|`ERROR`
+h|`BT-262-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Lot,'49') or starts-with(BT-262-Lot,'5') or starts-with(BT-262-Lot,'6') or starts-with(BT-262-Lot,'7') or starts-with(BT-262-Lot,'8') or starts-with(BT-262-Lot,'9')
+----
+*Applies if* Procedure Main Nature (BT-23-Lot) is of type services and Main CPV (BT-262-Lot) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Lot == 'services') and (BT-262-Lot is present)
+----
+|`ERROR`
+h|`BT-262-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Lot,'45')
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2014/24/EU' and Buyer Legal Type (BT-11) value is equal to 'Organisation awarding a contract subsidised by a contracting authority' and Classification Type (BT-26) value is equal to 'CPV'.
+
+.Condition in EFX
+[source, EFX]
+----
+(OPP-070-notice in ('1','4','7','8','9','10','12','16','17','18','19','20','23','25','29','33','36','38')) and (BT-11-Procedure-Buyer in ('org-sub', 'org-sub-cga', 'org-sub-ra', 'org-sub-la')) and (BT-262-Lot is present)
+----
+|`ERROR`
+h|`BT-262-Part`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-262-Part in ('75121000', '75122000', '75123000', '79622000', '79624000', '79625000', '80110000', '80300000', '80420000', '80430000', '80511000', '80520000', '80590000', '85000000', '85100000', '85110000', '85111000', '85111100', '85111200', '85111300', '85111310', '85111320', '85111400', '85111500', '85111600', '85111700', '85111800', '85111810', '85111820', '85111900', '85112000', '85112100', '85112200', '85120000', '85121000', '85121100', '85121200', '85121210', '85121220', '85121230', '85121231', '85121232', '85121240', '85121250', '85121251', '85121252', '85121270', '85121271', '85121280', '85121281', '85121282', '85121283', '85121290', '85121291', '85121292', '85121300', '85130000', '85131000', '85131100', '85131110', '85140000', '85141000', '85141100', '85141200', '85141210', '85141211', '85141220', '85142000', '85142100', '85142200', '85142300', '85142400', '85143000', '85144000', '85144100', '85145000', '85146000', '85146100', '85146200', '85147000', '85148000', '85149000', '85150000', '85160000', '85170000', '85171000', '85172000', '85200000', '85210000', '85300000', '85310000', '85311000', '85311100', '85311200', '85311300', '85312000', '85312100', '85312110', '85312120', '85312200', '85312300', '85312310', '85312320', '85312330', '85312400', '85312500', '85312510', '85320000', '85321000', '85322000', '85323000',  '92500000', '92600000', '98133000', '98133110')
+----
+*Applies if* Reserved Procurement (BT-71) value is equal to 'Participation in the procedure is reserved to organisations pursuing a public service mission and fulfilling other relevant conditions in the legislation.' and Main Commodity (BT-262-Part) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-71-Part == 'res-pub-ser') and (BT-262-Part is present)
+----
+|`ERROR`
+h|`BT-262-Part`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Part,'0') or starts-with(BT-262-Part,'1') or starts-with(BT-262-Part,'2') or starts-with(BT-262-Part,'3') or starts-with(BT-262-Part,'40') or starts-with(BT-262-Part,'41') or starts-with(BT-262-Part,'42') or starts-with(BT-262-Part,'43') or starts-with(BT-262-Part,'44') or starts-with(BT-262-Part,'48')
+----
+*Applies if* Procedure Main Nature (BT-23-Part) is of type Supplies and Main CPV (BT-262-Part) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Part == 'supplies') and (BT-262-Part is present)
+----
+|`ERROR`
+h|`BT-262-Part`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Part,'45')
+----
+*Applies if* Procedure Main Nature (BT-23-Part) is of type works and Main CPV (BT-262-Part) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Part == 'works') and (BT-262-Part is present)
+----
+|`ERROR`
+h|`BT-262-Part`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Part,'49') or starts-with(BT-262-Part,'5') or starts-with(BT-262-Part,'6') or starts-with(BT-262-Part,'7') or starts-with(BT-262-Part,'8') or starts-with(BT-262-Part,'9')
+----
+*Applies if* Procedure Main Nature (BT-23-Part) is of type services and Main CPV (BT-262-Part) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Part == 'services') and (BT-262-Part is present)
+----
+|`ERROR`
+h|`BT-262-Part`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Part,'45')
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2014/24/EU' and Buyer Legal Type (BT-11) value is equal to 'Organisation awarding a contract subsidised by a contracting authority' and Classification Type (BT-26) value is equal to 'CPV'.
+
+.Condition in EFX
+[source, EFX]
+----
+(OPP-070-notice in ('1','4','7','8','9','10','12','16','17','18','19','20','23','25','29','33','36','38')) and (BT-11-Procedure-Buyer in ('org-sub', 'org-sub-cga', 'org-sub-ra', 'org-sub-la')) and (BT-262-Part is present)
+----
+|`ERROR`
+h|`BT-262-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Procedure,'0') or starts-with(BT-262-Procedure,'1') or starts-with(BT-262-Procedure,'2') or starts-with(BT-262-Procedure,'3') or starts-with(BT-262-Procedure,'40') or starts-with(BT-262-Procedure,'41') or starts-with(BT-262-Procedure,'42') or starts-with(BT-262-Procedure,'43') or starts-with(BT-262-Procedure,'44') or starts-with(BT-262-Procedure,'48')
+----
+*Applies if* Procedure Main Nature (BT-23-Procedure) is of type Supplies and Main CPV (BT-262-Procedure) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Procedure == 'supplies') and (BT-262-Procedure is present)
+----
+|`ERROR`
+h|`BT-262-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Procedure,'45')
+----
+*Applies if* Procedure Main Nature (BT-23-Procedure) is of type works and Main CPV (BT-262-Procedure) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Procedure == 'works') and (BT-262-Procedure is present)
+----
+|`ERROR`
+h|`BT-262-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Procedure,'49') or starts-with(BT-262-Procedure,'5') or starts-with(BT-262-Procedure,'6') or starts-with(BT-262-Procedure,'7') or starts-with(BT-262-Procedure,'8') or starts-with(BT-262-Procedure,'9')
+----
+*Applies if* Procedure Main Nature (BT-23-Procedure) is of type services and Main CPV (BT-262-Procedure) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Procedure == 'services') and (BT-262-Procedure is present)
+----
+|`ERROR`
+h|`BT-262-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+starts-with(BT-262-Procedure,'45')
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Directive 2014/24/EU' and Buyer Legal Type (BT-11) value is equal to 'Organisation awarding a contract subsidised by a contracting authority' and Classification Type (BT-26) value is equal to 'CPV'.
+
+.Condition in EFX
+[source, EFX]
+----
+(OPP-070-notice in ('1','4','7','8','9','10','12','16','17','18','19','20','23','25','29','33','36','38')) and (BT-11-Procedure-Buyer in ('org-sub', 'org-sub-cga', 'org-sub-ra', 'org-sub-la')) and (BT-262-Procedure is present)
+----
+|`ERROR`
+h|`BT-31-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-31-Procedure <= count(BT-137-Lot)
+----
+*Applies if* Lots Max Allowed (BT-31-Procedure) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-31-Procedure is present
+----
+|`ERROR`
 h|`BT-3202-Contract`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3200,8 +3760,24 @@ every text:$tender in BT-3202-Contract satisfies ($tender == /OPT-321-Tender)
 BT-3202-Contract is present
 ----
 |`ERROR`
+h|`BT-33-Procedure`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-33-Procedure <= BT-31-Procedure
+----
+*Applies if* Lots Max Awarded (BT-33-Procedure) and Lots Max Allowed (BT-31-Procedure) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-33-Procedure is present) and (BT-31-Procedure is present)
+----
+|`ERROR`
 h|`BT-330-Procedure`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3216,8 +3792,40 @@ every text:$group in BT-330-Procedure satisfies ($group == /BT-137-LotsGroup)
 BT-330-Procedure is present
 ----
 |`ERROR`
+h|`BT-36-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+(BT-36-Lot > P0D) and (BT-36-Lot <= P3Y)
+----
+*Applies if* Reserved Procurement (BT-71) value is equal to 'Participation in the procedure is reserved to organisations pursuing a public service mission and fulfilling other relevant conditions in the legislation.' and Duration Period (BT-36-Lot) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-71-Lot == 'res-pub-ser') and (BT-36-Lot is present)
+----
+|`ERROR`
+h|`BT-36-Part`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+(BT-36-Part > P0D) and (BT-36-Part <= P3Y)
+----
+*Applies if* Reserved Procurement (BT-71) value is equal to 'Participation in the procedure is reserved to organisations pursuing a public service mission and fulfilling other relevant conditions in the legislation.' and Duration Period (BT-36-Part) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-71-Part == 'res-pub-ser') and (BT-36-Part is present)
+----
+|`ERROR`
 h|`BT-50-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3227,7 +3835,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-50-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3237,7 +3845,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-50-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3247,7 +3855,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-50-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3257,7 +3865,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-50-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3267,7 +3875,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-51-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3277,7 +3885,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-536-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3286,8 +3894,24 @@ a|co-constraint.
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-536-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+((BT-537-Lot - BT-536-Lot) > P0D) and ((BT-537-Lot - BT-536-Lot) <= P3Y)
+----
+*Applies if* Reserved Procurement (BT-71) value is equal to 'Participation in the procedure is reserved to organisations pursuing a public service mission and fulfilling other relevant conditions in the legislation.' and Duration Start date (BT-536-Lot) and End Date (BT-537-Lot) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-71-Lot == 'res-pub-ser') and (BT-536-Lot is present) and (BT-537-Lot is present)
+----
+|`ERROR`
 h|`BT-536-Part`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3296,8 +3920,24 @@ a|co-constraint.
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-536-Part`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+((BT-537-Part - BT-536-Part) > P0D) and ((BT-537-Part - BT-536-Part) <= P3Y)
+----
+*Applies if* Reserved Procurement (BT-71) value is equal to 'Participation in the procedure is reserved to organisations pursuing a public service mission and fulfilling other relevant conditions in the legislation.' and Duration Start date (BT-536-Part) and End Date (BT-537-Part) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-71-Part == 'res-pub-ser') and (BT-536-Part is present) and (BT-537-Part is present)
+----
+|`ERROR`
 h|`BT-538-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3307,7 +3947,7 @@ not(BT-538-Lot == 'UNKNOWN') or (not(BT-03-notice in ('cont-modif','dir-awa-pre'
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-540-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3317,7 +3957,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-540-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3326,8 +3966,40 @@ a|co-constraint.
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-5421-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-5421-Lot in ('dec-exa', 'ord-imp', 'per-exa', 'poi-exa')
+----
+*Applies if* Form Type (BT-03-notice) is Result, Contract Modification or Direct Award Pre-announcement and Award Criterion Number Weight (BT-5421-Lot) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-03-notice in ('result', 'cont-modif', 'dir-awa-pre')) and (BT-5421-Lot is present)
+----
+|`ERROR`
+h|`BT-5421-LotsGroup`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-5421-LotsGroup in ('dec-exa', 'ord-imp', 'per-exa', 'poi-exa')
+----
+*Applies if* Form Type (BT-03-notice) is Result, Contract Modification or Direct Award Pre-announcement and Award Criterion Number Weight (BT-5421-LotsGroup) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-03-notice in ('result', 'cont-modif', 'dir-awa-pre')) and (BT-5421-LotsGroup is present)
+----
+|`ERROR`
 h|`BT-543-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3337,7 +4009,7 @@ sum(number:BT-541-Lot[BT-5421-Lot == 'per-exa']) == 100 or not(BT-541-Lot[BT-542
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-543-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3347,7 +4019,7 @@ sum(number:BT-541-Lot[BT-5421-Lot == 'dec-exa']) == 1 or not(BT-541-Lot[BT-5421-
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-543-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3357,7 +4029,7 @@ sum(number:BT-541-LotsGroup[BT-5421-LotsGroup == 'per-exa']) == 100 or not(BT-54
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-543-LotsGroup`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3367,7 +4039,7 @@ sum(number:BT-541-LotsGroup[BT-5421-LotsGroup == 'dec-exa']) == 1 or not(BT-541-
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-556-NoticeResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3377,7 +4049,7 @@ BT-556-NoticeResult == /BT-137-LotsGroup
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-60-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3387,7 +4059,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-60-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3402,8 +4074,24 @@ BT-60-Lot == 'eu-funds'
 BT-01-notice == '32018R1046'
 ----
 |`ERROR`
+h|`BT-630(d)-Lot`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-630(d)-Lot > BT-05(a)-notice
+----
+*Applies if* Deadline Receipt Expression (BT-630(d)-Lot) and Notice Dispatch Date (BT-05(a)-notice) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-630(d)-Lot is present) and (BT-05(a)-notice is present)
+----
+|`ERROR`
 h|`BT-631-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3413,7 +4101,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-634-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3422,8 +4110,24 @@ a|co-constraint.
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-702(a)-notice`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+not(BT-702(a)-notice == BT-702(b)-notice)
+----
+*Applies if* Notice Additional Language (BT-702(b)-notice) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-702(b)-notice is present
+----
+|`ERROR`
 h|`BT-71-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3433,7 +4137,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-71-Part`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3442,8 +4146,88 @@ a|co-constraint.
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-710-LotResult`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-710-LotResult/@currencyID == BT-711-LotResult/@currencyID
+----
+*Applies if* Tender Value Lowest (BT-710-LotResult) and Tender Value Highest (BT-711-LotResult) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-710-LotResult is present) and (BT-711-LotResult is present)
+----
+|`ERROR`
+h|`BT-710-LotResult`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-710-LotResult <= BT-711-LotResult
+----
+*Applies if* Tender Value Lowest (BT-710-LotResult) and Tender Value Highest (BT-711-LotResult) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-710-LotResult is present) and (BT-711-LotResult is present)
+----
+|`ERROR`
+h|`BT-712(b)-LotResult`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+((BT-144-LotResult == 'rev-buyer') and (BT-712(b)-LotResult > 0)) or not(BT-144-LotResult == 'rev-buyer')
+----
+*Applies if* Buyer Review Complainants (BT-712(b)-LotResult) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-712(b)-LotResult is present
+----
+|`ERROR`
+h|`BT-740-Procedure-Buyer`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-740-Procedure-Buyer == 'cont-ent'
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to ('Directive 2014/23/EU' or 'Directive 2009/81/EC') and Buyer Legal Type (BT-11) value is equal to ('Public undertaking' or 'Entity with special rights').
+
+.Condition in EFX
+[source, EFX]
+----
+(OPP-070-notice in ('3','6','9','CEI','14','18','19','22','27','28','31','32','35','40')) and (BT-11-Procedure-Buyer in ('pub-undert', 'pub-undert-cga', 'pub-undert-ra', 'pub-undert-la', 'spec-rights-entity')) and not(BT-02-notice == 'can-modif') and (BT-740-Procedure-Buyer is present)
+----
+|`ERROR`
+h|`BT-740-Procedure-Buyer`
+a|Co_constraint.
+
+.Co-constraint in EFX
+[source, EFX]
+----
+BT-740-Procedure-Buyer == 'not-cont-ent'
+----
+*Applies if* Procedure Legal Basis (BT-01) value is equal to ('Directive 2014/23/EU' or 'Directive 2009/81/EC') and Buyer Legal Type (BT-11) value is equal to ('Organisation awarding a contract subsidised by a contracting authority' or 'International organisation' or 'Defense Contractor').
+
+.Condition in EFX
+[source, EFX]
+----
+(OPP-070-notice in ('3','6','9','CEI','14','18','19','22','27','28','31','32','35','40')) and (BT-11-Procedure-Buyer in ('org-sub', 'org-sub-cga', 'org-sub-ra', 'org-sub-la', 'eu-ins-bod-ag', 'def-cont', 'int-org')) and not(BT-02-notice == 'can-modif') and (BT-740-Procedure-Buyer is present)
+----
+|`ERROR`
 h|`BT-743-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3453,7 +4237,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-747-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3463,7 +4247,7 @@ sum(number:BT-752-Lot[BT-7531-Lot == 'per-exa']) == 100 or not(BT-752-Lot[BT-753
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-747-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3473,7 +4257,7 @@ sum(number:BT-752-Lot[BT-7531-Lot == 'dec-exa']) == 1 or not(BT-752-Lot[BT-7531-
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`BT-748-Lot`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3483,7 +4267,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3493,7 +4277,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3503,7 +4287,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3513,7 +4297,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3523,7 +4307,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3533,7 +4317,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3543,7 +4327,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3553,7 +4337,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3563,7 +4347,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3573,7 +4357,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3583,7 +4367,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3593,7 +4377,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3603,7 +4387,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3613,7 +4397,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3623,7 +4407,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3633,7 +4417,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3643,7 +4427,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3653,7 +4437,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3663,7 +4447,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3673,7 +4457,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPP-070-notice`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3683,7 +4467,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-200-Organization-Company`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3693,7 +4477,7 @@ a|co_constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-200-Organization-Company`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3709,7 +4493,7 @@ OPT-200-Organization-Company == OPT-300-Tenderer
 ----
 |`ERROR`
 h|`OPT-200-Organization-Company`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3725,7 +4509,7 @@ OPT-200-Organization-Company == OPT-301-Tenderer-SubCont
 ----
 |`ERROR`
 h|`OPT-201-Organization-TouchPoint`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3735,7 +4519,7 @@ a|co_constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-202-UBO`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3751,7 +4535,7 @@ OPT-202-UBO is present
 ----
 |`ERROR`
 h|`OPT-210-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3761,7 +4545,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-210-Tenderer`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3771,7 +4555,7 @@ a|co_constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Contract-Signatory`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3787,7 +4571,7 @@ OPT-300-Contract-Signatory is present
 ----
 |`ERROR`
 h|`OPT-300-Procedure-Buyer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3797,7 +4581,7 @@ every text:$sps in OPT-300-Procedure-SProvider satisfies $sps != OPT-300-Procedu
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Procedure-Buyer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3807,7 +4591,7 @@ a|co-constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Procedure-Buyer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3823,7 +4607,7 @@ OPT-300-Procedure-Buyer is present
 ----
 |`ERROR`
 h|`OPT-300-Procedure-SProvider`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3839,7 +4623,7 @@ OPT-300-Procedure-SProvider is present
 ----
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3849,7 +4633,7 @@ every text:$mediator in /OPT-301-Lot-Mediator satisfies $mediator != OPT-300-Ten
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3859,7 +4643,7 @@ every text:$psp in OPT-300-Procedure-SProvider satisfies $psp != OPT-300-Tendere
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3869,7 +4653,7 @@ every text:$revOrg in /OPT-301-Lot-ReviewOrg satisfies $revOrg != OPT-300-Tender
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3879,7 +4663,7 @@ every text:$addInfo in /OPT-301-Lot-AddInfo satisfies $addInfo != OPT-300-Tender
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3889,7 +4673,7 @@ every text:$employ in /OPT-301-Lot-EmployLegis satisfies $employ != OPT-300-Tend
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3899,7 +4683,7 @@ every text:$environ in /OPT-301-Lot-EnvironLegis satisfies $environ != OPT-300-T
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3909,7 +4693,7 @@ every text:$tax in /OPT-301-Lot-FiscalLegis satisfies $tax != OPT-300-Tenderer
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3919,7 +4703,7 @@ every text:$doc in /OPT-301-Lot-DocProvider satisfies $doc != OPT-300-Tenderer
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3929,7 +4713,7 @@ every text:$reviewInfo in /OPT-301-Lot-ReviewInfo satisfies $reviewInfo != OPT-3
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3939,7 +4723,7 @@ every text:$recepient in /OPT-301-Lot-TenderReceipt satisfies $recepient != OPT-
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3949,7 +4733,7 @@ every text:$eval in /OPT-301-Lot-TenderEval satisfies $eval != OPT-300-Tenderer
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3959,7 +4743,7 @@ every text:$sign in /OPT-300-Contract-Signatory satisfies $sign != OPT-300-Tende
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3969,7 +4753,7 @@ every text:$fund in /OPT-301-LotResult-Financing satisfies $fund != OPT-300-Tend
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3979,7 +4763,7 @@ every text:$pay in /OPT-301-LotResult-Paying satisfies $pay != OPT-300-Tenderer
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-300-Tenderer`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -3995,7 +4779,7 @@ OPT-300-Tenderer is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-AddInfo`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4011,7 +4795,7 @@ OPT-301-Lot-AddInfo is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-DocProvider`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4027,7 +4811,7 @@ OPT-301-Lot-DocProvider is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-EmployLegis`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4043,7 +4827,7 @@ OPT-301-Lot-EmployLegis is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-EnvironLegis`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4059,7 +4843,7 @@ OPT-301-Lot-EnvironLegis is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-FiscalLegis`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4075,7 +4859,7 @@ OPT-301-Lot-FiscalLegis is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-Mediator`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4091,7 +4875,7 @@ OPT-301-Lot-Mediator is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-ReviewInfo`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4107,7 +4891,7 @@ OPT-301-Lot-ReviewInfo is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-ReviewOrg`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4123,7 +4907,7 @@ OPT-301-Lot-ReviewOrg is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-TenderEval`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4139,7 +4923,7 @@ OPT-301-Lot-TenderEval is present
 ----
 |`ERROR`
 h|`OPT-301-Lot-TenderReceipt`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4155,7 +4939,7 @@ OPT-301-Lot-TenderReceipt is present
 ----
 |`ERROR`
 h|`OPT-301-LotResult-Financing`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4171,7 +4955,7 @@ OPT-301-LotResult-Financing is present
 ----
 |`ERROR`
 h|`OPT-301-LotResult-Paying`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4187,7 +4971,7 @@ OPT-301-LotResult-Paying is present
 ----
 |`ERROR`
 h|`OPT-301-Part-AddInfo`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4203,7 +4987,7 @@ OPT-301-Part-AddInfo is present
 ----
 |`ERROR`
 h|`OPT-301-Part-DocProvider`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4219,7 +5003,7 @@ OPT-301-Part-DocProvider is present
 ----
 |`ERROR`
 h|`OPT-301-Part-EmployLegis`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4235,7 +5019,7 @@ OPT-301-Part-EmployLegis is present
 ----
 |`ERROR`
 h|`OPT-301-Part-EnvironLegis`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4251,7 +5035,7 @@ OPT-301-Part-EnvironLegis is present
 ----
 |`ERROR`
 h|`OPT-301-Part-FiscalLegis`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4267,7 +5051,7 @@ OPT-301-Part-FiscalLegis is present
 ----
 |`ERROR`
 h|`OPT-301-Part-Mediator`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4283,7 +5067,7 @@ OPT-301-Part-Mediator is present
 ----
 |`ERROR`
 h|`OPT-301-Part-ReviewInfo`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4299,7 +5083,7 @@ OPT-301-Part-ReviewInfo is present
 ----
 |`ERROR`
 h|`OPT-301-Part-ReviewOrg`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4315,7 +5099,7 @@ OPT-301-Part-ReviewOrg is present
 ----
 |`ERROR`
 h|`OPT-301-Part-TenderEval`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4331,7 +5115,7 @@ OPT-301-Part-TenderEval is present
 ----
 |`ERROR`
 h|`OPT-301-Part-TenderReceipt`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4347,7 +5131,7 @@ OPT-301-Part-TenderReceipt is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-MainCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4363,7 +5147,7 @@ OPT-301-Tenderer-MainCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4379,7 +5163,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4395,7 +5179,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4411,7 +5195,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4427,7 +5211,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4443,7 +5227,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4459,7 +5243,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4475,7 +5259,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4491,7 +5275,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4507,7 +5291,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4523,7 +5307,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4539,7 +5323,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4555,7 +5339,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4571,7 +5355,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4587,7 +5371,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4603,7 +5387,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-301-Tenderer-SubCont`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4619,7 +5403,7 @@ OPT-301-Tenderer-SubCont is present
 ----
 |`ERROR`
 h|`OPT-302-Organization`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4635,7 +5419,7 @@ OPT-302-Organization is present
 ----
 |`ERROR`
 h|`OPT-310-Tender`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4645,7 +5429,7 @@ OPT-310-Tender == OPT-210-Tenderer
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-315-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4661,7 +5445,7 @@ OPT-315-LotResult is present
 ----
 |`ERROR`
 h|`OPT-316-Contract`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4671,7 +5455,7 @@ a|co_constraint.
 *Always applies* in every notice sub-type.
 |`ERROR`
 h|`OPT-320-LotResult`
-a|co-constraint.
+a|Co-constraint.
 
 .Co-constraint in EFX
 [source, EFX]
@@ -4687,7 +5471,7 @@ OPT-320-LotResult is present
 ----
 |`ERROR`
 h|`OPT-321-Tender`
-a|co_constraint.
+a|Co_constraint.
 
 .Co-constraint in EFX
 [source, EFX]

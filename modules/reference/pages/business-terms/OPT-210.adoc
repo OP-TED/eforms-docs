@@ -1,5 +1,8 @@
 = `OPT-210`: Tendering Party ID
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-210-Tenderer`:: Tendering Party ID

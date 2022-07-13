@@ -1,6 +1,9 @@
 = `BT-76`: Tenderer Legal Form Description
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-76-Lot`:: Tenderer Legal Form Description

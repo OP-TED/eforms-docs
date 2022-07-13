@@ -1,5 +1,8 @@
 = `OPT-001`: UBL version ID (UBL)
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-001-notice`:: UBL version ID (UBL)

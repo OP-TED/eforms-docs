@@ -1,4 +1,6 @@
 = `buyer-contracting-type` codelist
+:navtitle: Codelists
+
 List of codes to specify whether a Buyer is a Contracting Entity or not.
 [horizontal]
 Version:: 1.0

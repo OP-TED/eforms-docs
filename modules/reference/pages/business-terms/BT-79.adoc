@@ -1,6 +1,9 @@
 = `BT-79`: Performing Staff Qualification
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-79-Lot`:: Performing Staff Qualification

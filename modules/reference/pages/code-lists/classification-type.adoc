@@ -1,4 +1,6 @@
 = `classification-type` codelist
+:navtitle: Codelists
+
 List of commodity classifications
 [horizontal]
 Version:: 1.0

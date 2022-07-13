@@ -1,4 +1,6 @@
 = `eu-funded` codelist
+:navtitle: Codelists
+
 List of codes to specify whether a procurement would be financed using EU funds.
 [horizontal]
 Version:: 1.0

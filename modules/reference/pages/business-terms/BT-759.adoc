@@ -1,6 +1,9 @@
 = `BT-759`: Received Submissions Count
+:navtitle: Business Terms
+
 [horizontal]
 Type:: NUMBER
+
 == Fields
 [horizontal]
   `BT-759-LotResult`:: Received Submissions Count

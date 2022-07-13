@@ -1,5 +1,8 @@
 = `OPT-030`: Provided Service Type
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-030-Procedure-SProvider`:: Provided Service Type

@@ -1,4 +1,6 @@
 = `review-status` codelist
+:navtitle: Codelists
+
 List of codes for the status of a given review request.
 [horizontal]
 Version:: 1.0

@@ -1,4 +1,6 @@
 = `timeperiods` codelist
+:navtitle: Codelists
+
 List of codes for the main timeperiods (seasons, duration units of measure) commonly used in procurement.
 [horizontal]
 Version:: 20190918-0

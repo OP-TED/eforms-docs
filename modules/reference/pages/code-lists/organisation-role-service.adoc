@@ -1,4 +1,6 @@
 = `organisation-role-service` codelist
+:navtitle: Codelists
+
 List of possible service codes for Procurement Service Providers
 [horizontal]
 Version:: 20210616-0

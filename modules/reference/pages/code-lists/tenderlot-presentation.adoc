@@ -1,4 +1,6 @@
 = `tenderlot-presentation` codelist
+:navtitle: Codelists
+
 List of codes to specify whether the submission should deal with all the defined lots.
 [horizontal]
 Version:: 1.0

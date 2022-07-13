@@ -1,6 +1,9 @@
 = `BT-27`: Estimated Value
+:navtitle: Business Terms
+
 [horizontal]
 Type:: VALUE
+
 == Fields
 [horizontal]
   `BT-27-Lot`:: Estimated Value

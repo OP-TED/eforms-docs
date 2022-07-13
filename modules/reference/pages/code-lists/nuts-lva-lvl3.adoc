@@ -1,4 +1,6 @@
 = `nuts-lva-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Latvia
 [horizontal]
 Version:: 2021

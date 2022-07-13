@@ -1,6 +1,9 @@
 = `BT-765`: Framework Agreement
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-765-Lot`:: Framework Agreement

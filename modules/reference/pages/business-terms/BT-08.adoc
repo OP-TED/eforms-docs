@@ -1,3 +1,5 @@
 = `BT-08`: Organisation Role
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE

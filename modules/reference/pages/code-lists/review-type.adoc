@@ -1,4 +1,6 @@
 = `review-type` codelist
+:navtitle: Codelists
+
 List of codes for the identification of the type of review requester
 [horizontal]
 Version:: 1.0

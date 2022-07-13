@@ -1,4 +1,6 @@
 = `competition` codelist
+:navtitle: Codelists
+
 List of allowed Notice Type codes for a notice of Competition Form Type
 [horizontal]
 Version:: 20210929-0

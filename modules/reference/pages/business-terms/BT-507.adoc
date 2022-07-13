@@ -1,6 +1,9 @@
 = `BT-507`: Organisation Country Subdivision
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-507-Business`:: NUTS code

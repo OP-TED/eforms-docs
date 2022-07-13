@@ -1,6 +1,9 @@
 = `BT-543`: Award Criteria Complicated
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-543-Lot`:: Award Criteria Complicated

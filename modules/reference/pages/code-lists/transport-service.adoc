@@ -1,4 +1,6 @@
 = `transport-service` codelist
+:navtitle: Codelists
+
 This table provides a list of transport services.
 [horizontal]
 Version:: 1.0

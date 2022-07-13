@@ -1,4 +1,6 @@
 = `environmental-impact` codelist
+:navtitle: Codelists
+
 This table provides the information about whether a procurement includes (and how) an approach to reducing the environmental impacts of the work, supply or service used in the technical specifications, award criteria, selection criteria or contract perfor
 [horizontal]
 Version:: 20190918-0

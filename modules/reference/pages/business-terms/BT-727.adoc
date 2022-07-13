@@ -1,6 +1,9 @@
 = `BT-727`: Place Performance Services Other
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-727-Lot`:: Place Performance Services Other

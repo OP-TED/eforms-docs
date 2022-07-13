@@ -1,4 +1,6 @@
 = `duration` codelist
+:navtitle: Codelists
+
 List of codes for undefined duration
 [horizontal]
 Version:: 20190918-0

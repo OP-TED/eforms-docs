@@ -1,4 +1,6 @@
 = `eforms-language` codelist
+:navtitle: Codelists
+
 List of language codes allowed in eforms
 [horizontal]
 Version:: 20220316-0

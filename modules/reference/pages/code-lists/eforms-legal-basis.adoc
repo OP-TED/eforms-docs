@@ -1,4 +1,6 @@
 = `eforms-legal-basis` codelist
+:navtitle: Codelists
+
 List of Legal Basis codes allowed in eForms
 [horizontal]
 Version:: 20210616-0

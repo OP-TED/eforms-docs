@@ -1,6 +1,9 @@
 = `BT-706`: Winner Owner Nationality
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-706-UBO`:: Winner Owner Nationality

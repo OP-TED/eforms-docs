@@ -1,6 +1,9 @@
 = `BT-94`: Recurrence
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR
+
 == Fields
 [horizontal]
   `BT-94-Lot`:: Recurrence

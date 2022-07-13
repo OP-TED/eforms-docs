@@ -1,6 +1,9 @@
 = `BT-502`: Organisation Contact Point
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-502-Business`:: Contact person

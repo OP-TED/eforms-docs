@@ -1,4 +1,6 @@
 = `eu-programme` codelist
+:navtitle: Codelists
+
 List of codes for programmes created and coordinated by the European Union and financially supported by the European Union or, in a few cases, by the contributions from the Member States.
 [horizontal]
 Version:: 20220316-0

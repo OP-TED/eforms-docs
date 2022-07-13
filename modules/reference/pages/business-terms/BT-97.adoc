@@ -1,6 +1,9 @@
 = `BT-97`: Submission Language
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-97-Lot`:: Submission Language

@@ -1,4 +1,6 @@
 = `review-decision-type` codelist
+:navtitle: Codelists
+
 This table describes the decision made a review body.
 [horizontal]
 Version:: 20220316-0

@@ -1,6 +1,9 @@
 = `BT-262`: Main Classification Code
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-262-Lot`:: Main Classification Code

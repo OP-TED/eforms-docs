@@ -1,4 +1,6 @@
 = `usage` codelist
+:navtitle: Codelists
+
 List of codes to indicate whether the associated concept should be used or not.
 [horizontal]
 Version:: 20220316-0

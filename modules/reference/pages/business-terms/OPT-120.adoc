@@ -1,5 +1,8 @@
 = `OPT-120`: URL to Environmental Legislation
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-120-Lot-EnvironLegis`:: URL to Environmental Legislation

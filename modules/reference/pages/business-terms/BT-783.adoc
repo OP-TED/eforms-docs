@@ -1,6 +1,9 @@
 = `BT-783`: Review Request or Decision
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-783-Review`:: Review Request or Decision

@@ -1,4 +1,6 @@
 = `non-publication-justification` codelist
+:navtitle: Codelists
+
 This table provides codes and values for the main reasons for not immediately publishing a notice within the context of public procurement.
 [horizontal]
 Version:: 20220316-0

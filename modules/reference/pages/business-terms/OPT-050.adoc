@@ -1,5 +1,8 @@
 = `OPT-050`: Document Status
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-050-Lot`:: Document Status

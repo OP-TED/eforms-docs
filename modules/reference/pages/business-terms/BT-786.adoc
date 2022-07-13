@@ -1,6 +1,9 @@
 = `BT-786`: Review Notice Section Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER
+
 == Fields
 [horizontal]
   `BT-786-Review`:: Review Notice Section Identifier

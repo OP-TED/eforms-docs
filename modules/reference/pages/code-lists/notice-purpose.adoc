@@ -1,4 +1,6 @@
 = `notice-purpose` codelist
+:navtitle: Codelists
+
 List of codes to specify the purpose of the Business Register Information Notice
 [horizontal]
 Version:: 1.0

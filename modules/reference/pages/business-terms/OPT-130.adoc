@@ -1,5 +1,8 @@
 = `OPT-130`: URL to Employment Legislation
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-130-Lot-EmployLegis`:: URL to Employment Legislation

@@ -1,6 +1,9 @@
 = `BT-64`: Subcontracting Obligation Minimum
+:navtitle: Business Terms
+
 [horizontal]
 Type:: NUMBER
+
 == Fields
 [horizontal]
   `BT-64-Lot`:: Subcontracting Obligation Minimum

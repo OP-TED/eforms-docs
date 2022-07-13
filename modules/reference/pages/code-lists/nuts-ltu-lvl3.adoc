@@ -1,4 +1,6 @@
 = `nuts-ltu-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Lithuania
 [horizontal]
 Version:: 2021

@@ -1,4 +1,6 @@
 = `nuts-esp-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Spain
 [horizontal]
 Version:: 2021

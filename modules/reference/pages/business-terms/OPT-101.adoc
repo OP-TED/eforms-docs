@@ -1,2 +1,4 @@
 = `OPT-101`: Framework Notice Version
+:navtitle: Business Terms
+
 [horizontal]

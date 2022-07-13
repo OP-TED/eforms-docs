@@ -1,4 +1,6 @@
 = `subcontracting-allowed` codelist
+:navtitle: Codelists
+
 List of codes to specify whether subcontracting is allowed or not.
 [horizontal]
 Version:: 1.0

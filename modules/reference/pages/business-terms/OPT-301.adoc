@@ -1,5 +1,8 @@
 = `OPT-301`: Party (ID reference)
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-301-Lot-AddInfo`:: Additional Info Provider Technical Identifier Reference

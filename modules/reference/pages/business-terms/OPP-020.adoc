@@ -1,5 +1,8 @@
 = `OPP-020`: Assets related contract extension indicator
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-020-Contract`:: Assets related contract extension indicator

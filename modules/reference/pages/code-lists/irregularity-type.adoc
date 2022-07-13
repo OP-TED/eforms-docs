@@ -1,4 +1,6 @@
 = `irregularity-type` codelist
+:navtitle: Codelists
+
 This code list refers generally to the types of irregularities described in Section 2 of the Annex to the Commission Decision C(2019) 3452.
 [horizontal]
 Version:: 20220316-0

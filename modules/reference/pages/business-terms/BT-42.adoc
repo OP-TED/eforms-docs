@@ -1,6 +1,9 @@
 = `BT-42`: Jury Decision Binding
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR
+
 == Fields
 [horizontal]
   `BT-42-Lot`:: Jury Decision Binding

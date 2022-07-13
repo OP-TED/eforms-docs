@@ -1,4 +1,5 @@
 = Business rules for notice sub-type `5`
+:navtitle: Business Rules
 
 == `allowed`
 [cols="<3,<6,>1", role="fixed-layout"]

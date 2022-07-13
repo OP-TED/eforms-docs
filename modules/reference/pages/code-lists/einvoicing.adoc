@@ -1,4 +1,6 @@
 = `einvoicing` codelist
+:navtitle: Codelists
+
 List of codes to specify whether the use of electronic invoicing is allowed or not.
 [horizontal]
 Version:: 20220316-0

@@ -1,4 +1,6 @@
 = `nuts-mkd-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Former Yugoslav Republic of Macedonia
 [horizontal]
 Version:: 2021

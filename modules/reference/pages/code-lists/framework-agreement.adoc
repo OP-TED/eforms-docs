@@ -1,4 +1,6 @@
 = `framework-agreement` codelist
+:navtitle: Codelists
+
 This table provides the list of codes to distinguish the different type framework agreement involved in a tender.
 [horizontal]
 Version:: 20220316-0

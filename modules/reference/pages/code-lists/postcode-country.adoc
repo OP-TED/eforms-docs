@@ -1,4 +1,6 @@
 = `postcode-country` codelist
+:navtitle: Codelists
+
 List of country codes for countries having postcodes and requiring their use
 [horizontal]
 Version:: 20220316-0

@@ -1,4 +1,6 @@
 = `accessibility` codelist
+:navtitle: Codelists
+
 This table provides a list of options for the use of accessibility criteria for person with disabilities in the technical specifications within the domain of public procurement.
 [horizontal]
 Version:: 20220316-0

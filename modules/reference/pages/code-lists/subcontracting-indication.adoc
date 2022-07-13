@@ -1,4 +1,6 @@
 = `subcontracting-indication` codelist
+:navtitle: Codelists
+
 This table provides the list of codes and values used to indicate information regarding the share of parts of a contract to third parties. The share may refer to the portion of work, services or supplies and/or to the subject matter being subcontracted.
 [horizontal]
 Version:: 20220316-0

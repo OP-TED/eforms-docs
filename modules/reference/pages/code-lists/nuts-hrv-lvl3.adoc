@@ -1,4 +1,6 @@
 = `nuts-hrv-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Croatia
 [horizontal]
 Version:: 2021

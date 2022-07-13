@@ -1,6 +1,9 @@
 = `BT-503`: Organisation Contact Telephone Number
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-503-Business`:: Telephone

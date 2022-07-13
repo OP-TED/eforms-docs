@@ -1,6 +1,9 @@
 = `BT-14`: Documents Restricted
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR
+
 == Fields
 [horizontal]
   `BT-14-Lot`:: Documents Restricted

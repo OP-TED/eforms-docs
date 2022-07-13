@@ -1,4 +1,6 @@
 = `form-type` codelist
+:navtitle: Codelists
+
 This table provides the codes and values used for the type of forms published on TED.
 [horizontal]
 Version:: 20211208-0

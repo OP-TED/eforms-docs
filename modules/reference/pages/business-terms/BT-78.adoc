@@ -1,6 +1,9 @@
 = `BT-78`: Security Clearance Deadline
+:navtitle: Business Terms
+
 [horizontal]
 Type:: DATE
+
 == Fields
 [horizontal]
   `BT-78-Lot`:: Security Clearance Deadline

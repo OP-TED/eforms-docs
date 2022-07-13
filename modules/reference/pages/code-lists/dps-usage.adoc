@@ -1,4 +1,6 @@
 = `dps-usage` codelist
+:navtitle: Codelists
+
 This table provides a list wether a dynamic purchasing system is involved in a procurement and, in case of central purchasing bodies, whether it can be used by buyers not listed in the notice of the Official Journal of the European Union.
 [horizontal]
 Version:: 20220316-0

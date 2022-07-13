@@ -1,4 +1,6 @@
 = `notice-subtype` codelist
+:navtitle: Codelists
+
 List of possible Notice Subtype codes for a Notice of type Business Registration Information Notice.
 [horizontal]
 Version:: 1.0

@@ -1,4 +1,6 @@
 = `winner-selection-status` codelist
+:navtitle: Codelists
+
 This table provides the list of codes and values used to indicate whether a tenderer was chosen to be awarded with a contract and wether the competiotion is open.
 [horizontal]
 Version:: 20220316-0

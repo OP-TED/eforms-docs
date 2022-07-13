@@ -1,4 +1,6 @@
 = `change-corrig-justification` codelist
+:navtitle: Codelists
+
 This table provides the codes and values used in case of justification of correcions applied to a notice within the context of public procurement.
 [horizontal]
 Version:: 20200923-0

@@ -1,3 +1,5 @@
 = `BT-724`: Tool Atypical
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR

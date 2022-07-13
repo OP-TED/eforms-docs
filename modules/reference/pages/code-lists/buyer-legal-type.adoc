@@ -1,4 +1,6 @@
 = `buyer-legal-type` codelist
+:navtitle: Codelists
+
 This table provides a list of the the type of procuring authorities within the domain of public procurement according to legislation.
 [horizontal]
 Version:: 20211208-0

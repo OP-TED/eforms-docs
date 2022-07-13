@@ -1,4 +1,6 @@
 = `qu-sy` codelist
+:navtitle: Codelists
+
 List of allowed Notice Subtype codes for a notice of Qualification System Notice Type.
 [horizontal]
 Version:: 1.0

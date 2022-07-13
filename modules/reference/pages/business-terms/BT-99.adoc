@@ -1,6 +1,9 @@
 = `BT-99`: Review Deadline Description
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-99-Lot`:: Review Deadline Description

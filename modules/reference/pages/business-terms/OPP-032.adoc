@@ -1,5 +1,8 @@
 = `OPP-032`: Revenues Allocation
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-032-Tender`:: Revenues Allocation

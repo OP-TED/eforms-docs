@@ -1,6 +1,9 @@
 = `BT-140`: Change Reason Code
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-140-notice`:: Change Reason Code

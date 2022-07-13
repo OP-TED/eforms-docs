@@ -1,5 +1,8 @@
 = `OPT-091`: Party Type
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-091-ReviewReq`:: Review Requester Type

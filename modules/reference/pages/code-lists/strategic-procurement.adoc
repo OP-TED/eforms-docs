@@ -1,4 +1,6 @@
 = `strategic-procurement` codelist
+:navtitle: Codelists
+
 This table provides the values  linked to any social objective  promoted by the technical specifications, award criteria, selection criteria or contract performance conditions included in a procurement.
 [horizontal]
 Version:: 20220316-0

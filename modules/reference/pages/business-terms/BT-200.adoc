@@ -1,6 +1,9 @@
 = `BT-200`: Modification Reason Code
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-200-Contract`:: Modification Reason Code

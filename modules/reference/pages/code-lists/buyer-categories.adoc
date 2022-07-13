@@ -1,4 +1,6 @@
 = `buyer-categories` codelist
+:navtitle: Codelists
+
 List of codes used to characterize the buyers for the subsequent contracts of a given Framework Agreement. 
 [horizontal]
 Version:: 1.0

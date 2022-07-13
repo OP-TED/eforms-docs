@@ -1,4 +1,6 @@
 = `eea-country` codelist
+:navtitle: Codelists
+
 List of codes of the European Economic Area countries
 [horizontal]
 Version:: 20220316-0

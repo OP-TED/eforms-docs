@@ -1,6 +1,9 @@
 = `BT-33`: Lots Max Awarded
+:navtitle: Business Terms
+
 [horizontal]
 Type:: NUMBER
+
 == Fields
 [horizontal]
   `BT-33-Procedure`:: Lots Max Awarded

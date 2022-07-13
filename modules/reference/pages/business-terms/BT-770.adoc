@@ -1,3 +1,5 @@
 = `BT-770`: Organisation Subrole
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE

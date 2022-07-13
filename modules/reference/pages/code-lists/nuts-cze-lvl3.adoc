@@ -1,4 +1,6 @@
 = `nuts-cze-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Czech Republic
 [horizontal]
 Version:: 2021

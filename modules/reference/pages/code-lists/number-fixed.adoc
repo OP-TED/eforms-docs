@@ -1,4 +1,6 @@
 = `number-fixed` codelist
+:navtitle: Codelists
+
 This table provides the codes linked to fix values within the context of public procurement.
 [horizontal]
 Version:: 20220316-0

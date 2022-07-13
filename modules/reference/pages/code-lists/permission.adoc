@@ -1,4 +1,6 @@
 = `permission` codelist
+:navtitle: Codelists
+
 This table provides the codes linked to the different values of permission and/or obligation.
 [horizontal]
 Version:: 20220316-0

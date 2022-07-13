@@ -1,6 +1,9 @@
 = `BT-5422`: Award Criterion Number Fixed
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-5422-Lot`:: Award Criterion Number Fixed

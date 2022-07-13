@@ -1,5 +1,8 @@
 = `OPT-090`: Buyer Categories
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-090-Lot`:: Buyer Categories

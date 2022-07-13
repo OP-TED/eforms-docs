@@ -1,4 +1,6 @@
 = `tender-guarantee-required` codelist
+:navtitle: Codelists
+
 List of codes to specify whether a Tender Guarantee is required or not.
 [horizontal]
 Version:: 1.0

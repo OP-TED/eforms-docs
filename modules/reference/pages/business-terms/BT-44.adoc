@@ -1,6 +1,9 @@
 = `BT-44`: Prize Rank
+:navtitle: Business Terms
+
 [horizontal]
 Type:: NUMBER
+
 == Fields
 [horizontal]
   `BT-44-Lot`:: Prize Rank

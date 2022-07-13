@@ -1,4 +1,6 @@
 = `requirement-stage` codelist
+:navtitle: Codelists
+
 This table describes when and whether a given requirement must be provided in a procedure.
 [horizontal]
 Version:: 20220316-0

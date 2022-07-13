@@ -1,5 +1,8 @@
 = `OPP-105`: Sector of activity
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-105-Business`:: Sector of activity

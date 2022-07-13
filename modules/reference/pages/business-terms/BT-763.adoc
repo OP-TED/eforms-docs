@@ -1,6 +1,9 @@
 = `BT-763`: Lots All Required
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR
+
 == Fields
 [horizontal]
   `BT-763-Procedure`:: Lots All Required

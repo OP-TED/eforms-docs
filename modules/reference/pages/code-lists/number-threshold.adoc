@@ -1,4 +1,6 @@
 = `number-threshold` codelist
+:navtitle: Codelists
+
 This table provides the codes linked to the type of threshold values within the context of public procurement.
 [horizontal]
 Version:: 20220316-0

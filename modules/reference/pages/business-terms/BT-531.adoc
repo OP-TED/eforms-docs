@@ -1,6 +1,9 @@
 = `BT-531`: Additional Nature
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-531-Lot`:: Additional Nature (different from Main)

@@ -1,3 +1,5 @@
 = `BT-1376`: Second Stage Lot Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER

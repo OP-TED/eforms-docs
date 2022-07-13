@@ -1,6 +1,9 @@
 = `BT-150`: Contract Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER
+
 == Fields
 [horizontal]
   `BT-150-Contract`:: Contract Identifier

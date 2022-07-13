@@ -1,5 +1,8 @@
 = `OPP-070`: Notice Subtype
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-070-notice`:: Notice Subtype

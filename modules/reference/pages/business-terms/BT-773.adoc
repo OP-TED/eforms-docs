@@ -1,6 +1,9 @@
 = `BT-773`: Subcontracting
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-773-Tender`:: Subcontracting

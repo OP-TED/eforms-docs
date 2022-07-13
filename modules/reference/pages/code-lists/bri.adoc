@@ -1,4 +1,6 @@
 = `bri` codelist
+:navtitle: Codelists
+
 List of allowed Notice Type codes for a Business Register Information document
 [horizontal]
 Version:: 20210929-0

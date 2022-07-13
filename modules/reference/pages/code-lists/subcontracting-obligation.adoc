@@ -1,4 +1,6 @@
 = `subcontracting-obligation` codelist
+:navtitle: Codelists
+
 This table provides the list of codes and values used for the obligation of the economic operator of sharing parts of the original contract to third parties. The share may refer to the portion of work, services or supplies.
 [horizontal]
 Version:: 20220316-0

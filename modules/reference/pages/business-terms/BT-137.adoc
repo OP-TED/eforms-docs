@@ -1,6 +1,9 @@
 = `BT-137`: Purpose Lot Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER
+
 == Fields
 [horizontal]
   `BT-137-Lot`:: Purpose Lot Identifier

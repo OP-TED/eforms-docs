@@ -1,5 +1,8 @@
 = `OPT-110`: URL to Fiscal Legislation
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-110-Lot-FiscalLegis`:: URL to Fiscal Legislation

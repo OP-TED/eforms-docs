@@ -1,6 +1,9 @@
 = `BT-01`: Procedure Legal Basis
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-01-notice`:: Procedure Legal Basis

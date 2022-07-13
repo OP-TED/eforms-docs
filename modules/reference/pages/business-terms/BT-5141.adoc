@@ -1,6 +1,9 @@
 = `BT-5141`: Place Performance Country Code
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-5141-Lot`:: Place Performance Country Code

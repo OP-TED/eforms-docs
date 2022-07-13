@@ -1,3 +1,5 @@
 = `BT-13715`: Additional Information Lot Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER

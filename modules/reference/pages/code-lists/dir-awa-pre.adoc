@@ -1,4 +1,6 @@
 = `dir-awa-pre` codelist
+:navtitle: Codelists
+
 List of allowed Notice Type codes for a Direct Award Preannouncement Form Type
 [horizontal]
 Version:: 20210929-0

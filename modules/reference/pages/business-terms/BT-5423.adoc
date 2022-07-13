@@ -1,6 +1,9 @@
 = `BT-5423`: Award Criterion Number Threshold
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-5423-Lot`:: Award Criterion Number Threshold

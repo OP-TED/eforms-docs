@@ -1,4 +1,6 @@
 = `legal-basis` codelist
+:navtitle: Codelists
+
 This table provides the legal basis  based on the legal acts  used for a given public procurement procedure. The table is provided by the Publications Office.
 [horizontal]
 Version:: 20210616-0

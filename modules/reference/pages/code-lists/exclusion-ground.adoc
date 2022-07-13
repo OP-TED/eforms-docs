@@ -1,4 +1,6 @@
 = `exclusion-ground` codelist
+:navtitle: Codelists
+
 List of codes for Exclusion Ground identification
 [horizontal]
 Version:: 1.0

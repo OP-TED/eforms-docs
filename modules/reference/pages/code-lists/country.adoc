@@ -1,4 +1,6 @@
 = `country` codelist
+:navtitle: Codelists
+
 List of three characters country codes, correlated with the ISO 3166 international standard and additional authority codes for some countries without assigned ISO code.
 [horizontal]
 Version:: 20220316-0

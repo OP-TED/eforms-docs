@@ -1,4 +1,6 @@
 = `nuts-che-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Switzerland
 [horizontal]
 Version:: 2021

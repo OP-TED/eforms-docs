@@ -1,6 +1,9 @@
 = `BT-127`: Future Notice
+:navtitle: Business Terms
+
 [horizontal]
 Type:: DATE
+
 == Fields
 [horizontal]
   `BT-127-notice`:: Future Notice

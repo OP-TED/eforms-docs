@@ -1,4 +1,6 @@
 = `nuts-nld-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Netherlands
 [horizontal]
 Version:: 2021

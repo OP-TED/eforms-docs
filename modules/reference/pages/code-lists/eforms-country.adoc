@@ -1,4 +1,6 @@
 = `eforms-country` codelist
+:navtitle: Codelists
+
 List of country codes allowed in eforms
 [horizontal]
 Version:: 20220316-0

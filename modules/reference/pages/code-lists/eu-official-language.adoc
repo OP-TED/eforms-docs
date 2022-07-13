@@ -1,4 +1,6 @@
 = `eu-official-language` codelist
+:navtitle: Codelists
+
 List of codes of the EU official languages
 [horizontal]
 Version:: 20220316-0

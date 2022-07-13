@@ -1,4 +1,6 @@
 = `innovative-acquisition` codelist
+:navtitle: Codelists
+
 This table provides the codes and values used for the type of innovative works, supplies or services being procured within the context of public procurement.
 [horizontal]
 Version:: 20190918-0

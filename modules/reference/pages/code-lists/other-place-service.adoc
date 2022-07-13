@@ -1,4 +1,6 @@
 = `other-place-service` codelist
+:navtitle: Codelists
+
 This table provides the broad geopolitical areas linked to the location of works and the place of performance or delivery within the context of public procurement.
 [horizontal]
 Version:: 20220316-0

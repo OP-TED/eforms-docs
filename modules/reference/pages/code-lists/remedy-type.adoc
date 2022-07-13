@@ -1,4 +1,6 @@
 = `remedy-type` codelist
+:navtitle: Codelists
+
 This table describes the measures taken following a review.
 [horizontal]
 Version:: 20220316-0

@@ -1,4 +1,6 @@
 = `indicator` codelist
+:navtitle: Codelists
+
 List of eforms allowed indicator values
 [horizontal]
 Version:: 1.0

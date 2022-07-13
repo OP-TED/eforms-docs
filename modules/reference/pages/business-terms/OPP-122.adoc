@@ -1,5 +1,8 @@
 = `OPP-122`: URL of the announcement
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-122-Business`:: URL of the announcement

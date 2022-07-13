@@ -1,5 +1,8 @@
 = `OPT-999`: Dummy Tender Award Date
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-999`:: Dummy Tender Award Date

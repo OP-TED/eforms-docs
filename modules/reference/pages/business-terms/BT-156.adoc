@@ -1,6 +1,9 @@
 = `BT-156`: Group Framework Value
+:navtitle: Business Terms
+
 [horizontal]
 Type:: VALUE
+
 == Fields
 [horizontal]
   `BT-156-NoticeResult`:: Group Framework Value

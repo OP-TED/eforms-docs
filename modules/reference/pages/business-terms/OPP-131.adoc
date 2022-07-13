@@ -1,5 +1,8 @@
 = `OPP-131`: Sender email address
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-131-Business`:: Senders email address

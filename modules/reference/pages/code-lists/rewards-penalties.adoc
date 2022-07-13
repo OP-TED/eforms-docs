@@ -1,4 +1,6 @@
 = `rewards-penalties` codelist
+:navtitle: Codelists
+
 List of codes for rewards and penalties associated to a Public Transportation Service.
 [horizontal]
 Version:: 1.0

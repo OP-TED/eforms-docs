@@ -1,4 +1,6 @@
 = `nuts-est-lvl3` codelist
+:navtitle: Codelists
+
 List of level 3 NUTS codes for Estonia
 [horizontal]
 Version:: 2021

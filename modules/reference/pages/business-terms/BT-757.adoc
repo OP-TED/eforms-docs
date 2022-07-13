@@ -1,6 +1,9 @@
 = `BT-757`: Notice Version
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER
+
 == Fields
 [horizontal]
   `BT-757-notice`:: Notice Version

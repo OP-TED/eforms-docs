@@ -1,4 +1,6 @@
 = `linguistic-status` codelist
+:navtitle: Codelists
+
 List of codes to specify whether a linguistic version has or not a legal status.
 [horizontal]
 Version:: 1.0

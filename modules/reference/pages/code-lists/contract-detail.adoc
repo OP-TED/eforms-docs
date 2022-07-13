@@ -1,4 +1,6 @@
 = `contract-detail` codelist
+:navtitle: Codelists
+
 This table provides a framework to represent data relating to procurement.
 [horizontal]
 Version:: 1.0

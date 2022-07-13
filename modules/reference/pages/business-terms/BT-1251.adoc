@@ -1,6 +1,9 @@
 = `BT-1251`: Previous Planning Part Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER
+
 == Fields
 [horizontal]
   `BT-1251-Lot`:: Previous Planning Part Identifier

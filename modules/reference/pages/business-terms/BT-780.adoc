@@ -1,6 +1,9 @@
 = `BT-780`: Tender Payment Value Additional Information
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-780-Tender`:: Tender Payment Value Additional Information

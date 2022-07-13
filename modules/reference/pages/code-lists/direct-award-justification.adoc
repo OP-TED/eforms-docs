@@ -1,4 +1,6 @@
 = `direct-award-justification` codelist
+:navtitle: Codelists
+
 This table provides the list of reasons for using a procedure which allows awarding contracts directly without the requirement of publishing a call for competition in the Official Journal of the European Union.
 [horizontal]
 Version:: 20211208-0

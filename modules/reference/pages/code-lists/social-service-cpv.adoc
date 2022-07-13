@@ -1,4 +1,6 @@
 = `social-service-cpv` codelist
+:navtitle: Codelists
+
 [horizontal]
 Version:: 2008
 Subset of:: xref:code-lists/cpv.adoc[`cpv`]

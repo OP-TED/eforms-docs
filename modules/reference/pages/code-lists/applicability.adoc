@@ -1,4 +1,6 @@
 = `applicability` codelist
+:navtitle: Codelists
+
 This table provides a list of the options pertinent to be chosen for a matter concerning the applicability of predefined fields. It is designed for but not restricted to the context of public procurement.
 [horizontal]
 Version:: 20220316-0

@@ -1,6 +1,9 @@
 = `BT-21`: Title
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-21-Lot`:: Title

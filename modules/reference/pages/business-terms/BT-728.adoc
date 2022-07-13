@@ -1,6 +1,9 @@
 = `BT-728`: Place Performance Additional Information
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-728-Lot`:: Place Performance Additional Information

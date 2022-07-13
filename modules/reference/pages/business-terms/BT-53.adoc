@@ -1,3 +1,5 @@
 = `BT-53`: Options
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR

@@ -1,6 +1,9 @@
 = `BT-733`: Award Criteria Order Justification
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-733-Lot`:: Award Criteria Order Justification

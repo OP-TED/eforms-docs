@@ -1,5 +1,8 @@
 = `OPT-160`: First Name
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-160-UBO`:: First Name

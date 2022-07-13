@@ -1,5 +1,8 @@
 = `OPP-040`: Main Nature - Sub Type
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-040-Procedure`:: Main Nature - Sub Type

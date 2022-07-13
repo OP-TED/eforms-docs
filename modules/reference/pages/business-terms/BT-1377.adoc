@@ -1,3 +1,5 @@
 = `BT-1377`: Rewards Lot Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER

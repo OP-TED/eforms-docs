@@ -1,4 +1,6 @@
 = `cpv` codelist
+:navtitle: Codelists
+
 List of codes for an improved description, based on the Common Procurement Vocabulary (CPV), of what is actually being purchased.
 [horizontal]
 Version:: 2008

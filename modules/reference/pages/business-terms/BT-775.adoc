@@ -1,6 +1,9 @@
 = `BT-775`: Social Procurement
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-775-Lot`:: Social Procurement

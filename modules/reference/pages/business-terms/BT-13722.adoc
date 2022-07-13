@@ -1,3 +1,5 @@
 = `BT-13722`: Buyer Review Lot Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER

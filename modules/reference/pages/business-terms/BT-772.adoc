@@ -1,6 +1,9 @@
 = `BT-772`: Late Tenderer Information Description
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-772-Lot`:: Late Tenderer Information Description

@@ -1,4 +1,6 @@
 = `eforms-contract-nature` codelist
+:navtitle: Codelists
+
 List of eforms allowed codes to specify the main and additional natures of a purchase
 [horizontal]
 Version:: 20210317-0

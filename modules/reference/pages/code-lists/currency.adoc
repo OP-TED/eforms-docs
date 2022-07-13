@@ -1,4 +1,6 @@
 = `currency` codelist
+:navtitle: Codelists
+
 List of currency codes
 [horizontal]
 Version:: 20220316-0

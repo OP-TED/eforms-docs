@@ -1,4 +1,6 @@
 = `ecatalog-submission` codelist
+:navtitle: Codelists
+
 List of codes to specify whether the submission of electronic catalogues is allowed or not.
 [horizontal]
 Version:: 20220316-0

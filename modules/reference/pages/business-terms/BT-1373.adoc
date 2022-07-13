@@ -1,3 +1,5 @@
 = `BT-1373`: Duration Lot Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER

@@ -1,4 +1,6 @@
 = `main-activity` codelist
+:navtitle: Codelists
+
 List of codes for the main activities of the buyers.
 [horizontal]
 Version:: 20220316-0

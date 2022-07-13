@@ -1,4 +1,6 @@
 = `communication-justification` codelist
+:navtitle: Codelists
+
 This table provides the justification for restricting access rights to resources within the context of public procurement.
 [horizontal]
 Version:: 20220316-0

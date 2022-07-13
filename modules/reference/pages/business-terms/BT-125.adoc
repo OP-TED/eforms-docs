@@ -1,6 +1,9 @@
 = `BT-125`: Previous Planning Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER
+
 == Fields
 [horizontal]
   `BT-125(i)-Lot`:: Previous Planning Identifier

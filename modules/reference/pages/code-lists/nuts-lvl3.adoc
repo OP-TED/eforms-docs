@@ -1,4 +1,6 @@
 = `nuts-lvl3` codelist
+:navtitle: Codelists
+
 List of all level 3 NUTS codes
 [horizontal]
 Version:: 2021

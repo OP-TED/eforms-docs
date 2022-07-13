@@ -1,6 +1,9 @@
 = `BT-197`: Unpublished Justification Code
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-197(BT-09)-Procedure`:: Unpublished Justification Code

@@ -1,6 +1,9 @@
 = `BT-536`: Duration Start Date
+:navtitle: Business Terms
+
 [horizontal]
 Type:: DATE
+
 == Fields
 [horizontal]
   `BT-536-Lot`:: Duration Start Date

@@ -1,4 +1,6 @@
 = `required` codelist
+:navtitle: Codelists
+
 List of codes to specify whether the associated requirement applies or not.
 [horizontal]
 Version:: 1.0

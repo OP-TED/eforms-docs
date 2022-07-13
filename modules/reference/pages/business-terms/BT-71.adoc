@@ -1,6 +1,9 @@
 = `BT-71`: Reserved Participation
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-71-Lot`:: Reserved Participation

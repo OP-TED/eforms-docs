@@ -1,6 +1,9 @@
 = `BT-661`: Maximum Candidates Indicator
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR
+
 == Fields
 [horizontal]
   `BT-661-Lot`:: Maximum Candidates Indicator

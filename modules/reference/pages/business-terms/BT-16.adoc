@@ -1,6 +1,9 @@
 = `BT-16`: Organisation Part Name
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-16-Organization-Company`:: Organisation Part Name

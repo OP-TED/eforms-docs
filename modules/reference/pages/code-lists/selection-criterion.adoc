@@ -1,4 +1,6 @@
 = `selection-criterion` codelist
+:navtitle: Codelists
+
 List of codes to express condictions that are concerned for evaluation purposes. This codelist is a subset of the ESPD codelist CriterionTaxonomy.
 [horizontal]
 Version:: 20220316-0

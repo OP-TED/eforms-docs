@@ -1,4 +1,6 @@
 = `non-publication-identifier` codelist
+:navtitle: Codelists
+
 List of codes for the identification of the information whose publication shall be delayed.
 [horizontal]
 Version:: 1.0

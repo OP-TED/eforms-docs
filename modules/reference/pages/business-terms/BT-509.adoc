@@ -1,6 +1,9 @@
 = `BT-509`: Organisation eDelivery Gateway
+:navtitle: Business Terms
+
 [horizontal]
 Type:: URL
+
 == Fields
 [horizontal]
   `BT-509-Organization-Company`:: Organisation eDelivery Gateway

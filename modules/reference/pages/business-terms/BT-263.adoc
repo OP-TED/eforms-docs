@@ -1,6 +1,9 @@
 = `BT-263`: Additional Classification Codes
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-263-Lot`:: Additional Classification Code

@@ -1,5 +1,8 @@
 = `OPP-034`: Penalties and Rewards Description
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-034-Tender`:: Penalties and Rewards Description

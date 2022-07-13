@@ -1,4 +1,6 @@
 = `no-esubmission-justification` codelist
+:navtitle: Codelists
+
 List of codes to justify the impossibility to submit electronically
 [horizontal]
 Version:: 20220316-0

@@ -1,4 +1,6 @@
 = `nuts-country` codelist
+:navtitle: Codelists
+
 List of codes for Countries having NUTS codes
 [horizontal]
 Version:: 20220316-0

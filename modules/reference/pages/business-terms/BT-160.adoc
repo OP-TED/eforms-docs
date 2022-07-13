@@ -1,6 +1,9 @@
 = `BT-160`: Concession Revenue Buyer
+:navtitle: Business Terms
+
 [horizontal]
 Type:: VALUE
+
 == Fields
 [horizontal]
   `BT-160-Tender`:: Concession Revenue Buyer

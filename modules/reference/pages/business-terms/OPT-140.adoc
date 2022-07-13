@@ -1,5 +1,8 @@
 = `OPT-140`: Procurement Documents ID
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-140-Lot`:: Procurement Documents ID

@@ -1,4 +1,6 @@
 = `notice-type` codelist
+:navtitle: Codelists
+
 This table provides a list of public procurement notices  according to procurement legislation  published once a project is approved.
 [horizontal]
 Version:: 20220316-0

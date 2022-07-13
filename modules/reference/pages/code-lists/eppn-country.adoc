@@ -1,4 +1,6 @@
 = `eppn-country` codelist
+:navtitle: Codelists
+
 List of codes for the European Plant Phenotyping Network countries
 [horizontal]
 Version:: 20220316-0

@@ -1,4 +1,6 @@
 = `non-award-justification` codelist
+:navtitle: Codelists
+
 This table provides the list of reasons of the buyer for not choosing a winner in the procurement procedure.
 [horizontal]
 Version:: 20220316-0

@@ -1,4 +1,6 @@
 = `economic-operator-size` codelist
+:navtitle: Codelists
+
 This table provides the different categories in which the tenderers to whom a contract can be awarded are classified, according to their size (using as criteria the number of employees).
 [horizontal]
 Version:: 20220316-0

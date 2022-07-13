@@ -1,6 +1,9 @@
 = `BT-03`: Form Type
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-03-notice`:: Form Type

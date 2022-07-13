@@ -1,6 +1,9 @@
 = `BT-794`: Review URL
+:navtitle: Business Terms
+
 [horizontal]
 Type:: URL
+
 == Fields
 [horizontal]
   `BT-794-Review`:: Review URL

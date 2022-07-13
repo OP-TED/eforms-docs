@@ -1,5 +1,8 @@
 = `OPT-111`: Fiscal Legislation Document ID
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPT-111-Lot-FiscalLegis`:: Fiscal Legislation Document ID

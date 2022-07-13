@@ -1,6 +1,9 @@
 = `BT-196`: Unpublished Justification Description
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-196(BT-09)-Procedure`:: Unpublished Justification Description

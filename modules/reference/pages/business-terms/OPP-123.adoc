@@ -1,5 +1,8 @@
 = `OPP-123`: Date of publication
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-123-Business`:: Date of publication

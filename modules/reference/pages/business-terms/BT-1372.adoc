@@ -1,3 +1,5 @@
 = `BT-1372`: Place Performance Lot Identifier
+:navtitle: Business Terms
+
 [horizontal]
 Type:: IDENTIFIER

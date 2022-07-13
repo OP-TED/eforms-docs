@@ -1,6 +1,9 @@
 = `BT-115`: GPA Coverage
+:navtitle: Business Terms
+
 [horizontal]
 Type:: INDICATOR
+
 == Fields
 [horizontal]
   `BT-115-Lot`:: GPA Coverage

@@ -1,4 +1,6 @@
 = `esignature-submission` codelist
+:navtitle: Codelists
+
 List of codes to dpecify whether electronic signature may be used or not.
 [horizontal]
 Version:: 1.0

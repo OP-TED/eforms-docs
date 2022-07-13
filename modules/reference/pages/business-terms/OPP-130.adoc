@@ -1,5 +1,8 @@
 = `OPP-130`: Additional information
+:navtitle: Business Terms
+
 [horizontal]
+
 == Fields
 [horizontal]
   `OPP-130-Business`:: Additional information

@@ -1,6 +1,9 @@
 = `BT-760`: Received Submissions Type
+:navtitle: Business Terms
+
 [horizontal]
 Type:: CODE
+
 == Fields
 [horizontal]
   `BT-760-LotResult`:: Received Submissions Type

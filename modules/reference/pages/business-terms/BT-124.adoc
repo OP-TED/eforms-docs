@@ -1,6 +1,9 @@
 = `BT-124`: Tool Atypical URL
+:navtitle: Business Terms
+
 [horizontal]
 Type:: URL
+
 == Fields
 [horizontal]
   `BT-124-Lot`:: Tool Atypical URL

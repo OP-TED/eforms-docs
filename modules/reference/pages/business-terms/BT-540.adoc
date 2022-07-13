@@ -1,6 +1,9 @@
 = `BT-540`: Award Criterion Description
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-540-Lot`:: Award Criterion Description

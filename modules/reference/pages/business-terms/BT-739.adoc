@@ -1,6 +1,9 @@
 = `BT-739`: Organisation Contact Fax
+:navtitle: Business Terms
+
 [horizontal]
 Type:: TEXT
+
 == Fields
 [horizontal]
   `BT-739-Business`:: Fax

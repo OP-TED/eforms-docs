@@ -1,4 +1,6 @@
 = `change` codelist
+:navtitle: Codelists
+
 List of allowed Notice Subtype codes for a notice of Change Notice Type .
 [horizontal]
 Version:: 20210929-0
