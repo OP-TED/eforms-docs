@@ -10,14 +10,15 @@ Is there a general presentation of eForms available?::
 The policy background of eForms is available link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[on the DG GROW website].
 +
 The link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar] provided an updated overview of eForms implementation.
- 
- 
++ 
+The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/[May 2022 eForms Technical Workshop] focused on eForms technical implementation for developers 
+and building metadata-driven applications.
  
 
 What is the planned transition for eForms implementation on the TED portal?:: 
 
 Starting on 14 November 2022, usage of eForms by Contracting Authorities
-and Contracting Entities is optional and the Publications Office will
+and Contracting Entities is optional and the Publications Office (OP) will
 accept both the current TED schema notices and new eForms notices. The
 TED portal will show both the current TED schema and eForms notices. 
 +
@@ -27,38 +28,43 @@ but only eForms notices. The TED portal will continue to show the TED
 schema notices that will have been received until 25 October 2023. 
 +
 The last day when OP will accept notices in the current TED schema format 
-will be 25 October 2023, in line with the repeal of Implementing Regulation (EU) 2015/1986.
+will be 24 October 2023, in line with the repeal of Implementing Regulation (EU) 2015/1986.
  
 
 Which systems will be available for eSenders during the transition period?:: 
 
+OP is developing a range of applications to manage the collection, validation, processing, visualisation and dissemination of eForms notices. 
+OP will progressively make available the relevant applications through a link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment 
+that will help eSenders to develop and test their own applications. 
++
 Notices sent to the current eSentool will continue to be accepted until
-25 October 2023 and published on TED. As of 14 November 2022, eSenders
+24 October 2023 and published on TED. As of 14 November 2022, eSenders
 will have the possibility to send Notices in the new format; however,
 this will not become mandatory before 25 October 2023. 
 +
-From 14 November 2022 until 25 October 2023, the Publications Office
+On 14 November 2022, TED will display the new eForms while it will continue showing all notices 
+submitted for the past 10 years even after 2024. 
+From 14 November 2022 until 24 October 2023, the Publications Office
 will run two systems in parallel, but it is up to the eSenders to
 implement changes on their systems as and when best suits them during
-this time. TED will be adapted to publish notices in both formats for
-the duration of the transitional period. 
+this time. The current reception (eSentool and current eNotices) and production systems will be discontinued at the end of 2023.
 
  
 
 Until when will the current eNotices application be available?:: 
 
 Implementing Regulation (EU) 2015/1986 will be repealed on 25 October 2023. 
-The current eNotices application will be available until that date. 
+The current eNotices application will be available to submit notices until 24 October 2023. 
 +
 The new eNotices2 application will be available as of 14 November 2022
 and run in parallel with the current eNotices application during the
 transition period. 
 +
-eNotices2 will be an application which performs both functions performed 
+eNotices2 is an application that performs both functions carried out 
 by the current eNotices and eSentool applications. Authorised applications 
 will be able to send complete notices to the API data interface of eNotices2, 
 and if they are valid, they will be published in the Supplement to the Official Journal 
-of the European Union. Individuals with an eNotices2 account will be able to 
+of the European Union (OJ S). Individuals with an eNotices2 account will be able to 
 create notices within eNotices2 using its interactive web forms. 
 +
 eNotices2 will not take into account the different tailoring policies of Member States. 
@@ -68,10 +74,21 @@ It will be up to the notice authors to apply any additional tailoring required
 by an individual Member State. 
  
 
+With eForms, will there be a fixed publication schedule as there is today?::
+
+The release calendar on TED includes the dates on which there will be an issue of the OJ S. 
+The OJ S will continue to be published from Monday to Friday apart from certain national holidays. 
++
+When you submit a notice, you can select a preferred publication date, or you can ask for publication “as soon as possible”. 
+During the initial stages, OP will probably aim at publishing within five days, 
+but it may be technically possible in the future to publish sooner 
+provided the notice has passed automatic validation and the manual checks for lawfulness.   
+
+
 What is the earliest possible time by when eForms could be introduced on a national level?:: 
 
 The application of the eForms regulation in national legislation is
-not under the control of the Publications Office or the European
+not under the control of OP or the European
 Commission. We assume that in any case the earliest possible time by
 when eForms could be introduced at a national level would be the same as
 for the EU level, namely 14 November 2022. 
@@ -100,6 +117,9 @@ https://simap.ted.europa.eu/web/simap/eforms
 * eForms presentations from the TED eSenders webinar in November 2021 +
 https://op.europa.eu/en/web/ted-esenders-webinar-2021/agenda
 +
+* eForms presentations from the eForms Technical Workshop in May 2022 +
+https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda
++
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
 +
@@ -111,7 +131,7 @@ For any questions or issues, please contact the TED helpdesk at: ted@publication
 +
 
 Please note that the document "XPATHs provisional release v. 1.0.docx" is outdated 
-and will no longer be updated. The equivalent information is now available in the 
+and will no longer be updated. The equivalent information, and much more, is now available in the 
 eForms SDK, which also takes into account the fact that some Business Terms occur 
 in different contexts, and that the rules may differ between these contexts. 
  
