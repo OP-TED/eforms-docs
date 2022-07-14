@@ -51,7 +51,7 @@ The application is not integrated with any other TED applications, which means t
 ** Mandatory fields are shown by red asterisks. 
 ** Live validation fields will have a red highlight until the right pattern is entered.
 ** Some of the rules for mandatory fields and patterns aren’t fully correct in this version.
-** Clicking on The validation button produces an error.
+** Clicking on the validation button produces an error.
 
 * Submitted notices aren’t published. They will have to go through another workflow in TED Monitor before they can be published, which takes place every working day around 3 pm CET, before you can create a Change notice or continue a procedure. 
 
@@ -128,21 +128,21 @@ Documentation: Swagger UI to come
 
 === Current status 
 
-Release: Phase 1 
-
-SDK: 0.4.1 
-
-Basic technical implementation, no HTML or PDF rendering. 
-
-=== Planned 
-
 Release: Phase 2 
-
-Indicative planning: June 2022 
 
 SDK: 0.4.1 and 0.5.0 
 
-Partial rending of HTML and PDF.
+Partial rendering of HTML and PDF. 
+
+=== Planned 
+
+Release: Phase 3 
+
+Indicative planning: September 2022 
+
+SDK: 0.4.1, 0.5.0 and 0.6.0 
+
+Full rendering of HTML and PDF.
 
 
 
