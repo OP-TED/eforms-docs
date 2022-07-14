@@ -170,7 +170,7 @@ Release: Phase 2
 
 SDK: 0.4.1 
 
-This release implements the core functions for checking notices that require lawfulness authorisation, masking unpublished fields and generating the daily export files for TED. 
+This release implements the core functions for checking notices that require lawfulness authorisation, masking unpublished fields and generating the daily export files for TED. The checks on lawfulness validation are not yet fully implemented. They will be finalised with Phase 4.
 
 === Planned 
 
