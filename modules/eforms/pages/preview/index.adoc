@@ -41,7 +41,7 @@ The application requires a user account in the EU Login acceptance environment h
 
 Please be aware that the interface and the notices content are very much a work in progress in this release.  
 
-At this point, the application is incomplete, many use cases are not implemented totally and others have dependencies in other applications which are only mocked-up. Similarly, the notices content is not complete as it is missing conditional rules, and significant tweaking or corrections of the sections is still to be expected. For example, it is impossible to set the main nature in the lot for any notice type. 
+At this point, the application is incomplete, many use cases are not implemented totally and others have dependencies in other applications which are only mocked-up. Similarly, the notices content is not complete as it is missing conditional rules, and significant tweaking or corrections of the sections is still to be expected. 
 
 All the labels in the user interface (UI), notices and fields are subject to change – what you see are only placeholders and the UI is only fully available in English. The translated labels will not be available for several more months.  
 
@@ -51,19 +51,19 @@ The application is not integrated with any other TED applications, which means t
 ** Mandatory fields are shown by red asterisks. 
 ** Live validation fields will have a red highlight until the right pattern is entered.
 ** Some of the rules for mandatory fields and patterns aren’t fully correct in this version.
-** The validation button calls a mock-up of CVS.
+** Clicking on The validation button produces an error.
 
-* Submitted notices aren’t published. They will have to go through another workflow in TED Monitor before they can be published, which means neither the change notice nor the possibility of continuing a procedure can be activated at this point. 
+* Submitted notices aren’t published. They will have to go through another workflow in TED Monitor before they can be published, which takes place every working day around 3 pm CET, before you can create a Change notice or continue a procedure. 
 
-* The notices cannot be previewed in either HTML or PDF, however, a mock-up of the service is available.
+* The notices can partially be previewed in either HTML or PDF.
 
 In this version the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behavior, are consistent with SDK 0.4. In the codelist fields, prefilling of values is supported. 
 
-The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures. There is also a search feature which allows users to sort through long lists of procedures. 
+The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML. There is also a search feature which allows users to sort through long lists of procedures. 
 
 Users can create workgroups between themselves and test the definitions of roles and permissions within these workgroups. They can also work and submit notices worked upon collectively.
 
-Users can also define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available:
+Users can also define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available (please note that adding a "default" currency will not allow you to create a Change notice):
 
 * Optional fields can be set to mandatory or hidden.
 * Confidential fields can be set to be always confidential or non-confidential. 
