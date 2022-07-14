@@ -6,15 +6,19 @@ The Publications Office (OP) is developing a range of applications to manage the
 
 OP will progressively make available the relevant applications through a “Preview” environment that will help eSenders to develop and test their own applications.
 
+The applications, URLs and user data are subject to unannounced changes until the applications go live in production in November 2022. 
+
+For the applications with a web user interface (eNotices2 and TED API), users can sign in with an EU Login from the acceptance environment at  https://ecas.acceptance.ec.europa.eu/cas 
+
 The OP applications are: 
 
 * eNotices2 is the reception system for eForms. Notices can be submitted and managed through the web front-end or via API (by eSenders), replacing the current eNotices and eSentool applications. It uses CVS to validate notices before sending them to TED Monitor 2022 for publication.
 
-* CVS is the Central Validation Service for eForms. This API runs all the technical and business validation rules to check that an eForms notice is valid. It is called by eNotices2 when a notice is submitted but it can also be called at any point in a notice’s lifecycle, e.g. to check before submission.
+* CVS is the Central Validation Service for eForms. This API runs all the technical and business validation rules to check that an eForms notice is valid. It is called by eNotices2 when a notice is submitted but it can also be called at any point in a notice’s lifecycle, e.g. by an eSender to check before submission.
 
 * TED Viewer 2022 provides an API that returns an HTML or PDF rendition of an eForms XML notice at any stage of its lifecycle, e.g. before validation or after publication.
 
-* TED API allows external parties to get a key to call OP APIs and it ensures the authentication of API calls by external parties.
+* TED API 2022 allows external parties to get a key to call OP APIs and it ensures the authentication of API calls by external parties.
 
 * TED Monitor 2022 is the internal application used by OP to process and prepare the daily export of notices of the Supplement of the Official Journal (OJ S) that is published on TED. It also allows OP to check the lawfulness of certain notices and to mask unpublished fields. This application is not exposed in the Preview environment.
 
@@ -26,18 +30,16 @@ The OP applications are:
 
 Website: https://enotices2.preview.ted.europa.eu
 
-API: to come
+API endpoint: to come
 
-Documentation: https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/
+API documentation: https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/
 
 === Current status
 
 Release: NRP-A2
 
 SDK: 0.4.2 
-
-
-The application requires a user account in the EU Login acceptance environment https://ecas.acceptance.ec.europa.eu/cas  
+ 
 
 Please be aware that the interface and the notices content are very much a work in progress in this release.  
 
@@ -53,13 +55,13 @@ The application is not integrated with any other TED applications, which means t
 ** Some of the rules for mandatory fields and patterns aren’t fully correct in this version.
 ** Clicking on the validation button produces an error.
 
-* Submitted notices aren’t published. They will have to go through another workflow in TED Monitor before they can be published, which takes place every working day around 3 pm CET, before you can create a Change notice or continue a procedure. 
+* Submitted notices aren’t published. They will have to go through another workflow in TED Monitor before they can be published, which takes place every working day around 15:00 CET, before you can create a Change notice or continue a procedure. 
 
 * The notices can partially be previewed in either HTML or PDF.
 
-In this version the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behavior, are consistent with SDK 0.4. In the codelist fields, prefilling of values is supported. 
+In this version the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK 0.4. In the codelist fields, prefilling of values is supported. 
 
-The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML. There is also a search feature which allows users to sort through long lists of procedures. 
+The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML. There is also a search feature which allows users to sort through long lists of procedures. The main nature of the LOT can now be correctly defined.
 
 Users can create workgroups between themselves and test the definitions of roles and permissions within these workgroups. They can also work and submit notices worked upon collectively.
 
@@ -84,13 +86,11 @@ SDK: 0.6.2
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-The main nature of the lot can now be correctly defined.
-
 There are many improvements in the form filling tool including the possibility to filter optional fields and a notable improvement to the usability of CPV and NUTS codelists.
 
 The address book usage has been improved and the notion of main buyer allows users to set up their own “contracting body” to be always present, except within the workgroups.
 
-Users can see an improved mockup of the CVS.
+Users can see an improved mock-up of the CVS.
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported.
 
@@ -100,7 +100,7 @@ In the notice sections a search feature has been added and pagination for up to 
 
 API endpoint: https://cvs.preview.ted.europa.eu/v1/notices/validation
 
-Documentation: https://cvs.preview.ted.europa.eu/swagger-ui/
+API documentation: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 === Current status 
 
@@ -122,9 +122,9 @@ Complete implementation, including the execution of the validation rules (Schema
 
 == TED Viewer 2022 
 
-API: to come 
+API endpoint: to come 
 
-Documentation: Swagger UI to come 
+API documentation: Swagger UI to come 
 
 === Current status 
 
@@ -138,15 +138,15 @@ Partial rendering of HTML and PDF.
 
 Release: Phase 3 
 
-Indicative planning: October 2022 
+Indicative planning: August 2022 
 
 SDK: 0.4.1, 0.5.0 and 0.6.0 
 
-Full rendering of HTML and PDF.
+Final version of the applications with full rendering of HTML and PDF and using the view-templates defined in the SDK.
 
 
 
-== TED API 
+== TED API (Developer Portal)
 
 Website: https://developer.preview.ted.europa.eu/home 
 
@@ -155,8 +155,6 @@ Documentation: a dedicated section of docs.ted.europa.eu will document all APIs.
 === Current status 
 
 Final release. Users can generate and revoke an API key. Used by the other systems in Preview environment to authenticate API calls. 
-
-Connect with EU Login acceptance environment https://ecas.acceptance.ec.europa.eu/cas
 
 
 
@@ -199,4 +197,6 @@ Store and index eForms notices.
 Release: Phase 3 
 
 Indicative planning: August 2022 
+
+Final release.
 
