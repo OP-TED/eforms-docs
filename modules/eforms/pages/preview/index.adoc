@@ -8,7 +8,7 @@ OP will progressively make available the relevant applications through a “Prev
 
 The applications, URLs and user data are subject to unannounced changes until the applications go live in production in November 2022. 
 
-For the applications with a web user interface (eNotices2 and TED API), users can sign in with an EU Login from the acceptance environment at  https://ecas.acceptance.ec.europa.eu/cas 
+For the applications with a web user interface (eNotices2 and TED API), users can sign in with an EU Login account from the acceptance environment at https://ecas.acceptance.ec.europa.eu/cas 
 
 The OP applications are: 
 
@@ -104,20 +104,16 @@ API documentation: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 === Current status 
 
-Release: Phase 2 
+Release: 1.1.0 (Phase 3)
 
-The API is functional, but no validation of the notice is made, the validation report that is returned is always the same fake report with no failure. 
+SDK: 0.4.2 and 0.6.2
 
-=== Planned 
+Complete implementation, including the execution of the validation rules (Schematron).
 
-Release: Phase 3  
+We are working on resolving the following limitations and known issues:
 
-Indicative planning: July 2022 
-
-SDK: 0.6.2
-
-Complete implementation, including the execution of the validation rules (Schematron). 
-
+* As indicated above, notices can currently only be validated with the rules from SDK 0.4 and 0.6.
+* Large notices (750 KB or above) cannot be sent, due to a technical restriction.
 
 
 == TED Viewer 2022 
