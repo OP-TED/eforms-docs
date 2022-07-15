@@ -7,13 +7,17 @@
 
 Is there a general presentation of eForms available?:: 
 
-The policy background of eForms is available link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[on the DG GROW website].
+The policy background of eForms is available on the link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[DG GROW website].
 +
 The link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar] provided an updated overview of eForms implementation.
 + 
 The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/[May 2022 eForms Technical Workshop] focused on eForms technical implementation for developers 
-and building metadata-driven applications.
- 
+and on building metadata-driven applications.
++
+A follow-up eForms Technical Workshop is scheduled to take place online on 29 & 30 September 2022.
+
+
+
 
 What is the planned transition for eForms implementation on the TED portal?:: 
 
@@ -25,7 +29,7 @@ TED portal will show both the current TED schema and eForms notices.
 From 25 October 2023 onwards, the usage of eForms is mandatory and the
 Publications Office will no longer accept the current TED schema notices
 but only eForms notices. The TED portal will continue to show the TED
-schema notices that will have been received until 25 October 2023. 
+schema notices that will have been received until 24 October 2023. 
 +
 The last day when OP will accept notices in the current TED schema format 
 will be 24 October 2023, in line with the repeal of Implementing Regulation (EU) 2015/1986.
@@ -39,7 +43,7 @@ that will help eSenders to develop and test their own applications.
 +
 Notices sent to the current eSentool will continue to be accepted until
 24 October 2023 and published on TED. As of 14 November 2022, eSenders
-will have the possibility to send Notices in the new format; however,
+will have the possibility to send notices in the new format; however,
 this will not become mandatory before 25 October 2023. 
 +
 On 14 November 2022, TED will display the new eForms while it will continue showing all notices 
@@ -79,7 +83,7 @@ With eForms, will there be a fixed publication schedule as there is today?::
 The release calendar on TED includes the dates on which there will be an issue of the OJ S. 
 The OJ S will continue to be published from Monday to Friday apart from certain national holidays. 
 +
-When you submit a notice, you can select a preferred publication date, or you can ask for publication “as soon as possible”. 
+When submitting a notice, users can select a preferred publication date, or can choose publication “as soon as possible”. 
 During the initial stages, OP will probably aim at publishing within five days, 
 but it may be technically possible in the future to publish sooner 
 provided the notice has passed automatic validation and the manual checks for lawfulness.   
@@ -97,7 +101,6 @@ See also the section on link:https://ec.europa.eu/growth/single-market/public-pr
 
 
  
-
 What sources of information are available for eForms?:: 
 
 The following websites cover the various aspects of eForms: 
@@ -140,22 +143,31 @@ in different contexts, and that the rules may differ between these contexts.
 [qanda]
 
  
-Will eSenders have to send eForms for procedures that were started with the current standard forms? If so, how will the previous publication field be filled in, given that Procedure Identifier is not used in the current forms?:: 
+Will eSenders have to send eForms for procedures that were started with the current standard forms? If so, how will the previous publication field be filled in, given that the Procedure Identifier is not used in the current forms?:: 
 
 Once the use of eForms becomes mandatory, eSenders will be required to
 send eForms notices for any procedures that were started with the
 current standard forms. As there is no Procedure Identifier in the
 current forms, in these cases the notice number of the previous TED XML
-notice (as published in the OJS) must be entered in the previous
+notice (as published in the OJ S) must be entered in the previous
 publication field in the eForms notice. OP is reviewing how the eForms 
 schema links to previous notices and will harmonise them to use 
 /*/cacTenderingProcess/cac:NoticeDocumentReference/cbc:ID as a consistent 
 element in the different contexts (root, lot, contract).
 
  
+ 
+In the documentation we can read that we must use a UUID version 4 for the Procedure Identifier. Are there any limitations? Can we use every possible identifier and is it possible that two or more eSenders use the same number identifier in this case?::
+
+The Procedure UUID is not linked to the eSender but to the procedure. Same Procedure UUID documents will be linked together in the same family of documents; 
+this is the case - for instance -  for a continued procedure. In practice, it would be possible to send same family documents 
+(linked together through the same Procedure ID) through different eSenders/ platforms. 
++
+There are no limitations at this stage and version 4 UUID was chosen as the chances that the same UUID will be generated is close enough to zero to be negligible. 
 
 
-How can a contract notice (current schema) be linked to a contract award notice (eForms)?::
+
+How can a Contract Notice (current schema) be linked to a Contract Award Notice (eForms)?::
 
 eForms include some BTs with the identifier of the previous notice, regardless of 
 whether the notice uses the current TED schema or is an eForms notice. 
@@ -164,30 +176,128 @@ For eForms, the previous notice identifier can be the Notice ID (UUID-vv).
 
 
 
-
-How do we make a correction (F14) to a notice published on current schema, after transitioning to eForms?::
+How do we make a correction (F14) to a notice published in current schema, after transitioning to eForms?::
 
 In the same way that it will be possible to link current form notices to eForms 
-for procedures that started with the current form schema and ended with eForms. 
+for procedures that started with the current form TED schema and ended with eForms. 
++
 The notice in eForms format will link to the preceding TED format notice 
-by referencing its OJS number. However, a TED format notice cannot follow a notice 
-in eForms format. The OP is currently creating a converter, so a published notice 
-in TED format can be converted to a partial eForms notice. "Partial" because eForms notices 
-contain much more information that TED notices. However, the "partial" eForms notice 
+by referencing its OJ S number. However, a TED format notice cannot follow a notice 
+in eForms format. 
++
+OP is currently creating a converter, so a published notice 
+in TED format can be converted to a partial eForms notice; "partial", because eForms notices 
+contain much more information than TED notices. However, the "partial" eForms notice 
 will have to be completed and checked in the eSenders’ systems. 
 +
 Regarding the F14, there is no longer a specific form for corrections such as the current F14. 
-The Change notice business group will instead work as a separate section that will be 
+The Change notice Business Group will instead work as a separate section that will be 
 attached to any notice, to indicate that this notice corrects, changes, or otherwise modifies 
 a "parent" notice with the use of BG-9 and in particular BT-140 Change Reason Code. 
 
+
+
+Currently an F14 may not be submitted until its previous notice is published. Will there be a change with eForms?:: 
+
+With eForms, there will be a Change notice, which is a reproduction of its parent notice with an extra section 
+to advertise changes to the procurement and procurement documents and for correction of clerical errors. 
++
+A Change form will only be possible for notices whose parent notice has been published to avoid the possibility that different users 
+may act on the same notice at the same time. If the parent notice has not yet been published, users can stop publication and resubmit. 
++
+In case of many clerical errors, it will be possible to cancel a notice, which will cancel the notice itself and make it null and void, 
+but this will not cancel the procedure. The user can - in this case - republish the same notice. 
+To cancel the procedure, we would expect a Contract Award Notice with no winner. 
+
+
+
+When creating a Change notice, should we send a new notice version with all changes included AND the section with the information of what has been changed or should we only send the Change notice separately?::
+
+The Change notice Business Group works as a separate section that will be attached to any notice to indicate that this notice corrects, 
+changes, or otherwise modifies a "parent" notice (identified by NoticeID and VersionID) with the use of BG-9 and in particular BT-140 Change Reason Code. 
++
+A Change notice must contain all the information reported in the initial notice, with changes applied, as well as a section 
+describing the latest changes (to the immediately preceding Notice): 
++
+Changes may apply to notices of any form type. A Change notice may only concern a single notice and contains all the information from 
+that initial notice with applied changes in addition to the information on those changes. 
++
+When a change is applied to a previous Change notice, the consolidated text must integrate all changes from previous versions, 
+and only the latest changes are described in the changes section. 
++
+A Change notice may report that the procurement documents referenced by the initial notice have changed, and the date of that change, 
+using BT-718 Procurement Documents Change Indicator and BT-719 Procurement Documents Change Date. 
+A description of the changes to the procurement documents may be included in BT-141 Change Description. 
++
+The Notice VersionID is described in the link:https://docs.ted.europa.eu/eforms/0.7.0/schema/elements.html#noticeIDSection[Notice & Version Identifiers] 
+section: "Versions of a notice are purely editorial and for a given Notice ID, a single version may be published." 
++ 
+The Notice VersionID can relate only to the editorial versions of the same notice (with the same Notice Identifier), 
+managed by the generating application (e.g. eNotices2 or an eSender’s system), before publication of the notice. 
+Only one of these versions will get published. 
++ 
+The version ID values of different notices do not relate to each other. So, the VersionID of a Change notice 
+is not related to the VersionID of the preceding notice. 
++ 
+In the link:https://docs.ted.europa.eu/eforms/0.7.0/schema/change-notice.html[Change Notice] section, the word "version" is used 
+to describe a notice or any of the related Change notices. 
+
+
+
+We understand that the Change notice shall have its own identifier and version that differs from the one of the notice that has been changed. Does that mean that the initial notice always keeps the same version number?::
+
+Yes. Multiple version IDs are for pre-publication, when eSenders might have multiple versions of the same notice on their systems 
+and submit some of them. Each time a notice with the same notice identifier is submitted and accepted by the destination application 
+(and publication is not stopped by the user), it must have a different version ID (starting at "01" and incrementing).
++
+The first time the notice is accepted and published, the version ID of the notice they submitted is then final, 
+and no other notices with the same notice identifier will be accepted. The version ID should increase if the notice is stopped 
+and resubmitted or in case of error. 
+
+
+
+Can you please clarify the meaning of each choice in the codelist Change corrig justification and when to use them?::
+
+The below Change-corrig-justification codelist improvements will be made available at a later stage on EU Vocabularies. 
++
+*link:https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/change-corrig-justification[Change-corrig-justification] codelist improvements*
++
+This codelist is required for BT-140 Change Reason Code when using a Change notice.  
++
+This proposal clarifies each code by adding a description and by changing two labels:  
++
+- from "Cancellation" to "Cancel this notice" to make it clear that it only cancels the notice, not the procedure or the lot, 
+which must be cancelled via a result notice with no winner.  
+- from "Availability information" to "Information now available" to distinguish it more clearly from "Information updated". 
+
+
+
+What will be the notice status of an eForms notice through its lifecycle?::
+
+A user working on the user interface of eNotices2 will be able to see the following notice status: 
+- Draft: The notice is being drafted. 
+- Locked: The notice is being edited. 
+- Validated: The notice is validated and ready for submission. 
+- Submitted: The notice is successfully received, validated and sent to OP (received by TED-Monitor-2022). 
+- Published: The notice is published online on TED. 
+- Stopped: Publication of the notice was stopped by the buyer/ eSender before publication and the request was accepted. 
+- Not published: The notice was received but not published on TED 
+
+
+
+What is the meaning of the status “Not published”? Will there be reason codes for “Not Published” notices?::
+
+If a notice is rejected due to manual lawfulness checks, it will obtain the status “Not published”. 
+From an API point of view, a notice that fails the CVS check will not even reach status “submitted”. 
+The CVS will give a validation report, which will detail all the reasons why a notice did not get through and the status “Not published” 
+can be queried through the API. Rejection due to lawfulness manual check will be communicated via email to the contracting authority only.
 
 
 
 What is meant by E1, E2, E3, E4 and E5 in the Excel document annexed to the eForms regulation?:: 
 
 E1, E2, E3, E4 and E5 refer to forms that are not part of
-the eForms regulation, but they were included in the “extended annex” to
+the eForms regulation, but they were included in the “Extended Annex” to
 regulation 2019/1780 available at: https://ec.europa.eu/docsroom/documents/43488
 +
 These forms will be implemented after eForms are mandatory in October
@@ -204,39 +314,53 @@ following notices:
 
 
 
-What is the notice variant Business registration information used for?:: 
+What is the legal value of the five other non-eForm forms?::
+
+The Implementing Regulation has 40 eForms. The 5 other forms are not eForms and implement other EU regulations but they are included in the same systems at OP:
+- T01, T02: regulation 1370/2007 (public passenger transport by rail and by road) 
+- X01, X02: business registration (European economic interest grouping and European company/cooperative society) 
+- CEI: call for expression of interest (by EU institutions) 
+
+
+
+What is the notice variant Business Registration Information used for?:: 
 
 The “Business Registration Information Notice” scheme refers to European
 Company and European Economic Interest Grouping notices, currently
-available as interactive PDFs only. They are not part of the eForms implementing 
-regulation but they are implemented in the same systems at the Publications Office 
+available as interactive PDFs only. They are not part of the eForms Implementing 
+Regulation but they are implemented in the same systems at the Publications Office 
 so they appear in the eForms schema and rules as forms X01 and X02.
 
  
 
-Currently an F14 may not be submitted until its previous notice is published. Will there be a change with eForms?::
+What is foreseen in eForms for countries that have no NUTS code?::
 
-With eForms there will be a Change notice, which is a reproduction of its parent notice with an extra section to advertise changes to the 
-procurement and procurement documents and for correction of clerical errors. A Change form will only be possible for notices whose parent notice 
-has been published to avoid the possibility that different users may act on the same notice at the same time. 
-If the parent notice has not yet been published, users can stop publication and re-submit. 
+The eForms Regulation Annex 2 states that for both BT-507 Organisation Country Subdivision, and BT-5071 Place Performance Country Subdivision, 
+"The NUTS3 classification code must be used." BT-507 and BT-5071 are intended to be used only when the NUTS3 level is known.
+If a country does not have NUTS3 code, then it is not required. SDK 0.5.0 and future versions have reduced the NUTS codelist to only level 3 NUTS codes. 
 +
-In case of many clerical errors, it will be possible to cancel a notice, which will cancel the notice itself and make it null and void, 
-but this will not cancel the procedure. The user can - in this case - republish the same notice. 
-To cancel the procedure, we would expect a Contract Award Notice with no winner.
+BT-507 is only mandatory if one or more of BT-513 Organisation City, BT-512 Organisation Post Code, or BT-510 Organisation Street is present. 
+And BT-5071 is only mandatory if one or more of BT-5131 Place Performance City, BT-5121 Place Performance Post Code, or BT-5101 Place Performance Street 
+is present. 
++
+BT-514 Organisation Country Code, and BT-514 Place Performance Country Code, are used to specify a country. If the country is used as a geographical 
+region, neither BT-507 nor BT-5071 is required. 
++
+When Place Performance Services Other (BT-727) has the value "anyw-cou" (Anywhere in the given country), the Place Performance Country Code (BT-5141) is mandatory. 
 
 
 
-How will tailoring by Member States be handled by TED and the EU Publications Office?:: 
+How will tailoring by Member States be handled by TED and the Publications Office?:: 
 
 National specificities and their implementation at national, regional
-and local level are outside the OP's remit. 
+and local level are outside OP's remit. 
 +
 In the eNotices2 form-filling tool user interface, users will be able to fill in and
 send notices based on the eForms regulation. eNotices2 is not aware of
 and does not apply any compliance with Member State tailoring; for
 example, it will not check if an optional field (according to the EU
-regulation) is mandatory at national level.  +
+regulation) is mandatory at national level.  
++
 The same applies to notices sent by eSenders via the eNotices API
 (the successor of eSentool). All notices go through the same checks of
 the Central Validation Service, not applying any Member State
@@ -274,10 +398,13 @@ it easier and more streamlined for contracting parties to publish
 notices, while mitigating the inherent complexity of the eForms
 regulation as much as possible.
 +
-Updated presentations are available at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar].
+Presentations are available at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar]. An updated demo 
+of eNotices2 front-end application was presented during the 
+link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[eForms Technical Workshop of May 2022]. 
+
 
  
-From 14 November 2022, will EU public buyers  be able to create their eForms in eNotices2? Will it propose all the fields (mandatory and optional)?::
+From 14 November 2022, will EU public buyers be able to create their eForms in eNotices2? Will it propose all the fields (mandatory and optional)?::
 
 This is the point of eNotices2: it will provide all mandatory and optional fields 
 and it will have rules to determine which fields are mandatory under certain conditions. 
@@ -289,8 +416,10 @@ the organisation can “hide” these optional fields from view should they wish
 
 Will there be a test system where users can test their eForms applications/ development?::
 
-An instance of the OP applications is currently being deployed as a “Preview” environment. 
-The applications will be made progressively available during Q2 2022.
+An instance of the OP applications is currently being deployed as a link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment. 
+The applications started to be made progressively available during Q2 2022.
+
+
 
 Will you continue to send email notifications, e.g. to the Contracting Authorities, to remind them to publish a contract award notice?::
 
@@ -298,6 +427,7 @@ We have foreseen quite an extensive notification system, which will contain seve
 including email communications. We should also provide the means to retrieve the information about the contracting authority 
 sending notice through an eSender via the Notice Author concept, when it is needed. We have not yet decided if the reminder 
 to publish a Contract Award Notice will be sent through an email notification, though it will likely be the case at some point.
+
 
 
 Will eNotices2 send email notification for notices submitted by Web Services about publications or non-publication?::
@@ -318,10 +448,18 @@ Will a standard visual display be applied for eForms? Is it possible for the Pub
 The eForms will be displayed as standard forms, both within the
 application that will be used to create and submit them (eNotices2) and
 for their display on the TED website. The visual display will focus on
-user-friendliness. As part of the ongoing development of eForms, we have
-published the provisional samples of the 40 mandatory notices in PDF format at:
-https://simap.ted.europa.eu/documents/10184/320101/eForms+notice+PDF+samples+2021-07-22/c6785da3-8907-4071-9980-bb670b8ae9b8
-
+user-friendliness. As part of the ongoing development of eForms, the provisional samples of the 40 mandatory notices in PDF format 
+was published in July 2021 at: https://simap.ted.europa.eu/documents/10184/320101/eForms+notice+PDF+samples+2021-07-22/c6785da3-8907-4071-9980-bb670b8ae9b8
++
+An updated link:https://simap.ted.europa.eu/documents/10184/320101/eforms_2022-05-10-html/6be809e4-ac8a-4bc1-96d9-11b5fc366e6a[HTML file] was published 
+in May 2022. It provides sample data to make it easier to see the TED Viewer structure, understand how the elements fit together 
+and allows to switch between different notice types. The biggest structural change compared to samples from July 2021 
+is the decision to group almost all the organisation information in one section. The current version is not yet final 
+but it is quite close to what the eForms TED Viewer will produce. 
++
+The link:https://github.com/OP-TED/eForms-SDK/tree/develop/view-templates[view-templates] available in the SDK 
+contain the technical definition of how an HTML/ PDF will be generated by TED Viewer 2022. 
+ 
  
 
 How will eForms notices be published and displayed on the TED website?:: 
@@ -348,8 +486,11 @@ notices) on the TED website is 10 years (data available as of
 
 Will the Publications Office be providing eForms-rendering stylesheets?::
 
-OP does not intend to provide stylesheets. However, in the future users will be able to render eForms notices 
-using the service provided by TED Viewer 2022, which is going to be available through an API.
+OP does not intend to provide XSL stylesheets. The view-templates in the SDK define how eForms will be displayed by TED Viewer 2022, 
+using the eForms expression language (EFX). 
++
+Users will also be able to render eForms notices in HTML or PDF using the service provided by TED Viewer 2022, which is going to be available through an API.
+
 
 
 Will the Publications Office be providing XML notice samples for every PDF notice sample?::
@@ -388,7 +529,7 @@ provided in 2019 and 2020 through separate announcements on SIMAP. In
 order to assist eSenders and eForms developers, new releases of the
 eForms artefacts are now bundled together in the form of a Software
 Development Kit (SDK). This includes the eForms schema, Schematron
-validation rules, eForms documentation and sample XML documents. All
+validation rules, eForms documentation, sample XML documents and other elements. All
 artefacts are versioned together with the version number of the eForms
 SDK. 
 +
@@ -398,12 +539,16 @@ version of the eForms SDK used when they were created or last modified.
 +
 For more information on SDK versioning: https://docs.ted.europa.eu/eforms/latest/versioning
 +
-The purpose of the SDK is to assist eForms developers in creating applications that generate eForms notices in order to send them to eNotices2 in the future through TED API. 
-The components of the SDK are intended to be directly consumed by these applications. Multiple versions of the SDK will be maintained and remain available as long as they are 
-supported by the Legislation, allowing for more flexibility on the timing of upgrades on the eSenders’ applications. Updating applications to use new versions of the SDK 
-should require minimal effort if the applications are built to integrate the SDK components.
+The purpose of the SDK is to assist eForms developers in creating applications that generate eForms notices in order to send them to eNotices2.
++
+The components of the SDK are intended to be directly consumed by these applications. Multiple versions of the SDK will be maintained and remain 
+available as long as they are supported by the Legislation, allowing for more flexibility on the timing of upgrades on the eSenders’ applications. 
+Updating applications to use new versions of the SDK should require minimal effort if the applications are built to integrate the SDK components.
 +
 More information about the SDK was presented at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar].
++
+The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[May 2022 eForms Technical Workshop] focused on building metadata-driven 
+applications using the SDK.
 +
 For more information and examples of metadata driven applications: https://docs.ted.europa.eu/eforms/latest/metadata-driven-applications.html
 
@@ -412,21 +557,28 @@ For more information and examples of metadata driven applications: https://docs.
 Is there a roadmap (release plan) for future eForms SDK releases or a set release date for version 1.0.0 of the SDK?::
 
 The eForms SDK is a complicated development and information is made available as fast as possible. 
-An initial version of the SDK roadmap is available at https://docs.ted.europa.eu/home/eforms/roadmap/index.html[eForms SDK roadmap] 
+An initial version of the SDK roadmap is available at link:https://docs.ted.europa.eu/home/eforms/roadmap/index.html[eForms SDK roadmap] 
 and will be updated progressively. The page was created with a view to outlining the changes and additions to the eForms SDK 
 planned in the upcoming releases.
 +
-The idea of the SDK is not to be bound by specific release dates. There is currently no precise release date for version 1.0.0 of the SDK. 
-For this, all components of the SDK would need to be in place and complete, along with stable file formats and all metadata 
-in the way we need them to be available for November 2022. Version 1.0.0 of the SDK is the OP’s top priority, 
-but having all features in place is not foreseen before July of 2022.
+The idea of the SDK is not to be bound by specific release dates. The target release date for version 1.0.0 of the SDK is August 2022. 
+For this, all components of the SDK would need to be in place and complete, along with stable file formats. Version 1.0.0 of the SDK 
+is OP’s top priority, but having all features in place is not foreseen before August of 2022.
++
+However, please note that version 1.0.0 refers to the technical compatibility of the SDK 
+as described in link:https://docs.ted.europa.eu/eforms/latest/versioning.html[eForms SDK Versioning].
++
+The metadata of the SDK, in particular the schema and the rules, will still change after version 1.0.0 and until shortly before November 2022. 
++
+The European Commission is planning to publish an amendment to the 2019 eForms implementing regulations. 
+This amendment will change and add several business terms. 
 
 
 
 Since the codelists are bound to SDK version, is there a risk that an SDK version/ lifetime can be short-lived?::
 
 Versions of the SDK might be short-lived due to various reasons; however, multiple versions of the SDK can be used at the same time 
-provided they are still acceptable. The OP will aim to avoid breaking changes, but stopping support for an SDK 
+provided they are still acceptable. OP will aim to avoid breaking changes but stopping support for an SDK 
 will often come for legal reasons and will be given enough transition time. 
 +
 Having a metadata-driven approach to this should enable users to make the technical transition with little to no effort. 
@@ -441,16 +593,16 @@ Other standardisation efforts provide information on how the business terms are 
 
 Fields.json does not attempt to follow or set a standard. It is a custom representation of field metadata 
 that was chosen as the most suitable way for eForms systems to consume the information. 
-OP is using it for its own applications (like eNotices2) and we aim to have a stable structure 
-that can also be useful to external parties. The eForms implementing regulation does not define many maximum length constraints 
+OP is using it for its own applications (like eNotices2), and we aim to have a stable structure 
+that can also be useful to external parties. The eForms implementing regulation does not define any maximum length constraints 
 but we consider they are needed and have encoded them for each relevant field. Procurement notices are not intended 
 to replace all the documents of a procurement procedure so there should be no need to publish very long texts. 
 
 
-The XML schemas, its documentation and especially the mapping from business terms to fields in the schemas is essential to implementers in regards to technical and legal correctness. This includes the mapping of business terms to the XML schemas (XPATHs).::
+The XML schemas, its documentation and especially the mapping from business terms to fields in the schemas is essential to implementers in regard to technical and legal correctness. This includes the mapping of business terms to the XML schemas (XPATHs).::
 
 The XML schemas and all relevant documentation are available on the eForms SDK; the IDs for Fields are always based on the "parent" BT. 
-We have a specific definition for https://docs.ted.europa.eu/eforms/0.5.0/fields/index.html#_what_is_a_field[Fields].
+We have a specific definition for link:https://docs.ted.europa.eu/eforms/0.5.0/fields/index.html#_what_is_a_field[Fields].
 They most often map to single XML elements, but not always. The mapping of Fields to XML elements is contained in the fields.json file.
 
 
@@ -458,6 +610,30 @@ They most often map to single XML elements, but not always. The mapping of Field
 If we were to use the SDK, would there be the need to customise for the national adoptions?::
 
 Yes, customisations and tailoring would need to be applied locally, on the user’s application.
+
+
+
+Will OP be providing a mapping of current TED XML schema to eForms?::
+
+To support the transition between the two data formats, OP is mapping the fields of the current TED XML schema to the eForms schema. 
++
+This link:https://simap.ted.europa.eu/documents/10184/320101/TED-XML-to-eForms-mapping-OP-public-20220404/a0fed751-76cb-491b-957d-96985fdc82a4[mapping in Excel]
+builds on the 2021 mapping of business terms by the European Commission and completes it with the technical mapping of TED XML 
+to the fields of the eForms schema at XPath level. 
++
+Not all standard forms (SF) are included, and there is not an exact business correspondence between each SF and each eForm notice. 
++
+This Excel file is provided "as is" and may serve as a guide. It will not be further updated but any feedback is welcome via ted@publications.europa.eu 
++
+OP is sharing the XSLT files with the actual implementation of these mappings, which will be progressively enriched: 
+https://github.com/OP-TED/ted-xml-data-converter. 
++
+OP is also intending to develop an application to convert from TED XML to eForms XML using these XSLT files and which will be provided as a public API service. 
++
+The conversion of TED XML will always result in an invalid eForms XML because, for example, not all fields exist, or text fields 
+cannot be turned into codelist values. But it should allow users and systems to carry over as much as possible of existing notices into the new format, 
+for example, when continuing a procedure that overlaps the switch between the two schemas. 
+
 
 
 [NOTE]
@@ -478,9 +654,18 @@ You can also use the "watch" repository feature of Github to receive notificatio
 Will there be a TED qualification environment available for eForms? When will there be a way to test the submission of eForms notices?:: 
 
 Unlike the current standard forms in eSentool, there will be no
-qualification procedure for eForms. A Central Validation Service (CVS)
-will be remotely available so that you can check the validity of eForms
-notices. The current qualification procedure will be phased out.  
+qualification procedure for eForms and any user with an API key and an eNotices2 account 
+will be able to submit notices via the API. Similarly, Qualification and Simulation endpoints will cease to exist. 
+The environments available will be instead Production and Preview.  
++
+The Preview environment that we are currently setting up will be available indefinitely 
+so that users can test validation of notices against new versions of the SDK. The latter will first be implemented 
+in Preview environment during a pre-announced transition period before going into Production. 
+An SDK Management Service will be accessible as an API so that users can check all active versions of the SDK at any given time. 
++
+A Central Validation Service (CVS) will be remotely available so that you can check the validity of eForms
+notices. As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation 
+will not be taken into account for the CVS.     
 +
 The CVS is not expected to be made available before mid-2022. 
 +
@@ -491,9 +676,9 @@ https://simap.ted.europa.eu/web/simap/eforms
 
 Will a Sandbox be provided for testing the Web Services?::
 
-A “Preview” environment will be made available during Q2 2022, which will be 
-announced through the usual channels. We plan to offer the possibility for users to go through 
-all the steps from submission to publication, but this will be done incrementally, gradually adding steps to the environment. 
+A link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment is gradually being made available. 
+We plan to offer the possibility for users to go through all the steps from submission to publication, 
+but this is done incrementally, gradually adding steps to the environment. 
 
 
 
@@ -524,13 +709,22 @@ The new URL will be communicated when it becomes available.
 
 
 
-Will there be some API available, which users can use to transform/convert TED XML to eForms?::
+Will there be some API available, which users can use to transform/ convert TED XML to eForms?::
 
-A converter is still in design, which will take a TED XML and convert it to a partial eForms XML. “Partial” because eForms notices 
-contain more information than current TED notices. If we are going to expose the converter to users, it will be through the TED API 
-as a call service, however, a full conversion will not be possible. In the short term and until the converter is in place, 
-the information from the previous TED schema form will need to be entered again in the eForm for procedures that span the transition period. 
-If a field doesn’t exist in eForms, it’s only possible to use the free text of Additional Information field (BT-300). 
+A converter is being developed, which will take a TED XML and convert it to a partial eForms XML. “Partial” because eForms notices 
+contain more information than current TED notices. We will expose the converter to users through an API as a call service;
+however, a full conversion will not be possible. For notice types that the converter does not cover, 
+the information from the previous TED schema form will need to be entered again in the eForm for procedures that span the transition period.
+If a field in a TED XML notice doesn’t exist in eForms, it’s only possible to use the free text of Additional Information field (BT-300).
++
+The latest release of the TED XML to eForms Converter (TEDXDC) has been published on link:https://github.com/OP-TED/ted-xml-data-converter[GitHub]. 
+This release of the tool can partially convert Contract Notices published using the R.2.0.9 TED XML schema. 
+
+
+
+Can I send an incomplete notice via Web Service-API and continue via eNotices2 UI?::
+
+No, the notices must be complete before they are submitted via API.
  
  
  
@@ -593,7 +787,37 @@ They may be listed in a table in a new section. A mapping between OPT/OPP and BT
 
 
 
-How to fill in BT-3201 Tender Identifier?::
+What does ORG-XXXX or TPO-XXXX mean? How is this value defined? What does the value for field "OPT 300" mean and how do we find these values?::
+
+Each organisation used in a Notice is defined in an <efac:Organization> element, 
+see https://docs.ted.europa.eu/eforms/0.7.0/schema/parties.html#organizationSection. It has a single identifier, 
+which must follow the pattern "ORG-XXXX", where "XXXX" is four digits. The first organisation must have identifier "ORG-0001", 
+the second one "ORG-0002", etc. A numerical sequence in numbering does not have to be observed.  
++
+An organization might have several contact details, each for one or more different functions. Each contact is defined in a TouchPoint, 
+which has an identifier following the pattern "TPO-XXXX". An example XML for a Buyer is shown in: 
+https://docs.ted.europa.eu/eforms/0.7.0/schema/parties.html#buyerSection. 
++
+Within the rest of the Notice, any function performed by an organisation can then link to that organisation, or to one of its touchpoints, 
+by using the relevant identifier as a reference. Examples of this can be found in: 
+https://docs.ted.europa.eu/eforms/0.7.0/schema/parties.html#_legislation_information_provider 
+and the following section: https://docs.ted.europa.eu/eforms/0.7.0/schema/parties.html#_other_rolessubroles  
++
+These references use fields OPT-300 and OPT-301. These and other similar references are listed in: 
+https://docs.ted.europa.eu/eforms/0.7.0/schema/identifiers.html 
+
+
+
+What are the Roles/ Subroles with which a TouchPoint can be associated?:: 
+
+Roles/subroles it may be associated with are in table 2 in the Documentation section
+link:https://docs.ted.europa.eu/eforms/0.7.0/schema/identifiers.html#_referring_to_objects[IDs & References].
++
+A Touchpoint could be referred to for the following roles/subroles: 
+[placeholder for excel}
+
+
+How should we fill in BT-3201 Tender Identifier?::
 
 For TenderID, as for most identifiers, a dedicated scheme similar to that defined for other identifiers, has been specified. 
 Information is available in the documentation in the link:https://github.com/OP-TED/eForms-SDK[eForms SDK].
@@ -636,13 +860,10 @@ as with some uses of BT-500, the text may be the name of an entity that may exis
 +
 BT-500 (Organisation Name) is used in four contexts: 
 +
-BT-500-Organisation-Company - A company may have different names in different languages.
-+
-BT-500-Organisation-TouchPoint - A contact unit within a company may have different names in different languages. 
-+
-BT-500-UBO - This is the personal Name of the Ultimate Business Owner, and so cannot be expressed in multiple languages.
-+
-BT-500-Business - Only allowed for X01 and X02 notice type forms. As these are Business Registration Information Notice forms, only one Business Name is allowed. 
+- BT-500-Organisation-Company - A company may have different names in different languages.
+- BT-500-Organisation-TouchPoint - A contact unit within a company may have different names in different languages. 
+- BT-500-UBO - This is the personal Name of the Ultimate Business Owner, and so cannot be expressed in multiple languages.
+- BT-500-Business - Only allowed for X01 and X02 notice type forms. As these are Business Registration Information Notice forms, only one Business Name is allowed. 
 
 
 
@@ -673,7 +894,7 @@ For example, BT-118 Notice Framework Value, can be unpublished. If that is the c
 and then will have to insert BT-197 (why it is unpublished), and BT-198 (when this field will be made public). 
 A user may also want to add BT-196 (an optional description). 
 +
-On TED, the unpublished fields will still be present but their content will be replaced with masking values, 
+On TED, the unpublished fields will still be present, but their content will be replaced with masking values, 
 e.g. text fields will contain "unpublished" and numbers will be set to -1. 
 
 
@@ -760,6 +981,21 @@ We will keep updating these artefacts regularly as they evolve.
 
 
 
+What are CM and EM fields?::  
+
+EM is mandatory if the related information exists, i.e. if the Contracting Authority has the information, they should fill it in.
+CM is Conditional Mandatory, i.e. mandatory if certain conditions are met.  
++
+References to CM and EM are not part of the annex to the Regulation; they are included in the so called “Extended Annex” Excel sheet 
+that was provided for information and clarification purposes. 
+
+
+Are the rules for CM documented in detail? If so, where can one read about these conditions?:: 
+
+The conditions are visible in the Schematron rules as well as in the eForms expression language, efx-grammar. 
+
+
+
 Why do the validation rules differ in some cases between the Extended Annex to the Regulation and fields.json? For example, CELEX states that BT-52 (Successive Reduction) for eForm 16 is mandatory, but fields.json has no mandatory rule for this field.::
 
 The validation rules in the fields.json differ from those in the CELEX table because the business logic 
@@ -767,8 +1003,16 @@ requires the aggregation of multiple conditions, and sometimes the introduction 
 not all of which are directly shown/visible in the Regulation Annex. Not all of the required business rules 
 have been implemented in the SDK, and so the fields.json is not yet complete. 
 +
-BT-52 belongs to a Business Group (BG-709 Second Stage) which is CM (Conditional Mandatory) and may not always exist; 
+BT-52 belongs to a Business Group (BG-709 Second Stage) which is CM (Conditionally Mandatory) and may not always exist; 
 in fact, BG-709 may only exist when the procedure is a "competitive dialogue", "innovation partnership" or "negotiation with a prior CFC". 
+
+
+
+BT-541 is not marked as mandatory in CELEX and fields.json, but it is mandatory according to schema. Which one should be considered correct?:: 
+
+BT-541 is held in the element efbc:ParameterNumeric which is mandatory within its parent element efac:AwardCriterionParameter. 
+But the parent element efac:AwardCriterionParameter is optional, and so in the context of a LOT, BT-541 is optional. 
+The element efac:AwardCriterionParameter is designed to hold a single criterion, with a number value (BT-541) and a dimension (BT-5421, BT-5422 or BT-5423). 
 
 
 What are Schematron files for eForms? Can you provide samples of them?::
@@ -783,7 +1027,7 @@ for their completeness or stability and without any documentation or support at 
 
 
 
-Will OP be providing an Excel sheet with the validation rules of inidvidual fields for eForms?::
+Will OP be providing an Excel sheet with the validation rules of individual fields for eForms?::
 
 OP does not intend to use an Excel spreadsheet to document the validation rules for fields within eForms. 
 Due to the increased number of fields in eForms compared to the existing TED XML, there will be a very large number of validation rules, 
@@ -805,7 +1049,7 @@ in Schematron Validation Report Language (SVRL).
 Are the Schematron validation rules documented in a more” human readable” form? Can you provide a data model for eForms domain - something like an "entity -relationship diagram"?::
 
 Some of these rules are in the documentation, e.g. which field must use which codelist. We currently do not have an exhaustive 
-human-readable documentation or an entity-relationship diagram, but the OP is working on human-readable versions of the business rules 
+human-readable documentation or an entity-relationship diagram, but OP is working on human-readable versions of the business rules 
 that can be linked to the technical validation rules. For the time being, all information is communicated through the SDK, 
 but ideas for documenting rules are welcome. 
 
@@ -841,7 +1085,7 @@ terminology) as on TED (which follows the EU terminology).
 What are the technical restrictions in eForms?::
 
 There will be some throttling to prevent possible abuse of the system. The new eNotices2 application currently being developed 
-will have a limit of 2000 Lots for the user interface, however, the OP may decide to impose lower limits in the future. 
+will have a limit of 2000 Lots for the user interface, however, OP may decide to impose lower limits in the future. 
 + 
 The technical limit for the number of LOTs is 9999. This is because the technical identifier of a LOT is 
 "LOT-" followed by four digits. The identifier value "LOT-0000" is reserved as a "technical" lot for Procedures without LOTs. 
@@ -868,14 +1112,26 @@ We have not published a list of these regular expressions, but they can be found
 
 
 
-== Code lists 
+== Codelists 
 [qanda] 
 
 
-Are all eForms codelists published on the EU Vocabularies site?::
+Are all eForms codelists published on the EU Vocabularies site? Where do we find the most recent and correct version of the codelists, on GitHub or the EU Vocabularies Authority tables and taxonomies?::
 
-There are codelists that have no relevance or use outside the context of eForms; these are not published on the EU Vocabularies website, 
-but are published as part of the eForms SDK. For more information, see https://docs.ted.europa.eu/eforms/0.5.0/codelists/index.html[Tailored Codelists] 
+There are codelists that have no relevance or use outside the context of eForms; these are not published on the EU Vocabularies website
+but are published as part of the eForms SDK. 
++
+The codelists in the "codelists" folder of the SDK in GitHub should be used for developing eForms applications. This is because: 
+- Some codelists are "tailored" codelists, using a subset of values from their "parent" codelists. These will not be published 
+on the EU Vocabularies Authority tables page. 
++
+- Some codelists are "technical" codelists that are required only because of the use of UBL to implement eForms. 
+The "conditions" codelist for BT-70 is an example. These will not be published on the EU Vocabularies Authority tables page. 
++
+- Some codelists are made available first in the SDK on GitHub, because the process for publishing them 
+on the EU Vocabularies Authority tables page takes longer. 
++
+For more information, see https://docs.ted.europa.eu/eforms/0.7.0/codelists/index.html[Tailored Codelists] 
 in the documentation.
 
 
@@ -886,6 +1142,13 @@ The codelist files use the OASIS standard Code List Representation (genericode) 
 (see https://docs.oasis-open.org/codelist/genericode/v1.0/genericode-v1.0.html) which typically uses the "gc" suffix for filenames. 
 They contain translations in the 24 official languages of the EU. The translations files contain translations for all business terms, 
 fields and decorations used in eForms. For convenience to developers, the codelist translations are also included in the translations files. 
++
+The values of the @listName attributes correspond to the identifiers of the codelists. The filenames of the codelists 
+match the codelists identifiers for entire (published on EU Vocabularies) or technical codelists. But tailored codelists contain subsets of entire codelists, 
+and their filenames are derived from both the tailored codelist identifier and the parent entire codelist identifier. 
++
+For more information, see https://docs.ted.europa.eu/eforms/0.7.0/codelists/index.html[Tailored Codelists] 
+in the documentation.
 
 
 
@@ -895,6 +1158,28 @@ As supplementary CPV codes are not mentioned in the regulation, they are not spe
 Current use of supplementary CPV codes is very low and there no plans to use them in eForms.  
 +
 However, the eForms schema will allow the addition of other classifications if needed in the future.
+
+
+
+BT-755-Lot, BT-772-Lot and BT-777-Lot all reference codelistes in the“xPathAbsolute”/”xPathRelative” field, have a “type”-attribute called “text-multilingual” and a “legal-type”-attribute called “TEXT” and therefore a codelist is not attached to these fields. All those codelists are at least referenced in the “xPathAbsolute” field. How are these fields validated against the codelists?::
+
+These Business Fields contain multilingual text, so their validation is limited to checking the declared language codes; 
+they are not validated against codelists. However, codelists are referenced in their "xPathAbsolute" field, in an ancestor or sibling node 
+of the Business Field. Validation of the codelist values of these nodes is included in the Schematron validation files in the SDK. 
++
+For example, Business Field BT-755-Lot has field "xpathAbsolute" with a value of: 
+"/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:ProcurementAdditionalType[cbc:ProcurementTypeCode/@listName='accessibility']/cbc
+:ProcurementType". 
+The leaf element cbc:ProcurementType is validated for compliance with language rules. The sibling element cbc:ProcurementTypeCode has a 
+@listName attribute set to "accessibility". The Schematron includes a rule which restricts the content of this sibling element to the values 
+in the "accessibility" codelist. 
+
+
+
+Why is the codelist for BT-715/BT-716/BT-725 (green-procurement) not present either on the EU vocabularies Authority tables page or in the "Codelist" folder on GitHub?:: 
+
+The Commission is preparing some changes to the eForms Regulation Annex table 2, to be published and implemented before November 2022. 
+Some of these changes affect Green Procurement and may affect the "green-procurement" codelist. We will publish this codelist as soon as it has been finalised. 
 
 
 
