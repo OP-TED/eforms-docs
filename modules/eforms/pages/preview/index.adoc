@@ -24,13 +24,16 @@ The OP applications are:
 
 * TED is the public dissemination website for European procurement notices in the OJ S. It is being adapted to handle eForms notices and will be replaced by a new TED 2.0 website in spring 2023. There is no Preview environment for TED.
 
+image::systems-diagram.png[]
 
 
 ==  eNotices2
 
 Website: https://enotices2.preview.ted.europa.eu
 
-API endpoint: to come
+API endpoint: https://enotices2.preview.ted.europa.eu/esenders/api/notice/notices/
+
+(The URLs and parameters will change in later releases)
 
 API documentation: https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/
 
@@ -74,7 +77,8 @@ The first iteration of the address book has been implemented, which allows users
 
 eNotices2 uses the codelists from the SDK, which have not been tailored. This means that certain codelists have too many entries, such as countries or languages that no longer exist. 
 
-The eNotices2 API for this release is not yet available for external access. The Swagger UI provides basic documentation of the four functions. The URLs and parameters of the API are likely to change in future releases.
+The eNotices2 API URLs and parameters will change in later releases. The Swagger UI provides basic documentation of the four functions. 
+
 
 === Planned 
 
