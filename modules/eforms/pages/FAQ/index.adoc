@@ -852,17 +852,39 @@ link:https://docs.ted.europa.eu/eforms/0.7.0/schema/identifiers.html#_referring_
 +
 A Touchpoint could be referred to for the following roles/subroles: 
 +
-- | OPT-301  | Additional Info Provider Technical Identifier Reference                  
-- | OPT-301  | Document Provider Technical Identifier Reference                         
-- | OPT-301  | Employment Legislation Organization Technical Identifier Reference       
-- | OPT-301  | Environmental Legislation Organization Technical Identifier Reference    
-- | OPT-301  | Tax Legislation Information Provider Technical Identifier Reference      
-- | OPT-301  | Mediator Technical Identifier Reference                                  
-- | OPT-301  | Review Information Providing Organization Technical Identifier Reference 
-- | OPT-301  | Review Organization Technical Identifier Reference                       
-- | OPT-301  | Tender Evaluator Technical Identifier Reference                          
-- | OPT-301  | Tender Recipient Technical Identifier Reference
+[cols="1,6", options="header"]
+|===
+| Field | Name of the field
+| OPT-301
+| Additional Info Provider Technical Identifier Reference
 
+| OPT-301
+| Document Provider Technical Identifier Reference
+
+| OPT-301
+| Employment Legislation Organization Technical Identifier Reference
+
+| OPT-301
+| Environmental Legislation Organization Technical Identifier Reference
+
+| OPT-301
+| Tax Legislation Information Provider Technical Identifier Reference
+
+| OPT-301
+| Mediator Technical Identifier Reference
+
+| OPT-301
+| Review Information Providing Organization Technical Identifier Reference
+
+| OPT-301
+| Review Organization Technical Identifier Reference
+
+| OPT-301
+| Tender Evaluator Technical Identifier Reference
+
+| OPT-301
+| Tender Recipient Technical Identifier Reference
+|===
 
 
 
