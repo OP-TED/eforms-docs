@@ -327,8 +327,9 @@ What is the notice variant Business Registration Information used for?::
 
 The “Business Registration Information Notice” scheme refers to European
 Company and European Economic Interest Grouping notices, currently
-available as interactive PDFs only. They are not part of the eForms Implementing 
-Regulation but they are implemented in the same systems at the Publications Office 
+available as interactive PDFs only. 
++
+They are not part of the eForms Implementing Regulation but they are implemented in the same systems at the Publications Office 
 so they appear in the eForms schema and rules as forms X01 and X02.
 
  
@@ -496,7 +497,8 @@ Users will also be able to render eForms notices in HTML or PDF using the servic
 Will the Publications Office be providing XML notice samples for every PDF notice sample?::
 
 The PDFs are only examples of how notices could be displayed. There are also examples of XML notices in the SDK 
-at https://github.com/OP-TED/eForms-SDK/tree/main/examples/notices
+at https://github.com/OP-TED/eForms-SDK/tree/main/examples/notices.
++
 They are not the same notices as the ones used in the PDF views but they are aligned with the other SDK elements (like the schemas and rules).
  
  
@@ -542,8 +544,9 @@ For more information on SDK versioning: https://docs.ted.europa.eu/eforms/latest
 The purpose of the SDK is to assist eForms developers in creating applications that generate eForms notices in order to send them to eNotices2.
 +
 The components of the SDK are intended to be directly consumed by these applications. Multiple versions of the SDK will be maintained and remain 
-available as long as they are supported by the Legislation, allowing for more flexibility on the timing of upgrades on the eSenders’ applications. 
-Updating applications to use new versions of the SDK should require minimal effort if the applications are built to integrate the SDK components.
+available as long as they are supported by the legislation or business rules, allowing for more flexibility on the timing of upgrades 
+on the eSenders’ applications. Updating applications to use new versions of the SDK should require minimal effort if the applications 
+are built to integrate the SDK components.
 +
 More information about the SDK was presented at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar].
 +
@@ -570,8 +573,8 @@ as described in link:https://docs.ted.europa.eu/eforms/latest/versioning.html[eF
 +
 The metadata of the SDK, in particular the schema and the rules, will still change after version 1.0.0 and until shortly before November 2022. 
 +
-The European Commission is planning to publish an amendment to the 2019 eForms implementing regulations. 
-This amendment will change and add several business terms. 
+The European Commission is planning to publish an amendment to the 2019 eForms implementing regulations. This amendment will change 
+and add several business terms. 
 
 
 
@@ -814,7 +817,19 @@ Roles/subroles it may be associated with are in table 2 in the Documentation sec
 link:https://docs.ted.europa.eu/eforms/0.7.0/schema/identifiers.html#_referring_to_objects[IDs & References].
 +
 A Touchpoint could be referred to for the following roles/subroles: 
-[placeholder for excel}
++
+- | OPT-301  | Additional Info Provider Technical Identifier Reference                  
+- | OPT-301  | Document Provider Technical Identifier Reference                         
+- | OPT-301  | Employment Legislation Organization Technical Identifier Reference       
+- | OPT-301  | Environmental Legislation Organization Technical Identifier Reference    
+- | OPT-301  | Tax Legislation Information Provider Technical Identifier Reference      
+- | OPT-301  | Mediator Technical Identifier Reference                                  
+- | OPT-301  | Review Information Providing Organization Technical Identifier Reference 
+- | OPT-301  | Review Organization Technical Identifier Reference                       
+- | OPT-301  | Tender Evaluator Technical Identifier Reference                          
+- | OPT-301  | Tender Recipient Technical Identifier Reference
+
+
 
 
 How should we fill in BT-3201 Tender Identifier?::
@@ -823,7 +838,7 @@ For TenderID, as for most identifiers, a dedicated scheme similar to that define
 Information is available in the documentation in the link:https://github.com/OP-TED/eForms-SDK[eForms SDK].
 
  
-What happens when CA_ACTIVITY_OTHER is given in F02?:: 
+What happens when CA_ACTIVITY_OTHER is given in current F02?:: 
 
 The current TED XML element CA_ACTIVITY_OTHER allows free-text content. This often leads to inconsistencies in reporting the main activity of
 the contracting authority.  
@@ -942,7 +957,7 @@ in most cases this is a way to associate a Business Group (and its content) to o
 In the XML, this information is pointless by design as the information of the Business Group may be found inside the element representing the lot.
 +
 Some of the BTs for identifiers are not needed due to the way that the schema has been developed. There is a list of these in the documentation, 
-under the section https://docs.ted.europa.eu/eforms/0.5.0/schema/identifiers.html#pointlessDueToDesignSection["Pointless due to design"].
+under the section https://docs.ted.europa.eu/eforms/0.7.0/schema/identifiers.html#pointlessDueToDesignSection["Pointless due to design"].
 
 
 
@@ -950,7 +965,7 @@ BT-738 allows to choose a preferred notice publication date. How will this work 
 
 The BT-738 Notice Publication Date Preferred is available to help the buyer to coordinate publication dates at national and European levels. 
 The submitted notice will be stored in the OP internal system (TED Monitor 2022). When the preferred publication date is reached, 
-the notice will be published on TED.
+the notice will be published on TED. The preferred publication date can be set for up to 3 months into the future. 
 
 
 
@@ -978,6 +993,24 @@ The current Schematron validation rules together with some examples of
 valid and invalid XML files are published on GitHub as part of the link:https://github.com/OP-TED/eForms-SDK[eForms SDK]. 
 +
 We will keep updating these artefacts regularly as they evolve. 
+
+
+
+What is the role and status of the Extended Annex Excel, and differences with the Implementing Regulation?::
+
+The Extended Annex to the Regulation was made available (https://ec.europa.eu/docsroom/documents/43488) to provide additional information and clarifications. 
++
+As stated in the Legend tab of the Excel sheet, the Extended Annex spreadsheet is identical to Table 2 of Annex of the "Implementing Regulation 
+establishing standard forms for the publication of notices in the field of public procurement", except for three differences: 
++
+- The spreadsheet differentiates "M", "CM" and "EM" fields (see below). The Annex of the Implementing Regulation does not - it denotes all as "M".
++
+- The spreadsheet explicitly lists lot identifiers (e.g. Purpose Lot Identifier BT-137), while the Annex of the Implementing Regulation does not.
++
+In both cases, these additional details are useful to know for technical implementation, but are an excessive technical detail to be included in the act itself.   +
+- The extended Annex includes additional notices that will be made available to national authorities for voluntary use after October 2023. 
+These are marked as "E1" - "E5" in the notice number field and their use is explained in chapter 3 of the eForms Policy Implementation Handbook. 
+Extended notices E1 and E5 contain fields not used in other notices. These cases are marked in column AZ of the ‘Annex’ sheet.    
 
 
 
@@ -1031,18 +1064,9 @@ Will OP be providing an Excel sheet with the validation rules of individual fiel
 
 OP does not intend to use an Excel spreadsheet to document the validation rules for fields within eForms. 
 Due to the increased number of fields in eForms compared to the existing TED XML, there will be a very large number of validation rules, 
-and we feel that an Excel spreadsheet listing the validation rules would be difficult to maintain and use. 
-Instead, we are providing the validation rules as a set of schematron files, included in the eForms SDK. 
+and an Excel spreadsheet listing the validation rules would be difficult to maintain and use. 
+Instead, we are providing the validation rules as a set of Schematron files, included in the eForms SDK. 
 These rules are still being developed, and more rules will be added in future releases of the SDK. 
-
-
-Will we receive translations for the error messages that are foreseen in the Schematron validation files?::
-
-We are currently working on creating translations for the error messages in the Schematron validation files. 
-These will be included in a future release of the eForms SDK. 
-+
-In the future, users will be able to decide in which of the 24 languages they would like to receive the returned validation report 
-in Schematron Validation Report Language (SVRL). 
 
 
 
@@ -1055,6 +1079,16 @@ but ideas for documenting rules are welcome.
 
 
 
+Will we receive translations for the error messages that are foreseen in the Schematron validation files?::
+
+We are currently working on creating translations for the error messages in the Schematron validation files. 
+These will be included in a future release of the eForms SDK. 
++
+In the future, users will be able to decide in which of the 24 languages they would like to receive the returned validation report 
+in Schematron Validation Report Language (SVRL). 
+
+
+
 If a field is mandatory but left empty or if a code choice is mandatory but not chosen, will the notice be rejected and not published? Are there no "content" checks beyond that, for example if a monetary value doesn't make sense?::  
 
 If mandatory fields are not filled in, it will not be possible to submit the corresponding notice and the notice will, therefore, be rejected.
@@ -1064,8 +1098,13 @@ fields, in a way equivalent to what is done today with the existing forms.
 As with the current TED notices, there will be rules that will block (reject) the submission of eForms notices, particularly in cases that
 violate or contradict the Procurement Directives. All these rules are currently under construction and implemented using Schematron. Only
 after 14 November 2022, when eForms are introduced, will the Publications Office inform users in advance of any new rules to come. 
-
++
+Notice validation will be automated through the Central Validation System. Human validation will only be done for notices that have a “lawfulness” warning. 
+This means that the notice contains information that suggests it should not be published in the Supplement to the Official Journals of the EU. For example, 
+notices from countries outside the EEA or that do not have an agreement with the EU. The notices will be subject to a manual check at OP 
+to decide if they should be published or rejected. 
  
+
 
 From a technical point of view, would an eForms notice be rejected if the names of some business terms and descriptions are changed at the national level?:: 
 
@@ -1101,9 +1140,9 @@ regular expression patterns associated with the relevant fields, within "pattern
 
 Are there any official regular expression patterns that will be used to validate received notices regarding e.g. email addresses, phone numbers, URLs, postal codes etc.?::
 
-The regular expression patterns we currently have (used in the schematron files) are used to validate certain fields. 
+The regular expression patterns we currently have (used in the Schematron files) are used to validate certain fields. 
 Many of these validate the format of identifiers: Procedure and Notice Identifiers, and the internal identifiers 
-for parts of a notice such as Lots, Tenders, Organisations, etc. There is one for email addresses, 
+for parts of a notice such as Lots, Tenders, Organisations, etc. There is a pattern for email addresses, 
 and one for telephone and fax numbers. We don't have one for URLs at present. 
 As the format of postal codes varies by country, and new formats can be created at any time, we have currently 
 no plans to validate these using regular expressions. 
@@ -1121,15 +1160,16 @@ Are all eForms codelists published on the EU Vocabularies site? Where do we find
 There are codelists that have no relevance or use outside the context of eForms; these are not published on the EU Vocabularies website
 but are published as part of the eForms SDK. 
 +
-The codelists in the "codelists" folder of the SDK in GitHub should be used for developing eForms applications. This is because: 
+The codelists in the "codelists" folder of the SDK in GitHub should be used for developing eForms applications. This is because:
++ 
 - Some codelists are "tailored" codelists, using a subset of values from their "parent" codelists. These will not be published 
-on the EU Vocabularies Authority tables page. 
+on the EU Vocabularies Authority tables page.
 +
-- Some codelists are "technical" codelists that are required only because of the use of UBL to implement eForms. 
-The "conditions" codelist for BT-70 is an example. These will not be published on the EU Vocabularies Authority tables page. 
+- Some codelists are "technical" codelists that are required only because of the use of UBL to implement eForms. The "conditions" 
+codelist for BT-70 is an example. These will not be published on the EU Vocabularies Authority tables page.
 +
-- Some codelists are made available first in the SDK on GitHub, because the process for publishing them 
-on the EU Vocabularies Authority tables page takes longer. 
+- Some codelists are made available first in the SDK on GitHub, because the process for publishing them on the EU Vocabularies 
+Authority tables page takes longer due a quarterly publishing schedule.
 +
 For more information, see https://docs.ted.europa.eu/eforms/0.7.0/codelists/index.html[Tailored Codelists] 
 in the documentation.
@@ -1154,7 +1194,7 @@ in the documentation.
 
 Will eForms use Supplementary CPV codes?::
 
-As supplementary CPV codes are not mentioned in the regulation, they are not specifically implemented in eForms. 
+As supplementary CPV codes are not mentioned in the regulation, they will not be implemented in eForms. 
 Current use of supplementary CPV codes is very low and there no plans to use them in eForms.  
 +
 However, the eForms schema will allow the addition of other classifications if needed in the future.
@@ -1170,16 +1210,18 @@ of the Business Field. Validation of the codelist values of these nodes is inclu
 For example, Business Field BT-755-Lot has field "xpathAbsolute" with a value of: 
 "/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:ProcurementAdditionalType[cbc:ProcurementTypeCode/@listName='accessibility']/cbc
 :ProcurementType". 
++
 The leaf element cbc:ProcurementType is validated for compliance with language rules. The sibling element cbc:ProcurementTypeCode has a 
 @listName attribute set to "accessibility". The Schematron includes a rule which restricts the content of this sibling element to the values 
 in the "accessibility" codelist. 
 
 
 
-Why is the codelist for BT-715/BT-716/BT-725 (green-procurement) not present either on the EU vocabularies Authority tables page or in the "Codelist" folder on GitHub?:: 
+Why is the codelist for BT-774 (green-procurement) not present either on the EU vocabularies Authority tables page or in the "Codelist" folder on GitHub?:: 
 
-The Commission is preparing some changes to the eForms Regulation Annex table 2, to be published and implemented before November 2022. 
-Some of these changes affect Green Procurement and may affect the "green-procurement" codelist. We will publish this codelist as soon as it has been finalised. 
+BT-774 uses the environmental-impact codelist, which is available in the SDK on GitHub. The version of this codelist in the SDK will be updated 
+with the June 2022 version published on EU Vocabularies at:
+https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/environmental-impact  
 
 
 
