@@ -854,7 +854,7 @@ A Touchpoint could be referred to for the following roles/subroles:
 +
 [cols="1,6", options="header"]
 |===
-| Field | Name of the field
+| Business Term | Name of the Business Term
 | OPT-301
 | Additional Info Provider Technical Identifier Reference
 
