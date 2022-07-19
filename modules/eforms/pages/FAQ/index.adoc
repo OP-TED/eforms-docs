@@ -828,14 +828,14 @@ What does ORG-XXXX or TPO-XXXX mean? How is this value defined? What does the va
 
 Each organisation used in a Notice is defined in an <efac:Organization> element, 
 see https://docs.ted.europa.eu/eforms/0.7.0/schema/parties.html#organizationSection. It has a single identifier, 
-which must follow the pattern "ORG-XXXX", where "XXXX" is four digits. The first organisation must have identifier "ORG-0001", 
-the second one "ORG-0002", etc. A numerical sequence in numbering does not have to be observed.  
+which must follow the pattern "ORG-XXXX", where "XXXX" is four digits. The first organisation would have identifier "ORG-0001", 
+the second one "ORG-0002", etc, but numerical sequence in numbering does not have to be observed and there can be gaps in the numbering.
 +
-An organization might have several contact details, each for one or more different functions. Each contact is defined in a TouchPoint, 
+An organisation might have several contact details, each for one or more different functions. Each contact is defined in a TouchPoint, 
 which has an identifier following the pattern "TPO-XXXX". An example XML for a Buyer is shown in: 
 https://docs.ted.europa.eu/eforms/0.7.0/schema/parties.html#buyerSection. 
 +
-Within the rest of the Notice, any function performed by an organisation can then link to that organisation, or to one of its touchpoints, 
+Within the rest of the nNotice, any function performed by an organisation can then link to that organisation, or to one of its touchpoints, 
 by using the relevant identifier as a reference. Examples of this can be found in: 
 https://docs.ted.europa.eu/eforms/0.7.0/schema/parties.html#_legislation_information_provider 
 and the following section: https://docs.ted.europa.eu/eforms/0.7.0/schema/parties.html#_other_rolessubroles  
