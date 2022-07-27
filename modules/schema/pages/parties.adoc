@@ -130,7 +130,7 @@ ID* |*Company Size* |*Technical ID* |*Official ID* |*Name* |*Party Name*
 |*CM* |*M* |*M* |*M* |*O* |*EM* |*M* |*CM* |*CM* |*M* |*CM* |*M* |*M*
 |*EM*
 
-|*_UBO_* |*—* |*—* |*—* |*—* |*—* |*—* |*O* |*O* |*—* |*M* |*M* |*M*
+|*_UBO_* |*—* |*—* |*—* |*—* |*—* |*—* |*O* |*—* |*—* |*M* |*M* |*M*
 |*—* |*EM* |*M* |*CM* |*CM* |*M* |*O* |*O* |*O* |*O*
 |===
 
