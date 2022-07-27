@@ -886,7 +886,7 @@ Person*
 | <|Documents provider organization |O |O |O |O |O |O |O |O |O |O |O |O
 |O |O |O
 
-| <|Appeal Information Providing Organization |M |O |O |EM |M |EM |EM |M
+| <|Review Information Providing Organization |M |O |O |EM |M |EM |EM |M
 |O |M |M |EM |O |O |O
 
 | <|Organization receiving requests to participate |M |O |O |EM |M |EM
@@ -937,7 +937,7 @@ the applicable restrictions are summarized in <<rolesVsSubrolesTable>>.
 2.2+| 10+|*Subrole*
 
 |*Group Leader* |*Additional Information Providing
-Organization* |*Documents provider organization* |*Appeal Information
+Organization* |*Documents provider organization* |*Review Information
 Providing Organization* |*Requests to participate Recipient
 Organization* |*Tender Recipient Organization* |*Tender Evaluation
 Organization* |*signatory* |*Financing Organization* |*Paying
@@ -1338,7 +1338,7 @@ Subco / QS / Design 3+|VEAT 3+|CAN general / social 3+|Design 3+|CAN +
 |Documents provider organisation |S | | |1 | |1 | |1 | | |1 |
 | |1 | | |1 | | |1 | | |1 | | | |
 
-|Appeal Information Providing Organisation |S | | |1 | |1 | |1
+|Review Information Providing Organisation |S | | |1 | |1 | |1
 | | |1 | | |1 | | |1 | | |1 | | |1 | | | |
 
 |Organisation receiving requests to participate |S | | |1 | |1 |
@@ -1637,7 +1637,7 @@ general* 3+|*PIN CFC social* |*QS* 4+|*CN general* 2+|*CN social*
 |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O |O
 |O |O |O
 
-|Appeal Information Providing Organization |-- |-- |-- |CM |CM |O |CM |O |O
+|Review Information Providing Organization |-- |-- |-- |CM |CM |O |CM |O |O
 |CM |O |O |O |CM |O |CM |CM |O |CM |O |O |O |O |O |O |O |O |O |O |O |O
 |O |O |O |O |O |O |O |O |O
 
