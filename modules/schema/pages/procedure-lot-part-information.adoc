@@ -1580,8 +1580,9 @@ respective element should have the value "false".
 === Award Criteria (BT-539, BT-540, BT-541, BT-543, BT-733, BT-734, BT-5421, BT-5422, BT-5423)
 
 The way Award criteria is marked has some similarities with Selection
-criteria (cf. <<selectionCriteriaSection>>), they however have some additional dedicated
-elements.
+criteria (cf. <<selectionCriteriaSection>>), they however have some additional 
+dedicated elements. Multiple sets of Award Criteria may be given. Each set 
+of related Award Criteria is specified in a "_cac:AwardingCriterion_" element.
 
 When the use of Award Criteria is performed sequentially based on order
 of importance instead of involving weighted scores, the buyer shall
@@ -1642,9 +1643,11 @@ element "_cbc:CalculationExpression_"; for a given
 "_cac:AwardingCriterion_" element, the children "_cbc:Description_" (BT-733)
 and "_cbc:CalculationExpression_" (BT-543) shall not coexist.
 
-For any criterion of the award criteria, the type (BT-539) and
-description (BT-540) shall be provided; the name (BT-734) is however
-optional. The type of award criterion shall be one of the
+Each criteron of an award criteria is specified using a 
+"_cac:SubordinateAwardingCriterion_" element. For any criterion of the award 
+criteria, the type (BT-539) and description (BT-540) shall be provided; the 
+name (BT-734) is however optional. The type of award criterion shall be one 
+of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/award-criterion-type[award-criterion-type]
 codelist.
 
