@@ -20,7 +20,7 @@ It is reasonable for someone to expect that a version labelled 1.0.0 is "perfect
 How is SDK 1.0.0 different than 0.7.0?::
 The release notes of SDK 1.0.0 will give you complete list of the changes that we have made since 0.7.0. However, I can already give you a general idea on what has changed:
 - We added some new information in existing files. For example information on what fields can be changed by a change notice is now provided in `fields.json`.
-- We added a few "index" files in SDK folders that provide more metadata on the content of each folder. For example the `view-templates` folder now contains a `view-templates.json` file that better describes each vew template.
+- We added a few "index" files in SDK folders that provide more metadata on the content of each folder. For example the `view-templates` folder now contains a `view-templates.json` file that better describes each view template.
 -We changed the names of a few concepts to improve consistency and clarity. For example the `decoration|name` labels are now identified as `auxiliary|text`.
 - Most importantly though, we added several features in the eForms Expression Language (EFX) that allow us to improve the view templates as well as the business rules that we provide. This is probably the most impactful change for developers that have already implemented their own EFX transpilers or interpreters.
 
@@ -29,6 +29,7 @@ The release notes of SDK 1.0.0 will give you complete list of the changes that w
 Our next goals are:
 
 - to continuously expand and improve the *SDK documentation* as the documentation of SDK 1.0.0 that will be available on the day of its release will not be at the level we want it to be.
-- to continuously correct and improve the *eForms metadata* provided with the SDK and and release them for use by your applications as often as possible.
+- to continuously correct and improve the *eForms metadata* provided with the SDK and release them for use by your applications as often as possible.
+- to expand and improve the sample applications that we provide in Github. Apart from the "Notice Viewer" sample application which is already available, we have a "Notice Editor" as well as a "Notice Validator" sample which we want to make publicly available.
 - to streamline and improve the process of releasing *future versions* of the SDK so that we can get future updates of metadata to your applications as quickly as possible.
 - to listen to you, our *developer community*, and to help you to the best of our ability to get your metadata driven applications up and running.
