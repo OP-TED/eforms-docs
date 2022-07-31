@@ -1,20 +1,34 @@
 = eForms SDK Roadmap
 
-This page tries to outline the changes and additions to the eForms SDK planned for the upcoming releases. Despite its name, it is not actually organised as a release roadmap. Our goal with this page is to give you a heads-up of the most important things that we plan to change or add in the SDK so that you know what to expect. 
+== eForms SDK 1.0.0
 
-== eForms SDK 0.6.0
-The main theme of SDK 0.6.0 will be to add templates that you can use to visualize an existing notice. We have already identified and detailed internally the necessary views that will be used by our own TED Viewer. This version of the SDK will formalise these views and provide them in the form of templates. A specialised grammar will be introduced for drafting these templates. 
+On August 5 2022, we plan to release eForms SDK 1.0.0. This is a major milestone for the eForms SDK that is meant to stabilise its structure and allow implementers to continue receiving and using future versions of the SDK without having to modify their applications.
 
-To allow you to work with this new grammar (we call it EFXT) and to transform these templates to the actual views that you need for your applications, the SDK will not only include the grammar definition and documentation, but it will also be accompanied by a sample application which can read a "notice view template" and generate an HTML page for any given notice XML. 
+[quanda]
 
-Another goal of this release of the eForms SDK is to improve our ability to express the conditions associated with business rules. You already have seen these conditions in fields.json expressed in SpEL. The trouble with SpEL is that it is not expressive enough for our needs. As a result conditions expressed in SpEL quickly become too complicated as well as ambiguous. To address this, we have been looking for something simpler but more expressive at the same time. What we came up with is a domain specific language that we defined to serve our purposes. We call it "eForms Expression Language" or EFX in short.  
+What the SDK 1.0.0 is::
+SDK 1.0.0 is the result of our final attempt to clean-up, rationalise and stabilise the kinds of information that are included in future SDK releases, as well as the format that this information is encoded in. This does not mean that what we came up with is perfect, but it means that it is reasonable and usable enough for us to refrain from making any further corrections or improvements to it for the foreseeable future.   
 
-=== eForms Expressions Language (EFX) 
-Our goal in creating the EFX grammar was to come up with a syntax that is as expressive and unambiguous as xPath, but simpler to read and write. To define the language we are using https://www.antlr.org/[ANTRL4] which is a stable tool with a very long history in the field.
+What SDK 1.0.0 is not::
+- SDK 1.0.0 is *not the final version* of the eForms SDK. There will be several releases that update it. However, they will all be under the same  major version (1.x.x) which means that all future releases will be backwards compatible for all the eSender applications that read and use the eForms SDK 1.0.0.
+- SDK 1.0.0 is *not the version that will be* active when eForms goes *live on November 14*, 2022. There will be several updates released during the Fall of 2022 that will incrementally correct and improve the eForms metadata (rules, translations, etc.) included in the SDK. However, as pointed out in the previous paragraph, all these updates will be under the major version 1.x.x and therefore they will be backwards compatible for your applications.
+- SDK 1.0.0 is *not free of errors* in the eForms metadata. To the contrary, there are several mistakes, omissions and possibly even inconsistencies in the metadata contained in this version of the SDK. As stated in the previous paragraphs these issues will be corrected in several subsequent releases of the SDK that will always be backwards compatible.  
 
-To allow you to work with EFX, we will publish in GitHub not only the grammar specification and documentation, but also the source code of our own parser and the translator which we use to convert EFX expressions to xPath for Schematron validation. Our own tools are written in Java, but ANTRL4 can automatically generate for you an EFX parser for C#, Python, JavaScript, Go, C++, Swift, PHP or DART. 
+Why release SDK 1.0.0 before its eForms metadata content is final?::
+It is reasonable for someone to expect that a version labelled 1.0.0 is "perfect in every way". However, waiting for the eForms metadata to be production-ready before releasing SDK 1.0.0 was not an option, as it would not leave enough time for applications to adapt to it before the November 14 go-live deadline. Our goal was therefore to provide every developer with a version of the SDK that is structurally stable as soon as possible. From a developers perspective the correctness or completeness of the eForms metadata is irrelevant as their metadata driven applications are (or at least should be) designed to be agnostic of the actual eForms metadata content of each SDK release.
 
-EFX is also the basis of EFXT which as I mentioned earlier is used to define the notice view templates. EFXT expressions are the same as EFX expressions; however, EFXT also provides additional syntax to convey information about layout structure as well as static resources like translations.
+How is SDK 1.0.0 different than 0.7.0?::
+The release notes of SDK 1.0.0 will give you complete list of the changes that we have made since 0.7.0. However, I can already give you a general idea on what has changed:
+- We added some new information in existing files. For example information on what fields can be changed by a change notice is now provided in `fields.json`.
+- We added a few "index" files in SDK folders that provide more metadata on the content of each folder. For example the `view-templates` folder now contains a `view-templates.json` file that better describes each vew template.
+-We changed the names of a few concepts to improve consistency and clarity. For example the `decoration|name` labels are now identified as `auxiliary|text`.
+- Most importantly though, we added several features in the eForms Expression Language (EFX) that allow us to improve the view templates as well as the business rules that we provide. This is probably the most impactful change for developers that have already implemented their own EFX transpilers or interpreters.
 
-We are working hard to finish the work for eForms SDK 0.6.0 during March 2022 so that we can release it sometime in April.
+== What is next
 
+Our next goals are:
+
+- to continuously expand and improve the *SDK documentation* as the documentation of SDK 1.0.0 that will be available on the day of its release will not be at the level we want it to be.
+- to continuously correct and improve the *eForms metadata* provided with the SDK and and release them for use by your applications as often as possible.
+- to streamline and improve the process of releasing *future versions* of the SDK so that we can get future updates of metadata to your applications as quickly as possible.
+- to listen to you, our *developer community*, and to help you to the best of our ability to get your metadata driven applications up and running.
