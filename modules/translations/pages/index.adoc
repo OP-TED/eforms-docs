@@ -5,19 +5,18 @@ endif::[]
 
 == Introduction
 
-We use the term "procurement labels" to refer to all natural language texts (names, descriptions, tooltips etc.) associated with any business term or related entity that is defined in the eForms Regulation. The Publications Office is compiling and will continue to maintain a list of all procurement labels and their translations in all official EU languages.
+We use the term "procurement labels" to refer to all natural language texts (names, descriptions, tooltips etc.) associated with any business term or other entity that is defined in the eForms Regulation or contained within the eForms SDK. The Publications Office is compiling and will continue to maintain a list of all procurement labels and their translations in all official EU languages.
 
-In order to help implementors in the localization/internationalization of their applications, the eForms SDK contains the latest update of all procurement labels maintained by the Publications Office, in all official EU languages.
+In order to help implementers in the localization/internationalization of their applications, the eForms SDK contains the latest update of all procurement labels maintained by the Publications Office, in all official EU languages.
 
 The labels are distributed in several files under the "translations" folder.
 Each file contains a specific type of label, in one language, as identified by
 its filename (see <<File naming conventions>> below).
 
-[WARNING]
+[NOTE]
 ====
-The texts provided are not final and are subject ot change. In particular,
-languages other than English have often been obtained via automated translation,
-and have not been reviewed yet.
+The texts provided are not final and are subject to change. In particular,
+languages other than English have often been obtained via automated translation, and have not been reviewed yet. We will continue to add and update procurement labels in every future release of the SDK.
 ====
 
 == File naming conventions
@@ -29,20 +28,7 @@ The file name is composed of two parts: `<asset-type>_<language-identifier>.xml`
 field_en.xml
 ----
 
-The `<asset-type>` indicates the type of element the labels in the file are associated with.
-
-[#asset-types]
-The possible asset types are:
-
-* `business_term`: business terms as defined in the eForms regulation
-* `field`: fields are used to identify business terms under different contexts
-* `notice`: a type of notice as defined in the eForms regulation
-* `code`: an item in a list of codes (codelist)
-* `rule`: a business rule
-* `condition`: a condition used by one or more business rules.
-* `decoration`: visual elements that are useful to display information in eForms notices, but are not related directly to any of the above type of elements.
-
-The language identifier used is the standard 2 letter code in lowercase.
+The `<asset-type>` indicates the type of element the labels in the file are associated with. The possible asset types can be found in the xref:#asset-types[relevant section below]. The language identifier used is the standard 2 letter code in lowercase.
 
 == File format
 
@@ -50,7 +36,7 @@ The file format used is XML, with the structure used for https://docs.oracle.com
 
 Each translation is represented by an `entry` XML element. Each `entry` element
 has a `key` attribute which identifies the specific label. The translated text
-for the specific language is encoded the element's text content.
+for the specific language is encoded in the element's text content.
 
 .Example
 [source,xml]
@@ -79,32 +65,102 @@ Each label key is composed of three parts separated by a pipe character "|":
 
 [horizontal]
 `<asset&#8209;type>`::
-
 The same as the one indicated in the filename (see the
-<<asset-types, list of available asset types>> above).
+<<asset-types, list of available asset types>> below).
 
 `<label&#8209;type>`::
-
-Allows the same asset to have different labels associated with it for different use cases (i.e. name, description etc.).
-+
-Label types currently in use include:
-+
-* name: The formal name of the element (i.e. as defined by the eForms
-regulation).
-* value: The short text corresponding to a specific code in a codelist.
-* message: The message in the validation report when a rule fails.
-* message_template: A generic message with placeholders, used to generate specific messages.
-
-+
-In the future we plan to include additional label types such as (non-exhaustive list):
-
-* description: to explain the role or function of the element.
-* tooltip: to provide information on how the user should interact with the element (i.e. enter information).
+Allows the same asset to have different labels associated with it for different use cases (i.e. name, description etc.). A list of the allowed label types can be found in the xref:#label-types[relevant section below].
 
 `<asset&#8209;id>`::
-:
-Indicates the identifier of the asset (i.e. business term, field etc.). The asset identifiers are indicated in the xref:fields:index.adoc[field metadata] (JSON).
+Indicates the identifier of the asset (i.e. business term, field etc.). The asset identifiers are indicated in the xref:fields:index.adoc[field metadata] (`fields/fields.json`).
 
 To resolve a label you will need the label identifier which you can construct
 from the current context of your application using the appropriate
 `<asset-type>`, `<label-type>` and `<asset-id>`.
+
+[#asset-types]
+== Valid asset types
+
+=== Standard asset types
+
+[horizontal]
+`business-term`:: The business terms are defined by the eForms regulation. Although there is no explicit list of business terms in the eForms SDK, all business terms are referenced by their corresponding fields in `fields.json`. We provide translated names and descriptions of all business terms.
+
+`field`:: As the behaviour of a business term can vary among the different contexts it may appear in, the concept of a field is used to represent and encapsulate the behaviour of a business term under each specific context.  We provide translated names, descriptions and fill-in instructions (hints) for all fields.
+
+`group`:: Display groups are used to organise the fields of a notice when displayed in a form for filling-in. We provide translated names, descriptions and hints for all display groups.
++
+NOTE: Display groups should not be confused with the business groups defined by the eForms Regulation.
+
+`node`:: Nodes are used to reconstruct the hierarchical structure of a notice XML file. They correspond to non-leaf XML elements in the notice. We try to provide translated names and descriptions for all nodes, however these are typically unnecessary for UI scenarios. 
+
+`codelist`:: These labels are used to provide translations of codelist names and descriptions.
+
+`code`:: These labels are used to provide translations of codelist codes. When displaying the list of codes in a codelist or the selected code in a field use the corresponding `code|name` label. The asset identifiers for codes are formed by concatenating the codelist identifier with the code value using a dot as a delimiter. For example if you want to display the translated name of the `inc` code in the `accessibility` codelist then you need to lookup the label with id `code|name|accessibility.inc`.  
+
+`notice`:: These labels provide translations of names and descriptions of all available notice types. Notice types are listed in `notice-types.json` and implementers typically used them to present their user with a list of available notice types they can create and submit. 
+
+`view`:: These labels provide translations of names and descriptions of all available notice view templates. Notice view templates listed in `view-templates/view-templates.json`. 
+
+`pattern`:: Patterns are regular expressions (RegEx) that restrict the shape (format) of values that some text fields are allowed to accept. They are used in some business rules and implementers commonly find them associated with field constraints in `fields/fields.json` and use them for live validation in their form filling tools. We try to provide translations for all names, descriptions and hints of patterns.
+
+`interval`:: Intervals are numeric ranges that a field's value is restricted in, and are used in some business rules. Implementers commonly find them associated with field constraints in `fields.json` and use them for live validation in their form filling tools. We try to provide translations for all names, descriptions and hints of intervals.
+
+`expression`:: EFX expressions are used to formally express business rules and notice view templates. We try to provide translations for expression names, descriptions and hints for all expressions.
+
+`rule`:: These labels correspond do business rules. Apart from the standard `name`, `description` and `hint` which may or may not be available, we always provide a label of type `text` for these labels (`rule|text`), which contains the message to be displayed to the user when a rule's assertion fails. 
+
+=== Special asset types
+
+[horizontal]
+`indicator`:: These labels provide text values that can be used when visualising a notice, in place of the standard `true`/`false` values of indicator (boolean) fields. They are exclusively used with the `when-true`, `when-false` label types to provide a text for each alternative state of the indicator. 
+
+`auxiliary`:: Auxiliary labels (formerly known as `decoration` labels) are labels that do not correspond to one of the standard label usage scenarios. Examples of such non standard UI scenarios can be found in some EFX view templates or some notice type definitions where an alternative or additional label is necessary. Auxiliary labels are always combined with the generic `text` label type (`auxiliary|text`) and use and arbitrary identifier instead of a known asset-id. As a result the label identifiers of auxiliary labels cannot be inferred and therefore they are used only when and where they are explicitly indicated in the SDK resources.
+
+[#label-types]
+== Valid Label types
+
+=== Standard label types
+There are three label types that are available for all standard asset types. 
+
+[horizontal]
+`name`:: Used with all standard asset types, these labels provide the name of the asset (e.g. the name of a field or a business term etc.).
+
+`description`:: Used with all standard asset types, these labels provide a description of the asset (e.g. a description of a field or a business term etc.)
+
+`hint`:: Formerly known as `tooltip`, the labels of this type provide instructions that can be useful to the user when they fill-in a notice. We try to provide `hint` labels for every standard asset type.
+
+=== Special label types
+
+[horizontal]
+
+`text`:: When used with the `rule` asset type these labels contain the text that needs to be displayed to the user when a rule's assertion is not satisfied. Typically, these `rule|text` labels are generated from `rule|template` labels during the process of creating a new version of the eForms SDK.
++
+The `text` label-type is also used with the `auxiliary` asset type to provide some auxiliary text needed in special UI scenarios. All auxiliary label identifiers start with `auxiliary|text`.
+
+`template`:: Used only with the `rule` asset-type, these labels hold a template which can be used to generate multiple `rule|text` labels. We use these label templates when we generate Schematron files for the eForms SDK. Although they are made available within the SDK, typically these labels are not needed by implementers.
+
+`when&#8209;true`:: Used only with the `indicator` asset-type, this label contains the text to be displayed when the  value of an `indicator` (`boolean`) field is set to `true`. These labels, together with the `when&#8209;false` labels below are useful when visualising a notice.
+
+`when&#8209;false`:: Used only with the `indicator` asset-type, this label contains the text to be displayed when the  value of an `indicator` (`boolean`) field is set to `true`. These labels, together with the `when&#8209;true` labels above, are useful when visualising a notice.
+
+== Valid asset/label type combinations
+
+[cols=">1,^1,^1,^1,^1,^1,^1,^1"]
+|===
+h|  h| `name` h| `description` h| `hint` h| `when&#8209;true` h| `when&#8209;false` h|`text` h|`template`
+h|`business&#8209;term` |X|X|X||||
+h|`field` |X|X|X||||
+h|`node` |X|X|X||||
+h|`group` |X|X|X||||
+h|`view` |X|X|X||||
+h|`notice`|X|X|X||||
+h|`codelist`|X|X|X||||
+h|`code`|X|X|X||||
+h|`pattern`|X|X|X||||
+h|`interval`|X|X|X||||
+h|`expression`|X|X|X||||
+h|`indicator`||||X|X||
+h|`rule` ||||||X|X
+h|`auxiliary`||||||X|
+|===
