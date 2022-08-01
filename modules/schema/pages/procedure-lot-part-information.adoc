@@ -947,6 +947,7 @@ categories is respectively encoded with the "tp-abil", "ef-stand" and
 "sui-act" value of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/selection-criterion[selection-criterion] codelistfootnote:[For criteria that would not fit into any of the three previous categories, the value "other" is also available.].
 This information is marked using the "_cbc:CriterionTypeCode_" element.
+Multiple instances of Selection Criteria using the same type may be used.
 
 A name (BT-749) may be given to a single selection criterion (or to a
 group of them). When specified, the name, of type text, must be provided
