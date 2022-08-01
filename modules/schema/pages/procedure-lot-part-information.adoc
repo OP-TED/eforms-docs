@@ -953,7 +953,15 @@ group of them). When specified, the name, of type text, must be provided
 in all linguistic versions identified as official languages for the
 notice. Information is marked with the "_cbc:Name_" element.
 
-The criteria brief description (BT-750) includes:
+The Selection Criteria Used (BT-748) indicates whether the selection criteria
+are "used", "not used" or "not yet known". This is marked using the 
+"_cbc:CalculationExpressionCode_" element. Codes are from the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/usage[usage]
+codelist. The "nyk" value to express that the use of the criteria/criterion is 
+"not yet known", is only allowed for "PIN time limit" and "PIN CFC" notices.
+
+If the "used" value is used for BT-748, Selection Criteria Description 
+(BT-750) shall be provided in the "_cbc:Description_" element. This includes:
 
 * minimum requirements,
 
@@ -963,14 +971,6 @@ and
 * criteria usage for selection of candidates to be invited for
 the second stage of the procedure (if a maximum number of candidates was
 set).
-
-It shall be provided when the criteria is used (i.e. code "used" from
-the
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/usage[usage]
-codelist; BT-748). The "nyk" value to express that the use of the
-criteria/criterion is "not yet known", is only allowed for "PIN time
-limit" and "PIN CFC" notices. Further information is marked with the
-"_cbc:Description_" element.
 
 The indication that the criteria/criterion is used for 
 selection of candidates for a second stage is given by the presence of the 
@@ -1581,8 +1581,7 @@ respective element should have the value "false".
 
 The way Award criteria is marked has some similarities with Selection
 criteria (cf. <<selectionCriteriaSection>>), they however have some additional 
-dedicated elements. Multiple sets of Award Criteria may be given. Each set 
-of related Award Criteria is specified in a "_cac:AwardingCriterion_" element.
+dedicated elements. Related Award Criteria are specified in a "_cac:AwardingCriterion_" element.
 
 When the use of Award Criteria is performed sequentially based on order
 of importance instead of involving weighted scores, the buyer shall
@@ -2640,11 +2639,8 @@ may belong to different "PIN only" notices,
 shall neither be added/suppressed/redefined, only notice identifier &
 version should be reported;
 
-* For a given procurement Procedure, the reference to a previous
-notice containing Lots shall be reported in the "cac:TenderingProcess"
-element of the notice; while, when referring to Parts of a previous
-notice, the reference shall be encoded in the "cac:TenderingProcess" of
-the Lot the Parts are contributing to define.
+* The reference to a previous notice shall be reported in the "cac:TenderingProcess"
+element of the relevant Lots.
 
 [[nonelectronicSection]]
 === Submission Nonelectronic Justification (BT-19) & Description (BT-745)
@@ -2702,7 +2698,7 @@ procedure (using its UUID) that justified the Direct Award:
 ----
 
 The list to be used for the ProcessReasonCode is the
-https://op.europa.eu/web/eu-vocabularies/dataset/-/resource/dataset/direct-award-justification[direct-award-justification],
+https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/direct-award-justification[direct-award-justification],
 of which the use of codes is context dependent as shown in <<directAwardJustificationCodeContextUseTable>>.
 
 [[directAwardJustificationCodeContextUseTable]]
