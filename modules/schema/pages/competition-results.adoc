@@ -388,7 +388,9 @@ must be counted, regardless of whether they are admissible or
 inadmissible. For tenders submitted by a group of tenderers (e.g. a
 consortium), the tender must be counted in the relevant category (e.g.
 SME) if the majority of the work is expected to be done by tenderers
-which fall within this category (e.g. they are SMEs). |***
+which fall within this category (e.g. they are SMEs). (Code from the
+https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/received-submission-type[Received 
+Submission Type] codelist) |***
 a|
 [source,xpath,subs=attributes]
 ----
