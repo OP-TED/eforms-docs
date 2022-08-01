@@ -43,7 +43,6 @@ image::systems-diagram.png[]
 ===  eNotices2
 
 Website:: https://enotices2.preview.ted.europa.eu
-API endpoint:: https://enotices2.preview.ted.europa.eu/esenders/api/notice/notices/
 
 API documentation:: https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/
 
@@ -111,7 +110,6 @@ In the notice sections a search feature has been added and pagination for up to 
 
 === TED Central Validation Service 
 
-API endpoint:: https://cvs.preview.ted.europa.eu/v1/notices/validation
 API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 ==== Currently available 
@@ -134,14 +132,14 @@ API documentation:: Swagger UI TBA
 ==== Currently available 
 [horizontal]
 Application version:: Phase 2 
-SDK versions:: 0.4.1 and 0.5.0 
+SDK versions:: 0.4.2 and 0.5.0 
 Scope:: Partial rendering of HTML and PDF. 
 
 ==== Planned updates
 [horizontal]
 Indicative planning:: August 2022 
 Application version:: Phase 3 
-SDK versions:: 0.4.1, 0.5.0 and 0.6.0 
+SDK versions:: 0.4.2, 0.5.0 and 0.6.2 
 Scope:: Final version of the applications with full rendering of HTML and PDF and using the view-templates defined in the SDK.
 
 
