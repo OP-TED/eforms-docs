@@ -913,8 +913,9 @@ in the cac:RealizedLocation element. This element is repeatable within each Lot.
 
 How is joint procurement handled in eForms?::
 
-Joint procurement / consortia are handled by linking multiple organisations to a single lot or tender. For example, if several 
-organisations submit one tender, then each one should be linked to the relevant tender using BT-13720 (Organisation Notice Section Identifier).
+Joint procurement / consortia are handled by use of the Tendering Party 
+(https://docs.ted.europa.eu/eforms/0.7.0/schema/competition-results.html#tenderingPartySection). A Tendering Party may contain one or more tenderers.
+
 
 
 In the .xsd files elements "cbc:ActivityTypeCode" and "cbc:ActivityType" are found for BT-10 and BT-610, but in samples it's used rather as only a value from the codelist. Is ActivityType ever implemented or is this element redundant and all activities are covered by the codelist?::
