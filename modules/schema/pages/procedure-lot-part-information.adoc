@@ -2641,7 +2641,7 @@ shall neither be added/suppressed/redefined, only notice identifier &
 version should be reported;
 
 * The reference to a previous notice shall be reported in the "cac:TenderingProcess"
-element of the relevant Lots.
+element of the relevant Lots or Parts.
 
 [[nonelectronicSection]]
 === Submission Nonelectronic Justification (BT-19) & Description (BT-745)
