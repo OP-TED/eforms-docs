@@ -46,7 +46,7 @@ Website:: https://enotices2.preview.ted.europa.eu
 
 API documentation:: https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/
 
-CAUTION: (The URLs and parameters may change in subsequent releases)
+CAUTION: The URLs and parameters may change in subsequent releases.
 
 WARNING: Please be aware that the interface and the notice forms are very much a work in progress in this release. 
 
@@ -156,18 +156,19 @@ This application is not public but this information provides some background abo
 
 ==== Currently available 
 [horizontal]
-Application version:: Phase 2 
-SDK version:: 0.4.1 
+Application version:: Phase 4 
+SDK version:: 0.4.1, 0.5.0, 0.6.0 
 
-This release implements the core functions for checking notices that require lawfulness authorisation, masking unpublished fields and generating the daily export files for TED. The checks on lawfulness validation are not yet fully implemented. They will be finalised with Phase 4.
+This is the last release  that implements the rest of the functionalities foreseen for this application: homepage overview (monitoring notices), quick search, full notice content, generate and display yearly production plan, manage anonymization, manage workflow errors. Previously, releases included the following functionalities: extraction of the data at the reception of the notice, not immediately published data identification/masking and schedule next publications, syncronize notice information between eNotices TED Monitor 2022 and TED, merge OJ S files and prepare and export eForms OJ S, display results page, homepage overview (Follow-up notices), advanced search, notice information.
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: July 2022 
-Application version:: Phase 3 
-SDK versions:: 0.4.1 and 0.5.0 
+Indicative planning:: September 2022 
+Application version:: Phase 4.1 
+SDK versions:: 0.4.1, 0.5.0, 0.6.0 
 
-The release will include display results page, homepage overview (Follow-up notices), advanced search, notice information. 
+The release will include bug fixes. 
+
 
 === TED website 
 
