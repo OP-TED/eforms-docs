@@ -8,7 +8,7 @@ To allow early access to these applications before they are deployed in producti
 
 The application features, URLs as well as the data present in the "preview" environment, are subject to unannounced changes until the go-live deadline is reached in November 2022. 
 
-CAUTION: For accessing the web applications in the "preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas 
+CAUTION: For accessing the web applications in the "preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas. 
 
 == TED Apps for eForms
 
@@ -23,18 +23,18 @@ TED Viewer::
 Also known as "TED Viewer 2022" this notice visualisation service provides an API that allows applications to render an eForms notice in the HTML or PDF format.
 
 TED Developer Portal::
-The TED Developer Portal is envisioned to be a central hub for TED developer services. At this point in time the portal allows eSenders, to sign-up and obtain/manage their API key which is required for calling TED APIs.
+The TED Developer Portal is envisioned to be a central hub for TED developer services. At this point in time, the portal allows eSenders to sign-up and obtain/manage their API key which is required for calling TED APIs.
 
 
 TED Monitor::
-Also known as "TED Monitor 2022", this application is the internal production system used by OP to prepare the publication in the Supplement of the Official Journal (hosted in the TED website), of the public procurement notices submitted every day. It also allows OP to check the lawfulness of certain notices and to mask unpublished fields. 
+Also known as "TED Monitor 2022", this application is the internal production system used by OP to prepare the publication in the Supplement of the Official Journal (hosted in the TED website) of the public procurement notices submitted every day. It also allows OP to check the lawfulness of certain notices and to mask unpublished fields. 
 +
-NOTE: TED Monitor is not accessible by eSenders in the preview environment.
+NOTE: TED Monitor is not accessible by eSenders in the "preview" environment.
 
 TED Website:: 
 TED is the public dissemination website for European procurement notices. It is the digital (and only) form of the Supplement to the Official Journal of the EU (OJ S). The current TED website, which is being adapted to handle eForms notices, is scheduled to be replaced by a totally new, built-from-scratch version (a.k.a. TED 2.0), in Spring of 2023. 
 +
-NOTE: The TED website is not available in the preview environment
+NOTE: The TED website is not available in the "preview" environment
 
 image::systems-diagram.png[]
 
@@ -72,7 +72,7 @@ The application is not integrated with any other TED applications, which means t
     * Submitted notices aren’t published. They will have to go through another workflow in TED Monitor before they can be published, which takes place every working day around 15:00 CET, before you can create a Change notice or continue a procedure. 
     * The notices can partially be previewed in either HTML or PDF.
 
-In this version the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK 0.4. In the codelist fields, prefilling of values is supported. 
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK 0.4. In the codelist fields, prefilling of values is supported. 
 
 The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML. There is also a search feature which allows users to sort through long lists of procedures. The main nature of the LOT can now be correctly defined.
 
@@ -140,14 +140,14 @@ Scope:: Partial rendering of HTML and PDF.
 Indicative planning:: August 2022 
 Application version:: Phase 3 
 SDK versions:: 0.4.2, 0.5.0 and 0.6.2 
-Scope:: Final version of the applications with full rendering of HTML and PDF and using the view-templates defined in the SDK.
+Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK.
 
 
 === TED Developer Portal
 [horizontal]
 Website URL:: https://developer.preview.ted.europa.eu/home 
-Documentation:: a dedicated section of docs.ted.europa.eu will document all APIs. 
-Scope:: Final release. Users can generate and revoke an API key. Used by the other systems in Preview environment to authenticate API calls. 
+Documentation:: A dedicated section of docs.ted.europa.eu will document all APIs. 
+Scope:: Final release. Users can generate and revoke an API key. Used by the other systems in the "preview" environment to authenticate API calls. 
 
 
 === TED Monitor 
