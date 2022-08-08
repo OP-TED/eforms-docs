@@ -1,0 +1,17 @@
+= `contract-detail` codelist
+:navtitle: Codelists
+
+This table provides a framework to represent data relating to procurement.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/OPP-030.adoc[`OPP-030`] Contract conditions Code
+
+== Codes
+[horizontal]
+  `all-rev-tic`::: Allocation of revenues of sales from tickets
+  `cost-comp`::: Cost parameters for compensation payments
+  `exc-right`::: Exclusive rights are granted
+  `other`::: Other particular conditions
+  `publ-ser-obl`::: Public service obligations
+  `soc-stand`::: Social standards

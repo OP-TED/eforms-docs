@@ -1,0 +1,12 @@
+= `brin-eeig` codelist
+:navtitle: Codelists
+
+List of allowed Notice Subtype codes for a notice concerning a European Economic Interest Grouping registration procesing.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/notice-subtype.adoc[`notice-subtype`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `X01`::: x01

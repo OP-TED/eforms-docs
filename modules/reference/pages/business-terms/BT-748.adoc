@@ -1,0 +1,9 @@
+= `BT-748`: Selection Criteria Used
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-748-Lot`:: Selection Criteria Used

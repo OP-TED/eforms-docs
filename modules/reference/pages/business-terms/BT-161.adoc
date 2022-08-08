@@ -1,0 +1,9 @@
+= `BT-161`: Notice Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-161-NoticeResult`:: Notice Value

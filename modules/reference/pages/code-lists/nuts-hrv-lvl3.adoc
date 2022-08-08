@@ -1,0 +1,34 @@
+= `nuts-hrv-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Croatia
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `HR021`::: Bjelovarsko-bilogorska županija
+  `HR022`::: Virovitičko-podravska županija
+  `HR023`::: Požeško-slavonska županija
+  `HR024`::: Brodsko-posavska županija
+  `HR025`::: Osječko-baranjska županija
+  `HR026`::: Vukovarsko-srijemska županija
+  `HR027`::: Karlovačka županija
+  `HR028`::: Sisačko-moslavačka županija
+  `HR031`::: Primorsko-goranska županija
+  `HR032`::: Ličko-senjska županija
+  `HR033`::: Zadarska županija
+  `HR034`::: Šibensko-kninska županija
+  `HR035`::: Splitsko-dalmatinska županija
+  `HR036`::: Istarska županija
+  `HR037`::: Dubrovačko-neretvanska županija
+  `HR050`::: Grad Zagreb
+  `HR061`::: Međimurska županija
+  `HR062`::: Varaždinska županija
+  `HR063`::: Koprivničko-križevačka županija
+  `HR064`::: Krapinsko-zagorska županija
+  `HR065`::: Zagrebačka županija
+  `HRZZZ`::: Extra-Regio NUTS 3

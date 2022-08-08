@@ -1,0 +1,9 @@
+= `BT-191`: Country Origin
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-191-Tender`:: Country Origin

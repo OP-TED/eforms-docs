@@ -1,0 +1,9 @@
+= `BT-644`: Prize Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-644-Lot`:: Prize Value

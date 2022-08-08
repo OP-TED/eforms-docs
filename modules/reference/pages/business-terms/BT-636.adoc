@@ -1,0 +1,9 @@
+= `BT-636`: Buyer Review Requests Irregularity Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-636-LotResult`:: Buyer Review Requests Irregularity Type

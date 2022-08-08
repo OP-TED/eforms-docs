@@ -1,0 +1,9 @@
+= `BT-40`: Selection Criteria Second Stage Invite
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-40-Lot`:: Selection Criteria Second Stage Invite

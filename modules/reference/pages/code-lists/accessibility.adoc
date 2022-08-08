@@ -1,0 +1,15 @@
+= `accessibility` codelist
+:navtitle: Codelists
+
+This table provides a list of options for the use of accessibility criteria for person with disabilities in the technical specifications within the domain of public procurement.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/accessibility
+Structure:: flat
+Used in:: xref:business-terms/BT-754.adoc[`BT-754`] Accessibility
+
+== Codes
+[horizontal]
+  `inc`::: Accessibility criteria for persons with disabilities are included
+  `n-inc`::: Accessibility criteria for persons with disabilities are not included because the procurement is not intended for use by natural persons
+  `n-inc-just`::: Accessibility criteria for persons with disabilities are not included with the following justification

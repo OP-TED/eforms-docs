@@ -1,0 +1,11 @@
+= `BT-531`: Additional Nature
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-531-Lot`:: Additional Nature (different from Main)
+  `BT-531-Part`:: Additional Nature (different from Main)
+  `BT-531-Procedure`:: Additional Nature (different from Main)

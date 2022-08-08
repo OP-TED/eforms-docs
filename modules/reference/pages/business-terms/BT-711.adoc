@@ -1,0 +1,9 @@
+= `BT-711`: Tender Value Highest
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-711-LotResult`:: Tender Value Highest

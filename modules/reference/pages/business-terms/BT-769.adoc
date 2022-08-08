@@ -1,0 +1,9 @@
+= `BT-769`: Multiple Tenders
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-769-Lot`:: Multiple Tenders

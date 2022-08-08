@@ -1,0 +1,12 @@
+= `brin-ecs` codelist
+:navtitle: Codelists
+
+List of allowed Notice Subtype codes for a notice concerning a European Company or a European Cooperative Society registration processing.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/notice-subtype.adoc[`notice-subtype`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `X02`::: x02

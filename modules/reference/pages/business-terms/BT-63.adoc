@@ -1,0 +1,9 @@
+= `BT-63`: Variants
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-63-Lot`:: Variants

@@ -1,0 +1,14 @@
+= `indicator` codelist
+:navtitle: Codelists
+
+List of eforms allowed indicator values
+[horizontal]
+Version:: 1.0
+Tailored by:: xref:code-lists/accelerated-procedure.adoc[`accelerated-procedure`], xref:code-lists/esignature-submission.adoc[`esignature-submission`], xref:code-lists/required.adoc[`required`], xref:code-lists/subcontracting-allowed.adoc[`subcontracting-allowed`], xref:code-lists/tender-guarantee-required.adoc[`tender-guarantee-required`]
+Structure:: flat
+Used in:: xref:business-terms/BT-796.adoc[`BT-796`] Review Request Withdrawn, xref:business-terms/OPT-150.adoc[`OPT-150`] Subcontracting Allowed
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

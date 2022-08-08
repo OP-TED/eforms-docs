@@ -1,0 +1,8 @@
+= `OPP-113`: Date of registration
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-113-Business-European`:: Date of registration

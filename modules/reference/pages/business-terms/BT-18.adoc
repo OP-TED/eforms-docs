@@ -1,0 +1,9 @@
+= `BT-18`: Submission URL
+:navtitle: Business Terms
+
+[horizontal]
+Type:: URL
+
+== Fields
+[horizontal]
+  `BT-18-Lot`:: Submission URL

@@ -1,0 +1,9 @@
+= `BT-722`: Contract EU Funds Name
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-722-Contract`:: Contract EU Funds Name

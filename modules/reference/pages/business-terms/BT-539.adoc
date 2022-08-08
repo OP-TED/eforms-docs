@@ -1,0 +1,10 @@
+= `BT-539`: Award Criterion Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-539-Lot`:: Award Criterion Type
+  `BT-539-LotsGroup`:: Award Criterion Type

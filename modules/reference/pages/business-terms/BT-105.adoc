@@ -1,0 +1,9 @@
+= `BT-105`: Procedure Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-105-Procedure`:: Procedure Type
