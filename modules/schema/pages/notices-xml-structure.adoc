@@ -15,7 +15,7 @@ shall be interpreted in their respective contexts.
 
 For simplification, not all information has been represented in the
 diagram below and the focus was placed on high level key repeating
-elements. Also for uniformity and simplification, Procedures without
+components. Also for uniformity and simplification, Procedures without
 lots (and PIN without parts) are to be treated technically as a
 procedure with exactly one lot (or part).
 
@@ -24,19 +24,19 @@ Procedure information with a green one; and information for Group of
 Lots, Lot, or Part with a purple background.
 
 [[reusedElementsFigure]]
-.Major reused elements
+.Major reused components
 image::image012.png[]
 
 
-The contextual use of each of these elements is reported in <<contextualInterpretationOfHighLevelRepeatableElementsTable>>,
-which lists the element name, its context and the associated element
+The contextual use of each of these components is reported in <<contextualInterpretationOfHighLevelRepeatableElementsTable>>,
+which lists the component name, its context and the associated component
 purpose (i.e. information it covers).
 
 [[contextualInterpretationOfHighLevelRepeatableElementsTable]]
-.Contextual interpretation of high-level repeatable elements
+.Contextual interpretation of high-level repeatable components
 [cols="<.^,<.^,<.^",options="header",]
 |===
-^|*Element* ^|*Context* ^|*Purpose*
+^|*Component* ^|*Context* ^|*Purpose*
 .2+^|*_Tendering Terms_* |Document root |Legal, economic, financial and
 technical information for the procurement as a whole.
 
@@ -53,7 +53,7 @@ information for the Lot (Part, or Group of Lots) only.
 |Procurement Project Lot |Purpose of the Lot (Part, or Group of Lots)
 |===
 
-Further details on these different elements will be provided in <<procedureGroupOfLotsLotPartRelatedInformationSection>> and
+Further details on these different components will be provided in <<procedureGroupOfLotsLotPartRelatedInformationSection>> and
 following sections.
 
 == The notice metadata
@@ -77,15 +77,15 @@ publication date),
 == Procedure, Groups of Lots, Lots and Parts
 
 Information about the Procedure, the Groups of Lots, the Lots or the
-Parts share the same set of elements at the highest level (i.e.
+Parts share the same set of components at the highest level (i.e.
 Tendering Terms, Tendering Process and Procurement Project). <<reusedElementsFigure>>
-highlights that these major elements are reused over the instance and
+highlights that these major components are reused over the instance and
 that their meaning is highly linked to the context:
 
-* as direct children of the notice root element, they refer to
+* as direct children of the notice root component, they refer to
 the procurement Procedure;
 
-* as children of a Procurement Project Lot element, they refer to the
+* as children of a Procurement Project Lot component, they refer to the
 corresponding Group of Lots, Lot or Part.
 
 == Business Terms

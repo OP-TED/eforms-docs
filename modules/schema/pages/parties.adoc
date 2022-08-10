@@ -188,7 +188,7 @@ shall be defined. This TouchPoint also has a technical identifier
 associated to it which should follow the scheme as reported in <<technicalIdentifiersSchemesTable>>.
 
 [[buyerElementsFigure]]
-.Elements for a Buyer
+.Components for a Buyer
 image::image022.png[image,width=208,height=242]
 
 An example of mark-up for a buyer is provided below.
@@ -274,7 +274,7 @@ A Mark-Up example is provided hereafter for an economic operator
 providing Procurement Services to the buyer in the previous sectionfootnote:[The link between the Procurement service provider and the Buyer is made at another place in the instance.].
 
 [[nonTendererNonBuyerElementsFigure]]
-.Non-tenderer, Non-buyer elements
+.Non-tenderer, Non-buyer components
 image::image023.png[image,width=233,height=220]
 
 [source,xml]
@@ -360,7 +360,7 @@ Natural Person "_efbc:NaturalPersonIndicator_" element with value
 "true".
 
 [[winnerTendererElementsFigure]]
-.Winner/tenderer elements
+.Winner/tenderer components
 image::image024.png[image,width=314,height=270]
 
 [source,xml]
@@ -414,7 +414,7 @@ information or when a Buyer wishes to do so, then the information
 reported should satisfy the requirements as expressed in <<organizationDetailsRequirementsTable>>.
 
 The Winner Owner Nationality (BT-706) is expressed using the 
-cbc:NationalityID element. Values must come from the 
+"_cbc:NationalityID_" element. Values must come from the 
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/country[country]
 codelist.
 
@@ -910,7 +910,7 @@ Person*
 
 The table shall be read per row. For a given row (i.e. a given role or
 subrole), in each column, the requirement about the existence of the
-element in the column header, is expressed using the codes detailed in
+information item in the column header, is expressed using the codes detailed in
 the legend below:
 
 [cols=">.^5%s,<.^45%,>.^5%s,<.^45%",]
@@ -1508,7 +1508,7 @@ the Tendering Party.
 The role of subcontractor, and the main contractor it is providing
 services to, are dependent from the Tendering Party the subcontractor is
 involved in, therefore this information will be found inside the
-TenderingParty element.
+_cac:TenderingParty_ element.
 
 === Roles & notices
 
@@ -1987,7 +1987,7 @@ identify the tender and and check this is a winning one.
 
 === Contract Signatory
 
-The Contract Signatory(-ies) may be found in the "efac:SettledContract"
+The Contract Signatory(-ies) may be found in the "_efac:SettledContract_"
 element and shall refer to the legal person that signs the contract from
 the Buyer side.
 

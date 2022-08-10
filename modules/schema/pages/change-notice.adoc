@@ -57,14 +57,14 @@ A change may contain all the following business terms:
 
 * Change Description (BT-141)
 
-There must exist at least one “efac:Change” element in the Change Notice.
+There must exist at least one "_efac:Change_" element in the Change Notice.
 
 A change may cover one or more sections of a notice and the element used to
-reference sections (i.e. BT-13716) is repeatable.
+reference sections (i.e. "_efbc:ChangedSectionIdentifier_", BT-13716) is repeatable.
 
 The procurement documents-related elements indicate whether these
-documents have changed and when. For the indicator, either of the two values “true”
-and “false” is used; when the value is set to “true”, the date the
+documents have changed and when. For the indicator, either of the two values "true"
+and "false" is used; when the value is set to "true", the date the
 procurement documents have been changed must be specified, else the
 specification of this date is not allowed. 
 

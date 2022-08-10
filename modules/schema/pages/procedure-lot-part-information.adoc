@@ -981,15 +981,15 @@ not used for selection of candidates for a second stage. If the element
 is set to 'true', then details about the criteria/criterion associated numbers 
 may be provided (BT-7531, BT-7532, BT-752).
 
-These details are reported in the efac:CriterionParameter element. The 
-type of criterion is indicated by the efbc:ParameterCode element, with 
+These details are reported in the "_efac:CriterionParameter_" element. The 
+type of criterion is indicated by the "_efbc:ParameterCode_" element, with 
 BT-7531 Selection Criteria Second Stage Invite Number Weight using one 
 of the values from the 
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-weight[number-weight]
 codelist, and BT-7532 Selection Criteria Second Stage Invite Number 
 Threshold using one of the values from the 
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-threshold[number-threshold]
-codelist. The efbc:ParameterNumeric element shall hold the value 
+codelist. The "_efbc:ParameterNumeric_" element shall hold the value 
 associated with the criterion. 
 
 When shall second stage information be reported?
@@ -1140,7 +1140,7 @@ codelist are accepted.
 
 Whether a provisional guarantee (BT-751) is required, or not, shall be
 specified using the element "_cbc:GuaranteeTypeCode_" with
-"tender-guarantee-required" as listName attribute and the appropriate
+"tender-guarantee-required" as a "_listName_" attribute and the appropriate
 indicator (i.e. true/false); when "true", its description (BT-75) shall
 also be provided:
 
@@ -1164,7 +1164,7 @@ no predefined structure or list and any relevant value may be used so
 long it does not exceed the string length limitation.
 
 The document type code value provides the background reason (BT-707) for
-restricted access ("restricted-document" value of the cbc:DocumentType
+restricted access ("restricted-document" value of the "_cbc:DocumentType_"
 element, BT-14).
 
 Possible "_cbc:DocumentTypeCode_" values are listed in the
@@ -1174,7 +1174,7 @@ the "non-restricted-document" value and the element
 _cbc:DocumentTypeCode_ shall not be used.
 
 When there is a need to specify the linguistic version, then the
-cbc:LanguageID element has to be used with values from the
+"_cbc:LanguageID_" element has to be used with values from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/language[language]
 codelist. This element is not repeatable and when multiple linguistic
 versions have to be referenced, the whole block
@@ -1220,7 +1220,7 @@ element.
 
 To specify applicable cross border law for the procurement involving
 buyers from different countries, the information shall be marked
-specifying "CrossBorderLaw" in the cbc:ID element with the appropriate
+specifying "CrossBorderLaw" in the "_cbc:ID_" element with the appropriate
 information about the legislation reported in the
 "_cbc:DocumentDescription_" text field:
 
@@ -1239,7 +1239,7 @@ information about the legislation reported in the
 Local legal basis shall be marked the same way as Cross Border Law:
 
 * Specifying the European Legislation Identifier (ELI) in the
-cbc:ID element with the appropriate schemeName:
+"_cbc:ID_" element with the appropriate schemeName:
 
 [source,xml]
 ----
@@ -1265,8 +1265,8 @@ cbc:ID element with the appropriate schemeName:
 [[reservedParticipationSection]]
 === Exclusion Grounds (BT-67) & Reserved Participation (BT-71)
 
-Both are within the same element and express requirements on the
-tenderer itself.
+Both are within the same "_cac:TendererQualificationRequest_" element and express 
+requirements on the tenderer itself.
 
 Exclusion Grounds (BT-67) refer to criteria that, not met and justified
 (even with self-declaration), lead to the tenderer exclusion. This
@@ -1310,9 +1310,9 @@ Participation" requirement shall be specified.
 The existence of a constraint on a legal form that a group of tenderers
 awarded a contract has to take (BT-761), is marked with the
 "_cbc:CompanyLegalFormCode_" element. It is expressed using either of the
-two values "_true_" or "_false_" and specifying "required" as a listName
-attribute. When the value is "true", the _Tenderer Legal Form
-Description_ (BT-76) is provided and marked using the
+two values "_true_" or "_false_" and specifying "required" as a "_listName_"
+attribute. When the value is "true", the Tenderer Legal Form
+Description (BT-76) is provided and marked using the
 "_cbc:CompanyLegalForm_" element.
 
 Information about the tolerance for supporting documents provision after
@@ -1343,7 +1343,7 @@ and detailed text using "_cbc:Description_" (BT-772).
 [[subcontractingObligationSection]]
 === Subcontracting obligations (BT-64, BT-65, BT-651, BT-729)
 
-These elements apply only for Directive 2009/81 notices of notice types
+These Business Terms apply only for Directive 2009/81 notices of notice types
 "PIN time limit" and "CN general".
 
 The Subcontracting Obligation (BT-65) expresses, with the
@@ -1406,9 +1406,9 @@ codelist.
 
 This business term is used to specify whether the procurement execution is 
 reserved or not, or whether this is not yet known. The business term must be
-specified everywhere mandated by the Regulation. The "listName"
-attribute of the cbc:ExecutionRequirementCode element should be set 
-to "reserved-execution". The element possible values are the ones of the
+specified everywhere mandated by the Regulation. The "_listName_"
+attribute of the "_cbc:ExecutionRequirementCode_" element should be set 
+to "reserved-execution". The possible values for this element are the codes of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/applicability[applicability]
 codelist (i.e. "yes", "no" or "not-known"):
 
@@ -1423,7 +1423,7 @@ codelist (i.e. "yes", "no" or "not-known"):
 === Electronic Invoicing (BT-743)
 
 Use of e-invoicing for the contract execution is encoded with the
-"_cbc:ExecutionRequirementCode_" element, having its "listName" attribute set to "ecatalog-submission",
+"_cbc:ExecutionRequirementCode_" element, having its "_listName_" attribute set to "einvoicing",
 the code value selected from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/permission[permission]
 codelist:
@@ -1456,7 +1456,7 @@ property rights) shall be marked:
 
 The possibility to submit (parts of) tenders as electronic catalogues is
 specified with the "_cbc:ExecutionRequirementCode_" element, having its
-"listName" attribute set to "ecatalog-submission", with the value
+"_listName_" attribute set to "ecatalog-submission", with the value
 selected from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/permission[permission]
 codelist:
@@ -1471,7 +1471,10 @@ codelist:
 [[eSignatureSubmissionSection]]
 === Submission Electronic Signature (BT-744)
 
-Whether or not the use of electronic signaturefootnote:[as defined in Regulation (EU) No 910/2014] is required, is indicated by a "true"/"false" value in the "_cbc:ExecutionRequirementCode_" element, having its "listName" attribute set to "_esignature-submission_":
+Whether or not the use of electronic signaturefootnote:[as defined in 
+Regulation (EU) No 910/2014] is required, is indicated by a "true"/"false" 
+value in the "_cbc:ExecutionRequirementCode_" element, having its "_listName_" 
+attribute set to "_esignature-submission_":
 
 [source,xml]
 ----
@@ -1652,8 +1655,8 @@ https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/award-cri
 codelist.
 
 This criterion may be quantified in one or more dimensions, each within 
-an efac:AwardCriterionParameter element. The dimension is specified with 
-the efbc:ParameterCode element, and the efbc:ParameterNumeric element 
+an "_efac:AwardCriterionParameter_" element. The dimension is specified with 
+the "_efbc:ParameterCode_" element, and the "_efbc:ParameterNumeric_" element 
 shall hold the value associated with that dimension.
 
 
@@ -2333,7 +2336,7 @@ containing the Lot, shall not exist anymore.
 The name of the electronic tool or device used for electronic
 communication.
 
-This optional element is to be used, for PIN and CN notices only, in
+This optional Business Term is to be used, for PIN and CN notices only, in
 conjunction with BT-724 & BT-124. It shall be marked using the extension
 mechanism at the level of the "_cac:TenderingProcess_" element of the
 Lot or Part it applies to.
@@ -2461,7 +2464,7 @@ competition."
 === Lots All Required (BT-763)
 
 This term is used to specify that any tenderer must submit tenders for
-all Lots. This element shall be used when and only when tendering for
+all Lots. This Business Term shall be used when and only when tendering for
 all existing Lots is mandatory. For this, the
 "_cbc:PartPresentationCode_" element is used with a single possible
 value: "_all_".
@@ -2576,7 +2579,7 @@ the invitations to confirm interest is encoded using
 
 For a given Lot, the deadline for receipt of requests to participate is
 expressed with components of the
-"cac:ParticipationRequestReceptionPeriod" element:
+"_cac:ParticipationRequestReceptionPeriod_" element:
 
 [source,xml]
 ----
@@ -2634,14 +2637,20 @@ may belong to different "PIN only" notices,
 "cac:NoticeDocumentReference" and
 "cbc:ReferencedDocumentInternalAddress" are repeatable;
 
-* Two "cac:NoticeDocumentReference" elements with the same parent (i.e. leading by combination to the definition of a given Lot) shall have different notice identifiersfootnote:[It is not enough to have a different version number, the UUID part of the notice identification should differ. For a given Notice, since the reference to Parts is repeatable, all Parts needed are identified together without referring multiple times to the same notice.];
+* Two "_cac:NoticeDocumentReference_" elements with the same parent (i.e. 
+leading by combination to the definition of a given Lot) shall have 
+different notice identifiersfootnote:[It is not enough to have a different 
+version number, the UUID part of the notice identification should differ. 
+For a given Notice, since the reference to Parts is repeatable, all Parts 
+needed are identified together without referring multiple times to the 
+same notice.];
 
 * When the referenced notice is of any other type, since Lots
 shall neither be added/suppressed/redefined, only notice identifier &
 version should be reported;
 
-* The reference to a previous notice shall be reported in the "cac:TenderingProcess"
-element of the relevant Lots or Parts.
+* The reference to a previous notice shall be reported in the 
+"_cac:TenderingProcess_" element of the relevant Lots or Parts.
 
 [[nonelectronicSection]]
 === Submission Nonelectronic Justification (BT-19) & Description (BT-745)
@@ -2668,7 +2677,7 @@ codelist.
 
 When the Procedure is accelerated the "true" code shall be used, otherwise
 the "false" code shall apply. For an accelerated Procedure, the
-justification is encoded with the ProcessReason element:
+justification is encoded with the "_ProcessReason_" element:
 
 [source,xml]
 ----
@@ -2683,9 +2692,9 @@ justification is encoded with the ProcessReason element:
 === Direct Award Justification (BT-135, BT-136, BT-1252) 
 
 When the Procedure Type is a Direct Award, then the justification is
-encoded with the "cbc:ProcessReasonCode" element. The
-"cbc:ProcessReason" element may be used to provide further information
-as text when required and "cbc:Description" may be used to refer to the previous
+encoded with the "_cbc:ProcessReasonCode_" element. The
+"_cbc:ProcessReason_" element may be used to provide further information
+as text when required and "_cbc:Description_" may be used to refer to the previous
 procedure (using its UUID) that justified the Direct Award:
 
 [source,xml]
@@ -2783,7 +2792,7 @@ Terms, it references an existing list of already screened tenderers.
 "_cbc:LimitationDescription_":
 
 * is used as an indicator (only possible values are "true" &
-"false"), the languageID attribute shall not be used;
+"false"), the "_languageID_" attribute shall not be used;
 
 * shall not occur more than once in the same parent;
 
@@ -3301,7 +3310,7 @@ Title and description may also be specified for the procedure, Parts,
 Groups of Lots and Lots; title and description are language dependant.
 
 The corresponding elements, of type text, shall have their associated
-"languageID" attribute value specified using a
+"_languageID_" attribute value specified using a
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/language[language]
 code.
 
@@ -3354,9 +3363,9 @@ Additional Natures only.
 [[strategicProcurementSection]]
 ==== Strategic Procurement (BT-06, BT-774, BT-775, BT-776, BT-777)
 
-For a given Lot, strategic projects are identified using the "listName"
+For a given Lot, strategic projects are identified using the "_listName_"
 attribute of the "_cbc:ProcurementTypeCode_" element. The value of the
-listName attribute shall refer to the appropriate codelist
+"_listName_" attribute shall refer to the appropriate codelist
 (https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/strategic-procurement[strategic-procurement]
 for strategic procurement BT-06,
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/environmental-impact[environmental-impact]
@@ -3378,7 +3387,7 @@ using the "_cbc:ProcurementType_" element.
 ==== Accessibility (BT-754, BT-755)
 
 Whether accessibility criteria for persons with disabilities are included
-(BT-754) for a lot may be indicated with a "_cbc:ProcurementTypeCode_" element, with the "listName" 
+(BT-754) for a lot may be indicated with a "_cbc:ProcurementTypeCode_" element, with the "_listName_" 
 attribute set to "accessibility", and a value from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/accessibility[accessibility]
 codelist. BT-754 is not repeatable, as the values in the codelist are 
@@ -3506,7 +3515,7 @@ These business terms are used to designate the classification system
 along with the main and the additional commodities classifications.
 
 The used classification (Classification Type -- BT-26) is specified using
-the listName attribute of the _"cbc:ItemClassificationCode_".
+the "_listName_" attribute of the _"cbc:ItemClassificationCode_".
 
 The main commodity is the one representing the highest value fraction.
 Additional commodities are other commodities belonging to the same
@@ -3721,15 +3730,15 @@ illustrated below:
 
 Considerations:
 
-* cbc:MaximumNumberNumeric is mandatory for Notice subtypes 15
+* "_cbc:MaximumNumberNumeric_" is mandatory for Notice subtypes 15
 (Notice on the existence of a qualification system), 17 
 and 18 (Contract, or concession, notice — standard regime, 
 Directives 2014/25/EU and 2009/81/EC)
 
-* cbc:MaximumNumberNumeric shall be a whole number (when no
+* "_cbc:MaximumNumberNumeric_" shall be a whole number (when no
 extension is foreseen, the element shouldn't be used, except for
 Notice subtypes 15, 17 and 18, where it should have the value 0)
 
-* cbc:MaximumNumberNumeric refers to the number of possible
+* "_cbc:MaximumNumberNumeric_" refers to the number of possible
 renewals; an encoded value of "3" involves an initial contract followed
 by up to 3 renewals

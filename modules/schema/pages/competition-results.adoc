@@ -55,9 +55,9 @@ shall be specified. Group Framework Value and its associated reference
 to the lot may be "unpublished"; when done so, the dates of publication
 for both elements shall be the same.
 
-All these amounts have to be expressed using elements of the
+All these amounts have to be expressed using codes of the
 https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/currency[Currency]
-codelist to designate the currency as "currencyID" attribute and decimal
+codelist to designate the currency as "_currencyID_" attribute and decimal
 numbers.
 
 Further details on the fields may be found in the following table and an
@@ -685,7 +685,7 @@ _Cf. <<lotTenderLevelSection>>_
 |*Country Origin (BT-191)* |A country of origin of the product or the
 service. Values must come from the 
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/country[country]
-codelist and the listName attribute be set to 'country'. |*?* a|
+codelist and the "_listName_" attribute be set to 'country'. |*?* a|
 [source,xpath,subs=attributes]
 ----
 efac:Origin{zwsp}/efbc:AreaCode

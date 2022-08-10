@@ -5,7 +5,7 @@
 The elements at the upper most level of the XML instance of a notice,
 concern the information listed in <<noticeRelatedInformationTable>>. This table contains the
 Business Terms, a shortened description, its cardinality and the XML
-components used to mark the information. The specified cardinality is
+elements used to mark the information. The specified cardinality is
 more restrictive than the one in the schema; it is used to express
 requirements stated in https://ec.europa.eu/docsroom/documents/38172[the
 Regulation annex].
@@ -58,8 +58,7 @@ cbc:NoticeLanguageCode
 
 cac:AdditionalNoticeLanguage/cbc:ID
 
-ah|
-Organization
+|Organization
 
 _(Buyer, CPB, Service Provider ...)_
 
@@ -213,7 +212,7 @@ marked:
 [[futureNoticeSection]]
 == Future Notice
 
-The "_cbc:PlannedDate_" is used for planning notices (PIN only excluded)
+The "_cbc:PlannedDate_" element is used for planning notices (PIN only excluded)
 to specify when the competition notice will be published. Mark-up should
 be as follows:
 
@@ -300,11 +299,15 @@ Using:
 * "_cac:AdditionalNoticeLanguage_" for any additional official
 language.
 
-In the XML instance, the attribute "languageID" of a _text-type_
+In the XML instance, the attribute "_languageID_" of a _text-type_
 element, identifies, using a
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/language[language]
 code, the language used for the text. The specification of the value for
-this attribute is required for all text-type elements within a noticefootnote:[A few text-type elements (e.g. cbc:RegulatoryDomain, cbc:Region, cbc:LimitationDescription) will use codes instead and for these the languageID attribute shall not be used. They will be presented later on.].
+this attribute is required for all text-type elements within a 
+noticefootnote:[A few text-type elements (e.g. "_cbc:RegulatoryDomain_", 
+"_cbc:Region_", "_cbc:LimitationDescription_") will use codes instead and for 
+these the "_languageID_" attribute shall not be used. They will be presented later 
+on.].
 
 A "_Notice non-official language_" refers to any (EU) Official Language
 not considered as authentic (i.e. for which only part of the notice text
