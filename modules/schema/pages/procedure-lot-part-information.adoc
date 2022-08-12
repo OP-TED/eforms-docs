@@ -1893,12 +1893,13 @@ execution is specified by two indicators:
 ----
 
 To indicate that Electronic Ordering (BT-92) or Electronic Payment (BT-93) 
-shall be used, the respective element should be used with the value "true".
-These indicators are mandatory for Notice subtype 16 (Contract, or 
-concession, notice — standard regime, Directive 2014/24/EU). For this Notice 
-subtype, to indicate that  _Electronic Ordering (BT-92)_ or _Electronic 
+shall be used, the respective element should be used with the value "true". 
+To indicate that  _Electronic Ordering (BT-92)_ or _Electronic 
 Payment (BT-93)_ shall not be used, the respective element should be used 
 with the value "false". 
+These indicators are mandatory for Notice subtype 16 (Contract, or 
+concession, notice — standard regime, Directive 2014/24/EU). For this Notice 
+subtype, as for any other notice above threshold, when used, BT-93 should be set to "true".
 
 [[shortlistSection]]
 === Economic Operator Shortlist
