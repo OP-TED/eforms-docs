@@ -115,13 +115,13 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 ==== Currently available 
 [horizontal]
 Application version:: 1.1.0 (Phase 3)
-SDK versions:: 0.4.2 and 0.6.2
+SDK versions:: 0.6.2 and 1.0.0
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
 We are working on resolving the following limitations and known issues:
 
-* As indicated above, notices can currently only be validated with the rules from SDK 0.4 and 0.6.
-* Large notices (750 KB or above) cannot be sent, due to a technical restriction.
+* As indicated above, notices can currently only be validated with the rules from SDK 0.6 and 1.0.
+* Large notices (3 MB or above) cannot be sent, due to a technical restriction.
 
 
 === TED Viewer
