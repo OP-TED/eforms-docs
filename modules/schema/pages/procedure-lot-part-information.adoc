@@ -577,6 +577,22 @@ cac:ContractExecutionRequirement{zwsp}/cbc:ExecutionRequirementCode{zwsp}[@listN
 ----
 
 
+|*Non Disclosure Agreement (BT-801)* | xref:nonDisclosureAgreementSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |--
+a|
+[source,xpath,subs=attributes]
+----
+cac:ContractExecutionRequirement{zwsp}/cbc:ExecutionRequirementCode{zwsp}[@listName='nda']
+----
+
+
+|*Non Disclosure Agreement Description (BT-802)* | xref:nonDisclosureAgreementSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |--
+a|
+[source,xpath,subs=attributes]
+----
+cac:ContractExecutionRequirement{zwsp}[cbc:ExecutionRequirementCode{zwsp}/@listName='nda']/cbc:Description
+----
+
+
 |*Terms Performance (BT-70)* | xref:termsPerformanceSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- a|
 [source,xpath,subs=attributes]
 ----
@@ -1432,6 +1448,22 @@ codelist:
 ----
 <cac:ContractExecutionRequirement>
     <cbc:ExecutionRequirementCode listName="einvoicing">required</cbc:ExecutionRequirementCode>
+</cac:ContractExecutionRequirement>
+----
+
+[[nonDisclosureAgreementSection]]
+=== Non Disclosure Agreement Indicator and Description (BT-801, BT-802)
+
+Use of Non Disclosure Agreement for the contract execution may be encoded with the
+"_cbc:ExecutionRequirementCode_" element, having its "_listName_" attribute set to "nda",
+and either the 'true' or 'false' value. When the value is set to 'true', further details may be
+ provided as text in the cbc:Decription element.
+
+[source,xml]
+----
+<cac:ContractExecutionRequirement>
+    <cbc:ExecutionRequirementCode listName="nda">true</cbc:ExecutionRequirementCode>
+    <cbc:Description languageID="ENG">A Non Disclosure Agreement will need to ...</cbc:Description>
 </cac:ContractExecutionRequirement>
 ----
 
