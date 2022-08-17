@@ -835,7 +835,7 @@ An organisation might have several contact details, each for one or more differe
 which has an identifier following the pattern "TPO-XXXX". An example XML for a Buyer is shown in: 
 https://docs.ted.europa.eu/eforms/1.0.0/schema/parties.html#buyerSection. 
 +
-Within the rest of the nNotice, any function performed by an organisation can then link to that organisation, or to one of its touchpoints, 
+Within the rest of the notice, any function performed by an organisation can then link to that organisation, or to one of its touchpoints, 
 by using the relevant identifier as a reference. Examples of this can be found in: 
 https://docs.ted.europa.eu/eforms/1.0.0/schema/parties.html#_legislation_information_provider 
 and the following section: https://docs.ted.europa.eu/eforms/1.0.0/schema/parties.html#_other_rolessubroles  
