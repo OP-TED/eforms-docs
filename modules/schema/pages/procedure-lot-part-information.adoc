@@ -2096,6 +2096,12 @@ AND
 cac:AdditionalInformationRequestPeriod{zwsp}/cbc:EndTime
 ----
 
+|*Previous Notice (OPP-090)* |xref:previousNoticeSection[xrefstyle=short] |* |-- |-- |-- |-- |-- |-- |-- a|
+[source,xpath,subs=attributes]
+----
+cac:NoticeDocumentReference{zwsp}/cbc:ID
+----
+
 |*Previous Planning Identifier (BT-125)* |xref:previousPlanningSection[xrefstyle=short] |-- |-- h|? h|? |-- h|? |-- h|? a|
 [source,xpath,subs=attributes]
 ----
@@ -2602,6 +2608,40 @@ additional information is encoded as follows:
     <cbc:EndDate>2019-11-08+01:00</cbc:EndDate>
     <cbc:EndTime>18:00:00+01:00</cbc:EndTime>
 </cac:AdditionalInformationRequestPeriod>
+----
+
+[[previousNoticeSection]]
+=== Previous Notice (OPP-090)
+
+Previous Notice (OPP-090) may be used to associate a notice to one or 
+more that just preceded. It is not intended to replace:
+
+* Change Notice Version Identifier (BT-758),
+
+* Modification Previous Notice Section Identifier (BT-1501),
+
+* Previous Planning Identifier (BT-125), or
+
+* Framework Notice Identifier (OPT-100).
+
+It is only foreseen for cases where no other option to refer to a previous notice exist. It may be useful when a Procedure already started in TEDXML and goes on in eForms, this Business Term allows then to associate the notices despite the absence of Procedure ID in TEDXML.
+A notice is referred to using either of the two identifiers:
+
+* its notice identifier (UUID) concatenated with its version identifier (e.g. <UUUID>-<vv>), or 
+
+* its Notice Publication ID (XXXXXX-YYYY).
+
+Previous Notice (OPP-090) applies to the whole notice, and not just a single lot.
+It may also be repeated to point to multiple previous notices when needed.
+
+[source,xml]
+----
+<cac:NoticeDocumentReference>
+    <cbc:ID schemeName="notice-id-ref">123e4567-e89b-12d3-a456-426614174000-06</cbc:ID>
+</cac:NoticeDocumentReference>
+<cac:NoticeDocumentReference>
+    <cbc:ID schemeName="notice-id-ref">33b03807-58ce-4eb2-aac2-25702d0ad624-06</cbc:ID>
+</cac:NoticeDocumentReference>
 ----
 
 [[previousPlanningSection]]
