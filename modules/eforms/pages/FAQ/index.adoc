@@ -1166,7 +1166,7 @@ to decide if they should be published or rejected.
 From a technical point of view, would an eForms notice be rejected if the names of some business terms and descriptions are changed at the national level?:: 
 
 The eForms notices submitted for publication on TED should conform to
-the eForms schema, Xpaths and field IDs, which are the same for all
+the eForms schema, XPaths and field IDs, which are the same for all
 Member States. This means that any notice submitted that doesn't conform
 to this schema will be rejected by definition. 
 +
@@ -1258,10 +1258,10 @@ However, the eForms schema will allow the addition of other classifications if n
 
 
 
-BT-755-Lot, BT-772-Lot and BT-777-Lot all reference codelistes in the“xPathAbsolute”/”xPathRelative” field, have a “type”-attribute called “text-multilingual” and a “legal-type”-attribute called “TEXT” and therefore a codelist is not attached to these fields. All those codelists are at least referenced in the “xPathAbsolute” field. How are these fields validated against the codelists?::
+BT-755-Lot, BT-772-Lot and BT-777-Lot all reference codelists in the“xpathAbsolute”/”xpathRelative” field, have a “type”-attribute called “text-multilingual” and a “legal-type”-attribute called “TEXT” and therefore a codelist is not attached to these fields. All those codelists are at least referenced in the “xpathAbsolute” field. How are these fields validated against the codelists?::
 
 These Business Fields contain multilingual text, so their validation is limited to checking the declared language codes; 
-they are not validated against codelists. However, codelists are referenced in their "xPathAbsolute" field, in an ancestor or sibling node 
+they are not validated against codelists. However, codelists are referenced in their "xpathAbsolute" field, in an ancestor or sibling node 
 of the Business Field. Validation of the codelist values of these nodes is included in the Schematron validation files in the SDK. 
 +
 For example, Business Field BT-755-Lot has field "xpathAbsolute" with a value of: 
