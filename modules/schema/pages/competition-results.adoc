@@ -1087,13 +1087,20 @@ concrete information must be given (e.g. about concrete projects, not
 just operational programs.) |*?* a|
 [source,xpath,subs=attributes]
 ----
-efac:Funding{zwsp}/cbc:FundingProgramCode
+efac:Funding{zwsp}/efbc:FinancingIdentifier
 ---- 
 
 |*Contract EU Funds Name (BT-722)* |The name of the European Union funds
 used to at least partially finance the contract. The most concrete
 information must be given (e.g. about concrete projects, not just
-operational programs.) |*?* |efac:Funding{zwsp}/cbc:FundingProgram 
+operational programs.) |*?* |efac:Funding{zwsp}/cbc:FundingProgramCode 
+
+|*Contract EU Funds Details (BT-6110)* |Further information about the Union 
+programme or project used at least partially finance the procurement. |*?* a|
+[source,xpath,subs=attributes]
+----
+efac:Funding{zwsp}/cbc:Description
+---- 
 
 4+a|
 
