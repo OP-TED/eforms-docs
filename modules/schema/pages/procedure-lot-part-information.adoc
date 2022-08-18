@@ -712,19 +712,19 @@ cac:AwardingTerms{zwsp}/cac:TechnicalCommitteePerson{zwsp}/cbc:FamilyName
 
 11+^|*Prize information (CN Design per prize) (+++**+++)*
 
-|*Prize Rank (BT-44)* | xref:prizeSection[xrefstyle=short] |-- |-- |-- |-- |-- h|1 |-- |-- a|
+|*Prize Rank (BT-44)* | xref:prizeSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:AwardingTerms{zwsp}/cac:Prize{zwsp}/cbc:RankCode
 ----
 
-|*Value Prize (BT-644)* | xref:prizeSection[xrefstyle=short] |-- |-- |-- |-- |-- h|1 |-- |-- a|
+|*Value Prize (BT-644)* | xref:prizeSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:AwardingTerms{zwsp}/cac:Prize{zwsp}/cbc:ValueAmount
 ----
 
-|*Rewards Other (BT-45)* | xref:prizeSection[xrefstyle=short] |-- |-- |-- |-- |-- h|? |-- |-- a|
+|*Rewards Other (BT-45)* | xref:prizeSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:AwardingTerms{zwsp}/cac:Prize{zwsp}/cbc:Description
@@ -1776,8 +1776,10 @@ name of each member:
 [[prizeSection]]
 === Prize information (BT-44, BT-45, BT-644)
 
-Prize information is only for notices of type "CN design", and covers
-_Prize Rank_ (BT-44), _Value Prize_ (BT-644) and _Rewards Other_
+Prize information may be used for various Planning and Competition notices. While it is necessary for 
+Design Contest competition notices, it may also be useful for other notices when the procedure is about 
+"Innovation Partnership" or "Competitive Dialogue".
+Prize Information covers _Prize Rank_ (BT-44), _Value Prize_ (BT-644) and _Rewards Other_
 (BT-45); the last one being for prizes not having equivalent monetary
 value.
 
