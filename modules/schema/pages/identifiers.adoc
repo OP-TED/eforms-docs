@@ -51,9 +51,9 @@ procedure |NA |No restriction yet
 |BT-501 |Organisation Identifier |Discussions ongoing. It will be
 encoded by the Contracting Authority | |No restriction yet
 
-|BT-5011 |Contract EU Funds Identifier |Values defined in a codelist of
-EU funding programs | |(cf.
-https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eu-programme[eu-programme])
+|BT-5011 |Contract EU Funds Identifier |Financing Identifier;  The 
+most concrete information must be given (e.g. grant agreement number, 
+national identifier, project acronym, contract number) | | 
 
 |BT-701 |Notice Identifier |Generated & assigned by OP/eSender |NA |UUID
 v4

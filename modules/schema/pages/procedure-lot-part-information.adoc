@@ -270,6 +270,30 @@ s|-- |_Not allowed (0)_ a|(+++*+++) +
 .2+^|*eForms BT* .2+|*Details* .2+|*Procedure* 3+|*PIN* 2+|*CN* 2+|*CAN* .2+|*XSD element*
 |G.Lot |Lot |Part |G.Lot |Lot |G.Lot |Lot
 
+11+^|*EU Funds Information (++*++)* 
+
+|*EU Funds Financing Identifier (BT-5010)* |xref:fundsInformationSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+a|
+[source,xpath,subs=attributes]
+----
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:Funding{zwsp}/efbc:FinancingIdentifier
+----
+
+|*EU Funds Programme (BT-7220)* |xref:fundsInformationSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+a|
+[source,xpath,subs=attributes]
+----
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:fundsInformation{zwsp}/efext:EformsExtension{zwsp}/efac:Funding{zwsp}/cbc:FundingProgramCode
+----
+
+|*EU Funds Details (BT-6140)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+a|
+[source,xpath,subs=attributes]
+----
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:Funding{zwsp}/cbc:Description
+----
+
+
 11+^|*Selection Criteria (++*++)* 
 
 |*Selection Criteria Type (BT-747)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
@@ -947,6 +971,40 @@ cac:SecurityClearanceTerm{zwsp}/cbc:Description
 |===
 
 
+
+[[fundsInformationSection]]
+=== Selection criteria
+
+When EU Funds (BT-60) indicates that EU FUnds are involved in the procurement, 
+EU Funds Informattion (BG-614) may be given, this covers:
+
+* EU Funds Programme (BT-7220),
+
+* EU Funds Financing Identifier (BT-5010), and
+
+* EU Funds Details (BT-6160).
+
+
+Details may only be provided once, either of the both, BT-7220 or BT-5010 exist.
+The content of EU Funds Programme must match one of the codes of the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/eu-programme[eu-programme] codelist.
+The content of the EU Funds Financing Identifier shall be the most concrete possible 
+(e.g. grant agreement number, national identifier or project acronym).
+
+[source,xml]
+----
+    <efac:Funding>
+        <efbc:FinancingIdentifier>CON_PRO-123/ABC</efbc:FinancingIdentifier>
+        <cbc:Description languageID="ENG">This project will be financed ...</cbc:Description>
+        <cbc:Description languageID="FRA">Ce projet sera financé ...</cbc:Description>
+    </efac:Funding>
+    <efac:Funding>
+        <efbc:FinancingIdentifier>CAS-LEO/2022/PDM</efbc:FinancingIdentifier>
+        <cbc:FundingProgramCode listName="eu-proramme">ERDF_2021</cbc:FundingProgramCode>
+        <cbc:Description languageID="ENG">This local project ...</cbc:Description>
+        <cbc:Description languageID="FRA">Ce projet local ...</cbc:Description>
+    </efac:Funding>
+----
 
 [[selectionCriteriaSection]]
 === Selection criteria
