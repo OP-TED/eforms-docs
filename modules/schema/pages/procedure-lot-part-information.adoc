@@ -272,21 +272,21 @@ s|-- |_Not allowed (0)_ a|(+++*+++) +
 
 11+^|*EU Funds Information (++*++)* 
 
-|*EU Funds Financing Identifier (BT-5010)* |xref:fundsInformationSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+|*EU Funds Financing Identifier (BT-5010)* |xref:EUFundsSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
 ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:Funding{zwsp}/efbc:FinancingIdentifier
 ----
 
-|*EU Funds Programme (BT-7220)* |xref:fundsInformationSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+|*EU Funds Programme (BT-7220)* |xref:EUFundsSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
-ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:fundsInformation{zwsp}/efext:EformsExtension{zwsp}/efac:Funding{zwsp}/cbc:FundingProgramCode
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:Funding{zwsp}/cbc:FundingProgramCode
 ----
 
-|*EU Funds Details (BT-6140)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+|*EU Funds Details (BT-6140)* |xref:EUFundsSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
@@ -971,25 +971,42 @@ cac:SecurityClearanceTerm{zwsp}/cbc:Description
 |===
 
 
+[[EUFundsSection]]
+=== EU Funds (BG-61)
 
-[[fundsInformationSection]]
-=== Selection criteria
+In all notices, the element "_cbc:FundingProgramCode_" is used per Lot
+to specify whether it is foreseen
+or not to have the procurement project partly financed with EU Funds
+(BT-60). The value "eu-funds" is used to specify the intention to get
+the project partly funded with EU funds (i.e. "true" value for the
+indicator), and the value "no-eu-funds" is used to indicate that no 
+EU funds is foreseen for financing the procurement project (i.e. 
+"false" value for the indicator).
 
-When EU Funds (BT-60) indicates that EU FUnds are involved in the procurement, 
-EU Funds Informattion (BG-614) may be given, this covers:
+[source,xml]
+----
+<cbc:FundingProgramCode listName="eu-funded">eu-funds</cbc:FundingProgramCode>
+----
+
+In "PIN time limit" and Competition notices, when EU Funds (BT-60) indicates 
+that EU Funds are involved in the procurement, EU Funds Information 
+(BG-614) may be given; this covers:
 
 * EU Funds Programme (BT-7220),
 
 * EU Funds Financing Identifier (BT-5010), and
 
-* EU Funds Details (BT-6160).
+* EU Funds Details (BT-6140).
 
-
-Details may only be provided once, either of the both, BT-7220 or BT-5010 exist.
-The content of EU Funds Programme must match one of the codes of the 
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/eu-programme[eu-programme] codelist.
-The content of the EU Funds Financing Identifier shall be the most concrete possible 
-(e.g. grant agreement number, national identifier or project acronym).
+EU Funds Information (BG-614) may be repeated for each source 
+of funding. Within each BG-614, at least one of BT-7220 or BT-5010 shall be 
+specified. The content of EU Funds Programme (BT-7220) must match one of the 
+codes of the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/eu-programme[eu-programme] 
+codelist. The content of the EU Funds Financing Identifier shall be the most 
+concrete possible (e.g. grant agreement number, national identifier or 
+project acronym). EU Funds Details (BT-6160) may only be provided once for 
+each BG-611.
 
 [source,xml]
 ----
@@ -1124,23 +1141,6 @@ codelist and the BT is expressed as follows:
 [source,xml]
 ----
 <cbc:VariantConstraintCode listName="permission">allowed</cbc:VariantConstraintCode>
-----
-
-[[EUFundsSection]]
-=== EU Funds (BG-61)
-
-In all notices, the element "_cbc:FundingProgramCode_" is used at Lot
-(outside the Awarded tender context) to specify whether it is foreseen
-or not to have the procurement project partly financed with EU Funds
-(BT-60). The value "eu-funds" is used to specify the intention to get
-the project partly funded with EU funds (i.e. "true" value for the
-indicator), and "no-eu-funds" to indicate that no EU funds is foreseen
-for financing the procurement project (i.e. "false" value for the
-indicator).
-
-[source,xml]
-----
-<cbc:FundingProgramCode listName="eu-funded">eu-funds</cbc:FundingProgramCode>
 ----
 
 [[staffQualificationSection]]
@@ -1512,10 +1512,10 @@ codelist:
 [[nonDisclosureAgreementSection]]
 === Non Disclosure Agreement Indicator and Description (BT-801, BT-802)
 
-Use of Non Disclosure Agreement for the contract execution may be encoded with the
+Use of a Non Disclosure Agreement for the contract execution may be encoded with the
 "_cbc:ExecutionRequirementCode_" element, having its "_listName_" attribute set to "nda",
 and either the 'true' or 'false' value. When the value is set to 'true', further details may be
- provided as text in the cbc:Decription element.
+ provided as text in the cbc:Description element.
 
 [source,xml]
 ----
@@ -1834,9 +1834,10 @@ name of each member:
 [[prizeSection]]
 === Prize information (BT-44, BT-45, BT-644)
 
-Prize information may be used for various Planning and Competition notices. While it is necessary for 
-Design Contest competition notices, it may also be useful for other notices when the procedure is about 
-"Innovation Partnership" or "Competitive Dialogue".
+Prize information may be used for various Planning and Competition notices. 
+While it is necessary for Design Contest competition notices, it may also 
+be useful for other notices when Procedure Features (BT-88) is set to 
+"innovation" (Innovation Partnership) or "comp-dial" (Competitive Dialogue).
 Prize Information covers _Prize Rank_ (BT-44), _Value Prize_ (BT-644) and _Rewards Other_
 (BT-45); the last one being for prizes not having equivalent monetary
 value.
@@ -2406,10 +2407,10 @@ levels (Lot & Procedure) to specify that, for the corresponding object,
 the process will be restarted.
 
 The "_efbc:ProcedureRelaunchIndicator_" element shall only be used when
-"true"; When it applies to the whole procurement, it shall appear in the
+"true"; when it applies to the whole procurement, it shall appear in the
 "_cac:TenderingProcess_" of the notice (i.e. at notice level) only.
 When applied to a Lot, all the individual Lots included in a Group of
-Lots with that same lot shall be marked as such, and Group of Lots
+Lots with that same Lot shall be marked as such, and Group of Lots
 containing the Lot, shall not exist anymore.
 
 [source,xml]
@@ -3066,7 +3067,7 @@ information is expected at the level of the Lot definition:
 </cac:ContractingSystem>
 ----
 
-For a CAN, when, for a given Group of Lots, a Framework Agreement is involved, only the following
+For a CAN, when for a given Group of Lots a Framework Agreement is involved, only the following
 information is expected at the level of the Group of Lots
 definition:
 

@@ -19,10 +19,10 @@ h|_Notice SubType (OPP-070)_ a| xref:subtypeSection[xrefstyle=short] |*1*
 |efac:NoticeSubType/cbc:SubTypeCode
 
 |_Notice Dispatch Date eSender (BT-803)_ - date | xref:dispatchDateEsender[xrefstyle=short] |*?*
-|efbc:TransmissionDate]
+|efbc:TransmissionDate
 
 |_Notice Dispatch Date eSender (BT-803)_ - time | xref:dispatchDateEsender[xrefstyle=short] |*?*
-|efbc:TransmissionTime]
+|efbc:TransmissionTime
 
 |_Notice Publication ID (OPP-010)_ | xref:pubInfoSection[xrefstyle=short] |*?*
 |efac:Publication/efbc:NoticePublicationID[@schemeName='ojs-notice-id']
@@ -75,13 +75,13 @@ _(Buyer, CPB, Service Provider ...)_
 == Notice Dispatch Date eSender (BT-803)
 
 The Notice Dispatch Date eSender (BT-803) represents the date and time the notice was transmitted 
-electronically by the eSender to the Publications Office of the European Union. It may be indicated 
+electronically by the eSender to the Publications Office of the European Union. It shall be indicated 
 in the extensions at Root by specifying its two components (date & time):
 
 [source, xml]
 ----
-    <efbc:TransmissionDate>2022-11-17+Z</efbc:NoticePublicationID>
-    <efbc:TransmissionTime>08:30:03+Z</efbc:GazetteID>
+    <efbc:TransmissionDate>2022-11-17+01:00</efbc:TransmissionDate>
+    <efbc:TransmissionTime>08:30:03+01:00</efbc:TransmissionTime>
 ----
 
 [[pubInfoSection]]
