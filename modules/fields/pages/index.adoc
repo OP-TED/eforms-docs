@@ -316,7 +316,7 @@ In the following snippet, a dynamic value is assigned to the `forbidden` dynamic
     "severity" : "ERROR"
   }, {
     "noticeTypes" : [ "2", "5", "8", "11", "14", "15", "17", "19", "24", "30", "32", "35", "37" ], 
-    "condition" : "BT-105-Procedure in ('open','restricted')", // <5>
+    "condition" : "{ND-AcceleratedProcedureJustification} ${BT-105-Procedure in ('open','restricted')}", // <5>
     "value" : true, // <4>
     "severity" : "ERROR"
   } ]
@@ -359,7 +359,12 @@ For more details on the syntax of conditions, see <<Syntax for conditions>> belo
 
 === Syntax for conditions
 
-The value of the `condition` property of a constraint is a string representing a boolean expression in the xref:efx:index.adoc[eForms expression language (EFX)].
+The value of the `condition` property of a constraint is a string representing a single expression in the xref:efx:index.adoc[eForms expression language (EFX)].
+
+This expression is made of two parts:
+
+* The context under which the expression is evaluated. It's often the parent node of the field.
+* The boolean expression itself.
 
 
 [#data-types]
