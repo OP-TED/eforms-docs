@@ -49,7 +49,7 @@ We are using this file to provide the definition of all fields to our
 form-filling application (eNotices2). Each form is then made of a specific
 subset of those fields.
 
-The field repository is an array of fields, preceded by some version information:
+The field repository is mainly an array of fields, preceded by some version information and the general structure of XML notices:
 
 [source,json]
 ----
@@ -60,11 +60,11 @@ The field repository is an array of fields, preceded by some version information
     "version": "0.2.53",
     "createdOn": "2021-11-20T16:46:39"
   },
-  "fields": [ // <4>
+  "xmlStructure" : [ // <5>
     { ... },
     ...
   ],
-  "xmlStructure" : [ // <5>
+  "fields": [ // <4>
     { ... },
     ...
   ]
@@ -73,8 +73,8 @@ The field repository is an array of fields, preceded by some version information
 <1> Version of the UBL standard used.
 <2> Version of the eForms SDK the file belongs to.
 <3> Version number and date of the data used to create this file.
-<4> List of fields.
-<5> General structure of XML notices. See the xref:xml-structure.adoc[] page.
+<4> General structure of XML notices. See the xref:xml-structure.adoc[] page.
+<5> List of fields.
 
 == Field properties
 
@@ -181,7 +181,7 @@ Applicable only for fields of type "code" or "internal-code"
 <13> This property provides information on when a field's presence is forbidden.
 <14> This property provides information on when a field's value is mandatory.
 <15> A RegEx pattern the field's value must match.
-<16> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "ìd-ref"`) can reference.
+<16> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "id-ref"`) can reference.
 
 
 === Property Values
