@@ -90,7 +90,7 @@ The various characteristics of each field are indicated as properties of the JSO
     "btId" : "BT-01", // <4>
     "xpathAbsolute" : "/*/cbc:RegulatoryDomain", // <5>
     "xpathRelative" : "cbc:RegulatoryDomain", // <6>
-    "type" : "internal-code", // <7>
+    "type" : "code", // <7>
     "legalType" : "CODE", // <8>
     "maxLength" : 400, // <9>
     "repeatable" : { // <10>
@@ -376,9 +376,8 @@ The possible technical values for a field type are:
 `amount`:: monetary amount, comprised of a numerical value and a currency
 `measure`:: numerical value associated with a measurement unit
 `code`:: string representing a concept in a code list
-`internal-code`:: string representing a concept in an internal code list
-`zoned-date`:: date with timezone
-`zoned-time`:: time with timezone
+`date`:: date, always with time zone
+`time`:: time, always with time zone
 `email`:: string representing an e-mail address
 `phone`:: string representing a phone number
 `url`:: string representing a URL
