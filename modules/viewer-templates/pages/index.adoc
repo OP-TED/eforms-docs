@@ -7,9 +7,43 @@ To standardise the way a notice can be visualised, independently of the media fo
 
 Every notice subtype can be associated with one or more different view templates. These templates are available in the `view-templates` folder in the eForms SDK. To create these template files, we use the EFX template language.
 
-== How the files are organised
-The view templates are available in the `view-template` folder of the SDK. Every template file is named using the notice subtype identifier and has the extension `.efx`.
-For this version of the eForms SDK there is only one template available for every notice subtype. An additional template that can be used for any notice subtype is the `summary.efx` template, which as the name implies generates a summarised view of the notice.
+== View templates
+The view templates are available in the `view-templates` folder of the SDK and have the extension `.efx`.
+
+The file named `view-templates.json` provides information on each view template.
+
+.Structure of view-templates.json
+[source,json]
+----
+{
+  "ublVersion" : "2.3", // <1>
+  "sdkVersion" : "1.0.0", // <2>
+  "metadataDatabase" : { // <3>
+    "version" : "1.0.0",
+    "createdOn" : "2022-08-05T10:24:40"
+  },
+  "viewTemplates" : [
+    {
+      "id" : "1", // <4>
+      "filename" : "1.efx", // <5>
+      "description" : "Default", // <6>
+      "_noticeSubtypeIds" : [ "1" ], // <7>
+      "_label" : "view|name|1" // <8>
+	  },
+	  ...
+  ]
+}
+----
+<1> Version of the UBL standard used.
+<2> Version of the eForms SDK the file belongs to.
+<3> Version number and date of the data used to create this file.
+<4> Identifier of the view template.
+<5> Name of the file containing the view template.
+<6> Description of the view template.
+<7> List of the notice subtypes that can be visualised with this view template.
+<8> Identifier of the label for the name of the view template. The label is available in the xref:translations:index.adoc[translations] folder..
+
+For this version of the eForms SDK there is only one template available for every notice subtype. In addition, there is a `summary` template that can be used for any notice subtype, and, as the name implies, it generates a summarised view of the notice.
 
 == Template language syntax
 As the `.efx` file extension implies, the language used to write the template is EFX. 
