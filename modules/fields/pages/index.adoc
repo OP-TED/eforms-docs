@@ -49,7 +49,7 @@ We are using this file to provide the definition of all fields to our
 form-filling application (eNotices2). Each form is then made of a specific
 subset of those fields.
 
-The field repository is an array of fields, preceded by some version information:
+The field repository is mainly an array of fields, preceded by some version information and the general structure of XML notices:
 
 [source,json]
 ----
@@ -60,11 +60,11 @@ The field repository is an array of fields, preceded by some version information
     "version": "0.2.53",
     "createdOn": "2021-11-20T16:46:39"
   },
-  "fields": [ // <4>
+  "xmlStructure" : [ // <5>
     { ... },
     ...
   ],
-  "xmlStructure" : [ // <5>
+  "fields": [ // <4>
     { ... },
     ...
   ]
@@ -73,8 +73,8 @@ The field repository is an array of fields, preceded by some version information
 <1> Version of the UBL standard used.
 <2> Version of the eForms SDK the file belongs to.
 <3> Version number and date of the data used to create this file.
-<4> List of fields.
-<5> General structure of XML notices. See the xref:xml-structure.adoc[] page.
+<4> General structure of XML notices. See the xref:xml-structure.adoc[] page.
+<5> List of fields.
 
 == Field properties
 
@@ -90,7 +90,7 @@ The various characteristics of each field are indicated as properties of the JSO
     "btId" : "BT-01", // <4>
     "xpathAbsolute" : "/*/cbc:RegulatoryDomain", // <5>
     "xpathRelative" : "cbc:RegulatoryDomain", // <6>
-    "type" : "internal-code", // <7>
+    "type" : "code", // <7>
     "legalType" : "CODE", // <8>
     "maxLength" : 400, // <9>
     "repeatable" : { // <10>
@@ -181,7 +181,7 @@ Applicable only for fields of type "code" or "internal-code"
 <13> This property provides information on when a field's presence is forbidden.
 <14> This property provides information on when a field's value is mandatory.
 <15> A RegEx pattern the field's value must match.
-<16> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "ìd-ref"`) can reference.
+<16> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "id-ref"`) can reference.
 
 
 === Property Values
@@ -207,11 +207,36 @@ The properties that are assigned with static values are listed below:
 
 Static properties are always assigned with a scalar value (a string, a boolean, a number, array of strings, etc.). If there is no value defined, the property is omitted.
 
+==== Withheld publication mechanism
+
+The information in some fields can be xref:schema:withheld-publication.adoc[withheld from publication] for a defined period. For those fields, the information necessary for this mechanism is grouped under a `privacy` property, which contains static properties.
+
+[source,json]
+----
+{
+  "id" : "BT-161-NoticeResult",
+  ...
+  "privacy" : {
+    "code" : "not-val", // <1>
+    "unpublishedFieldId" : "BT-195(BT-161)-NoticeResult", // <2>
+    "reasonCodeFieldId" : "BT-197(BT-161)-NoticeResult", // <3>
+    "reasonDescriptionFieldId" : "BT-196(BT-161)-NoticeResult", // <4>
+    "publicationDateFieldId" : "BT-198(BT-161)-NoticeResult" // <5>
+  },
+  ...
+}
+----
+<1> Code value to use to designate this field as withheld.
+<2> Id of the field to use to indicate the code above.
+<3> Id of the field to use for the justification code.
+<4> Id of the field to use for the justification description.
+<5> Id of the field to use for the publication date.
+
 === Dynamic properties
 
 Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different factors, for example the notice type it is used in, or the values of other fields in the same notice.
 
-Dynamic values are represented with a JSON object. The object always contains a `value` property which indicates the default value for the  dynamic property and, when necessary, a `constraints` list that indicates the conditions under which the dynamic property may take different values.
+Dynamic values are represented with a JSON object. The object always contains a `value` property which indicates the default value for the dynamic property and, when necessary, a `constraints` list that indicates the conditions under which the dynamic property may take different values.
 
 
 `repeatable`::
@@ -300,6 +325,48 @@ The `pattern` property indicates that the value of the field must match a specif
 +
 In the regular expression, the backslash character "\" is escaped as "\\".
 
+`assert`::
+The `assert` property gives an assertion, as a boolean EFX expression, that is expected to evaluate to "true". This is used to specify rules on the field value, and those rules can depend on other fields.
++
+[source,json]
+----
+"assert" : {
+  "value" : "{ND-Root} ${TRUE}", // <1>
+  "severity" : "ERROR",
+  "constraints" : [ {
+    "condition" : "{ND-LotResult} ${OPT-320-LotResult is present}", // <2>
+    "value" : "{ND-LotResult} ${every text:$tender in OPT-320-LotResult satisfies ($tender == OPT-321-Tender)}", // <3>
+    "severity" : "ERROR",
+    "message" : "rule|text|BR-OPT-00320-0100" // <4>
+  } ]
+}
+----
+<1> The default expression for the assertion is always true.
+<2> Condition that needs to be "true" for the constraint to be applicable.
+<3> The expression of the assertion, must evaluate to "true" for the constraint to be respected.
+<4> The identifier of message corresponding to the assertion. The message is available in the xref:translations:index.adoc[translations] folder.
+
+`inChangeNotice`::
+The `inChangeNotice` property indicates whether the values of the field can be modified in a xref:schema:change-notice.adoc[change notice], compared to the notice being changed (the original notice). Constraints can be added to this property when needed, to indicate that the field value can be modified in a change notice except under specific conditions.
++
+[source,json]
+----
+"inChangeNotice" : {
+  "value" : {
+    "canAdd" : false, // <1>
+    "canModify" : false, // <2>
+    "canRemove" : false // <3>
+  },
+  "severity" : "ERROR"
+}
+----
+<1> When false, all values in the change notice must also be in the original notice. Relevant only for repeatable fields.
+<2> When false, the value in the change notice must be equal to the value in the original notice.
+<3> When false, all values in the original notice must also be in the change notice. Relevant only for repeatable fields.
++
+By default, a field can be modified in a change notice, the default values for `canAdd`, `canModify` and `canRemove` is `true`.
+
+
 .Dynamic property value example
 [example]
 ====
@@ -316,7 +383,7 @@ In the following snippet, a dynamic value is assigned to the `forbidden` dynamic
     "severity" : "ERROR"
   }, {
     "noticeTypes" : [ "2", "5", "8", "11", "14", "15", "17", "19", "24", "30", "32", "35", "37" ], 
-    "condition" : "BT-105-Procedure in ('open','restricted')", // <5>
+    "condition" : "{ND-AcceleratedProcedureJustification} ${BT-105-Procedure in ('open','restricted')}", // <5>
     "value" : true, // <4>
     "severity" : "ERROR"
   } ]
@@ -359,7 +426,12 @@ For more details on the syntax of conditions, see <<Syntax for conditions>> belo
 
 === Syntax for conditions
 
-The value of the `condition` property of a constraint is a string representing a boolean expression in the xref:efx:index.adoc[eForms expression language (EFX)].
+The value of the `condition` property of a constraint is a string representing a single expression in the xref:efx:index.adoc[eForms expression language (EFX)].
+
+This expression is made of two parts:
+
+* The context under which the expression is evaluated. It's often the parent node of the field.
+* The boolean expression itself.
 
 
 [#data-types]
@@ -376,9 +448,8 @@ The possible technical values for a field type are:
 `amount`:: monetary amount, comprised of a numerical value and a currency
 `measure`:: numerical value associated with a measurement unit
 `code`:: string representing a concept in a code list
-`internal-code`:: string representing a concept in an internal code list
-`zoned-date`:: date with timezone
-`zoned-time`:: time with timezone
+`date`:: date, always with time zone
+`time`:: time, always with time zone
 `email`:: string representing an e-mail address
 `phone`:: string representing a phone number
 `url`:: string representing a URL
