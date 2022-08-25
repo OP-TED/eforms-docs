@@ -325,6 +325,27 @@ The `pattern` property indicates that the value of the field must match a specif
 +
 In the regular expression, the backslash character "\" is escaped as "\\".
 
+`assert`::
+The `assert` property gives an assertion, as a boolean EFX expression, that is expected to evaluate to "true". This is used to specify rules on the field value, and those rules can depend on other fields.
++
+[source,json]
+----
+"assert" : {
+  "value" : "{ND-Root} ${TRUE}", // <1>
+  "severity" : "ERROR",
+  "constraints" : [ {
+    "condition" : "{ND-LotResult} ${OPT-320-LotResult is present}", // <2>
+    "value" : "{ND-LotResult} ${every text:$tender in OPT-320-LotResult satisfies ($tender == OPT-321-Tender)}", // <3>
+    "severity" : "ERROR",
+    "message" : "rule|text|BR-OPT-00320-0100" // <4>
+  } ]
+}
+----
+<1> The default expression for the assertion is always true.
+<2> Condition that needs to be "true" for the constraint to be applicable.
+<3> The expression of the assertion, must evaluate to "true" for the constraint to be respected.
+<4> The identifier of message corresponding to the assertion. The message is available in the xref:translations:index.adoc[translations] folder.
+
 `inChangeNotice`::
 The `inChangeNotice` property indicates whether the values of the field can be modified in a xref:schema:change-notice.adoc[change notice], compared to the notice being changed (the original notice). Constraints can be added to this property when needed, to indicate that the field value can be modified in a change notice except under specific conditions.
 +
