@@ -207,6 +207,31 @@ The properties that are assigned with static values are listed below:
 
 Static properties are always assigned with a scalar value (a string, a boolean, a number, array of strings, etc.). If there is no value defined, the property is omitted.
 
+==== Withheld publication mechanism
+
+The information in some fields can be xref:schema:withheld-publication.adoc[withheld from publication] for a defined period. For those fields, the information necessary for this mechanism is grouped under a `privacy` property, which contains static properties.
+
+[source,json]
+----
+{
+  "id" : "BT-161-NoticeResult",
+  ...
+  "privacy" : {
+    "code" : "not-val", // <1>
+    "unpublishedFieldId" : "BT-195(BT-161)-NoticeResult", // <2>
+    "reasonCodeFieldId" : "BT-197(BT-161)-NoticeResult", // <3>
+    "reasonDescriptionFieldId" : "BT-196(BT-161)-NoticeResult", // <4>
+    "publicationDateFieldId" : "BT-198(BT-161)-NoticeResult" // <5>
+  },
+  ...
+}
+----
+<1> Code value to use to designate this field as withheld.
+<2> Id of the field to use to indicate the code above.
+<3> Id of the field to use for the justification code.
+<4> Id of the field to use for the justification description.
+<5> Id of the field to use for the publication date.
+
 === Dynamic properties
 
 Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different factors, for example the notice type it is used in, or the values of other fields in the same notice.
