@@ -236,7 +236,7 @@ The information in some fields can be xref:schema:withheld-publication.adoc[with
 
 Every other property, apart from the ones listed above, is assigned a dynamic value. This is because the value of the property may depend on different factors, for example the notice type it is used in, or the values of other fields in the same notice.
 
-Dynamic values are represented with a JSON object. The object always contains a `value` property which indicates the default value for the  dynamic property and, when necessary, a `constraints` list that indicates the conditions under which the dynamic property may take different values.
+Dynamic values are represented with a JSON object. The object always contains a `value` property which indicates the default value for the dynamic property and, when necessary, a `constraints` list that indicates the conditions under which the dynamic property may take different values.
 
 
 `repeatable`::
@@ -324,6 +324,27 @@ The `pattern` property indicates that the value of the field must match a specif
 <1> The value of this field must be "LOT-" followed by 4 digits.
 +
 In the regular expression, the backslash character "\" is escaped as "\\".
+
+`inChangeNotice`::
+The `inChangeNotice` property indicates whether the values of the field can be modified in a xref:schema:change-notice.adoc[change notice], compared to the notice being changed (the original notice). Constraints can be added to this property when needed, to indicate that the field value can be modified in a change notice except under specific conditions.
++
+[source,json]
+----
+"inChangeNotice" : {
+  "value" : {
+    "canAdd" : false, // <1>
+    "canModify" : false, // <2>
+    "canRemove" : false // <3>
+  },
+  "severity" : "ERROR"
+}
+----
+<1> When false, all values in the change notice must also be in the original notice. Relevant only for repeatable fields.
+<2> When false, the value in the change notice must be equal to the value in the original notice.
+<3> When false, all values in the original notice must also be in the change notice. Relevant only for repeatable fields.
++
+By default, a field can be modified in a change notice, the default values for `canAdd`, `canModify` and `canRemove` is `true`.
+
 
 .Dynamic property value example
 [example]
