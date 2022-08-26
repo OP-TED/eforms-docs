@@ -43,15 +43,48 @@ XML format, which was designed for the interchange of machine-readable
 codelists.
 
 
-=== Identifier of a codelist
+=== Information on codelists
+
+The file named `codelists.json` provides information on each codelist.
+
+.Structure of codelists.json
+[source,json]
+----
+{
+  "ublVersion" : "2.3", // <1>
+  "sdkVersion" : "1.0.0", // <2>
+  "metadataDatabase" : { // <3>
+    "version" : "1.0.0",
+    "createdOn" : "2022-08-05T10:24:40"
+  },
+  "codelists" : [
+    {
+      "id" : "accelerated-procedure", // <4>
+      "parentId" : "indicator", // <5>
+      "filename" : "indicator_accelerated-procedure.gc", // <6>
+      "description" : "List of codes to specify whether a procedure is accelerated or not.", // <7>
+      "_label" : "codelist|name|accelerated-procedure" // <8>
+    },
+    ...
+  ]
+}
+----
+<1> Version of the UBL standard used.
+<2> Version of the eForms SDK the file belongs to.
+<3> Version number and date of the data used to create this file.
+<4> Identifier of the codelist.
+<5> Identifier of the parent codelist, if the codelist is a xref:_tailored_codelists[tailored codelist].
+<6> Name of the file containing the codelist.
+<7> Description of the codelist.
+<8> Identifier of the label for the name of the codelist. The label is available in the xref:translations:index.adoc[translations] folder.
 
 In eForms, codelists are referenced using their identifier. The identifier is 
-held in the codelist Genericode files in the "LongName" element which has no 
-attributes:
+also indicated in the codelist Genericode files, in the "LongName" element
+which has no attributes:
 
 [source, xml]
 ----
-<LongName>no-esubmission-justification</LongName>
+<LongName>accelerated-procedure</LongName>
 ----
 
 
