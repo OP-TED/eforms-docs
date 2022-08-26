@@ -3,15 +3,6 @@ ifeval::[{eforms_latest_version} == {eforms_version}]
 :page-aliases: latest@index.adoc
 endif::[]
 
-[CAUTION]
-====
-eForms SDK 0.7.0 introduces a *new file format* for notice type definitions.
-
-The notice type definition files included in earlier versions of the eForms SDK were originally created to cover the needs of our form filling application (eNotices2) and have now been moved temporarily to the `/notice-types/legacy` sub-folder. 
-
-The notice type definitions in the `/notice-types/legacy` sub-folder *should not be used by eSenders* as they will be removed when eForms SDK 1.0.0 is released.
-====
-
 == Notice subtypes
 
 The https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R1780[eForms Regulation] defines, in table 1 of its annex, a list of types of procurement notices.
@@ -40,15 +31,17 @@ This file contains some metadata, followed by the list of notice subtypes, and t
       "formType" : "planning", // <6>
       "type" : "pin-buyer", // <7>
       "description" : "Notice of the publication of a prior (...)", // <8>
-      "subTypeId" : "1" // <9>
+      "subTypeId" : "1", // <9>
+      "_label" : "notice|name|1", // <10>
+      "viewTemplateIds" : [ "1", "summary" ] // <11>
     },
     ...
   ],
   "documentTypes" : [
     {
-      "id" : "PIN", // <10>
-      "namespace" : "urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2", // <11>
-      "rootElement" : "PriorInformationNotice" // <12>
+      "id" : "PIN", // <12>
+      "namespace" : "urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2", // <13>
+      "rootElement" : "PriorInformationNotice" // <14>
     },
     ...
   ]
@@ -63,9 +56,11 @@ This file contains some metadata, followed by the list of notice subtypes, and t
 <7> The notice type for the notice subtype. Values are from the "notice type" codelist.
 <8> Description of the notice subtype, from the eForms regulation.
 <9> Identifier of the notice subtype.
-<10> Identifier of the document type
-<11> XML namespace for the document type
-<12> Root XML element for the document type. 
+<10> Identifier of the label for the name of the notice subtype. The label is available in the xref:translations:index.adoc[translations] folder.
+<11> List of identifiers of the view templates that can be used to visualise a notice of this subtype.
+<12> Identifier of the document type.
+<13> XML namespace for the document type.
+<14> Root XML element for the document type.
 
 From the information visible in the example above, we can see that the notice subtype 1 has the document type `PIN`, so the root element in the XML is `PriorInformationNotice`.
 The definition of each root element is in the corresponding file present in the folder `schemas/maindoc` in the eForms SDK.
