@@ -41,7 +41,7 @@ The file named `view-templates.json` provides information on each view template.
 <5> Name of the file containing the view template.
 <6> Description of the view template.
 <7> List of the notice subtypes that can be visualised with this view template.
-<8> Identifier of the label for the name of the view template. The label is available in the xref:translations:index.adoc[translations] folder..
+<8> Identifier of the label for the name of the view template. The label is available in the xref:translations:index.adoc[translations] folder.
 
 For this version of the eForms SDK there is only one template available for every notice subtype. In addition, there is a `summary` template that can be used for any notice subtype, and, as the name implies, it generates a summarised view of the notice.
 
