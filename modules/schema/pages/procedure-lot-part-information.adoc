@@ -1836,7 +1836,7 @@ name of each member:
 
 Prize information may be used for various Planning and Competition notices. 
 While it is necessary for Design Contest competition notices, it may also 
-be useful for other notices when Procedure Features (BT-88) is set to 
+be useful for other notices when Procedure Type (BT-105) is set to 
 "innovation" (Innovation Partnership) or "comp-dial" (Competitive Dialogue).
 Prize Information covers _Prize Rank_ (BT-44), _Value Prize_ (BT-644) and _Rewards Other_
 (BT-45); the last one being for prizes not having equivalent monetary
