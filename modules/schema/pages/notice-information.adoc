@@ -75,7 +75,7 @@ _(Buyer, CPB, Service Provider ...)_
 == Notice Dispatch Date eSender (BT-803)
 
 The Notice Dispatch Date eSender (BT-803) represents the date and time the notice was transmitted 
-electronically by the eSender to the Publications Office of the European Union. It shall be indicated 
+electronically by the eSender to the Publications Office of the European Union. It may be indicated 
 in the extensions at Root by specifying its two components (date & time):
 
 [source, xml]
