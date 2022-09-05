@@ -1005,7 +1005,7 @@ codes of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/eu-programme[eu-programme] 
 codelist. The content of the EU Funds Financing Identifier shall be the most 
 concrete possible (e.g. grant agreement number, national identifier or 
-project acronym). EU Funds Details (BT-6160) may only be provided once for 
+project acronym). EU Funds Details (BT-6140) may only be provided once for 
 each BG-611.
 
 [source,xml]
