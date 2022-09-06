@@ -2707,7 +2707,7 @@ additional information is encoded as follows:
 === Previous Notice (OPP-090)
 
 Previous Notice (OPP-090) may be used to associate a notice to one or 
-more notices that just preceded. It is not intended to replace:
+more immediately preceding notices. It is not intended to replace:
 
 * Change Notice Version Identifier (BT-758),
 
@@ -2717,9 +2717,10 @@ more notices that just preceded. It is not intended to replace:
 
 * Framework Notice Identifier (OPT-100).
 
-It is only foreseen for cases where no other option to refer to a previous notice exist. 
-It may be useful when a Procedure already started in TEDXML and goes on in eForms, this 
-Business Term allows then to associate the notices despite the absence of Procedure ID in TEDXML.
+It is only foreseen for cases where no other option to refer to a previous notice exists. 
+It may be useful when some notices for a Procedure have been published in TEDXML, 
+and it is desired to publish following notices of the Procedure in eForms. This 
+Business Term allows the notices to be associated despite the absence of Procedure ID in TEDXML.
 
 A notice is referred to using either of the two identifiers:
 
