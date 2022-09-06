@@ -270,6 +270,23 @@ s|-- |_Not allowed (0)_ a|(+++*+++) +
 .2+^|*eForms BT* .2+|*Details* .2+|*Procedure* 3+|*PIN* 2+|*CN* 2+|*CAN* .2+|*XSD element*
 |G.Lot |Lot |Part |G.Lot |Lot |G.Lot |Lot
 
+11+^|*Clean Vehicle Directive (++*++)* 
+
+|*Clean Vehicle Directive (BT-717)* |xref:CVDDirectiveLotSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |*?* 
+a|
+[source,xpath,subs=attributes]
+----
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:STrategicProcurement{zwsp}/efbc:ApplicableLegalBasis
+----
+
+|*CVD Contract Type (BT-735)* |xref:CVDDirectiveLotSection[xrefstyle=short] |-- |-- h|* |-- |-- h|* |-- h|* 
+a|
+[source,xpath,subs=attributes]
+----
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efbc:ProcurementCategoryCode
+----
+
+
 11+^|*EU Funds Information (++*++)* 
 
 |*EU Funds Financing Identifier (BT-5010)* |xref:EUFundsSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
@@ -969,6 +986,42 @@ cac:SecurityClearanceTerm{zwsp}/cbc:Description
 ----
 
 |===
+
+[[CVDDirectiveLotSection]]
+=== CVD information at Lot level
+
+At Lot level, only the following information is expected:
+
+* Clean Vehicle Directive (BT-717, field BT-717-Lot), and
+
+* CVD Contract Type (BT-735, field BT-735-Lot)
+
+The Clean Vehicle Directive Business Term is used to specify whether this 
+directive applies or not. When used, it should contain either of the two 
+values ‘true’ or ‘false’.
+When BT-717 exists and has its value set to ‘true’, the CVD Contract Type 
+may also be specified using one of the values of the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/cvd-contract-type[CVD Contract Type] 
+codelist. This BT is repeatable.
+
+A sample mark-up is provided below for a case where the directive applies 
+and procurement concerns “acquisition of vehicles” as well as “other service 
+contracts” (structure occurs in the extensions of the TenderingTerms of the 
+given Lot):
+
+[source,xml]
+----
+<efac:StrategicProcurement>
+    <efbc:ApplicableLegalBasis listName="cvd-scope">true</efbc:ApplicableLegalBasis>
+    <efac:StrategicProcurementInformation>
+        <efbc:ProcurementCategoryCode listName="cvd-contract-type">oth-serv-contract</efbc:ServiceContractType>
+    </efac:StrategicProcurementInformation>
+    <efac:StrategicProcurementInformation>
+        <efbc:ProcurementCategoryCode listName="cvd-contract-type">veh-acq</efbc:ServiceContractType>
+    </efac:StrategicProcurementInformation>
+</efac:StrategicProcurement>
+----
+
+This information is also possible at Lot level for Result notices, especially if the lot is listed but not awarded.
 
 
 [[EUFundsSection]]
