@@ -182,12 +182,6 @@ The *+++date and time+++* of the notice receipt by OP. This date will be
 added before its submission to OP and its trustworthiness evaluated
 based on the actual receipt time and a range of acceptable variationsfootnote:[To be defined by Business].
 
-Date and time shall be expressed locally with shift to Coordinated
-Universal Time.
-
-Values shall vary from 00:00:00.0000 to 24:00:00 excludedfootnote:[For disambiguity, the hour value "24" shall not be used.],
-with as many decimals for the seconds as required.
-
 A notice sent on November 26^th^, 2019 at 1:38:54 PM CET (i.e. UTC +1)
 to OP shall be marked:
 
@@ -196,21 +190,6 @@ to OP shall be marked:
 <cbc:IssueDate>2019-11-26+01:00</cbc:IssueDate>
 <cbc:IssueTime>13:38:54+01:00</cbc:IssueTime>
 ----
-
-When referring to midnight (end of day for a given date), use 00:00:00
-(start of the following day) instead and adjust the referenced day
-(month, and year) accordingly.
-
-For December 5^th^, 2020 at midnight CET, the markup shall look like:
-
-[source,xml]
-----
-<cbc:IssueDate>2020-12-06+01:00</cbc:IssueDate>
-<cbc:IssueTime>00:00:00+01:00</cbc:IssueTime>
-----
-
-Any date shall be specified with time zone. When a date is associated 
-with a time, both must share the same shift to Coordinated Universal Time.
 
 [[preferredDateSection]]
 == Notice Publication Date Preferred

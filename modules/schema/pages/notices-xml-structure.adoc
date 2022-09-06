@@ -107,3 +107,44 @@ production processes, particularly for the non-standard forms (not defined in
 the eForms regulations) that also use the eForms schema. "T" stands for 
 Technical, these are required for some technical constraints and chosen 
 design options.
+
+== Dates and Times
+
+All dates and times in eForms XML shall be expressed in ISO-8601 format, with 
+local time marked as an offset from Coordinated Universal Time. When a date 
+is associated with a time, both must share the same shift to Coordinated 
+Universal Time.
+
+Time values shall vary from 00:00:00.0000 to 24:00:00 excludedfootnote:[For disambiguity, the hour value "24" shall not be used.],
+with as many decimals for the seconds as required.
+
+A notice sent on November 26^th^, 2019 at 1:38:54 PM CET (i.e. UTC +1)
+to OP shall be marked:
+
+[source,xml]
+----
+<cbc:IssueDate>2019-11-26+01:00</cbc:IssueDate>
+<cbc:IssueTime>13:38:54+01:00</cbc:IssueTime>
+----
+
+When referring to midnight (end of the day for a given date), use 00:00:00
+(start of the following day) instead and adjust the referenced day
+(month and year) accordingly.
+
+For December 5^th^, 2020 at midnight CET, the markup shall be:
+
+[source,xml]
+----
+<cbc:IssueDate>2020-12-06+01:00</cbc:IssueDate>
+<cbc:IssueTime>00:00:00+01:00</cbc:IssueTime>
+----
+
+When dates and times in UTC are used, the offset of zero can be stated 
+numerically as "+00:00", or the zero UTC offset zone designator "Z" may be 
+used:
+
+[source,xml]
+----
+<cbc:IssueDate>2020-03-21Z</cbc:IssueDate>
+<cbc:IssueTime>18:00:00Z</cbc:IssueTime>
+----
