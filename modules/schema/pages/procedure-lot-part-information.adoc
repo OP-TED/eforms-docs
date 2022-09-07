@@ -998,15 +998,15 @@ At Lot level, only the following information is expected:
 
 The Clean Vehicle Directive Business Term is used to specify whether this 
 directive applies or not. When used, it should contain either of the two 
-values ‘true’ or ‘false’.
-When BT-717 exists and has its value set to ‘true’, the CVD Contract Type 
+values "true" or "false".
+When BT-717 exists and has its value set to true, the CVD Contract Type 
 may also be specified using one of the values of the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/cvd-contract-type[CVD Contract Type] 
 codelist. This BT is repeatable.
 
 A sample mark-up is provided below for a case where the directive applies 
-and procurement concerns “acquisition of vehicles” as well as “other service 
-contracts” (structure occurs in the extensions of the TenderingTerms of the 
-given Lot):
+and procurement concerns "Vehicle purchase, lease or rent" as well as "Other service 
+contract" (the structure occurs in the extensions of the TenderingTerms of 
+the given Lot):
 
 [source,xml]
 ----
@@ -1021,7 +1021,8 @@ given Lot):
 </efac:StrategicProcurement>
 ----
 
-This information is also possible at Lot level for Result notices, especially if the lot is listed but not awarded.
+This information is also possible at Lot level for Result notices, especially 
+if the Lot is listed but not awarded.
 
 
 [[EUFundsSection]]

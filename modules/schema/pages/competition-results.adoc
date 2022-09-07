@@ -181,7 +181,7 @@ and maximal),
 * Reference(s) to the contract(s) settled as a result of the
 made decision,
 
-* Statistical results for some strategic procurement projectsfootnote[At the LotResult level, 
+* Statistical results for some strategic procurement projectsfootnote:[At the LotResult level, 
 CVD information may be provided so long the Lot has been awarded and the CVD directive 
 applies to the Lot. It is then possible to report the CVD Contract Type (BT-735-LotResult), 
 and for each of them, the Vehicle Category (BT-723-LotResult), and for each of these the 
