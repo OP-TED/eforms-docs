@@ -1142,7 +1142,7 @@ When shall second stage information be reported?
 1. When this is applicable, also information is mandatory for CN
 General under Directive 24
 
-2. If Procedure Type (BT-107) isfootnote:[Possible Procedure codes are from the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/procurement-procedure-type[Procurement Procedure Type] codelist: "open", "oth-single", "neg-wo-call", "restricted", "neg-w-call", "comp-dial", "innovation", "oth-mult".]:
+2. If Procedure Type (BT-105) isfootnote:[Possible Procedure codes are from the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/procurement-procedure-type[Procurement Procedure Type] codelist: "open", "oth-single", "neg-wo-call", "restricted", "neg-w-call", "comp-dial", "innovation", "oth-mult".]:
 
 * _"open"_, _"other single stage procedure"_ or _"negotiated without
 prior call for competition"_, then the 2^nd^ stage information is not
