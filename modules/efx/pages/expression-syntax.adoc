@@ -9,9 +9,10 @@ EFX uses the following data types:
 String:: This is the equivalent of TEXT data type. String literals appear in single (`'`) or double (`"`) quotes. There are several EFX expressions and functions that allow the manipulation of strings.
 Number:: EFX treats both integer and decimal numbers the same. The decimal separator is the dot (`.`). 
 Boolean:: Boolean literals are `TRUE` and `FALSE`. EFX also interprets the literal `ALWAYS` to mean `TRUE` and the literal `NEVER` to mean `FALSE`.
-Date, Time:: In eForms, date and time are always stored in separate fields. Therefore there is no EFX data type that combines date and time together. `Date` and `Time` are two separate data types. 
+Date, Time:: In eForms, date and time are always stored in separate fields. Therefore there is no EFX data type that combines date and time together. `Date` and `Time` are two separate data types. As eForms requires a time-zone to be specified for all date and time fields, EFX syntax requires date and time literals to include a time-zone.
 +
 *Unlike XPath*, EFX date and time literals are not included in quotes.
+NOTE:  
 Duration:: In EFX, durations (a.k.a. measures), are similar to XPath durations. Duration literals use a similar syntax for example: `P3D` denotes "3 days". `P3Y` stands for "3 years". Four different units are supported for duration measures: years (`P1Y`), months (`P1M`), weeks (`P1W`) and days (`P1D`).
 +
 [source,antlr4]
@@ -31,15 +32,17 @@ EFX can recognise identifiers of eForms business terms, fields and nodes by taki
 
 [source, antlr4]
 ----
-BtId: ('BT' | 'OPP' | 'OPT') '-' [0-9]+;
+BtId: ('BT' | 'OPP' | 'OPT' | 'OPA') '-' [0-9]+;
 FieldId: BtId ('(' (('BT' '-' [0-9]+) | [a-z]) ')')? ('-' ([a-zA-Z_] ([a-zA-Z_] | [0-9])*))+;
-NodeId: 'ND' '-' [0-9]+;
+NodeId: 'ND' '-' [a-zA-Z0-9]+;
 
 codelistReference: OpenParenthesis codelistId CloseParenthesis;
 codelistId: Identifier;
 
 Identifier: IdentifierPart ('-' IdentifierPart)*;
 IdentifierPart: [a-zA-Z_] ([a-zA-Z_] | [0-9])*;
+
+Variable: '$' IdentifierPart;
 
 ----
 
@@ -53,21 +56,22 @@ Just like in XPath, these references actually represent an `XML node set`.
 .Simplified excerpt from EFX grammar
 [source, antlr4]
 ----
-fieldReferenceWithPredicate: simpleFieldReference OpenBracket predicate CloseBracket;
+fieldReferenceWithPredicate: reference=fieldReferenceWithAxis (OpenBracket predicate CloseBracket)?;
+fieldReferenceWithAxis: axis? simpleFieldReference;
 simpleFieldReference: FieldId;
 
-nodeReferenceWithPredicate: simpleNodeReference OpenBracket predicate CloseBracket;
+nodeReferenceWithPredicate: simpleNodeReference (OpenBracket predicate CloseBracket)?;
 simpleNodeReference: NodeId;
 
-BtId: ('BT' | 'OPP' | 'OPT') '-' [0-9]+;
+BtId: ('BT' | 'OPP' | 'OPT' | 'OPA') '-' [0-9]+;
 FieldId: BtId ('(' (('BT' '-' [0-9]+) | [a-z]) ')')? ('-' ([a-zA-Z_] ([a-zA-Z_] | [0-9])*))+;
-NodeId: 'ND' '-' [0-9]+;
+NodeId: 'ND' '-' [a-zA-Z0-9]+;
 ----
 
 == Predicates 
-A field or node reference can be complimented with a predicate that restricts the `XML nodes` it matches. 
+A field or node reference can be complimented with a predicate that restricts the `XML elements` it matches. 
 
-Just like in XPath, EFX predicates are EFX logical (boolean) EFX expressions included in square brackets.
+Just like in XPath, EFX predicates are logical (boolean) EFX expressions included in square brackets.
 
 [source, antlr4]
 ----
@@ -89,30 +93,223 @@ EFX supports boolean expressions including:
 [source, antlr4]
 ----
 booleanExpression
-	: OpenParenthesis booleanExpression CloseParenthesis
-	| booleanExpression Or booleanExpression
-	| booleanExpression And booleanExpression
-	| stringExpression Not? In list
-	| stringExpression Is Not? Empty
-	| setReference Is Not? Present
-	| stringExpression Not? Like pattern=STRING
-	| fieldValueReference Comparison fieldValueReference
-	| booleanExpression Comparison booleanExpression
-	| numericExpression Comparison numericExpression
-	| stringExpression Comparison stringExpression
-	| dateExpression Comparison dateExpression
-	| timeExpression Comparison timeExpression
-	| durationExpression Comparison durationExpression
-	| booleanLiteral
-	| booleanFunction
-	| BooleanTypeCast? fieldValueReference
+    : OpenParenthesis booleanExpression CloseParenthesis
+    | booleanExpression     operator=Or booleanExpression
+    | booleanExpression     operator=And booleanExpression
+    | stringExpression      modifier=Not? In stringSequence
+    | booleanExpression     modifier=Not? In booleanSequence
+    | numericExpression     modifier=Not? In numericSequence
+    | dateExpression        modifier=Not? In dateSequence
+    | timeExpression        modifier=Not? In timeSequence
+    | durationExpression    modifier=Not? In durationSequence
+    | stringExpression      modifier=Not? Like pattern=STRING
+    | stringExpression      Is modifier=Not? Empty
+    | pathFromReference     Is modifier=Not? Present
+    | pathFromReference     Is modifier=Not? Unique In absoluteFieldReference
+    | lateBoundExpression   operator=Comparison lateBoundExpression
+    | booleanExpression     operator=Comparison booleanExpression
+    | numericExpression     operator=Comparison numericExpression
+    | stringExpression      operator=Comparison stringExpression
+    | dateExpression        operator=Comparison dateExpression
+    | timeExpression        operator=Comparison timeExpression
+    | durationExpression    operator=Comparison durationExpression
+    | If booleanExpression Then booleanExpression Else booleanExpression
+    | (Every | Some) iteratorList Satisfies booleanExpression
+    | booleanLiteral
+    | booleanFunction
+    | BooleanTypeCast lateBoundExpression
+    | lateBoundExpression
 	;
 
-    booleanLiteral: Always | True | Never | False;
+booleanLiteral: Always | True | Never | False;
+
+booleanFunction
+    : Not OpenParenthesis booleanExpression CloseParenthesis
+    | ContainsFunction OpenParenthesis haystack=stringExpression Comma needle=stringExpression CloseParenthesis
+    | StartsWithFunction OpenParenthesis haystack=stringExpression Comma needle=stringExpression CloseParenthesis
+    | EndsWithFunction OpenParenthesis haystack=stringExpression Comma needle=stringExpression CloseParenthesis
+    | SequenceEqualFunction OpenParenthesis left=sequenceExpression Comma right=sequenceExpression CloseParenthesis
+    ;
 
     Comparison: '==' | '!=' | '>' | '>=' | '<' | '<=';
+----
+
+== String expressions
+EFX allows simple string manipulation.
+
+[source, antlr4]
+----
+stringExpression
+    : If booleanExpression Then stringExpression Else stringExpression
+    | stringLiteral
+    | stringFunction
+    | TextTypeCast lateBoundExpression
+    | lateBoundExpression
+    ;
+
+stringFunction
+    : SubstringFunction OpenParenthesis stringExpression Comma start=numericExpression (Comma length=numericExpression)? CloseParenthesis
+    | StringFunction OpenParenthesis numericExpression CloseParenthesis
+    | ConcatFunction OpenParenthesis stringExpression (Comma stringExpression)* CloseParenthesis
+    | FormatNumberFunction OpenParenthesis numericExpression (Comma format=stringExpression)? CloseParenthesis
+    ;
+----
+
+== Numeric expressions
+EFX numbers can either be integers or decimals. 
+
+[source, antlr4]
+----
+numericExpression
+    : OpenParenthesis numericExpression CloseParenthesis
+    | numericExpression operator=(Star | Slash | Percent) numericExpression
+    | numericExpression operator=(Plus | Minus) numericExpression
+    | If booleanExpression Then numericExpression Else numericExpression
+    | numericLiteral
+    | numericFunction
+    | NumericTypeCast lateBoundExpression
+    | lateBoundExpression
+    ;
+
+numericFunction
+    : CountFunction OpenParenthesis sequenceExpression CloseParenthesis
+    | NumberFunction OpenParenthesis stringExpression CloseParenthesis     
+    | SumFunction OpenParenthesis numericSequence CloseParenthesis
+    | StringLengthFunction OpenParenthesis stringExpression CloseParenthesis
+    ;
+
+numericLiteral: INTEGER | DECIMAL;
+
+INTEGER: '-'? [0-9]+;
+DECIMAL: '-'? [0-9]? '.' [0-9]+;
+----
+
+== Date, Time expressions
+Date and time expressions allow the manipulation of date and time values.
+
+[source, antlr4]
+----
+
+dateExpression
+    : If booleanExpression Then dateExpression Else dateExpression
+    | dateLiteral
+    | dateFunction
+    | DateTypeCast lateBoundExpression
+    | lateBoundExpression
+    ;
+
+timeExpression
+    : If booleanExpression Then timeExpression Else timeExpression
+    | timeLiteral
+    | timeFunction
+    | TimeTypeCast lateBoundExpression
+    | lateBoundExpression
+    ;
+
+dateFunction
+    : DateFunction OpenParenthesis stringExpression CloseParenthesis
+    | AddMeasure OpenParenthesis dateExpression Comma durationExpression CloseParenthesis
+    | SubtractMeasure OpenParenthesis dateExpression Comma durationExpression CloseParenthesis
+    ;
+
+timeFunction
+    : TimeFunction OpenParenthesis stringExpression CloseParenthesis
+    ;
+
+// EFX tokens for date and time
+DATE: DIGIT DIGIT DIGIT DIGIT '-' DIGIT DIGIT '-' DIGIT DIGIT (ZONE | 'Z');
+TIME: DIGIT DIGIT Colon DIGIT DIGIT Colon DIGIT DIGIT (ZONE | 'Z');
+ZONE: ('+' | '-') DIGIT DIGIT ':' DIGIT DIGIT;
+----
+
+
+== Duration expressions
+Duration expressions allow to manipulate durations including:
+
+* Adding or subtracting a duration to/from another
+* Multiplying a duration by a number
+* Calculate the duration between two dates
+
+[source, antlr4]
+----
+durationExpression
+    : OpenParenthesis durationExpression CloseParenthesis
+    | endDate=dateExpression Minus startDate=dateExpression
+    | numericExpression Star durationExpression
+    | durationExpression Star numericExpression
+    | durationExpression Plus durationExpression
+    | durationExpression Minus durationExpression
+    | If booleanExpression Then durationExpression Else durationExpression
+	| durationLiteral
+    | durationFunction
+    | DurationTypeCast lateBoundExpression
+    | lateBoundExpression
+    ;
+
+	durationFunction
+    : DayTimeDurationFunction OpenParenthesis stringExpression CloseParenthesis
+    | YearMonthDurationFunction OpenParenthesis stringExpression CloseParenthesis
+    ;
 
 ----
+
+== Sequences and iterators
+Sequences allow the manipulation of lists (sets of values).  
+
+[source, antlr4]
+----
+sequenceExpression
+    : sequenceFromReference
+    | stringSequence 
+    | booleanSequence 
+    | numericSequence 
+    | dateSequence 
+    | timeSequence 
+    | durationSequence 
+    | sequenceFunction
+    ;
+
+sequenceFromReference    
+    : fieldReference
+    | attributeReference
+    ;
+
+stringSequence
+    : OpenParenthesis stringExpression (Comma stringExpression)* CloseParenthesis
+    | stringSequenceFromIteration
+    | OpenParenthesis stringSequenceFromIteration CloseParenthesis
+    | codelistReference
+    | TextTypeCast? sequenceFromReference
+    ;
+
+codelistReference: OpenParenthesis codeListId=codelistId CloseParenthesis;
+codelistId: Identifier;
+
+// ... <1> 
+
+stringSequenceFromIteration: For iteratorList Return stringExpression; // <2>
+
+iteratorList: iteratorExpression (Comma iteratorExpression)*;
+iteratorExpression: stringIteratorExpression | booleanIteratorExpression | numericIteratorExpression | dateIteratorExpression | timeIteratorExpression | durationIteratorExpression | contextIteratorExpression;
+
+stringIteratorExpression: stringVariableDeclaration In stringSequence;
+booleanIteratorExpression: booleanVariableDeclaration In booleanSequence;
+numericIteratorExpression: numericVariableDeclaration In numericSequence;
+dateIteratorExpression: dateVariableDeclaration In dateSequence;
+timeIteratorExpression: timeVariableDeclaration In timeSequence;
+durationIteratorExpression: durationVariableDeclaration In durationSequence;
+contextIteratorExpression: contextVariableDeclaration In (fieldContext | nodeContext);
+
+sequenceFunction
+    : DistinctValuesFunction OpenParenthesis (sequenceExpression | variableReference) CloseParenthesis
+    | UnionFunction OpenParenthesis (sequenceExpression | variableReference) Comma (sequenceExpression | variableReference) CloseParenthesis
+    | IntersectFunction OpenParenthesis (sequenceExpression | variableReference) Comma (sequenceExpression | variableReference) CloseParenthesis
+    | ExceptFunction OpenParenthesis (sequenceExpression | variableReference) Comma (sequenceExpression | variableReference) CloseParenthesis
+    ;
+
+----
+<1> Several other sequence types are omitted here to make the excerpt short. See the EFX grammar for a complete specification. 
+<2> `For` loops allow for the manipulation of sequences. Their syntax is very similar to `for` loops in XPath.
 
 
 '''

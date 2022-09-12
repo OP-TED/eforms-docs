@@ -17,7 +17,7 @@ Finally, the `revision` number (also known as `patch`) is incremented only when 
 A new version of the eForms SDK is considered to be backwards compatible if it can be read directly by the same software that was able to read the previous version without requiring any modifications in its code. 
 
 === Major version changes
-An example of a change that would break backwards compatibility is renaming, or moving, or removing a file in the SDK. Another example would be changing the format of the contents of a file in the SDK. A more concrete example would be altering the structure of objects inside fields.json or renaming, or removing some of their properties. In case of such changes, a software that was able to consume the previous version of the SDK, will be unable to extract the eForms metadata from the new version without developer intervention. 
+An example of a change that would break backwards compatibility is renaming, or moving, or removing a file in the SDK. Another example would be changing the format of the contents of a file in the SDK. A more concrete example would be altering the structure of objects inside fields.json or renaming, or removing some of their properties. Any change in the EFX grammar would also constitute a breaking change. In case of such changes, a software that was able to consume the previous version of the SDK, will be unable to extract the eForms metadata from the new version without developer intervention.
 
 Such changes are always introduced with a new `major` version of the SDK.
 

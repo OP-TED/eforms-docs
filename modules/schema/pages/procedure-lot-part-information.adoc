@@ -1731,6 +1731,85 @@ The way Award criteria is marked has some similarities with Selection
 criteria (cf. <<selectionCriteriaSection>>), they however have some additional 
 dedicated elements. Related Award Criteria are specified in a "_cac:AwardingCriterion_" element.
 
+Each criteron of an award criteria is specified using a 
+"_cac:SubordinateAwardingCriterion_" element. For any criterion of the award 
+criteria, the type (BT-539) and description (BT-540) shall be provided; the 
+name (BT-734) is however optional. The type of award criterion shall be one 
+of the
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/award-criterion-type[award-criterion-type]
+codelist.
+
+This criterion may be quantified in one or more dimensions, each within 
+an "_efac:AwardCriterionParameter_" element. The dimension is specified with 
+the "_efbc:ParameterCode_" element, and the "_efbc:ParameterNumeric_" element 
+shall hold the value associated with that dimension.
+
+
+The number dimension shall be:
+
+* for weights (BT-5421), a code from the
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-weight[number-weight]
+codelist;
+
+* for fixed values (BT-5422), a code from the
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-fixed[number-fixed]
+codelist; and
+
+* for threshold values (BT-5423), a code from the
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-threshold[number-threshold]
+codelist.
+
+The nodes that encapsulate the Award Criteria and Award Criterion information (i.e. cac:AwardingCriterion and 
+cac:SubordinateAwardingCriterion respectively) are both repeatable. An Award Criteria shall contain each and every 
+Award Criterion used for score computation so that expressed weighting may be properly understood and, in case 
+percentage is used, the 100% rule verified (i.e. sum of the weighting percentages shall equal 100%).
+
+[source,xml]
+----
+<cac:AwardingCriterion>
+    <cbc:CalculationExpression languageID="ENG">Price-quality score calculation is based on ...</cbc:CalculationExpression>
+    <cbc:CalculationExpression languageID="FRA">Le calcul du score prix-qualité est basée sur ...</cbc:CalculationExpression>
+    <cac:SubordinateAwardingCriterion>
+        <ext:UBLExtensions>
+            <ext:UBLExtension>
+                <ext:ExtensionContent>
+                    <efext:EformsExtension>
+                        <efac:AwardCriterionParameter>
+                            <efbc:ParameterCode listName="number-weight">per-exa</efbc:ParameterCode>
+                            <efbc:ParameterNumeric>60</efbc:ParameterNumeric>
+                        </efac:AwardCriterionParameter>
+                    </efext:EformsExtension>
+                </ext:ExtensionContent>
+            </ext:UBLExtension>
+        </ext:UBLExtensions>
+        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price</cbc:AwardingCriterionTypeCode>
+        <cbc:Name languageID="ENG">Price</cbc:Name>
+        <cbc:Name languageID="FRA">Prix</cbc:Name>
+        <cbc:Description languageID="ENG">The price score contributes for 60 % ...</cbc:Description>
+        <cbc:Description languageID="FRA">Le score du prix participe pour 60 % ...</cbc:Description>
+    </cac:SubordinateAwardingCriterion>
+    <cac:SubordinateAwardingCriterion>
+        <ext:UBLExtensions>
+            <ext:UBLExtension>
+                <ext:ExtensionContent>
+                    <efext:EformsExtension>
+                        <efac:AwardCriterionParameter>
+                            <efbc:ParameterCode listName="number-weight">per-exa</efbc:ParameterCode>
+                            <efbc:ParameterNumeric>40</efbc:ParameterNumeric>
+                        </efac:AwardCriterionParameter>
+                    </efext:EformsExtension>
+                </ext:ExtensionContent>
+            </ext:UBLExtension>
+        </ext:UBLExtensions>
+        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
+        <cbc:Name languageID="ENG">Quality</cbc:Name>
+        <cbc:Name languageID="FRA">Qualité</cbc:Name>
+        <cbc:Description languageID="ENG">The quality score contributes for 40 % ...</cbc:Description>
+        <cbc:Description languageID="FRA">Le score qualité participe pour 40 % ...</cbc:Description>
+    </cac:SubordinateAwardingCriterion>
+</cac:AwardingCriterion>
+----
+
 For a given Award Criteria (BG-707), "_Order of Importance_" may be used instead of precise 
 weightings (i.e. code for Award Criterion Number Weight is set to "_ord-imp_"); in that case:
 
@@ -1811,85 +1890,6 @@ Information is encoded as text with the element "_cbc:CalculationExpression_". F
 Award Criteria (i.e. "_cac:AwardingCriterion_" element), the children "_cbc:Description_" 
 (Award Criteria Order Justification, BT-733) and "_cbc:CalculationExpression_" (Award 
 Criteria Complicated, BT-543) shall not coexist.
-
-Each criteron of an award criteria is specified using a 
-"_cac:SubordinateAwardingCriterion_" element. For any criterion of the award 
-criteria, the type (BT-539) and description (BT-540) shall be provided; the 
-name (BT-734) is however optional. The type of award criterion shall be one 
-of the
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/award-criterion-type[award-criterion-type]
-codelist.
-
-This criterion may be quantified in one or more dimensions, each within 
-an "_efac:AwardCriterionParameter_" element. The dimension is specified with 
-the "_efbc:ParameterCode_" element, and the "_efbc:ParameterNumeric_" element 
-shall hold the value associated with that dimension.
-
-
-The number dimension shall be:
-
-* for weights (BT-5421), a code from the
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-weight[number-weight]
-codelist;
-
-* for fixed values (BT-5422), a code from the
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-fixed[number-fixed]
-codelist; and
-
-* for threshold values (BT-5423), a code from the
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-threshold[number-threshold]
-codelist.
-
-The nodes that encapsulate the Award Criteria and Award Criterion information (i.e. cac:AwardingCriterion and 
-cac:SubordinateAwardingCriterion respectively) are both repeatable. An Award Criteria shall contain each and every 
-Award Criterion used for score computation so that expressed weighting may be properly understood and, in case 
-percentage is used, the 100% rule verified (i.e. sum of the weighting percentages shall equal 100%).
-
-[source,xml]
-----
-<cac:AwardingCriterion>
-    <cbc:CalculationExpression languageID="ENG">Price-quality score calculation is based on ...</cbc:CalculationExpression>
-    <cbc:CalculationExpression languageID="FRA">Le calcul du score prix-qualité est basée sur ...</cbc:CalculationExpression>
-    <cac:SubordinateAwardingCriterion>
-        <ext:UBLExtensions>
-            <ext:UBLExtension>
-                <ext:ExtensionContent>
-                    <efext:EformsExtension>
-                        <efac:AwardCriterionParameter>
-                            <efbc:ParameterCode listName="number-weight">per-exa</efbc:ParameterCode>
-                            <efbc:ParameterNumeric>60</efbc:ParameterNumeric>
-                        </efac:AwardCriterionParameter>
-                    </efext:EformsExtension>
-                </ext:ExtensionContent>
-            </ext:UBLExtension>
-        </ext:UBLExtensions>
-        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price</cbc:AwardingCriterionTypeCode>
-        <cbc:Name languageID="ENG">Price</cbc:Name>
-        <cbc:Name languageID="FRA">Prix</cbc:Name>
-        <cbc:Description languageID="ENG">The price score contributes for 60 % ...</cbc:Description>
-        <cbc:Description languageID="FRA">Le score du prix participe pour 60 % ...</cbc:Description>
-    </cac:SubordinateAwardingCriterion>
-    <cac:SubordinateAwardingCriterion>
-        <ext:UBLExtensions>
-            <ext:UBLExtension>
-                <ext:ExtensionContent>
-                    <efext:EformsExtension>
-                        <efac:AwardCriterionParameter>
-                            <efbc:ParameterCode listName="number-weight">per-exa</efbc:ParameterCode>
-                            <efbc:ParameterNumeric>40</efbc:ParameterNumeric>
-                        </efac:AwardCriterionParameter>
-                    </efext:EformsExtension>
-                </ext:ExtensionContent>
-            </ext:UBLExtension>
-        </ext:UBLExtensions>
-        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
-        <cbc:Name languageID="ENG">Quality</cbc:Name>
-        <cbc:Name languageID="FRA">Qualité</cbc:Name>
-        <cbc:Description languageID="ENG">The quality score contributes for 40 % ...</cbc:Description>
-        <cbc:Description languageID="FRA">Le score qualité participe pour 40 % ...</cbc:Description>
-    </cac:SubordinateAwardingCriterion>
-</cac:AwardingCriterion>
-----
 
 [[jurySection]]
 === Jury Member Name (BT-46)
