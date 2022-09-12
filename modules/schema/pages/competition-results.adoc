@@ -212,6 +212,13 @@ _Cf. <<lotResultLevelSection>>_
 
 | |
 
+|*LotResult Technical ID (OPT-322)* |Unique identifier for the LotResult. 
+_Shall follow the scheme "RES-XXXX"._ |*1* a|
+[source,xpath,subs=attributes]
+----
+cbc:ID
+---- 
+
 |*Tender Value highest (BT-711)* |Value of the admissible tender with
 the highest value. A tender shall be considered admissible where it has
 been submitted by a tenderer, who has not been excluded and who meets
@@ -487,6 +494,7 @@ An XML instance excerpt is provided below for illustration:
 <efac:NoticeResult>
     <!-- Interrupted Mark-up -->
     <efac:LotResult>
+        <cbc:ID schemeName="result">RES-0002</cbc:ID>
         <cbc:HigherTenderAmount currencyID="EUR">4560000</cbc:HigherTenderAmount>
         <cbc:LowerTenderAmount currencyID="EUR">1230000</cbc:LowerTenderAmount>
         <cbc:TenderResultCode listName="winner-selection-status">selec-w</cbc:TenderResultCode>
