@@ -3260,7 +3260,7 @@ cac:ProcurementAdditionalType{zwsp}/cbc:ProcurementTypeCode{zwsp}[@listName='env
 a|
 [source,xpath,subs=attributes]
 ----
-cac:ProcurementAdditionalType{zwsp}/cbc:ProcurementTypeCode{zwsp}[@listName='social-procurement']
+cac:ProcurementAdditionalType{zwsp}/cbc:ProcurementTypeCode{zwsp}[@listName='social-objective']
 ----
 
 |*Innovative Procurement (BT-776)* |xref:strategicProcurementSection[xrefstyle=short] |-- |-- |*** |-- |-- |*** |-- |*** 
