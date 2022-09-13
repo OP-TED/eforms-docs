@@ -256,7 +256,7 @@ value: a label identifier
 [horizontal]
 
 `id`:: The identifier of the _eForms field_ associated with this `field` element. As every _eForms field_ appears once in every notice subtype, the field's identifier is used to also identify the `field` element itself. +
-value: a text string prefixed by "GR-"
+value: a text string _(matching the identifier of an existing field)_.
 
 `description`:: The description of the `field` element in english. The property is included for the convenience of anyone reading the file. It should not be used by your application (which should instead use the appropriate translation indicated by the `_label` property). +
 value: a text string
