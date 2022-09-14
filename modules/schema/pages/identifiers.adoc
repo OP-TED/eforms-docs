@@ -471,7 +471,7 @@ associated (_NA_).
 Modification" will act on the other sections of the parent "Contract
 Modification" notice_
 
-|*ORG-XXXX* |Organizations a|* Any organization other than buyer
+|*ORG-XXXX* |Organizations a|* Any organization
 
 |*_NA_* |_Changes_ |_A "change" on a "Change" will act on the other
 sections of the parent "Change" notice_
