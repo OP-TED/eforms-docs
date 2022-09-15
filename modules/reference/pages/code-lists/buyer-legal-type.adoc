@@ -1,0 +1,34 @@
+= `buyer-legal-type` codelist
+:navtitle: Codelists
+
+This table provides a list of the the type of procuring authorities within the domain of public procurement according to legislation.
+[horizontal]
+Version:: 20211208-0
+URI:: http://publications.europa.eu/resource/dataset/buyer-legal-type
+Structure:: flat
+Used in:: xref:business-terms/BT-11.adoc[`BT-11`] Buyer Legal Type
+
+== Codes
+[horizontal]
+  `body-pl`::: Body governed by public law
+  `body-pl-cga`::: Body governed by public law, controlled by a central government authority
+  `body-pl-la`::: Body governed by public law, controlled by a local authority
+  `body-pl-ra`::: Body governed by public law, controlled by a regional authority
+  `cga`::: Central government authority
+  `def-cont`::: Defence contractor
+  `eu-ins-bod-ag`::: EU institution, body or agency
+  `eu-int-org`::: European Institution/Agency or International Organisation
+  `grp-p-aut`::: Group of public authorities
+  `int-org`::: International organisation
+  `la`::: Local authority
+  `org-sub`::: Organisation awarding a contract subsidised by a contracting authority
+  `org-sub-cga`::: Organisation awarding a contract subsidised by a central government authority
+  `org-sub-la`::: Organisation awarding a contract subsidised by a local authority
+  `org-sub-ra`::: Organisation awarding a contract subsidised by a regional authority
+  `pub-undert`::: Public undertaking
+  `pub-undert-cga`::: Public undertaking, controlled by a central government authority
+  `pub-undert-la`::: Public undertaking, controlled by a local authority
+  `pub-undert-ra`::: Public undertaking, controlled by a regional authority
+  `ra`::: Regional authority
+  `rl-aut`::: Regional or local authority
+  `spec-rights-entity`::: Entity with special or exclusive rights

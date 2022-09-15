@@ -1,0 +1,26 @@
+= `eforms-legal-basis` codelist
+:navtitle: Codelists
+
+List of Legal Basis codes allowed in eForms
+[horizontal]
+Version:: 20210616-0
+Subset of:: xref:code-lists/legal-basis.adoc[`legal-basis`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `1995_499-XIII`::: Ratified Parliament Decision (1995) No 499-XIII
+  `2011CEB_PROC_EXT`::: Guidelines for Procurement of Supplies, Works and Services
+  `2014CEB_PROC_INT`::: Guidelines on the internal procurement of services, supplies and works by the CEB
+  `2020CEB_GRANT`::: CEB’s competitive procedures to award grants
+  `32009L0081`::: Directive 2009/81/EC
+  `32014D0691`::: Decision 2014/691/EU
+  `32014L0023`::: Directive 2014/23/EU
+  `32014L0024`::: Directive 2014/24/EU
+  `32014L0025`::: Directive 2014/25/EU
+  `32016D0002`::: Decision (EU) 2016/245 (ECB/2016/2)
+  `32018R1046`::: Regulation (EU, Euratom) 2018/1046
+  `C2019_3277`::: Decision C(2019) 3277
+  `C2019_5515`::: Decision C(2019) 5515
+  `CFSP2017_34`::: CFSP/2017/34/EUMM Georgia
+  `other`::: Other

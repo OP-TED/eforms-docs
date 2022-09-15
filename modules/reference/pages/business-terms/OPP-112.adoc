@@ -1,0 +1,8 @@
+= `OPP-112`: Place of registration - Country
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-112-Business`:: Place of registration - Country

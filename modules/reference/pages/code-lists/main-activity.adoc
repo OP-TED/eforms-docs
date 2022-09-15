@@ -1,0 +1,33 @@
+= `main-activity` codelist
+:navtitle: Codelists
+
+List of codes for the main activities of the buyers.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/main-activity
+Tailored by:: xref:code-lists/authority-activity.adoc[`authority-activity`], xref:code-lists/entity-activity.adoc[`entity-activity`]
+Structure:: flat
+Used in:: xref:business-terms/OPP-105.adoc[`OPP-105`] Sector of activity
+
+== Codes
+[horizontal]
+  `airport`::: Airport-related activities
+  `defence`::: Defence
+  `econ-aff`::: Economic affairs
+  `education`::: Education
+  `electricity`::: Electricity-related activities
+  `env-pro`::: Environmental protection
+  `gas-heat`::: Production, transport or distribution of gas or heat
+  `gas-oil`::: Extraction of gas or oil
+  `gen-pub`::: General public services
+  `hc-am`::: Housing and community amenities
+  `health`::: Health
+  `port`::: Port-related activities
+  `post`::: Postal services
+  `pub-os`::: Public order and safety
+  `rail`::: Railway services
+  `rcr`::: Recreation, culture and religion
+  `soc-pro`::: Social protection
+  `solid-fuel`::: Exploration or extraction of coal or other solid fuels
+  `urttb`::: Urban railway, tramway, trolleybus or bus services
+  `water`::: Water-related activities

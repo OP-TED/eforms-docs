@@ -1,0 +1,18 @@
+= `environmental-impact` codelist
+:navtitle: Codelists
+
+This table provides the information about whether a procurement includes (and how) an approach to reducing the environmental impacts of the work, supply or service used in the technical specifications, award criteria, selection criteria or contract perfor
+[horizontal]
+Version:: 20190918-0
+URI:: http://publications.europa.eu/resource/dataset/environmental-impact
+Structure:: flat
+Used in:: xref:business-terms/BT-774.adoc[`BT-774`] Green Procurement
+
+== Codes
+[horizontal]
+  `emas-com`::: {Requesting compliance with the eco-management and audit scheme (EMAS), established by Regulation (EC) No 1221/2009}
+  `ene-ef-com`::: {Requesting compliance with the highest energy efficiency class (as defined by various legislation such as, for example, Regulation (EU) 626/2011 on air conditioners)}
+  `iso-14001-com`::: {Requesting compliance with an ISO 14001 environmental management system, other than the eco-management and audit scheme (EMAS) established by Regulation (EC) No 1221/2009}
+  `iso-14024-com`::: Requesting compliance with an ISO 14024 Type I environmental label
+  `other`::: Other
+  `reg-834-2007-com`::: {Requesting, for the majority of the relevant purchase, the compliance with Regulation (EC) 834/2007 on organic production and labelling of organic products}

@@ -1,0 +1,19 @@
+= `form-type` codelist
+:navtitle: Codelists
+
+This table provides the codes and values used for the type of forms published on TED.
+[horizontal]
+Version:: 20211208-0
+URI:: http://publications.europa.eu/resource/dataset/form-type
+Structure:: flat
+Used in:: xref:business-terms/BT-03.adoc[`BT-03`] Form Type
+
+== Codes
+[horizontal]
+  `bri`::: Business registration information
+  `change`::: Change
+  `competition`::: Competition
+  `cont-modif`::: Contract modification
+  `dir-awa-pre`::: Direct award preannouncement
+  `planning`::: Planning
+  `result`::: Result

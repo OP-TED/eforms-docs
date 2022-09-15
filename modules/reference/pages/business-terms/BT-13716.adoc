@@ -1,0 +1,9 @@
+= `BT-13716`: Change Previous Notice Section Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-13716-notice`:: Change Previous Section Identifier

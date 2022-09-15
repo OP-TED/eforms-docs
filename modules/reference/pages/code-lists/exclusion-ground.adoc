@@ -1,0 +1,35 @@
+= `exclusion-ground` codelist
+:navtitle: Codelists
+
+List of codes for Exclusion Ground identification
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-67.adoc[`BT-67`] Exclusion Grounds
+
+== Codes
+[horizontal]
+  `CRITERION.EXCLUSION.BUSINESS.ACTIVITIES_SUSPENDED`::: Business activities are suspended
+  `CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY`::: Bankruptcy
+  `CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY_ANALOGOUS`::: Analogous situation like bankruptcy under national law
+  `CRITERION.EXCLUSION.BUSINESS.CREDITORS_ARRANGEMENT`::: Arrangement with creditors
+  `CRITERION.EXCLUSION.BUSINESS.INSOLVENCY`::: Insolvency
+  `CRITERION.EXCLUSION.BUSINESS.LIQUIDATOR_ADMINISTERED`::: Assets being administered by liquidator
+  `CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.EARLY_TERMINATION`::: Early termination, damages or other comparable sanctions
+  `CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.MISINTERPRETATION`::: Guilty of misinterpretation, withheld information, unable to provide required documents and obtained confidential information of this procedure
+  `CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.PROCEDURE_PARTICIPATION`::: Conflict of interest due to its participation in the procurement procedure
+  `CRITERION.EXCLUSION.CONFLICT_OF_INTEREST.PROCEDURE_PREPARATION`::: Direct or indirect involvement in the preparation of this procurement procedure
+  `CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_SOCIAL_SECURITY`::: Payment of social security contributions
+  `CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES`::: Payment of taxes
+  `CRITERION.EXCLUSION.CONVICTIONS.CHILD_LABOUR-HUMAN_TRAFFICKING`::: Child labour and other forms of trafficking in human beings
+  `CRITERION.EXCLUSION.CONVICTIONS.CORRUPTION`::: Corruption
+  `CRITERION.EXCLUSION.CONVICTIONS.FRAUD`::: Fraud
+  `CRITERION.EXCLUSION.CONVICTIONS.MONEY_LAUNDERING`::: Money laundering or terrorist financing
+  `CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION`::: Participation in a criminal organisation
+  `CRITERION.EXCLUSION.CONVICTIONS.TERRORIST_OFFENCES`::: Terrorist offences or offences linked to terrorist activities
+  `CRITERION.EXCLUSION.MISCONDUCT.MARKET_DISTORTION`::: Agreements with other economic operators aimed at distorting competition
+  `CRITERION.EXCLUSION.MISCONDUCT.MC_PROFESSIONAL`::: Guilty of grave professional misconduct
+  `CRITERION.EXCLUSION.NATIONAL.OTHER`::: Purely national exclusion grounds
+  `CRITERION.EXCLUSION.SOCIAL.ENVIRONMENTAL_LAW`::: Breaching of obligations in the fields of environmental law
+  `CRITERION.EXCLUSION.SOCIAL.LABOUR_LAW`::: Breaching of obligations in the fields of labour law
+  `CRITERION.EXCLUSION.SOCIAL.SOCIAL_LAW`::: Breaching of obligations in the fields of social law

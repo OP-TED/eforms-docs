@@ -1,0 +1,14 @@
+= `organisation-role-service` codelist
+:navtitle: Codelists
+
+List of possible service codes for Procurement Service Providers
+[horizontal]
+Version:: 20210616-0
+Subset of:: xref:code-lists/organisation-role.adoc[`organisation-role`]
+Structure:: flat
+Used in:: xref:business-terms/OPT-030.adoc[`OPT-030`] Provided Service Type, xref:business-terms/OPT-091.adoc[`OPT-091`] Party Type
+
+== Codes
+[horizontal]
+  `serv-prov`::: Procurement service provider
+  `ted-esen`::: TED eSender

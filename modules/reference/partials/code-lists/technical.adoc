@@ -1,0 +1,201 @@
+=== `buyer-categories`
+List of codes used to characterize the buyers for the subsequent contracts of a given Framework Agreement. 
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/buyer-categories.adoc[details & codes]
+
+'''
+
+=== `buyer-contracting-type`
+List of codes to specify whether a Buyer is a Contracting Entity or not.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/buyer-contracting-type.adoc[details & codes]
+
+'''
+
+=== `classification-type`
+List of commodity classifications
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/classification-type.adoc[details & codes]
+
+'''
+
+=== `conditions`
+Codes for conditions
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/conditions.adoc[details & codes]
+
+'''
+
+=== `contract-detail`
+This table provides a framework to represent data relating to procurement.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/contract-detail.adoc[details & codes]
+
+'''
+
+=== `customer-service`
+This table provides a list of customer services.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/customer-service.adoc[details & codes]
+
+'''
+
+=== `document-distribution`
+List of codes to specify whether the document distribution is restricted or not.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/document-distribution.adoc[details & codes]
+
+'''
+
+=== `document-status`
+List of codes to specify whether a document has or not a legal status.
+[horizontal]
+Tailored by:: <<_linguistic_status,`linguistic-status`>>
+Version:: 1.0
+
+See xref:code-lists/document-status.adoc[details & codes]
+
+'''
+
+=== `eu-funded`
+List of codes to specify whether a procurement would be financed using EU funds.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/eu-funded.adoc[details & codes]
+
+'''
+
+=== `exclusion-ground`
+List of codes for Exclusion Ground identification
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/exclusion-ground.adoc[details & codes]
+
+'''
+
+=== `indicator`
+List of eforms allowed indicator values
+[horizontal]
+Tailored by:: <<_accelerated_procedure,`accelerated-procedure`>>, <<_cvd_scope,`cvd-scope`>>, <<_esignature_submission,`esignature-submission`>>, <<_nda,`nda`>>, <<_required,`required`>>, <<_subcontracting_allowed,`subcontracting-allowed`>>, <<_tender_guarantee_required,`tender-guarantee-required`>>
+Version:: 1.0
+
+See xref:code-lists/indicator.adoc[details & codes]
+
+'''
+
+=== `lawful-country`
+List of countries for which there is a legal basis for publication in the Supplement to the Official Journal of the European Union
+[horizontal]
+Subset of:: <<_country,`country`>>
+
+See xref:code-lists/lawful-country.adoc[details & codes]
+
+'''
+
+=== `non-publication-identifier`
+List of codes for the identification of the information whose publication shall be delayed.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/non-publication-identifier.adoc[details & codes]
+
+'''
+
+=== `notice-purpose`
+List of codes to specify the purpose of the Business Register Information Notice
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/notice-purpose.adoc[details & codes]
+
+'''
+
+=== `notice-subtype`
+List of possible Notice Subtype codes for a Notice of type Business Registration Information Notice.
+[horizontal]
+Tailored by:: <<_brin_ecs,`brin-ecs`>>, <<_brin_eeig,`brin-eeig`>>, <<_can_desg,`can-desg`>>, <<_can_modif,`can-modif`>>, <<_can_social,`can-social`>>, <<_can_standard,`can-standard`>>, <<_can_tran,`can-tran`>>, <<_cn_desg,`cn-desg`>>, <<_cn_social,`cn-social`>>, <<_cn_standard,`cn-standard`>>, <<_corr,`corr`>>, <<_pin_buyer,`pin-buyer`>>, <<_pin_cfc_social,`pin-cfc-social`>>, <<_pin_cfc_standard,`pin-cfc-standard`>>, <<_pin_only,`pin-only`>>, <<_pin_rtl,`pin-rtl`>>, <<_pin_tran,`pin-tran`>>, <<_qu_sy,`qu-sy`>>, <<_subco,`subco`>>, <<_veat,`veat`>>
+Version:: 1.0
+
+See xref:code-lists/notice-subtype.adoc[details & codes]
+
+'''
+
+=== `period-listname`
+-/-
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/period-listname.adoc[details & codes]
+
+'''
+
+=== `review-status`
+List of codes for the status of a given review request.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/review-status.adoc[details & codes]
+
+'''
+
+=== `review-type`
+List of codes for the identification of the type of review requester
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/review-type.adoc[details & codes]
+
+'''
+
+=== `rewards-penalties`
+List of codes for rewards and penalties associated to a Public Transportation Service.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/rewards-penalties.adoc[details & codes]
+
+'''
+
+=== `tenderlot-presentation`
+List of codes to specify whether the submission should deal with all the defined lots.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/tenderlot-presentation.adoc[details & codes]
+
+'''
+
+=== `transport-service`
+This table provides a list of transport services.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/transport-service.adoc[details & codes]
+
+'''
+
+=== `vehicles`
+List of codes for vehicle categories.
+[horizontal]
+Version:: 1.0
+
+See xref:code-lists/vehicles.adoc[details & codes]
+
+'''
+

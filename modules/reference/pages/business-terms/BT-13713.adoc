@@ -1,0 +1,9 @@
+= `BT-13713`: Result Lot Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-13713-LotResult`:: Result Lot Identifier

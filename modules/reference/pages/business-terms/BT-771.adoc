@@ -1,0 +1,9 @@
+= `BT-771`: Late Tenderer Information
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-771-Lot`:: Late Tenderer Information

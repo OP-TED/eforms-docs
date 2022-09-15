@@ -1,0 +1,9 @@
+= `BT-718`: Change Procurement Documents
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-718-notice`:: Change Procurement Documents

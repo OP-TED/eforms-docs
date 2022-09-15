@@ -1,0 +1,9 @@
+= `OPT-112`: Environmental Legislation Document ID
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-112-Lot-EnvironLegis`:: Environmental Legislation Document ID
+  `OPT-112-Part-EnvironLegis`:: Environmental Legislation Document ID

@@ -1,0 +1,10 @@
+= `BT-36`: Duration Period
+:navtitle: Business Terms
+
+[horizontal]
+Type:: DURATION
+
+== Fields
+[horizontal]
+  `BT-36-Lot`:: Duration Period
+  `BT-36-Part`:: Duration Period

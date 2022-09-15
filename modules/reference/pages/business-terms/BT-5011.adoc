@@ -1,0 +1,9 @@
+= `BT-5011`: Contract EU Funds Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-5011-Contract`:: Contract EU Funds Identifier

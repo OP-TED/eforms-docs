@@ -1,0 +1,14 @@
+= `number-threshold` codelist
+:navtitle: Codelists
+
+This table provides the codes linked to the type of threshold values within the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/number-threshold
+Structure:: flat
+Used in:: xref:business-terms/BT-5423.adoc[`BT-5423`] Award Criterion Number Threshold, xref:business-terms/BT-7532.adoc[`BT-7532`] Selection Criteria Second Stage Invite Number Threshold
+
+== Codes
+[horizontal]
+  `max-pass`::: Maximum number of tenders passing
+  `min-score`::: Minimum score

@@ -1,0 +1,8 @@
+= `OPT-155`: Vehicule Type
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-155-LotResult`:: Vehicle Type

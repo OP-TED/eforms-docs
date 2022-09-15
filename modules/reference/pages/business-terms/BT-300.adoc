@@ -1,0 +1,12 @@
+= `BT-300`: Additional Information
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-300-Lot`:: Additional Information
+  `BT-300-LotsGroup`:: Additional Information
+  `BT-300-Part`:: Additional Information
+  `BT-300-Procedure`:: Additional Information

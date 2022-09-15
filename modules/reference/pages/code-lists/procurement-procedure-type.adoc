@@ -1,0 +1,21 @@
+= `procurement-procedure-type` codelist
+:navtitle: Codelists
+
+This table provides a list of activities leading to the conclusion of public contracts used in public procurement according to the legislation.
+[horizontal]
+Version:: 20210929-0
+URI:: http://publications.europa.eu/resource/dataset/procurement-procedure-type
+Structure:: flat
+Used in:: xref:business-terms/BT-105.adoc[`BT-105`] Procedure Type
+
+== Codes
+[horizontal]
+  `comp-dial`::: Competitive dialogue
+  `comp-tend`::: Competitive tendering
+  `innovation`::: Innovation partnership
+  `neg-w-call`::: Negotiated with prior publication of a call for competition / competitive with negotiation
+  `neg-wo-call`::: Negotiated without prior call for competition
+  `open`::: Open
+  `oth-mult`::: Other multiple stage procedure
+  `oth-single`::: Other single stage procedure
+  `restricted`::: Restricted

@@ -1,0 +1,9 @@
+= `BT-802`: Non Disclosure Agreement Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-802-Lot`:: Non Disclosure Agreement Description

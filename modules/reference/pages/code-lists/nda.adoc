@@ -1,0 +1,13 @@
+= `nda` codelist
+:navtitle: Codelists
+
+List of codes to specify whether a non-disclosure agreement is required.
+[horizontal]
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+Used in:: xref:business-terms/BT-801.adoc[`BT-801`] Non Disclosure Agreement
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

@@ -1,0 +1,65 @@
+= `nuts-grc-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Greece
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `EL301`::: Βόρειος Τομέας Αθηνών (Voreios Tomeas Athinon)
+  `EL302`::: Δυτικός Τομέας Αθηνών (Dytikos Tomeas Athinon)
+  `EL303`::: Κεντρικός Τομέας Αθηνών (Kentrikos Tomeas Athinon)
+  `EL304`::: Νότιος Τομέας Αθηνών (Notios Tomeas Athinon)
+  `EL305`::: Ανατολική Αττική (Anatoliki Attiki)
+  `EL306`::: Δυτική Αττική (Dytiki Attiki)
+  `EL307`::: Πειραιάς, Νήσοι (Peiraias, Nisoi)
+  `EL411`::: Λέσβος, Λήμνος (Lesvos, Limnos)
+  `EL412`::: Ικαρία, Σάμος (Ikaria, Samos)
+  `EL413`::: Χίος (Chios)
+  `EL421`::: Κάλυμνος, Κάρπαθος - Ηρωική Νήσος Κάσος, Κως, Ρόδος (Kalymnos, Karpathos, Kasos, Kos, Rodos)
+  `EL422`::: Άνδρος, Θήρα, Κέα, Μήλος, Μύκονος, Νάξος, Πάρος, Σύρος, Τήνος (Andros, Thira, Kea, Milos, Mykonos, Naxos, Paros, Syros, Tinos)
+  `EL431`::: Ηράκλειο (Irakleio)
+  `EL432`::: Λασίθι (Lasithi)
+  `EL433`::: Ρεθύμνη (Rethymni)
+  `EL434`::: Χανιά (Chania)
+  `EL511`::: Έβρος (Evros)
+  `EL512`::: Ξάνθη (Xanthi)
+  `EL513`::: Ροδόπη (Rodopi)
+  `EL514`::: Δράμα (Drama)
+  `EL515`::: Θάσος, Καβάλα (Thasos, Kavala)
+  `EL521`::: Ημαθία (Imathia)
+  `EL522`::: Θεσσαλονίκη (Thessaloniki)
+  `EL523`::: Κιλκίς (Kilkis)
+  `EL524`::: Πέλλα (Pella)
+  `EL525`::: Πιερία (Pieria)
+  `EL526`::: Σέρρες (Serres)
+  `EL527`::: Χαλκιδική (Chalkidiki)
+  `EL531`::: Γρεβενά, Κοζάνη (Grevena, Kozani)
+  `EL532`::: Καστοριά (Kastoria)
+  `EL533`::: Φλώρινα (Florina)
+  `EL541`::: Άρτα, Πρέβεζα (Arta, Preveza)
+  `EL542`::: Θεσπρωτία (Thesprotia)
+  `EL543`::: Ιωάννινα (Ioannina)
+  `EL611`::: Καρδίτσα, Τρίκαλα (Karditsa, Trikala)
+  `EL612`::: Λάρισα (Larisa)
+  `EL613`::: Μαγνησία, Σποράδες (Magnisia, Sporades)
+  `EL621`::: Ζάκυνθος (Zakynthos)
+  `EL622`::: Κέρκυρα (Kerkyra)
+  `EL623`::: Ιθάκη, Κεφαλληνία (Ithaki, Kefallinia)
+  `EL624`::: Λευκάδα (Lefkada)
+  `EL631`::: Αιτωλοακαρνανία (Aitoloakarnania)
+  `EL632`::: Αχαΐα (Achaia)
+  `EL633`::: Ηλεία (Ileia)
+  `EL641`::: Βοιωτία (Voiotia)
+  `EL642`::: Εύβοια (Evvoia)
+  `EL643`::: Ευρυτανία (Evrytania)
+  `EL644`::: Φθιώτιδα (Fthiotida)
+  `EL645`::: Φωκίδα (Fokida)
+  `EL651`::: Αργολίδα, Αρκαδία (Argolida, Arkadia)
+  `EL652`::: Κορινθία (Korinthia)
+  `EL653`::: Λακωνία, Μεσσηνία (Lakonia, Messinia)
+  `ELZZZ`::: Extra-Regio NUTS 3
