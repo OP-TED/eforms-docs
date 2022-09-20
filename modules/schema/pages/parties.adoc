@@ -113,24 +113,24 @@ ID* |*Company Size* |*Technical ID* |*Official ID* |*Name* |*Party Name*
 |*Contact Name* |*eMail Address* |*Phone Number* |*Fax Number*
 
 |*_Buyer _* |*EM* |*EM* |*EM* |*—* |*—* |*—* |*EM* |*O* |*—* |*M* |*M*
-|*M* |*O* |*EM* |*M* |*CM* |*CM* |*M* |*CM* |*M* |*M* |*EM*
+|*M* |*O* |*EM* |*M* |*CM* |*CM* |*M* |*CM* |*M* |*M* |*O*
 
 |*_Touchpoint (Buyer)_* |*—* |*—* |*—* |*—* |*—* |*—* |*EM* |*O* |*—*
-|*M* |*—* |*M* |*O* |*EM* |*M* |*CM* |*CM* |*M* |*CM* |*CM* |*CM* |*EM*
+|*M* |*—* |*M* |*O* |*EM* |*M* |*CM* |*CM* |*M* |*CM* |*CM* |*CM* |*O*
 
 |*_Service Provider/non-buyer_* |*—* |*—* |*—* |*—* |*EM* |*—* |*EM*
 |*CM* |*—* |*M* |*M* |*M* |*O* |*EM* |*M* |*CM* |*CM* |*M* |*CM* |*M*
-|*M* |*EM*
+|*M* |*O*
 
 |*_Touchpoint (Service Provider)_* |*—* |*—* |*—* |*—* |*—* |*—* |*EM*
 |*O* |*—* |*M* |*—* |*M* |*CM* |*EM* |*M* |*CM* |*CM* |*M* |*CM* |*CM*
-|*CM* |*EM*
+|*CM* |*O*
 
 |*_Winner / Tenderer_* |*—* |*—* |*—* |*CM* |*EM* |*CM* |*EM* |*CM*
 |*CM* |*M* |*M* |*M* |*O* |*EM* |*M* |*CM* |*CM* |*M* |*CM* |*M* |*M*
-|*EM*
+|*O*
 
-|*_UBO_* |*—* |*—* |*—* |*—* |*—* |*—* |*O* |*—* |*—* |*M* |*M* |*M*
+|*_UBO_* |*—* |*—* |*—* |*—* |*—* |*—* |*—* |*—* |*—* |*M* |*M* |*M*
 |*—* |*EM* |*M* |*CM* |*CM* |*M* |*O* |*O* |*O* |*O*
 |===
 
