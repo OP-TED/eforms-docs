@@ -143,6 +143,16 @@ in different contexts, and that the rules may differ between these contexts.
 [qanda]
 
  
+Is there a mapping of standard forms to eForms notices?::
+
+For a mapping of standard forms to eForms notices, please refer to COMMISSION IMPLEMENTING REGULATION (EU) 2019/1780 and 
+Table 1 of the Annex as the authoritative source of information. 
++
+You may also find useful the “Initial mapping of current TED-XML schema to eForms (13/04/2022)”, 
+which was shared on SIMAP: https://simap.ted.europa.eu/web/simap/eforms 
+
+
+
 Will eSenders have to send eForms for procedures that were started with the current standard forms? If so, how will the previous publication field be filled in, given that the Procedure Identifier is not used in the current forms?:: 
 
 Once the use of eForms becomes mandatory, eSenders will be required to
@@ -253,6 +263,25 @@ and submit some of them. Each time a notice with the same notice identifier is s
 The first time the notice is accepted and published, the version ID of the notice they submitted is then final, 
 and no other notices with the same notice identifier will be accepted. The version ID should increase if the notice is stopped 
 and resubmitted or in case of error. 
++
+The association of a Change notice to its parent notice is performed using BT-758. There may be multiple changes applied in a single change notice 
+(each change refers to the relevant section using BT-13716). When changes appear at different points in time, 
+then successive Change notices have to be submitted, each referring to the previous one.
++
+Changes may only be applied on published notices, therefore, the use case where a second change should be applied 
+while the first one has not been published should be addressed either way: 
++
+--
+* Complete and submit the first Change notice to have it published and then proceed with the second
+* Integrate all changes in a single valid Change notice
+--
++
+When the non publication of the first Change is purely associated to non reliable transmission, then, 
+if the first Change has to be published separately, use an alternative channel (e.g. eNotices2). 
++
+BT-13716: Change Previous Notice Section Identifier refers to sections of the published notice. These reference identifiers 
+should match identifiers that exist in the change notice. The list of section identifiers is reported in table 3 of 
+link:https://docs.ted.europa.eu/eforms/1.1.1/schema/identifiers.html#_referring_to_sections_of_a_notice[Referring to sections of a notice]. 
 
 
 
@@ -345,6 +374,10 @@ following notices:
 - CN below threshold (E3) 
 - CAN below threshold (E4) 
 - Contract Completion (E5) 
++
+Member States could send below threshold notices via eForms as from November 2022 as long as they comply 
+with the rules for their equivalent above threshold notices. Member States may choose to require other fields for national publication, 
+but these are outside the scope of eForms. 
 
 
 
@@ -471,6 +504,9 @@ This is currently under discussion. There is going to be an extensive notificati
 system within eNotices2 and once this is in place, we may consider continuing with email notifications. 
 For notices sent through Web Services and which have failed validation, an email notification will be sent 
 to the Notice Author detailing all the rules that failed. 
++
+For the initial stages, there will be no email notifications for eSenders that submit notices via the API. 
+eSenders will need to rely on their queries.
 
 
 
@@ -608,11 +644,13 @@ and add several business terms.
 
 
 
-Since the codelists are bound to SDK version, is there a risk that an SDK version/ lifetime can be short-lived?::
+Since the codelists are bound to SDK versions, is there a risk that an SDK version/ lifetime can be short-lived?::
 
 Versions of the SDK might be short-lived due to various reasons; however, multiple versions of the SDK can be used at the same time 
 provided they are still acceptable. OP will aim to avoid breaking changes but stopping support for an SDK 
-will often come for legal reasons and will be given enough transition time. 
+will often come for legal reasons and will be given enough transition time. Technically, there would be no reason 
+to deprecate a version of the SDK. Significant business changes, such as making mandatory some fields that were previously optional, 
+might force us to deprecate an active version of the SDK after a pre-announced transition period.
 +
 Having a metadata-driven approach to this should enable users to make the technical transition with little to no effort. 
 In theory, a metadata-driven approach could render any changes directly consumable by an application without human intervention
@@ -698,11 +736,9 @@ An SDK Management Service will be accessible as an API so that users can check a
 +
 A Central Validation Service (CVS) will be remotely available so that you can check the validity of eForms
 notices. As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation 
-will not be taken into account for the CVS.     
+will not be taken into account for the CVS.
 +
-The CVS is not expected to be made available before mid-2022. 
-+
-Any announcements will be made via SIMAP at +
+Any announcements on the availability of the CVS will be made via SIMAP at +
 https://simap.ted.europa.eu/web/simap/eforms
 
 
@@ -794,15 +830,24 @@ should also be mentioned. It is still going to be possible to award all the lots
 Should a single lot in a notice have the ID LOT-0000 or LOT-0001? What makes a lot "technical"?::
 
 In eForms, at least one Lot is mandatory. A single Lot is a "technical" lot with LOT-0000 as the only accepted identifier. 
-This means that a LOT-0001 would only exist if there were also a LOT-0002. If the notice contains multiple lots, 
-it is not allowed to have a technical lot. 
+This means that a LOT-0001 would only exist if there were also a LOT-0002. Numerical sequence in numbering 
+does not have to be observed and there can be gaps in the numbering. If the notice contains multiple lots, 
+it is not allowed to have a technical lot. If you need to refer to a lot in the next step in the procedure, 
+you would need to refer to the Internal Identifier, BT-22, which will be implemented as mandatory by OP. 
 +
 Similarly, a Prior Information Notice or Periodic Indicative Notice used only for information without multiple parts 
-should have a “technical” part with ID "PAR-0000". 
+should have a “technical” part with ID "PAR-0000". The Internal Identifier BT-22 also applies here.
 
 
 
-We find a lot of fields with OPT and OPP. However, there are no field definitions for these kind of terms. Will there be a new section in the documentation regarding OPTs and OPPs? Will there be a mapping between OPT/OPP and BT/BG, respectively do we need to map these?::
+Which BT  is planned to identify if the procurement is divided into lots or not?::
+
+None. This will be implied from the number of ProcurementProjectLot elements. If there is only one ProcurementProjectLot element, 
+then the procurement is not divided into lots. 
+
+
+
+We find a lot of fields with OPT and OPP. However, there are no field definitions for these kinds of terms. Will there be a new section in the documentation regarding OPTs and OPPs? Will there be a mapping between OPT/OPP and BT/BG, respectively do we need to map these?::
 
 Basing the development of the eForms schema on the UBL schema, as well as conferring many advantages, has also imposed some constraints. 
 These constraints have required the creation of a number of fields which were not anticipated in the eForms regulations; 
@@ -1020,6 +1065,71 @@ BT-738 allows to choose a preferred notice publication date. How will this work 
 The BT-738 Notice Publication Date Preferred is available to help the buyer to coordinate publication dates at national and European levels. 
 The submitted notice will be stored in the OP internal system (TED Monitor 2022). When the preferred publication date is reached, 
 the notice will be published on TED. The preferred publication date can be set for up to 3 months into the future. 
+
+
+
+What is the meaning of BT-634 “Procurement Relaunch”, having in mind that it is applicable both to Competition and Results notices?::
+
+BT-634 would never be used in the initial Competition Notice. Its only function in a Contract Notice would be 
+to allow the Contracting Authority (should they really wish so) to go back to the CN and change it 
+to mark that the procedure/ lot would be relaunched.
+
+
+
+When we look at the eForms PIN only notices (4-5-6), they allow to indicate whether a Framework Agreement will be used (BT-765), but not whether a Dynamic Purchasing System will be used (BT-766). Shouldn’t both BTs either be allowed or not allowed for forms 4-5-6?::
+
+The following changes will be included in the upcoming Amendment to the Regulation: DPS will be added for PIN only notices, 
+aligned with Framework Agreement BT-765. DPS will also be added for D81 forms, in case Member States do use them.  
+
+
+
+Should "BT-746 The winner is listed on a regulated market" be added for each winning organisations in case of several winners as a Tendering party?::
+
+As an indicator, it should be added to each and every single tenderer in the notice.
+
+
+
+If several suppliers are joint as a winning tendering party, shall the BT-165 Winner Size be reported for ALL different supplier/tenderer organisations?::
+
+Every organisation that exists in the notice and participated to a tender submission shall have that information specified 
+(at the level of the organisation) where the BT is mandatory. Where the BT is not mandatory but allowed, the choice should, however, be consistent.
+
+
+Which fields need to be present in a contract award notice if the procurement contains several lots and some are in status "not yet awarded"?::
+
+For the LotResult concerning a “not yet awarded” lot, BT-142 and BT-13713 are the two mandatory fields.
+
+
+
+When is BT-759 "Received Submissions Count" to be provided? Do we correctly understand that all code values should be sent from BT-760 "Received Submissions Type" and that BT-759 should indicate the numerical value of relevant code even if the value is “0”?:: 
+
+As seen in the fields.json file, BT-759 (for certain notice subtypes) is forbidden when procedure equals “open-nw”. 
+Therefore, BT-759 is to be provided (mandatory) when procedure is “selec-w”, “close-nw” for the defined notice subtypes. 
+All codes from 
+link:https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/received-submission-type[“Received submission type”] 
+are expected in BT-760, even when null. 
+
+
+
+Are BT-715 and BT-716 made redundant through OPT-155 and OPT-156? In this case will there be a codelist available for the three applicable vehicle types?:: 
+
+Yes, BT-715 and -716 have been made redundant by OPT-155 and OPT-156. 
+Please note that BTs relating to clean vehicles are due to be changed in the amendment to the 2019 eForms implementing regulation 
+that the European Commission is planning to publish. Therefore, the BTs and their related codelists may also change, 
+but no later than November 2022 when eForms come into effect. Any changes will first be reflected in the SDK shortly before November 2022 
+followed by their required codelists changes. 
+
+
+
+Only three fields have the new property inChangeNotice. Will it be added to all other fields? Can a field without the property never or always be changed?:: 
+
+The default value for the "canAdd", "canRemove" and "canModify" sub-properties of the "inChangeNotice" property will be "true", 
+meaning that by default a field can be added, removed or its value changed in a Change Notice. 
+The "inChangeNotice" property will only be added to fields where a restriction is required. A field without this property can always be changed. 
++ 
+The property was added to three fields to allow us to verify that the property worked correctly, and that schematron rules can successfully be generated. 
+We will be adding it to other fields in the near future. 
+
 
 
 
