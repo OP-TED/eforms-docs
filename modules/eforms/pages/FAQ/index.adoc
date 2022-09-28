@@ -160,10 +160,7 @@ send eForms notices for any procedures that were started with the
 current standard forms. As there is no Procedure Identifier in the
 current forms, in these cases the notice number of the previous TED XML
 notice (as published in the OJ S) must be entered in the previous
-publication field in the eForms notice. OP is reviewing how the eForms 
-schema links to previous notices and will harmonise them to use 
-/*/cacTenderingProcess/cac:NoticeDocumentReference/cbc:ID as a consistent 
-element in the different contexts (root, lot, contract).
+publication field in the eForms notice. 
 
  
  
