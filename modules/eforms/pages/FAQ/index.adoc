@@ -284,51 +284,9 @@ link:https://docs.ted.europa.eu/eforms/1.1.1/schema/identifiers.html#_referring_
 
 Can you please clarify the meaning of each choice in the codelist Change corrig justification and when to use them?::
 
-The below Change-corrig-justification codelist improvements will be made available at a later stage on EU Vocabularies. 
-+
-*link:https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/change-corrig-justification[Change-corrig-justification] codelist improvements*
+Please refer to the definitions in the link:https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/change-corrig-justification[Change-corrig-justification] codelist on EU Vocabularies. 
 +
 This codelist is required for BT-140 Change Reason Code when using a Change notice.  
-+
-This proposal clarifies each code by adding a description and by changing two labels:  
-+
-- from "Cancellation" to "Cancel this notice" to make it clear that it only cancels the notice, not the procedure or the lot, 
-which must be cancelled via a result notice with no winner.  
-- from "Availability information" to "Information now available" to distinguish it more clearly from "Information updated". 
-+
-[cols="1,2,4", options="header"]
-.change-corrig-justification codelist 
-|===
-| Code | Label | Definition
-
-| cancel
-| #Cancel this notice#
-| The buyer has cancelled the current notice by making it null and void. It does not cancel the procedure or the lot.
-
-| cancel-intent
-| Cancellation intention
-| The buyer intends to cancel the original notice. This enables the implementation of European Court of Justice case C-81/98 points 37-42.
-
-| cor-buy
-| Buyer correction
-| Correction of one or more mistakes originally made by the buyer.
-
-| cor-esen
-| eSender correction
-| Correction of one or more mistakes originally made by the eSender.
-
-| cor-pub
-| Publisher correction
-| Correction of one or more mistakes originally made by the Publications Office of the EU.
-
-| info-release
-| #Information now available#
-| Publication of information that was originally postponed for reasons of law enforcement, commercial interests of an economic operator, fair competition or other public interest
-
-| update-add
-| Information updated
-| The buyer has updated or added information
-|===
 
 
 
