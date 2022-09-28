@@ -95,8 +95,8 @@ The eNotices2 API URLs and parameters will change in later releases. The Swagger
 ==== Planned updates 
 [horizontal]
 Indicative planning:: October 2022
-Applcation version:: 1.3.0
-SDK version used:: 1
+Application version:: 1.3.0
+SDK version used:: 1.x
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
@@ -138,15 +138,21 @@ Scope:: Partial rendering of HTML and PDF.
 [horizontal]
 Indicative planning:: October 2022 
 Application version:: Phase 3 
-SDK versions:: 1 
+SDK versions:: 1.x 
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK.
 
 
 === TED Developer Portal
+
+==== Currently available 
 [horizontal]
 Website URL:: https://developer.preview.ted.europa.eu/home 
-Documentation:: A dedicated section of docs.ted.europa.eu will document all APIs. 
-Scope:: Final release. Users can generate and revoke an API key. Used by the other systems in the "preview" environment to authenticate API calls. 
+Scope:: Users can generate an API key 
+
+==== Planned updates
+[horizontal]
+Indicative planning:: December 2022
+Scope:: Addition of a developer profile for eSenders
 
 
 === TED Monitor 
@@ -162,9 +168,9 @@ This is the last release  that implements the rest of the functionalities forese
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: September 2022 
-Application version:: Phase 4.1 
-SDK versions:: 0.4.1, 0.5.0, 0.6.0 
+Indicative planning:: October 2022 
+Application version:: 1.4.0
+SDK versions:: 0.4.1, 0.5.0, 0.6.0, 1.x 
 
 The release will include bug fixes. 
 
@@ -175,11 +181,6 @@ The TED website is not available in the "preview" environment, but the following
 
 ==== Current status 
 [horizontal]
-Application version:: Phase 2 
-Scope:: Store and index eForms notices. 
+Application version:: Phase 3 
+Scope:: Final release. 
 
-==== Planned updates
-[horizontal]
-Indicative planning:: August 2022 
-Application version:: Phase 3  
-Scope:: Final release.
