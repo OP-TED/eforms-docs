@@ -60,11 +60,11 @@ The field repository is mainly an array of fields, preceded by some version info
     "version": "0.2.53",
     "createdOn": "2021-11-20T16:46:39"
   },
-  "xmlStructure" : [ // <5>
+  "xmlStructure" : [ // <4>
     { ... },
     ...
   ],
-  "fields": [ // <4>
+  "fields": [ // <5>
     { ... },
     ...
   ]
