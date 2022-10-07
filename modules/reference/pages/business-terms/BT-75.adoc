@@ -1,0 +1,9 @@
+= `BT-75`: Guarantee Required Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-75-Lot`:: Guarantee Required Description

@@ -1,0 +1,8 @@
+= `OPT-316`: Contract Technical Identifier
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-316-Contract`:: Contract Technical Identifier

@@ -1,0 +1,12 @@
+= `BT-271`: Framework Maximum Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-271-Lot`:: Framework Maximum Value
+  `BT-271-LotsGroup`:: Framework Maximum Value
+  `BT-271-Part`:: Framework Maximum Value
+  `BT-271-Procedure`:: Framework Maximum Value

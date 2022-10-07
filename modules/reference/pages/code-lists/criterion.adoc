@@ -1,0 +1,74 @@
+= `criterion` codelist
+:navtitle: Codelists
+
+This table provides criteria used for public procurement procedures.
+[horizontal]
+Version:: 20210616-0
+URI:: http://publications.europa.eu/resource/dataset/criterion
+Tailored by:: xref:code-lists/exclusion-ground.adoc[`exclusion-ground`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `autorisation`::: For service contracts: authorisation of particular organisation needed
+  `aver-year-to`::: Average yearly turnover
+  `bankr-nat`::: Analogous situation like bankruptcy under national law
+  `bankruptcy`::: Bankruptcy
+  `chain-manage`::: Supply chain management
+  `corruption`::: Corruption
+  `cred-arran`::: Arrangement with creditors
+  `crime-org`::: Participation in a criminal organisation
+  `distorsion`::: Agreements with other economic operators aimed at distorting competition
+  `envir-certif-indep`::: Certificates by independent bodies about environmental management systems or standards
+  `envir-law`::: Breaching of obligations in the fields of environmental law
+  `envir-measure`::: Environmental management measures
+  `eo-group`::: Economic operator together with others
+  `finan-laund`::: Money laundering or terrorist financing
+  `finan-rat`::: Financial ratio
+  `finan-requ`::: Other economic or financial requirements
+  `fraud`::: Fraud
+  `gen-year-to`::: General yearly turnover
+  `human-traffic`::: Child labour and other forms of trafficking in human beings
+  `indem-insu`::: Professional risk indemnity insurance
+  `insolvency`::: Insolvency
+  `labour-law`::: Breaching of obligations in the fields of labour law
+  `liq-admin`::: Assets being administered by liquidator
+  `manage-staff`::: Number of managerial staff
+  `membership`::: For service contracts: membership of particular organisation needed
+  `misinterpr`::: Guilty of misinterpretation, withheld information, unable to provide required documents and obtained confidential information of this procedure
+  `nati-ground`::: Purely national exclusion grounds
+  `partic-confl`::: Conflict of interest due to its participation in the procurement procedure
+  `prep-confl`::: Direct or indirect involvement in the preparation of this procurement procedure
+  `prof-misconduct`::: Guilty of grave professional misconduct
+  `prof-regist`::: Enrolment in a relevant professional register
+  `qa-certif-inst`::: For supply contracts: certificates by quality control institutes
+  `qu-certif-indep`::: Certificates by independent bodies about quality assurance standards
+  `qual-cont-tech`::: Technicians or technical bodies for quality control
+  `qual-facil`::: Technical facilities and measures for ensuring quality
+  `qualification`::: Educational and professional qualifications
+  `registered`::: Economic operator registered in a pre qualification system
+  `relied`::: Relied on entities
+  `research-fac`::: Study and research facilities
+  `sanction`::: Early termination, damages or other comparable sanctions
+  `service-perform`::: For service contracts: performance of services of the specified type
+  `shelt-worksh`::: Economic operator is a sheltered workshop
+  `sme`::: Economic operator micro, small or medium-sized enterprise
+  `socsec-law`::: Breaching of obligations in the fields of social law
+  `socsec-pay`::: Payment of social security contributions
+  `spec-aver-to`::: Specific average turnover
+  `spec-req-check`::: Special requierements check
+  `spec-year-to`::: Specific yearly turnover
+  `staff-red`::: Reduction of the number of qualified candidates
+  `subco-ent`::: Subcontracted entities
+  `suncont-port`::: Subcontracting proportion
+  `supply-perform`::: For supply contracts: performance of deliveries of the specified type
+  `susp-act`::: Business activities are suspended
+  `tax-pay`::: Payment of taxes
+  `tech-equip`::: Tools, plant or technical equipment
+  `terr-offence`::: Terrorist offences or offences linked to terrorist activities
+  `trade-regist`::: Enrolment in a trade register
+  `w-autent`::: For supply contracts: samples, descriptions or photographs with certification of authenticity
+  `wo-autent`::: For supply contracts: samples, descriptions or photographs without certification of authenticity
+  `work-perform`::: For works contracts: performance of works of the specified type
+  `work-tech`::: For works contracts: technicians or technical bodies to carry out the work
+  `year-manpower`::: Average annual manpower

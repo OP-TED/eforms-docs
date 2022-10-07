@@ -1,0 +1,32 @@
+= `nuts-fin-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Finland
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `FI193`::: Keski-Suomi
+  `FI194`::: Etelä-Pohjanmaa
+  `FI195`::: Pohjanmaa
+  `FI196`::: Satakunta
+  `FI197`::: Pirkanmaa
+  `FI1B1`::: Helsinki-Uusimaa
+  `FI1C1`::: Varsinais-Suomi
+  `FI1C2`::: Kanta-Häme
+  `FI1C3`::: Päijät-Häme
+  `FI1C4`::: Kymenlaakso
+  `FI1C5`::: Etelä-Karjala
+  `FI1D1`::: Etelä-Savo
+  `FI1D2`::: Pohjois-Savo
+  `FI1D3`::: Pohjois-Karjala
+  `FI1D5`::: Keski-Pohjanmaa
+  `FI1D7`::: Lappi
+  `FI1D8`::: Kainuu
+  `FI1D9`::: Pohjois-Pohjanmaa
+  `FI200`::: Åland
+  `FIZZZ`::: Extra-Regio NUTS 3

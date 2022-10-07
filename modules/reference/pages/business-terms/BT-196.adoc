@@ -1,0 +1,61 @@
+= `BT-196`: Unpublished Justification Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-196(BT-09)-Procedure`:: Unpublished Justification Description
+  `BT-196(BT-105)-Procedure`:: Unpublished Justification Description
+  `BT-196(BT-106)-Procedure`:: Unpublished Justification Description
+  `BT-196(BT-118)-NoticeResult`:: Unpublished Justification Description
+  `BT-196(BT-1252)-Procedure`:: Unpublished Justification Description
+  `BT-196(BT-135)-Procedure`:: Unpublished Justification Description
+  `BT-196(BT-1351)-Procedure`:: Unpublished Justification Description
+  `BT-196(BT-136)-Procedure`:: Unpublished Justification Description
+  `BT-196(BT-142)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-144)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-156)-NoticeResult`:: Unpublished Justification Description
+  `BT-196(BT-160)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-161)-NoticeResult`:: Unpublished Justification Description
+  `BT-196(BT-162)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-163)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-171)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-191)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-193)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-539)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-539)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-540)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-540)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-541)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-541)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-5421)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-5421)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-5422)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-5422)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-5423)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-5423)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-543)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-543)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-553)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-554)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-555)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-556)-NoticeResult`:: Unpublished Justification Description
+  `BT-196(BT-635)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-636)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-709)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-710)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-711)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-712)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-720)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-730)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-731)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-733)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-733)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-734)-Lot`:: Unpublished Justification Description
+  `BT-196(BT-734)-LotsGroup`:: Unpublished Justification Description
+  `BT-196(BT-759)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-760)-LotResult`:: Unpublished Justification Description
+  `BT-196(BT-773)-Tender`:: Unpublished Justification Description
+  `BT-196(BT-88)-Procedure`:: Unpublished Justification Description

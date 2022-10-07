@@ -1,0 +1,48 @@
+= `lawful-country` codelist
+:navtitle: Codelists
+
+List of countries for which there is a legal basis for publication in the Supplement to the Official Journal of the European Union
+[horizontal]
+Subset of:: xref:code-lists/country.adoc[`country`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `ALB`::: Albania
+  `AUT`::: Austria
+  `BEL`::: Belgium
+  `BGR`::: Bulgaria
+  `CHE`::: Switzerland
+  `CYP`::: Cyprus
+  `CZE`::: Czech Republic
+  `DEU`::: Germany
+  `DNK`::: Denmark
+  `ESP`::: Spain
+  `EST`::: Estonia
+  `FIN`::: Finland
+  `FRA`::: France
+  `GRC`::: Greece
+  `HRV`::: Croatia
+  `HUN`::: Hungary
+  `IRL`::: Ireland
+  `ISL`::: Iceland
+  `ITA`::: Italy
+  `LIE`::: Liechtenstein
+  `LTU`::: Lithuania
+  `LUX`::: Luxembourg
+  `LVA`::: Latvia
+  `MDA`::: Moldova
+  `MKD`::: Former Yugoslav Republic of Macedonia
+  `MLT`::: Malta
+  `MNE`::: Montenegro
+  `NLD`::: Netherlands
+  `NOR`::: Norway
+  `POL`::: Poland
+  `PRT`::: Portugal
+  `ROU`::: Romania
+  `SRB`::: Serbia
+  `SVK`::: Slovakia
+  `SVN`::: Slovenia
+  `SWE`::: Sweden
+  `TUR`::: Turkey
+  `UKR`::: Ukraine

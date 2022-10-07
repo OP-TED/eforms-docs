@@ -1,0 +1,62 @@
+= `measurement-unit` codelist
+:navtitle: Codelists
+
+List of codes for the most commonly used Unit of Measures in international trades.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/measurement-unit
+Structure:: flat
+Used in:: xref:business-terms/BT-625.adoc[`BT-625`] Unit
+
+== Codes
+[horizontal]
+  `2N`::: decibel
+  `3C`::: manmonth
+  `AD`::: byte
+  `AMP`::: ampere
+  `BAR`::: bar
+  `BIT`::: bit
+  `BQL`::: becquerel
+  `C34`::: mole
+  `C45`::: nanometre
+  `CDL`::: candela
+  `CEL`::: degree Celsius
+  `CMK`::: square centimetre
+  `CMQ`::: cubic centimetre
+  `CMT`::: centimetre
+  `D30`::: terajoule
+  `E34`::: gigabyte
+  `GRM`::: gram
+  `GTE`::: gross tonnage
+  `GWH`::: gigawatt-hour
+  `HAR`::: hectare
+  `HLT`::: hectolitre
+  `HTZ`::: hertz
+  `HUR`::: hour
+  `JOU`::: joule
+  `KEL`::: kelvin
+  `KGM`::: kilogram
+  `KMH`::: kilometre per hour
+  `KMK`::: square kilometre
+  `KTM`::: kilometre
+  `KWH`::: kilowatt-hour
+  `KWT`::: kilowatt
+  `LH`::: labour hour
+  `LTR`::: litre
+  `MAW`::: megawatt
+  `MC`::: microgram
+  `MGM`::: milligram
+  `MIN`::: minute
+  `MLT`::: millilitre
+  `MMT`::: millimetre
+  `MTK`::: square metre
+  `MTR`::: metre
+  `MTS`::: metre per second
+  `NEW`::: newton
+  `PAL`::: pascal
+  `SEC`::: second
+  `TKM`::: tonne-kilometre
+  `TNE`::: tonne
+  `TOE`::: tonne of oil equivalent
+  `VLT`::: volt
+  `WTT`::: watt

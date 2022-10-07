@@ -1,0 +1,9 @@
+= `BT-330`: Group Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-330-Procedure`:: Group Identifier

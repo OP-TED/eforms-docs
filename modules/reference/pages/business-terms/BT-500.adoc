@@ -1,0 +1,12 @@
+= `BT-500`: Organisation Name
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-500-Business`:: Official name
+  `BT-500-Organization-Company`:: Organisation Name
+  `BT-500-Organization-TouchPoint`:: Name
+  `BT-500-UBO`:: UBO Name

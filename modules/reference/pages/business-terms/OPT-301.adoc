@@ -1,0 +1,33 @@
+= `OPT-301`: Party (ID reference)
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-301-Lot-AddInfo`:: Additional Info Provider Technical Identifier Reference
+  `OPT-301-Lot-DocProvider`:: Document Provider Technical Identifier Reference
+  `OPT-301-Lot-EmployLegis`:: Employment Legislation Organization Technical Identifier Reference
+  `OPT-301-Lot-EnvironLegis`:: Environmental Legislation Organization Technical Identifier Reference
+  `OPT-301-Lot-FiscalLegis`:: Fiscal Legislation Organization Technical Identifier Reference
+  `OPT-301-Lot-Mediator`:: Mediator Technical Identifier Reference
+  `OPT-301-Lot-ReviewInfo`:: Review Info Provider Technical Identifier Reference
+  `OPT-301-Lot-ReviewOrg`:: Review Organization Technical Identifier Reference
+  `OPT-301-Lot-TenderEval`:: Tender Evaluator Technical Identifier Reference
+  `OPT-301-Lot-TenderReceipt`:: Tender Recipient Technical Identifier Reference
+  `OPT-301-LotResult-Financing`:: Financing Party (ID reference)
+  `OPT-301-LotResult-Paying`:: Payer Party (ID reference)
+  `OPT-301-Part-AddInfo`:: Additional Info Provider Technical Identifier Reference
+  `OPT-301-Part-DocProvider`:: Document Provider Technical Identifier Reference
+  `OPT-301-Part-EmployLegis`:: Employment Legislation Organization Technical Identifier Reference
+  `OPT-301-Part-EnvironLegis`:: Environmental Legislation Organization Technical Identifier Reference
+  `OPT-301-Part-FiscalLegis`:: Fiscal Legislation Organization Technical Identifier Reference
+  `OPT-301-Part-Mediator`:: Mediator Technical Identifier Reference
+  `OPT-301-Part-ReviewInfo`:: Review Info Provider Technical Identifier Reference
+  `OPT-301-Part-ReviewOrg`:: Review Organization Technical Identifier Reference
+  `OPT-301-Part-TenderEval`:: Tender Evaluator Technical Identifier Reference
+  `OPT-301-Part-TenderReceipt`:: Tender Recipient Technical Identifier Reference
+  `OPT-301-ReviewBody`:: Review Body (Reference ID)
+  `OPT-301-ReviewReq`:: Review Requester (Reference ID)
+  `OPT-301-Tenderer-MainCont`:: Main Contractor ID Reference
+  `OPT-301-Tenderer-SubCont`:: Subcontractor ID Reference

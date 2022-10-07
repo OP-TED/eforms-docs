@@ -1,0 +1,36 @@
+= `exclusion-ground` codelist
+:navtitle: Codelists
+
+List of codes for Exclusion Ground identification
+[horizontal]
+Version:: 20210616-0
+Subset of:: xref:code-lists/criterion.adoc[`criterion`]
+Structure:: flat
+Used in:: xref:business-terms/BT-67.adoc[`BT-67`] Exclusion Grounds
+
+== Codes
+[horizontal]
+  `bankr-nat`::: Analogous situation like bankruptcy under national law
+  `bankruptcy`::: Bankruptcy
+  `corruption`::: Corruption
+  `cred-arran`::: Arrangement with creditors
+  `crime-org`::: Participation in a criminal organisation
+  `distorsion`::: Agreements with other economic operators aimed at distorting competition
+  `envir-law`::: Breaching of obligations in the fields of environmental law
+  `finan-laund`::: Money laundering or terrorist financing
+  `fraud`::: Fraud
+  `human-traffic`::: Child labour and other forms of trafficking in human beings
+  `insolvency`::: Insolvency
+  `labour-law`::: Breaching of obligations in the fields of labour law
+  `liq-admin`::: Assets being administered by liquidator
+  `misinterpr`::: Guilty of misinterpretation, withheld information, unable to provide required documents and obtained confidential information of this procedure
+  `nati-ground`::: Purely national exclusion grounds
+  `partic-confl`::: Conflict of interest due to its participation in the procurement procedure
+  `prep-confl`::: Direct or indirect involvement in the preparation of this procurement procedure
+  `prof-misconduct`::: Guilty of grave professional misconduct
+  `sanction`::: Early termination, damages or other comparable sanctions
+  `socsec-law`::: Breaching of obligations in the fields of social law
+  `socsec-pay`::: Payment of social security contributions
+  `susp-act`::: Business activities are suspended
+  `tax-pay`::: Payment of taxes
+  `terr-offence`::: Terrorist offences or offences linked to terrorist activities

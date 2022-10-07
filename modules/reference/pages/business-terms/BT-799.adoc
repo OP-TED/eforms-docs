@@ -1,0 +1,9 @@
+= `BT-799`: Review Body Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-799-ReviewBody`:: Review Body Type

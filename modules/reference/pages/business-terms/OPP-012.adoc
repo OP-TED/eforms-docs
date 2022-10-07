@@ -1,0 +1,8 @@
+= `OPP-012`: OJEU Publication Date
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-012-notice`:: OJEU Publication Date
