@@ -241,7 +241,7 @@ A Change notice may report that the procurement documents referenced by the init
 using BT-718 Procurement Documents Change Indicator and BT-719 Procurement Documents Change Date. 
 A description of the changes to the procurement documents may be included in BT-141 Change Description. 
 +
-The Notice VersionID is described in the link:https://docs.ted.europa.eu/eforms/1.2.0/schema/elements.html#noticeIDSection[Notice & Version Identifiers] 
+The Notice VersionID is described in the link:https://docs.ted.europa.eu/eforms/1.2.1/schema/elements.html#noticeIDSection[Notice & Version Identifiers] 
 section: "Versions of a notice are purely editorial and for a given Notice ID, a single version may be published." 
 + 
 The Notice VersionID can relate only to the editorial versions of the same notice (with the same Notice Identifier), 
@@ -251,7 +251,7 @@ Only one of these versions will get published.
 The version ID values of different notices do not relate to each other. So, the VersionID of a Change notice 
 is not related to the VersionID of the preceding notice. 
 + 
-In the link:https://docs.ted.europa.eu/eforms/1.2.0/schema/change-notice.html[Change Notice] section, the word "version" is used 
+In the link:https://docs.ted.europa.eu/eforms/1.2.1/schema/change-notice.html[Change Notice] section, the word "version" is used 
 to describe a notice or any of the related Change notices. 
 
 
@@ -283,7 +283,7 @@ if the first Change has to be published separately, use an alternative channel (
 +
 BT-13716: Change Previous Notice Section Identifier refers to sections of the published notice. These reference identifiers 
 should match identifiers that exist in the change notice. The list of section identifiers is reported in table 3 of 
-link:https://docs.ted.europa.eu/eforms/1.2.0/schema/identifiers.html#_referring_to_sections_of_a_notice[Referring to sections of a notice]. 
+link:https://docs.ted.europa.eu/eforms/1.2.1/schema/identifiers.html#_referring_to_sections_of_a_notice[Referring to sections of a notice]. 
 
 
 
@@ -635,7 +635,7 @@ to replace all the documents of a procurement procedure so there should be no ne
 The XML schemas, its documentation and especially the mapping from business terms to fields in the schemas is essential to implementers in regard to technical and legal correctness. This includes the mapping of business terms to the XML schemas (XPATHs).::
 
 The XML schemas and all relevant documentation are available on the eForms SDK; the IDs for Fields are always based on the "parent" BT. 
-We have a specific definition for link:https://docs.ted.europa.eu/eforms/1.2.0/fields/index.html#_what_is_a_field[Fields].
+We have a specific definition for link:https://docs.ted.europa.eu/eforms/1.2.1/fields/index.html#_what_is_a_field[Fields].
 They most often map to single XML elements, but not always. The mapping of Fields to XML elements is contained in the fields.json file.
 
 
@@ -831,28 +831,28 @@ They may be listed in a table in a new section. A mapping between OPT/OPP and BT
 What does ORG-XXXX or TPO-XXXX mean? How is this value defined? What does the value for field "OPT 300" mean and how do we find these values?::
 
 Each organisation used in a Notice is defined in an <efac:Organization> element, 
-see https://docs.ted.europa.eu/eforms/1.2.0/schema/parties.html#organizationSection. It has a single identifier, 
+see https://docs.ted.europa.eu/eforms/1.2.1/schema/parties.html#organizationSection. It has a single identifier, 
 which must follow the pattern "ORG-XXXX", where "XXXX" is four digits. The first organisation would have identifier "ORG-0001", 
 the second one "ORG-0002", etc, but numerical sequence in numbering does not have to be observed and there can be gaps in the numbering.
 +
 An organisation might have several contact details, each for one or more different functions. Each contact is defined in a TouchPoint, 
 which has an identifier following the pattern "TPO-XXXX". An example XML for a Buyer is shown in: 
-https://docs.ted.europa.eu/eforms/1.2.0/schema/parties.html#buyerSection. 
+https://docs.ted.europa.eu/eforms/1.2.1/schema/parties.html#buyerSection. 
 +
 Within the rest of the notice, any function performed by an organisation can then link to that organisation, or to one of its touchpoints, 
 by using the relevant identifier as a reference. Examples of this can be found in: 
-https://docs.ted.europa.eu/eforms/1.2.0/schema/parties.html#_legislation_information_provider 
-and the following section: https://docs.ted.europa.eu/eforms/1.2.0/schema/parties.html#_other_rolessubroles  
+https://docs.ted.europa.eu/eforms/1.2.1/schema/parties.html#_legislation_information_provider 
+and the following section: https://docs.ted.europa.eu/eforms/1.2.1/schema/parties.html#_other_rolessubroles  
 +
 These references use fields OPT-300 and OPT-301. These and other similar references are listed in: 
-https://docs.ted.europa.eu/eforms/1.2.0/schema/identifiers.html 
+https://docs.ted.europa.eu/eforms/1.2.1/schema/identifiers.html 
 
 
 
 What are the Roles/ Subroles with which a TouchPoint can be associated?:: 
 
 Roles/subroles it may be associated with are in table 2 in the Documentation section
-link:https://docs.ted.europa.eu/eforms/1.2.0/schema/identifiers.html#_referring_to_objects[IDs & References].
+link:https://docs.ted.europa.eu/eforms/1.2.1/schema/identifiers.html#_referring_to_objects[IDs & References].
 +
 A Touchpoint could be referred to for the following roles/subroles: 
 +
@@ -918,7 +918,7 @@ in the cac:RealizedLocation element. This element is repeatable within each Lot.
 How is joint procurement handled in eForms?::
 
 Joint procurement / consortia are handled by use of the Tendering Party 
-(https://docs.ted.europa.eu/eforms/1.2.0/schema/competition-results.html#tenderingPartySection). A Tendering Party may contain one or more tenderers.
+(https://docs.ted.europa.eu/eforms/1.2.1/schema/competition-results.html#tenderingPartySection). A Tendering Party may contain one or more tenderers.
 
 
 
@@ -1018,7 +1018,7 @@ in most cases this is a way to associate a Business Group (and its content) to o
 In the XML, this information is pointless by design as the information of the Business Group may be found inside the element representing the lot.
 +
 Some of the BTs for identifiers are not needed due to the way that the schema has been developed. There is a list of these in the documentation, 
-under the section https://docs.ted.europa.eu/eforms/1.2.0/schema/identifiers.html#pointlessDueToDesignSection["Pointless due to design"].
+under the section https://docs.ted.europa.eu/eforms/1.2.1/schema/identifiers.html#pointlessDueToDesignSection["Pointless due to design"].
 
 
 
@@ -1297,7 +1297,7 @@ codelist for BT-70 is an example. These will not be published on the EU Vocabula
 - Some codelists are made available first in the SDK on GitHub, because the process for publishing them on the EU Vocabularies 
 Authority tables page takes longer due a quarterly publishing schedule.
 +
-For more information, see https://docs.ted.europa.eu/eforms/1.2.0/codelists/index.html[Tailored Codelists] 
+For more information, see https://docs.ted.europa.eu/eforms/1.2.1/codelists/index.html[Tailored Codelists] 
 in the documentation.
 
 
@@ -1313,7 +1313,7 @@ The values of the @listName attributes correspond to the identifiers of the code
 match the codelists identifiers for entire (published on EU Vocabularies) or technical codelists. But tailored codelists contain subsets of entire codelists, 
 and their filenames are derived from both the tailored codelist identifier and the parent entire codelist identifier. 
 +
-For more information, see https://docs.ted.europa.eu/eforms/1.2.0/codelists/index.html[Tailored Codelists] 
+For more information, see https://docs.ted.europa.eu/eforms/1.2.1/codelists/index.html[Tailored Codelists] 
 in the documentation.
 
 
