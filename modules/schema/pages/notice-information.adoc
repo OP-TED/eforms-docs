@@ -210,7 +210,7 @@ marked:
 [[futureNoticeSection]]
 == Future Notice
 
-The "_cbc:PlannedDate_" element is used for planning notices (PIN only excluded)
+The "_cbc:PlannedDate_" element is used for planning notices (PIN Profile excluded)
 to specify when the competition notice will be published. Mark-up should
 be as follows:
 
