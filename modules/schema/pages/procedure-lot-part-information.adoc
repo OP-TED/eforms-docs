@@ -887,7 +887,7 @@ cac:AppealTerms{zwsp}/cac:MediationParty
 
 11+^|*Tendering language (+++**+++)*
 
-|*Submission Language (BT-97)* | xref:postAwardSection[xrefstyle=short] |-- |-- h|+ |-- |-- h|+ |-- |-- a|
+|*Submission Language (BT-97)* | xref:tenderingLanguageSection[xrefstyle=short] |-- |-- h|+ |-- |-- h|+ |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:Language{zwsp}/cbc:ID
@@ -1742,7 +1742,8 @@ codelist.
 This criterion may be quantified in one or more dimensions, each within 
 an "_efac:AwardCriterionParameter_" element. The dimension is specified with 
 the "_efbc:ParameterCode_" element, and the "_efbc:ParameterNumeric_" element 
-shall hold the value associated with that dimension.
+shall hold the value associated with that dimension (Award Criterion 
+Number, BT-541).
 
 
 The number dimension shall be:
@@ -1767,8 +1768,6 @@ percentage is used, the 100% rule verified (i.e. sum of the weighting percentage
 [source,xml]
 ----
 <cac:AwardingCriterion>
-    <cbc:CalculationExpression languageID="ENG">Price-quality score calculation is based on ...</cbc:CalculationExpression>
-    <cbc:CalculationExpression languageID="FRA">Le calcul du score prix-qualité est basée sur ...</cbc:CalculationExpression>
     <cac:SubordinateAwardingCriterion>
         <ext:UBLExtensions>
             <ext:UBLExtension>
@@ -1883,13 +1882,42 @@ within that Award Criteria no Award Criterion with Award Criterion Number Weight
 </cac:AwardingCriterion>
 ----
 
-When Award Criteria calculation is too complex to be described with the proposed structure, 
+When Award Criteria calculation is too complex to be described with the 
+proposed structure based on the use of Award Criterion Number (BT-541), 
 the complicated expression, or a reference to the procurement document section where this 
 information may be found, should be specified in Award Criteria Complicated (BT-543). 
 Information is encoded as text with the element "_cbc:CalculationExpression_". For a given 
 Award Criteria (i.e. "_cac:AwardingCriterion_" element), the children "_cbc:Description_" 
 (Award Criteria Order Justification, BT-733) and "_cbc:CalculationExpression_" (Award 
-Criteria Complicated, BT-543) shall not coexist.
+Criteria Complicated, BT-543) shall not coexist. Similarly, for a given Award 
+Criteria (i.e. "_cac:AwardingCriterion_" element), the child element 
+"_cbc:CalculationExpression_" (Award Criteria Complicated, BT-543) shall not 
+coexist with the descendant elements "_efbc:ParameterNumeric_" (BT-541) or 
+"_efbc:ParameterCode_" (BT-5421, BT-5422, BT-5423).
+
+
+[source,xml]
+----
+<cac:AwardingCriterion>
+    <cbc:CalculationExpression languageID="ENG">Price-quality score calculation is based on ...</cbc:CalculationExpression>
+    <cbc:CalculationExpression languageID="FRA">Le calcul du score prix-qualité est basée sur ...</cbc:CalculationExpression>
+    <cac:SubordinateAwardingCriterion>
+        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">price</cbc:AwardingCriterionTypeCode>
+        <cbc:Name languageID="ENG">Price</cbc:Name>
+        <cbc:Name languageID="FRA">Prix</cbc:Name>
+        <cbc:Description languageID="ENG">The price score is calculated by ...</cbc:Description>
+        <cbc:Description languageID="FRA">Le score de prix est calculé par ...</cbc:Description>
+    </cac:SubordinateAwardingCriterion>
+    <cac:SubordinateAwardingCriterion>
+        <cbc:AwardingCriterionTypeCode listName="award-criterion-type">quality</cbc:AwardingCriterionTypeCode>
+        <cbc:Name languageID="ENG">Quality</cbc:Name>
+        <cbc:Name languageID="FRA">Qualité</cbc:Name>
+        <cbc:Description languageID="ENG">The quality score is calculated by ...</cbc:Description>
+        <cbc:Description languageID="FRA">Le score de qualité est calculé par ...</cbc:Description>
+    </cac:SubordinateAwardingCriterion>
+</cac:AwardingCriterion>
+----
+
 
 [[jurySection]]
 === Jury Member Name (BT-46)
