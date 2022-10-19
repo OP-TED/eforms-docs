@@ -1883,7 +1883,7 @@ within that Award Criteria no Award Criterion with Award Criterion Number Weight
 ----
 
 When Award Criteria calculation is too complex to be described with the 
-proposed structure including Award Criterion Number (BT-541), 
+proposed structure based on the use of Award Criterion Number (BT-541), 
 the complicated expression, or a reference to the procurement document section where this 
 information may be found, should be specified in Award Criteria Complicated (BT-543). 
 Information is encoded as text with the element "_cbc:CalculationExpression_". For a given 
@@ -1891,9 +1891,9 @@ Award Criteria (i.e. "_cac:AwardingCriterion_" element), the children "_cbc:Desc
 (Award Criteria Order Justification, BT-733) and "_cbc:CalculationExpression_" (Award 
 Criteria Complicated, BT-543) shall not coexist. Similarly, for a given Award 
 Criteria (i.e. "_cac:AwardingCriterion_" element), the child element 
-"_cbc:CalculationExpression_" (Award Criteria Complicated, BT-543) and the 
-descendant element "_efbc:ParameterNumeric_" (Award Criterion Number, BT-541) 
-shall not coexist.
+"_cbc:CalculationExpression_" (Award Criteria Complicated, BT-543) shall not 
+coexist with the descendant elements "_efbc:ParameterNumeric_" (BT-541) or 
+"_efbc:ParameterCode_" (BT-5421, BT-5422, BT-5423).
 
 
 [source,xml]
