@@ -1,6 +1,6 @@
 name: eforms
 title: eForms SDK
-version: &ver '1.1.1' # don't remove the &ver anchor. It is needed for the "/eforms/latest/" redirection in ROOT:index.adoc.
+version: &ver '1.2.1' # don't remove the &ver anchor. It is needed for the "/eforms/latest/" redirection in ROOT:index.adoc.
 asciidoc:
   attributes:
     eforms_version: *ver # don't modify/remove this attribute. It is used in ROOT:index.adoc
