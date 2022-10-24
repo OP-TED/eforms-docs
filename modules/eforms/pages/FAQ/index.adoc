@@ -58,8 +58,7 @@ this time. The current reception (eSentool and current eNotices) and production 
  
 
 Until when will the current eNotices application be available?:: 
-
-Implementing Regulation (EU) 2015/1986 will be repealed on 25 October 2023. 
+ 
 The current eNotices application will be available to submit notices until 24 October 2023. 
 +
 The new eNotices2 application will be available as of 14 November 2022
@@ -138,6 +137,12 @@ https://github.com/OP-TED/eForms-SDK
 For any questions or issues, please contact the TED helpdesk at: ted@publications.europa  
 +
 
+For technical and development-related questions, GitHub discussions are open for developers: https://github.com/OP-TED/eForms-SDK/discussions/. 
+The forum is to allow eForms application developers to provide feedback and share their experiences using the eForms SDK. 
+The eForms SDK development team at the Publications Office may collect feedback but may not be able to engage in discussions. 
+If you want to report a bug in the eForms SDK, please create an issue: https://github.com/OP-TED/eForms-SDK/issues.
++
+
 Please note that the document "XPATHs provisional release v. 1.0.docx" is outdated 
 and will no longer be updated. The equivalent information, and much more, is now available in the 
 eForms SDK, which also takes into account the fact that some Business Terms occur 
@@ -158,6 +163,21 @@ which was shared on SIMAP: https://simap.ted.europa.eu/web/simap/eforms
 
 
 
+What is planned with eForms regarding the OJ S publication number?::
+
+Starting on 14 November any notices submitted as eForms will have a publication number of 8 digits, 
+meaning that any application handling eForms must use this format. On TED, eForms notices will therefore have an 8-digit publication number 
+and TED-XML notices will continue to have a 6-digit publication number. 
++
+The current TED website will continue to have a limitation of 6 digits when addressing a notice in its URL, meaning that it will be necessary to 
+remove the two leading zeros in the publication number when linking to an eForms notice.  For example, to link to eForms notice 00654321-2022, 
+the URL would be https://ted.europa.eu/udl?uri=TED:NOTICE:654321-2022:TEXT:EN:HTML 
++
+TED publication numbers will not exceed 1 million per year and can continue to be expressed in 6 digits. 
+This limitation will end with the launch of the TED 2.0 website in the second half of 2023. 
+
+
+
 Will eSenders have to send eForms for procedures that were started with the current standard forms? If so, how will the previous publication field be filled in, given that the Procedure Identifier is not used in the current forms?:: 
 
 Once the use of eForms becomes mandatory, eSenders will be required to
@@ -165,7 +185,8 @@ send eForms notices for any procedures that were started with the
 current standard forms. As there is no Procedure Identifier in the
 current forms, in these cases the notice number of the previous TED XML
 notice (as published in the OJ S) must be entered in the previous
-publication field in the eForms notice. 
+publication field in the eForms notice. See link:https://docs.ted.europa.eu/eforms/1.2.1/schema/elements.html#previousNoticeSection[Previous Notice (OPP-090)]
+in the documentation. 
 
  
  
@@ -183,8 +204,11 @@ How can a Contract Notice (current schema) be linked to a Contract Award Notice 
 
 eForms include some BTs with the identifier of the previous notice, regardless of 
 whether the notice uses the current TED schema or is an eForms notice. 
-If the previous notice does not use eForms, the identifier will be the OJ S Notice ID (XXXXXXX-YYYY). 
+If the previous notice does not use eForms, the identifier will be the OJ S Notice ID (XXXXXX-YYYY). 
 For eForms, the previous notice identifier can be the Notice ID (UUID-vv).
++
+See also link:https://docs.ted.europa.eu/eforms/1.2.1/schema/elements.html#previousNoticeSection[Previous Notice (OPP-090)]
+in the documentation. 
 
 
 
@@ -206,6 +230,9 @@ Regarding the F14, there is no longer a specific form for corrections such as th
 The Change notice Business Group will instead work as a separate section that will be 
 attached to any notice, to indicate that this notice corrects, changes, or otherwise modifies 
 a "parent" notice with the use of BG-9 and in particular BT-140 Change Reason Code. 
++
+See link:https://docs.ted.europa.eu/eforms/1.2.1/schema/change-notice.html#changesAssociatedElementsTable[Changes-associated elements] in the documentation
+and questions concerning change notices on GitHub: https://github.com/OP-TED/eForms-SDK/discussions/88# 
 
 
 
@@ -310,7 +337,9 @@ A user working on the user interface of eNotices2 will be able to see the follow
 
 What is the meaning of the status “Not published”? Will there be reason codes for “Not Published” notices?::
 
-If a notice is rejected due to manual lawfulness checks, it will obtain the status “Not published”. 
+If a notice is rejected due to manual lawfulness checks, or a technical error occurs in TED Monitor 2022, 
+the notice will obtain the status “Not published”.
++
 From an API point of view, a notice that fails the CVS check will not even reach status “submitted”. 
 The CVS will give a validation report, which will detail all the reasons why a notice did not get through and the status “Not published” 
 can be queried through the API. Rejection due to lawfulness manual check will be communicated via email to the contracting authority only.
@@ -492,6 +521,9 @@ but it is quite close to what the eForms TED Viewer will produce.
 +
 The link:https://github.com/OP-TED/eForms-SDK/tree/develop/view-templates[view-templates] available in the SDK 
 contain the technical definition of how an HTML/ PDF will be generated by TED Viewer 2022. 
++
+The link:https://github.com/OP-TED/eforms-notice-viewer[eForms notice viewer] is available on GitHub as a sample application 
+that can visualise an eForms notice in HTML; it is not a production-ready application. 
  
  
 
@@ -537,9 +569,9 @@ They are not the same notices as the ones used in the PDF views but they are ali
  
 What is the meaning of section 9.CHANGE in eForms 40 - Contract Modification Notice?::
 
-eForm 40 is the equivalent of current form 20; it is used to publicise changes in ongoing contracts. 
-As with all other forms, it may be corrected, in which case, a form 40 will contain section 9 (change) and 
-will be published as a Change notice for a Contract Modification Notice.
+eForm 40 is the equivalent of current TED schema form 20; it is used to publicise changes in ongoing contracts. 
+As with all other forms, it may be corrected, in which case, a form 40 will contain section 10 (change) and 
+will be published as a Change notice for a link:https://docs.ted.europa.eu/eforms/1.2.1/schema/contract-modification-notice.html[Contract Modification Notice].
 
 
 
@@ -799,6 +831,9 @@ you would need to refer to the Internal Identifier, BT-22, which will be impleme
 +
 Similarly, a Prior Information Notice or Periodic Indicative Notice used only for information without multiple parts 
 should have a “technical” part with ID "PAR-0000". The Internal Identifier BT-22 also applies here.
++
+See link:https://docs.ted.europa.eu/eforms/1.2.1/schema/procedure-lot-part-information.html[Table 1. Numbering schemes for Parts, Lots and Group of Lots]
+in the documentation.
 
 
 
@@ -1340,14 +1375,6 @@ For example, Business Field BT-755-Lot has field "xpathAbsolute" with a value of
 The leaf element cbc:ProcurementType is validated for compliance with language rules. The sibling element cbc:ProcurementTypeCode has a 
 @listName attribute set to "accessibility". The Schematron includes a rule which restricts the content of this sibling element to the values 
 in the "accessibility" codelist. 
-
-
-
-Why is the codelist for BT-774 (green-procurement) not present either on the EU vocabularies Authority tables page or in the "Codelist" folder on GitHub?:: 
-
-BT-774 uses the environmental-impact codelist, which is available in the SDK on GitHub. The version of this codelist in the SDK will be updated 
-with the June 2022 version published on EU Vocabularies at:
-https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/environmental-impact  
 
 
 
