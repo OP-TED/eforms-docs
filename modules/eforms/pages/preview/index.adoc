@@ -124,22 +124,21 @@ We are working on resolving the following limitations and known issues:
 
 
 === TED Viewer
-[horizontal]
-API endpoint:: TBA 
-API documentation:: Swagger UI TBA 
+
+API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/ 
 
 ==== Currently available 
 [horizontal]
-Application version:: Phase 2 
-SDK versions:: 0.4.2 and 0.5.0 
-Scope:: Partial rendering of HTML and PDF. 
+Application version:: 1.2.1
+SDK versions:: 1.2 
+Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: October 2022 
-Application version:: Phase 3 
-SDK versions:: 1.x 
-Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK.
+Indicative planning:: November 2022 
+Application version:: 1.2.2 
+SDK versions:: 1.3 
+Scope:: This release contains improvements to view-templates and labels
 
 
 === TED Developer Portal
@@ -155,32 +154,4 @@ Indicative planning:: December 2022
 Scope:: Addition of a developer profile for eSenders
 
 
-=== TED Monitor 
-
-This application is not public but this information provides some background about progress and how the applications are integrated. 
-
-==== Currently available 
-[horizontal]
-Application version:: Phase 4 
-SDK version:: 0.4.1, 0.5.0, 0.6.0 
-
-This is the last release  that implements the rest of the functionalities foreseen for this application: homepage overview (monitoring notices), quick search, full notice content, generate and display yearly production plan, manage anonymization, manage workflow errors. Previously, releases included the following functionalities: extraction of the data at the reception of the notice, not immediately published data identification/masking and schedule next publications, syncronize notice information between eNotices TED Monitor 2022 and TED, merge OJ S files and prepare and export eForms OJ S, display results page, homepage overview (Follow-up notices), advanced search, notice information.
-
-==== Planned updates
-[horizontal]
-Indicative planning:: October 2022 
-Application version:: 1.4.0
-SDK versions:: 0.4.1, 0.5.0, 0.6.0, 1.x 
-
-The release will include bug fixes. 
-
-
-=== TED website 
-
-The TED website is not available in the "preview" environment, but the following information could provide some background on progress and application integration. 
-
-==== Current status 
-[horizontal]
-Application version:: Phase 3 
-Scope:: Final release. 
 
