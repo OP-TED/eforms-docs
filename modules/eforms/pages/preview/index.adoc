@@ -113,14 +113,15 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.1.0 (Phase 3)
-SDK versions:: 0.6.2 and 1.0.0
+Application version:: 1.2.0
+SDK versions:: 1.0.0, 1.1.1, 1.2.1
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
 We are working on resolving the following limitations and known issues:
 
-* As indicated above, notices can currently only be validated with the rules from SDK 0.6 and 1.0.
 * Large notices (3 MB or above) cannot be sent, due to a technical restriction.
+* The validation mode "dynamic" currently does not fetch information from other notices, so it is equivalent to the "static" validation mode.
+* If an element that appears multiple times in the notice begin validated is mentioned in the "location" attribute of a failed assert, the position number indicated is off by one. For example, the second lot is indicated as `cac:ProcurementProjectLot[1]` but it should be `cac:ProcurementProjectLot[2]`.
 
 
 === TED Viewer
