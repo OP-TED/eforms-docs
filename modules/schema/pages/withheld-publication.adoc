@@ -67,7 +67,8 @@ This covers the withhold publication of:
 
 * Group Maximum Value Lot Identifier (BT-556),
 
-* Group Maximum Value (BT-156).
+* Group Maximum Value (BT-156),
+* Group Framework Re-estimated Value (BT-1561).
 
 The codes to be used to identify the field and the location where the
 unpublish components are to be found are given in <<codesForUnpublishedFieldsAtNoticeResultLevelTable>>.
@@ -121,6 +122,13 @@ a|
 [source,xpath,subs=attributes]
 ----
 {noticeresult}/efac:GroupFramework{zwsp}/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='gro-max-val']
+----
+
+|*gro-ree-val* |Group Framework Re-estimated Value (BT-1561)
+a|
+[source,xpath,subs=attributes]
+----
+{noticeresult}/efac:GroupFramework{zwsp}/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='gro-ree-val']
 ----
 
 |===
