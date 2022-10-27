@@ -3284,6 +3284,13 @@ a|
 cac:ProcurementAdditionalType{zwsp}/cbc:ProcurementTypeCode{zwsp}[@listName='environmental-impact']
 ----
 
+|*Green Procurement Criteria (BT-805)* |xref:strategicProcurementSection[xrefstyle=short] |-- |-- |*** |-- |-- |*** |-- |*** 
+a|
+[source,xpath,subs=attributes]
+----
+cac:ProcurementAdditionalType{zwsp}/cbc:ProcurementTypeCode{zwsp}[@listName='gpp-criteria']
+----
+
 |*Social Procurement (BT-775)* |xref:strategicProcurementSection[xrefstyle=short] |-- |-- |*** |-- |-- |*** |-- |*** 
 a|
 [source,xpath,subs=attributes]
@@ -3567,7 +3574,7 @@ For each linguistic version, these shall exist only once.
 ----
 
 [[procurementTypeSection]]
-=== Main & Additional Nature (BT-23, BT-531), Strategic Procurement (BT-06, BT-774, BT-775, BT-776, BT-777), and Accessibility (BT-754, BT-755)
+=== Main & Additional Nature (BT-23, BT-531), Strategic Procurement (BT-06, BT-774, BT-775, BT-776, BT-777, BT-805), and Accessibility (BT-754, BT-755)
 
 Main Nature (BT-23) is specified using the element 
 "_cbc:ProcurementTypeCode_" directly within the "_cac:ProcurementProject​_"
@@ -3603,7 +3610,7 @@ then, for a given Procedure, Lot or Part, there may be up-to two
 Additional Natures only.
 
 [[strategicProcurementSection]]
-==== Strategic Procurement (BT-06, BT-774, BT-775, BT-776, BT-777)
+==== Strategic Procurement (BT-06, BT-774, BT-775, BT-776, BT-777, BT-805)
 
 For a given Lot, strategic projects are identified using the "_listName_"
 attribute of the "_cbc:ProcurementTypeCode_" element. The value of the
@@ -3615,7 +3622,8 @@ for Green Procurement BT-774,
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/innovative-acquisition[innovative-acquisition]
 for Innovative Procurement BT-776,
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/social-objective[social-objective]
-for Social Procurement BT-775).
+for Social Procurement BT-775,
+gpp-criteria for Green rocurement Criteria BT-805).
 
 Multiple "_cac:ProcurementAdditionalType_" elements may be used to
 highlight the different aspects of the procurement (e.g. for an

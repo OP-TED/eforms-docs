@@ -713,6 +713,15 @@ form only) |*1* a|
 efbc:PublicTransportationCumulatedDistance
 ---- 
 
+|*Tender Ranked (BT-1711)* |The tender has been ranked. Need to be set 
+to "true" to be able to specify the Rank. A true value does not however 
+mandate the rank specification, unless required by the Regulation Annex.|*?*
+a|
+[source,xpath,subs=attributes]
+----
+efbc:TenderRankedIndicator
+---- 
+
 |*Tender Variant (BT-193)* |The tender is a variant. |*?*
 a|
 [source,xpath,subs=attributes]
@@ -954,6 +963,7 @@ An XML instance excerpt is provided below for illustration:
     <efac:LotTender>
         <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
         <cbc:RankCode>1</cbc:RankCode>
+        <efbc:TenderRankedIndicator>true</efbc:TenderRankedIndicator>
         <efbc:TenderVariantIndicator>true</efbc:TenderVariantIndicator>
         <cac:LegalMonetaryTotal>
             <cbc:PayableAmount currencyID="EUR">500</cbc:PayableAmount>
