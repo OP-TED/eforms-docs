@@ -79,13 +79,22 @@ notice, including options and renewals. |*1* a|
 cbc:TotalAmount
 ---- 
 
-|*Notice Framework Value (BT-118)* |The maximum or estimated value which
+|*Notice Framework Value (BT-118)* |The maximum value which
 can be spent within the framework agreement(s) announced in this notice
 over its whole duration, in all lots, including options and renewals.
 |*1* a|
 [source,xpath,subs=attributes]
 ----
-cbc:EstimatedOverallFrameworkContractsAmount
+efbc:OverallMaximumFrameworkContractsAmount
+---- 
+
+|*Notice Framework Approximate Value (BT-1118)* |The approximate value to be spent 
+within the framework agreement(s) announced in this notice over its/their 
+whole duration, in all lots
+|*1* a|
+[source,xpath,subs=attributes]
+----
+efbc:OverallApproximateFrameworkContractsAmount
 ---- 
 
 4+^|*Group Framework Value (+++**+++)* 
