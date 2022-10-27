@@ -56,40 +56,48 @@ Application version:: NRP+1
 SDK version:: 0.6 
 
 
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK 1.2. In the codelist fields, prefilling of values is supported.  
+
+Before you can create a Change notice or continue a procedure on a published notice, bear in mind that submitted notices go through another workflow in TED Monitor before they can be published, which takes place every working day.  
+
+The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML.  
+
+Import function is partially supported. There is also a search feature which allows users to sort through long lists of procedures.  
+
+Users can create workgroups between themselves and test the definitions of roles and permissions within these workgroups. They can also work and submit notices worked upon collectively. 
+
+Users can also define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available: 
+
+* Optional fields can be set to mandatory or hidden, however, please note that some optional fields could become mandatory under conditions (conditionally mandatory).
+
+* Confidential fields can be set to be always confidential or non-confidential.  
+
+The address book has been implemented, which allows users to create a database of addresses of known organisations which regularly take part in the procurement process and import them in their notices. In addition, users can create a Main Buyer in the address book. The Main Buyer, Organisation Name, Organisation Identifier and Oganisation Part Name can be only filled in under My Form Settings > Main Buyer Settings.
+
+In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
+
+
 ==== Known issues 
 At this point, the application is incomplete, many use cases are not fully implemented and others have dependencies in other applications which are only mocked-up. Similarly, the notice forms are not final as they are missing conditional rules, and significant tweaking or corrections of the sections is still to be expected. 
 
-All the labels in the user interface (UI), notices and fields are subject to change – what you see are only placeholders and the UI is only fully available in English.   
+All the labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
 
-The application is not integrated with any other TED applications, which means there are some limitations to what it can do. 
+The application has some limitations to what it can do and Preview function is currently unstable.
 
-    * Notices do not go through validation when they are submitted, therefore do not expect any other validation than the regex validation rules that you will find within the form-filling tool. 
-    ** Mandatory fields are shown by red asterisks. 
-    ** Live validation fields will have a red highlight until the right pattern is entered.
-    ** Some of the rules for mandatory fields and patterns aren’t fully correct in this version.
-    ** Clicking on the validation button produces an error.
-
-    * Submitted notices aren’t published. They will have to go through another workflow in TED Monitor before they can be published, which takes place every working day around 15:00 CET, before you can create a Change notice or continue a procedure. 
-    * Preview function is not available at this stage. 
-
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK 0.6. In the codelist fields, prefilling of values is supported. 
-
-The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML. Import function is not fully supported, i.e. it will generate errors in the imported XML. There is also a search feature which allows users to sort through long lists of procedures. 
-
-Users can create workgroups between themselves and test the definitions of roles and permissions within these workgroups. They can also work and submit notices worked upon collectively.
-
-Users can also define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available:
-
-* Optional fields can be set to mandatory or hidden (please note that if you chose to hide all optional fields, any notice created upon that selection will be completely empty).
-* Confidential fields can be set to be always confidential or non-confidential. 
-
-The address book has been implemented, which allows users to create a database of addresses of known organisations which regularly take part in the procurement process and import them in their notices. In addition, users can create a Main Buyer in the address book.
-
-In the notice sections a search feature has been added and pagination for up to 2000 lots is supported.
+    * Notices go through CVS validation when they are submitted, or when the user clicks on validate in the user interface, however, the feature may be unstable.
+    * Mandatory fields are shown by red asterisks. 
+    * Patterns and regular expressions will have a red highlight until the right value is entered. 
+    * Live validation of mandatory and conditional fields is not fully implemented and may be prone to errors at this stage.
+    
 
 eNotices2 uses the codelists from the SDK, which have not been completely tailored. This means that certain codelists have too many entries, such as countries or languages that no longer exist. 
 
-The eNotices2 API URLs and parameters will change in later releases. The Swagger UI provides basic documentation of the four functions. 
+The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
+
+   * POST submit XML request should return a "cvsLink", which currently produces a communication error. 
+   * Notices that fail validation, will currently be submitted to eNotices2 with “notice_status_VALIDATION_FAILED”. Note that notices that fail validation will not get status “submitted” in the future. 
+   * For notices successfully submitted via API, the validation report can be fetched from GET validation report. 
+   * Stop publication currently works with notice ID instead of notice ID + version ID. 
 
 
 ==== Planned updates 
