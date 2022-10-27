@@ -1080,12 +1080,7 @@ each BG-611.
 [[selectionCriteriaSection]]
 === Selection criteria
 
-Selection criteria may apply at "_Group of Lots_" and/or "_Lot_" level.
-When the Group may not be sub-divided, it is enough to have the criteria
-expressed at Group level only. When Lots of a Group may be awarded
-individually, it may be necessary to distinguish Group and Lots, and
-have criteria expressed for bothfootnote:[The same logic applies to awarding criteria, and the way tenders for the group will be compared to tenders for lots shall be explicitly stated.].
-
+Selection criteria apply at "_Lot_" level.
 There are different types of selection criteria (BT-747), and the main
 ones are "Technical", "Financial" and "Professional". Each of these
 categories is respectively encoded with the "tp-abil", "ef-stand" and
