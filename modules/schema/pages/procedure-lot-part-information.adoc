@@ -1454,9 +1454,6 @@ and detailed text using "_cbc:Description_" (BT-772).
 <cac:TendererQualificationRequest>
     <cbc:CompanyLegalFormCode listName="required">true</cbc:CompanyLegalForm>
     <cbc:CompanyLegalForm languageID="ENG">The tenderer ...</cbc:CompanyLegalForm>
-</cac:TendererQualificationRequest>
-<cac:TendererQualificationRequest>
-    <cbc:CompanyLegalFormCode>true</cbc:CompanyLegalForm>
     <cbc:CompanyLegalForm languageID="FRA">Le soumissionaire ...</cbc:CompanyLegalForm>
 </cac:TendererQualificationRequest>
 <cac:TendererQualificationRequest>
