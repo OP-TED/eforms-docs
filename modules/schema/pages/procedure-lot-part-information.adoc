@@ -3345,6 +3345,17 @@ cbc:SMESuitableIndicator
 cbc:Note
 ----
 
+|*Framework Maximum Value (BT-271)* |xref:estimatedValueSection[xrefstyle=short] h|? h|? h|? h|? h|? h|? h|? h|? a|
+[source,xpath,subs=attributes]
+----
+cac:RequestedTenderTotal{zwsp}/ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efbc:FrameworkMaximumAmount
+----
+and?
+[source,xpath,subs=attributes]
+----
+@currencyID
+----
+
 |*Estimated Value (BT-27)* |xref:estimatedValueSection[xrefstyle=short] h|? h|? h|? h|? h|? h|? h|? h|? a|
 [source,xpath,subs=attributes]
 ----
@@ -3729,7 +3740,7 @@ child of the appropriate "_cac:ProcurementProject_" element.
 ----
 
 [[estimatedValueSection]]
-=== Estimated Value (BT-27)
+=== Estimated and Framework Maximum Values (BT-27, BT-271)
 
 The Estimated Value is marked using the
 "_cbc:EstimatedOverallContractAmount_" and represents the aggregated
@@ -3747,6 +3758,27 @@ may be specified.
 ----
 <cac:RequestedTenderTotal>
     <cbc:EstimatedOverallContractAmount currencyID="EUR">250000</cbc:EstimatedOverallContractAmount>
+</cac:RequestedTenderTotal>
+----
+
+The Framework Maximum Value is marked using the
+"_efbc:FrameworkMaximumAmount_" and represents the early evaluation 
+of the Framework Maximum value for the Group of Lots, the Lot or the Procedure as a whole. 
+Currency and amount shall be specified. When the early evaluation was possible (except for 
+"PIN profile" and "PIN only" notices), the value may be specified.
+
+[source,xml]
+----
+<cac:RequestedTenderTotal>
+    <ext:UBLExtensions>
+        <ext:UBLExtension>
+            <ext:ExtensionContent>
+                <efext:EformsExtension>
+                    <efbc:FrameworkMaximumAmount currencyID="EUR">120000</efbc:FrameworkMaximumAmount>
+                </efext:EformsExtension>
+            </ext:ExtensionContent>
+        </ext:UBLExtension>
+    </ext:UBLExtensions>
 </cac:RequestedTenderTotal>
 ----
 
