@@ -3623,7 +3623,7 @@ https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/innovativ
 for Innovative Procurement BT-776,
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/social-objective[social-objective]
 for Social Procurement BT-775,
-gpp-criteria for Green rocurement Criteria BT-805).
+gpp-criteria for Green Procurement Criteria BT-805).
 
 Multiple "_cac:ProcurementAdditionalType_" elements may be used to
 highlight the different aspects of the procurement (e.g. for an
