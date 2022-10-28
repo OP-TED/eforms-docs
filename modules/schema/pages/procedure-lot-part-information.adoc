@@ -3033,7 +3033,7 @@ and Place (BT-133) are encoded as follows:
 [[auctionTermsSection]]
 === Auction Terms
 
-The use, for a given Lot of an electronic auction
+The use for a given Lot of an electronic auction
 system (BT-767) is specified with an indicator. When the value is
 "true", Description (BT-122) and URL (BT-123) may be specified.
 
