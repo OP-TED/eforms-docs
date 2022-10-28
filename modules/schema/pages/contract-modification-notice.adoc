@@ -45,3 +45,43 @@ efac:ChangeReason/efbc:ReasonDescription
 The possible Modification reason code values are referenced in the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/modification-justification[modification-justification]
 codelist.
+
+The Contract Modification elements occur in the extensions at the root
+of the notice. 
+
+With a single Contract Modification notice, it is only possible to 
+modify contracts belonging to the same notice, and only if none of 
+them have been modified in the meantime. When some contracts in a 
+notice have already been modified, then any further contract 
+modification for these contracts has to be applied on the latest 
+Contract Modification notice. For contracts that have not 
+been modified, the new contract modification may be performed based 
+on the result notice but shall not include contracts already modified.
+
+If a notice only contains N SettledContract elements, then there may not be 
+more than N references to contracts in the Contract Modification notice.
+
+For each "_efac:ContractModification_" element, as part of the changed 
+sections, there shall be, in addition to the other sections 
+impacted, a unique reference to a contract within the Contract 
+Modification notice using the contract technical identifier.
+
+
+[source,xml]
+----
+<efac:ContractModification>
+    <efbc:ChangedNoticeIdentifier>755db7f6-6aa1-453b-9087-1df5f7725112-02</efbc:ChangedNoticeIdentifier>
+    <efac:Change>
+        <efbc:ChangedSectionIdentifier>CON-0001</efbc:ChangedSectionIdentifier>
+        <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
+        <efbc:ChangedSectionIdentifier>LOT-0003</efbc:ChangedSectionIdentifier>
+        <efbc:ChangeDescription languageID="ENG">The scope of the procurement ...</efbc:ReasonDescription>
+    </efac:Change>
+    <efac:ChangeReason>
+        <cbc:ReasonCode listName="modification-justification">mod-cir</cbc:ReasonCode>
+        <efbc:ReasonDescription languageID="ENG">Following an Act of God ...</efbc:ReasonDescription>
+    </efac:ChangeReason>
+</cac:ContractModification>
+----
+
+

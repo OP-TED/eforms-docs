@@ -1044,8 +1044,6 @@ image::image017.jpg[image,width=306,height=358]
 
 4+^|*Settled Contract (+++*+++)* 
 
-|*_Contract Modification_* | | |
-
 |*Contract Technical Identifier (OPT-316)* |Unique contract technica ID. Shall follow the CON-XXXX scheme |*1* a|
 [source,xpath,subs=attributes]
 ----
