@@ -57,7 +57,7 @@ extension or shares directly the same parent as the field to
 
 === Notice Result level
 
-This covers the withhold publication of:
+This covers the withheld publication of:
 
 * Notice Value (BT-161),
 
@@ -68,6 +68,7 @@ This covers the withhold publication of:
 * Group Maximum Value Lot Identifier (BT-556),
 
 * Group Maximum Value (BT-156),
+
 * Group Framework Re-estimated Value (BT-1561).
 
 The codes to be used to identify the field and the location where the
@@ -165,7 +166,7 @@ fields.
                     <!-- # UNPUB-01 : Notice Value (BT-161) publication will be delayed -->
                     <cbc:TotalAmount currencyID="EUR">123456.00</cbc:TotalAmount>
                     <!-- # UNPUB-02 : The Notice Maximum Value (BT-118) publication will be delayed -->
-                    <efbc:OverallMaximumFrameworkContractsAmount currencyID="EUR">6000</efbc:OverallMaximumFrameworkContractsAmountt>
+                    <efbc:OverallMaximumFrameworkContractsAmount currencyID="EUR">6000</efbc:OverallMaximumFrameworkContractsAmount>
                     <efac:GroupFramework>
                         <efac:FieldsPrivacy>
                             <!-- # UNPUB-03 : The Group Maximum Value (BT-156) will not be published until March 2nd, 2022 -->

@@ -3350,21 +3350,11 @@ cbc:Note
 ----
 cac:RequestedTenderTotal{zwsp}/ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efbc:FrameworkMaximumAmount
 ----
-and?
-[source,xpath,subs=attributes]
-----
-@currencyID
-----
 
 |*Estimated Value (BT-27)* |xref:estimatedValueSection[xrefstyle=short] h|? h|? h|? h|? h|? h|? h|? h|? a|
 [source,xpath,subs=attributes]
 ----
 cac:RequestedTenderTotal{zwsp}/cbc:EstimatedOverallContractAmount
-----
-and?
-[source,xpath,subs=attributes]
-----
-@currencyID
 ----
 
 11+^|*Classification (+++*+++)* 
