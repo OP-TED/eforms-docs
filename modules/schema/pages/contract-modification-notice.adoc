@@ -46,22 +46,23 @@ The possible Modification reason code values are referenced in the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/modification-justification[modification-justification]
 codelist.
 
-The Contract Modification elements occur in the extensions at root. 
+The Contract Modification elements occur in the extensions at the root
+of the notice. 
 
 With a single Contract Modification notice, it is only possible to 
-modify contracts belonging to a same notice also given that none of 
-them has been modified in the meantime. When some contracts in a 
+modify contracts belonging to the same notice, and only if none of 
+them have been modified in the meantime. When some contracts in a 
 notice have already been modified, then any further contract 
 modification for these contracts has to be applied on the latest 
-notice Contract Modification notice. For contracts that have not 
-been modified, the new Contract modification may be performed based 
-on the result notice but may not include contracts already modified.
+Contract Modification notice. For contracts that have not 
+been modified, the new contract modification may be performed based 
+on the result notice but shall not include contracts already modified.
 
-If a notice only contains N SettledContract, then there may not be 
+If a notice only contains N SettledContract elements, then there may not be 
 more than N references to contracts in the Contract Modification notice.
 
 For each "_efac:ContractModification_" element, as part of the changed 
-sections, there shall be, in addition to the other impacted sections 
+sections, there shall be, in addition to the other sections 
 impacted, a unique reference to a contract within the Contract 
 Modification notice using the contract technical identifier.
 
