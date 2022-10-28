@@ -884,7 +884,7 @@ _Cf. <<lotTenderLevelSection>>_
 | |
 
 |*Subcontracting Value (BT-553)* |The estimated value of the part of the
-contract that the contractor will subcontract to third parties. |*1*
+contract that the contractor will subcontract to third parties. |*?*
 a|
 [source,xpath,subs=attributes]
 ----
@@ -892,7 +892,7 @@ efac:SubcontractingTerm{zwsp}/efbc:TermAmount
 ---- 
 
 |*Subcontracting Description (BT-554)* |The description of the part of
-the contract that the contractor will subcontract to third parties. |*1*
+the contract that the contractor will subcontract to third parties. |*?*
 a|
 [source,xpath,subs=attributes]
 ----
@@ -901,7 +901,7 @@ efac:SubcontractingTerm{zwsp}/efbc:TermDescription
 
 |*Subcontracting Percentage (BT-555)* |The estimated percentage of the
 contract that the contractor will subcontract to third parties compared
-to the whole contract. |*1* a|
+to the whole contract. |*?* a|
 [source,xpath,subs=attributes]
 ----
 efac:SubcontractingTerm{zwsp}/efbc:TermPercent

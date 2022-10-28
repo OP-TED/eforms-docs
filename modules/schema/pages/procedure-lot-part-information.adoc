@@ -1080,12 +1080,7 @@ each BG-611.
 [[selectionCriteriaSection]]
 === Selection criteria
 
-Selection criteria may apply at "_Group of Lots_" and/or "_Lot_" level.
-When the Group may not be sub-divided, it is enough to have the criteria
-expressed at Group level only. When Lots of a Group may be awarded
-individually, it may be necessary to distinguish Group and Lots, and
-have criteria expressed for bothfootnote:[The same logic applies to awarding criteria, and the way tenders for the group will be compared to tenders for lots shall be explicitly stated.].
-
+Selection criteria apply at "_Lot_" level.
 There are different types of selection criteria (BT-747), and the main
 ones are "Technical", "Financial" and "Professional". Each of these
 categories is respectively encoded with the "tp-abil", "ef-stand" and
@@ -1454,9 +1449,6 @@ and detailed text using "_cbc:Description_" (BT-772).
 <cac:TendererQualificationRequest>
     <cbc:CompanyLegalFormCode listName="required">true</cbc:CompanyLegalForm>
     <cbc:CompanyLegalForm languageID="ENG">The tenderer ...</cbc:CompanyLegalForm>
-</cac:TendererQualificationRequest>
-<cac:TendererQualificationRequest>
-    <cbc:CompanyLegalFormCode>true</cbc:CompanyLegalForm>
     <cbc:CompanyLegalForm languageID="FRA">Le soumissionaire ...</cbc:CompanyLegalForm>
 </cac:TendererQualificationRequest>
 <cac:TendererQualificationRequest>
@@ -3069,7 +3061,7 @@ and Place (BT-133) are encoded as follows:
 [[auctionTermsSection]]
 === Auction Terms
 
-The use, for a given Lot, or Group of Lots, of an electronic auction
+The use for a given Lot of an electronic auction
 system (BT-767) is specified with an indicator. When the value is
 "true", Description (BT-122) and URL (BT-123) may be specified.
 
