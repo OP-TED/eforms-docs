@@ -151,8 +151,6 @@ awarded Lots per tenderer, Definition of Groups of Lots)
 |*Tendering Terms* a|* Awarding criteria (Group specific)
 
 |*Tendering Process* a|
-* Groups related statistics (CAN)
-
 * Estimation, at the start of the Procurement Procedure, of the
 Group Framework Agreement Maximal value)
 
