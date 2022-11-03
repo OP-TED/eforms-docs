@@ -1,0 +1,48 @@
+= `nuts-country` codelist
+:navtitle: Codelists
+
+List of codes for Countries having NUTS codes
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/country.adoc[`country`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `ALB`::: Albania
+  `AUT`::: Austria
+  `BEL`::: Belgium
+  `BGR`::: Bulgaria
+  `CHE`::: Switzerland
+  `CYP`::: Cyprus
+  `CZE`::: Czechia
+  `DEU`::: Germany
+  `DNK`::: Denmark
+  `ESP`::: Spain
+  `EST`::: Estonia
+  `FIN`::: Finland
+  `FRA`::: France
+  `GBR`::: United Kingdom
+  `GRC`::: Greece
+  `HRV`::: Croatia
+  `HUN`::: Hungary
+  `IRL`::: Ireland
+  `ISL`::: Iceland
+  `ITA`::: Italy
+  `LIE`::: Liechtenstein
+  `LTU`::: Lithuania
+  `LUX`::: Luxembourg
+  `LVA`::: Latvia
+  `MKD`::: North Macedonia
+  `MLT`::: Malta
+  `MNE`::: Montenegro
+  `NLD`::: Netherlands
+  `NOR`::: Norway
+  `POL`::: Poland
+  `PRT`::: Portugal
+  `ROU`::: Romania
+  `SRB`::: Serbia
+  `SVK`::: Slovakia
+  `SVN`::: Slovenia
+  `SWE`::: Sweden
+  `TUR`::: Türkiye

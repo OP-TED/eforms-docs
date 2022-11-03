@@ -1,0 +1,9 @@
+= `BT-610`: Activity Entity
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-610-Procedure-Buyer`:: Activity Entity

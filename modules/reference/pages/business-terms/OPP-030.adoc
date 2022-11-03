@@ -1,0 +1,8 @@
+= `OPP-030`: Contract conditions Code
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-030-Tender`:: Contract conditions Code

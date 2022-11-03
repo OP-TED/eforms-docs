@@ -1,0 +1,9 @@
+= `BT-723`: Vehicle Category
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-723-LotResult`:: Vehicle Category

@@ -1,0 +1,10 @@
+= `BT-118`: Notice Framework Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-118-NoticeResult`:: Notice Framework Value
+  `OPA-118-NoticeResult-Currency`:: Currency of the notice framework value

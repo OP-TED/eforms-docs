@@ -1,0 +1,9 @@
+= `BT-142`: Winner Chosen
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-142-LotResult`:: Winner Chosen

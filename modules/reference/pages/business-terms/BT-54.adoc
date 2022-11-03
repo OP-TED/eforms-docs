@@ -1,0 +1,9 @@
+= `BT-54`: Options Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-54-Lot`:: Options Description

@@ -1,0 +1,59 @@
+= `legal-basis` codelist
+:navtitle: Codelists
+
+This table provides the legal basis  based on the legal acts  used for a given public procurement procedure. The table is provided by the Publications Office.
+[horizontal]
+Version:: 20220615-0
+URI:: http://publications.europa.eu/resource/dataset/legal-basis
+Tailored by:: xref:code-lists/eforms-legal-basis.adoc[`eforms-legal-basis`], xref:code-lists/legal-basis-1.adoc[`legal-basis-1`], xref:code-lists/legal-basis-10.adoc[`legal-basis-10`], xref:code-lists/legal-basis-11.adoc[`legal-basis-11`], xref:code-lists/legal-basis-12.adoc[`legal-basis-12`], xref:code-lists/legal-basis-13.adoc[`legal-basis-13`], xref:code-lists/legal-basis-14.adoc[`legal-basis-14`], xref:code-lists/legal-basis-15.adoc[`legal-basis-15`], xref:code-lists/legal-basis-16.adoc[`legal-basis-16`], xref:code-lists/legal-basis-17.adoc[`legal-basis-17`], xref:code-lists/legal-basis-18.adoc[`legal-basis-18`], xref:code-lists/legal-basis-19.adoc[`legal-basis-19`], xref:code-lists/legal-basis-2.adoc[`legal-basis-2`], xref:code-lists/legal-basis-20.adoc[`legal-basis-20`], xref:code-lists/legal-basis-21.adoc[`legal-basis-21`], xref:code-lists/legal-basis-22.adoc[`legal-basis-22`], xref:code-lists/legal-basis-23.adoc[`legal-basis-23`], xref:code-lists/legal-basis-24.adoc[`legal-basis-24`], xref:code-lists/legal-basis-25.adoc[`legal-basis-25`], xref:code-lists/legal-basis-26.adoc[`legal-basis-26`], xref:code-lists/legal-basis-27.adoc[`legal-basis-27`], xref:code-lists/legal-basis-28.adoc[`legal-basis-28`], xref:code-lists/legal-basis-29.adoc[`legal-basis-29`], xref:code-lists/legal-basis-3.adoc[`legal-basis-3`], xref:code-lists/legal-basis-30.adoc[`legal-basis-30`], xref:code-lists/legal-basis-31.adoc[`legal-basis-31`], xref:code-lists/legal-basis-32.adoc[`legal-basis-32`], xref:code-lists/legal-basis-33.adoc[`legal-basis-33`], xref:code-lists/legal-basis-34.adoc[`legal-basis-34`], xref:code-lists/legal-basis-35.adoc[`legal-basis-35`], xref:code-lists/legal-basis-36.adoc[`legal-basis-36`], xref:code-lists/legal-basis-37.adoc[`legal-basis-37`], xref:code-lists/legal-basis-38.adoc[`legal-basis-38`], xref:code-lists/legal-basis-39.adoc[`legal-basis-39`], xref:code-lists/legal-basis-4.adoc[`legal-basis-4`], xref:code-lists/legal-basis-40.adoc[`legal-basis-40`], xref:code-lists/legal-basis-5.adoc[`legal-basis-5`], xref:code-lists/legal-basis-6.adoc[`legal-basis-6`], xref:code-lists/legal-basis-7.adoc[`legal-basis-7`], xref:code-lists/legal-basis-8.adoc[`legal-basis-8`], xref:code-lists/legal-basis-9.adoc[`legal-basis-9`], xref:code-lists/legal-basis-cei.adoc[`legal-basis-cei`], xref:code-lists/legal-basis-e1.adoc[`legal-basis-e1`], xref:code-lists/legal-basis-e2.adoc[`legal-basis-e2`], xref:code-lists/legal-basis-e3.adoc[`legal-basis-e3`], xref:code-lists/legal-basis-e4.adoc[`legal-basis-e4`], xref:code-lists/legal-basis-e5.adoc[`legal-basis-e5`], xref:code-lists/legal-basis-t01.adoc[`legal-basis-t01`], xref:code-lists/legal-basis-t02.adoc[`legal-basis-t02`], xref:code-lists/legal-basis-x01.adoc[`legal-basis-x01`], xref:code-lists/legal-basis-x02.adoc[`legal-basis-x02`]
+Structure:: flat
+Used in:: xref:business-terms/BT-01.adoc[`BT-01`] Procedure Legal Basis
+
+== Codes
+[horizontal]
+  `1995_499-XIII`::: Ratified Parliament Decision (1995) No 499-XIII
+  `2011CEB_PROC_EXT`::: Guidelines for Procurement of Supplies, Works and Services
+  `2014CEB_PROC_INT`::: Guidelines on the internal procurement of services, supplies and works by the CEB
+  `2020CEB_GRANT`::: CEB’s competitive procedures to award grants
+  `31985R2137`::: Regulation (EEC) No 2137/85
+  `31992L0013`::: Directive 92/13/EEC
+  `31994D0001`::: Decision 94/1/EC, ECSC
+  `31994D0800`::: Decision 94/800/EC
+  `32001R2157`::: Regulation (EC) No 2157/2001
+  `32002D0309`::: Decision 2002/309/EC, Euratom
+  `32002R2342`::: Regulation (EC, Euratom) No 2342/2002
+  `32003R1435`::: Regulation (EC) No 1435/2003
+  `32004L0017`::: Directive 2004/17/EC
+  `32004L0018`::: Directive 2004/18/EC
+  `32005D0015`::: Decision 2005/15/EC
+  `32007D0005_01`::: Decision 2007/497/EC (ECB/2007/5)
+  `32007L0066`::: Directive 2007/66/EC
+  `32007R0718`::: Regulation (EC) No 718/2007
+  `32007R1370`::: Regulation (EC) No 1370/2007
+  `32008E0124`::: Council Joint Action 2008/124/CFSP
+  `32008R1008`::: Regulation (EC) No 1008/2008
+  `32009L0081`::: Directive 2009/81/EC
+  `32012R0966`::: Regulation (EU, Euratom) No 966/2012
+  `32012R1268`::: Delegated Regulation (EU) No 1268/2012
+  `32013L0016`::: Directive 2013/16/EU
+  `32014D0115`::: Decision 2014/115/EU
+  `32014D0486`::: Decision 2014/486/CFSP
+  `32014D0691`::: Decision 2014/691/EU
+  `32014L0023`::: Directive 2014/23/EU
+  `32014L0024`::: Directive 2014/24/EU
+  `32014L0025`::: Directive 2014/25/EU
+  `32014R0230`::: Regulation (EU) No 230/2014
+  `32014R0231`::: Regulation (EU) No 231/2014
+  `32014R0232`::: Regulation (EU) No 232/2014
+  `32014R0233`::: Regulation (EU) No 233/2014
+  `32014R0236`::: Regulation (EU) No 236/2014
+  `32014R0237`::: Regulation (Euratom) No 237/2014
+  `32015R0323`::: Regulation (EU) 2015/323
+  `32016D0002`::: Decision (EU) 2016/245 (ECB/2016/2)
+  `32017D2263`::: Decision (CFSP) 2017/2263
+  `32018R1046`::: Regulation (EU, Euratom) 2018/1046
+  `32019D0312`::: Decision (CFSP) 2019/312
+  `C2019_3277`::: Decision C(2019) 3277
+  `C2019_5515`::: Decision C(2019) 5515
+  `CFSP2017_34`::: CFSP/2017/34/EUMM Georgia
+  `other`::: Other

@@ -1,0 +1,492 @@
+=== `accessibility`
+This table provides a list of options for the use of accessibility criteria for person with disabilities in the technical specifications within the domain of public procurement.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/accessibility.adoc[details & codes]
+
+'''
+
+=== `applicability`
+This table provides a list of the options pertinent to be chosen for a matter concerning the applicability of predefined fields. It is designed for but not restricted to the context of public procurement.
+[horizontal]
+Tailored by:: <<_reserved_execution,`reserved-execution`>>
+Version:: 20220316-0
+
+See xref:code-lists/applicability.adoc[details & codes]
+
+'''
+
+=== `award-criterion-type`
+List of award criterion codes for award decisions within public procurement procedures.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/award-criterion-type.adoc[details & codes]
+
+'''
+
+=== `buyer-legal-type`
+This table provides a list of the the type of procuring authorities within the domain of public procurement according to legislation.
+[horizontal]
+Version:: 20220615-0
+
+See xref:code-lists/buyer-legal-type.adoc[details & codes]
+
+'''
+
+=== `change-corrig-justification`
+This table provides the codes and values used in case of justification of correcions applied to a notice within the context of public procurement.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/change-corrig-justification.adoc[details & codes]
+
+'''
+
+=== `communication-justification`
+This table provides the justification for restricting access rights to resources within the context of public procurement.
+[horizontal]
+Tailored by:: <<_no_esubmission_justification,`no-esubmission-justification`>>
+Version:: 20220316-0
+
+See xref:code-lists/communication-justification.adoc[details & codes]
+
+'''
+
+=== `contract-nature`
+List of codes used to specify the main and additional natures of a purchase
+[horizontal]
+Tailored by:: <<_eforms_contract_nature,`eforms-contract-nature`>>
+Version:: 20220928-0
+
+See xref:code-lists/contract-nature.adoc[details & codes]
+
+'''
+
+=== `country`
+List of three characters country codes, correlated with the ISO 3166 international standard and additional authority codes for some countries without assigned ISO code.
+[horizontal]
+Tailored by:: <<_eea_country,`eea-country`>>, <<_eforms_country,`eforms-country`>>, <<_eu_country,`eu-country`>>, <<_lawful_country,`lawful-country`>>, <<_nuts_country,`nuts-country`>>, <<_postcode_country,`postcode-country`>>
+Version:: 20221019-0
+
+See xref:code-lists/country.adoc[details & codes]
+
+'''
+
+=== `cpv`
+List of codes for an improved description, based on the Common Procurement Vocabulary (CPV), of what is actually being purchased.
+[horizontal]
+Tailored by:: <<_social_service_cpv,`social-service-cpv`>>
+Version:: 2008
+
+See xref:code-lists/cpv.adoc[details & codes]
+
+'''
+
+=== `criterion`
+This table provides criteria used for public procurement procedures.
+[horizontal]
+Tailored by:: <<_exclusion_ground,`exclusion-ground`>>
+Version:: 20210616-0
+
+See xref:code-lists/criterion.adoc[details & codes]
+
+'''
+
+=== `currency`
+List of currency codes
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/currency.adoc[details & codes]
+
+'''
+
+=== `cvd-contract-type`
+The type of contract of the procurement procedure within the scope of Clean Vehicles Directive 2009/33/EC.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/cvd-contract-type.adoc[details & codes]
+
+'''
+
+=== `direct-award-justification`
+This table provides the list of reasons for using a procedure which allows awarding contracts directly without the requirement of publishing a call for competition in the Official Journal of the European Union.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/direct-award-justification.adoc[details & codes]
+
+'''
+
+=== `dps-usage`
+This table provides a list wether a dynamic purchasing system is involved in a procurement and, in case of central purchasing bodies, whether it can be used by buyers not listed in the notice of the Official Journal of the European Union.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/dps-usage.adoc[details & codes]
+
+'''
+
+=== `economic-operator-size`
+This table provides the different categories in which the tenderers to whom a contract can be awarded are classified, according to their size (using as criteria the number of employees).
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/economic-operator-size.adoc[details & codes]
+
+'''
+
+=== `environmental-impact`
+This table provides the information about whether a procurement includes (and how) an approach to reducing the environmental impacts of the work, supply or service used in the technical specifications, award criteria, selection criteria or contract perfor
+[horizontal]
+Version:: 20220615-0
+
+See xref:code-lists/environmental-impact.adoc[details & codes]
+
+'''
+
+=== `eu-programme`
+List of codes for programmes created and coordinated by the European Union and financially supported by the European Union or, in a few cases, by the contributions from the Member States.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/eu-programme.adoc[details & codes]
+
+'''
+
+=== `form-type`
+This table provides the codes and values used for the type of forms published on TED.
+[horizontal]
+Version:: 20220615-0
+
+See xref:code-lists/form-type.adoc[details & codes]
+
+'''
+
+=== `framework-agreement`
+This table provides the list of codes to distinguish the different type framework agreement involved in a tender.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/framework-agreement.adoc[details & codes]
+
+'''
+
+=== `innovative-acquisition`
+This table provides the codes and values used for the type of innovative works, supplies or services being procured within the context of public procurement.
+[horizontal]
+Version:: 20220615-0
+
+See xref:code-lists/innovative-acquisition.adoc[details & codes]
+
+'''
+
+=== `irregularity-type`
+This code list refers generally to the types of irregularities described in Section 2 of the Annex to the Commission Decision C(2019) 3452.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/irregularity-type.adoc[details & codes]
+
+'''
+
+=== `language`
+List of three characters language codes correlated with the ISO 639 international standard with additional codes for some languages without assigned ISO code.
+[horizontal]
+Tailored by:: <<_eforms_language,`eforms-language`>>, <<_eu_official_language,`eu-official-language`>>
+Version:: 20220928-0
+
+See xref:code-lists/language.adoc[details & codes]
+
+'''
+
+=== `legal-basis`
+This table provides the legal basis  based on the legal acts  used for a given public procurement procedure. The table is provided by the Publications Office.
+[horizontal]
+Tailored by:: <<_eforms_legal_basis,`eforms-legal-basis`>>, <<_legal_basis_1,`legal-basis-1`>>, <<_legal_basis_10,`legal-basis-10`>>, <<_legal_basis_11,`legal-basis-11`>>, <<_legal_basis_12,`legal-basis-12`>>, <<_legal_basis_13,`legal-basis-13`>>, <<_legal_basis_14,`legal-basis-14`>>, <<_legal_basis_15,`legal-basis-15`>>, <<_legal_basis_16,`legal-basis-16`>>, <<_legal_basis_17,`legal-basis-17`>>, <<_legal_basis_18,`legal-basis-18`>>, <<_legal_basis_19,`legal-basis-19`>>, <<_legal_basis_2,`legal-basis-2`>>, <<_legal_basis_20,`legal-basis-20`>>, <<_legal_basis_21,`legal-basis-21`>>, <<_legal_basis_22,`legal-basis-22`>>, <<_legal_basis_23,`legal-basis-23`>>, <<_legal_basis_24,`legal-basis-24`>>, <<_legal_basis_25,`legal-basis-25`>>, <<_legal_basis_26,`legal-basis-26`>>, <<_legal_basis_27,`legal-basis-27`>>, <<_legal_basis_28,`legal-basis-28`>>, <<_legal_basis_29,`legal-basis-29`>>, <<_legal_basis_3,`legal-basis-3`>>, <<_legal_basis_30,`legal-basis-30`>>, <<_legal_basis_31,`legal-basis-31`>>, <<_legal_basis_32,`legal-basis-32`>>, <<_legal_basis_33,`legal-basis-33`>>, <<_legal_basis_34,`legal-basis-34`>>, <<_legal_basis_35,`legal-basis-35`>>, <<_legal_basis_36,`legal-basis-36`>>, <<_legal_basis_37,`legal-basis-37`>>, <<_legal_basis_38,`legal-basis-38`>>, <<_legal_basis_39,`legal-basis-39`>>, <<_legal_basis_4,`legal-basis-4`>>, <<_legal_basis_40,`legal-basis-40`>>, <<_legal_basis_5,`legal-basis-5`>>, <<_legal_basis_6,`legal-basis-6`>>, <<_legal_basis_7,`legal-basis-7`>>, <<_legal_basis_8,`legal-basis-8`>>, <<_legal_basis_9,`legal-basis-9`>>, <<_legal_basis_cei,`legal-basis-cei`>>, <<_legal_basis_e1,`legal-basis-e1`>>, <<_legal_basis_e2,`legal-basis-e2`>>, <<_legal_basis_e3,`legal-basis-e3`>>, <<_legal_basis_e4,`legal-basis-e4`>>, <<_legal_basis_e5,`legal-basis-e5`>>, <<_legal_basis_t01,`legal-basis-t01`>>, <<_legal_basis_t02,`legal-basis-t02`>>, <<_legal_basis_x01,`legal-basis-x01`>>, <<_legal_basis_x02,`legal-basis-x02`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis.adoc[details & codes]
+
+'''
+
+=== `main-activity`
+List of codes for the main activities of the buyers.
+[horizontal]
+Tailored by:: <<_authority_activity,`authority-activity`>>, <<_entity_activity,`entity-activity`>>
+Version:: 20220928-0
+
+See xref:code-lists/main-activity.adoc[details & codes]
+
+'''
+
+=== `measurement-unit`
+List of codes for the most commonly used Unit of Measures in international trades.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/measurement-unit.adoc[details & codes]
+
+'''
+
+=== `missing-info-submission`
+This table provides the list of codes indicating wether tenderer-related information (complete or parcial) can be supplemented even after the submission deadline.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/missing-info-submission.adoc[details & codes]
+
+'''
+
+=== `modification-justification`
+This table provides the main reasons for modifying a contract within the domain of public procurement.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/modification-justification.adoc[details & codes]
+
+'''
+
+=== `non-award-justification`
+This table provides the list of reasons of the buyer for not choosing a winner in the procurement procedure.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/non-award-justification.adoc[details & codes]
+
+'''
+
+=== `non-publication-justification`
+This table provides codes and values for the main reasons for not immediately publishing a notice within the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/non-publication-justification.adoc[details & codes]
+
+'''
+
+=== `notice-type`
+This table provides a list of public procurement notices  according to procurement legislation  published once a project is approved.
+[horizontal]
+Tailored by:: <<_bri,`bri`>>, <<_change,`change`>>, <<_competition,`competition`>>, <<_cont_modif,`cont-modif`>>, <<_dir_awa_pre,`dir-awa-pre`>>, <<_planning,`planning`>>, <<_result,`result`>>
+Version:: 20220615-0
+
+See xref:code-lists/notice-type.adoc[details & codes]
+
+'''
+
+=== `number-fixed`
+This table provides the codes linked to fix values within the context of public procurement.
+[horizontal]
+Version:: 20220615-0
+
+See xref:code-lists/number-fixed.adoc[details & codes]
+
+'''
+
+=== `number-threshold`
+This table provides the codes linked to the type of threshold values within the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/number-threshold.adoc[details & codes]
+
+'''
+
+=== `number-weight`
+This table provides the codes linked to the type of weight values used in award criteria within the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/number-weight.adoc[details & codes]
+
+'''
+
+=== `nuts`
+List of codes for the geographical nomenclature subdivision of the economic territory of the European Union (EU) into regions at three different levels (NUTS 1, 2 and 3 respectively, moving from larger to smaller territorial units).
+[horizontal]
+Tailored by:: <<_nuts_alb_lvl3,`nuts-alb-lvl3`>>, <<_nuts_aut_lvl3,`nuts-aut-lvl3`>>, <<_nuts_bel_lvl3,`nuts-bel-lvl3`>>, <<_nuts_bgr_lvl3,`nuts-bgr-lvl3`>>, <<_nuts_che_lvl3,`nuts-che-lvl3`>>, <<_nuts_cyp_lvl3,`nuts-cyp-lvl3`>>, <<_nuts_cze_lvl3,`nuts-cze-lvl3`>>, <<_nuts_deu_lvl3,`nuts-deu-lvl3`>>, <<_nuts_dnk_lvl3,`nuts-dnk-lvl3`>>, <<_nuts_esp_lvl3,`nuts-esp-lvl3`>>, <<_nuts_est_lvl3,`nuts-est-lvl3`>>, <<_nuts_fin_lvl3,`nuts-fin-lvl3`>>, <<_nuts_fra_lvl3,`nuts-fra-lvl3`>>, <<_nuts_gbr_lvl3,`nuts-gbr-lvl3`>>, <<_nuts_grc_lvl3,`nuts-grc-lvl3`>>, <<_nuts_hrv_lvl3,`nuts-hrv-lvl3`>>, <<_nuts_hun_lvl3,`nuts-hun-lvl3`>>, <<_nuts_irl_lvl3,`nuts-irl-lvl3`>>, <<_nuts_isl_lvl3,`nuts-isl-lvl3`>>, <<_nuts_ita_lvl3,`nuts-ita-lvl3`>>, <<_nuts_lie_lvl3,`nuts-lie-lvl3`>>, <<_nuts_ltu_lvl3,`nuts-ltu-lvl3`>>, <<_nuts_lux_lvl3,`nuts-lux-lvl3`>>, <<_nuts_lva_lvl3,`nuts-lva-lvl3`>>, <<_nuts_lvl3,`nuts-lvl3`>>, <<_nuts_mkd_lvl3,`nuts-mkd-lvl3`>>, <<_nuts_mlt_lvl3,`nuts-mlt-lvl3`>>, <<_nuts_mne_lvl3,`nuts-mne-lvl3`>>, <<_nuts_nld_lvl3,`nuts-nld-lvl3`>>, <<_nuts_nor_lvl3,`nuts-nor-lvl3`>>, <<_nuts_pol_lvl3,`nuts-pol-lvl3`>>, <<_nuts_prt_lvl3,`nuts-prt-lvl3`>>, <<_nuts_rou_lvl3,`nuts-rou-lvl3`>>, <<_nuts_srb_lvl3,`nuts-srb-lvl3`>>, <<_nuts_svk_lvl3,`nuts-svk-lvl3`>>, <<_nuts_svn_lvl3,`nuts-svn-lvl3`>>, <<_nuts_swe_lvl3,`nuts-swe-lvl3`>>, <<_nuts_tur_lvl3,`nuts-tur-lvl3`>>
+Version:: 2021
+
+See xref:code-lists/nuts.adoc[details & codes]
+
+'''
+
+=== `organisation-role`
+This table provides the list of the different  functions of the organisations in a procurement procedure.
+[horizontal]
+Tailored by:: <<_organisation_role_service,`organisation-role-service`>>, <<_review_requester_type,`review-requester-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/organisation-role.adoc[details & codes]
+
+'''
+
+=== `other-place-service`
+This table provides the broad geopolitical areas linked to the location of works and the place of performance or delivery within the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/other-place-service.adoc[details & codes]
+
+'''
+
+=== `permission`
+This table provides the codes linked to the different values of permission and/or obligation.
+[horizontal]
+Tailored by:: <<_ecatalog_submission,`ecatalog-submission`>>, <<_einvoicing,`einvoicing`>>, <<_esubmission,`esubmission`>>
+Version:: 20220316-0
+
+See xref:code-lists/permission.adoc[details & codes]
+
+'''
+
+=== `procurement-procedure-type`
+This table provides a list of activities leading to the conclusion of public contracts used in public procurement according to the legislation.
+[horizontal]
+Tailored by:: <<_procedure_type_10,`procedure-type-10`>>, <<_procedure_type_11,`procedure-type-11`>>, <<_procedure_type_12,`procedure-type-12`>>, <<_procedure_type_13,`procedure-type-13`>>, <<_procedure_type_14,`procedure-type-14`>>, <<_procedure_type_16,`procedure-type-16`>>, <<_procedure_type_17,`procedure-type-17`>>, <<_procedure_type_18,`procedure-type-18`>>, <<_procedure_type_19,`procedure-type-19`>>, <<_procedure_type_20,`procedure-type-20`>>, <<_procedure_type_21,`procedure-type-21`>>, <<_procedure_type_22,`procedure-type-22`>>, <<_procedure_type_23,`procedure-type-23`>>, <<_procedure_type_24,`procedure-type-24`>>, <<_procedure_type_25,`procedure-type-25`>>, <<_procedure_type_26,`procedure-type-26`>>, <<_procedure_type_27,`procedure-type-27`>>, <<_procedure_type_28,`procedure-type-28`>>, <<_procedure_type_29,`procedure-type-29`>>, <<_procedure_type_30,`procedure-type-30`>>, <<_procedure_type_31,`procedure-type-31`>>, <<_procedure_type_32,`procedure-type-32`>>, <<_procedure_type_33,`procedure-type-33`>>, <<_procedure_type_34,`procedure-type-34`>>, <<_procedure_type_35,`procedure-type-35`>>, <<_procedure_type_36,`procedure-type-36`>>, <<_procedure_type_37,`procedure-type-37`>>, <<_procedure_type_7,`procedure-type-7`>>, <<_procedure_type_8,`procedure-type-8`>>, <<_procedure_type_9,`procedure-type-9`>>, <<_procedure_type_cei,`procedure-type-cei`>>, <<_procedure_type_e1,`procedure-type-e1`>>, <<_procedure_type_e2,`procedure-type-e2`>>, <<_procedure_type_e3,`procedure-type-e3`>>, <<_procedure_type_e4,`procedure-type-e4`>>, <<_procedure_type_e5,`procedure-type-e5`>>, <<_procedure_type_t01,`procedure-type-t01`>>, <<_procedure_type_t02,`procedure-type-t02`>>
+Version:: 20220928-0
+
+See xref:code-lists/procurement-procedure-type.adoc[details & codes]
+
+'''
+
+=== `received-submission-type`
+This table provides the list of relevant categories used to classify tenders or requests to participate received within the context of public procurement.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/received-submission-type.adoc[details & codes]
+
+'''
+
+=== `remedy-type`
+This table describes the measures taken following a review.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/remedy-type.adoc[details & codes]
+
+'''
+
+=== `requirement-stage`
+This table describes when and whether a given requirement must be provided in a procedure.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/requirement-stage.adoc[details & codes]
+
+'''
+
+=== `reserved-procurement`
+List of codes to specify whether participation is reserved or not.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/reserved-procurement.adoc[details & codes]
+
+'''
+
+=== `review-body-type`
+This table covers the list of organisations providing the review of a given procedure.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/review-body-type.adoc[details & codes]
+
+'''
+
+=== `review-decision-type`
+This table describes the decision made a review body.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/review-decision-type.adoc[details & codes]
+
+'''
+
+=== `selection-criterion`
+List of codes to express condictions that are concerned for evaluation purposes. This codelist is a subset of the ESPD codelist CriterionTaxonomy.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/selection-criterion.adoc[details & codes]
+
+'''
+
+=== `social-objective`
+List of codes for values  linked to any social objective promoted by the specifications, award / selection criteria or contract performance conditions included in a procurement.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/social-objective.adoc[details & codes]
+
+'''
+
+=== `strategic-procurement`
+This table provides the values  linked to any social objective  promoted by the technical specifications, award criteria, selection criteria or contract performance conditions included in a procurement.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/strategic-procurement.adoc[details & codes]
+
+'''
+
+=== `subcontracting-indication`
+This table provides the list of codes and values used to indicate information regarding the share of parts of a contract to third parties. The share may refer to the portion of work, services or supplies and/or to the subject matter being subcontracted.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/subcontracting-indication.adoc[details & codes]
+
+'''
+
+=== `subcontracting-obligation`
+This table provides the list of codes and values used for the obligation of the economic operator of sharing parts of the original contract to third parties. The share may refer to the portion of work, services or supplies.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/subcontracting-obligation.adoc[details & codes]
+
+'''
+
+=== `timeperiod`
+List of codes for the main timeperiods (seasons, duration units of measure) commonly used in procurement.
+[horizontal]
+Tailored by:: <<_duration,`duration`>>, <<_duration_unit,`duration-unit`>>
+Version:: 20220316-0
+
+See xref:code-lists/timeperiod.adoc[details & codes]
+
+'''
+
+=== `usage`
+List of codes to indicate whether the associated concept should be used or not.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/usage.adoc[details & codes]
+
+'''
+
+=== `vehicle-category`
+The category of vehicle falling within the scope of Directive 2009/33/EC.
+[horizontal]
+Version:: 20220928-0
+
+See xref:code-lists/vehicle-category.adoc[details & codes]
+
+'''
+
+=== `winner-selection-status`
+This table provides the list of codes and values used to indicate whether a tenderer was chosen to be awarded with a contract and wether the competiotion is open.
+[horizontal]
+Version:: 20220316-0
+
+See xref:code-lists/winner-selection-status.adoc[details & codes]
+
+'''
+

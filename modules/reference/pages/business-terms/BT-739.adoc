@@ -1,0 +1,12 @@
+= `BT-739`: Organisation Contact Fax
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-739-Business`:: Fax
+  `BT-739-Organization-Company`:: Organisation Contact Fax
+  `BT-739-Organization-TouchPoint`:: Contact Fax
+  `BT-739-UBO`:: UBO Contact Fax

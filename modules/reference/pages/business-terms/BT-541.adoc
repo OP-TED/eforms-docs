@@ -1,0 +1,10 @@
+= `BT-541`: Award Criterion Number
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-541-Lot`:: Award Criterion Number
+  `BT-541-LotsGroup`:: Award Criterion Number

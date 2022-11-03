@@ -1,0 +1,5 @@
+= `BT-13711`: Techniques Lot Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER

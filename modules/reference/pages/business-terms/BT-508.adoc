@@ -1,0 +1,9 @@
+= `BT-508`: Buyer Profile URL
+:navtitle: Business Terms
+
+[horizontal]
+Type:: URL
+
+== Fields
+[horizontal]
+  `BT-508-Procedure-Buyer`:: Buyer Profile URL

@@ -1,0 +1,297 @@
+= `currency` codelist
+:navtitle: Codelists
+
+List of currency codes
+[horizontal]
+Version:: 20220928-0
+URI:: http://publications.europa.eu/resource/dataset/currency
+Structure:: flat
+
+== Codes
+[horizontal]
+  `ADF`::: Andorran francs
+  `ADP`::: Andorran peseta
+  `AED`::: UAE dirham
+  `AFA`::: Afghani
+  `AFN`::: Afghani
+  `ALK`::: Lek
+  `ALL`::: Lek
+  `AMD`::: Dram
+  `ANG`::: Netherlands Antillean guilder
+  `AOA`::: Kwanza
+  `AON`::: New Angolan kwanza
+  `AOR`::: Angolan kwanza readjustado
+  `ARA`::: Argentine austral
+  `ARL`::: Argentine peso ley
+  `ARM`::: Argentine peso moneda nacional
+  `ARP`::: Argentine peso argentino
+  `ARS`::: Argentine peso
+  `ATS`::: Austrian schilling
+  `AUD`::: Australian dollar
+  `AWG`::: Aruban guilder
+  `AZM`::: Azerbaijani manat
+  `AZN`::: Azerbaijan manat
+  `BAM`::: Convertible mark
+  `BBD`::: Barbados dollar
+  `BDT`::: Taka
+  `BEF`::: Belgian franc
+  `BGJ`::: Lev
+  `BGK`::: Lev
+  `BGL`::: Lev
+  `BGN`::: Lev
+  `BHD`::: Bahraini dinar
+  `BIF`::: Burundi franc
+  `BMD`::: Bermuda dollar
+  `BND`::: Brunei dollar
+  `BOB`::: Boliviano
+  `BOP`::: Bolivian peso
+  `BOV`::: Mvdol
+  `BRB`::: Cruzeiro novo
+  `BRC`::: Cruzado
+  `BRE`::: Cruzeiro
+  `BRL`::: Real
+  `BRN`::: Cruzado novo
+  `BRR`::: Cruzeiro real
+  `BRZ`::: Cruzeiro
+  `BSD`::: Bahamian dollar
+  `BTN`::: Ngultrum
+  `BWP`::: Pula
+  `BYN`::: Belarusian rouble
+  `BYR`::: Belarusian rouble
+  `BZD`::: Belize dollar
+  `CAD`::: Canadian dollar
+  `CDF`::: Congolese franc
+  `CHE`::: WIR Euro
+  `CHF`::: Swiss franc
+  `CHW`::: WIR Franc
+  `CLE`::: Chilean escudo
+  `CLF`::: Unidad de Fomento
+  `CLP`::: Chilean peso
+  `CNY`::: Renminbi-yuan
+  `COP`::: Colombian peso
+  `COU`::: Unidad de Valor Real
+  `CRC`::: Costa Rican colon
+  `CSJ`::: Czechoslovak koruna
+  `CSK`::: Czechoslovak koruna
+  `CUC`::: Convertible peso
+  `CUP`::: Cuban peso
+  `CVE`::: Cabo Verde escudo
+  `CYP`::: Cypriot pound
+  `CZK`::: Czech koruna
+  `DDM`::: East-German Mark
+  `DEM`::: German mark
+  `DJF`::: Djibouti franc
+  `DKK`::: Danish krone
+  `DOP`::: Dominican peso
+  `DZD`::: Algerian dinar
+  `ECS`::: Ecuadorian sucre
+  `EEK`::: Estonian kroon
+  `EGP`::: Egyptian pound
+  `ERN`::: Nakfa
+  `ESP`::: Peseta
+  `ETB`::: Birr
+  `EUR`::: Euro
+  `FIM`::: Finnish markka
+  `FJD`::: Fiji dollar
+  `FKP`::: Falkland Islands pound
+  `FRF`::: French franc
+  `GBP`::: Pound sterling
+  `GEL`::: Lari
+  `GHC`::: Cedi
+  `GHS`::: Ghana cedi
+  `GIP`::: Gibraltar pound
+  `GMD`::: Dalasi
+  `GNE`::: Syli
+  `GNF`::: Guinean franc
+  `GQE`::: Ekwele
+  `GRD`::: Drachma
+  `GTQ`::: Quetzal
+  `GWP`::: Guinea-Bissau peso
+  `GYD`::: Guyana dollar
+  `HKD`::: Hong Kong dollar
+  `HNL`::: Lempira
+  `HRK`::: Kuna
+  `HTG`::: Gourde
+  `HUF`::: Forint
+  `IDR`::: Rupiah
+  `IEP`::: Irish pound
+  `ILP`::: Israeli lira
+  `ILR`::: Shekel
+  `ILS`::: Shekel
+  `INR`::: Indian rupee
+  `IQD`::: Iraqi dinar
+  `IRR`::: Iranian rial
+  `ISJ`::: Icelandic old króna
+  `ISK`::: Iceland króna
+  `ITL`::: Italian lira
+  `JMD`::: Jamaica dollar
+  `JOD`::: Jordanian dinar
+  `JPY`::: Yen
+  `KES`::: Kenyan shilling
+  `KGS`::: Som
+  `KHR`::: Riel
+  `KMF`::: Comorian franc
+  `KPW`::: North Korean won
+  `KRW`::: South Korean won
+  `KWD`::: Kuwaiti dinar
+  `KYD`::: Cayman Islands dollar
+  `KZT`::: Tenge
+  `LAJ`::: Kip
+  `LAK`::: Kip
+  `LBP`::: Lebanese pound
+  `LKR`::: Sri Lankan rupee
+  `LRD`::: Liberian dollar
+  `LSL`::: Loti
+  `LTL`::: Litas
+  `LUF`::: Luxembourg franc
+  `LVL`::: Lats
+  `LYD`::: Libyan dinar
+  `MAD`::: Moroccan dirham
+  `MCF`::: Monegasque francs
+  `MDL`::: Moldovan leu
+  `MGA`::: Ariary
+  `MGF`::: Malagasy franc
+  `MKD`::: Denar
+  `MKN`::: Denars A/93
+  `MLF`::: Mali franc
+  `MMK`::: Kyat
+  `MNT`::: Tugrik
+  `MOP`::: Pataca
+  `MRO`::: Ouguiya
+  `MRU`::: Ouguiya
+  `MTL`::: Maltese lira
+  `MTP`::: Maltese pound
+  `MUR`::: Mauritian rupee
+  `MVQ`::: Maldive rupee
+  `MVR`::: Rufiyaa
+  `MWK`::: Malawian kwacha
+  `MXN`::: Mexican peso
+  `MXP`::: Mexican peso
+  `MXV`::: Mexican Unidad de Inversion
+  `MYR`::: Ringgit
+  `MZM`::: Metical
+  `MZN`::: Metical
+  `NAD`::: Namibian dollar
+  `NFD`::: Newfoundland dollar
+  `NGN`::: Naira
+  `NIO`::: Córdoba oro
+  `NLG`::: Netherlands guilder
+  `NOK`::: Norwegian krone
+  `NPR`::: Nepalese rupee
+  `NZD`::: New Zealand dollar
+  `OMR`::: Omani rial
+  `PAB`::: Balboa
+  `PEH`::: Sol
+  `PEI`::: Inti
+  `PEN`::: Nuevo sol
+  `PGK`::: Kina
+  `PHP`::: Philippine peso
+  `PKR`::: Pakistani rupee
+  `PLN`::: Zloty
+  `PLZ`::: Zloty
+  `PTE`::: Portuguese escudo
+  `PYG`::: Guaraní
+  `QAR`::: Qatari rial
+  `ROL`::: Romanian leu
+  `RON`::: Romanian leu
+  `RSD`::: Serbian dinar
+  `RUB`::: Russian rouble
+  `RUR`::: Russian rouble
+  `RWF`::: Rwandese franc
+  `SAR`::: Saudi riyal
+  `SBD`::: Solomon Islands dollar
+  `SCR`::: Seychelles rupee
+  `SDD`::: Sudanese dinar
+  `SDG`::: Sudanese pound
+  `SEK`::: Swedish krona
+  `SGD`::: Singapore dollar
+  `SHP`::: Saint Helena pound
+  `SIT`::: Slovenian tolar
+  `SKK`::: Slovak koruna
+  `SLL`::: Leone
+  `SML`::: San Marinese lira
+  `SOS`::: Somali shilling
+  `SQS`::: Somaliland shillings
+  `SRD`::: Surinamese dollar
+  `SRG`::: Suriname guilder
+  `SSP`::: South Sudanese pound
+  `STD`::: Dobra
+  `STN`::: Dobra
+  `SUR`::: Soviet Union rouble
+  `SVC`::: Salvadorian colón
+  `SYP`::: Syrian pound
+  `SZL`::: Lilangeni
+  `THB`::: Baht
+  `TJR`::: Tajikistani rouble
+  `TJS`::: Somoni
+  `TMM`::: Turkmen manat
+  `TMT`::: Turkmen manat
+  `TND`::: Tunisian dinar
+  `TOP`::: Pa’anga
+  `TPE`::: Portuguese Timorese escudo
+  `TRL`::: Turkish lira
+  `TRY`::: Turkish lira
+  `TTD`::: Trinidad and Tobago dollar
+  `TVD`::: Tuvaluan dollars
+  `TWD`::: New Taiwan dollar
+  `TZS`::: Tanzanian shilling
+  `UAH`::: Hryvnia
+  `UAK`::: Karbovanets
+  `UGS`::: Uganda shilling
+  `UGX`::: Uganda shilling
+  `USD`::: US dollar
+  `USN`::: US dollar
+  `USS`::: US dollar
+  `UYI`::: Uruguay Peso en Unidades Indexadas
+  `UYN`::: Uruguay old peso
+  `UYU`::: Uruguayan peso
+  `UYW`::: Unidad Previsional
+  `UZS`::: Sum
+  `VAL`::: Vatican lira
+  `VEB`::: Bolívar fuerte
+  `VED`::: Bolívar digital
+  `VEF`::: Bolívar
+  `VES`::: Bolívar soberano
+  `VNC`::: Old dong
+  `VND`::: Dong
+  `VUV`::: Vatu
+  `WST`::: Tala
+  `XAF`::: CFA franc (BEAC)
+  `XAG`::: Silver
+  `XAU`::: Gold
+  `XBA`::: Bond Markets Unit European Composite Unit (EURCO)
+  `XBB`::: Bond Markets Unit European Monetary Unit (E.M.U.-6)
+  `XBC`::: Bond Markets Unit European Unit of Account 9 (E.U.A.-9)
+  `XBD`::: Bond Markets Unit European Unit of Account 17 (E.U.A.-17)
+  `XBT`::: Bitcoin
+  `XCD`::: East Caribbean dollar
+  `XDR`::: SDR (Special Drawing Right)
+  `XEU`::: European Currency Unit
+  `XOF`::: CFA Franc (BCEAO)
+  `XPD`::: Palladium
+  `XPF`::: CFP franc
+  `XPT`::: Platinum
+  `XSU`::: Sucre
+  `XTS`::: Code reserved for testing purposes
+  `XUA`::: ADB Unit of Account
+  `XXX`::: No currency
+  `YDD`::: South Yemeni dinar
+  `YER`::: Yemeni rial
+  `YUD`::: Yugoslav dinar
+  `YUF`::: Yugoslav dinar
+  `YUG`::: Yugoslav dinars
+  `YUM`::: Yugoslav dinar
+  `YUN`::: Yugoslav dinar
+  `YUO`::: Yugoslav dinars
+  `YUR`::: Yugoslav dinars
+  `YUS`::: Yugoslav dinar
+  `ZAR`::: Rand
+  `ZMK`::: Zambian kwacha
+  `ZMW`::: Zambian kwacha
+  `ZRN`::: Zaïrean new zaïre
+  `ZRZ`::: Zaïrean zaïre
+  `ZWC`::: Rhodesian dollar
+  `ZWD`::: Zimbabwe dollar
+  `ZWL`::: Zimbabwe dollar
+  `ZWN`::: Zimbabwe dollar
+  `ZWR`::: Zimbabwe dollar

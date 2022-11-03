@@ -1,0 +1,9 @@
+= `BT-777`: Strategic Procurement Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-777-Lot`:: Strategic Procurement Description

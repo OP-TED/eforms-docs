@@ -1,0 +1,13 @@
+= `review-requester-type` codelist
+:navtitle: Codelists
+
+Category of Stakeholders that requested a review
+[horizontal]
+Version:: 20210616-0
+Subset of:: xref:code-lists/organisation-role.adoc[`organisation-role`]
+Structure:: flat
+Used in:: xref:business-terms/OPT-091.adoc[`OPT-091`] Party Type
+
+== Codes
+[horizontal]
+  `rev-req`::: Organisation (or person) requesting review that has or has had an interest in a contract and who has been or risks being harmed by an alleged infringement

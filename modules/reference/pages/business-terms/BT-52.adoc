@@ -1,0 +1,9 @@
+= `BT-52`: Successive Reduction
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-52-Lot`:: Successive Reduction Indicator (Lot)
