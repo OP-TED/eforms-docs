@@ -310,6 +310,8 @@ The value is a JSON object that contains the identifier of the codelist, and som
 <1> Indicates that the codelist is a simple list of values. The few codelists that have a structure, like NUTS and CPV, are indicated as "hierarchical".
 <2> Indicates the parent codelist. Provided only for tailored codelists.
 
+NOTE: When generating the notice XML, set the `@listName` XML attribute to the value indicated by `parentId`. If `parentId` is not provided then use the value indicated by `id` as the value of the `@listName` XML attribute.   
+
 
 `pattern`::
 The `pattern` property indicates that the value of the field must match a specific regular expression pattern.
