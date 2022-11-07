@@ -521,7 +521,7 @@ a|
 cac:ProcurementLegislationDocumentReference{zwsp}/cbc:DocumentDescription
 ----
 
-|*Exclusion Grounds (BT-67)* | xref:reservedParticipationSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Exclusion Grounds (BT-67)* | xref:exclusionGrounds[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:TendererQualificationRequest{zwsp}/cac:SpecificTendererRequirement{zwsp}/cbc:TendererRequirementTypeCode{zwsp}[@listName='exclusion-ground']
@@ -1390,20 +1390,37 @@ Local legal basis shall be marked the same way as Cross Border Law:
 </cac:ProcurementLegislationDocumentReference>
 ----
 
-[[reservedParticipationSection]]
-=== Exclusion Grounds (BT-67) & Reserved Participation (BT-71)
-
-Both are within the same "_cac:TendererQualificationRequest_" element and express 
-requirements on the tenderer itself.
+[[exclusionGrounds]]
+=== Exclusion Grounds (BT-67)
 
 Exclusion Grounds (BT-67) refer to criteria that, not met and justified
 (even with self-declaration), lead to the tenderer exclusion. This
 information is expected as a code from the technical codelist
-"exclusion-ground" built on the ESPD codelist. More than one exclusion
+"exclusion-ground" tailored from the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/criterion[criterion] codelist. More than one exclusion
 ground may be used, each in a dedicated
 "_cac:SpecificTendererRequirement_" element, a given code may however be
 used only once. Additionally to the code, a text ("cbc:Description") may
 be used.
+
+[source,xml]
+----
+<cac:TendererQualificationRequest>
+    <cac:SpecificTendererRequirement>
+        <cbc:TendererRequirementTypeCode listName="exclusion-ground">crime-org</cbc:TendererRequirementTypeCode>
+        <cbc:Description languageID="ENG">Applicants not satisfying ...</cbc:Description>
+        <cbc:Description languageID="FRA">Les candidats ne satisfaisant pas ...</cbc:Description>
+    </cac:SpecificTendererRequirement>
+    <cac:SpecificTendererRequirement>
+        <cbc:TendererRequirementTypeCode listName="exclusion-ground">fraud</cbc:TendererRequirementTypeCode>
+        <cbc:Description languageID="ENG">Applicants not satisfying ...</cbc:Description>
+        <cbc:Description languageID="FRA">Les candidats ne satisfaisant pas ...</cbc:Description>
+    </cac:SpecificTendererRequirement>
+    <!-- interrupted MarkUp -->
+</cac:TendererQualificationRequest>
+----
+
+[[reservedParticipationSection]]
+=== Reserved Participation (BT-71)
 
 Reserved Participation (BT-71) expresses a participation restriction;
 only tenderers with specific social missions may tender. Information is
@@ -1422,12 +1439,10 @@ Participation" requirement shall be specified.
 ----
 <cac:TendererQualificationRequest>
     <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="exclusion-ground">CRITERION.EXCLUSION.NATIONAL.OTHER</cbc:TendererRequirementTypeCode>
-        <cbc:Description languageID="ENG">Applicants not satisfying ...</cbc:Description>
-        <cbc:Description languageID="FRA">Les candidats ne satisfaisant pas ...</cbc:Description>
+        <cbc:TendererRequirementTypeCode listName="reserved-procurement">res-pub-ser</cbc:TendererRequirementTypeCode>
     </cac:SpecificTendererRequirement>
     <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="reserved-procurement">none</cbc:TendererRequirementTypeCode>
+        <cbc:TendererRequirementTypeCode listName="reserved-procurement">res-ws</cbc:TendererRequirementTypeCode>
     </cac:SpecificTendererRequirement>
 </cac:TendererQualificationRequest>
 ----
@@ -1454,9 +1469,6 @@ and detailed text using "_cbc:Description_" (BT-772).
 <cac:TendererQualificationRequest>
     <cbc:CompanyLegalFormCode listName="required">true</cbc:CompanyLegalForm>
     <cbc:CompanyLegalForm languageID="ENG">The tenderer ...</cbc:CompanyLegalForm>
-</cac:TendererQualificationRequest>
-<cac:TendererQualificationRequest>
-    <cbc:CompanyLegalFormCode>true</cbc:CompanyLegalForm>
     <cbc:CompanyLegalForm languageID="FRA">Le soumissionaire ...</cbc:CompanyLegalForm>
 </cac:TendererQualificationRequest>
 <cac:TendererQualificationRequest>
