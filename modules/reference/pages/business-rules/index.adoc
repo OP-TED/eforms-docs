@@ -1738,7 +1738,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(BT-137-Lot == BT-13713-LotResult)
+(BT-137-Lot in BT-13713-LotResult)
 ----
 *Applies if* the notice is a DAP, Result, Contract Modification or Completion.
 
@@ -1764,7 +1764,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-number:BT-157-LotsGroup <= sum(for text:$groupID in BT-137-LotsGroup, number:$lotValue in BT-27-Lot[BT-137-Lot == BT-1375-Procedure[(BT-330-Procedure == $groupID) and (BT-765-Lot in ('fa-mix','fa-w-rc','fa-wo-rc'))]] return $lotValue)
+number:BT-157-LotsGroup <= sum(for text:$groupID in BT-137-LotsGroup, number:$lotValue in BT-27-Lot[BT-137-Lot in BT-1375-Procedure[(BT-330-Procedure == $groupID) and (BT-765-Lot in ('fa-mix','fa-w-rc','fa-wo-rc'))]] return $lotValue)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -1774,7 +1774,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(BT-137-LotsGroup == BT-330-Procedure)
+(BT-137-LotsGroup in BT-330-Procedure)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -1870,7 +1870,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every context:$highestBid in ND-LotResult[BT-711-LotResult is present], context:$lot in ND-Lot[BT-137-Lot == $highestBid::BT-13713-LotResult] satisfies (($highestBid::BT-711-LotResult <= (100 * $lot::BT-27-Lot)) and ($lot::BT-137-Lot == $highestBid::BT-13713-LotResult)) or not($lot::BT-137-Lot == $highestBid::BT-13713-LotResult) or not($lot::BT-27-Lot is present)
+every context:$highestBid in ND-LotResult[BT-711-LotResult is present], context:$lot in ND-Lot[BT-137-Lot in $highestBid::BT-13713-LotResult] satisfies (($highestBid::BT-711-LotResult <= (100 * $lot::BT-27-Lot)) and ($lot::BT-137-Lot == $highestBid::BT-13713-LotResult)) or not($lot::BT-137-Lot == $highestBid::BT-13713-LotResult) or not($lot::BT-27-Lot is present)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -1880,7 +1880,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every context:$result in ND-LotResult[OPT-315-LotResult is present], context:$lot in ND-Lot[BT-137-Lot == $result::BT-13713-LotResult], context:$tender in ND-LotTender[(OPT-321-Tender == $result::OPT-320-LotResult) and (BT-720-Tender is present)] satisfies (($tender::BT-720-Tender <= (100 * $lot::BT-27-Lot)) and ($lot::BT-137-Lot == $result::BT-13713-LotResult) and ($tender::OPT-321-Tender == $result::OPT-320-LotResult)) or not($lot::BT-137-Lot == $tender::BT-13714-Tender) or not($tender::OPT-321-Tender == $result::OPT-320-LotResult) or not($lot::BT-27-Lot is present) or not ($tender::BT-720-Tender is present)
+every context:$result in ND-LotResult[OPT-315-LotResult is present], context:$lot in ND-Lot[BT-137-Lot in $result::BT-13713-LotResult], context:$tender in ND-LotTender[(OPT-321-Tender in $result::OPT-320-LotResult) and (BT-720-Tender is present)] satisfies (($tender::BT-720-Tender <= (100 * $lot::BT-27-Lot)) and ($lot::BT-137-Lot == $result::BT-13713-LotResult) and ($tender::OPT-321-Tender == $result::OPT-320-LotResult)) or not($lot::BT-137-Lot == $tender::BT-13714-Tender) or not($tender::OPT-321-Tender == $result::OPT-320-LotResult) or not($lot::BT-27-Lot is present) or not ($tender::BT-720-Tender is present)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -1890,7 +1890,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-BT-13713-LotResult == /BT-137-Lot
+BT-13713-LotResult in /BT-137-Lot
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -1900,7 +1900,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(BT-13714-Tender == /BT-137-Lot) or (BT-13714-Tender == /BT-137-LotsGroup)
+(BT-13714-Tender in /BT-137-Lot) or (BT-13714-Tender in /BT-137-LotsGroup)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -1930,7 +1930,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$lot in BT-1375-Procedure satisfies ($lot == /BT-137-Lot)
+every text:$lot in BT-1375-Procedure satisfies ($lot in /BT-137-Lot)
 ----
 *Applies if* Group Lot Identifier (BT-1375-Procedure) exists.
 
@@ -3740,7 +3740,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-BT-23-Lot != BT-531-Lot
+not(BT-23-Lot in BT-531-Lot)
 ----
 *Applies if* Lot Main Nature (BT-23) and Additional Nature (BT-531) exist.
 
@@ -3756,7 +3756,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-BT-23-Part != BT-531-Part
+not(BT-23-Part in BT-531-Part)
 ----
 *Applies if* Part Main Nature (BT-23) and Additional Nature (BT-531) exist.
 
@@ -3788,7 +3788,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-BT-23-Procedure != BT-531-Procedure
+BT-23-Procedure not in BT-531-Procedure
 ----
 *Applies if* Procedure Main Nature (BT-23) and Additional Nature (BT-531) exist.
 
@@ -4044,7 +4044,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$tender in BT-3202-Contract satisfies ($tender == /OPT-321-Tender)
+every text:$tender in BT-3202-Contract satisfies ($tender in /OPT-321-Tender)
 ----
 *Applies if* reference to a LotTender from a Contract (BT-3202-Contract) exists.
 
@@ -4076,7 +4076,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$group in BT-330-Procedure satisfies ($group == /BT-137-LotsGroup)
+every text:$group in BT-330-Procedure satisfies ($group in /BT-137-LotsGroup)
 ----
 *Applies if* Group Identifier used for the definition of the Group composition (BT-330-Procedure) exists.
 
@@ -4236,7 +4236,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-not(BT-538-Lot == 'UNKNOWN') or (not(BT-03-notice in ('cont-modif','dir-awa-pre') ) and not(BT-137-Lot == BT-13713-LotResult[BT-142-LotResult == 'selec-w']))
+not(BT-538-Lot == 'UNKNOWN') or (not(BT-03-notice in ('cont-modif','dir-awa-pre') ) and not(BT-137-Lot in BT-13713-LotResult[BT-142-LotResult == 'selec-w']))
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -4454,7 +4454,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-BT-556-NoticeResult == /BT-137-LotsGroup
+BT-556-NoticeResult in /BT-137-LotsGroup
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -4536,7 +4536,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-not(BT-702(a)-notice == BT-702(b)-notice)
+not(BT-702(a)-notice in BT-702(b)-notice)
 ----
 *Applies if* Notice Additional Language (BT-702(b)-notice) exists.
 
@@ -4914,7 +4914,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-200-Organization-Company == OPT-300-Contract-Signatory) or (OPT-200-Organization-Company == OPT-300-Procedure-Buyer) or (OPT-200-Organization-Company == OPT-300-Procedure-SProvider) or (OPT-200-Organization-Company == OPT-300-Tenderer) or (OPT-200-Organization-Company == OPT-301-Lot-AddInfo) or (OPT-200-Organization-Company == OPT-301-Lot-DocProvider) or (OPT-200-Organization-Company == OPT-301-Lot-EmployLegis) or (OPT-200-Organization-Company == OPT-301-Lot-EnvironLegis) or (OPT-200-Organization-Company == OPT-301-Lot-FiscalLegis) or (OPT-200-Organization-Company == OPT-301-Lot-Mediator) or (OPT-200-Organization-Company == OPT-301-Lot-ReviewInfo) or (OPT-200-Organization-Company == OPT-301-Lot-ReviewOrg) or (OPT-200-Organization-Company == OPT-301-Lot-TenderEval) or (OPT-200-Organization-Company == OPT-301-Lot-TenderReceipt) or (OPT-200-Organization-Company == OPT-301-LotResult-Financing) or (OPT-200-Organization-Company == OPT-301-LotResult-Paying) or (OPT-200-Organization-Company == OPT-301-Part-AddInfo) or (OPT-200-Organization-Company == OPT-301-Part-DocProvider) or (OPT-200-Organization-Company == OPT-301-Part-EmployLegis) or (OPT-200-Organization-Company == OPT-301-Part-EnvironLegis) or (OPT-200-Organization-Company == OPT-301-Part-FiscalLegis) or (OPT-200-Organization-Company == OPT-301-Part-Mediator) or (OPT-200-Organization-Company == OPT-301-Part-ReviewInfo) or (OPT-200-Organization-Company == OPT-301-Part-ReviewOrg) or (OPT-200-Organization-Company == OPT-301-Part-TenderEval) or (OPT-200-Organization-Company == OPT-301-Part-TenderReceipt) or (OPT-200-Organization-Company == OPT-301-ReviewBody) or (OPT-200-Organization-Company == OPT-301-ReviewReq) or (OPT-200-Organization-Company == OPT-301-Tenderer-MainCont) or (OPT-200-Organization-Company == OPT-301-Tenderer-SubCont))
+((OPT-200-Organization-Company in OPT-300-Contract-Signatory) or (OPT-200-Organization-Company in OPT-300-Procedure-Buyer) or (OPT-200-Organization-Company in OPT-300-Procedure-SProvider) or (OPT-200-Organization-Company in OPT-300-Tenderer) or (OPT-200-Organization-Company in OPT-301-Lot-AddInfo) or (OPT-200-Organization-Company in OPT-301-Lot-DocProvider) or (OPT-200-Organization-Company in OPT-301-Lot-EmployLegis) or (OPT-200-Organization-Company in OPT-301-Lot-EnvironLegis) or (OPT-200-Organization-Company in OPT-301-Lot-FiscalLegis) or (OPT-200-Organization-Company in OPT-301-Lot-Mediator) or (OPT-200-Organization-Company in OPT-301-Lot-ReviewInfo) or (OPT-200-Organization-Company in OPT-301-Lot-ReviewOrg) or (OPT-200-Organization-Company in OPT-301-Lot-TenderEval) or (OPT-200-Organization-Company in OPT-301-Lot-TenderReceipt) or (OPT-200-Organization-Company in OPT-301-LotResult-Financing) or (OPT-200-Organization-Company in OPT-301-LotResult-Paying) or (OPT-200-Organization-Company in OPT-301-Part-AddInfo) or (OPT-200-Organization-Company in OPT-301-Part-DocProvider) or (OPT-200-Organization-Company in OPT-301-Part-EmployLegis) or (OPT-200-Organization-Company in OPT-301-Part-EnvironLegis) or (OPT-200-Organization-Company in OPT-301-Part-FiscalLegis) or (OPT-200-Organization-Company in OPT-301-Part-Mediator) or (OPT-200-Organization-Company in OPT-301-Part-ReviewInfo) or (OPT-200-Organization-Company in OPT-301-Part-ReviewOrg) or (OPT-200-Organization-Company in OPT-301-Part-TenderEval) or (OPT-200-Organization-Company in OPT-301-Part-TenderReceipt) or (OPT-200-Organization-Company in OPT-301-ReviewBody) or (OPT-200-Organization-Company in OPT-301-ReviewReq) or (OPT-200-Organization-Company in OPT-301-Tenderer-MainCont) or (OPT-200-Organization-Company in OPT-301-Tenderer-SubCont))
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -4931,7 +4931,7 @@ not(OPT-201-Organization-TouchPoint is present)
 .Condition in EFX
 [source, EFX]
 ----
-OPT-200-Organization-Company == OPT-300-Tenderer
+OPT-200-Organization-Company in OPT-300-Tenderer
 ----
 |`ERROR`
 h|`OPT-200-Organization-Company`
@@ -4947,7 +4947,7 @@ not(OPT-201-Organization-TouchPoint is present)
 .Condition in EFX
 [source, EFX]
 ----
-OPT-200-Organization-Company == OPT-301-Tenderer-SubCont
+OPT-200-Organization-Company in OPT-301-Tenderer-SubCont
 ----
 |`ERROR`
 h|`OPT-201-Organization-TouchPoint`
@@ -4972,7 +4972,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-201-Organization-TouchPoint == OPT-301-Lot-AddInfo) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-DocProvider) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-EmployLegis) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-EnvironLegis) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-FiscalLegis) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-Mediator) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-ReviewInfo) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-ReviewOrg) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-TenderEval) or (OPT-201-Organization-TouchPoint == OPT-301-Lot-TenderReceipt) or (OPT-201-Organization-TouchPoint == OPT-301-Part-AddInfo) or (OPT-201-Organization-TouchPoint == OPT-301-Part-DocProvider) or (OPT-201-Organization-TouchPoint == OPT-301-Part-EmployLegis) or (OPT-201-Organization-TouchPoint == OPT-301-Part-EnvironLegis) or (OPT-201-Organization-TouchPoint == OPT-301-Part-FiscalLegis) or (OPT-201-Organization-TouchPoint == OPT-301-Part-Mediator) or (OPT-201-Organization-TouchPoint == OPT-301-Part-ReviewInfo) or (OPT-201-Organization-TouchPoint == OPT-301-Part-ReviewOrg) or (OPT-201-Organization-TouchPoint == OPT-301-Part-TenderEval) or (OPT-201-Organization-TouchPoint == OPT-301-Part-TenderReceipt) or (OPT-201-Organization-TouchPoint == OPT-301-ReviewBody) or (OPT-201-Organization-TouchPoint == OPT-301-ReviewReq))
+((OPT-201-Organization-TouchPoint in OPT-301-Lot-AddInfo) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-DocProvider) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-EmployLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-EnvironLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-FiscalLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-Mediator) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-ReviewInfo) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-ReviewOrg) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-TenderEval) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-TenderReceipt) or (OPT-201-Organization-TouchPoint in OPT-301-Part-AddInfo) or (OPT-201-Organization-TouchPoint in OPT-301-Part-DocProvider) or (OPT-201-Organization-TouchPoint in OPT-301-Part-EmployLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Part-EnvironLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Part-FiscalLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Part-Mediator) or (OPT-201-Organization-TouchPoint in OPT-301-Part-ReviewInfo) or (OPT-201-Organization-TouchPoint in OPT-301-Part-ReviewOrg) or (OPT-201-Organization-TouchPoint in OPT-301-Part-TenderEval) or (OPT-201-Organization-TouchPoint in OPT-301-Part-TenderReceipt) or (OPT-201-Organization-TouchPoint in OPT-301-ReviewBody) or (OPT-201-Organization-TouchPoint in OPT-301-ReviewReq))
 ----
 *Applies if* Touchpoint Technical Identifier (OPT-201-Organization-TouchPoint) exists.
 
@@ -5004,7 +5004,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-202-UBO == OPT-302-Organization)
+(OPT-202-UBO in OPT-302-Organization)
 ----
 *Applies if* an Ultimate Beneficial Owner is defined (OPT-202-UBO).
 
@@ -5040,7 +5040,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-210-Tenderer == OPT-310-Tender)
+(OPT-210-Tenderer in OPT-310-Tender)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5050,7 +5050,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$signatory in OPT-300-Contract-Signatory satisfies ($signatory == /OPT-200-Organization-Company)
+every text:$signatory in OPT-300-Contract-Signatory satisfies ($signatory in /OPT-200-Organization-Company)
 ----
 *Applies if* Signatory of a Contract (OPT-300-Contract-Signatory) exists.
 
@@ -5066,7 +5066,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$sps in OPT-300-Procedure-SProvider satisfies $sps != OPT-300-Procedure-Buyer
+every text:$sps in OPT-300-Procedure-SProvider satisfies $sps not in OPT-300-Procedure-Buyer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5076,7 +5076,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(every text:$tenderer in OPT-300-Tenderer satisfies $tenderer != OPT-300-Procedure-Buyer) and (every text:$subcont in OPT-301-Tenderer-SubCont satisfies $subcont != OPT-300-Procedure-Buyer)
+(every text:$tenderer in OPT-300-Tenderer satisfies $tenderer not in OPT-300-Procedure-Buyer) and (every text:$subcont in OPT-301-Tenderer-SubCont satisfies $subcont not in OPT-300-Procedure-Buyer)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5086,7 +5086,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$buyer in OPT-300-Procedure-Buyer satisfies ($buyer == /OPT-200-Organization-Company)
+every text:$buyer in OPT-300-Procedure-Buyer satisfies ($buyer in /OPT-200-Organization-Company)
 ----
 *Applies if* reference to an Organization for a Buyer role (OPT-300-Procedure-Buyer) exists.
 
@@ -5102,7 +5102,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$provider in OPT-300-Procedure-SProvider satisfies ($provider == /OPT-200-Organization-Company)
+every text:$provider in OPT-300-Procedure-SProvider satisfies ($provider in /OPT-200-Organization-Company)
 ----
 *Applies if* reference to an Organization for a Service Provider role (OPT-300-Procedure-SProvider) esists.
 
@@ -5118,7 +5118,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$mediator in /OPT-301-Lot-Mediator satisfies $mediator != OPT-300-Tenderer
+every text:$mediator in /OPT-301-Lot-Mediator satisfies $mediator not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5128,7 +5128,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$psp in OPT-300-Procedure-SProvider satisfies $psp != OPT-300-Tenderer
+every text:$psp in OPT-300-Procedure-SProvider satisfies $psp not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5138,7 +5138,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$revOrg in /OPT-301-Lot-ReviewOrg satisfies $revOrg != OPT-300-Tenderer
+every text:$revOrg in /OPT-301-Lot-ReviewOrg satisfies $revOrg not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5148,7 +5148,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$addInfo in /OPT-301-Lot-AddInfo satisfies $addInfo != OPT-300-Tenderer
+every text:$addInfo in /OPT-301-Lot-AddInfo satisfies $addInfo not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5158,7 +5158,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$employ in /OPT-301-Lot-EmployLegis satisfies $employ != OPT-300-Tenderer
+every text:$employ in /OPT-301-Lot-EmployLegis satisfies $employ not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5168,7 +5168,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$environ in /OPT-301-Lot-EnvironLegis satisfies $environ != OPT-300-Tenderer
+every text:$environ in /OPT-301-Lot-EnvironLegis satisfies $environ not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5178,7 +5178,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$tax in /OPT-301-Lot-FiscalLegis satisfies $tax != OPT-300-Tenderer
+every text:$tax in /OPT-301-Lot-FiscalLegis satisfies $tax not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5188,7 +5188,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$doc in /OPT-301-Lot-DocProvider satisfies $doc != OPT-300-Tenderer
+every text:$doc in /OPT-301-Lot-DocProvider satisfies $doc not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5198,7 +5198,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$reviewInfo in /OPT-301-Lot-ReviewInfo satisfies $reviewInfo != OPT-300-Tenderer
+every text:$reviewInfo in /OPT-301-Lot-ReviewInfo satisfies $reviewInfo not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5208,7 +5208,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$recepient in /OPT-301-Lot-TenderReceipt satisfies $recepient != OPT-300-Tenderer
+every text:$recepient in /OPT-301-Lot-TenderReceipt satisfies $recepient not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5218,7 +5218,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$eval in /OPT-301-Lot-TenderEval satisfies $eval != OPT-300-Tenderer
+every text:$eval in /OPT-301-Lot-TenderEval satisfies $eval not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5228,7 +5228,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$sign in /OPT-300-Contract-Signatory satisfies $sign != OPT-300-Tenderer
+every text:$sign in /OPT-300-Contract-Signatory satisfies $sign not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5238,7 +5238,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$fund in /OPT-301-LotResult-Financing satisfies $fund != OPT-300-Tenderer
+every text:$fund in /OPT-301-LotResult-Financing satisfies $fund not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5248,7 +5248,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$pay in /OPT-301-LotResult-Paying satisfies $pay != OPT-300-Tenderer
+every text:$pay in /OPT-301-LotResult-Paying satisfies $pay not in OPT-300-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5258,7 +5258,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$tenderer in OPT-300-Tenderer satisfies ($tenderer == /OPT-200-Organization-Company)
+every text:$tenderer in OPT-300-Tenderer satisfies ($tenderer in /OPT-200-Organization-Company)
 ----
 *Applies if* Tenderer (OPT-300-Tenderer) exists.
 
@@ -5274,7 +5274,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Lot-AddInfo == /OPT-200-Organization-Company) or (OPT-301-Lot-AddInfo == /OPT-201-Organization-TouchPoint))
+((OPT-301-Lot-AddInfo in /OPT-200-Organization-Company) or (OPT-301-Lot-AddInfo in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* the organization providing additional information exists (OPT-301-Lot-AddInfo).
 
@@ -5290,7 +5290,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Lot-DocProvider == /OPT-200-Organization-Company) or (OPT-301-Lot-DocProvider == /OPT-201-Organization-TouchPoint))
+((OPT-301-Lot-DocProvider in /OPT-200-Organization-Company) or (OPT-301-Lot-DocProvider in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* a Document Provider is defined for the Lot (OPT-301-Lot-DocProvider).
 
@@ -5306,7 +5306,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Lot-EmployLegis == /OPT-200-Organization-Company) or (OPT-301-Lot-EmployLegis == /OPT-201-Organization-TouchPoint))
+((OPT-301-Lot-EmployLegis in /OPT-200-Organization-Company) or (OPT-301-Lot-EmployLegis in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* Employment Legislation Information Provider (OPT-301-Lot-EmployLegis) exists.
 
@@ -5322,7 +5322,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Lot-EnvironLegis == /OPT-200-Organization-Company) or (OPT-301-Lot-EnvironLegis == /OPT-201-Organization-TouchPoint))
+((OPT-301-Lot-EnvironLegis in /OPT-200-Organization-Company) or (OPT-301-Lot-EnvironLegis in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* Environmental Legislation Information Provider (OPT-301-Lot-EnvironLegis) exists.
 
@@ -5338,7 +5338,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Lot-FiscalLegis == /OPT-200-Organization-Company) or (OPT-301-Lot-FiscalLegis == /OPT-201-Organization-TouchPoint))
+((OPT-301-Lot-FiscalLegis in /OPT-200-Organization-Company) or (OPT-301-Lot-FiscalLegis in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* Tax Legislation Information Provider (OPT-301-Lot-FiscalLegis) exists.
 
@@ -5354,7 +5354,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-301-Lot-Mediator == /OPT-200-Organization-Company) or (OPT-301-Lot-Mediator == /OPT-201-Organization-TouchPoint)
+(OPT-301-Lot-Mediator in /OPT-200-Organization-Company) or (OPT-301-Lot-Mediator in /OPT-201-Organization-TouchPoint)
 ----
 *Applies if* a Mediator is defined for the Lot (OPT-301-Lot-Mediator).
 
@@ -5370,7 +5370,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-301-Lot-ReviewInfo == /OPT-200-Organization-Company) or (OPT-301-Lot-ReviewInfo == /OPT-201-Organization-TouchPoint)
+(OPT-301-Lot-ReviewInfo in /OPT-200-Organization-Company) or (OPT-301-Lot-ReviewInfo in /OPT-201-Organization-TouchPoint)
 ----
 *Applies if* a Review process information provider is defined for the Lot (OPT-301-Lot-ReviewInfo).
 
@@ -5386,7 +5386,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-301-Lot-ReviewOrg == /OPT-200-Organization-Company) or (OPT-301-Lot-ReviewOrg == /OPT-201-Organization-TouchPoint)
+(OPT-301-Lot-ReviewOrg in /OPT-200-Organization-Company) or (OPT-301-Lot-ReviewOrg in /OPT-201-Organization-TouchPoint)
 ----
 *Applies if* Review Organization for a Lot (OPT-301-Lot-ReviewOrg) exists.
 
@@ -5402,7 +5402,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Lot-TenderEval == /OPT-200-Organization-Company) or (OPT-301-Lot-TenderEval == /OPT-201-Organization-TouchPoint))
+((OPT-301-Lot-TenderEval in /OPT-200-Organization-Company) or (OPT-301-Lot-TenderEval in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* a Tender Evaluator is defined for the Lot (OPT-301-Lot-TenderEval).
 
@@ -5418,7 +5418,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Lot-TenderReceipt == /OPT-200-Organization-Company) or (OPT-301-Lot-TenderReceipt == /OPT-201-Organization-TouchPoint))
+((OPT-301-Lot-TenderReceipt in /OPT-200-Organization-Company) or (OPT-301-Lot-TenderReceipt in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* a Tender recipient is defined for the Lot (OPT-301-Lot-TenderReceipt).
 
@@ -5434,7 +5434,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$financing in OPT-301-LotResult-Financing satisfies ($financing == /OPT-200-Organization-Company)
+every text:$financing in OPT-301-LotResult-Financing satisfies ($financing in /OPT-200-Organization-Company)
 ----
 *Applies if* Financing Organization (OPT-301-LotResult-Financing) exists.
 
@@ -5450,7 +5450,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$payer in OPT-301-LotResult-Paying satisfies ($payer == /OPT-200-Organization-Company)
+every text:$payer in OPT-301-LotResult-Paying satisfies ($payer in /OPT-200-Organization-Company)
 ----
 *Applies if* Paying Organization (OPT-301-LotResult-Paying) exists.
 
@@ -5466,7 +5466,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Part-AddInfo == /OPT-200-Organization-Company) or (OPT-301-Part-AddInfo == /OPT-201-Organization-TouchPoint))
+((OPT-301-Part-AddInfo in /OPT-200-Organization-Company) or (OPT-301-Part-AddInfo in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* the organization providing additional information exists (OPT-301-Part-AddInfo).
 
@@ -5482,7 +5482,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Part-DocProvider == /OPT-200-Organization-Company) or (OPT-301-Part-DocProvider == /OPT-201-Organization-TouchPoint))
+((OPT-301-Part-DocProvider in /OPT-200-Organization-Company) or (OPT-301-Part-DocProvider in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* a Document Provider is defined for the Part (OPT-301-Part-DocProvider).
 
@@ -5498,7 +5498,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Part-EmployLegis == /OPT-200-Organization-Company) or (OPT-301-Part-EmployLegis == /OPT-201-Organization-TouchPoint))
+((OPT-301-Part-EmployLegis in /OPT-200-Organization-Company) or (OPT-301-Part-EmployLegis in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* Employment Legislation Information Provider (OPT-301-Part-EmployLegis) exists.
 
@@ -5514,7 +5514,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Part-EnvironLegis == /OPT-200-Organization-Company) or (OPT-301-Part-EnvironLegis == /OPT-201-Organization-TouchPoint))
+((OPT-301-Part-EnvironLegis in /OPT-200-Organization-Company) or (OPT-301-Part-EnvironLegis in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* Environmental Legislation Information Provider (OPT-301-Part-EnvironLegis) exists.
 
@@ -5530,7 +5530,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Part-FiscalLegis == /OPT-200-Organization-Company) or (OPT-301-Part-FiscalLegis == /OPT-201-Organization-TouchPoint))
+((OPT-301-Part-FiscalLegis in /OPT-200-Organization-Company) or (OPT-301-Part-FiscalLegis in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* Tax Legislation Information Provider (OPT-301-Part-FiscalLegis) exists.
 
@@ -5546,7 +5546,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-301-Part-Mediator == /OPT-200-Organization-Company) or (OPT-301-Part-Mediator == /OPT-201-Organization-TouchPoint)
+(OPT-301-Part-Mediator in /OPT-200-Organization-Company) or (OPT-301-Part-Mediator in /OPT-201-Organization-TouchPoint)
 ----
 *Applies if* Mediator (OPT-301-Part-Mediator) exists.
 
@@ -5562,7 +5562,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-301-Part-ReviewInfo == /OPT-200-Organization-Company) or (OPT-301-Part-ReviewInfo == /OPT-201-Organization-TouchPoint)
+(OPT-301-Part-ReviewInfo in /OPT-200-Organization-Company) or (OPT-301-Part-ReviewInfo in /OPT-201-Organization-TouchPoint)
 ----
 *Applies if* a Review process information provider is defined for the Part (OPT-301-Part-ReviewInfo).
 
@@ -5578,7 +5578,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-301-Part-ReviewOrg == /OPT-200-Organization-Company) or (OPT-301-Part-ReviewOrg == /OPT-201-Organization-TouchPoint)
+(OPT-301-Part-ReviewOrg in /OPT-200-Organization-Company) or (OPT-301-Part-ReviewOrg in /OPT-201-Organization-TouchPoint)
 ----
 *Applies if* Review Organization for a Part (OPT-301-Part-ReviewOrg) exists.
 
@@ -5594,7 +5594,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Part-TenderEval == /OPT-200-Organization-Company) or (OPT-301-Part-TenderEval == /OPT-201-Organization-TouchPoint))
+((OPT-301-Part-TenderEval in /OPT-200-Organization-Company) or (OPT-301-Part-TenderEval in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* a Tender Evaluator is defined for the Part (OPT-301-Part-TenderEval).
 
@@ -5610,7 +5610,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-((OPT-301-Part-TenderReceipt == /OPT-200-Organization-Company) or (OPT-301-Part-TenderReceipt == /OPT-201-Organization-TouchPoint))
+((OPT-301-Part-TenderReceipt in /OPT-200-Organization-Company) or (OPT-301-Part-TenderReceipt in /OPT-201-Organization-TouchPoint))
 ----
 *Applies if* a Tender recipient is defined for the Part (OPT-301-Part-TenderReceipt).
 
@@ -5626,7 +5626,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$main in OPT-301-Tenderer-MainCont satisfies ($main == OPT-300-Tenderer)
+every text:$main in OPT-301-Tenderer-MainCont satisfies ($main in OPT-300-Tenderer)
 ----
 *Applies if* Main tenderer (OPT-301-Tenderer-MainCont) exists.
 
@@ -5642,7 +5642,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$subCon in OPT-301-Tenderer-SubCont satisfies ($subCon == /OPT-200-Organization-Company)
+every text:$subCon in OPT-301-Tenderer-SubCont satisfies ($subCon in /OPT-200-Organization-Company)
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5658,7 +5658,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$maincont in OPT-300-Tenderer satisfies $maincont != OPT-301-Tenderer-SubCont
+every text:$maincont in OPT-300-Tenderer satisfies $maincont not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5674,7 +5674,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$mediator in /OPT-301-Lot-Mediator satisfies $mediator != OPT-301-Tenderer-SubCont
+every text:$mediator in /OPT-301-Lot-Mediator satisfies $mediator not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5690,7 +5690,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$psp in OPT-300-Procedure-SProvider satisfies $psp != OPT-301-Tenderer-SubCont
+every text:$psp in OPT-300-Procedure-SProvider satisfies $psp not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5706,7 +5706,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$revOrg in /OPT-301-Lot-ReviewOrg satisfies $revOrg != OPT-301-Tenderer-SubCont
+every text:$revOrg in /OPT-301-Lot-ReviewOrg satisfies $revOrg not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5722,7 +5722,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$addInfo in /OPT-301-Lot-AddInfo satisfies $addInfo != OPT-301-Tenderer-SubCont
+every text:$addInfo in /OPT-301-Lot-AddInfo satisfies $addInfo not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5738,7 +5738,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$employ in /OPT-301-Lot-EmployLegis satisfies $employ != OPT-301-Tenderer-SubCont
+every text:$employ in /OPT-301-Lot-EmployLegis satisfies $employ not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5754,7 +5754,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$environ in /OPT-301-Lot-EnvironLegis satisfies $environ != OPT-301-Tenderer-SubCont
+every text:$environ in /OPT-301-Lot-EnvironLegis satisfies $environ not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5770,7 +5770,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$tax in /OPT-301-Lot-FiscalLegis satisfies $tax != OPT-301-Tenderer-SubCont
+every text:$tax in /OPT-301-Lot-FiscalLegis satisfies $tax not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5786,7 +5786,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$doc in /OPT-301-Lot-DocProvider satisfies $doc != OPT-301-Tenderer-SubCont
+every text:$doc in /OPT-301-Lot-DocProvider satisfies $doc not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5802,7 +5802,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$reviewInfo in /OPT-301-Lot-ReviewInfo satisfies $reviewInfo != OPT-301-Tenderer-SubCont
+every text:$reviewInfo in /OPT-301-Lot-ReviewInfo satisfies $reviewInfo not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5818,7 +5818,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$recepient in /OPT-301-Lot-TenderReceipt satisfies $recepient != OPT-301-Tenderer-SubCont
+every text:$recepient in /OPT-301-Lot-TenderReceipt satisfies $recepient not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5834,7 +5834,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$eval in /OPT-301-Lot-TenderEval satisfies $eval != OPT-301-Tenderer-SubCont
+every text:$eval in /OPT-301-Lot-TenderEval satisfies $eval not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5850,7 +5850,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$sign in /OPT-300-Contract-Signatory satisfies $sign != OPT-301-Tenderer-SubCont
+every text:$sign in /OPT-300-Contract-Signatory satisfies $sign not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5866,7 +5866,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$fund in /OPT-301-LotResult-Financing satisfies $fund != OPT-301-Tenderer-SubCont
+every text:$fund in /OPT-301-LotResult-Financing satisfies $fund not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5882,7 +5882,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$pay in /OPT-301-LotResult-Paying satisfies $pay != OPT-301-Tenderer-SubCont
+every text:$pay in /OPT-301-LotResult-Paying satisfies $pay not in OPT-301-Tenderer-SubCont
 ----
 *Applies if* Subcontractor of a Tendering Party (OPT-301-Tenderer-SubCont) exists.
 
@@ -5898,7 +5898,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$ubo in OPT-302-Organization satisfies ($ubo == OPT-202-UBO)
+every text:$ubo in OPT-302-Organization satisfies ($ubo in OPT-202-UBO)
 ----
 *Applies if* there is at least one organization with a reference to a UBO (OPT-302-Organization).
 
@@ -5914,7 +5914,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-OPT-310-Tender == OPT-210-Tenderer
+OPT-310-Tender in  OPT-210-Tenderer
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5924,7 +5924,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$contract in OPT-315-LotResult satisfies ($contract == OPT-316-Contract)
+every text:$contract in OPT-315-LotResult satisfies ($contract in OPT-316-Contract)
 ----
 *Applies if* reference to a Contract from a LotResult (OPT-315-LotResult) exists.
 
@@ -5950,7 +5950,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-316-Contract == OPT-315-LotResult)
+(OPT-316-Contract in OPT-315-LotResult)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -5960,7 +5960,7 @@ a|Co-constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-every text:$tender in OPT-320-LotResult satisfies ($tender == OPT-321-Tender)
+every text:$tender in OPT-320-LotResult satisfies ($tender in OPT-321-Tender)
 ----
 *Applies if* reference to a Tender from a LotResult (OPT-320-LotResult) exists.
 
@@ -5986,7 +5986,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(OPT-321-Tender == OPT-320-LotResult)
+(OPT-321-Tender in OPT-320-LotResult)
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
@@ -8002,14 +8002,14 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-(BT-60-Lot == 'eu-funds') or (BT-514-Organization-Company[OPT-200-Organization-Company == OPT-300-Procedure-Buyer] in (lawful-country))
+(BT-60-Lot == 'eu-funds') or (BT-514-Organization-Company[OPT-200-Organization-Company in OPT-300-Procedure-Buyer] in (lawful-country))
 ----
 *Applies if* the organisation (OPT-200-Organization-Company) is a Buyer (OPT-300-Procedure-Buyer).
 
 .Condition in EFX
 [source, EFX]
 ----
-OPT-200-Organization-Company == OPT-300-Procedure-Buyer
+OPT-200-Organization-Company in OPT-300-Procedure-Buyer
 ----
 |`WARN`
 |====
