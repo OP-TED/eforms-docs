@@ -150,15 +150,15 @@ efbc:GroupFrameworkReestimatedValueAmount
 ----
 <efac:NoticeResult>
     <cbc:TotalAmount currencyID="EUR">123456.00</cbc:TotalAmount>
-    <cbc:EstimatedOverallFrameworkContractsAmount currencyID="EUR">6000</cbc:EstimatedOverallFrameworkContractsAmount>
+    <efbc:OverallMaximumFrameworkContractsAmount currencyID="EUR">6000</efbc:OverallMaximumFrameworkContractsAmount>
     <efac:GroupFramework>
-        <efbc:GroupFrameworkValueAmount currencyID="EUR">1200000</efbc:GroupFrameworkValueAmount>
+        <efbc:GroupFrameworkMaximumValueAmount currencyID="EUR">1200000</efbc:GroupFrameworkMaximumValueAmount>
         <efac:TenderLot>
             <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
         </efac:TenderLot>
     </efac:GroupFramework>
     <efac:GroupFramework>
-        <efbc:GroupFrameworkValueAmount currencyID="EUR">800000</efbc:GroupFrameworkValueAmount>
+        <efbc:GroupFrameworkMaximumValueAmount currencyID="EUR">800000</efbc:GroupFrameworkMaximumValueAmount>
         <efac:TenderLot>
             <cbc:ID schemeName="LotsGroup">GLO-0002</cbc:ID>
         </efac:TenderLot>
@@ -386,7 +386,7 @@ options and renewals. |*?*
 a|
 [source,xpath,subs=attributes]
 ----
-efac:FrameworkAgreementValues{zwsp}/cbc:EstimatedMaximumValueAmount
+efac:FrameworkAgreementValues{zwsp}/efbc:ReestimatedValueAmount
 ---- 
 
 |*Framework Maximum Value (BT-709)* |The maximum value which can be
@@ -560,8 +560,8 @@ An XML instance excerpt is provided below for illustration:
             <cbc:ID schemeName="tender">TEN-0003</cbc:ID>
         </efac:LotTender>
         <efac:FrameworkAgreementValues>
-            <cbc:EstimatedMaximumValueAmount currencyID="EUR">123</cbc:EstimatedMaximumValueAmount>
             <cbc:MaximumValueAmount currencyID="EUR">12345</cbc:MaximumValueAmount>
+            <efbc:ReestimatedValueAmount currencyID="EUR">123</efbc:ReestimatedValueAmount>
         </efac:FrameworkAgreementValues>
         <efac:ReceivedSubmissionsStatistics>
             <efbc:StatisticsCode listName="received-submission-type">tenders</efbc:StatisticsCode>

@@ -185,7 +185,7 @@ fields.
                             <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
                         </efac:FieldsPrivacy>
                         <!-- # UNPUB-03 : Group Maximum Value (BT-156) publication will be delayed -->
-                        <efbc:GroupFrameworkValueAmount currencyID="EUR">1200000</efbc:GroupFrameworkValueAmount>
+                        <efbc:GroupFrameworkMaximumValueAmount currencyID="EUR">1200000</efbc:GroupFrameworkMaximumValueAmount>
                         <!-- # UNPUB-04 : Group Maximum Value Lot Identifier (BT-556) publication will be delayed -->
                         <efac:TenderLot>
                             <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
@@ -395,9 +395,9 @@ fields.
             <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
             <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
         </efac:FieldsPrivacy>
-        <cbc:EstimatedMaximumValueAmount currencyID="EUR">123</cbc:EstimatedMaximumValueAmount>
         <!-- # UNPUB-15 : Maximum Value (BT-709) publication will be delayed -->
         <cbc:MaximumValueAmount currencyID="EUR">12345</cbc:MaximumValueAmount>
+        <efbc:ReestimatedValueAmount currencyID="EUR">123</efbc:ReestimatedValueAmount>
     </efac:FrameworkAgreementValues>
     <efac:ReceivedSubmissionsStatistics>
         <efac:FieldsPrivacy>
