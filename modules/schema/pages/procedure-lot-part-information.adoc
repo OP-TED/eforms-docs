@@ -151,8 +151,6 @@ awarded Lots per tenderer, Definition of Groups of Lots)
 |*Tendering Terms* a|* Awarding criteria (Group specific)
 
 |*Tendering Process* a|
-* Groups related statistics (CAN)
-
 * Estimation, at the start of the Procurement Procedure, of the
 Group Framework Agreement Maximal value)
 
@@ -1060,7 +1058,7 @@ https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/eu-progra
 codelist. The content of the EU Funds Financing Identifier shall be the most 
 concrete possible (e.g. grant agreement number, national identifier or 
 project acronym). EU Funds Details (BT-6140) may only be provided once for 
-each BG-611.
+each BG-614.
 
 [source,xml]
 ----
