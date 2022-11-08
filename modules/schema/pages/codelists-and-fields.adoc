@@ -6,54 +6,16 @@
 This section provides further details on some fields and codelists only. It is not foreseen to
 be exhaustive and gives information necessary for clarification.
 
-[[technicalCodelistsSection]]
-== Technical codelists
-
-This section refers to codelists not published on EU vocabularies. Most of them are for
-validation purposes and required by the implemented technical solution.
-
 [[exclusionGroundsCodelistSection]]
-===	Exclusion grounds codelist
+== Exclusion grounds codelist
 
-This codelist covers all possible codes for exclusion grounds.
+This codelist covers all possible codes for exclusion grounds, it is a tailored codelist built 
+from the https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/criterion[criterion] 
+codelist.
 
-The list is the one defined for the ESPD.
-
-The codes are reported in the table below; the ones in bold are highly recommended. 
-From the EU legislation perspective, these are mandatory, however derogations are 
+Some grounds are highly recommended; From the EU legislation perspective, these are mandatory, however derogations are 
 possible (cf. <<codelists-and-fields-R1>> – art. 57). To identify precisely which value to use, 
 the contracting authority shall also consider local legislation.
-
-[[exclusionGroundCodesTable]]
-.Exclusion ground codes
-[width="100%",cols="<.^40%,<.^60%",options="header",]
-|===
-^|*Code* ^|*Value* 
-|*crime-org* |Participation in a criminal organisation
-|*corruption* |Corruption
-|*fraud* |Fraud
-|*terr-offence* |Terrorist offences or offences linked to terrorist activities
-|*finan-laund* |Money laundering or terrorist financing
-|*human-traffic* |Child labour and other forms of trafficking in human beings
-|*tax-pay* |Payment of taxes
-|*socsec-pay* |Payment of social security contributions
-|*envir-law* |Breaching of obligations in the fields of environmental law
-|*socsec-law* |Breaching of obligations in the fields of social law
-|*labour-law* |Breaching of obligations in the fields of labour law
-|bankruptcy |Bankruptcy
-|insolvency |Insolvency
-|cred-arran |Arrangement with creditors
-|bankr-nat |Analogous situation like bankruptcy under national law
-|liq-admin |Assets being administered by liquidator
-|susp-act |Business activities are suspended
-|prof-misconduct |Guilty of grave professional misconduct
-|distorsion |Agreements with other economic operators aimed at distorting competition
-|partic-confl |Conflict of interest due to its participation in the procurement procedure
-|prep-confl |Direct or indirect involvement in the preparation of this procurement procedure
-|sanction |Early termination, damages or other comparable sanctions
-|misinterpr |Guilty of misinterpretation, withheld information, unable to provide required documents and obtained confidential information of this procedure
-|nati-ground |Purely national exclusion grounds
-|===
 
 [bibliography]
 == References
