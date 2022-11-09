@@ -42,7 +42,7 @@ Authority. Should be unique between all Contract Identifiers of the
 procedure |NA |No restriction yet
 
 |BT-22 |Internal Identifier |CAs define it. No restriction besides
-string length. |NA |100 characters max.
+string length. |InternalID |100 characters max.
 
 |BT-3201 |Tender Identifier |Defined and encoded by the Contracting
 Authority. Should be unique between all Tender Identifiers of the
