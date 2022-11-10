@@ -5,4 +5,4 @@
 
 == Fields
 [horizontal]
-  `OPT-200-Organization-Company`:: Company Technical Identifier
+  `OPT-200-Organization-Company`:: Organisation Technical Identifier
