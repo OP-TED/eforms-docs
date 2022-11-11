@@ -129,7 +129,7 @@ We are working on resolving the following limitations and known issues:
 
 === TED Viewer
 
-API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/ 
+API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/index.html
 
 ==== Currently available 
 [horizontal]
