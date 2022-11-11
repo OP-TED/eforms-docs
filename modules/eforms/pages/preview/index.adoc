@@ -8,7 +8,7 @@ To allow early access to these applications before they are deployed in producti
 
 The application features, URLs as well as the data present in the "preview" environment, are subject to unannounced changes until the go-live deadline is reached in November 2022. 
 
-CAUTION: For accessing the web applications in the "preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas. 
+CAUTION: For accessing the web applications in the "preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas. To access eNotices2 API in Preview, you would need to generate a key from the TED Developer Portal in Preview: https://developer.preview.ted.europa.eu/home
 
 == TED Apps for eForms
 
@@ -52,66 +52,61 @@ WARNING: Please be aware that the interface and the notice forms are very much a
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.3.0
-SDK version:: 1.2 
+Application version:: 1.3.2
+SDK version:: 1.3.2
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK 1.2. In the codelist fields, prefilling of values is supported.  
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK 1.3. In the codelist fields, prefilling of values is supported.  
+
+Users can see the validation returned from CVS and have their notices rendered in HTML and PDF.
 
 Before you can create a Change notice or continue a procedure on a published notice, bear in mind that submitted notices go through another workflow in TED Monitor before they can be published, which takes place every working day.  
 
-The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML.  
+The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML. Import function is partially supported.   
 
-Import function is partially supported. There is also a search feature which allows users to sort through long lists of procedures.  
+There is also a search feature which allows users to sort through long lists of procedures.  
 
 Users can create workgroups between themselves and test the definitions of roles and permissions within these workgroups. They can also work and submit notices worked upon collectively. 
 
 Users can also define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available: 
 
-* Optional fields can be set to mandatory or hidden, however, please note that some optional fields could become mandatory under conditions (conditionally mandatory).
+* Optional fields can be set to mandatory or hidden, however, please note that we have removed the Conditional rules as of SDK 1.3 – for these please leave the default behaviour.
 
 * Confidential fields can be set to be always confidential or non-confidential.  
 
-The address book has been implemented, which allows users to create a database of addresses of known organisations which regularly take part in the procurement process and import them in their notices. In addition, users can create a Main Buyer in the address book. The Main Buyer, Organisation Name, Organisation Identifier and Oganisation Part Name can be only filled in under My Form Settings > Main Buyer Settings.
+* To get started, please fill in Organisation Name, Organisation Identifier and Oganisation Part Name under My Form Settings > Main Buyer Settings. 
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
 
 
 ==== Known issues 
-At this point, the application is incomplete, many use cases are not fully implemented and others have dependencies in other applications which are only mocked-up. Similarly, the notice forms are not final as they are missing conditional rules, and significant tweaking or corrections of the sections is still to be expected. 
+At this point, the application is incomplete and many use cases are not fully implemented. 
 
-All the labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
+All validation errors are currently displayed as a pop-up window, without pointing to the error location. 
 
-The application has some limitations to what it can do and Preview function is currently unstable.
+All the error messages and labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
 
-    * Notices go through CVS validation when they are submitted, or when the user clicks on validate in the user interface, however, the feature may be unstable.
-    * Mandatory fields are shown by red asterisks. 
-    * Patterns and regular expressions will have a red highlight until the right value is entered. 
-    * Live validation of mandatory and conditional fields is not fully implemented and may be prone to errors at this stage.
+Apart from the Organisation Name, Organisation Identifier and Oganisation Part Name, the rest of My Form Settings is currently not fully implemented and this function should not be used. Currently Touchpoints and Groups of Lots cannot be deleted once created.
+
+Notices go through CVS validation when they are submitted, or when the user clicks on validate in the user interface, however, the feature may be unstable.
+
+Result notices cannot be successfully validated/ submitted through the user interface.
     
-
-eNotices2 uses the codelists from the SDK, which have not been completely tailored. This means that certain codelists have too many entries, such as countries or languages that no longer exist. 
+eNotices2 uses the codelists from the SDK, which have not been completely tailored. 
 
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
 
-   * POST submit XML request should return a "cvsLink", which currently produces a communication error. 
-   * Notices that fail validation, will currently be submitted to eNotices2 with “notice_status_VALIDATION_FAILED”. Note that notices that fail validation will not get status “submitted” in the future. 
-   * For notices successfully submitted via API, the validation report can be fetched from GET validation report. 
-   * Stop publication currently works with notice ID instead of notice ID + version ID. 
+   * POST submit XML request should return a "cvsLink", which currently does not link to the CVS report. 
+   * Notices that trigger a lawfulness warning, will currently be submitted to eNotices2 with “VALIDATION_FAILED”. 
 
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: October 2022
-Application version:: 1.3.x
-SDK version used:: 1.3
+Indicative planning:: November 2022
+Application version:: 1.3.3
+SDK version used:: 1.3.3
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
-
-The version is focused on compliance with the SDK and producing valid XML, as well as on some improvements on the form-filling tool and the usability of CPV and NUTS codelists.
-
-Users can see the validation returned from CVS and have their notices rendered in HTML and PDF.
-
 
 
 
@@ -138,16 +133,13 @@ API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.2.1
-SDK versions:: 1.2 
+Application version:: 1.2.2
+SDK versions:: 1.3.2 
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: November 2022 
-Application version:: 1.2.2 
-SDK versions:: 1.3 
-Scope:: This release contains improvements to view-templates and labels
+Scope:: Ongoing improvements with successive SDK releases
 
 
 === TED Developer Portal
