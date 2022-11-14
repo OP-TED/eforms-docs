@@ -62,7 +62,7 @@ Users can see the validation returned from CVS and have their notices rendered i
 
 Before you can create a Change notice or continue a procedure on a published notice, bear in mind that submitted notices go through another workflow in TED Monitor before they can be published, which takes place every working day.  
 
-The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as import/ export notices in XML. Import function is partially supported.   
+The application also allows users to act upon notices and procedures, archiving, renaming and transferring them to other users or other procedures as well as export notices in XML.  
 
 There is also a search feature which allows users to sort through long lists of procedures.  
 
@@ -80,7 +80,7 @@ In the notice sections a search feature has been added and pagination for up to 
 
 
 ==== Known issues 
-At this point, the application is incomplete and many use cases are not fully implemented. 
+At this point, the application is incomplete and many use cases are not fully implemented, e.g. the "import a notice" function is currently disabled. 
 
 All validation errors are currently displayed as a pop-up window, without pointing to the error location. 
 
