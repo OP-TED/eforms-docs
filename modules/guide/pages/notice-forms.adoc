@@ -1,0 +1,38 @@
+= Creating notice forms
+
+For your end-users to be able to create and publish their notices your application needs to put on their screen the appropriate notice form for them to fill-in. 
+
+The form should be organised in a way that helps the end-user make sense of the notice creation process and most importantly understand what information they should provide in each field.
+
+The form should also provide meaningful messages to the end-user so that they are able to correct any mistakes they have made, one by one, until their notice is ready to be submitted for publication.
+
+This is not a trivial task. Hoping that developers can reuse and extend the work that the Publications Office has been doing in the context of its own form filling tool (eNotices2), we are sharing in the eForms SDK the notice type definitions that we use in eNotices2.
+
+NOTE: This page presents a solution for metadata-driven applications using the eForms SDK. If you are developing a traditional application you do not need any help from the eForms SDK. You only need a lot of programmers, a lot of patience, and a lot of time.
+
+What is a notice-type-definition file?::
+A notice type definition, (or NTD as we call them internally at the Publications Office), is a text file (in JSON format) which provides the *visual structure* of a notice form as it should appear on a user's screen. One such file is provided in the eForms SDK for every notice subtype that can be created by the end-users.
+
+== Selecting the appropriate form
+To select the appropriate form for the specific type of notice that your end-user wants to create, you need to present to them all the available choices. The metadata that you need in order to present these choices to your end-users can be found in link:https://github.com/OP-TED/eForms-SDK/blob/{eforms_version}/notice-types/notice-types.json[`notice-types/notice-types.json`] in the eForms SDK. 
+
+NOTE: The choices available to the end-user depend, of course, on the version of the eForms SDK that you are using and are dynamically determined by reading the metadata provided in `notice-types.json`. 
+
+After the user selects the specific type of notice that they want to create, you will need to put a form on their screen so that they can fill-in their notice.
+
+== Putting the form on the screen
+
+The goal here is, of course, to create the form dynamically instead for coding it by hand. Here is what your algorithm needs to do:
+
+1. Open the notice type definition file selected by the user. If, for example, the end-user selected the notice subtype 12, then you need to open `notice-types/12.json`. +
++ 
+NOTE: Inside that notice type definition file your algorithm will find a hierarchical structure of display elements. Each one of them represents an element that needs to be placed on the end-user's screen. These elements are either `display-groups` or `input-fields`. Obviously, `input-fields` represent the active elements on the screen where the user will enter the actual data, whereas `display-groups` are there to provide a visual structure.
+
+
+2. Traverse the hierarchy of display elements in the notice type definition. For each one of them, create a visual element on the end-user's screen. Create a visual container for each `display-group` and a user-input control for each `input-field`. + 
++ 
+NOTE: As you create these elements on the screen, use the xref:eforms:notice-types:index.adoc[metadata] attached to each element to determine their appearance and behaviour. Some elements, for example, are indicated to be `repeatable`. For these you need to provide a way for your end-users to add several of them in the form.
+
+That's it really. After traversing the tree of elements once, you have a form that your end-user can fill-in. For a detailed description of the metadata provided in notice type definition files, please xref:eforms:notice-types:index.adoc[follow this link].
+
+TIP: You can either do this on-the-fly (every time your end-user selects a notice subtype), or, you may prefer to "pre-compile" all notice type definitions (to some format that is more suitable for your application), only once (as soon as a new version of the eForms SDK is being added to your application).
