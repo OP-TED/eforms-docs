@@ -1,2 +1,0 @@
-'''
-* xref:index.adoc[EFX Toolkit for Java]

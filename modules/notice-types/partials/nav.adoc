@@ -1,0 +1,1 @@
+* xref:eforms:notice-types:index.adoc[Notice Types]
