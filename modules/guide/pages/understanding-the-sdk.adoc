@@ -1,0 +1,68 @@
+= Understanding the eForms SDK
+
+The eForms regulation mandates the creation and submission for publication of several different public procurement notices.
+An eForms application developer needs to create applications that:
+
+* allow a user to **fill-in** the proper form for the type of notice they want to publish
+* **validate** the data entered by the user to ensure they comply with eForms business rules
+* **save** in eForms UBL/XML format the notice data entered by the user
+* **submit** the XML for publication through an API
+
+Additionally, an eForms application developer may want to add to their application the ability to: 
+
+* **search**, retrieve 
+* and **visualise** published or draft notices.
+
+== The purpose of the eForms SDK
+
+The eForms SDK is an effort to model and formalise the eForms specification in a way that allows the Publications Office to manage change.
+
+The reason that the eForms SDK is being publicly shared with eForms application developers is to allow the developer community to capitalise of the work that is being done by the Publications Office for its own eForms implementation.
+
+IMPORTANT: An application developer can choose to dive into the latest regulation specifics, analyse the latest eForms UBL/XML schemas, study and code the various business rules and have the full freedom to model the eForms specification into their applications as they best see it fit their own purposes and particular business environment. The eForms SDK cannot really help developers that choose to follow this path, apart from maybe being a source of inspiration. As long as you manage to create and submit valid notices, and  keep up with the changing business environment, any solution you chose for the implementation of eForms is valid. +
+ +
+If you decide to implement eForms without using the eForms SDK, you can xref:implementing-eforms-without-the-sdk.adoc[follow this link to get some guidance].
+
+=== Deriving a Technical Specification from the eForms Regulation
+The eForms regulation is a legal document; not a technical specification. However, the regulation and its annexes define some high level technical requirements for the data that eForms notices should collect and publish. For example they define specific Business Terms and associate them with specific data types. They also define certain business requirements on whether, for example, these Business Terms should be mandatory or optional or even forbidden in certain circumstances.
+
+While implementing the regulation in an information system, certain ambiguities that could not have been resolved by the regulation itself needed to be addressed. One of the goals of the eForms SDK is to resolve these ambiguities in a formal way.
+
+=== The impact of UBL/XML  
+The choice of basing the implementation of the eForms regulation on UBL also places certain restrictions on the implementation choices. For example certain Business Terms defined by the regulation had to be introduced as extensions to UBL, whereas others were already defined by UBL and had to be reused. One of the goals of the eForms SDK is to also add a layer of abstraction on top of the eForms regulation as well as the UBL specification in such a way that would allow us to unify the two independent standardisation initiatives into one unambiguous implementation.  
+
+== Business Terms vs Fields: Codifying the XML Structure 
+The Business Terms defined by the regulation are high level concepts. They are meant to classify different types of information. However the same Business Term might behave very differently depending on the context in which it is used. To resolve such ambiguities, the eForms SDK introduces the concept of a Field. A Business Term is instantiated (represented) by different Fields in different contexts. 
+
+Unlike a Business Term, a Field can be associated with an XPath as it always represents a specific location in the notice XML file. Unlike a Business Term, a Field can be associated with Business Rules because, unlike a Business Term, a Field points to a specific location in the XML and therefore, its value can be located and validated.
+
+Using the Fields defined in the SDK, you can create an application that is agnostic of the specific XPath of each Field. 
+
+=== Repeatability, Fields & Nodes
+Fields correspond to Business Terms. They are therefore entities that contain actual data entered by the user. In XML terms, this means that Fields point to leaf elements in the hierarchical XML structure.
+
+Meanwhile, the eForms regulation defines specific Business Terms as being repeatable. The actual XML specification however, which is based on UBL, requires the repeatability of certain XML elements that do not correspond to Fields. The introduction of the notion of Fields is therefore not enough in order to construct the entire XML structure. This is why the notion of a Node has been introduced.
+
+=== The conceptual model
+Based on the short analysis presented above, the eForms SDK recognises the need to abstract and reconcile the high level requirements introduced by the eForms regulation with the low level implementation restrictions imposed by UBL into a conceptual model that allows us to recreate the physical structure of the notice data inside an XML file, while at the same time allowing us to remain at the conceptual level of the business domain. 
+
+This abstraction, termed for simplicity "the conceptual model", is based on the idea that an eForms notice is a hierarchical structure of Nodes adn Fields. Each Field has a parent Node. All Nodes, except the root Node, also have a parent Node. The location of each Field and Node is defined **relative to its parent** using XPath as the physical representation of notices is XML. A Node can be repeatable, meaning that it can occur more than one times within its parent Node. A Field can also be repeatable. Given a field and the conceptual model, one can construct the XML file of a notice without considering at all which specific fields participate in it or what rules may or may not apply to them.
+
+You can find the conceptual model in the `fields.json` file inside the `fields` folder of the eForms SDK. You can xref:eforms:fields:index.adoc[read more about it here], 
+
+== Notice Types: Putting a fillable form on the screen
+The first goal of an eForms application that creates and submits notices is, of course, to collect the notice data from the user. The eForms Regulation defines several different types of notice that can be created for different purposes.
+
+To collect the data the appropriate form needs to be presented to the user. To allow an application to create a notice form, the eForms SDK introduces the notion of the **notice type definition**. A notice type definition file is provided for each different type of notice. The file format is JSON. 
+
+A notice type definition is a collection of **input fields**, organized in a hierarchy of **display groups**. This provides a **visual structure** for the notice. The visual structure cannot be the same as the physical structure used to store the data in an XML file.
+
+== Business Rules: Validating Notices
+
+=== Client-side Validation
+
+=== Server-side Validation
+
+== View Templates
+
+== Translations
