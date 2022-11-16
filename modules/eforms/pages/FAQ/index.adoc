@@ -634,7 +634,12 @@ as described in link:https://docs.ted.europa.eu/eforms/latest/versioning.html[eF
 The metadata of the SDK, in particular the schema and the rules, will still change after version 1.0.0 and until shortly before November 2022. 
 +
 The European Commission is planning to publish an amendment to the 2019 eForms implementing regulations. This amendment will change 
-and add several business terms. 
+and add several business terms. The amendment will not be published on EUR-Lex before December, however, the public consultation is available at:
++
+https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13550-Public-procurement-eForms-amending-the-Implementing-Regulation-on-standard-forms-used-for-publication-of-notices_en
++
+The BTs included in this version of the annex are the same ones that we have included in the SDK and that the amendment will have; 
+please note that there are some limited changes since the public consultation involving BT names and descriptions. 
 
 
 
