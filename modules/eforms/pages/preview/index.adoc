@@ -82,15 +82,21 @@ In the notice sections a search feature has been added and pagination for up to 
 ==== Known issues 
 At this point, the application is incomplete and many use cases are not fully implemented, e.g. the "import a notice" function is currently disabled. 
 
-All validation errors are currently displayed as a pop-up window, without pointing to the error location. 
+All validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”.
 
 All the error messages and labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
 
-Apart from the Organisation Name, Organisation Identifier and Oganisation Part Name, the rest of My Form Settings is currently not fully implemented and this function should not be used. Currently Touchpoints and Groups of Lots cannot be deleted once created.
+Regarding the Main Buyer, apart from the Organisation Name, Organisation Identifier and Organisation Part Name, the rest of My Form Settings is currently not fully implemented and this function should not be used. Should you set a default place of performance under My forms settings > Default values, please pay attention not to use "place of performance other" at the same time in the form-filling tool. 
+
+Currently, Touchpoints and Groups of Lots cannot be deleted once created.
 
 Notices go through CVS validation when they are submitted, or when the user clicks on validate in the user interface, however, the feature may be unstable.
 
 Result notices cannot be successfully validated/ submitted through the user interface.
+
+For the moment, CVS validation does not work dynamically, i.e. there is no check between notices. This has implications, e.g. for checking notices of the same procedure or the same UUID v4 and different version ID; currently it is possible to submit and publish two notices that carry the same notice ID and different version IDs. See in contrast: https://docs.ted.europa.eu/eforms/1.3.2/schema/elements.html#noticeIDSection.
+
+For the moment, it is not possible to link a TED Schema notice to an eForms notice via the Previous Notice (OPP-090) as described in the documentation: https://docs.ted.europa.eu/eforms/1.3.2/schema/elements.html#previousNoticeSection.
     
 eNotices2 uses the codelists from the SDK, which have not been completely tailored. 
 
@@ -99,6 +105,23 @@ The eNotices2 API URLs and parameters will change in later releases. The link:ht
    * POST submit XML request should return a "cvsLink", which currently does not link to the CVS report. 
    * Notices that trigger a lawfulness warning, will currently be submitted to eNotices2 with “VALIDATION_FAILED”. 
 
+
+
+==== Tips for using the form-filling tool of eNotices2
+
+We are currently in the process of providing more guidance for users of the eNotices2 web interface. In recent weeks we have loosened many rules that required fields to be mandatory under certain conditions, which makes it easier to fill in the forms.  However, as certain co-constraints and conditional rules have been removed, the same is not true for CVS validation upon validating a notice or trying to submit it via the user interface of eNotices2. Until we can provide some more guidance and until known issues are fixed and more rules are re-enforced, we have provisionally gathered here some tips to help users with avoiding validation errors: 
+
+   * BT-747 Selection criteria must be entered 3 times using the 3 values from the codelist (except none). 
+   * In multi-stage procedures (BT-105), the second stage indicator should be set to 'yes' on one of those 3 groups where the criterion is used. 
+   * "Award criteria complicated" should be filled-in with a variation of "See the procurement documents" to avoid having to fill in Criterion parameters.
+   * Avoid repeating the award criteria group (first level).
+   * In the group "information about late submission' use only one "Reserved participation (BT-71-Lot)" and leave the rest empty.
+   * For Exclusion Grounds, use only once the code value and enter ”all other exclusion grounds apply" in the description; avoid repeating codelist values.
+   * Group "Post Award Process" both indicators should be always set to "true".
+   * Any date field which has a time attached must always have a value in the time field.
+   * "Deadline until which the tender must remain valid (BT-98-Lot)" is not a date but an amount of time. 
+   
+   
 
 ==== Planned updates 
 [horizontal]
