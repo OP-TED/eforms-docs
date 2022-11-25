@@ -1,0 +1,9 @@
+= `BT-10`: Activity Authority
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-10-Procedure-Buyer`:: Activity Authority

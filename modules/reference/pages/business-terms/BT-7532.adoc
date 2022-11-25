@@ -1,0 +1,9 @@
+= `BT-7532`: Selection Criteria Second Stage Invite Number Threshold
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-7532-Lot`:: Selection Criteria Second Stage Invite Number Threshold

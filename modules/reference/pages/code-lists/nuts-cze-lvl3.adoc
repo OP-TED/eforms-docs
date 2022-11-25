@@ -1,0 +1,27 @@
+= `nuts-cze-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Czech Republic
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `CZ010`::: Hlavní město Praha
+  `CZ020`::: Středočeský kraj
+  `CZ031`::: Jihočeský kraj
+  `CZ032`::: Plzeňský kraj
+  `CZ041`::: Karlovarský kraj
+  `CZ042`::: Ústecký kraj
+  `CZ051`::: Liberecký kraj
+  `CZ052`::: Královéhradecký kraj
+  `CZ053`::: Pardubický kraj
+  `CZ063`::: Kraj Vysočina
+  `CZ064`::: Jihomoravský kraj
+  `CZ071`::: Olomoucký kraj
+  `CZ072`::: Zlínský kraj
+  `CZ080`::: Moravskoslezský kraj
+  `CZZZZ`::: Extra-Regio NUTS 3

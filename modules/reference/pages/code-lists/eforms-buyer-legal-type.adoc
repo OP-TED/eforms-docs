@@ -1,0 +1,32 @@
+= `eforms-buyer-legal-type` codelist
+:navtitle: Codelists
+
+List of buyer-legal-type codes allowed in eforms
+[horizontal]
+Version:: 20220615-0
+Subset of:: xref:code-lists/buyer-legal-type.adoc[`buyer-legal-type`]
+Structure:: flat
+Used in:: xref:business-terms/BT-11.adoc[`BT-11`] Buyer Legal Type
+
+== Codes
+[horizontal]
+  `body-pl`::: Body governed by public law
+  `body-pl-cga`::: Body governed by public law, controlled by a central government authority
+  `body-pl-la`::: Body governed by public law, controlled by a local authority
+  `body-pl-ra`::: Body governed by public law, controlled by a regional authority
+  `cga`::: Central government authority
+  `def-cont`::: Defence contractor
+  `eu-ins-bod-ag`::: EU institution, body or agency
+  `grp-p-aut`::: Group of public authorities
+  `int-org`::: International organisation
+  `la`::: Local authority
+  `org-sub`::: Organisation awarding a contract subsidised by a contracting authority
+  `org-sub-cga`::: Organisation awarding a contract subsidised by a central government authority
+  `org-sub-la`::: Organisation awarding a contract subsidised by a local authority
+  `org-sub-ra`::: Organisation awarding a contract subsidised by a regional authority
+  `pub-undert`::: Public undertaking
+  `pub-undert-cga`::: Public undertaking, controlled by a central government authority
+  `pub-undert-la`::: Public undertaking, controlled by a local authority
+  `pub-undert-ra`::: Public undertaking, controlled by a regional authority
+  `ra`::: Regional authority
+  `spec-rights-entity`::: Entity with special or exclusive rights

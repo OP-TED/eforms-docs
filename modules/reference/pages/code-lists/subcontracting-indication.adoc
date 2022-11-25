@@ -1,0 +1,18 @@
+= `subcontracting-indication` codelist
+:navtitle: Codelists
+
+This table provides the list of codes and values used to indicate information regarding the share of parts of a contract to third parties. The share may refer to the portion of work, services or supplies and/or to the subject matter being subcontracted.
+[horizontal]
+Version:: 20220928-0
+URI:: http://publications.europa.eu/resource/dataset/subcontracting-indication
+Structure:: flat
+Used in:: xref:business-terms/BT-651.adoc[`BT-651`] Subcontracting Tender Indication
+
+== Codes
+[horizontal]
+  `none`::: None
+  `shar-subc`::: The share of the contract that the tenderer intends to subcontract
+  `subc-noblig`::: The proposed subcontractor(s) above any obligation to subcontract a minimum percentage of the contract
+  `subc-oblig`::: The proposed subcontractor(s) necessary to fulfill the obligation to subcontract a minimum percentage of the contract
+  `subj-noblig`::: The subject-matter of the subcontract(s) above any obligation to subcontract a minimum percentage of the contract
+  `subj-oblig`::: The subject-matter of the subcontract(s) necessary to fulfill the obligation to subcontract a minimum percentage of the contract

@@ -1,0 +1,10 @@
+= `BT-67`: Exclusion Grounds
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-67(a)-Procedure`:: Exclusion Grounds
+  `BT-67(b)-Procedure`:: Exclusion Grounds

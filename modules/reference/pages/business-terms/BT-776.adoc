@@ -1,0 +1,9 @@
+= `BT-776`: Innovative Procurement
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-776-Lot`:: Innovative Procurement

@@ -1,0 +1,12 @@
+= `tenderlot-presentation` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the submission should deal with all the defined lots.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-763.adoc[`BT-763`] Lots All Required
+
+== Codes
+[horizontal]
+  `all`::: Tenders shall be submitted for all lots

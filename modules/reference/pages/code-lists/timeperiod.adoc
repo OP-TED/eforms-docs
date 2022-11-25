@@ -1,0 +1,48 @@
+= `timeperiod` codelist
+:navtitle: Codelists
+
+List of codes for the main timeperiods (seasons, duration units of measure) commonly used in procurement.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/timeperiod
+Tailored by:: xref:code-lists/duration.adoc[`duration`], xref:code-lists/duration-unit.adoc[`duration-unit`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `APR`::: April
+  `AUG`::: August
+  `AUTUMN`::: Autumn
+  `CALENDAR_DAY`::: Calendar day
+  `DAY`::: Day
+  `DEC`::: December
+  `FEB`::: February
+  `FRI`::: Friday
+  `HOUR`::: Hour
+  `JAN`::: January
+  `JUL`::: July
+  `JUN`::: June
+  `MAR`::: March
+  `MAY`::: May
+  `MIN`::: Minute
+  `MON`::: Monday
+  `MONTH`::: Month
+  `NOV`::: November
+  `OCT`::: October
+  `QUARTER`::: Quarter
+  `SAT`::: Saturday
+  `SEC`::: Second
+  `SEP`::: September
+  `SPRING`::: Spring
+  `SUMMER`::: Summer
+  `SUN`::: Sunday
+  `THU`::: Thursday
+  `TUE`::: Tuesday
+  `UNKNOWN`::: Unknown
+  `UNLIMITED`::: Unlimited
+  `WED`::: Wednesday
+  `WEEK`::: Week
+  `WINTER`::: Winter
+  `WORKING_DAY`::: Working day
+  `YEAR`::: Year
+  `YEAR_HALF`::: Half year

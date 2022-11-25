@@ -1,0 +1,57 @@
+= `non-publication-identifier` codelist
+:navtitle: Codelists
+
+List of codes for the identification of the information whose publication shall be delayed.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-195.adoc[`BT-195`] Unpublished Identifier
+
+== Codes
+[horizontal]
+  `awa-cri-com`::: Award Criteria Complicated (BT-543)
+  `awa-cri-des`::: Award Criterion Description (BT-540)
+  `awa-cri-fix`::: Award Criterion Number Fixed (BT-5422)
+  `awa-cri-nam`::: Award Criterion Name (BT-734)
+  `awa-cri-num`::: Award Criterion Number (BT-541)
+  `awa-cri-ord`::: Award Criteria Order Justification (BT-733)
+  `awa-cri-thr`::: Award Criterion Number Threshold (BT-5423)
+  `awa-cri-typ`::: Award Criterion Type (BT-539)
+  `awa-cri-wei`::: Award Criterion Number Weight (BT-5421)
+  `con-rev-buy`::: Concession Revenue Buyer (BT-160)
+  `con-rev-use`::: Concession Revenue User (BT-162)
+  `cou-ori`::: Country Origin (BT-191)
+  `cro-bor-law`::: Cross Border Law (BT-09)
+  `dir-awa-jus`::: Direct Award Justification Code (BT-136)
+  `dir-awa-pre`::: Direct Award Justification Previous (BT-1252)
+  `dir-awa-tex`::: Direct Award Justification Text (BT-135)
+  `gro-max-ide`::: Group Maximum Value Lot Identifier (BT-556)
+  `gro-max-val`::: Group Maximum Value (BT-156)
+  `max-val`::: Maximum Value (BT-709)
+  `no-awa-rea`::: Not Awarded Reason (BT-144)
+  `not-app-val`::: Notice Framework Approximate Value (BT-1118)
+  `not-dis-dat`::: Notice Dispatch Date (BT-05)
+  `not-max-val`::: Notice Maximum Value (BT-118)
+  `not-pub-dat`::: Notice Publication Date Preferred (BT-738)
+  `not-ree-val`::: Group Framework Re-estimated Value (BT-1561)
+  `not-val`::: Notice Value (BT-161)
+  `pro-acc`::: Procedure Accelerated (BT-106)
+  `pro-acc-jus`::: Procedure Accelerated Justification (BT-1351)
+  `pro-fea`::: Procedure Features (BT-88)
+  `pro-typ`::: Procedure Type (BT-105)
+  `rec-sub-cou`::: Received Submissions Count (BT-759)
+  `rec-sub-typ`::: Received Submissions Type (BT-760)
+  `rev-req`::: Review Requests (BT-712)
+  `sub-con`::: Subcontracting (BT-773)
+  `sub-des`::: Subcontracting Description (BT-554)
+  `sub-per`::: Subcontracting Percentage (BT-555)
+  `sub-per-kno`::: Subcontracting Percentage Known (BT-731)
+  `sub-val`::: Subcontracting Value (BT-553)
+  `sub-val-kno`::: Subcontracting Value Known (BT-730)
+  `ten-ran`::: Tender Rank (BT-171)
+  `ten-val-hig`::: Tender Value Highest (BT-711)
+  `ten-val-low`::: Tender Value Lowest (BT-710)
+  `val-con-des`::: Value Concession Description (BT-163)
+  `win-cho`::: Winner Chosen (BT-142)
+  `win-ten-val`::: Winning Tender Value (BT-720)
+  `win-ten-var`::: Winning Tender Variant (BT-193)

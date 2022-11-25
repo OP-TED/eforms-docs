@@ -1,0 +1,13 @@
+= `BT-27`: Estimated Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-27-Lot`:: Estimated Value
+  `BT-27-LotsGroup`:: Estimated Value
+  `BT-27-Part`:: Estimated Value
+  `BT-27-Procedure`:: Estimated Value
+  `OPA-27-Procedure-Currency`:: Currency of the estimated value of the procedure

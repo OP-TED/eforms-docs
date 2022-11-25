@@ -1,0 +1,9 @@
+= `BT-555`: Subcontracting Percentage
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-555-Tender`:: Subcontracting Percentage

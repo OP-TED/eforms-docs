@@ -1,0 +1,9 @@
+= `BT-743`: Electronic Invoicing
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-743-Lot`:: Electronic Invoicing
