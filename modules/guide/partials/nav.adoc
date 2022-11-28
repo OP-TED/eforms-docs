@@ -1,4 +1,5 @@
 * xref:eforms:guide:index.adoc[Start Here]
+* xref:eforms:guide:understanding-the-sdk.adoc[Understanding the SDK]
 * Working with the SDK
 ** xref:eforms:guide:notice-forms.adoc[Create the forms]
 ** xref:eforms:guide:xml-generation.adoc[Generate XML]
