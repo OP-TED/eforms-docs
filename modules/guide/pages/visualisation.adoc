@@ -16,13 +16,11 @@ Cons::
 
 TIP: If you are creating a traditional application that does not rely on the eForms SDK this is the option we recommend.
 
-
-
 == Creating your own viewer
 
 If you want to have more control and better integration with your application you can also consider creating your own notice visualisation component.
 
-To understand the general concept of how this is will work, think first of what a basic custom implementation would look like. 
+To understand the general concept of how this will work, think first of what a basic custom implementation would look like. 
 
 * You would have a template engine of your choice for your platform. For example you might choose to use XSLT, or FreeMarker, or Thymeleaf, or Mustache etc. Any template engine you prefer. 
 * You would manually prepare template files for your template engine of choice. Typically one template for each notice type.
