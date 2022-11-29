@@ -42,7 +42,7 @@ The formal language used to express business rules.
 
 == eForms Developer Guide
 
-* xref:eforms:guide:index.adoc[*Start here*] + 
+* xref:eforms:guide:index.adoc[Start here] + 
 Get a guide to the developers guide.
 
 * xref:eforms:guide:understanding-the-sdk.adoc[Understanding the eForms SDK]. + 
