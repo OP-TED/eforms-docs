@@ -6,3 +6,5 @@
 ** xref:eforms:guide:visualisation.adoc[Visualize notices]
 ** xref:eforms:guide:validation.adoc[Validate notices]
 * xref:eforms:guide:implementing-eforms-without-the-sdk.adoc[Working without the SDK]
+* xref:eforms::versioning.adoc[SDK versioning]
+* xref:eforms:guide:sdk-jargon.adoc[SDK terminology]

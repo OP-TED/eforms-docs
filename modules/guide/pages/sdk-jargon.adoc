@@ -1,0 +1,147 @@
+= eForms SDK terminology
+
+== A
+[horizontal, labelwidth=30, itemwidth=70]
+
+authority tables:: Authority tables standardise the codes used as values in certain *_fields_*. Published by the Publications Office in link:https://op.europa.eu/en/web/eu-vocabularies/authority-tables[EU Vocabularies]. For eForms, also included in the `codelists` folder of the SDK.
+
+//== B
+[horizontal, labelwidth=30, itemwidth=70]
+
+== C
+[horizontal, labelwidth=30, itemwidth=70]
+
+codelists:: Nickname for *_authority tables_*. Also, the name of a folder in the SDK that contains... codelists.
+
+conceptual model:: An abstraction used to decouple the business concept of an eForms notice, from its XML representation. Comprised of a hierarchy of *_nodes_* and *_fields_*.
+
+== D
+[horizontal, labelwidth=30, itemwidth=70]
+
+display group:: A structural element of the *_visual model_*. 
+
+domain specific language:: A computer language designed specifically to cover the needs of a particular business domain. 
+
+DSL:: Acronym for *_Domain Specific Language_*.
+
+== E
+[horizontal, labelwidth=30, itemwidth=70]
+
+eForms Expression Language:: A *_domain specific language_* designed for eForms. Used in the SDK to encode business rules and *_view templates_*.
+
+EFX:: Acronym for *_eForms Expression Language_*.
+
+end-user:: The person using an eForms application. 
+
+== F
+[horizontal, labelwidth=30, itemwidth=70]
+
+fields.json:: A JSON file in the `fields` folder of the eForms SDK, containing the *_conceptual model_*
+
+fields repository:: See *_fields.json_*,
+
+field:: A data element of the *_conceptual model_*. Contained within a parent *_node_*. Points to an XML element's value or an attribute value inside a notice XML file.
+
+form:: Short for *_notice form_*.
+
+//== G
+[horizontal, labelwidth=30, itemwidth=70]
+
+//== H
+[horizontal, labelwidth=30, itemwidth=70]
+
+== I
+[horizontal, labelwidth=30, itemwidth=70]
+
+input field:: A data element of the *_visual model_*. Contained in a parent *_display group_*. Represents an interactive element on a *_form_* where the *_end-user_* can type-in or select the value of a *_field_*.
+
+== J
+[horizontal, labelwidth=30, itemwidth=70]
+
+jargon:: See *_slang_*. 
+
+
+//== K
+[horizontal, labelwidth=30, itemwidth=70]
+
+== L
+[horizontal, labelwidth=30, itemwidth=70]
+
+labels:: Short for *_public procurement labels_*.
+
+logical model:: The eForms Schema. Defines the data types, elements and attributes that can  constitute an eForms notice XML file.
+
+//== M
+[horizontal, labelwidth=30, itemwidth=70]
+
+== N
+[horizontal, labelwidth=30, itemwidth=70]
+
+node:: A structural element of the *_conceptual model_*. Contains other *_nodes_* and *_fields_*. Points to an XML element inside a notice XML file.
+
+notice form:: A computer user interface for an *_end-user_* to fill-in and submit a notice.
+
+notice type definition:: A file containing information on how a notice form is to be shown on a user's screen. See also *_visual model_*.
+
+NTD:: Short for *_notice type definition_*.
+
+//== O
+[horizontal, labelwidth=30, itemwidth=70]
+
+== P
+[horizontal, labelwidth=30, itemwidth=70]
+
+physical model:: The *_UBL_*/XML inside a notice XML file.
+
+public procurement labels:: Static texts (names, descriptions, messages etc.) related to public procurement terms and elements contained within the eForms SDK. Translated in all official EU languages. Intended to be used by the user interface of eForms Applications. Provided in the `translations` folder of the SDK.   
+
+//== Q
+[horizontal, labelwidth=30, itemwidth=70]
+
+//== R
+[horizontal, labelwidth=30, itemwidth=70]
+
+== S
+[horizontal, labelwidth=30, itemwidth=70]
+
+schematrons:: The name of a folder inside the eForms SDK. It contains the Schematron validation rules used by *_TED CVS_*.
+
+slang:: See *_jargon_*.
+
+SVRL:: Acronym for "Schematron Validation Report Language". A flavour of XML. Used by *_TED CVS_* to create validation reports.
+
+== T
+[horizontal, labelwidth=30, itemwidth=70]
+
+TED Central Validation Service:: A RESTFull web service, that validates notice XML files before they can be accepted for publication.
+
+TED CVS:: Acronym of the *_TED Central Validation Service_*.
+
+
+translations:: The name of a folder in the eForms SDK, containing *_public procurement labels_*  
+
+== U
+[horizontal, labelwidth=30, itemwidth=70]
+
+UBL:: Acronym for *_Universal Business Language_*.
+
+Universal Business Language:: An open standard for XML business documents. The eForms Schema is based on *_UBL_*. 
+
+== V
+[horizontal, labelwidth=30, itemwidth=70]
+
+view templates:: Templates for visualising notices in a readable document form (PDF, HTML etc.). Written in *_EFX_*.
+
+visual model:: An abstraction defining the visual structure of a *_notice form_*. Comprised of *_display groups_* and *_input fields_*.
+
+//== W
+[horizontal, labelwidth=30, itemwidth=70]
+
+//== X
+[horizontal, labelwidth=30, itemwidth=70]
+
+//== Y
+[horizontal, labelwidth=30, itemwidth=70]
+
+//== Z
+[horizontal, labelwidth=30, itemwidth=70]
