@@ -2,9 +2,9 @@
 
 This guide tries to address some of the most common issues faced by developers of eForms Applications.
 
-NOTE: #*No SDK?*# Developers that prefer a more traditional development model over metadata-driven development, can consult our braveheart developer guide: + 
+NOTE: #*No SDK?*# Developers that prefer a more traditional development model over metadata-driven development, can consult our braveheart developer guide. + 
  + 
- ⁉️ xref:eforms:guide:implementing-eforms-without-the-sdk.adoc[Implementing eForms without using the eForms SDK]
+ Read: xref:eforms:guide:implementing-eforms-without-the-sdk.adoc[*Implementing eForms without using the eForms SDK*]
 
 == Understanding the eForms SDK
 
@@ -12,7 +12,8 @@ NOTE: #*No SDK?*# Developers that prefer a more traditional development model ov
 * What problems does it try to solve?
 * What is the purpose/usage of each resource in the SDK?
 
-Read xref:understanding-the-sdk.adoc[Understanding the eForms SDK].
+Read: xref:understanding-the-sdk.adoc[*Understanding the eForms SDK*]. + 
+See also: xref:eforms::versioning.adoc[SDK Versioning] | xref:eforms:guide:sdk-glossary.adoc[SDK Glossary].
 
 == Putting a form on the screen 
 
@@ -20,24 +21,24 @@ Read xref:understanding-the-sdk.adoc[Understanding the eForms SDK].
 * How many different notice forms do you need?
 * How to create the notice forms?
 
-Read: xref:notice-forms.adoc[Filling-in notices]
+Read: xref:notice-forms.adoc[*Filling-in notices*]
 
 == Saving a notice in XML
 
 * How to save a notice in a valid XML file? 
 
-Read: xref:xml-generation.adoc[Creating the notice XML]
+Read: xref:xml-generation.adoc[*Creating the notice XML*]
 
 == Validating a notice
 
 * How to validate a fully formed notice XML file?
 * How to validate sections or input-fields while the user is still working on the notice?
 
-Read xref:validation.adoc[Notice validation]
+Read xref:validation.adoc[*Validating Notices*]
  
 == Visualising a notice
 
 * How to preview or print a notice in PDF, HTML or other document format?
 
-Read: xref:visualisation.adoc[How to visualise Notices in PDF, HTML and other formats]
+Read: xref:visualisation.adoc[*Visualising notices*]
 
