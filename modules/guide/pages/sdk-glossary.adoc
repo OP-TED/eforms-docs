@@ -1,4 +1,4 @@
-= eForms SDK terminology
+= eForms SDK glossary
 
 == A
 [horizontal, labelwidth=30, itemwidth=70]
@@ -58,8 +58,7 @@ input field:: A data element of the *_visual model_*. Contained in a parent *_di
 == J
 [horizontal, labelwidth=30, itemwidth=70]
 
-jargon:: See *_slang_*. 
-
+jargon:: See *_slang_*.
 
 //== K
 [horizontal, labelwidth=30, itemwidth=70]
@@ -91,6 +90,10 @@ NTD:: Short for *_notice type definition_*.
 == P
 [horizontal, labelwidth=30, itemwidth=70]
 
+parser:: A computer programme used for *_parsing_* a computer language.
+
+parsing:: The processes of breaking-down a text written in a computer language, and recognising the instructions contained in it.
+
 physical model:: The *_UBL_*/XML inside a notice XML file.
 
 public procurement labels:: Static texts (names, descriptions, messages etc.) related to public procurement terms and elements contained within the eForms SDK. Translated in all official EU languages. Intended to be used by the user interface of eForms Applications. Provided in the `translations` folder of the SDK.   
@@ -119,6 +122,8 @@ TED CVS:: Acronym of the *_TED Central Validation Service_*.
 
 
 translations:: The name of a folder in the eForms SDK, containing *_public procurement labels_*  
+
+transpiler:: A computer programme that reads source code written in an input language and translates it to source code written in a target output language.
 
 == U
 [horizontal, labelwidth=30, itemwidth=70]
