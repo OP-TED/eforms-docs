@@ -1,1 +1,33 @@
 = Notice Validation
+
+Before an eForms notice can be accepted for publication, it is always validated against a set of business rules by the TED Central Validation Service (TED CVS). 
+
+NOTE: TED CVS checks the information submitted in the notice for correctness, consistency and completeness as a measure for improving the quality of the data collected and shared through public procurement notifications. 
+
+The ultimate goal of your application is to submit a notice for publication. Submitting a valid notice is therefore essential for your notice to be accepted for publication.
+
+== Using the Central Validation Service
+
+An obvious choice that is available to everyone, is to rely on the Validation API for validating your notices. The API will provide you with a validation report in SVRL (Schematron Validation Report Language) which you can use to pass validation messages on to your end-users.
+
+The report contains a list of all validation rules that were executed. Any assertions that failed will be indicated with `svrl:failed-assert' elements providing you with additional information on the severity of the failure (in the `@role` attribute), the `@location` (XPath) of the issue, and `@test` (XPath) that was performed.  
+
+The  validation message intended for display to your end-user is provided in the `svrl:text` element as a label identifier, which you can use to retrieve the actual validation message text translated in the language of your choice.
+
+To correlate the location of the failure with your form, the identifier of the relevant *_field_* is provided in the `svrl:diagnostic-reference` element.
+
+== Reusing the Schematron rules
+
+If you want to avoid the round-trip to the TED Validation API, or you want to combine the validation rules provided in the eForms SDK with additional Schematron validation rules of your own, you may consider setting up your own validation service, local to your information system.
+
+== Notice validation inside your app
+
+The validation rules provided in the `schematrons` folder are meant to validate fully formed XML files. If you want to provide validation inside your application while the user is still filling in their form, then this set of rules is not suitable for the job.
+
+To allow applications to performed so-called "live validation" (a.k.a. "client-side validation"), we have included a set of suitable validation rules as constraints attached to every field in `/fields/fields.json`.
+
+These constraints are provided as EFX expressions. To reuse them you will need to translate them to a language that is suitable for execution in your application (i.e. JavaScript). 
+
+TIP: To learn more on how to create an EFX transpiler xref:eforms:efx:transpiling-efx.adoc[follow this link].
+
+TIP: To learn more on the semantics of the constraints provided in `fields/fields.json` xref:eforms:fields:index.adoc[follow this link].
