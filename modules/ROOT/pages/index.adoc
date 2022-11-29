@@ -15,31 +15,69 @@ IMPORTANT: You are currently reading the documentation that was published for eF
 The latest version of eForms SDK is xref:{eforms_latest_version}@ROOT:index.adoc[*{eforms_latest_version}*]. 
 endif::[]
 
-== Topics
 The following topics are included in this version of the eForms Documentation:
 
-* xref::metadata-driven-applications.adoc[Creating eForms Applications] +
-How to approach the creation of your eForms Application.
-* xref:schema:index.adoc[The eForms Schema] +
+== General Reference
+* xref:schema:index.adoc[*eForms Specification*] +
 Extensive documentation of the XML Schema used by eForms.
+* xref:reference:index.adoc[eForms Metadata Reference] +
+The eForms metadata contained in the SDK in a readable form. 
+
+== SDK Contents
+
 * xref:fields:index.adoc[Field Metadata] +
 Learn what a field is, and how its properties and behaviours are  defined.
 * xref:codelists:index.adoc[Codelists in the SDK] +
 Find out why we include every codelist in the SDK and learn how to use them.
-* xref:translations:index.adoc[Translations] +
-Find out which translations are included in the SDK and learn how to use them.
 * xref:notice-types:index.adoc[Notice Structure] +
 How each notice type is structured.
 * xref:viewer-templates:index.adoc[Notice View Templates] +
 Reusable templates for visualising notices.
+* xref:translations:index.adoc[Translations] +
+Find out which translations are included in the SDK and learn how to use them.
+* xref:translations:index.adoc[Translations] +
+Find out which translations are included in the SDK and learn how to use them.
 * xref:efx:index.adoc[eForms Expression Language] +
 The formal language used to express business rules.
+
+== eForms Developer Guide
+
+* xref:eforms:guide:index.adoc[*Start Here*] + 
+Get a guide to the developers guide.
+
+* xref:eforms:guide:understanding-the-sdk.adoc[Understanding the eForms SDK]. + 
+Learn how the SDK came to be, what problems it tries to solve and how.
+
+* xref::versioning.adoc[eForms SDK Versioning] +
+Learn about the significance of SDK version numbers.
+
+* xref:eforms:guide:notice-forms.adoc[Filling-in notices]
+Learn how to generate the notice forms (instead of hardcoding them).
+
+* xref:eforms:guide:xml-generation.adoc[Creating the notice XML]
+Learn how to save a notice in a valid XML file. 
+
+* xref:eforms:guide:validation.adoc[Validating notices] + 
+Lear how to approach notice validation.
+
+* xref:eforms:guide:visualisation.adoc[Visualising notices] + 
+Learn how to preview or print a notice in PDF, HTML or other document format?
+
+* xref::metadata-driven-applications.adoc[Creating eForms Applications] +
+How to approach the creation of an eForms Application.
+
+== Java Libraries
 * xref:efx-toolkit:index.adoc[EFX Toolkit for Java] +
 A toolkit that you can use to translate EFX expressions and templates for your runtime environment.
+* xref:eforms-core:index.adoc[eForms Core Java Library] +
+A Java library useful when implementing some standard features of eForms Applications.
+
+== Sample Applications
+
 * xref:notice-viewer:index.adoc[Notice Viewer sample application] +
 See how you can create a metadata driven application for visualising any eForms notice.
-* xref::versioning.adoc[eForms SDK Versioning] +
-Learn about breaking changes and the significance of SDK version numbers.
+* xref:notice-editor:index.adoc[Notice Editor sample application] +
+See how you can create a metadata driven application for filling-in and submitting eForms notices.
 
 TIP: For every release of the eForms SDK, a copy of the corresponding documentation is maintained in this website. You can select the version of documentation that you want to consult by selecting the corresponding version of the SDK either in the dropdown menu available on the top right of this page, or the component navigation panel available on the bottom left of each page. +
 ifeval::[{eforms_latest_version} == {eforms_version}]
