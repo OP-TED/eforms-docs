@@ -42,13 +42,13 @@ The formal language used to express business rules.
 
 == eForms Developer Guide
 
-* xref:eforms:guide:index.adoc[*Start Here*] + 
+* xref:eforms:guide:index.adoc[*Start here*] + 
 Get a guide to the developers guide.
 
 * xref:eforms:guide:understanding-the-sdk.adoc[Understanding the eForms SDK]. + 
 Learn how the SDK came to be, what problems it tries to solve and how.
 
-* xref::versioning.adoc[eForms SDK Versioning] +
+* xref::versioning.adoc[eForms SDK versioning] +
 Learn about the significance of SDK version numbers.
 
 * xref:eforms:guide:notice-forms.adoc[Filling-in notices]
@@ -63,7 +63,7 @@ Lear how to approach notice validation.
 * xref:eforms:guide:visualisation.adoc[Visualising notices] + 
 Learn how to preview or print a notice in PDF, HTML or other document format?
 
-* xref::metadata-driven-applications.adoc[Creating eForms Applications] +
+* xref::metadata-driven-applications.adoc[Creating eForms applications] +
 How to approach the creation of an eForms Application.
 
 == Java Libraries
