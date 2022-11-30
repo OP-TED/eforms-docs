@@ -298,6 +298,16 @@ a|Value must be one of the codes in xref:code-lists/non-publication-identifier.a
 
 *Always applies* in every notice sub-type.
 |`ERROR`
+h|`BT-195(BT-635)-LotResult`
+a|Value must be one of the codes in xref:code-lists/non-publication-identifier.adoc[`non-publication-identifier`] codelist.
+
+*Always applies* in every notice sub-type.
+|`ERROR`
+h|`BT-195(BT-636)-LotResult`
+a|Value must be one of the codes in xref:code-lists/non-publication-identifier.adoc[`non-publication-identifier`] codelist.
+
+*Always applies* in every notice sub-type.
+|`ERROR`
 h|`BT-195(BT-709)-LotResult`
 a|Value must be one of the codes in xref:code-lists/non-publication-identifier.adoc[`non-publication-identifier`] codelist.
 

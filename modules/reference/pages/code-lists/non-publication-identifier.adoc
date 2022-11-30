@@ -18,6 +18,8 @@ Used in:: xref:business-terms/BT-195.adoc[`BT-195`] Unpublished Identifier
   `awa-cri-thr`::: Award Criterion Number Threshold (BT-5423)
   `awa-cri-typ`::: Award Criterion Type (BT-539)
   `awa-cri-wei`::: Award Criterion Number Weight (BT-5421)
+  `buy-rev-cou`::: Buyer Review Requests Count (BT-635)
+  `buy-rev-typ`::: Buyer Review Requests Irregularity Type (BT-636)
   `con-rev-buy`::: Concession Revenue Buyer (BT-160)
   `con-rev-use`::: Concession Revenue User (BT-162)
   `cou-ori`::: Country Origin (BT-191)
