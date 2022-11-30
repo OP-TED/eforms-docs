@@ -1,1 +1,1 @@
-* xref:eforms:eforms-core:index.adoc[eForms Core Library]
+* xref:{eforms_version}@eforms:eforms-core:index.adoc[eForms Core Library]

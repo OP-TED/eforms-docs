@@ -1,1 +1,1 @@
-* xref:eforms:viewer-templates:index.adoc[View Templates]
+* xref:{eforms_version}@eforms:viewer-templates:index.adoc[View Templates]

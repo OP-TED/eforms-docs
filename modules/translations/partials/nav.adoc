@@ -1,1 +1,1 @@
-* xref:eforms:translations:index.adoc[Translations]
+* xref:{eforms_version}@eforms:translations:index.adoc[Translations]

@@ -1,1 +1,1 @@
-* xref:eforms:efx-toolkit:index.adoc[EFX Toolkit]
+* xref:{eforms_version}@eforms:efx-toolkit:index.adoc[EFX Toolkit]

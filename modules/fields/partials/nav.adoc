@@ -1,2 +1,2 @@
-* xref:eforms:fields:index.adoc[Field metadata]
-** xref:eforms:fields:xml-structure.adoc[XML Structure]
+* xref:{eforms_version}@eforms:fields:index.adoc[Field metadata]
+** xref:{eforms_version}@eforms:fields:xml-structure.adoc[XML Structure]
