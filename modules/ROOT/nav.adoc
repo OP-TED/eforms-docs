@@ -1,1 +1,25 @@
 * xref:index.adoc[Home]
+
+* [.separated]#**General Reference**#
+include::eforms:schema:partial$nav.adoc[]
+include::eforms:reference:partial$nav.adoc[]
+
+* [.separated]#**SDK Contents**#
+include::eforms:fields:partial$nav.adoc[]
+include::eforms:codelists:partial$nav.adoc[]
+include::eforms:notice-types:partial$nav.adoc[]
+include::eforms:viewer-templates:partial$nav.adoc[]
+include::eforms:translations:partial$nav.adoc[]
+include::eforms:efx:partial$nav.adoc[]
+
+* [.separated]#**Developer Guide**#
+
+include::eforms:guide:partial$nav.adoc[]
+
+* [.separated]#**Java Libraries**#
+include::eforms:efx-toolkit:partial$nav.adoc[]
+include::eforms:eforms-core:partial$nav.adoc[]
+
+* [.separated]#**Sample Applications**#
+include::eforms:notice-viewer:partial$nav.adoc[]
+include::eforms:notice-editor:partial$nav.adoc[]

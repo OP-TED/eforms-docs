@@ -1,0 +1,19 @@
+* <<eforms:schema:index.adoc#, eForms Specification>>
+** <<eforms:schema:introduction.adoc#, Introduction>>
+** <<eforms:schema:documents-forms-and-notices.adoc#, Documents, forms & notices>>
+** <<eforms:schema:notice-content.adoc#, Notice content>>
+** <<eforms:schema:elements.adoc#, Elements>>
+*** <<eforms:schema:schemas.adoc#, Schemas>>
+*** <<eforms:schema:notices-xml-structure.adoc#, Notices XML structure>>
+*** <<eforms:schema:notice-information.adoc#, Notice information>>
+*** <<eforms:schema:procedure-lot-part-information.adoc#, Procedure, Group of Lots, Lot & Part related information>>
+*** <<eforms:schema:competition-results.adoc#, Competition Results>>
+*** <<eforms:schema:parties.adoc#, Parties>>
+** <<eforms:schema:change-notice.adoc#, Change notice>>
+** <<eforms:schema:contract-modification-notice.adoc#, Contract Modification Notice>>
+** <<eforms:schema:withheld-publication.adoc#, Withheld publication of information>>
+** <<eforms:schema:codelists-and-fields.adoc#, Codelists and Fields>>
+** <<eforms:schema:identifiers.adoc#, Identifiers>>
+** <<eforms:schema:acronyms-and-abbreviations.adoc#, Acronyms & abbreviations>>
+** <<eforms:schema:terms-and-definitions.adoc#, Terms & definitions>>
+** <<eforms:schema:other-resources.adoc#, Other Resources>>
