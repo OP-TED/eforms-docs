@@ -1,4 +1,4 @@
-= eForms SDK Versioning
+= eForms SDK versioning
 ifeval::[{eforms_latest_version} == {eforms_version}]
 :page-aliases: latest@versioning.adoc
 endif::[]

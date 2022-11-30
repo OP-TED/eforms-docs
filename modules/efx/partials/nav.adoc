@@ -1,0 +1,4 @@
+* xref:{eforms_version}@eforms:efx:index.adoc[EFX grammar]
+** xref:{eforms_version}@eforms:efx:expression-syntax.adoc[EFX expressions]
+** xref:{eforms_version}@eforms:efx:template-syntax.adoc[EFX templates]
+** xref:{eforms_version}@eforms:efx:transpiling-efx.adoc[Transpiling EFX]
