@@ -5,4 +5,8 @@
 # which is located in the eforms-docs repository
 #
 name: eforms
-version: '1.1.1'
+version: &ver '1.1' # don't remove the &ver anchor. It is needed for the "/eforms/latest/" redirection in ROOT:index.adoc.
+display_version: '1.1.1'
+asciidoc:
+  attributes:
+    eforms_version: *ver
