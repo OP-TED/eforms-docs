@@ -1,12 +1,19 @@
 = Implementing eForms without the eForms SDK
 
-This page provides guidance and resources for developers that decide to implement eForms without using the eForms SDK.
+This page provides guidance and resources for developers that may decide to implement eForms in a traditional application that does not rely on the eForms SDK.
 
-NOTE: Before we begin it is important to clarify what we mean with the phrase "using the eForms SDK": +
-    *You are using the eForms SDK #if and only if# you are creating a #metadata-driven application# that drives itself with the metadata provided in the eForms SDK.*
+Important clarification:: You are using the eForms SDK *if and only if* you are creating a *metadata-driven application* that drives itself with the metadata provided in the SDK. If not, the you are developing a "traditional application".
+
+
+You will notice that in many of the topics we cover in this page, we mostly focus on discussing the  challenges, rather than suggesting specific solutions for traditional application developers. Our suggested approach for taking-on all these issues, is based on the idea of using a metadata-driven architecture that allows the propagation of changes declaratively. Having rejected this idea, by definition, you chose to design your own solutions for these issues.
+
+[NOTE]
+==== 
+If you are still considering a metadata-driven approach, but facing specific difficulties with the SDK, then consider suggesting to us (through link:https://github.com/OP-TED/eForms-SDK/discussions/categories/ideas[GitHub discussions]) any improvements in the SDK that will allow you to base your implementation on it. 
+====
 
 == Least impact
-Although you decided not to use the eForms SDK as the basis of developing your applications, there is one thing closely tied to the SDK which you cannot avoid: *#the SDK version number#*. 
+Although you decided not to use the SDK as the basis of developing your applications, there is one thing closely tied to the SDK which you cannot avoid: *#the SDK version number#*. 
 
 .Why is the SDK version number so important? 
 ****
@@ -19,16 +26,12 @@ Your application always needs to be aware of the `CustomizationID` it uses, (as 
 
 CAUTION: Keep in mind that this is crucial for creating a valid notice. 
 
-In other words, whatever you do, you will need to have way of figuring out which versions of the XML schema, business rules, and controlled vocabularies, need to be combined in order to put together a notice XML that can be accepted for publication by TED CVS. 
+In other words, whatever you do, you will need to have a way of figuring out which versions of the XML schema, business rules, and controlled vocabularies, need to be combined in order to put together a notice XML that can be accepted for publication by TED CVS. 
 
-TIP: The best way of doing this is, of course, by obtaining these elements directly from the eForms SDK.
-
-NOTE: For metadata-driven application developers that use the eForms SDK, this, of course, is not an issue. 
+TIP: The easiest way of doing this, is by obtaining these elements directly from the eForms SDK. 
 
 == Where to start
-Start by studying the xref:schema:index.adoc[eForms General Reference]. You will find definitions and descriptions of all the concepts used in the eForms implementation of the Publications Office.
-
-You will also need to study the eForms Schemas. You can find a consolidated version of the schema in the eForms SDK. Further information on link:https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3] is available by OASIS Open.
+Start by studying the xref:schema:index.adoc[eForms Specification]. You will find definitions and descriptions of all the concepts used in the eForms schemas and eForms implementation of the Publications Office. You can find a consolidated version of the schema in the eForms SDK. Further information on link:https://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3] is available by OASIS Open.
 
 The most fundamental problems that you will have to find solutions for, include:
 
@@ -38,8 +41,8 @@ The most fundamental problems that you will have to find solutions for, include:
 
 Other, less common, but equally challenging topics that may interest you are:
 
-* How to edit an "older" notice
-* How to visualise a notice that is not yet published on TED.
+* How to edit an notice created with an older version of the eForms Specification.
+* How to visualise a notice.
 
 Guidelines on how you can approach these issues without relying on the eForms SDK, follow in the subsequent sections of this page.
 
@@ -48,19 +51,19 @@ You can find all the Business Rules used to validate eForms notices, in plain en
 
 Coding and maintaining thousands of business rules manually is quite a challenge by itself, however, you will find that there is an even bigger challenge hiding behind the scenes for developers that do not use the eForms SDK or a similar concept. For more on this see the section on "<<Coping with change in eForms specifications>>" below.
 
-NOTE: The Business Rules are also formally expressed in EFX (the eForms Expression Language). However, since you are not using the eForms SDK, you will not find this formal definition very helpful.
+NOTE: The Business Rules are also formally expressed in EFX (the eForms Expression Language). However, since you are not using the SDK, you will not find this formal definition very helpful.
 
 TIP: If you want to find out how we address these issues in the eForms SDK follow this link.
 
 == Creating a form to fill-in a notice
-There is no suggested solution to this problem for eSenders that do not use the eForms SDK. You will need to make your own decisions on how to code this functionality of your application by studying the xref:schema:index.adoc[eForms Specification] and the eForms schemas.
+There is no suggested solution to this problem for eSenders that do not use the SDK. You will need to make your own decisions on how to code this functionality of your application by studying the xref:schema:index.adoc[eForms Specification] and the eForms schemas.
 
-NOTE: In the Publications Office, we use the xref:eforms:notice-types:index.adoc[notice type definitions] provided in the eForms SDK to define the different forms that end-users can fill in our eNotices2 application. The notice type definitions however, depend on other metadata included the eForms SDK, and therefore cannot be reused independently. 
+NOTE: In the Publications Office, we use the xref:eforms:notice-types:index.adoc[notice type definitions] provided in the eForms SDK to define the different forms that end-users can fill in our eNotices2 application. The notice type definitions however, depend on other metadata included the SDK, and therefore cannot be reused independently. 
 
-TIP: If you want to find out how we address these issues in the eForms SDK xref::notice-forms.adoc[follow this link].
+TIP: If you want to find out how we address these issues in the SDK xref::notice-forms.adoc[follow this link].
 
 == Creating a notice XML file
-For creating a notice XML file your best friend is again the xref:schema:index.adoc[eForms General Reference] as well as the eForms schema. You will find there all the information you need to create a valid notice XML.
+For creating a notice XML file your best friend is again the xref:schema:index.adoc[eForms Specification] as well as the eForms schema. You will find there all the information you need to create a valid notice XML.
 
 NOTE: In the Publications Office, we use a conceptual model of a notice which is encoded in the xref:eforms:fields:index.adoc[field metadata] provided with the eForms SDK. This abstracts away from our application the specifics the eForms/UBL XSDs and allows it to keep creating valid notices even if the schemas or business rules change.
 
@@ -90,10 +93,10 @@ You can also consider using the Schematron validation rules that are included in
 
 NOTE: In the Publications Office we use this type of validation only at the point when a notice is to be submitted for publication. We rely on client-side validation to help the user while filling-in the form.
 
-=== Client-side (a.k.a live) validation
-There is no suggested solution for client-side validation for developers that do not use the eForms SDK.
+=== Client-side (a.k.a. live) validation
+There is no suggested solution for client-side validation for developers that do not use the SDK.
 
-NOTE: Business rules, formally expressed in EFX (a platform independent language) are attached as constraints to the field metadata included in the eForms SDK. However, without using the eForms SDK in a metadata driven application you will be unable to reuse this encoding.
+NOTE: Business rules, formally expressed in EFX (a platform independent language) are attached as constraints to the field metadata included in the SDK. However, without using the SDK in a metadata-driven application you will be unable to reuse this encoding.
 
 
 TIP: At the Publications Office, we use a custom EFX interpreter to translate the Business Rules from EFX to Java. We then use a round-trip to the backend of our web application to perform live validation. + 
@@ -107,10 +110,10 @@ An obvious drawback for this solution is  that it is not available when your app
 
 Other compromises associated with this solution are associated with latency (because of the necessary round-trip to the TED API), as well as with the limitation in the available visualisation options (only PDF and HTML are provided).
 
-TIP: If you want better integration with your application xref:eforms:guide:visualisation.adoc#_creating_your_own_viewer[follow this link] to see how you can reuse the EFX templates provided in the eForms SDK and create your own notice viewer.
+TIP: If you want better integration with your application xref:eforms:guide:visualisation.adoc#_creating_your_own_viewer[follow this link] to see how you can reuse the EFX templates provided in the SDK and create your own notice viewer.
 
 == Internationalisation
-In th eForms SDK we provide translations of all procurement labels. Using these translations in metadata-driven applications is very straight forward. For other applications however, it really depends on how you design them. You may be able to use the labels of fields for example. However, will your application even have the notion of fields? It all depends on you and your design choices.
+In the eForms SDK we provide translations of all procurement labels. Using these translations in metadata-driven applications is very straight forward. For other applications however, it really depends on how you design them. You may be able to use the labels of fields for example. However, will your application even have the notion of fields? It all depends on you and your design choices.
 
 Certainly you can use the translations for validation messages as the label identifiers for these messages are contained in the validation report returned by TED CVS.
 
@@ -121,10 +124,10 @@ Authority tables, however, are shared among several standards across business do
 
 There is nothing wrong with managing the controlled vocabularies yourself. Typically you can retrieve them from link:https://op.europa.eu/en/web/eu-vocabularies/authority-tables[EU vocabularies] where all their versions are available in several different file formats. However, if you prefer to use this approach, you will also need to find a way of figuring out which version of each codelist contains the appropriate set of codes that are valid from the perspective of a specific version of eForms.  
 
-NOTE: The eForms SDK addresses this problem by bundling the correct version of each codelist together with all the other elements that define a specific version of eForms. Developers using the eForms SDK can simply take the correct codelist directly from the eForms SDK without worrying about its version and contents.
+NOTE: The eForms SDK addresses this problem by bundling the correct version of each codelist together with all the other elements that define a specific version of eForms. Developers using the SDK can simply take the correct codelist directly from the SDK without worrying about its version and contents.
 
 == Coping with change in eForms specifications
-The main reason we advocate in favour of creating metadata driven applications using the eForms SDK, is to mitigate the risks and moderate the effort associated with change. This is because we recognise that change is inevitable. 
+The main reason we advocate in favour of creating metadata-driven applications using the SDK, is to mitigate the risks and moderate the effort associated with change. This is because we recognise that change is inevitable. 
 
 Causes of change can include:
 
@@ -136,7 +139,7 @@ Causes of change can include:
 
 The types of change that will concern you, are all types of change that will affect your application's code. With the eForms SDK we are trying to minimise and manage the types of change that can affect our applications. The idea is that although we cannot control the amount of changes that will occur over a period of time, we can certainly control the types of changes that can affect our applications and consequently control the overall impact of these changes.
 
-Without using the eForms SDK, it is clear that you cannot benefit from this approach. You will however have to face the same amount of changes as anyone else in our business domain (including of course the Publications Office itself). This section tries to address certain types of changes that you will have to cope with now that you decided not to use the eForms SDK as the basis of your implementation of eForms.
+Without using the SDK, it is clear that you cannot benefit from this approach. You will however have to face the same amount of changes as anyone else in our business domain (including of course the Publications Office itself). This section tries to address certain types of changes that you will have to cope with now that you decided not to use the SDK as the basis of your implementation of eForms.
 
 === What may change
 First, let's look at the main components that can change:
@@ -152,28 +155,27 @@ Now, let's look at application functionalities that are sensitive to these chang
 
 Filling-in a new notice:: If a new XML element is added in the eForms schema, one or more forms will have to change to accommodate the new element. The removal of an XML element will also have a similar impact. Likewise, the revision of one or more forms will also be required, if the cardinality or type of an XML element is modified in the schema. +  
  +
-If we assume that your application only creates new notices that comply with the latest implemented eForms specification at any given time, then this type of impact can be acceptable for any application that is not metadata driven.
+If we assume that your application only creates new notices that comply with the latest implemented eForms specification at any given time, then this type of impact can be acceptable for any application that is not metadata-driven.
 
 Editing an existing notice::  If your application allows the user to edit an existing notice, then a problem that you will have to address is that the notice may have been created with an older version of eForms and may require fields that may have been deleted in later versions. Likewise, some fields that may have been added later should not be present a notice complying with a previous version of the eForms specification. +
  +
-Regardless of how good and detailed the documentation we provide is, it will be challenging for you to maintain several versions of each form in an application that is not metadata driven. You may be faced with the dilemma of either giving up on the editing functionality for older notices, or finding a way to convert older notices to the latest specification (to the extent of course this is possible). + 
- +
-TIP: If you need to edit existing notices reconsider your approach and go for a xref:eforms::metadata-driven-applications.adoc[metadata driven application that uses the eForms SDK].
+Regardless of how good and detailed the documentation we provide is, it will be challenging for you to maintain several versions of each form in an application that is not metadata-driven. You may be faced with the dilemma of either giving up on the editing functionality for older notices, or finding a way to convert older notices to the latest specification (to the extent of course this is possible). + 
++ 
+TIP: If you need to edit existing notices reconsider your approach and go for a xref:eforms::metadata-driven-applications.adoc[metadata-driven application that uses the eForms SDK].
 
 Validating a notice:: Validation can be impacted not only by changes in the business rules but also by changes in the schema. If you are trying to edit an existing notice then you also need to validate it against the set of rules and the schema to which it should comply.  +  
- + 
-So, an additional challenge for an application that is not metadata driven will be to maintain the proper "versions" of the business rules and schema to perform validation for different versions of the eForms specifications. + 
- + 
-TIP: Your only alternative to this is using the xref:api::endpoints/cvs-ted-europa-eu.adoc[TED Validation API].
++  
+So, an additional challenge for an application that is not metadata-driven will be to maintain the proper "versions" of the business rules and schema to perform validation for different versions of the eForms specifications. + 
++  
+TIP: To minimize the impact of this type of change on your traditional application, use the xref:api::endpoints/cvs-ted-europa-eu.adoc[TED Validation API] to validate notices.
 
-Saving a notice XML:: The same challenges mentioned in the previous two cases, also extend to this functionality of your application. In practice an application that is not metadata driven will not be able to cope with several versions of the eForms specification in parallel. +
- +
-Maybe the only mitigation for all these issues (apart from creating a metadata driven application  of course) is to give up on any functionality that requires multiple "versions" of the  eForms specification to be coded and maintained in parallel. + 
+Saving a notice XML:: The same challenges mentioned in the previous two cases, also extend to this functionality of your application. In practice an application that is not metadata-driven will not be able to cope with several versions of the eForms specification in parallel. +
  + 
-TIP: If you need to edit existing notices without converting them to the latest eForms specification, reconsider your approach and go for a metadata driven application that uses the eForms SDK.
+Maybe the only mitigation for all these issues for traditional applications is to give up on any functionality that requires multiple "versions" of the  eForms specification to be coded and maintained in parallel. + 
++  
+TIP: If you need to edit existing notices without converting them to the latest eForms specification, reconsider your approach and go for a metadata-driven application that uses the eForms SDK.
 
 Visualising a notice:: Unless you use the TED Visualisation API you will need to maintain different "versions" of your notice visualisation templates in order to correctly visualise notices on demand. + 
-TIP: If you want to visualise unpublished notices, you may consider restricting your application in visualising only notices created with the latest version of the eForms specification. +
-+
-TIP: Use the TED Visualisation API to visualise published notices. 
++ 
+TIP: To minimize the impact of this type of change on your traditional application, use the xref:api::endpoints/viewer-ted-europa-eu.adoc[TED Visualisation API] to visualise notices.
 

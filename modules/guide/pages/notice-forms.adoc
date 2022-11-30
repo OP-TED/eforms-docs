@@ -8,7 +8,7 @@ The form should also provide meaningful messages to the end-user so that they ar
 
 This is not a trivial task. Hoping that developers can reuse and extend the work that the Publications Office has been doing in the context of its own form filling tool (eNotices2), we are sharing in the eForms SDK the notice type definitions that we use in eNotices2.
 
-NOTE: This page presents a solution for metadata-driven applications using the eForms SDK. If you are developing a traditional application you do not need any help from the eForms SDK. You only need a lot of programmers, a lot of patience, and a lot of time.
+NOTE: This page presents a solution for metadata-driven applications using the eForms SDK. If you are developing a traditional application you can still use the solution presented here as a source of inspiration.
 
 What is a notice-type-definition file?::
 A notice type definition, (or NTD as we call them internally at the Publications Office), is a text file (in JSON format) which provides the *visual structure* of a notice form as it should appear on a user's screen. One such file is provided in the eForms SDK for every notice subtype that can be created by the end-users.

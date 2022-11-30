@@ -37,6 +37,8 @@ Repeatable `node`:: A repeatable `node` can repeat (itself) inside its parent `n
 
 Repeatable `field`:: A repeatable `field` can repeat (itself) inside its parent `node`. When a `field` is repeatable, then the XML element that repeats in the XML document, is the first XML element (the first `step`) in its relative XPath. A repeatable `field` may have several repeatable `nodes` in its `node-path`.
 
+Multilingual `field`:: A multilingual `field` is never repeatable. However several instances of a multilingual `field` can be created by the user to store the different text values of the field in different languages. All the instances of a multilingual `field` are meant to be created next to each other inside the parent `node` of the `field`.  
+
 === Visual model elements
 
 `display-group`:: A `display-group` is a structural element of the visual model. It represents a section of the notice or a group of `input-fields`. Every `display-group` has a parent `display-group` (except the root `display-group`). A `display-group` may contain several other `display-groups` as well as several `input-fields`. A `display-group` may or may not be `repeatable`.
@@ -51,7 +53,7 @@ Repeatable `input-field`:: A repeatable `input-field` may repeat more than one t
 
 When you constructed your visual model, you used the visual structure provided in the notice type definition files in the eForms SDK. To transform the notice data to the conceptual model you need to traverse all the elements of the visual model, one by one and follow the pseudo-algorithm presented here. 
 
-NOTE: You can traverse the visual model tree in several different ways. Chose the way that makes most sense to you. The way we chose to do it, is by executing a depth-first search in the visual model. 
+NOTE: You can traverse the visual model tree in several different ways. Choose the way that makes most sense to you. The way we chose to do it, is by executing a depth-first search in the visual model. For this discussion we assume you will use the visitor design pattern or a similar concept.
 
 === Visiting the elements in your visual model
 
@@ -120,7 +122,7 @@ Just as you did when visiting a `node`, extract all the `steps` from the relativ
 
 IMPORTANT: If the `field` is repeatable, then only the XML element that corresponds to first `step` that you extracted should be repeated.
 
-NOTE: Some fields point to XML attributes. Make sure you properly reflect that into you physical model, so that you can take it into account when serialise it to XML. 
+NOTE: Some fields point to XML attributes. Make sure you properly reflect that into your physical model, so that you can take it into account when serialise it to XML. 
 
 After visiting all the `nodes` and `fields` in the conceptual model, you now have a full physical model that you can directly serialise to XML. 
 
