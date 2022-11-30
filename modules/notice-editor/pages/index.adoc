@@ -1,0 +1,11 @@
+= Notice Editor Sample Application 🚧
+ifeval::[{eforms_latest_version} == {eforms_version}]
+:page-aliases: latest@index.adoc
+endif::[]
+
+NOTE: The documentation of the Notice Editor Sample Application is **not yet ready** for publication. We are working on it and we will update this page as soon as we have something we can share.
+
+To demonstrate how you can use the eForms SDK in a *metadata driven application* that allow the user to fill-in and submit eForms notices, we have created this sample application. The application is https://github.com/OP-TED/eforms-notice-editor[available on Github]. You are encouraged to use it for inspiration or as a basis for further development. You are also welcome to contribute with pull requests any improvements that you want to share with us and other eSenders.
+
+CAUTION: The notice Editor is not a production ready application. It is intended to demonstrate the use of concepts and resources available in the eForms SDK. You can use it as an inspiration or a starting point for your own apps.
+
