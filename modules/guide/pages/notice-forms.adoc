@@ -14,7 +14,7 @@ What is a notice-type-definition file?::
 A notice type definition, (or NTD as we call them internally at the Publications Office), is a text file (in JSON format) which provides the *visual structure* of a notice form as it should appear on a user's screen. One such file is provided in the eForms SDK for every notice subtype that can be created by the end-users.
 
 == Selecting the appropriate form
-To select the appropriate form for the specific type of notice that your end-user wants to create, you need to present to them all the available choices. The metadata that you need in order to present these choices to your end-users can be found in link:https://github.com/OP-TED/eForms-SDK/blob/{eforms_version}/notice-types/notice-types.json[`notice-types/notice-types.json`] in the eForms SDK. 
+To select the appropriate form for the specific type of notice that your end-user wants to create, you need to present to them all the available choices. The metadata that you need in order to present these choices to your end-users can be found in link:https://github.com/OP-TED/eForms-SDK/blob/{page-component-version}/notice-types/notice-types.json[`notice-types/notice-types.json`] in the eForms SDK. 
 
 NOTE: The choices available to the end-user depend, of course, on the version of the eForms SDK that you are using and are dynamically determined by reading the metadata provided in `notice-types.json`. 
 
