@@ -1,0 +1,48 @@
+= Visualising a notice
+
+To provide your users with a read only view of a notice you have the following options.
+
+== Using the TED Visualisation API
+
+You can call the TED Visualisation API to obtain a notice rendered in PDF or HTML. You can find more information on calling the specific API endpoint xref:api::endpoints/viewer-ted-europa-eu.adoc[here].
+
+[horizontal]
+Pros:: 
+* Quick and easy to add to your application.
+* No maintenance needed.
+Cons::
+* Only PDF and HTML visualisations.
+* Does not work offline.
+
+TIP: If you are creating a traditional application that does not rely on the eForms SDK this is the option we recommend.
+
+== Creating your own viewer
+
+If you want to have more control and better integration with your application you can also consider creating your own notice visualisation component.
+
+To understand the general concept of how this will work, think first of what a basic custom implementation would look like. 
+
+* You would have a template engine of your choice for your platform. For example you might choose to use XSLT, or FreeMarker, or Thymeleaf, or Mustache etc. Any template engine you prefer. 
+* You would manually prepare template files for your template engine of choice. Typically one template for each notice type.
+* You would pass the appropriate template file along with the Notice data to your template engine.
+* Your template engine would generate your chosen visualisation.
+
+This would be the way you would approach this in a fully DIY (do-it-yourself) scenario. To see how the eForms SDK can help with that, please read on.
+
+== Using the SDK
+
+Instead of creating and maintaining the template files manually yourself, what we provide in the eForms SDK is a set of template files that you can use with any template engine. Where is the catch you may be wondering. The catch is that the template files that we provide are written in EFX. Therefore you will need an EFX translator that will translate the EFX templates to your target template language.
+
+The benefit is that you can directly reuse the templates that we provide. The "price" you pay is that you need to write an EFX translator. To make this task as easy as possible we provide the xref:eforms:efx-toolkit:index.adoc[EFX Toolkit]. We also provide a xref:eforms:notice-viewer:index.adoc[sample application] that implements this idea to get you started. 
+
+Once you have created your EFX translator you won't need to worry about fully integrated notice visualisation again as your view templates will be automatically updated as needed through updates of the eForms SDK. 
+
+TIP: Use as a starting point the xref:eforms:notice-viewer:index.adoc[Notice Viewer Sample application]
+
+[horizontal]
+Pros::
+* Better integration with your application
+* No need to create and maintain your own templates
+* Future-proof, metadata-driven solution
+Cons:: 
+* You need to write an EFX Translator for your template language of choice, either by extending the xref:eforms:efx-toolkit:index.adoc[EFX Toolkit], or from scratch by using ANTLR4 and the EFX grammar provided in the SDK.
