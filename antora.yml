@@ -6,13 +6,3 @@ asciidoc:
     eforms_version: *ver # don't modify/remove this attribute. It is used in ROOT:index.adoc
 nav:
 - modules/ROOT/nav.adoc
-- modules/schema/nav.adoc
-- modules/fields/nav.adoc
-- modules/codelists/nav.adoc
-- modules/translations/nav.adoc
-- modules/notice-types/nav.adoc
-- modules/viewer-templates/nav.adoc
-- modules/reference/nav.adoc    # This points to the auto-generated "Metadata Reference" 
-- modules/efx/nav.adoc
-- modules/efx-toolkit/nav.adoc
-- modules/notice-viewer/nav.adoc

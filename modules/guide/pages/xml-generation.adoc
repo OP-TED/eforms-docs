@@ -1,0 +1,140 @@
+= Saving a notice in XML
+
+Your user has filled-in their notice on the screen and it is now time to serialize the notice data and store it in an XML file that will be submitted for publication. 
+
+IMPORTANT: The first thing you need to worry about is getting the XML right. The XML file you generate must comply with the eForms schema. That is easier said than done, but once you get this right, you won't have to worry about future schema changes again. Read on to see how this is done.
+
+The notice data is still somewhere in a data structure in your application. This is a data structure that you have designed and it probably matches the needs of your user interface. We will refer to this data structure from now on in our discussion as the *visual model*. See xref:#_definitions[definitions].
+
+Your goal is to get the data out of the *visual model* and transform it in such a way that it can easily be serialized to XML. In other words, you want to move your data to another data structure that is closer to the actual physical representation that your data will take inside the XML file. We will refer to this target data structure from now on in our discussion as the *physical model*. See xref:#_definitions[definitions].
+
+The problem of saving your notice data becomes therefore a transformation problem from a *visual model* to a *physical model*.
+
+Although you can attempt to do this transformation in one go, it will probably be too complicated to get right, because the visual and physical models are just too different. The one matches the end-user's conceptualisation of a notice as it appears on their screen, while the other matches the physical structure of the notice as it is stored inside and XML file. Fields that might be grouped together on the screen, might actually be stored in totally different parts of the XML. So, what you need to do to simplify things is to break this transformation into two steps: 
+
+1. Transform you notice data from your *visual model* to an intermediate model that breaks out of the *visual structure* but maintains all the information necessary to construct the *physical model*.
+2. Transform your data from this intermediate model to the *physical model*.
+
+We will refer to this intermediate model from now on in our discussion as the *conceptual model*.
+
+== Definitions
+
+Visual Model:: A data model that the notice data adheres to while the notice is being edited by the end-user. This data model contains visual elements like notice sections, control groups and user-input controls together with the values entered by the user. We call it a visual model because its structure conforms to the structure of the notice on the end-user's screen. 
+
+Conceptual Model:: A data model that follows the conceptualisation of a notice used by the eForms SDK. This data model contains `nodes` and `fields` and it follows the logical structure of a notice as defined in the eForms SDK (in `fields/fields.json`).
+
+Physical Model:: A data model that follows the actual physical structure that the notice data will have when stored inside the XML file. This model contains XML elements and XML attributes and follows the notice structure as defined by the eForms schema.
+
+=== Conceptual model elements
+
+`node`:: A `node` is a structural element of the conceptual model. Every `node` has a parent `node` (except the root `node`). Every `node` has a XPath relative to [the absolute XPath of] its parent `node`. The relative XPath of a `node` may contain more than one `steps` (each representing an XML element). XPath `steps` are always separated with a forward slash `/`. A `node` may contain child `nodes` as well as `fields`. A `node` may or may not be repeatable. 
+
+Repeatable `node`:: A repeatable `node` can repeat (itself) inside its parent `node`. When a `node` is repeatable, then the XML element that repeats in the XML document, is the first XML element (the first `step`) in its relative XPath. A repeatable `node` may have several other repeatable `nodes` in its `node-path`.
+
+`node-path`:: The `node-path` of a `node` is a list of all the ancestors of a `node` in hierarchical order (starting from the root `node` and continuing hierarchically until the `node` itself). The `node-path` is a concept similar to the concept of XPath, where each `step` is a `node` identifier rather than an XML element. The `node-path` of a `field` is the `node-path` of its parent `node` followed by the `field` identifier.
+
+`field`:: A field is a data element in the conceptual model. Every `field` has a parent `node`. Every `field` has a XPath relative to [the absolute XPath of] its parent `node`. The relative XPath of a `field` may contain more than one `steps` (each representing an XML element or XML attribute). XPath `steps` are always separated with a forward slash `/`. The relative XPath of a `field` may point to an XML element or an XML attribute. A `field` may or may not be repeatable. 
+
+Repeatable `field`:: A repeatable `field` can repeat (itself) inside its parent `node`. When a `field` is repeatable, then the XML element that repeats in the XML document, is the first XML element (the first `step`) in its relative XPath. A repeatable `field` may have several repeatable `nodes` in its `node-path`.
+
+Multilingual `field`:: A multilingual `field` is never repeatable. However several instances of a multilingual `field` can be created by the user to store the different text values of the field in different languages. All the instances of a multilingual `field` are meant to be created next to each other inside the parent `node` of the `field`.  
+
+=== Visual model elements
+
+`display-group`:: A `display-group` is a structural element of the visual model. It represents a section of the notice or a group of `input-fields`. Every `display-group` has a parent `display-group` (except the root `display-group`). A `display-group` may contain several other `display-groups` as well as several `input-fields`. A `display-group` may or may not be `repeatable`.
+
+Repeatable `display-group`:: A repeatable `display-group` may repeat more than one times inside its parent `display-group`. A repeatable `display-group` is *always* associated with a repeatable `node` in the conceptual model.
+
+`input-field`:: An `input-field` is a data element of the visual model. It represents an input element in the form where the user will enter data for a specific `field`. An `input-field` is always associated with a `field` in the conceptual model. An `input-field` may or may not be repeatable.
+
+Repeatable `input-field`:: A repeatable `input-field` may repeat more than one times inside its parent `display-group`. A repeatable `input-field` is always associated with a repeatable `field` in the conceptual model.
+
+== Step 1: Transforming from visual to conceptual model
+
+When you constructed your visual model, you used the visual structure provided in the notice type definition files in the eForms SDK. To transform the notice data to the conceptual model you need to traverse all the elements of the visual model, one by one and follow the pseudo-algorithm presented here. 
+
+NOTE: You can traverse the visual model tree in several different ways. Choose the way that makes most sense to you. The way we chose to do it, is by executing a depth-first search in the visual model. For this discussion we assume you will use the visitor design pattern or a similar concept.
+
+=== Visiting the elements in your visual model
+
+The first thing you need to do is create all the repeatable `nodes` needed in the conceptual model. This is the hardest part of the job and the most critical to get right, so take care of this first.
+
+Here is how it works: For every repeatable `node` that needs to appear in the conceptual model, there is always a repeatable `display-group` in your visual model associated with that `node`. All you have to do is go though all the `display-groups` in your visual model and check if they are associated with a `node`. 
+
+IMPORTANT: You need to conduct a depth-first search starting from the root level `display-groups` in your visual model. To be able to do this you need to make sure that your visual model maintains its hierarchical structure. This way, you can move as needed, to the parent element and child elements of any visual element you visit.
+
+If a `display-group` is not repeatable, continue to its first child `display-group`. As soon as you find a `display-group` that is repeatable you need to create one or more `nodes` for it in the conceptual model. Actually you need to create as many `nodes` as the times the end-user has repeated the `display-group` in the notice data. 
+
+NOTE: Remember: When a `node` is marked as `repeatable` it means that the `node` itself repeats inside its parent `node`.
+
+Before creating any `node` in the conceptual model, always make sure to create its parent `node` first. This way the root `node` of the conceptual model will always end up being created first and there will always be a parent `node` to which you can attach your new `node`. Now that the parent `node` exists, you can proceed with creating one `node` for each instance of the repeatable `display-group` and and attaching it to its parent `node` in the conceptual model. 
+
+.When creating a `node`
+****
+When adding a `node` to your conceptual model, make sure to assign a unique instance identifier to it. Also make sure to assign the same unique instance identifier to the `display-group` in your visual model, which the new node corresponds to. You are doing this so that you can later find the instance of the `display-group`, which a given `node` instance corresponds to, and vice versa.
+
+You may also get away without instance identifiers, but this will depend on how your recursion algorithm is constructed. The point is that you need to be able to match a `display-group` instance with the corresponding `node` instance. If you can do it without instance identifiers, then all is good too. We recommend using instance identifiers because there is no way to make a mistake if you use them.
+****
+
+Continue your depth-first search until you find the next repeatable `display-group`. 
+
+=== Nested repeatable `display-groups`
+
+What if a repeatable `display-group` is nested inside one or more repeatable `display-groups`? When you encounter a case like that, you can safely assume that both the visual and the conceptual models, always follow the same nesting pattern. For example, if you are visiting repeatable `display-group-B` and `display-group-B` has a repeatable ancestor `display-group-A` in the visual model, then you can assume that the repeatable `node-A` in the conceptual model is also an ancestor of the repeatable `node-B` (where `node-A` is the repeatable `node` that corresponds to the repeatable `display-group-A` and `node-B` likewise for `display-group-B`). 
+
+The reason why you are doing a depth-first search has just become apparent. All the ancestor repeatable `display-groups` have already been visited and processed, so their corresponding `nodes` are already created in the conceptual model. The only thing you need to do now, is to find the correct instance of the ancestor repeatable `node` to which to attach the new `node`.
+
+To do that, you will need to use unique instance identifiers. Remember you are doing a depth-first search in the visual model and you are currently visiting a repeatable `display-group`. You need to find its first ancestor which is also repeatable. Get its unique identifier. Look for the `node` in the conceptual model with the same unique identifier. That's the `node` you are looking for. From that `node` reconstruct the `node-path` until you reach the `node` that you are trying to attach. Done.
+
+Continue your depth-first search until done. Now you have a conceptual model that contains all the `nodes` that are needed to construct your physical model. 
+
+=== Visiting `input-fields`
+
+When visiting an `input-field` you need to add a corresponding `field` in your conceptual model. 
+
+NOTE: Much of the logic that applies when visiting an `input-field` is the same as the one that applies when visiting a repeatable `display-group`. We are keeping this description brief as we assume that you have just read the preceding part of this document and that you are already familiar with the concepts involved.  
+
+IMPORTANT: Like when adding `nodes`, before adding a `field` in the conceptual model, always make sure the you have added its parent `node` first. 
+
+An `input-field` will never have a repeatable ancestor in the visual model unless that repeatable ancestor corresponds to a repeatable `node` that is also an ancestor of the corresponding `field`. Therefore, it is safe to assume that whenever you visit an `input-field`, then any repeatable ancestors will have already been visited and their corresponding `nodes` have already been created in the conceptual model.
+
+If the `input-field` has any repeatable ancestors in the visual model, then you can follow the same logic that you followed for nested repeatable `display-groups`: Find the first repeatable ancestor in the visual model, go to the corresponding `node` in the conceptual model, and from there reconstruct all the necessary nodes from the `node-path` of the `field`. until you can add the `field` itself. 
+
+If the `input-field` is repeatable, then add as many instances of the corresponding `field` in the conceptual model as the number of times the end-user repeated the `input-field` in the notice form.
+
+If the `input-field` does not have any repeatable ancestors, then simply create any of the ancestor `nodes` that are not already present in the conceptual model. Any `node` that has no repeatable ancestors always appears once.
+
+== Step 2: Transforming from conceptual to physical model
+
+You now have all the notice data in a new data structure (the conceptual model) which is much closer to the final shape that the notice data will take inside the XML file. Your goal is now to transform the notice data from the conceptual to the physical model so that you can eventually serialise them in XML.
+
+NOTE: Remember: The conceptual model contains `nodes` and `fields`. The physical model contains XML elements and attributes. Each `node` and  `field` has a XPath relative to their parent `node`. This relative XPath contains one or more `steps`, separated by a forward slash '/'. Each of these `steps` is an XML element or XML attribute. 
+
+To generate your physical model you need to "unpack" the XML elements contained in the relative XPath of each of the `nodes` and `fields` in your conceptual model. To do this you need to traverse the conceptual model, element by element. Do a depth-first search again, starting from the root node. 
+
+=== Visiting a `node`
+When visiting a `node` in the conceptual model, take its relative XPath and extract the `steps` it contains. Add an XML element to the physical model for each `step` that you extracted. 
+
+IMPORTANT: If the `node` is a repeatable node, then *only the first* `step` that you extracted from its relative XPath should be repeated.  
+
+=== Visiting a `field`
+Just as you did when visiting a `node`, extract all the `steps` from the relative XPath of the `field` which you are currently visiting, and add them to the physical model. 
+
+IMPORTANT: If the `field` is repeatable, then only the XML element that corresponds to first `step` that you extracted should be repeated.
+
+NOTE: Some fields point to XML attributes. Make sure you properly reflect that into your physical model, so that you can take it into account when serialise it to XML. 
+
+After visiting all the `nodes` and `fields` in the conceptual model, you now have a full physical model that you can directly serialise to XML. 
+
+=== Getting the XML elements
+One "inconvenience" that you will have to face is that you have to extract the XML elements and XML attributes that you need to add to your physical model, from the relative XPaths provided inside `fields.json`. Be aware that the XPaths are not always trivial as many of them contain one or more predicates.
+
+TIP: Simply splitting the XPath string on `'/'` won't work. You can use regular expressions to extract the steps. We use an XPath parser just to be on the safe side. 
+
+NOTE: We know that extracting the `steps` from an XPath is not rocket science and that you can do it yourself; but it would have been much easier for everyone, if we had provided this information pre-processed and ready for you inside `fields.json`. Actually, this is something we intend to do in a future release of the SDK. 
+
+=== Getting the element order right
+Ideally we would like you to be able to generate the XML without ever needing to look at the XSD. For the moment however, there is a piece of necessary information that you can only find inside the XSD: the correct order of XML elements within their parent element. This si because the order of XML elements inside an `xsd:sequence` is significant.
+
+NOTE: We are aware that having to open the XSD just to lookup the order of XML elements is not very convenient. So we plan to add this in `fields.json` in a future release of the SDK.
+
