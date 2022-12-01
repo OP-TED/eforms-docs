@@ -1,7 +1,4 @@
 = eForms Expression Language
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@index.adoc
-endif::[]
 
 The eForms Expression Language (EFX) is a domain specific language used to formally express and communicate the eForms business rules.
 

@@ -1,1 +1,1 @@
-* xref:{eforms_version}@eforms:codelists:index.adoc[Codelists]
+* xref:{page-component-version}@eforms:codelists:index.adoc[Codelists]

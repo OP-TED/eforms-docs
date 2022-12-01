@@ -1,7 +1,4 @@
 = eForms SDK versioning
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@versioning.adoc
-endif::[]
 
 The eForms SDK has adopted semantic versioning (https://semver.org/[SemVer]). The SDK version is indicated using a triplet of numbers separated with dots in the form `major`.`minor`.`revision`. 
 
