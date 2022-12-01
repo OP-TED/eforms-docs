@@ -1,1 +1,1 @@
-* xref:{eforms_version}@eforms:notice-types:index.adoc[Notice Types]
+* xref:{page-component-version}@eforms:notice-types:index.adoc[Notice Types]

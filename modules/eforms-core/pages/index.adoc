@@ -1,7 +1,4 @@
 = eForms Core Library for Java developers  🚧
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@index.adoc
-endif::[]
 
 NOTE: The documentation of the eForms Core Library is **not yet ready** for publication. We are working on it and we will update this page as soon as we have something we can share.
 
