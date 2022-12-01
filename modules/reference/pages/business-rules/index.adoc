@@ -1,5 +1,5 @@
 = Business Rules
-The following Business Rules are included in eForms SDK {eforms_version}.
+The following Business Rules are included in eForms SDK {page-component-version}.
 
 == Rules applicable to specific notice sub-types
 Click on one of the notice sub-types listed below to see the business rules that apply to it:
