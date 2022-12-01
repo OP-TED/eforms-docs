@@ -1,7 +1,4 @@
 = Notice View Templates
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@index.adoc
-endif::[]
 
 To standardise the way a notice can be visualised, independently of the media format used (PDF, HTML etc.), we have decided to create and share with our developer community a set of "view templates".
 

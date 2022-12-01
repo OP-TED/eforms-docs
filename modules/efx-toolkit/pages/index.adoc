@@ -1,7 +1,4 @@
 = EFX Toolkit for Java Developers
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@index.adoc
-endif::[]
 
 The EFX Toolkit for Java developers is a library that enables the transpilation of EFX expressions and templates to different target languages. The library, which is created and used by the Publications Office in its TED applications, is https://github.com/OP-TED/efx-toolkit-java[available on Github], for eForms application developers that work with Java. You are encouraged to use the library in your applications as well as to contribute to its development with pull requests, any improvements or fixes you want to share with us and other developers.
 
