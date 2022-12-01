@@ -2,7 +2,7 @@
 :icons: font
 
 
-The following Business Terms are included in version {eforms_version} of eForms SDK.
+The following Business Terms are included in version {page-component-version} of eForms SDK.
 
 // We display Business Terms grouped by Business Group
 [#BG-1]
