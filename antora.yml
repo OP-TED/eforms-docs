@@ -7,6 +7,3 @@
 name: eforms
 version: '1.1'
 display_version: &ver '1.1.1'
-asciidoc:
-  attributes:
-    eforms_version: *ver
