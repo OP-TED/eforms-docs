@@ -1,7 +1,4 @@
 = Field metadata
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@index.adoc
-endif::[]
 
 == What is a field
 
