@@ -1,7 +1,4 @@
 = Creating  eForms applications
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@metadata-driven-applications.adoc
-endif::[]
 
 Before considering how to create eForms applications, let's define what an eForms application is, along with a few other necessary concepts. 
 

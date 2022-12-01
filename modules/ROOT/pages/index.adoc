@@ -1,18 +1,13 @@
 = eForms SDK documentation
 // Disable Antora TOC
 :page-toclevels: -1  
-// The following lines create a redirection from "/eforms/latest/" to this page
-// if the {eforms_latest_version} as specified in the antora-playbook.yml 
-// is equal to the {eforms_version} as specified in antora.yml.
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@index.adoc
-endif::[]
 
 eForms is the notification standard for public procurement procedures in the EU. The eForms SDK is a collection of resources providing the foundation for building eForms applications.
-ifeval::[{eforms_latest_version} != {eforms_version}]
+ifeval::[{page-component-version-is-latest} != true]
 
-IMPORTANT: You are currently reading the documentation that was published for eForms SDK version *{eforms_version}*. +
-The latest version of eForms SDK is xref:{eforms_latest_version}@ROOT:index.adoc[*{eforms_latest_version}*]. 
+
+IMPORTANT: You are currently reading the documentation that was published for eForms SDK version *{page-component-version}*. +
+The latest version of eForms SDK is xref:{page-component-latest-version}@ROOT:index.adoc[*{page-component-latest-version}*]. 
 endif::[]
 
 The following topics are included in this version of the eForms Documentation:
@@ -80,6 +75,6 @@ See how you can create a metadata driven application for visualising any eForms 
 See how you can create a metadata driven application for filling-in and submitting eForms notices.
 
 TIP: For every release of the eForms SDK, a copy of the corresponding documentation is maintained in this website. You can select the version of documentation that you want to consult by selecting the corresponding version of the SDK either in the dropdown menu available on the top right of this page, or the component navigation panel available on the bottom left of each page. +
-ifeval::[{eforms_latest_version} == {eforms_version}]
-You are currently reading the documentation published for the latest version of eForms SDK ({eforms_version}).
+ifeval::[{page-component-version-is-latest} == true]
+You are currently reading the documentation published for the latest version of eForms SDK ({page-component-version}).
 endif::[]
