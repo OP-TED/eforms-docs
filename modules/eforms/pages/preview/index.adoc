@@ -94,9 +94,9 @@ Notices go through CVS validation when they are submitted, or when the user clic
 
 Result notices cannot be successfully validated/ submitted through the user interface.
 
-For the moment, CVS validation does not work dynamically, i.e. there is no check between notices. This has implications, e.g. for checking notices of the same procedure or the same UUID v4 and different version ID; currently it is possible to submit and publish two notices that carry the same notice ID and different version IDs. See in contrast: https://docs.ted.europa.eu/eforms/1.4.0/schema/elements.html#noticeIDSection.
+For the moment, CVS validation does not work dynamically, i.e. there is no check between notices. This has implications, e.g. for checking notices of the same procedure or the same UUID v4 and different version ID; currently it is possible to submit and publish two notices that carry the same notice ID and different version IDs. See in contrast: https://docs.ted.europa.eu/eforms/latest/schema/elements.html#noticeIDSection.
 
-For the moment, it is not possible to link a TED Schema notice to an eForms notice via the Previous Notice (OPP-090) as described in the documentation: https://docs.ted.europa.eu/eforms/1.4.0/schema/elements.html#previousNoticeSection.
+For the moment, it is not possible to link a TED Schema notice to an eForms notice via the Previous Notice (OPP-090) as described in the documentation: https://docs.ted.europa.eu/eforms/latest/schema/elements.html#previousNoticeSection.
     
 eNotices2 uses the codelists from the SDK, which have not been completely tailored. 
 
