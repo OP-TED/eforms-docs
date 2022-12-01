@@ -1,6 +1,6 @@
 = Codelists
 
-The following Codelists are included in version {eforms_version} of the eForms SDK. 
+The following Codelists are included in version {page-component-version} of the eForms SDK. 
 
 == Official Codelists
 include::partial$code-lists/official.adoc[]
