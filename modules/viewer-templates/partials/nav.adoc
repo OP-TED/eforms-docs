@@ -1,1 +1,1 @@
-* xref:{eforms_version}@eforms:viewer-templates:index.adoc[View Templates]
+* xref:{page-component-version}@eforms:viewer-templates:index.adoc[View Templates]

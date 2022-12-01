@@ -1,7 +1,4 @@
 = Notice Viewer Sample Application
-ifeval::[{eforms_latest_version} == {eforms_version}]
-:page-aliases: latest@index.adoc
-endif::[]
 
 To demonstrate how you can use the eForms SDK in a *metadata driven application* that visualises eForms notices, we have created this sample application. The application is https://github.com/OP-TED/eforms-notice-viewer[available on Github]. You are encouraged to use it for inspiration or as a basis for further development. You are also welcome to contribute with pull requests any improvements that you want to share with us and other eSenders.
 
