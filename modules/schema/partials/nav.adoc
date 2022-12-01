@@ -1,19 +1,19 @@
-* <<{eforms_version}@eforms:schema:index.adoc#, eForms Specification>>
-** <<{eforms_version}@eforms:schema:introduction.adoc#, Introduction>>
-** <<{eforms_version}@eforms:schema:documents-forms-and-notices.adoc#, Documents, forms & notices>>
-** <<{eforms_version}@eforms:schema:notice-content.adoc#, Notice content>>
-** <<{eforms_version}@eforms:schema:elements.adoc#, Elements>>
-*** <<{eforms_version}@eforms:schema:schemas.adoc#, Schemas>>
-*** <<{eforms_version}@eforms:schema:notices-xml-structure.adoc#, Notices XML structure>>
-*** <<{eforms_version}@eforms:schema:notice-information.adoc#, Notice information>>
-*** <<{eforms_version}@eforms:schema:procedure-lot-part-information.adoc#, Procedure, Group of Lots, Lot & Part related information>>
-*** <<{eforms_version}@eforms:schema:competition-results.adoc#, Competition Results>>
-*** <<{eforms_version}@eforms:schema:parties.adoc#, Parties>>
-** <<{eforms_version}@eforms:schema:change-notice.adoc#, Change notice>>
-** <<{eforms_version}@eforms:schema:contract-modification-notice.adoc#, Contract Modification Notice>>
-** <<{eforms_version}@eforms:schema:withheld-publication.adoc#, Withheld publication of information>>
-** <<{eforms_version}@eforms:schema:codelists-and-fields.adoc#, Codelists and Fields>>
-** <<{eforms_version}@eforms:schema:identifiers.adoc#, Identifiers>>
-** <<{eforms_version}@eforms:schema:acronyms-and-abbreviations.adoc#, Acronyms & abbreviations>>
-** <<{eforms_version}@eforms:schema:terms-and-definitions.adoc#, Terms & definitions>>
-** <<{eforms_version}@eforms:schema:other-resources.adoc#, Other Resources>>
+* <<{page-component-version}@eforms:schema:index.adoc#, eForms Specification>>
+** <<{page-component-version}@eforms:schema:introduction.adoc#, Introduction>>
+** <<{page-component-version}@eforms:schema:documents-forms-and-notices.adoc#, Documents, forms & notices>>
+** <<{page-component-version}@eforms:schema:notice-content.adoc#, Notice content>>
+** <<{page-component-version}@eforms:schema:elements.adoc#, Elements>>
+*** <<{page-component-version}@eforms:schema:schemas.adoc#, Schemas>>
+*** <<{page-component-version}@eforms:schema:notices-xml-structure.adoc#, Notices XML structure>>
+*** <<{page-component-version}@eforms:schema:notice-information.adoc#, Notice information>>
+*** <<{page-component-version}@eforms:schema:procedure-lot-part-information.adoc#, Procedure, Group of Lots, Lot & Part related information>>
+*** <<{page-component-version}@eforms:schema:competition-results.adoc#, Competition Results>>
+*** <<{page-component-version}@eforms:schema:parties.adoc#, Parties>>
+** <<{page-component-version}@eforms:schema:change-notice.adoc#, Change notice>>
+** <<{page-component-version}@eforms:schema:contract-modification-notice.adoc#, Contract Modification Notice>>
+** <<{page-component-version}@eforms:schema:withheld-publication.adoc#, Withheld publication of information>>
+** <<{page-component-version}@eforms:schema:codelists-and-fields.adoc#, Codelists and Fields>>
+** <<{page-component-version}@eforms:schema:identifiers.adoc#, Identifiers>>
+** <<{page-component-version}@eforms:schema:acronyms-and-abbreviations.adoc#, Acronyms & abbreviations>>
+** <<{page-component-version}@eforms:schema:terms-and-definitions.adoc#, Terms & definitions>>
+** <<{page-component-version}@eforms:schema:other-resources.adoc#, Other Resources>>
