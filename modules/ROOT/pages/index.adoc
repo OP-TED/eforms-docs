@@ -3,9 +3,8 @@
 :page-toclevels: -1  
 
 eForms is the notification standard for public procurement procedures in the EU. The eForms SDK is a collection of resources providing the foundation for building eForms applications.
-ifeval::[{page-component-version-is-latest} != true]
 
-
+ifeval::[{page-component-latest-version} != {page-component-version}]
 IMPORTANT: You are currently reading the documentation that was published for eForms SDK version *{page-component-version}*. +
 The latest version of eForms SDK is xref:{page-component-latest-version}@ROOT:index.adoc[*{page-component-latest-version}*]. 
 endif::[]
@@ -75,6 +74,6 @@ See how you can create a metadata driven application for visualising any eForms 
 See how you can create a metadata driven application for filling-in and submitting eForms notices.
 
 TIP: For every release of the eForms SDK, a copy of the corresponding documentation is maintained in this website. You can select the version of documentation that you want to consult by selecting the corresponding version of the SDK either in the dropdown menu available on the top right of this page, or the component navigation panel available on the bottom left of each page. +
-ifeval::[{page-component-version-is-latest} == true]
+ifeval::[{page-component-latest-version} == {page-component-version}]
 You are currently reading the documentation published for the latest version of eForms SDK ({page-component-version}).
 endif::[]
