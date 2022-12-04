@@ -1449,7 +1449,7 @@ ____
 ____
 
 Further details on Tendering Party (components, use and sample) may be
-found in <<tenderingPartySection>>.
+found in xref:competition-results.adoc#tenderingPartySection[Tendering Party].
 
 === The winner
 

@@ -41,7 +41,7 @@ include::acronyms-and-abbreviations.adoc[leveloffset=+1]
 [%hardbreaks]
 <<formTypesFigure>>
 <<noticeMajorComponentsFigure>>
-<<reusedElementsFigure>>
+<<notices-xml-structure.adoc#reusedElementsFigure, Major reused components>>
 <<noticeResultStructureFigure>>
 <<noticeResultAggregatedAmountsFigure>>
 <<lotResultStructureFigure>>
@@ -59,7 +59,7 @@ include::acronyms-and-abbreviations.adoc[leveloffset=+1]
 :xrefstyle: full
 
 [%hardbreaks]
-<<noticeTypesSubtypesTable>>
+<<documents-forms-and-notices.adoc#noticeTypesSubtypesTable, Notice types & subtypes>>
 <<noticeTypesAndTheirAssociatedSchemasTable>>
 <<namespacePrefixesNamesTable>>
 <<contextualInterpretationOfHighLevelRepeatableElementsTable>>
@@ -121,7 +121,24 @@ include::documents-forms-and-notices.adoc[leveloffset=+1]
 include::notice-content.adoc[leveloffset=+1]
 
 [[elementsSection]]
-include::elements.adoc[leveloffset=+1]
+== Elements
+
+[[schemasSection]]
+include::schemas.adoc[leveloffset=+1]
+
+[[noticesXmlStructureSection]]
+include::notices-xml-structure.adoc[leveloffset=+1]
+
+[[noticeInformationSection]]
+include::notice-information.adoc[leveloffset=+1]
+
+[[procedureGroupOfLotsLotPartRelatedInformationSection]]
+include::procedure-lot-part-information.adoc[leveloffset=+1]
+
+[[competitionResultsSection]]
+include::competition-results.adoc[leveloffset=+1]
+
+include::parties.adoc[leveloffset=+1]
 
 [[changeNoticeSection]]
 include::change-notice.adoc[leveloffset=+1]
