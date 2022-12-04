@@ -208,7 +208,7 @@ same notice.
 |*_"Unpublish" fields_* a|
 _(BT-710, BT-711, BT-142)_
 
-_Cf. <<lotResultLevelSection>>_
+_Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]_
 
 | |
 
@@ -285,7 +285,7 @@ cac:PayerParty{zwsp}/cac:PartyIdentification{zwsp}/cbc:ID
 |*_"Unpublish" fields_* a|
 _BT-712_
 
-Cf. <<lotResultLevelSection>>
+Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
 
 | | 
 
@@ -326,7 +326,7 @@ efac:AppealRequestsStatistics[efbc:StatisticsCode{zwsp}/@listName='irregularity-
 |*_"Unpublish" fields_* a|
 _BT-144_
 
-Cf. <<lotResultLevelSection>>
+Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
 
 |*?* | 
 
@@ -357,7 +357,7 @@ efac:LotTender{zwsp}/cbc:ID
 |*_"Unpublish" fields (Framework)_* a|
 _BT-709, BT-660_
 
-Cf. <<lotResultLevelSection>>
+Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
 
 | | 
 
@@ -382,7 +382,7 @@ efac:FrameworkAgreementValues{zwsp}/cbc:MaximumValueAmount
 |*_"Unpublish" fields_* a|
 (BT-759, BT-760)
 
-Cf. <<lotResultLevelSection>>
+Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
 
 |*** | 
 
@@ -686,7 +686,7 @@ image::image016.jpg[image,width=317,height=407]
 |*_"Unpublish" fields_* a|
 _(BT-171, BT-193, BT-720)_
 
-_Cf. <<lotTenderLevelSection>>_
+_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
 
 | | 
 
@@ -723,7 +723,7 @@ efbc:TenderVariantIndicator
 |*_"Unpublish" fields_* a|
 _(BT-160, BT-162, BT-163)_
 
-_Cf. <<lotTenderLevelSection>>_
+_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
 
 | |
 
@@ -764,7 +764,7 @@ cac:LegalMonetaryTotal{zwsp}/cbc:PayableAmount
 |*_"Unpublish" fields_* a|
 _(BT-191)_
 
-_Cf. <<lotTenderLevelSection>>_
+_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
 
 | |
 
@@ -851,7 +851,7 @@ efac:ContractTerm[efbc:TermCode{zwsp}/text()='all-rev-tic']{zwsp}/efbc:TermPerce
 |*_"Unpublish" fields_* a|
 _subcontract terms (BT-553, BT-554, BT-555, BT-730, BT-731, BT-773)_
 
-_Cf. <<lotTenderLevelSection>>_
+_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
 
 | |
 

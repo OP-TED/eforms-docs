@@ -18,5 +18,5 @@ include::procedure-lot-part-information.adoc[leveloffset=+1]
 [[competitionResultsSection]]
 include::competition-results.adoc[leveloffset=+1]
 
-[[partiesSection]]
+// [[partiesSection]]
 include::parties.adoc[leveloffset=+1]

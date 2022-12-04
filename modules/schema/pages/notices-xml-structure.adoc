@@ -53,7 +53,7 @@ information for the Lot (Part, or Group of Lots) only.
 |Procurement Project Lot |Purpose of the Lot (Part, or Group of Lots)
 |===
 
-Further details on these different components will be provided in <<procedureGroupOfLotsLotPartRelatedInformationSection>> and
+Further details on these different components will be provided in xref:procedure-lot-part-information.adoc[] and
 following sections.
 
 == The notice metadata
