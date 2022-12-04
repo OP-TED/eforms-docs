@@ -7,7 +7,7 @@
 == Introduction
 
 Procedure related information exists at the root of the notice as shown
-in <<reusedElementsFigure>> above.
+in <<notices-xml-structure.adoc#reusedElementsFigure, Major reused components>> above.
 
 Each Groups of Lots, Lot, and Part, has its information in its dedicated
 "_cac:ProcurementProjectLot_" element whose identifier is built using
@@ -90,7 +90,7 @@ are needed for Group of Lots.
 
 == Information relative to each object
 
-As illustrated in <<reusedElementsFigure>>, each object ("_Procedure_", "_Group of
+As illustrated in <<notices-xml-structure.adoc#reusedElementsFigure, Major reused components>>, each object ("_Procedure_", "_Group of
 Lots_", "_Lot_" and "_Part_") has its information encoded in 3 main
 blocks: "_TenderingTerms_", "_TenderingProcess_" and
 "_ProcurementProject_".
@@ -777,7 +777,7 @@ a|
 
 _(Organization subrole)_
 
-|_xref:processingPartiesSection[xrefstyle=short]_ |-- |-- h|? h|? |-- h|? |-- |-- 
+|_xref:#partiesSection[xrefstyle=short]_ |-- |-- h|? h|? |-- h|? |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
@@ -785,7 +785,7 @@ cac:AdditionalInformationParty
 ----
 
 |*_Organization providing offline access to the procurement documents_*
-|_xref:processingPartiesSection[xrefstyle=short]_ |-- |-- h|? h|? |-- h|? |-- |-- 
+|_xref:#partiesSection[xrefstyle=short]_ |-- |-- h|? h|? |-- h|? |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
@@ -798,14 +798,14 @@ a|
 
 _(Organization subrole)_
 
-|_xref:processingPartiesSection[xrefstyle=short]_ |-- |-- h|? |-- |-- h|? |-- |-- 
+|_xref:#partiesSection[xrefstyle=short]_ |-- |-- h|? |-- |-- h|? |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
 cac:TenderRecipientParty
 ----
 
-|*Submission URL (BT-18)* | xref:processingPartiesSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- a|
+|*Submission URL (BT-18)* | xref:#partiesSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:TenderRecipientParty{zwsp}/cbc:EndpointID
@@ -817,7 +817,7 @@ a|
 
 _(Organization subrole)_
 
-|_xref:processingPartiesSection[xrefstyle=short]_ |-- |-- h|? |-- |-- h|? |-- |-- 
+|_xref:#partiesSection[xrefstyle=short]_ |-- |-- h|? |-- |-- h|? |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
@@ -1973,7 +1973,7 @@ Finally the prize description is provided as text.
 </cac:Prize>
 ----
 
-[[processingPartiesSection]]
+[[partiesSection]]
 === Tenders processing parties (BT-18)
 
 Other parties that can be involved in processing tenders are:
@@ -2005,7 +2005,7 @@ They may then be coded in the instance using the elements shown below.
 ----
 
 The mark-up of the information for these organizations is presented in
-<<partiesSection>>.
+xref:eforms:schema:parties.adoc[].
 
 Submission URL (BT-18) is marked using the "_cbc:EndpointID_" child of
 the "_cac:TenderRecipientParty_" element.
@@ -2862,7 +2862,7 @@ with the schemeName: "notice-id-ref" and "ojs-notice-id" respectively.
 Parts of the referenced Planning notice are individually identified
 using multiple occurrences of the element
 "_cbc:ReferencedDocumentInternalAddress_". The ID for the reference to
-the Part shall following the scheme ID reported in <<IDsReferencesSection>>, namely
+the Part shall following the scheme ID reported in <<identifiers.adoc#IDsReferencesSection, IDs &amp; References>>, namely
 "PAR-XXXX".
 
 [source,xml]
@@ -3193,7 +3193,7 @@ definition:
 </cac:FrameworkAgreement>
 ----
 
-For a CAN, when Lots with Framework Agreements have been awarded, further Framework Agreement related information is to be expected in the Result section (cf. <<competitionResultsSection>>).
+For a CAN, when Lots with Framework Agreements have been awarded, further Framework Agreement related information is to be expected in the Result section (cf. xref:eforms:schema:competition-results.adoc[]).
 
 [[DPSSection]]
 === Dynamic Purchasing System (BT-766)
