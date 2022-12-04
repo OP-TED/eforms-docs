@@ -9,12 +9,13 @@ In other words EFX was designed so that it can be automatically translated to th
 TIP: Typically, there is no reason to translate the EFX expressions and templates at runtime. The recommended approach would be to translate all EFX code to the target languages of your choice only once: at the time you import a new version of the eForms SDK into your application. 
 
 == Available EFX transpilers
-The EFX Toolkit for Java Developers, contains a generic translator that can be reused to translate EFX to several different target languages. See xref:_create_your_own_translations_using_the_efx_toolkit[next section] for more details.
+The EFX Toolkit for Java Developers, contains a generic translator that can be reused to translate EFX to several different target languages. See xref:#create-your-own-translators[next section] for more details.
 
 The toolkit, provides an implementation of the `ScriptGenerator` interface that targets *XPath* (see `XPathScriptGenerator`). This is the same implementation used by the Publications Office to generate the Schematron files included in the eForms SDK. 
 
 Additionally, the Notice Viewer sample application, contains an implementation of the `MarkupGenerator` interface that targets *XSLT* (for transpiling EFX templates). Although the implementation in this sample application is too simplistic to be suitable for reuse without modifications, you can always use it as an inspiration or as the starting point to create a `MarkupGenerator` for XSLT that satisfies your production requirements.
 
+[[create-your-own-translators]]
 == Create your own translators using the EFX Toolkit 
 
 The EFX Toolkit contains two reusable transpilers:
