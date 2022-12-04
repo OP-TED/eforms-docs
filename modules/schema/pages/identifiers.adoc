@@ -173,7 +173,7 @@ A single contract modification per notice
 | |RESULT
 
 |BT-195 |Unpublished Identifier |Values defined in a codelist of
-Unpublished Business Terms Codes | |Cf. <<withheldPublicationOfInformationSection>>.
+Unpublished Business Terms Codes | |Cf. xref:withheld-publication.adoc[].
 
 |BT-3202 |Contract Tender Identifier |Points to one of the existing
 (Lot-) Tenders (OPT-321) |tender |TEN-XXXX
@@ -523,7 +523,7 @@ with a "Change"._
 |BT-13719 |Submission Lot Identifier |BT-137
 
 |BT-13720 |Organisation Notice Section Identifier |Links conveyed by UBL
-elements at dedicated places within the XML (cf. <<linkingRolesSubrolesToOrganizationsSection>>)
+elements at dedicated places within the XML (cf. xref:parties.adoc#linkingRolesSubrolesToOrganizationsSection[Linking roles/subroles to organizations])
 
 |BT-13721 |Strategic Procurement Notice Section Identifier |BT-137
 

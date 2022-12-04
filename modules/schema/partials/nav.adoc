@@ -2,7 +2,7 @@
 ** <<{page-component-version}@eforms:schema:introduction.adoc#, Introduction>>
 ** <<{page-component-version}@eforms:schema:documents-forms-and-notices.adoc#, Documents, forms & notices>>
 ** <<{page-component-version}@eforms:schema:notice-content.adoc#, Notice content>>
-** <<{page-component-version}@eforms:schema:elements.adoc#, Elements>>
+** Elements
 *** <<{page-component-version}@eforms:schema:schemas.adoc#, Schemas>>
 *** <<{page-component-version}@eforms:schema:notices-xml-structure.adoc#, Notices XML structure>>
 *** <<{page-component-version}@eforms:schema:notice-information.adoc#, Notice information>>

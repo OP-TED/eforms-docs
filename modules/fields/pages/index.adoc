@@ -191,7 +191,7 @@ The properties that are assigned with static values are listed below:
 
 [horizontal]
 `id`:: A string specifying the identifier of a field.
-`parentNodeId`:: The identifier of the the parent node of the field. All nodes are listed in the `xmlStructure` section of `fields.json`. See xref:fields/xml-structure.adoc[XML Structure]. 
+`parentNodeId`:: The identifier of the the parent node of the field. All nodes are listed in the `xmlStructure` section of `fields.json`. See xref:fields:xml-structure.adoc[XML Structure]. 
 `name`:: The name of the field. It is provided to improve readability of the `fields.json`. In your applications you should the appropriate label for the field. 
 `btId`:: The identifier of the Business Term that this field instantiates.
 `xpathAbsolute`:: The absolute XPath of the field. This value is calculated by combining all the relative XPaths in the hierarchy of nodes that include this field. See `parentNodeId`.
