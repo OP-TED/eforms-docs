@@ -96,7 +96,7 @@ include::acronyms-and-abbreviations.adoc[leveloffset=+1]
 <<codesForUnpublishedFieldsAtLotTenderLevelTable>>
 <<codesForUnpublishedFieldsAtProcedureLevelTable>>
 <<codesForUnpublishedFieldsAtLotGroupOfLotsLevelTable>>
-<<exclusionGroundCodesTable>>
+// <<exclusionGroundCodesTable>>
 <<identifiersTable>>
 <<referencesTable>>
 <<sectionsIDsTable>>
