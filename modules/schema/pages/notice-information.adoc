@@ -115,7 +115,7 @@ stated, this is the only expected and accepted value.
 
 This element identifies the customization used for the notice.
 Identification is based on the complete set (_schemas+rules_) limited to
-the major and minor version numbers (cf. xref:eforms:schema:schema.adoc#versioningSection[Versioning]).
+the major and minor version numbers (cf. xref:eforms:schema:schemas.adoc#versioningSection[Versioning]).
 
 [source, xml]
 ----
