@@ -2833,7 +2833,7 @@ Business Term allows the notices to be associated despite the absence of Procedu
 
 A notice is referred to using either of the two identifiers:
 
-* its notice identifier (UUID) concatenated with its version identifier (e.g. <UUUID>-<vv>), or 
+* its notice identifier (UUID) concatenated with its version identifier (e.g. <UUID>-<vv>), or 
 
 * its Notice Publication ID (XXXXXX-YYYY).
 
