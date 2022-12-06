@@ -1095,7 +1095,9 @@ efbc:ContractFrameworkIndicator
 ---- 
 
 |*Framework Notice Identifier (OPT-100)* |ID of the notice related to
-the Framework Contract under which the current contract takes place |*?*
+the Framework Contract under which the current contract takes place. 
+In either format: notice identifier (UUID) concatenated with its version 
+identifier (i.e. <UUID>-<vv>), or Notice Publication ID (XXXXXX-YYYY). |*?*
 a|
 [source,xpath,subs=attributes]
 ----
@@ -1219,7 +1221,6 @@ An XML instance excerpt is provided below for illustration:
         <efbc:ContractFrameworkIndicator>true</efbc:ContractFrameworkIndicator>
         <cac:NoticeDocumentReference>
             <cbc:ID schemeName="ojs-notice-id">62783-2020</cbc:ID>
-            <cbc:ReferencedDocumentInternalAddress>RES-OOO3</cbc:ReferencedDocumentInternalAddress>
         </cac:NoticeDocumentReference>
         <cac:SignatoryParty>
             <cac:PartyIdentification>
