@@ -2833,7 +2833,7 @@ Business Term allows the notices to be associated despite the absence of Procedu
 
 A notice is referred to using either of the two identifiers:
 
-* its notice identifier (UUID) concatenated with its version identifier (e.g. <UUUID>-<vv>), or 
+* its notice identifier (UUID) concatenated with its version identifier (e.g. <UUID>-<vv>), or 
 
 * its Notice Publication ID (XXXXXX-YYYY).
 
@@ -2855,7 +2855,7 @@ It may also be repeated to point to multiple previous notices when needed.
 
 Identification of a Planning notice related to this notice is done using
 its notice identifier (UUID) concatenated with the associated version
-identifier (2 digits) in the form <UUUID>-<vv>. Another option is to
+identifier (2 digits) in the form <UUID>-<vv>. Another option is to
 refer to the Notice Publication ID (XXXXXX-YYYY). Both may be differentiated
 with the schemeName: "notice-id-ref" and "ojs-notice-id" respectively.
 
