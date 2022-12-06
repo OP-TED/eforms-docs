@@ -966,50 +966,50 @@ fields.
 
 [source,xml]
 ----
-	<cac:TenderingProcess>
-		<cbc:ProcedureCode listName="procurement-procedure-type">neg-wo-call</cbc:ProcedureCode>
-		<cac:ProcessJustification>
-            <ext:UBLExtensions>
-                <ext:UBLExtension>
-                    <ext:ExtensionContent>
-                        <efext:EformsExtension>
-                            <efac:FieldsPrivacy>
-                                <!-- # UNPUB-60 : Direct Award Justification Code (BT-136) will not be published until March 2nd, 2022 -->
-                                <efbc:FieldIdentifierCode listName="non-publication-identifier">dir-awa-jus</efbc:FieldIdentifierCode>
-                                <cbc:ReasonCode listName="non-publication-justification">..</cbc:ReasonCode>
-                                <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
-                                <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
-                                <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
-                            </efac:FieldsPrivacy>
-                            <efac:FieldsPrivacy>
-                                <!-- # UNPUB-61 : Direct Award Justification Previous (BT-1252) will not be published until March 2nd, 2022 -->
-                                <efbc:FieldIdentifierCode listName="non-publication-identifier">dir-awa-pre</efbc:FieldIdentifierCode>
-                                <cbc:ReasonCode listName="non-publication-justification">..</cbc:ReasonCode>
-                                <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
-                                <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
-                                <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
-                            </efac:FieldsPrivacy>
-                            <efac:FieldsPrivacy>
-                                <!-- # UNPUB-62 : Direct Award Justification Text (BT-135) will not be published until March 2nd, 2022 -->
-                                <efbc:FieldIdentifierCode listName="non-publication-identifier">dir-awa-tex</efbc:FieldIdentifierCode>
-                                <cbc:ReasonCode listName="non-publication-justification">..</cbc:ReasonCode>
-                                <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
-                                <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
-                                <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
-                            </efac:FieldsPrivacy>
-                        </efext:EformsExtension>
-                    </ext:ExtensionContent>
-                </ext:UBLExtension>
-            </ext:UBLExtensions>
-			<!-- # UNPUB-60 : Direct Award Justification Code (BT-136) publication will be delayed -->
-			<cbc:ProcessReasonCode listName="direct-award-justification">ecom-excl</cbc:ProcessReasonCode>
-			<!-- # UNPUB-62 : Direct Award Justification Text (BT-135) publication will be delayed -->
-			<cbc:ProcessReason languageID="ENG">Direct award is justified ...</cbc:ProcessReason>
-			<cbc:ProcessReason languageID="FRA">L'attribution ...</cbc:ProcessReason>
-			<!-- # UNPUB-61 : Direct Award Justification Previous (BT-1252) publication will be delayed -->
-			<cbc:Description>123e4567-e89b-12d3-a456-426614174000</cbc:Description>
-		</cac:ProcessJustification>
-	</cac:TenderingProcess>
+<cac:TenderingProcess>
+    <cbc:ProcedureCode listName="procurement-procedure-type">neg-wo-call</cbc:ProcedureCode>
+    <cac:ProcessJustification>
+        <ext:UBLExtensions>
+            <ext:UBLExtension>
+                <ext:ExtensionContent>
+                    <efext:EformsExtension>
+                        <efac:FieldsPrivacy>
+                            <!-- # UNPUB-60 : Direct Award Justification Code (BT-136) will not be published until March 2nd, 2022 -->
+                            <efbc:FieldIdentifierCode listName="non-publication-identifier">dir-awa-jus</efbc:FieldIdentifierCode>
+                            <cbc:ReasonCode listName="non-publication-justification">..</cbc:ReasonCode>
+                            <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
+                            <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
+                            <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
+                        </efac:FieldsPrivacy>
+                        <efac:FieldsPrivacy>
+                            <!-- # UNPUB-61 : Direct Award Justification Previous (BT-1252) will not be published until March 2nd, 2022 -->
+                            <efbc:FieldIdentifierCode listName="non-publication-identifier">dir-awa-pre</efbc:FieldIdentifierCode>
+                            <cbc:ReasonCode listName="non-publication-justification">..</cbc:ReasonCode>
+                            <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
+                            <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
+                            <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
+                        </efac:FieldsPrivacy>
+                        <efac:FieldsPrivacy>
+                            <!-- # UNPUB-62 : Direct Award Justification Text (BT-135) will not be published until March 2nd, 2022 -->
+                            <efbc:FieldIdentifierCode listName="non-publication-identifier">dir-awa-tex</efbc:FieldIdentifierCode>
+                            <cbc:ReasonCode listName="non-publication-justification">..</cbc:ReasonCode>
+                            <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
+                            <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
+                            <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
+                        </efac:FieldsPrivacy>
+                    </efext:EformsExtension>
+                </ext:ExtensionContent>
+            </ext:UBLExtension>
+        </ext:UBLExtensions>
+        <!-- # UNPUB-60 : Direct Award Justification Code (BT-136) publication will be delayed -->
+        <cbc:ProcessReasonCode listName="direct-award-justification">ecom-excl</cbc:ProcessReasonCode>
+        <!-- # UNPUB-62 : Direct Award Justification Text (BT-135) publication will be delayed -->
+        <cbc:ProcessReason languageID="ENG">Direct award is justified ...</cbc:ProcessReason>
+        <cbc:ProcessReason languageID="FRA">L'attribution ...</cbc:ProcessReason>
+        <!-- # UNPUB-61 : Direct Award Justification Previous (BT-1252) publication will be delayed -->
+        <cbc:Description>123e4567-e89b-12d3-a456-426614174000</cbc:Description>
+    </cac:ProcessJustification>
+</cac:TenderingProcess>
 ----
 
 [[lotsGroupOfLotsLevelSection]]
