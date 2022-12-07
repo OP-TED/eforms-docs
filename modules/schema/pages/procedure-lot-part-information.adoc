@@ -25,9 +25,7 @@ procurement procedure).
 |*Group of Lots* |LotsGroup |GLO-XXXX .3+a|
 XXXX: set of 4 digits.
 
-By default the numbering should be increased by 1 from one object to the
-following object of the same category and leading 0 should be used to
-satisfy the 4 digits format
+Leading 0 should be used to satisfy the 4 digits format
 
 For Procedure without Lots (i.e. with a single "technical" lot), the ID
 shall be LOT-0000.
