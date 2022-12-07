@@ -2,7 +2,7 @@
 
 == Scope and purpose
 
-The Publications Office (OP) is developing a range of applications for the collection, validation, processing, visualisation and dissemination of eForms notices. These applications are collectively known as "TED Apps for eForms" and are scheduled to go into production use on November 14, 2022. 
+The Publications Office (OP) is developing a range of applications for the collection, validation, processing, visualisation and dissemination of eForms notices. These applications are collectively known as "TED Apps for eForms" and went into production use on November 14, 2022. 
 
 To allow early access to these applications before they are deployed in production, we have prepared an additional "preview" environment for eSenders and stakeholders, where we progressively deploy early versions of the TED Apps for eForms as they become available.
 
@@ -174,7 +174,7 @@ Scope:: Users can generate an API key
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: December 2022
+Indicative planning:: February 2023
 Scope:: Addition of a developer profile for eSenders
 
 
