@@ -568,7 +568,7 @@ efac:Company{zwsp}/cac:PostalAddress{zwsp}/cac:AddressLine{zwsp}/cbc:Line
 ----
 
 |StreetName for first address line; Additional StreetName for the 2^nd^
-and AddressLine for 3^rd^ and subsequent lines
+and a single AddressLine for 3^rd^ and subsequent lines
 
 ^|T a|
 [source,xpath,subs=attributes]
