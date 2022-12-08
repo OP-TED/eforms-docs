@@ -25,9 +25,7 @@ procurement procedure).
 |*Group of Lots* |LotsGroup |GLO-XXXX .3+a|
 XXXX: set of 4 digits.
 
-By default the numbering should be increased by 1 from one object to the
-following object of the same category and leading 0 should be used to
-satisfy the 4 digits format
+Leading 0 should be used to satisfy the 4 digits format
 
 For Procedure without Lots (i.e. with a single "technical" lot), the ID
 shall be LOT-0000.
@@ -1013,10 +1011,10 @@ the given Lot):
 <efac:StrategicProcurement>
     <efbc:ApplicableLegalBasis listName="cvd-scope">true</efbc:ApplicableLegalBasis>
     <efac:StrategicProcurementInformation>
-        <efbc:ProcurementCategoryCode listName="cvd-contract-type">oth-serv-contract</efbc:ServiceContractType>
+        <efbc:ProcurementCategoryCode listName="cvd-contract-type">oth-serv-contract</efbc:ProcurementCategoryCode>
     </efac:StrategicProcurementInformation>
     <efac:StrategicProcurementInformation>
-        <efbc:ProcurementCategoryCode listName="cvd-contract-type">veh-acq</efbc:ServiceContractType>
+        <efbc:ProcurementCategoryCode listName="cvd-contract-type">veh-acq</efbc:ProcurementCategoryCode>
     </efac:StrategicProcurementInformation>
 </efac:StrategicProcurement>
 ----
@@ -1282,10 +1280,10 @@ also be provided:
 ----
 
 [[procurementDocsSection]]
-=== Procurement documents (BT-14, BT-15, BT-615, BT-707)
+=== Procurement documents (BT-14, BT-15, BT-615, BT-707, BT-708, BT-737)
 
-The URL to procurement documents (or to information on documents with
-controlled accesses) is marked using the "_cbc:URI_" element.
+The URL to procurement documents BT-15 (or to information on documents with
+controlled accesses BT-615) is marked using the "_cbc:URI_" element.
 
 The identifier "_cbc:ID_" is mandatory and shall not be empty. There is
 no predefined structure or list and any relevant value may be used so
@@ -1301,8 +1299,8 @@ codelist. When access is not restricted, _cbc:DocumentType_ shall have
 the "non-restricted-document" value and the element
 _cbc:DocumentTypeCode_ shall not be used.
 
-When there is a need to specify the linguistic version, then the
-"_cbc:LanguageID_" element has to be used with values from the
+When there is a need to specify the linguistic version (BT-708 or BT-737), 
+then the "_cbc:LanguageID_" element has to be used with values from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/language[language]
 codelist. This element is not repeatable and when multiple linguistic
 versions have to be referenced, the whole block
@@ -1310,7 +1308,7 @@ versions have to be referenced, the whole block
 
 The status of a given linguistic version may also be specified using the
 "_cbc:DocumentStatusCode_" element with either of the two values: "official"
-and "non-official".
+(for BT-708) or "non-official" (for BT-737).
 
 [source,xml]
 ----
@@ -1946,7 +1944,7 @@ Prize Information covers _Prize Rank_ (BT-44), _Value Prize_ (BT-644) and _Rewar
 (BT-45); the last one being for prizes not having equivalent monetary
 value.
 
-The Prize Rank is marked using "_cbc:RankCode_".
+The Prize Rank is marked using "_cbc:RankCode_", and shall be an integer.
 
 The Value Prize is encoded by specifying currency and amount.
 
@@ -2828,7 +2826,7 @@ Business Term allows the notices to be associated despite the absence of Procedu
 
 A notice is referred to using either of the two identifiers:
 
-* its notice identifier (UUID) concatenated with its version identifier (e.g. <UUUID>-<vv>), or 
+* its notice identifier (UUID) concatenated with its version identifier (e.g. <UUID>-<vv>), or 
 
 * its Notice Publication ID (XXXXXX-YYYY).
 
@@ -2850,7 +2848,7 @@ It may also be repeated to point to multiple previous notices when needed.
 
 Identification of a Planning notice related to this notice is done using
 its notice identifier (UUID) concatenated with the associated version
-identifier (2 digits) in the form <UUUID>-<vv>. Another option is to
+identifier (2 digits) in the form <UUID>-<vv>. Another option is to
 refer to the Notice Publication ID (XXXXXX-YYYY). Both may be differentiated
 with the schemeName: "notice-id-ref" and "ojs-notice-id" respectively.
 

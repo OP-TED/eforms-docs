@@ -67,7 +67,7 @@ For creating a notice XML file your best friend is again the xref:schema:index.a
 
 NOTE: In the Publications Office, we use a conceptual model of a notice which is encoded in the xref:eforms:fields:index.adoc[field metadata] provided with the eForms SDK. This abstracts away from our application the specifics the eForms/UBL XSDs and allows it to keep creating valid notices even if the schemas or business rules change.
 
-TIP: If you want to find out how we address these issues in the eForms SDK follow this link.
+TIP: If you want to find out how we address these issues in the eForms SDK xref::xml-generation.adoc[follow this link].
 
 == Validating Notices
 There are two main reasons why validation is important:
