@@ -10,11 +10,11 @@ The ultimate goal of your application is to submit a notice for publication. Sub
 
 An obvious choice that is available to everyone, is to rely on the Validation API for validating your notices. The API will provide you with a validation report in SVRL (Schematron Validation Report Language) which you can use to pass validation messages on to your end-users.
 
-The report contains a list of all validation rules that were executed. Any assertions that failed will be indicated with `svrl:failed-assert` elements providing you with additional information on the severity of the failure (in the `@role` attribute), the `@location` (XPath) of the issue, and `@test` (XPath) that was performed.  
+The report contains a list of all validation rules that were executed. Any assertions that failed will be indicated with `svrl:failed-assert` elements providing you with additional information on the severity of the failure (in the `@role` attribute), the `@location` (XPath) of the issue, and the `@test` (XPath) that was performed.
 
-The  validation message intended for display to your end-user is provided in the `svrl:text` element as a label identifier, which you can use to retrieve the actual validation message text translated in the language of your choice.
+The  validation message intended for display to your end-user is provided in the `svrl:text` element, in the language you indicated in your request. If the message is not available yet in this language, the identifier of label is given instead.
 
-To correlate the location of the failure with your form, the identifier of the relevant *_field_* is provided in the `svrl:diagnostic-reference` element.
+For certain types of rules, the value in the `@location` attribute does not indicate the exact element that caused the problem. For example, for a rule that checks that a mandatory element is present, `@location` will point to the XML element that is supposed to contain this mandatory element. In this case, the XPath of the missing element is given in the `svrl:diagnostic-reference` element, relative to the XPath indicated in `@location`.
 
 == Reusing the Schematron rules
 
