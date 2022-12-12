@@ -157,8 +157,8 @@ API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/i
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.2.2
-SDK versions:: 1.3.2 
+Application version:: 1.2.4
+SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.1 
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
@@ -175,7 +175,7 @@ Scope:: Users can generate an API key
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: February 2023
+Indicative planning:: Q3 2023
 Scope:: Addition of a developer profile for eSenders
 
 
