@@ -1,4 +1,4 @@
-* xref:eforms:reference:index.adoc[Metadata Reference]
-** xref:eforms:reference:business-terms/index.adoc[Business Terms]
-** xref:eforms:reference:business-rules/index.adoc[Business Rules]
-** xref:eforms:reference:code-lists/index.adoc[Codelists]
+* xref:{page-component-version}@eforms:reference:index.adoc[Metadata Reference]
+** xref:{page-component-version}@eforms:reference:business-terms/index.adoc[Business Terms]
+** xref:{page-component-version}@eforms:reference:business-rules/index.adoc[Business Rules]
+** xref:{page-component-version}@eforms:reference:code-lists/index.adoc[Codelists]
