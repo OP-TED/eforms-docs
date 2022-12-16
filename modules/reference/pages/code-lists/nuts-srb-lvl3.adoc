@@ -1,0 +1,38 @@
+= `nuts-srb-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Serbia
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `RS110`::: Београдска област (Beogradska oblast)
+  `RS121`::: Западнобачка област (Zapadnobačka oblast)
+  `RS122`::: Јужнобанатска област (Južnobanatska oblast)
+  `RS123`::: Јужнобачка област (Južnobačka oblast)
+  `RS124`::: Севернобанатска област (Severnobanatska oblast)
+  `RS125`::: Севернобачка област (Severnobačka oblast)
+  `RS126`::: Средњобанатска област (Srednjobanatska oblast)
+  `RS127`::: Сремска област (Sremska oblast)
+  `RS211`::: Златиборска област (Zlatiborska oblast)
+  `RS212`::: Колубарска област (Kolubarska oblast)
+  `RS213`::: Мачванска област (Mačvanska oblast)
+  `RS214`::: Моравичка област (Moravička oblast)
+  `RS215`::: Поморавска област (Pomoravska oblast)
+  `RS216`::: Расинска област (Rasinska oblast)
+  `RS217`::: Рашка област (Raška oblast)
+  `RS218`::: Шумадијска област (Šumadijska oblast)
+  `RS221`::: Борска област (Borska oblast)
+  `RS222`::: Браничевска област (Braničevska oblast)
+  `RS223`::: Зајечарска област (Zaječarska oblast)
+  `RS224`::: Јабланичка област (Jablanička oblast)
+  `RS225`::: Нишавска област (Nišavska oblast)
+  `RS226`::: Пиротска област (Pirotska oblast)
+  `RS227`::: Подунавска област (Podunavska oblast)
+  `RS228`::: Пчињска област (Pčinjska oblast)
+  `RS229`::: Топличка област (Toplička oblast)
+  `RSZZZ`::: Extra-Regio NUTS 3

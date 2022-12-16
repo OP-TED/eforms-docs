@@ -1,0 +1,9 @@
+= `BT-788`: Review Title
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-788-Review`:: Review Title

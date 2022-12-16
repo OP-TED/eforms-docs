@@ -1,0 +1,12 @@
+= `BT-36`: Duration Period
+:navtitle: Business Terms
+
+[horizontal]
+Type:: DURATION
+
+== Fields
+[horizontal]
+  `BT-36-Lot`:: Duration Period
+  `BT-36-Part`:: Duration Period
+  `OPA-36-Lot-Number`:: Numeric value of the duration period
+  `OPA-36-Part-Number`:: Numeric value of the duration period

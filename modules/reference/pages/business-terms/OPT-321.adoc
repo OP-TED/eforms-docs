@@ -1,0 +1,8 @@
+= `OPT-321`: Tender Technical Identifier
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-321-Tender`:: Tender Technical Identifier

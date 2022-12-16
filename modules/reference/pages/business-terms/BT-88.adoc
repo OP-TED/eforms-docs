@@ -1,0 +1,9 @@
+= `BT-88`: Procedure Features
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-88-Procedure`:: Procedure Features

@@ -1,0 +1,13 @@
+= `BT-01`: Procedure Legal Basis
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-01-notice`:: Procedure Legal Basis
+  `BT-01(c)-Procedure`:: Procedure Legal Basis (ID)
+  `BT-01(d)-Procedure`:: Procedure Legal Basis (Description)
+  `BT-01(e)-Procedure`:: Procedure Legal Basis (NoID)
+  `BT-01(f)-Procedure`:: Procedure Legal Basis (NoID Description)

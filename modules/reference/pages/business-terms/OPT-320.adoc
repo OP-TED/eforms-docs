@@ -1,0 +1,8 @@
+= `OPT-320`: Tender Identifier Reference
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-320-LotResult`:: Tender Identifier Reference

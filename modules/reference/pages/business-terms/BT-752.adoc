@@ -1,0 +1,9 @@
+= `BT-752`: Selection Criteria Second Stage Invite Number
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-752-Lot`:: Selection Criteria Second Stage Invite Number

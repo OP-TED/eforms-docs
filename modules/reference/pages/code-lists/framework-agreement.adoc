@@ -1,0 +1,16 @@
+= `framework-agreement` codelist
+:navtitle: Codelists
+
+This table provides the list of codes to distinguish the different type framework agreement involved in a tender.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/framework-agreement
+Structure:: flat
+Used in:: xref:business-terms/BT-765.adoc[`BT-765`] Framework Agreement
+
+== Codes
+[horizontal]
+  `fa-mix`::: Framework agreement, partly without reopening and partly with reopening of competition
+  `fa-w-rc`::: Framework agreement, with reopening of competition
+  `fa-wo-rc`::: Framework agreement, without reopening of competition
+  `none`::: None

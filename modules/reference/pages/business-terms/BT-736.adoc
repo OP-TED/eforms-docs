@@ -1,0 +1,10 @@
+= `BT-736`: Reserved Execution
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-736-Lot`:: Reserved Execution
+  `BT-736-Part`:: Reserved Execution

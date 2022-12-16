@@ -1,0 +1,9 @@
+#
+# This file is part of a distributed component configuration.
+# It only needs to specify the component name and version.
+# The title and nav configuration keys should only be kept in the main antora.yml
+# which is located in the eforms-docs repository
+#
+name: eforms
+version: '1.5'
+display_version: '1.5.0'

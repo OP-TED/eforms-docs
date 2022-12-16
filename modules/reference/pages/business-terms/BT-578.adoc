@@ -1,0 +1,9 @@
+= `BT-578`: Security Clearance
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-578-Lot`:: Security Clearance

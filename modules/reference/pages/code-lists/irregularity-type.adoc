@@ -1,0 +1,45 @@
+= `irregularity-type` codelist
+:navtitle: Codelists
+
+This code list refers generally to the types of irregularities described in Section 2 of the Annex to the Commission Decision C(2019) 3452.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/irregularity-type
+Structure:: flat
+Used in:: xref:business-terms/BT-636.adoc[`BT-636`] Buyer Review Requests Irregularity Type, xref:business-terms/BT-791.adoc[`BT-791`] Review Irregularity Type
+
+== Codes
+[horizontal]
+  `ab-low`::: Unjustified rejection of abnormally low tenders
+  `ar-split`::: Artificial splitting of contracts
+  `bid-rigging`::: Bid-rigging (established by a competition / anti-cartel office, a court or other competent body)
+  `change-eval`::: Negotiation during the award procedure, including modification of the winning tender during evaluation
+  `conf-int`::: Conflict of interest with impact on the outcome of the procurement procedure
+  `cp-mod-cond`::: Competitive procedure with negotiation, with substantial modification of the conditions set out in the contract notice or tender specifications
+  `elem-mod`::: Modifications of the contract elements set out in the contract notice or tender specifications, not in compliance with the relevant rules
+  `eva-add-crit`::: Evaluation using additional award criteria that were not published
+  `eva-diff-crit`::: Evaluation of tenders using award criteria that are different from the ones stated in the contract notice or tender specifications
+  `formal`::: Formal
+  `ins-audit`::: Insufficient audit trail for the award of the contract
+  `insuf-timl`::: Insufficient time for potential tenderers/candidates to obtain the procurement documents
+  `irr-involv`::: Irregular prior involvement of candidates or tenderers with the buyer
+  `mod-inco`::: Selection criteria or technical specifications were modified after opening of tenders or were incorrectly applied
+  `nc-proc-eap`::: Non-compliance with the procedure established in the Directive for electronic and aggregated procurement
+  `nc-timl`::: Non-compliance with time limits for receipt of tenders or time limits for receipt of requests to participate
+  `ncompl-awcrit`::: Failure to describe in sufficient detail the award criteria and their weighting
+  `ncompl-cn`::: Failure to publish in the contract notice the technical specifications, selection criteria, award criteria (and their weighing), or contract performance conditions
+  `ncompl-com`::: Failure to communicate and/or publish clarifications and/or additional information
+  `ncompl-sub`::: Insufficient or imprecise definition of the subject matter of the contract
+  `no-notice`::: Lack of publication of contract notice or unjustified direct award
+  `noex-addinfo`::: Failure to extend time limits for receipt of tenders or requests to participate where additional information, although requested by the economic operator in good time, is not supplied at the latest six days before the time limit
+  `noex-timl`::: Failure to extend time limits for receipt of tenders or requests to participate where significant changes are made to the procurement documents
+  `nojust-nolots`::: Lack of justification for not subdividing contract into lots
+  `npub-limit`::: Lack of publication of extended time limits for receipt of tenders or requests to participate
+  `other`::: Other
+  `restr-not-tlim`::: Restrictions to obtaining the procurement documents, other than insufficient time
+  `unj-comp-pro`::: Unjustified use of competitive procedure with negotiation, competitive dialogue or innovative partnership
+  `unj-excl`::: Unjustified exclusion of tenderers or candidates
+  `unj-lim-subc`::: Unjustified limitation of subcontracting
+  `unj-na-ppr`::: Unjustified non-application of public procurement rules
+  `unj-nrl`::: Use of technical specification, selection criterion, award criterion, exclusion criterion, or contract performance condition that are discriminatory because of unjustified national, regional or local preferences
+  `unj-nrl-other`::: Use of technical specifications, selection criteria, award criteria, exclusion criteria, or contract performance conditions that are discriminatory (i.e. restrict access for economic operators) for other reasons than unjustified national, regional or local preferences

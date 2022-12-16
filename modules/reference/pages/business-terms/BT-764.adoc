@@ -1,0 +1,9 @@
+= `BT-764`: Submission Electronic Catalogue
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-764-Lot`:: Submission Electronic Catalogue
