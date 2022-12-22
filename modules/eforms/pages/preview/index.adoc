@@ -2,22 +2,22 @@
 
 == Scope and purpose
 
-The Publications Office (OP) is developing a range of applications for the collection, validation, processing, visualisation and dissemination of eForms notices. These applications are collectively known as "TED Apps for eForms" and went into production use on November 14, 2022. 
+The Publications Office (OP) has developed a range of applications for the collection, validation, processing, visualisation and dissemination of eForms notices. These applications are collectively known as "TED Apps for eForms" and went into production use on 14 November 2022. 
 
-To allow early access to these applications before they are deployed in production, we have prepared an additional "preview" environment for eSenders and stakeholders, where we progressively deploy early versions of the TED Apps for eForms as they become available.
+We have prepared an additional "preview" environment for eSenders and stakeholders, where we deploy releases of the TED Apps for eForms as they become available. This environment allows access to the applications before they are deployed in Production, and provides a testing environment that is closely aligned with production. 
 
 The application features, URLs as well as the data present in the "preview" environment, are subject to unannounced changes. 
 
-CAUTION: For accessing the web applications in the "preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas. To access eNotices2 API in Preview, you would need to generate a key from the TED Developer Portal in Preview: https://developer.preview.ted.europa.eu/home
+CAUTION: For accessing the web applications in the "preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas. To access eNotices2 API in Preview, you need to generate a key from the TED Developer Portal in Preview: https://developer.preview.ted.europa.eu/home
 
 == TED Apps for eForms
 
 The TED applications for eForms are: 
 
-eNotices2:: eNotices2 is the reception system for eForms. Notices can be submitted and managed through the web front-end or via the TED API. eNotices2 replaces the current eNotices and eSentool applications. eNotices2 calls the Central Validation Service to validate submitted notices before sending them to TED Monitor for processing and eventual publication.
+TED eNotices2:: eNotices2 is the reception system for eForms. Notices can be submitted and managed through the web front-end or via the TED API. eNotices2 replaces the current eNotices and eSentool applications. eNotices2 calls the Central Validation Service to validate submitted notices before sending them to TED Monitor for processing and publication.
 
 TED Central Validation Service:: 
-The Central Validation Service (a.k.a. TED CVS) provides an API for validating eForms notices. It is called by eNotices2 to check the validity of a submitted notice, but it can also be called by eSender applications to validate a notice at any time.
+The Central Validation Service (also known as TED CVS) provides an API for validating eForms notices. It is called by eNotices2 to check the validity of a submitted notice, but it can also be called by eSender applications to validate a notice at any time.
 
 TED Viewer:: 
 Also known as "TED Viewer 2022" this notice visualisation service provides an API that allows applications to render an eForms notice in the HTML or PDF format.
@@ -32,7 +32,7 @@ Also known as "TED Monitor 2022", this application is the internal production sy
 NOTE: TED Monitor is not accessible by eSenders in the "preview" environment.
 
 TED Website:: 
-TED is the public dissemination website for European procurement notices. It is the digital (and only) form of the Supplement to the Official Journal of the EU (OJ S). The current TED website, which is being adapted to handle eForms notices, is scheduled to be replaced by a totally new, built-from-scratch version (a.k.a. TED 2.0), in Spring of 2023. 
+TED is the public dissemination website for European procurement notices. It is the digital (and only) form of the Supplement to the Official Journal of the EU (OJ S). The current TED website, which has been adapted to handle eForms notices, is scheduled to be replaced by a totally new, built-from-scratch version (also known as TED 2.0), in summer of 2023. 
 +
 NOTE: The TED website is not available in the "preview" environment
 
@@ -48,15 +48,15 @@ API documentation:: https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/
 
 CAUTION: The URLs and parameters may change in subsequent releases.
 
-WARNING: Please be aware that the interface and the notice forms are very much a work in progress in this release. 
+WARNING: Please be aware that the interface and the notice forms still need further work to improve the user experience. 
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.3.2
-SDK version:: 1.3.2
+Application version:: 1.5.0
+SDK versions:: 1.3.2, 1.4.1, 1.5.0 
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK 1.3. In the codelist fields, prefilling of values is supported.  
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4 and 1.5. In the codelist fields, prefilling of values is supported.  
 
 Users can see the validation returned from CVS and have their notices rendered in HTML and PDF.
 
@@ -68,7 +68,7 @@ There is also a search feature which allows users to sort through long lists of 
 
 Users can create workgroups between themselves and test the definitions of roles and permissions within these workgroups. They can also work and submit notices worked upon collectively. 
 
-Users can also define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available: 
+Users can define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available: 
 
 * Optional fields can be set to mandatory or hidden, however, please note that we have removed the Conditional rules as of SDK 1.3 – for these please leave the default behaviour.
 
@@ -86,27 +86,29 @@ All validation errors are currently displayed as a pop-up window, without pointi
 
 All the error messages and labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
 
-Regarding the Main Buyer, apart from the Organisation Name, Organisation Identifier and Organisation Part Name, the rest of My Form Settings is currently not fully implemented and this function should not be used. Should you set a default place of performance under My forms settings > Default values, please pay attention not to use "place of performance other" at the same time in the form-filling tool. 
+Notices go through CVS validation when they are submitted, or when the user clicks on "validate" in the user interface, however, the feature may be unstable.
 
-Currently, Touchpoints and Groups of Lots cannot be deleted once created.
+For the moment, CVS validation does not work dynamically, i.e. there is no check between notices. This has implications, e.g. for checking notices of the same procedure or the same UUID v4 and different version ID; currently, it is possible to submit and publish two notices that carry the same notice ID and different version IDs. See in contrast: https://docs.ted.europa.eu/eforms/latest/schema/notice-information.html#noticeIDSection.
 
-Notices go through CVS validation when they are submitted, or when the user clicks on validate in the user interface, however, the feature may be unstable.
-
-Result notices cannot be successfully validated/ submitted through the user interface.
-
-For the moment, CVS validation does not work dynamically, i.e. there is no check between notices. This has implications, e.g. for checking notices of the same procedure or the same UUID v4 and different version ID; currently it is possible to submit and publish two notices that carry the same notice ID and different version IDs. See in contrast: https://docs.ted.europa.eu/eforms/latest/schema/notice-information.html#noticeIDSection.
-
-For the moment, it is not possible to link a TED Schema notice to an eForms notice via the Previous Notice (OPP-090) as described in the documentation: https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#previousNoticeSection.
+For the moment, it is not possible to link a TED-Schema notice to an eForms notice via the Previous Notice (OPP-090) as described in the documentation: https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#previousNoticeSection.
     
 eNotices2 uses the codelists from the SDK, which have not been completely tailored. 
 
+Notice subtype 14 cannot be used for now in the user interface. 
+
+Converting a notice to the latest SDK version will affect the change notice by removing its change section. 
+
+In change notices, section "Information about the change" should not be repeated. 
+
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
 
-   * POST submit XML request should return a "cvsLink"(to be renamed instead “validationReportUrl”), which currently does not link to the CVS report. The reason is that URL should contain the businessID (noticeID + versionID), whereas it currently returns the noticeID. 
-   * Notices that trigger a lawfulness warning, will currently be submitted to eNotices2 with “VALIDATION_FAILED”. 
    * Currently, the automated email notification “Notice validation failed” is sent to the eSender instead of the Contracting Authority (i.e. link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#:~:text=Will%20eNotices2%20send%20email%20notification%20for%20notices%20submitted%20by%20Web%20Services%20about%20publications%20or%20non%2Dpublication%3F[Notice Author] and does not detail what has failed validation. 
+    * Currently, "stop publication" on a submitted notice will return error 500 in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
 
 
+NOTE: The Preview environment is for testing purposes; new SDK releases will first be made available on Preview before deployment in Production. Please note, however, that Preview only simulates Production and notices submitted in Preview are not published in a test environment of TED. “Published” is only a mock status that is automatically assigned to submitted notices at around 15:00 CET with the next mock-export (that in turn simulates the publication process). Preview will show status “published” regardless of the preferred publication date (if any). Notices submitted in Preview are not checked for lawfulness.
+
+CAUTION: In Production (live environment), the actual export to TED happens on workdays around 16:00 CET depending on the number of notices to be published in the next OJ S. When this process is initiated and a submitted notice is in the daily export, it will be published on TED at 09:00 CET in the next available OJ S based on the release calendar. Its status will then change to “Published”. Please note that stopping publication of a notice is not allowed at this stage, i.e. between the export and publication. We will later introduce the status “Publishing” for such cases to avoid confusion. For more information on notice statuses, please see the eForms FAQ.
 
 ==== Tips for using the form-filling tool of eNotices2
 
@@ -116,22 +118,22 @@ We are currently in the process of providing more guidance for users of the eNot
    * In multi-stage procedures (BT-105), the second stage indicator should be set to 'yes' on one of those 3 groups where the criterion is used. 
    * "Award criteria complicated" should be filled-in with a variation of "See the procurement documents" to avoid having to fill in Criterion parameters.
    * Avoid repeating the award criteria group (first level).
-   * In the group "information about late submission' use only one "Reserved participation (BT-71-Lot)" and leave the rest empty.
+   * Please avoid using the section “Information about late submission” except for the mandatory fileds and the “Description of the NDA”.
    * For Exclusion Grounds, use only once the code value and enter ”all other exclusion grounds apply" in the description; avoid repeating codelist values.
    * Group "Post Award Process" both indicators should be always set to "true".
    * Any date field which has a time attached must always have a value in the time field.
-   * "Deadline until which the tender must remain valid (BT-98-Lot)" is not a date but an amount of time. 
    
    
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: November 2022
-Application version:: 1.3.3
-SDK version used:: 1.3.3
+Indicative planning:: February 2023
+Application version:: 1.6.0
+SDK version:: 1.5.x
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
+NOTE: The current version of Preview is planned to go into Production in the first or second week of January 2023.
 
 
 === TED Central Validation Service 
@@ -141,7 +143,7 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 ==== Currently available 
 [horizontal]
 Application version:: 1.2.1
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.1, 1.5.0
+SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.1, 1.4.2, 1.5.0
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
 We are working on resolving the following limitations and known issues:
@@ -157,7 +159,7 @@ API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/i
 ==== Currently available 
 [horizontal]
 Application version:: 1.2.4
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.1 
+SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0 
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
