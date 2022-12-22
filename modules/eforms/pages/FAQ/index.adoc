@@ -9,13 +9,14 @@ Is there a general presentation of eForms available?::
 
 The policy background of eForms is available on the link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[DG GROW website].
 +
-The link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar] provided an updated overview of eForms implementation.
+The link:https://op.europa.eu/en/web/ted-esenders-webinar-2022/home[2022 TED eSenders annual seminar] provided an updated overview of eForms implementation.
 + 
 The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/[May 2022 eForms Technical Workshop] focused on eForms technical implementation for developers 
 and on building metadata-driven applications.
 +
-A follow-up link:https://op.europa.eu/en/web/eforms-2022/home[second eForms Technical Workshop] took place online on 29 & 30 September 2022.
-
+A link:https://op.europa.eu/en/web/eforms-2022/home[second eForms Technical Workshop] took place online on 29 & 30 September 2022.
++
+The Publications Office is organising a series of link:https://webgate.ec.europa.eu/fpfis/wikis/x/8IWLUQ[follow-up eForms events for 2023].
 
 
 
@@ -118,7 +119,7 @@ https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en
 * SIMAP: information about European public procurement +
 https://simap.ted.europa.eu/web/simap/eforms
 +
-* eForms presentations from the TED eSenders webinar in November 2021 +
+* eForms presentations from the TED eSenders annual seminar in November 2021 +
 https://op.europa.eu/en/web/ted-esenders-webinar-2021/agenda
 +
 * eForms presentations from the eForms Technical Workshop in May 2022 +
@@ -126,6 +127,9 @@ https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda
 +
 * eForms presentations from the second eForms Technical Workshop in September 2022 +
 https://op.europa.eu/en/web/eforms-2022/agenda
++
+* eForms presentations from the TED eSenders annual seminar in December 2022 +
+https://op.europa.eu/en/web/ted-esenders-webinar-2022/agenda
 +
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
@@ -232,7 +236,7 @@ will have to be completed and checked in the eSenders’ systems.
 Regarding the F14, there is no longer a specific form for corrections such as the current F14. 
 The Change notice Business Group will instead work as a separate section that will be 
 attached to any notice, to indicate that this notice corrects, changes, or otherwise modifies 
-a "parent" notice with the use of BG-9 and in particular BT-140 Change Reason Code. 
+a "parent" notice with the use of BG-9 and in particular BT-140 Change Reason Code. Both the original notice and its change notice will be published.
 +
 See link:https://docs.ted.europa.eu/eforms/latest/schema/change-notice.html#changesAssociatedElementsTable[Changes-associated elements] in the documentation
 and questions concerning change notices on GitHub: https://github.com/OP-TED/eForms-SDK/discussions/88# 
@@ -249,7 +253,22 @@ may act on the same notice at the same time. If the parent notice has not yet be
 +
 In case of many clerical errors, it will be possible to cancel a notice, which will cancel the notice itself and make it null and void, 
 but this will not cancel the procedure. The user can - in this case - republish the same notice. 
-To cancel the procedure, we would expect a Contract Award Notice with no winner. 
+To cancel the procedure, we would expect a Contract Award Notice with no winner - regardless of whether the submission deadlines have been reached or not – 
+along with a reason.  
++
+Even when the Contracting Authority decides to end the process for one lot only (out of many) with no winner in the CAN, 
+the lot would be expected to be present/ carried over for all changes in the future. The Contracting Authority may choose to indicate that the lot 
+will not be relaunched through BT-634. 
++
+Please note that all notices that are successfully submitted will be published. The publication of a notice itself cannot be cancelled 
+unless a user stops it before it reaches the daily export to TED. 
+
+
+
+Does the publication of a CAN to cancel one / some of the lots automatically require the buyer to also publish a Change notice for the original Contract Notice, in order to “update” it?::
+ 
+There is no obligation to publish a change; the buyer could, however, change the notice and use BT-634 to explicitly note that 
+this lot/ these lots will not be relaunched. 
 
 
 
@@ -335,22 +354,31 @@ A user working on the user interface of eNotices2 will be able to see the follow
 - Not published: The notice was received but not published on TED.
 - Deleted: The notice has been deleted by front-end user.
 - Archived: The notice has been archived by front-end user.
+- Publishing: Publication process in progress, i.e. the notice has been added to the daily export for TED. 
 
 +
 The following notice statuses can be queried via the API for eSenders:
-DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED.
+DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING.
 For more information, see the relevant section: https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services. 
 
 
 
-What is the meaning of the status “Not published”? Will there be reason codes for “Not Published” notices?::
+What is the meaning of notice status “Not published”? Will there be reason codes for “Not Published” notices?::
 
 If a notice is rejected due to manual lawfulness checks, or a technical error occurs in TED Monitor 2022, 
-the notice will obtain the status “Not published”.
-+
-From an API point of view, a notice that fails the CVS check will not even reach status “submitted”. 
-The CVS will give a validation report, which will detail all the reasons why a notice did not get through and the status “NOT_PUBLISHED” 
-can be queried through the API. Rejection due to lawfulness manual check will be communicated via email to the contracting authority only.
+the notice will obtain status “Not published”, which can be queried through the API. Rejection due to lawfulness manual check 
+will be communicated via email to the contracting authority only. 
+
+
+
+What is the meaning of notice status “Publishing”?::
+
+Every working day, (generally around 16:00 CET depending on the number of notices to be published), the Publications Office 
+initiates the process of publication of the next OJ S. If a notice is in the daily export to TED and the process has been initiated, 
+the status of a “submitted” notice will then change to "publishing". “Stop publication” action is no longer possible 
+for notices in status “publishing”. Once the notice has been published, you will be able to submit a change notice for publication in the OJ S 
+cancelling the initial notice, i.e. by creating a change notice with reason “notice cancelled”. Both the original notice 
+and the change notice will be published in the OJ S in this case. 
 
 
 
@@ -625,13 +653,14 @@ are built to integrate the SDK components.
 More information about the SDK was presented at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar].
 +
 The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[May 2022 eForms Technical Workshop] focused on building metadata-driven 
-applications using the SDK, followed by the link:https://op.europa.eu/en/web/eforms-2022/agenda[second eForms Technical Workshop of September 2022]
+applications using the SDK, followed by the link:https://op.europa.eu/en/web/eforms-2022/agenda[second eForms Technical Workshop of September 2022] and 
+the link:https://op.europa.eu/en/web/ted-esenders-webinar-2022/home[TED eSenders annual seminar of 2022]. 
 +
 For more information and examples of metadata driven applications: https://docs.ted.europa.eu/eforms/latest/metadata-driven-applications.html
 
 
 
-Is there a roadmap (release plan) for future eForms SDK releases or a set release date for version 1.0.0 of the SDK?::
+Is there a roadmap (release plan) for future eForms SDK releases or a set release date for SDK versions?::
 
 The eForms SDK is a complicated development and information is made available as fast as possible. 
 An initial version of the SDK roadmap is available at link:https://docs.ted.europa.eu/home/eforms/roadmap/index.html[eForms SDK roadmap] 
@@ -655,7 +684,7 @@ Since the codelists are bound to SDK versions, is there a risk that an SDK versi
 
 Versions of the SDK might be short-lived due to various reasons; however, multiple versions of the SDK can be used at the same time 
 provided they are still acceptable. OP will aim to avoid breaking changes but stopping support for an SDK 
-will often come for legal reasons and will be given enough transition time. Technically, there would be no reason 
+will often come for legal reasons and will be given a six-month transition time. Technically, there would be no reason 
 to deprecate a version of the SDK. Significant business changes, such as making mandatory some fields that were previously optional, 
 might force us to deprecate an active version of the SDK after a pre-announced transition period.
 +
@@ -664,6 +693,30 @@ In theory, a metadata-driven approach could render any changes directly consumab
 and the goal of the SDK is to minimise the effort. 
 For more information on SDK versioning and backwards compatibility: https://docs.ted.europa.eu/eforms/latest/versioning.
 See also related GitHub discussion from a technical perspective: https://github.com/OP-TED/eForms-SDK/discussions/222. 
+
+
+
+Is it possible to predict and announce how many SDK releases there will be or how often these will happen before October 2023?::
+
+We cannot predict with certainty how many SDK versions we will have in 2023. Our current release pace is quite fast 
+while we correct and improve the SDK content but, very roughly, we estimate that we might have 5 or 6 minor versions until the summer of 2023.  
+There will be at least one minor version of more significance towards the end of 2023 if there is an amendment to the eForms regulation. 
++
+There will be as many patch releases as needed for each SDK version, i.e. releases that don’t affect the validity of submitted XMLs, 
+like essential changes to translations or the view templates. As multiple versions of the SDK can be used at the same time 
+given that they are still acceptable, eSenders would not need to upgrade to the latest SDK version; we would, however, encourage you 
+to try to plan regular updates as this will gradually make the adjustment effort necessary less and less significant. 
+
+
+
+With which SDK version can an eSender go live by October 2023?::
+
+We will not stop support of an SDK version before a 6-month transition period, during which eSenders will have time 
+to update their applications and test in Preview environment. Supporting several SDK versions in parallel allows for 
+more flexibility as to when eSenders choose to upgrade their applications.  
++
+We would, however, suggest that keeping up to date with later SDK versions (and changes these will include) may help eSenders 
+adjust more easily and minimise the effort required. 
 
 
 
@@ -809,12 +862,23 @@ What are the notice statuses that eSenders will be able to query via the API?::
 
 eSenders will be be able to query their notices with the below statuses:  
 +
-DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED. 
+DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING. 
 +
 Notice status VALIDATION_FAILED is only relevant to eSenders (users of eNotices2 API) and refers to notices that failed validation 
 – i.e. that triggered CVS errors – upon submission. Such notices will never reach status “submitted” and will instead appear 
-in the user interface and when querying the API with status “validation failed”. The same businessID (noticeID + versionID) cannot be reused. 
+in the user interface and when querying the API with status “validation failed”. The same notice businessID (noticeID + versionID) cannot be reused. 
 Via the concept of Notice Author, an email notification will be sent to the Contracting Authority only, detailing what failed validation. 
+
+
+
+When can I stop publication of a notice via the API?::
+
+Only when the notice is in status “SUBMITTED”. Once the status of the notice has changed to "PUBLISHING" or "PUBLISHED", 
+it is no longer allowed to perform this action. When a submitted notice has entered the daily export to TED 
+and OP has initiated the process of publication of the next OJ S (which happens around 16:00 CET on workdays), 
+its status will change to “PUBLISHING” and subsequently to “PUBLISHED” (once published in TED). In this case it will only be possible 
+to submit a change notice for publication in the OJ S cancelling the initial notice, i.e. by creating a change notice with ReasonCode “cancel” 
+from change-corrig-justification.gc. Both the original notice and its change notice will be published in the OJ S. 
 
 
 
