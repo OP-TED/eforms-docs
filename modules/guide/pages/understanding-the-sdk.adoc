@@ -2,7 +2,7 @@
 
 The eForms regulation mandates the creation and submission for publication of several different types of public procurement notices. An eForms application developer needs to create applications that:
 
-* allow a user to *fill-in* the proper form for the type of notice they want to publish
+* allow a user to *fill in* the proper form for the type of notice they want to publish
 * *validate* the data entered by the user to ensure they comply with eForms business rules
 * *save* in eForms UBL/XML format the notice data entered by the user
 * *submit* the XML for publication through an API
@@ -18,37 +18,37 @@ The eForms SDK is an effort to model and formalise the eForms specification in a
 
 NOTE: The premise is that the information systems of the Publications Office, together with the eForms applications of eSenders, form a large public procurement notification network, which needs to be functioning in unison and kept up-to-date with our evolving legal and business environment. To minimise the impact of change on this network, the idea is to allow the network to apply changes declaratively rather than programmatically (to the maximum extent possible).  
 
-The reason that the eForms SDK is being publicly shared with eForms application developers is to allow the developer community to capitalise of the work that is being done by the Publications Office for its own eForms implementation.
+The reason that the eForms SDK is being publicly shared with eForms application developers is to allow the developer community to capitalise on the work that is being done by the Publications Office for its own eForms implementation.
 
 
-IMPORTANT: As an application developer, you can choose to analyse the latest regulation and eForms schemas, study and code the various business rules and notice forms, and have the full freedom to model the eForms specification into your application as you think it best fits your own purposes and particular business environment. This is of course a valid approach, although a "traditional application" requires several times the effort to create and maintain, compared to a "metadata-driven application". As long as you manage to create and submit valid notices, and  keep up with the changing business environment, any solution you choose for the implementation of eForms is valid. +
+IMPORTANT: As an application developer, you can choose to analyse the latest regulation and eForms schemas, study and code the various business rules and notice forms, and have the full freedom to model the eForms specification into your application as you think best fits your own purposes and particular business environment. This is of course a valid approach, although a "traditional application" requires several times the effort to create and maintain, compared to a "metadata-driven application". As long as you manage to create and submit valid notices, and  keep up with the changing business environment, any solution you choose for the implementation of eForms is valid. +
  +
 If you decide to implement eForms without using the eForms SDK, you can xref:implementing-eforms-without-the-sdk.adoc[follow this link to get some guidance].
 
 === Deriving a Technical Specification from the eForms Regulation
-The eForms regulation is a legal document; not a technical specification. However, the regulation and its annexes define some high level technical requirements for the data that eForms notices should collect and publish. For example they define specific Business Terms and associate them with specific data types. They also define certain business requirements on whether, for example, these Business Terms should be mandatory or optional or even forbidden in certain circumstances.
+The eForms regulation is a legal document; not a technical specification. However, the regulation and its annexes define some high level technical requirements for the data that eForms notices should collect and publish. For example, they define specific Business Terms and associate them with specific data types. They also define certain business requirements on whether, for example, these Business Terms should be mandatory or optional or even forbidden in certain circumstances.
 
 During the implementation of the regulation into an information system, we needed to address certain ambiguities that could not have been resolved by the regulation itself. One of the goals of the eForms SDK is to resolve these ambiguities in a formal way.
 
 === The impact of UBL/XML  
-The choice of basing the implementation of the eForms regulation on UBL also places certain restrictions on the implementation choices. For example certain Business Terms defined by the regulation had to be introduced as extensions to UBL, whereas others were already defined by UBL and had to be reused. One of the goals of the eForms SDK is to also add a layer of abstraction on top of the eForms regulation as well as the UBL specification in such a way that would allow us to unify the two independent standardisation initiatives into one unambiguous implementation.  
+The choice of basing the implementation of the eForms regulation on UBL also places certain restrictions on the implementation choices. For example certain Business Terms defined by the regulation had to be introduced as extensions to UBL, whereas others were already defined by UBL and could be reused. One of the goals of the eForms SDK is to add a layer of abstraction on top of the eForms regulation as well as the UBL specification in such a way that would allow us to unify the two independent standardisation initiatives into one unambiguous implementation.  
 
 == Business Terms vs *_Fields_*: Codifying the XML Structure 
 The Business Terms defined by the regulation are high level concepts. They are meant to classify different types of information. However the same Business Term might behave very differently depending on the context in which it is used. To resolve such ambiguities, the eForms SDK introduces the concept of a *_field_*. A Business Term is instantiated (represented) by different *_fields_* in different contexts. 
 
-Unlike a Business Term, a *_field_* can be associated with an XPath as it always represents a specific location in the notice XML file. Unlike a Business Term, a *_field_* can be associated with Business Rules because, unlike a Business Term, a *_field_* points to a specific location in the XML and therefore, its value can be located and validated.
+Unlike a Business Term, a *_field_* can be associated with an XPath as it always represents a specific location in the notice XML file. A *_field_* can be associated with Business Rules because, unlike a Business Term, a *_field_* points to a specific location in the XML and therefore, its value can be located and validated.
 
 Using the *_fields_* defined in the SDK, you can create an application that is agnostic of the specific XPath of each *_field_*. 
 
 === Repeatability, *_Fields_* & *_Nodes_*
 *_Fields_* correspond to Business Terms. They are therefore entities that contain actual data entered by the user. In XML terms, this means that *_fields_* point to leaf elements in the hierarchical XML structure.
 
-Meanwhile, the eForms regulation defines specific Business Terms as being repeatable. The actual XML specification however, which is based on UBL, requires the repeatability of certain XML elements that do not correspond to *_fields_*. The introduction of the notion of *_fields_* is therefore not enough in order to construct the entire XML structure. This is why the notion of a *_node_* has been introduced.
+The eForms regulation defines specific Business Terms as being repeatable. The actual XML specification however, which is based on UBL, does not allow certain XML elements that correspond to *_fields_* to be repeatable; in these cases, ancestor elements are repeatable. The introduction of the notion of *_fields_* is therefore not enough in order to construct the entire XML structure. This is why the notion of a *_node_* has been introduced.
 
 === The conceptual model
 Based on the short analysis presented above, the eForms SDK recognises the need to abstract and reconcile the high level requirements introduced by the eForms regulation with the low level implementation restrictions imposed by UBL into a conceptual model that allows us to recreate the physical structure of the notice data inside an XML file, while at the same time allowing us to remain at the conceptual level of the business domain. 
 
-This abstraction, termed for simplicity "the conceptual model", is based on the idea that an eForms notice is a hierarchical structure of *_nodes_* and *_fields_*. Each *_field_* has a parent *_node_*. All *_nodes_*, except the root *_node_*, also have a parent *_node_*. The location of each *_field_* and *_node_* is defined *relative to its parent* using XPath as the physical representation of notices in XML. A *_node_* can be repeatable, meaning that it can occur more than one times within its parent *_node_*. A *_field_* can also be repeatable. Given the conceptual model, one can construct the XML file of a notice without considering at all which specific fields participate in it or what rules may or may not apply to them.
+This abstraction, termed for simplicity "the conceptual model", is based on the idea that an eForms notice is a hierarchical structure of *_nodes_* and *_fields_*. Each *_field_* has a parent *_node_*. All *_nodes_*, except the root *_node_*, also have a parent *_node_*. The location of each *_field_* and *_node_* is defined *relative to its parent* using XPath as the physical representation of notices in XML. A *_node_* can be repeatable, meaning that it can occur more than once within its parent *_node_*. A *_field_* can also be repeatable. Given the conceptual model, one can construct the XML file of a notice without considering at all which specific fields participate in it or what rules may or may not apply to them.
 
 You can find the *conceptual model* in the `fields.json` file inside the `fields` folder of the eForms SDK. You can xref:eforms:fields:index.adoc[read more about it here]. 
 
@@ -62,9 +62,9 @@ The first goal of an eForms application that creates and submits notices is, of 
 
 To collect the data the appropriate form needs to be presented to the user. To allow an application to create a notice form dynamically, the eForms SDK introduces the notion of the *_notice-type-definition_*. A *_notice-type-definition_* file is provided for each different type of notice. The file format is JSON. 
 
-A *_notice-type-definition_* is a collection of *_input-fields_*, organized in a hierarchy of *_display-groups_*. This provides a *visual structure* for the notice. The visual structure cannot be the same as the physical structure used to store the data in an XML file because the visual structure needs to adhere to the concept of a notice from the perspective of the user that is filling-in a notice form, rather than the perspective of normalised data storage in an XML file.
+A *_notice-type-definition_* is a collection of *_input-fields_*, organized in a hierarchy of *_display-groups_*. This provides a *visual structure* for the notice. The visual structure cannot be the same as the physical structure used to store the data in an XML file because the visual structure needs to adhere to the concept of a notice from the perspective of the user that is filling in a notice form, rather than the perspective of normalised data storage in an XML file.
 
-You can find the *_notice-type-definitions_* in JSON format, inside the `notice-types` folder in the eForms SDK. An index file providing metadata about each *_notice-type_* is also included in `notice-types/notice-types.json`. You can lear xref:eforms:notice-types:index.adoc[more about *_notice-type-definitions_* here].
+You can find the *_notice-type-definitions_* in JSON format, inside the `notice-types` folder in the eForms SDK. An index file providing metadata about each *_notice-type_* is also included in `notice-types/notice-types.json`. You can learn xref:eforms:notice-types:index.adoc[more about *_notice-type-definitions_* here].
 
 ==== 
 Why create the forms dynamically?:: Hardcoding the forms did not seem like a good idea to us. Creating the forms dynamically allows us to make changes to the forms without having to modify our existing applications. By applying all changes declaratively (through the SDK) rather than programmatically, the impact of change is minimized. 
@@ -81,15 +81,15 @@ To this end, a comprehensive set of Business Rules to which all submitted notice
 There are several types of business rules. 
 
 * Some business rules control the composition of XML notices. For example they verify whether a particular *_field_* is allowed to be used in a particular *_notice-type_*. 
-* Other business rules verify that all mandatory *_fields_* have been filled-in. 
-* Business rules can also apply restrictions to the submitted values. For example some business rules are used to control the "shape" of text *_field_* values (using patterns), or the range of numeric *_field_* values, etc. 
-* Business rules are also used to restrict the possible values of one *_field_* in relation to the value entered in another *_field_*. We call these rules "co-constraints". Co-constraints may depend on the values of *_fields_* present within the same notice but they can also lookup and use *_field_* values submitted with other notices. 
+* Other business rules verify that all mandatory *_fields_* have been filled in. 
+* Business rules can also apply restrictions to the submitted values. For example some business rules are used to control the "shape" of text *_field_* values (using patterns), or the range of numeric *_field_* values. 
+* Business rules are also used to restrict the possible values of one *_field_* in relation to the value entered in another *_field_*. We call these rules "co-constraints". Co-constraints may depend on the values of *_fields_* present within the same notice but they can also lookup and use *_field_* values submitted in other notices. 
 
 === Business Rules in the SDK
 
 The eForms SDK tries to formalise the definition of what a business rule is, how it is expressed and what it can do. 
 
-* All Business Rules apply to a *_field_*. This is the *_field_* that each rule tries to validate. 
+* Each Business Rule applies to a *_field_*. This is the *_field_* that each rule tries to validate. 
 * Every Business Rule is applicable to a specific *_notice-type_*. 
 * Every Business Rule has a pre-condition associated with it. The rule only applies when the pre-condition is `true`. 
 * Every Business Rule is associated with a Test. This Test is a logical operation that determines if the rule is satisfied or not.
@@ -106,20 +106,20 @@ All Business Rules are enforced at the XML level by the Central Validation Servi
 
 However, the TED Central Validation Service is not the only validation environment in which business rules need to be executed and enforced.
 
-Many Business Rules can also be useful in guiding the user while filling-in their notice. For example a business rule that checks if a mandatory value has been supplied by the user while the user is filling-in their form, can improve user experience. Likewise, being able to evaluate co-constraints  while the user is filling-in their form, would improve the user's understanding of the information they are expected to provide depending on the values they are currently entering.
+Many Business Rules can also be useful in guiding the user while filling in their notice. For example a business rule that checks if a mandatory value has been supplied by the user while the user is filling in their form can improve user experience. Likewise, being able to evaluate co-constraints  while the user is filling in their form, would improve the user's understanding of the information they are expected to provide depending on the values they are currently entering.
 
 The eForms SDK therefore recognises the need for two distinct validation environments:
 
 * The environment of a form-filling tool
 * The environment of an XML validation service
 
-In the environment of a form-filling tool, validation occurs while the user is still filling-in their notice form. A complete notice XML file therefore is not yet available to the validation engine. As a result, the set of business rules that can be evaluated in such a validation environment is only the subset of rules which do not assume the presence of a fully formed notice. These rules are shared in the eForms SDK as constraints attached to each *_field_* (in `fields/fields.json`). 
+In the environment of a form-filling tool, validation occurs while the user is still filling in their notice form. A complete notice XML file therefore is not yet available to the validation engine. As a result, the set of business rules that can be evaluated in such a validation environment is only the subset of rules which do not assume the presence of a fully formed notice. These rules are shared in the eForms SDK as constraints attached to each *_field_* (in `fields/fields.json`). 
 
 In the environment of a validation service, a fully formed notice XML file is being validated. In this environment all business rules can be applied. Since validation is always applied on XML in this scenario, the SDK assumes that validation will be based on XSLT (either directly or indirectly through a validation engine like Schematron).
 
 === Formal expression of Business Rules
 
-The eForms SDK, recognises that a business rule should be made available for execution in different validation environments. To make this possible a formal representation of each business rule is necessary, in a form that is portable between different execution environments. For this portable formal representation, the eForms SDK introduces a domain specific language (DSL) for eForms, named "eForms Expression Language" (EFX).
+The eForms SDK recognises that a business rule should be made available for execution in different validation environments. To make this possible a formal representation of each business rule is necessary, in a form that is portable between different execution environments. For this portable formal representation, the eForms SDK introduces a domain specific language (DSL) for eForms, named "eForms Expression Language" (EFX).
 
 ====
 What is the benefit of formalising business rules?::
@@ -128,24 +128,24 @@ Business rules are originally expressed in plain English. For a validation engin
 * Removes any and all ambiguity.
 * Allows us to verify the rules (through syntax checking and type checking).
 * Allows us to express the rules only once, but reuse them in any execution environment.
-* Allows us you to reuse the rules.
+* Allows you to reuse the rules.
 ====
 
 === Schematron based validation
 
 The TED Central Validation Service, as we discussed above, uses Schematron to validate submitted notice XML files. The `/schematrons` folder has been added to the SDK to provide to you full access to all the Schematron validation rules used by TED CVS.
 
-Schematron rules, essentially use a XSLT transformation to create the validation reports that TED CVS returns. Each rule applies to a specific *_context_* which is defined in XPath, and contains a number of *_assertions_* that test whether specific conditions are met. These conditions (*_tests_*) are also expressed in XPath. 
+Schematron rules essentially use an XSLT transformation to create the validation reports that TED CVS returns. Each rule applies to a specific *_context_* which is defined in XPath, and contains a number of *_assertions_* that test whether specific conditions are met. These conditions (*_tests_*) are also expressed in XPath. 
 
-NOTE: As we already discussed, these XPath expressions provided in the Schematron files are not maintained in XPath. Instead, they are maintained in EFX and translated to XPath automatically at the time a new version of the SDK is being generated.
+NOTE: As already discussed, these XPath expressions provided in the Schematron files are not maintained in XPath. Instead, they are maintained in EFX and translated to XPath automatically at the time a new version of the SDK is being generated.
 
 == The EFX Grammar
 
-As we just discussed in the previous section, EFX was introduced to allow us to formally express the business rules in only one language, while retaining the ability to translate them to any other language as needed by each different application in the TED public procurement notification network.
+As just discussed in the previous section, EFX was introduced to allow us to formally express the business rules in only one language, while retaining the ability to translate them to any other language as needed by each different application in the TED public procurement notification network.
 
 [NOTE]
 ====
-Defining a new language involves the definition of its lexical and syntactical rules in an unambiguous way so that a processor for the new language can be created. A language processor is an application component that reads an expression (or programme) written in that language, and either executes it directly, or translates it to an intermediate language which some other processor can execute. 
+Defining a new language involves the definition of its lexical and syntactical rules in an unambiguous way so that a processor for the new language can be created. A language processor is an application component that reads an expression (or program) written in that language, and either executes it directly, or translates it to an intermediate language which some other processor can execute. 
 ====
 
 To simplify the task of creating a parser for EFX and make it possible for anyone who wants to create their own EFX processor, we chose to define EFX using ANTLR4, which is a widely used parser generator. ANTLR4 takes as input the grammar of any language and generates a parser for that language ready for use in several target development platforms (Java, .NET etc.). Developers can then extend the generated parser in order to process EFX expressions (i.e. execute them or translate them to an other language that fits the systems they create).
@@ -166,7 +166,7 @@ Several resources included in the SDK depend on the EFX syntax:
 ====
 Why create EFX instead of using an existing language?::
 We considered using one of the available expression languages like SpEL. However we found that these languages were too generic and introduce unresolvable ambiguities in the formalisation of business rules. Using an existing non-domain-specific language would force us to introduce conventions and semantics that are outside the scope of the language itself.
-Creating a domain specific language was therefore the way to go. It is as open and as portable as any existing expression language, gives us more control of its semantics and can be tailored to the needs of eForms as needed.
+Creating a domain specific language was therefore the best way to go. It is as open and as portable as any existing expression language, it gives us more control of its semantics and can be tailored to the needs of eForms as needed.
 ====
 
 IMPORTANT: The EFX grammar can *only* change with new *major versions* of the SDK. Therefore it is guaranteed that the EFX syntax will remain the same across minor versions and patch releases of the eForms SDK. This, in turn, guaranties that no changes to EFX parsers will be needed across minor versions and patch releases of the SDK.  
@@ -177,7 +177,7 @@ To learn more about EFX you can xref:eforms:efx:index.adoc[follow this link].
 
 The obvious solution for rendering an XML notice in a form that can be read and shared by end-users, is to use a styling language built for XML. The eXtensible Stylesheet Language (*XSL*) was designed for this purpose and has become the de-facto standard since its introduction by W3C in 1999. 
 
-Although a XSL transformation (XSLT) would typically be enough to visualise a notice XML file in just about any target format, there is a problem that a XSLT-only solution would create in a scenario like ours. You see, TED is a network of information systems that is comprised of several applications built independently by different organisations with different business and operational environments across all EU Member States. The problem with XSLT is that it fuses "style" with "form" and "logic" into one transformation. This is too restrictive for a scenario like the TED ecosystem because it would mean that all visualisations across all Member States would be either identical or not reusable. 
+Although an XSL transformation (XSLT) would typically be enough to visualise a notice XML file in just about any target format, there is a problem that an XSLT-only solution would create in a scenario like ours. TED is a network of information systems that is comprised of several applications built independently by different organisations with different business and operational environments across all EU Member States. The problem with XSLT is that it fuses "style" with "form" and "logic" into one transformation. This is too restrictive for a scenario like the TED ecosystem because it would mean that all visualisations across all Member States would be either identical or not reusable. 
 
 What is needed therefore is a way of separating these three elements of any transformation (style, form and logic) in a way that allows us to share and reuse a common "logic" while being able to customise the "form" and "style" across applications and Member States. And this is where the idea of using templates comes in, because templates allow you to make this separation. 
 
@@ -194,18 +194,18 @@ For more information on EFX view templates you can xref:eforms:viewer-templates:
 
 == Translations
 
-During our effort to implement eForms, at the Publications Office, we defined, collected and organised in the eForms SDK, all these different types of elements that comprise the eForms specification. We had defined conceptual  and visual model elements, formalized business rules, and so on. The need to clearly label these elements in all official EU languages was also one of our requirements for the implementation. 
+During our effort to implement eForms at the Publications Office, we defined, collected and organised in the eForms SDK, all the different types of elements that comprise the eForms specification. We had defined conceptual  and visual model elements, formalized business rules, and so on. The need to clearly label these elements in all official EU languages was also one of our requirements for the implementation. 
 
 In this context, our goal was to identify all the terms that needed to be labelled, formalise the different types of labels that were needed for each type of term and centrally organise and manage this information so that it can be shared across all eForms applications.
 
 The result of this work became the content of the `/translations` folder provided within the eForms SDK. The logic on which these translations are organised is quite simple:
 
-* Every different type of element provided within the eForms SDK is labelled. We actually call these different types of elements "*_asset-types_*".  
-* Every asset-type is assigned one or more labels from a standard, predefined set of labels. We call them *_label-types_*. For all *_asset-types_* we provide a *_name_*, *_description_* and *_hint_* label. We also provide some additional label types to cover some exceptional cases. 
-* Each label has an identifier associated with it. These identifiers are designed so that a developer can "guess" (construct) the correct identifier of any label they need. +  
+* Every different type of element provided within the eForms SDK is labelled. We call these different types of elements "*_asset-types_*".  
+* Every asset-type is assigned one or more labels from a standard, predefined set of labels. We call these *_label-types_*. For every *_asset-type_* we provide a *_name_*, *_description_* and *_hint_* label. We also provide some additional label types to cover some exceptional cases. 
+* Each label has an identifier associated with it. These identifiers are designed so that a developer can "predict" (construct) the correct identifier of any label they need. +  
 + 
 ====
-If you want to find the description of a specific *_field_* for example, you can figure-out the label identifier by putting together the *_asset-type_*, *_label-type_* and *_asset-id_*. In the case of a field's description the *_asset-type_* is `field`, the *_label-type_* is `description` and the *_asset-id_* is the identifier of the *_field_*.
+If you want to find the description of a specific *_field_* for example, you can figure out the label identifier by putting together the *_asset-type_*, *_label-type_* and *_asset-id_*. In the case of a field's description the *_asset-type_* is `field`, the *_label-type_* is `description` and the *_asset-id_* is the identifier of the *_field_*.
 ====
 * Each label is assigned a text translated in all official EU languages. Using the label identifier and the language identifier you can retrieve and reuse any label provided in the eForms SDK.
 
@@ -216,9 +216,9 @@ To find out more about translations of procurement labels please xref:eforms:tra
 
 Access to sample notices (often used as test data) during development is very helpful, and has been one of the topics that has caused many difficulties during our own implementation. The `/examples` folder has been added to the SDK to allow us to share with you examples of eForms notice XML files which we have also been using during our tests. We will be enriching the provided examples shared through the SDK as we create more notice XML files.
 
-The `/examples/notices` folder also contains some notice XML files that are intentionally invalid and cannot successfully pass validation through the Central Validation Service (TED CVS). These examples are intended to point-out errors and are accompanied by the relevant TED CVS validation reports (under `/examples/reports` folder).   
+The `/examples/notices` folder also contains some notice XML files that are intentionally invalid and cannot successfully pass validation through the Central Validation Service (TED CVS). These examples are intended to point out errors and are accompanied by the relevant TED CVS validation reports (under `/examples/reports` folder).   
 
-TIP: It you have any additional examples from which you think others can benefit, you are welcome to share them with us so that we can distribute them through future releases of the SDK. Use Github pull-requests to submit any such suggestions for review and inclusion in the SDK.
+TIP: If you have any additional examples from which you think others can benefit, you are welcome to share them with us so that we can distribute them through future releases of the SDK. Use Github pull requests to submit any such suggestions for review and inclusion in the SDK.
 
 == eForms SDK versioning
 
@@ -243,8 +243,8 @@ IMPORTANT: Make sure you read the xref:eforms::versioning.adoc[*eForms SDK Versi
 
 == How we build and maintain the SDK
 
-The eForms metadata included in the SDK are not maintained in the plain text format which they are distributed in. The Publications Office maintains a relational database where all eForms metadata is stored, organised and curated. A web based "eForms Metadata Management" application is used to curate the metadata and prepare future releases.
+The eForms metadata included in the SDK are not maintained in the plain text format in which they are distributed. The Publications Office maintains a relational database where all eForms metadata is stored, organised and curated. A web based "eForms Metadata Management" application is used to curate the metadata and prepare future releases.
 
-When a new SDK release is ready to ship, a specialised application is used to read the metadata from the eForms metadata database, convert them into the textual formats that they are distributed in and package them for distribution. The release process is not as automated as "clicking a button", but it is a fairly streamlined process, subject to human control but not human intervention.
+When a new SDK release is ready to ship, a specialised application is used to read the metadata from the eForms metadata database, convert them into the textual formats in which they are distributed and package them for distribution. The release process is not as automated as "clicking a button", but it is a fairly streamlined process, subject to human control but not human intervention.
 
-NOTE: The file formats that we have chosen for distributing eForms Metadata came about through the practical needs of our own applications. Currently JSON and XML are the predominant file formats in the SDK. If you feel the need to include different file formats (like YAML for example) or have any suggestions for relevant improvements please share them with us in the link:https://github.com/OP-TED/eForms-SDK/discussions/categories/ideas[eForms SDK Discussions] on Github.
+NOTE: The file formats that we have chosen for distributing eForms Metadata came about through the practical needs of our own applications. Currently JSON and XML are the predominant file formats in the SDK. If you need us to include different file formats (like YAML for example) or have any suggestions for relevant improvements please share them with us in the link:https://github.com/OP-TED/eForms-SDK/discussions/categories/ideas[eForms SDK Discussions] on Github.
