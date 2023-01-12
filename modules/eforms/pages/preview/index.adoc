@@ -100,6 +100,13 @@ Converting a notice to the latest SDK version will affect the change notice by r
 
 In change notices, section "Information about the change" should not be repeated. 
 
+On 10 and 11 January 2023, notices submitted may have acquired status “not published”; this issue is now fixed. 
+
+As of 19 December 2022, status “published” is not shown in Preview for notices that are submitted successfully. We are currently working on this issue.  
+
+The Preview function is currently unstable in the user interface. 
+
+
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
 
    * Currently, the automated email notification “Notice validation failed” is sent to the eSender instead of the Contracting Authority (i.e. link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#:~:text=Will%20eNotices2%20send%20email%20notification%20for%20notices%20submitted%20by%20Web%20Services%20about%20publications%20or%20non%2Dpublication%3F[Notice Author] and does not detail what has failed validation. 
