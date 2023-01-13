@@ -104,7 +104,6 @@ On 10 and 11 January 2023, notices submitted may have acquired status “not pub
 
 As of 19 December 2022, status “published” is not shown in Preview for notices that are submitted successfully. We are currently working on this issue.  
 
-The Preview function is currently unstable in the user interface. 
 
 
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
