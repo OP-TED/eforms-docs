@@ -4,11 +4,11 @@
 
 The Publications Office (OP) has developed a range of applications for the collection, validation, processing, visualisation and dissemination of eForms notices. These applications are collectively known as "TED Apps for eForms" and went into production use on 14 November 2022. 
 
-We have prepared an additional "preview" environment for eSenders and stakeholders, where we deploy releases of the TED Apps for eForms as they become available. This environment allows access to the applications before they are deployed in Production, and provides a testing environment that is closely aligned with production. 
+We have prepared an additional "Preview" environment for eSenders and stakeholders, where we deploy releases of the TED Apps for eForms as they become available. This environment allows access to the applications before they are deployed in Production, and provides a testing environment that is closely aligned with production. 
 
-The application features, URLs as well as the data present in the "preview" environment, are subject to unannounced changes. 
+The application features, URLs as well as the data present in the "Preview" environment, are subject to unannounced changes. 
 
-CAUTION: For accessing the web applications in the "preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas. To access eNotices2 API in Preview, you need to generate a key from the TED Developer Portal in Preview: https://developer.preview.ted.europa.eu/home
+CAUTION: URLs and API keys in "Production" and "Preview" environments are not interchangeable. For accessing the web applications in the "Preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas. To access eNotices2 API in Preview, you need to generate a key from the TED Developer Portal in Preview: https://developer.preview.ted.europa.eu/home
 
 == TED Apps for eForms
 
