@@ -165,7 +165,7 @@ API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/i
 ==== Currently available 
 [horizontal]
 Application version:: 1.2.4
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0 
+SDK versions:: 1.1.1, 1.3.2, 1.4.2, 1.5.0 
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
