@@ -5,6 +5,6 @@
 * Working with the SDK
 ** xref:{page-component-version}@eforms:guide:notice-forms.adoc[Create the forms]
 ** xref:{page-component-version}@eforms:guide:xml-generation.adoc[Generate XML]
-** xref:{page-component-version}@eforms:guide:visualisation.adoc[Visualize notices]
+** xref:{page-component-version}@eforms:guide:visualisation.adoc[Visualise notices]
 ** xref:{page-component-version}@eforms:guide:validation.adoc[Validate notices]
 * xref:{page-component-version}@eforms:guide:implementing-eforms-without-the-sdk.adoc[Working without the SDK]

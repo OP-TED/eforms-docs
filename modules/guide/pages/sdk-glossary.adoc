@@ -11,9 +11,9 @@ authority tables:: Authority tables standardise the codes used as values in cert
 == C
 [horizontal, labelwidth=30, itemwidth=70]
 
-codelists:: Nickname for *_authority tables_*. Also, the name of a folder in the SDK that contains... codelists.
+codelists:: Alternative name for *_authority tables_*. Also, the name of a folder in the SDK that contains... codelists.
 
-conceptual model:: An abstraction used to decouple the business concept of an eForms notice, from its XML representation. Comprised of a hierarchy of *_nodes_* and *_fields_*.
+conceptual model:: An abstraction used to decouple the business concept of an eForms notice from its XML representation. Comprised of a hierarchy of *_nodes_* and *_fields_*.
 
 == D
 [horizontal, labelwidth=30, itemwidth=70]
@@ -36,11 +36,11 @@ end-user:: The person using an eForms application.
 == F
 [horizontal, labelwidth=30, itemwidth=70]
 
-fields.json:: A JSON file in the `fields` folder of the eForms SDK, containing the *_conceptual model_*
+fields.json:: A JSON file in the `fields` folder of the eForms SDK, containing the *_conceptual model_*.
 
-fields repository:: See *_fields.json_*,
+fields repository:: See *_fields.json_*.
 
-field:: A data element of the *_conceptual model_*. Contained within a parent *_node_*. Points to an XML element's value or an attribute value inside a notice XML file.
+field:: A data element of the *_conceptual model_*. Contained within a parent *_node_*. Points to an element value or an attribute value inside a notice XML file.
 
 form:: Short for *_notice form_*.
 
@@ -53,7 +53,7 @@ form:: Short for *_notice form_*.
 == I
 [horizontal, labelwidth=30, itemwidth=70]
 
-input field:: A data element of the *_visual model_*. Contained in a parent *_display group_*. Represents an interactive element on a *_form_* where the *_end-user_* can type-in or select the value of a *_field_*.
+input field:: A data element of the *_visual model_*. Contained in a parent *_display group_*. Represents an interactive element on a *_form_* where the *_end-user_* can enter or select the value of a *_field_*.
 
 == J
 [horizontal, labelwidth=30, itemwidth=70]
@@ -68,7 +68,7 @@ jargon:: See *_slang_*.
 
 labels:: Short for *_public procurement labels_*.
 
-logical model:: The eForms Schema. Defines the data types, elements and attributes that can  constitute an eForms notice XML file.
+logical model:: The eForms Schema. Defines the data types, elements and attributes that can constitute an eForms notice XML file.
 
 //== M
 [horizontal, labelwidth=30, itemwidth=70]
@@ -78,11 +78,11 @@ logical model:: The eForms Schema. Defines the data types, elements and attribut
 
 node:: A structural element of the *_conceptual model_*. Contains other *_nodes_* and *_fields_*. Points to an XML element inside a notice XML file.
 
-notice form:: A computer user interface for an *_end-user_* to fill-in and submit a notice.
+notice form:: A computer user interface for an *_end-user_* to fill in and submit a notice.
 
 notice type definition:: A file containing information on how a notice form is to be shown on a user's screen. See also *_visual model_*.
 
-NTD:: Short for *_notice type definition_*.
+NTD:: Acronym for *_notice type definition_*.
 
 //== O
 [horizontal, labelwidth=30, itemwidth=70]
@@ -90,9 +90,9 @@ NTD:: Short for *_notice type definition_*.
 == P
 [horizontal, labelwidth=30, itemwidth=70]
 
-parser:: A computer programme used for *_parsing_* a computer language.
+parser:: A computer program used for *_parsing_* a computer language.
 
-parsing:: The processes of breaking-down a text written in a computer language, and recognising the instructions contained in it.
+parsing:: The process of breaking down a text written in a computer language, and recognising the instructions contained in it.
 
 physical model:: The *_UBL_*/XML inside a notice XML file.
 
@@ -111,7 +111,7 @@ schematrons:: The name of a folder inside the eForms SDK. It contains the Schema
 
 slang:: See *_jargon_*.
 
-SVRL:: Acronym for "Schematron Validation Report Language". A flavour of XML. Used by *_TED CVS_* to create validation reports.
+SVRL:: Acronym for "Schematron Validation Report Language". A flavour of XML produced by a Schematron processor. Used by *_TED CVS_* to create validation reports.
 
 == T
 [horizontal, labelwidth=30, itemwidth=70]
@@ -123,7 +123,7 @@ TED CVS:: Acronym of the *_TED Central Validation Service_*.
 
 translations:: The name of a folder in the eForms SDK, containing *_public procurement labels_*  
 
-transpiler:: A computer programme that reads source code written in an input language and translates it to source code written in a target output language.
+transpiler:: A computer program that reads source code written in an input language and translates it to source code written in a target output language.
 
 == U
 [horizontal, labelwidth=30, itemwidth=70]
