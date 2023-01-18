@@ -17,28 +17,28 @@ See also: xref:eforms::versioning.adoc[SDK Versioning] | xref:eforms:guide:sdk-g
 
 == Putting a form on the screen 
 
-* You want to allow your users to fill-in a notice? 
+* Do you want to allow your users to fill in a notice? 
 * How many different notice forms do you need?
-* How to create the notice forms?
+* How to create the notice forms
 
-Read: xref:notice-forms.adoc[*Filling-in notices*]
+Read: xref:notice-forms.adoc[*Filling in notices*]
 
 == Saving a notice in XML
 
-* How to save a notice in a valid XML file? 
+* How to save a notice in a valid XML file
 
 Read: xref:xml-generation.adoc[*Creating the notice XML*]
 
 == Validating a notice
 
-* How to validate a fully formed notice XML file?
-* How to validate sections or input-fields while the user is still working on the notice?
+* How to validate a fully formed notice XML file
+* How to validate sections or input-fields while the user is still working on the notice
 
 Read xref:validation.adoc[*Validating Notices*]
  
 == Visualising a notice
 
-* How to preview or print a notice in PDF, HTML or other document format?
+* How to preview or print a notice in PDF, HTML or other document format
 
 Read: xref:visualisation.adoc[*Visualising notices*]
 
