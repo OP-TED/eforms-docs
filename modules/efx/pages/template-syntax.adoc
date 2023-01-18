@@ -20,7 +20,7 @@ Context Declaration::
 The context declaration should effectively point to the notice XML element that is needed as a context for the EFX expressions that follow. Typically either a node or field identifier are used to declare the context. The context declaration may also include a predicate if needed. The context declaration is enclosed in curly brackets without any prefix `{...}`.
 
 Content Template::
-The content template is composed by a combination of what we call "template fragments". Template fragments can be i18n labels, free text, or EFX expressions indicating information extracted from the notice. The template fragments are combined as needed to compose the text that will be presented in the output line.
+The content template is composed of a combination of what we call "template fragments". Template fragments can be i18n labels, free text, or EFX expressions indicating information extracted from the notice. The template fragments are combined as needed to compose the text that will be presented in the output line.
 +
 --
 Free text fragments:: Any text you include in the  content template will be copied verbatim to the output. Whitespace is significant.
