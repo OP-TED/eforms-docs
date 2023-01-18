@@ -69,9 +69,9 @@ NodeId: 'ND' '-' [a-zA-Z0-9]+;
 ----
 
 == Predicates 
-A field or node reference can be complimented with a predicate that restricts the `XML elements` it matches. 
+A field or node reference can be complemented with a predicate that restricts the `XML elements` it matches. 
 
-Just like in XPath, EFX predicates are logical (boolean) EFX expressions included in square brackets.
+As in XPath, EFX predicates are logical (boolean) EFX expressions included in square brackets.
 
 [source, antlr4]
 ----
@@ -82,12 +82,12 @@ predicate: booleanExpression;
 EFX supports boolean expressions including:
 
 * boolean literals (`TRUE`, `FALSE`)
-* comparisons (`==`, `!=`, `>`, `>=`, `<`, `<=`)
+* comparisons (`==`, `!=`, `>`, `>=`, `<`, `<&#x003D;`)
 * logical operations (`and`, `or`, `not`)
 * regular expression pattern matching
 * checking for empty values
 * checking for presence of XML elements
-* check for presence of values in lists
+* checking for presence of values in lists
 
 .Simplified excerpt from EFX grammar
 [source, antlr4]
@@ -224,11 +224,11 @@ ZONE: ('+' | '-') DIGIT DIGIT ':' DIGIT DIGIT;
 
 
 == Duration expressions
-Duration expressions allow to manipulate durations including:
+Duration expressions allow the manipulation of durations including:
 
 * Adding or subtracting a duration to/from another
 * Multiplying a duration by a number
-* Calculate the duration between two dates
+* Calculating the duration between two dates
 
 [source, antlr4]
 ----
