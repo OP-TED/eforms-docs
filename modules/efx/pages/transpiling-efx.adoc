@@ -1,6 +1,6 @@
 = Transpiling EFX
 
-A transpiler, is a form of translator that takes as input the source code written in an input programming language and outputs the equivalent source code in a target output language. A famous transpiler is the one of TypeScript, which takes as input TypeScript source code and transpiles it to plain JavaScript.
+A transpiler is a form of translator that takes as input the source code written in an input programming language and outputs the equivalent source code in a target output language. A famous transpiler is the one of TypeScript, which takes as input TypeScript source code and transpiles it to plain JavaScript.
 
 EFX was not designed to drive an EFX template engine or to be executed directly in an EFX runtime environment. There is no EFX runtime or EFX template processor. Instead EFX was designed to be translatable to several other languages that target existing runtime environments and template engines. 
 
@@ -9,11 +9,11 @@ In other words EFX was designed so that it can be automatically translated to th
 TIP: Typically, there is no reason to translate the EFX expressions and templates at runtime. The recommended approach would be to translate all EFX code to the target languages of your choice only once: at the time you import a new version of the eForms SDK into your application. 
 
 == Available EFX transpilers
-The EFX Toolkit for Java Developers, contains a generic translator that can be reused to translate EFX to several different target languages. See xref:#create-your-own-translators[next section] for more details.
+The EFX Toolkit for Java Developers, contains a generic translator that can be reused to translate EFX to several different target languages. See the xref:#create-your-own-translators[next section] for more details.
 
-The toolkit, provides an implementation of the `ScriptGenerator` interface that targets *XPath* (see `XPathScriptGenerator`). This is the same implementation used by the Publications Office to generate the Schematron files included in the eForms SDK. 
+The toolkit provides an implementation of the `ScriptGenerator` interface that targets *XPath* (see `XPathScriptGenerator`). This is the same implementation used by the Publications Office to generate the Schematron files included in the eForms SDK. 
 
-Additionally, the Notice Viewer sample application, contains an implementation of the `MarkupGenerator` interface that targets *XSLT* (for transpiling EFX templates). Although the implementation in this sample application is too simplistic to be suitable for reuse without modifications, you can always use it as an inspiration or as the starting point to create a `MarkupGenerator` for XSLT that satisfies your production requirements.
+Additionally, the Notice Viewer sample application contains an implementation of the `MarkupGenerator` interface that targets *XSLT* (for transpiling EFX templates). Although the implementation in this sample application is too simplistic to be suitable for reuse without modifications, you can always use it as an inspiration or as the starting point to create a `MarkupGenerator` for XSLT that satisfies your production requirements.
 
 [[create-your-own-translators]]
 == Create your own translators using the EFX Toolkit 
@@ -30,7 +30,7 @@ Both transpilers were designed so that they can be reused to translate to severa
 * Finally, the `SymbolResolver` is used to abstract symbol resolution (e.g. field identifiers etc.).
 
 === Implementing the SymbolResolver interface
-The SymbolResolver provides to the transpiler, access to the eForms metadata available in the eForms SDK.
+The SymbolResolver provides to the transpiler access to the eForms metadata available in the eForms SDK.
 
 An implementation of the `SymbolResolver` interface that reads data directly from the eForms SDK is available in the Notice Viewer sample application.
 
@@ -38,7 +38,7 @@ The `SymbolResolver` implementation requires the implementation of only a few me
 
 * the location (e.g. XPath) of the value corresponding to the symbol in the data source (e.g. notice XML). 
 * the data type associated with a symbol
-* the relation of the symbol with other symbols like its parent node.
+* the relation of the symbol to other symbols like its parent node.
 
 Below is a simplified listing of the `SymbolResolver` interface for quick reference. You can find https://github.com/OP-TED/efx-toolkit-java/blob/develop/src/main/java/eu/europa/ted/efx/interfaces/SymbolResolver.java[the actual definition in Github].
 
@@ -61,19 +61,19 @@ public interface SymbolResolver {
 }
 ----
 
-The reason we abstract this functionality away from the transpiler implementation is because, some applications, may not read metadata directly from the SDK. Instead your application may combine the SDK metadata with other information in a proprietary metadata store. Implementing this interface allows you to reuse the existing transpiler in your application. 
+The reason we abstract this functionality away from the transpiler implementation is because some applications may not read metadata directly from the SDK. Instead your application may combine the SDK metadata with other information in a proprietary metadata store. Implementing this interface allows you to reuse the existing transpiler in your application. 
 
 NOTE: You will notice that some methods require you to return a `PathExpression`. Typically, this would be an XPath. However, it does not have to be an XPath if your data source is not XML. Whatever "path" these methods return will be passed along to the `ScriptGenerator` interface to dereference field values. So, as long as the paths that you return can be used to dereference field values in your target language, you are on the right track.
 
-NOTE: The interface is easy to implement. However there is one detail that needs attention. There are two methods that require you to return a relative path. If the path you are returning is not an XPath, then you need to craft your implementation carefully so that relative paths are calculated correctly. If, however, you use XPath then you can reuse the `XPathContextualizer` provided in the EFX Toolkit.
+NOTE: The interface is easy to implement. However there is one detail that needs attention. There are two methods that require you to return a relative path. If the path you are returning is not an XPath, then you need to craft your implementation carefully so that relative paths are calculated correctly. However, if you use XPath then you can reuse the `XPathContextualizer` provided in the EFX Toolkit.
 
 
 === Implementing the ScriptGenerator interface
 The `ScriptGenerator` interface provides to the transpiler the proper syntax, in your target language, for specific operations. For example, if the transpiler wants to generate code for concatenating strings in the target language, then it will call the `composeStringConcatenation` method of the `ScriptGenerator` that returns the code corresponding to the specific operation.
 
-NOTE: All methods in this interface return an object of type `Expression` (or a derived type). The `Expression` class and  its subclasses are defined in the `eu.europa.ted.efx.model` package. Their goal is to enforce type safety. The `Expression` is an abstraction of an "expression" in the target scripting language. It only stores the target language script in its `script` field and along with it, it conveys data type information. This makes the code more readable and more type-safe. 
+NOTE: All methods in this interface return an object of type `Expression` (or a derived type). The `Expression` class and  its subclasses are defined in the `eu.europa.ted.efx.model` package. Their goal is to enforce type safety. The `Expression` is an abstraction of an "expression" in the target scripting language. It only stores the target language script in its `script` field and along with this, it conveys data type information. This makes the code more readable and more type-safe. 
 
-Most methods in this interface, start with the verb "compose". You will notice that these methods take as parameters `Expression` objects. These `Expression` objects are actually the return values of other methods of the same interface. The goal of the "composeXyz" methods is to "compose" the target language script that appropriately combines the passed `Expression` objects to perform a specific operation.
+Most methods in this interface start with the verb "compose". You will notice that these methods take as parameters `Expression` objects. These `Expression` objects are actually the return values of other methods of the same interface. The goal of the "composeXyz" methods is to "compose" the target language script that appropriately combines the passed `Expression` objects to perform a specific operation.
 
 The methods that do not start with "compose" in this interface follow the naming convention "getXyzEquivalent". These methods take as a parameter a string that is typically an EFX literal, and are expected to return the equivalent script for that literal in the target language.
 
@@ -148,7 +148,7 @@ NOTE: You will notice that all methods in this interface return objects of type 
 
 Similarly to the `ScriptGenerator` interface, some methods in this interface also start with the verb "compose". These methods take as parameters `Markup` objects that have been previously returned by other methods in the same interface. Their goal is to appropriately combine these `Markup` parameters into new markup for a specific scenario.
 
-The remaining methods in this interface start with the verb "render". You will notice that these methods take as a parameter `Expression` objects that have been returned by your `ScriptGenerator` implementation. These methods are expected to return the target language markup for rendering these expressions in the output template.
+The remaining methods in this interface start with the verb "render". You will notice that these methods take as parameters `Expression` objects that have been returned by your `ScriptGenerator` implementation. These methods are expected to return the target language markup for rendering these expressions in the output template.
 
 Below is a simplified listing of the `MarkupGenerator` interface for quick reference. You can find https://github.com/OP-TED/efx-toolkit-java/blob/develop/src/main/java/eu/europa/ted/efx/interfaces/MarkupGenerator.java[the actual definition in Github].
 [source, java]
@@ -173,17 +173,17 @@ public interface MarkupGenerator {
 
 ----
 == Creating your own transpilers from scratch
-If our application is written in Java, or you can include the EFX Toolkit for Java in your workflow then you don't need to write your own transpilers. 
+If your application is written in Java, or you can include the EFX Toolkit for Java in your workflow then you don't need to write your own transpilers. 
 
 In case you want to create a transpiler in C# or any of the other languages supported by ANTLR4, then you will need to download the ANTLR4 developer tools for your platform and use the EFX grammar provided in the eForm SDK as input to ANTRL4 to generate an EFX parser. You can https://www.antlr.org/download.html[download ANTLR4 developer tools] for the following languages:
 
-* Java, 
-* C#, 
-* Python, 
-* JavaScript, 
-* Go, 
-* C++, 
-* Swift, 
+* Java 
+* C# 
+* Python 
+* JavaScript 
+* Go 
+* C++ 
+* Swift 
 * PHP 
 * DART
 
@@ -193,9 +193,9 @@ The way the translation process would work is that first the lexical analyser (l
 
 [TIP] 
 ====
-Creating a transpiler is not trivial but is not rocket science either. If you can avoid writing your own transpiler, all the better. The trickiest parts of the implementation are:
+Creating a transpiler is not trivial but it is not rocket science either. If you can avoid writing your own transpiler, all the better. The trickiest parts of the implementation are:
 
-* properly handing indentation in EFX templates,
+* properly handing indentation in EFX templates
 * leveraging stacks to maintain context
 
 When in doubt, use the EFX Translator implementations available in the EFX Toolkit as an example. 

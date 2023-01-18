@@ -3,7 +3,7 @@
 The eForms Expression Language (EFX) is a domain specific language used to formally express and communicate the eForms business rules.
 
 == Needs covered by EFX
-Every business rule is associated with a logical condition that determines whether the rule is applicable or not in a certain situation. Moreover, every business rule involves and additional logical operation to determine weather the rule is respected or not. While some of these logical operations are simple enough to be defined indirectly, many of them require a formal language that allows for ad hoc calculations as well as logical operations. EFX is used therefore to express non-trivial logical operations necessary for notice validation.
+Every business rule is associated with a logical condition that determines whether the rule is applicable or not in a certain situation. Moreover, every business rule involves an additional logical operation to determine whether the rule is respected or not. While some of these logical operations are simple enough to be defined indirectly, many of them require a formal language that allows for ad hoc calculations as well as logical operations. EFX is used therefore to express non-trivial logical operations necessary for notice validation.
 
 Additionally, EFX is used to define templates for notice visualisation. The visual structure of a notice is not the same as the physical structure of the XML file. Moreover, in many cases, combining values of several fields is necessary to visualise a particular piece of information. The templating features of EFX allow us to overcome these difficulties in defining and maintaining correct and reusable notice visualisation templates. 
 
@@ -11,7 +11,7 @@ Additionally, EFX is used to define templates for notice visualisation. The visu
 We decided to develop a domain specific language (DSL) to cover these needs, as it would allow us to use a language that was simple to read and write, as well as unambiguous in our domain, while being expressive enough to cover all our present and future needs. At the same time a DSL allows the Publications Office as well as the diverse ecosystem of eSenders, to create parsers and translators targeting several different development and runtime environments.
 
 == Features of EFX
-* First and foremost, EFX supports the definition of expressions that involve references to eForms fields, nodes, codelists. In EFX you reference a field using its identifier.
+* First and foremost, EFX supports the definition of expressions that involve references to eForms fields, nodes and codelists. In EFX you reference a field using its identifier.
 * EFX supports all the data types used in eForms and provides operators and functions to manipulate them.
 * Crucially, EFX is also context sensitive and manages implicit context changes as necessary allowing for simpler expressions.
 * The syntax of EFX expressions is inspired by XPath; however, it is simpler to read, write and translate. 
@@ -22,9 +22,9 @@ We decided to develop a domain specific language (DSL) to cover these needs, as 
 
 EFX is defined using ANTLR v4. https://www.antlr.org[ANTLR] is a well established parser generator that can generate parsers in Java, C#, Python, JavaScript, Go, C++, Swift, PHP and DART. 
 
-To create an EFX parser you need the EFX grammar (included in the eForms SDK), as well as the ANTLR developer tools targetting your development environment.
+To create an EFX parser you need the EFX grammar (included in the eForms SDK), as well as the ANTLR developer tools targeting your development environment.
 
-ANTLR will generate for you, in the target language of your choice, the source code of an EFX lexical analyser and parser. It will also generate a listener and/or visitor base-class, which you should extend to create translators that can translate EFX expressions to the scripting language of your choice (one that your eForms application can execute). 
+ANTLR will generate for you, in the target language of your choice, the source code of an EFX lexical analyser and parser. It will also generate a listener and/or visitor base class, which you should extend to create translators that can translate EFX expressions to the scripting language of your choice (one that your eForms application can execute). 
 
 For our own needs at the Publications Office we have developed translators that translate EFX expressions to XPath, and EFX templates to XSLT. These translators are available in Github for you to reuse, improve or use as an inspiration for creating your own.
 
@@ -34,7 +34,7 @@ https://github.com/OP-TED/eForms-SDK/tree/main/efx-grammar[EFX grammar]::
 The EFX grammar is available in the https://github.com/OP-TED/eForms-SDK[eForms SDK]. The grammar is defined as an ANTLR v4 grammar.
 
 https://github.com/OP-TED/efx-toolkit-java[EFX Parser and Translators in Java]::
-The parser and translators that we have created for our own needs are available in https://github.com/OP-TED/efx-toolkit-java[Github]. Our EFX expression translator, translates EFX expressions to XPath. The translator is also designed in a way that allows you to reuse it for translating to other target languages.
+The parser and translators that we have created for our own needs are available in https://github.com/OP-TED/efx-toolkit-java[Github]. Our EFX Expression Translator translates EFX expressions to XPath. The translator is also designed in a way that allows you to reuse it for translating to other target languages.
 
 https://github.com/OP-TED/eforms-notice-viewer[Notice Viewer sample application]::
 To demonstrate how an EFX template translator can be created and used, we have developed a sample application for notice visualisation. You can use it as an inspiration or as a basis for creating your own notice viewer. You can find the Notice Viewer sample in https://github.com/OP-TED/eforms-notice-viewer[Github].
