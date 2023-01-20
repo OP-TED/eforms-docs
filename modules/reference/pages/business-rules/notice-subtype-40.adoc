@@ -1380,6 +1380,11 @@ a|
 
 *Always forbidden* in notice sub-type 40.
 |`ERROR`
+h|`BT-531-Part`
+a|
+
+*Always forbidden* in notice sub-type 40.
+|`ERROR`
 h|`BT-536-Part`
 a|
 

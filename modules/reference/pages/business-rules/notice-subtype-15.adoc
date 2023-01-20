@@ -1645,6 +1645,11 @@ a|
 
 *Always forbidden* in notice sub-type 15.
 |`ERROR`
+h|`BT-531-Part`
+a|
+
+*Always forbidden* in notice sub-type 15.
+|`ERROR`
 h|`BT-536-Part`
 a|
 

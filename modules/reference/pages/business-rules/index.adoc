@@ -4498,32 +4498,6 @@ BT-556-NoticeResult in /BT-137-LotsGroup
 ----
 *Always applies* in every notice sub-type.
 |`ERROR`
-h|`BT-60-Lot`
-a|Co-constraint.
-
-.Co-constraint in EFX
-[source, EFX]
-----
-(BT-01-notice == '32016D0002' and BT-60-Lot == 'eu-funds') or not(BT-01-notice == '32016D0002')
-----
-*Always applies* in every notice sub-type.
-|`ERROR`
-h|`BT-60-Lot`
-a|Co-constraint.
-
-.Co-constraint in EFX
-[source, EFX]
-----
-BT-60-Lot == 'eu-funds'
-----
-*Applies if* Procedure Legal Basis (BT-01) value is equal to 'Regulation 2018/1046'.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-01-notice == '32018R1046'
-----
-|`ERROR`
 h|`BT-630(d)-Lot`
 a|Co_constraint.
 

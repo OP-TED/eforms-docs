@@ -3091,10 +3091,5 @@ a|
 
 *Always mandatory* in notice sub-type 5.
 |`ERROR`
-h|`OPT-301-Part-Mediator`
-a|
-
-*Always mandatory* in notice sub-type 5.
-|`ERROR`
 |====
 

@@ -1720,6 +1720,11 @@ a|
 
 *Always forbidden* in notice sub-type CEI.
 |`ERROR`
+h|`BT-531-Part`
+a|
+
+*Always forbidden* in notice sub-type CEI.
+|`ERROR`
 h|`BT-536-Part`
 a|
 
