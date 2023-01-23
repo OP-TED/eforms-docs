@@ -1455,28 +1455,23 @@ found in xref:competition-results.adoc#tenderingPartySection[Tendering Party].
 
 The results are provided per lot.
 
-For a given lot, winners are the Tendering Parties for which the tender:
+For a given lot, winners are tenderers members of Tendering Parties for which the tender:
 
 * Was submitted for that lot, and
 
-* Has been selected as part of the winning tenders (i.e. is not a non-winning tender, hence does not have a tender Rank set to zero.).
+* Has been selected as part of the winning tenders (Tenders associated to a contract, 
+i.e. tender for which there exists a BT-3202-Contract whose value equals the one of 
+its OPT-321-Tender field.).
 
-NB: Tenders are only listed once the award decision has been made and any tender listed with a not null rank are considered winning tenders.
+Therefore to identify winners for a given Lot, there is a need to successively:
 
-Therefore to identify a winner, there is a need to successively:
+. Identify the tenders submitted for that Lot or a group of lots containing that lot,
 
-. Look for tenders referenced at the Lot Result,
+. Extract, from these Tenders, the ones referenced in a contract,
 
-. Identify the Tender that have a not null rank and is applied to
-the lot covered by the Lot Resultfootnote:[While a Tender (let's call it global tender) may be submitted for multiple Lots and 
-Group of lots, the concept of Tender in eForms (let's call it individual tender) is limited to the fragment of that global 
-tender that relates to a single Lot or Group of lots.],
+. Identify the associated Tendering Party, and
 
-. From the identified tender identify its associated Tendering
-Party.
-
-From there it is also possible to identify each individual organization
-that belongs to this Tendering Party.
+. From there identify each Tenderer belonging to the Tendering Party.
 
 === Central Purchasing Bodies
 
@@ -1981,9 +1976,8 @@ Party,
 * There may also be multiple winning tenders (e.g. Framework
 Agreement),
 
-Therefore, when identifying a specific winner of a lot (i.e. Tendering
-Party associated to a winning tender for this lot), it is important to
-identify the tender and and check this is a winning one.
+Therefore, when identifying a specific winner of a lot, it is important to
+identify the tender and check this is a winning one.
 
 === Contract Signatory
 

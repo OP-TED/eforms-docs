@@ -23,6 +23,9 @@ Directive 2014/23/EU of the European Parliament
 and of the Council of 26 February 2014 on the award of concession
 contracts, Text with EEA relevance <<terms-and-definitions-R1>>
 
+Contractor::
+For a given lot, a Contractor is any Tenderer that has signed a Contract.
+
 Defence directive:: 
 Directive 2009/81/EC of the European Parliament
 and of the Council of 13 July 2009 on the coordination of procedures for
@@ -75,6 +78,13 @@ Directive 2014/25/EU of the European Parliament
 and of the Council of 26 February 2014 on procurement by entities
 operating in the water, energy, transport and postal services sectors
 and repealing Directive 2004/17/EC, Text with EEA relevance <<terms-and-definitions-R3>>
+
+Tenderer::
+For a given lot, a Tenderer is any organisation, sub-contractors excluded, that, 
+alone or as part of a group (the so-called Tendering Party), submits a Tender for that lot.
+
+Winner::
+For a given lot, a Winner is any Tenderer that has been awarded a contract
 
 [bibliography]
 == References
