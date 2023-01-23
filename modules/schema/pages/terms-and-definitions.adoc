@@ -80,11 +80,11 @@ operating in the water, energy, transport and postal services sectors
 and repealing Directive 2004/17/EC, Text with EEA relevance <<terms-and-definitions-R3>>
 
 Tenderer::
-For a given lot, a Tenderer is any organisation, sub-contractors excluded, that, 
-alone or as part of a group (the so-called Tendering Party), submits a Tender for that lot.
+For a given Lot, a Tenderer is any organisation, Subcontractors excluded, that, 
+alone or as part of a group (the so-called Tendering Party), submits a Tender for that Lot.
 
 Winner::
-For a given lot, a Winner is any Tenderer that has been awarded a contract
+For a given Lot, a Winner is any Tenderer that has been awarded a Contract.
 
 [bibliography]
 == References
