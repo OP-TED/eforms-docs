@@ -139,7 +139,7 @@ SDK version:: 1.5.x
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current version of Preview is also in Production environment.
+NOTE: The current version of Preview is planned to go into Production by January 24.
 
 
 === TED Central Validation Service 
