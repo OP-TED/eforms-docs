@@ -24,7 +24,7 @@ and of the Council of 26 February 2014 on the award of concession
 contracts, Text with EEA relevance <<terms-and-definitions-R1>>
 
 Contractor::
-For a given lot, a Contractor is any Tenderer that has signed a Contract.
+For a given Lot, a Contractor is any Tenderer that has signed a Contract.
 
 Defence directive:: 
 Directive 2009/81/EC of the European Parliament

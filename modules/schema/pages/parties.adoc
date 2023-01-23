@@ -1453,25 +1453,26 @@ found in xref:competition-results.adoc#tenderingPartySection[Tendering Party].
 
 === The winner
 
-The results are provided per lot.
+The results are provided per Lot.
 
-For a given lot, winners are tenderers members of Tendering Parties for which the tender:
+For a given Lot, winners are members of a Tendering Party which submitted a Tender that:
 
-* Was submitted for that lot, and
+* Was submitted for that Lot, and
 
-* Has been selected as part of the winning tenders (Tenders associated to a contract, 
-i.e. tender for which there exists a BT-3202-Contract whose value equals the one of 
-its OPT-321-Tender field.).
+* Has been selected as part of the winning Tenders (Tenders associated to a Contract, 
+i.e. Tender for which the value of its OPT-321-Tender field equals the value of a BT-3202-Contract 
+field of an existing Contract. 
+.).
 
 Therefore to identify winners for a given Lot, there is a need to successively:
 
-. Identify the tenders submitted for that Lot or a group of lots containing that lot,
+. Identify the Tenders submitted for that Lot or a Group of Lots containing that Lot,
 
-. Extract, from these Tenders, the ones referenced in a contract,
+. Extract, from these Tenders, the ones referenced in any Contracts,
 
-. Identify the associated Tendering Party, and
+. Identify the associated Tendering Parties, and
 
-. From there identify each Tenderer belonging to the Tendering Party.
+. Identify each Tenderer belonging to at least one of those Tendering Parties.
 
 === Central Purchasing Bodies
 
@@ -1969,15 +1970,15 @@ in the LotResult references to the contracts:
 
 For a LotResult:
 
-* there may exist multiple Tenders, not all tenders are winning
-tenders and multiple tenders could be issued by the same Tendering
+* there may exist multiple Tenders, not all Tenders are winning
+Tenders and multiple Tenders could be submitted by the same Tendering
 Party,
 
-* There may also be multiple winning tenders (e.g. Framework
+* There may also be multiple winning Tenders (e.g. Framework
 Agreement),
 
-Therefore, when identifying a specific winner of a lot, it is important to
-identify the tender and check this is a winning one.
+Therefore, when identifying a specific winner of a Lot, it is important to
+identify the Tender and check that it is a winning one.
 
 === Contract Signatory
 
