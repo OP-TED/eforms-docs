@@ -90,21 +90,21 @@ corresponding Group of Lots, Lot or Part.
 
 == Business Terms
 
-The Business Terms listed in Annex II of the eForms regulation are described
+The Business Terms listed in Annex II of the eForms Regulation are described
 in this document, and use the same identifiers beginning with "BT-".
 
 Basing the development of the eForms schema on the UBL schema, as well as 
 conferring many advantages, has also imposed some constraints. These 
 constraints have required the creation of a number of terms which were not 
-anticipated in the eForms regulations; they do not have a true Business 
+anticipated in the eForms Regulation; they do not have a true Business 
 justification. They have been assigned different abbreviations to distinguish 
-them from the BT terms defined in the eForms regulations.
+them from the BT terms defined in the eForms Regulation.
 
 Two abbreviations for these fields have been introduced: "OPP" and "OPT". "OP" 
 is the abbreviation for the Publications Office of the European Union as 
 defined above. "P" stands for Production; these fields are required for the 
 production processes, particularly for the non-standard forms (not defined in 
-the eForms regulations) that also use the eForms schema. "T" stands for 
+the eForms Regulation) that also use the eForms schema. "T" stands for 
 Technical, these are required for some technical constraints and chosen 
 design options.
 

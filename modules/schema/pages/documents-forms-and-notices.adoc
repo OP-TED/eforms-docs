@@ -166,7 +166,7 @@ type "PIN profile"
 
 A given form type groups multiple notice types as shown on <<noticeTypesSubtypesTable>> in
 which form types, document types, notice types, a reference to the
-column number of Annex II of Regulation (EU) 2019/1780, and a short
+column number of Annex II of Regulation (EU) 2022/2303, and a short
 description, are provided.
 
 The concept of Notice Subtype has also been introduded for a quick, easy

@@ -75,3 +75,10 @@ Commission, Directorate-General for Internal Market, Industry,
 Entrepreneurship and SMEs,_ 2019, 108 p., available at
 https://op.europa.eu/en/publication-detail/-/publication/73a78487-cc8b-11ea-adf7-01aa75ed71a1[https://op.europa.eu/en/publication-detail/-/publication/73a78487-cc8b-11ea-adf7-01aa75ed71a1],
 accessed April 6^th^, 2021
+* [[[eFormsReg2022, R12]]] **Commission Implementing Regulation 
+(EU) 2022/2303 of 24 November 2022 amending Implementing Regulation 
+(EU) 2019/1780 establishing standard forms for the publication of 
+notices in the field of public procurement (Text with EEA relevance)** ,
+_Official Journal of The European Union_, OJ L 305, Nov. 25^th^, 2022, pp. 12 – 50, available at
+[.MsoHyperlink]##http://data.europa.eu/eli/reg_impl/2022/2303/oj##,
+accessed January 24^th^, 2023.

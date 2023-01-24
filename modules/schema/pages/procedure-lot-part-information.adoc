@@ -242,7 +242,10 @@ grounds, reserved participation/execution.
 <<tenderingTermsRelatedInformationTable>> lists, in their order of appearance in the XML, each of the
 eForms Business Terms that have a corresponding component in the
 "_cac:TenderingTerms_" element, along with a short description,
-indicative cardinalitiesfootnote:[For readability and quick access, the number of columns has been reduced and cardinalities synthetized. While further details may be provided in the explanations after the table, the Annexes of the Regulation will remain the reference.]
+indicative cardinalitiesfootnote:[For readability and quick access, 
+the number of columns has been reduced and cardinalities synthetized. 
+While further details may be provided in the explanations after the 
+table, the Annexes of the Regulation will remain the reference.]
 and the relative XPATH to the node(s) used to mark it.
 
 Cardinalities are expressed using the following notation:
