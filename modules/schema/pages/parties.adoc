@@ -1453,30 +1453,26 @@ found in xref:competition-results.adoc#tenderingPartySection[Tendering Party].
 
 === The winner
 
-The results are provided per lot.
+The results are provided per Lot.
 
-For a given lot, winners are the Tendering Parties for which the tender:
+For a given Lot, winners are members of a Tendering Party which submitted a Tender that:
 
-* Was submitted for that lot, and
+* Was submitted for that Lot, and
 
-* Has been selected as part of the winning tenders (i.e. is not a non-winning tender, hence does not have a tender Rank set to zero.).
+* Has been selected as part of the winning Tenders (Tenders associated to a Contract, 
+i.e. Tender for which the value of its OPT-321-Tender field equals the value of a BT-3202-Contract 
+field of an existing Contract. 
+.).
 
-NB: Tenders are only listed once the award decision has been made and any tender listed with a not null rank are considered winning tenders.
+Therefore to identify winners for a given Lot, there is a need to successively:
 
-Therefore to identify a winner, there is a need to successively:
+. Identify the Tenders submitted for that Lot or a Group of Lots containing that Lot,
 
-. Look for tenders referenced at the Lot Result,
+. Extract, from these Tenders, the ones referenced in any Contracts,
 
-. Identify the Tender that have a not null rank and is applied to
-the lot covered by the Lot Resultfootnote:[While a Tender (let's call it global tender) may be submitted for multiple Lots and 
-Group of lots, the concept of Tender in eForms (let's call it individual tender) is limited to the fragment of that global 
-tender that relates to a single Lot or Group of lots.],
+. Identify the associated Tendering Parties, and
 
-. From the identified tender identify its associated Tendering
-Party.
-
-From there it is also possible to identify each individual organization
-that belongs to this Tendering Party.
+. Identify each Tenderer belonging to at least one of those Tendering Parties.
 
 === Central Purchasing Bodies
 
@@ -1974,16 +1970,15 @@ in the LotResult references to the contracts:
 
 For a LotResult:
 
-* there may exist multiple Tenders, not all tenders are winning
-tenders and multiple tenders could be issued by the same Tendering
+* there may exist multiple Tenders, not all Tenders are winning
+Tenders and multiple Tenders could be submitted by the same Tendering
 Party,
 
-* There may also be multiple winning tenders (e.g. Framework
+* There may also be multiple winning Tenders (e.g. Framework
 Agreement),
 
-Therefore, when identifying a specific winner of a lot (i.e. Tendering
-Party associated to a winning tender for this lot), it is important to
-identify the tender and and check this is a winning one.
+Therefore, when identifying a specific winner of a Lot, it is important to
+identify the Tender and check that it is a winning one.
 
 === Contract Signatory
 
