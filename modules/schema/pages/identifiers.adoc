@@ -51,7 +51,7 @@ procedure |NA |No restriction yet
 |BT-501 |Organisation Identifier |Discussions ongoing. It will be
 encoded by the Contracting Authority | |No restriction yet
 
-|BT-5011 |Contract EU Funds Identifier |Financing Identifier;  The 
+|BT-5011 |Contract EU Funds Financing Identifier |Financing Identifier;  The 
 most concrete information must be given (e.g. grant agreement number, 
 national identifier, project acronym, contract number) | | 
 
@@ -488,7 +488,7 @@ with a "Change"._
 [cols=",,",options="header",]
 |===
 |*Field* |*Name of the field* |*Explanation*
-|BT-557 |Group Framework Estimated Maximum Value Lot Identifier |BT-137
+|BT-557 |Group Framework Maximum Value Lot Identifier |BT-137
 
 |BT-1371 |Previous Planning Lot Identifier |BT-137
 
@@ -530,4 +530,6 @@ elements at dedicated places within the XML (cf. xref:parties.adoc#linkingRolesS
 |BT-13722 |Buyer Review Lot Identifier |BT-137
 
 |BT-13715 |Additional Information Lot Identifier |BT-137
+
+|BT-5561 |Group Framework Re-estimated Value Lot Identifier |BT-556
 |===

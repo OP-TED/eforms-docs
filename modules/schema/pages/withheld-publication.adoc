@@ -26,7 +26,7 @@ To activate the mechanism, four business terms have to be used:
 
 * Unpublished Justification Description (BT-196)
 
-* Unpublished Accessibility Date (BT-198)
+* Unpublished Access Date (BT-198)
 
 The information is encoded using dedicated elements:
 
@@ -61,7 +61,7 @@ This covers the withheld publication of:
 
 * Notice Value (BT-161),
 
-* Notice Maximum Value (BT-118),
+* Notice Framework Maximum Value (BT-118),
 
 * Notice Framework Approximate Value (BT-1118),
 
@@ -104,7 +104,7 @@ a|
 {noticeresult}/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='not-app-val']
 ----
 
-|*not-max-val* |Notice Maximum Value (BT-118)
+|*not-max-val* |Notice Framework Maximum Value (BT-118)
 a|
 [source,xpath,subs=attributes]
 ----
@@ -156,7 +156,7 @@ fields.
                         <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
                     </efac:FieldsPrivacy>
                     <efac:FieldsPrivacy>
-                        <!-- # UNPUB-02 : The Notice Maximum Value (BT-118) will not be published until March 2nd, 2022 -->
+                        <!-- # UNPUB-02 : The Notice Framework Maximum Value (BT-118) will not be published until March 2nd, 2022 -->
                         <efbc:FieldIdentifierCode listName="non-publication-identifier">not-max-val</efbc:FieldIdentifierCode>
                         <cbc:ReasonCode listName="non-publication-justification">...</cbc:ReasonCode>
                         <efbc:ReasonDescription languageID="ENG">...</efbc:ReasonDescription>
@@ -165,7 +165,7 @@ fields.
                     </efac:FieldsPrivacy>
                     <!-- # UNPUB-01 : Notice Value (BT-161) publication will be delayed -->
                     <cbc:TotalAmount currencyID="EUR">123456.00</cbc:TotalAmount>
-                    <!-- # UNPUB-02 : The Notice Maximum Value (BT-118) publication will be delayed -->
+                    <!-- # UNPUB-02 : The Notice Framework Maximum Value (BT-118) publication will be delayed -->
                     <efbc:OverallMaximumFrameworkContractsAmount currencyID="EUR">6000</efbc:OverallMaximumFrameworkContractsAmount>
                     <efac:GroupFramework>
                         <efac:FieldsPrivacy>

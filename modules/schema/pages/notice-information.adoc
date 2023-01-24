@@ -48,7 +48,7 @@ cbc:IssueTime
 
 |Notice Version (BT-757) |xref:noticeIDSection[xrefstyle=short] |*1* |cbc:VersionID
 
-|Notice Publication Date Preferred (BT-738) | xref:preferredDateSection[xrefstyle=short] |*0..1*
+|Notice Preferred Publication Date (BT-738) | xref:preferredDateSection[xrefstyle=short] |*0..1*
 |cbc:RequestedPublicationDate
 
 |Future Notice (BT-127) | xref:futureNoticeSection[xrefstyle=short] |*0..1* |cbc:PlannedDate
@@ -192,9 +192,9 @@ to OP shall be marked:
 ----
 
 [[preferredDateSection]]
-== Notice Publication Date Preferred
+== Notice Preferred Publication Date
 
-The "Notice Publication Date Preferred" is the date on which the buyer
+The "Notice Preferred Publication Date" is the date on which the buyer
 wishes the notice to be published on the TED website. It can be used to
 help the buyer respect the requirements that exist between publications
 at national and European levels.
