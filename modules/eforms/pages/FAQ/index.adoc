@@ -88,9 +88,7 @@ The release calendar on TED includes the dates on which there will be an issue o
 The OJ S will continue to be published from Monday to Friday apart from certain national holidays. 
 +
 When submitting a notice, users can select a preferred publication date, or can choose publication “as soon as possible”. 
-During the initial stages, OP will probably aim at publishing within five days, 
-but it may be technically possible in the future to publish sooner 
-provided the notice has passed automatic validation and the manual checks for lawfulness.   
+  
 
 
 What is the earliest possible time by when eForms could be introduced on a national level?:: 
