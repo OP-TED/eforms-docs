@@ -46,7 +46,7 @@ value shall be "2000-01-01Z".
 Notice Value is about the aggregated value of all awarded lots of the
 notice.
 
-Notice Framework Value is about the the aggregated Maximum Framework
+Notice Framework Value is about the aggregated Maximum Framework
 Value, estimated or actual, for all awarded lots of the noticefootnote:[When a group of lots with a Framework is awarded, the computation should be based on the Framework associated value instead of the ones of the individual lots it is composed of.].
 
 For any group of lots of the notice having a group framework agreement,
