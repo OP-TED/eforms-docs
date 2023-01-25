@@ -46,17 +46,14 @@ value shall be "2000-01-01Z".
 Notice Value is about the aggregated value of all awarded lots of the
 notice.
 
-Notice Framework Value is about the the aggregated Maximum Framework
-Value, estimated or actual, for all awarded lots of the noticefootnote:[When 
-a group of lots with a Framework is awarded, the computation should be based 
-on the Framework associated value instead of the ones of the individual lots 
-it is composed of.].
+Notice Framework Value is about the aggregated Maximum Framework
+Value, estimated or actual, for all awarded lots of the noticefootnote:[When a group of lots with a Framework is awarded, the computation should be based on the Framework associated value instead of the ones of the individual lots it is composed of.].
 
 For any group of lots of the notice having a group framework agreement,
-the reference to the Group of lots as well as the Group Framework Value 
-(Maximum and/or Reestimated) shall be specified. Group Framework Values and 
-the associated reference to the lot may be "unpublished"; when done so, 
-the dates of publication for all unpublished elements shall be the same.
+the reference to the Group of lots as well as the Group Framework Value
+shall be specified. Group Framework Value and its associated reference
+to the lot may be "unpublished"; when done so, the dates of publication
+for both elements shall be the same.
 
 All these amounts have to be expressed using codes of the
 https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/currency[Currency]
@@ -82,7 +79,7 @@ notice, including options and renewals. |*1* a|
 cbc:TotalAmount
 ---- 
 
-|*Notice Framework Maximum Value (BT-118)* |The maximum value which
+|*Notice Framework Value (BT-118)* |The maximum value which
 can be spent within the framework agreement(s) announced in this notice
 over its whole duration, in all lots, including options and renewals.
 |*1* a|
@@ -111,7 +108,7 @@ group of lots within this procedure. |*1* a|
 efac:TenderLot/cbc:ID
 ---- 
 
-|*Group Framework Maximum Value (BT-156)* |The maximum value which can be spent 
+|*Group Framework Value (BT-156)* |The maximum value which can be spent 
 in a framework agreement within a group of lots. It covers all contracts 
 to be awarded within a framework agreement over its whole duration, 
 including options and renewals. |*1*
@@ -383,7 +380,7 @@ Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
 
 | | 
 
-|*Framework Re-estimated Value (BT-660)* |The estimated value which can be
+|*Framework Estimated Value (BT-660)* |The estimated value which can be
 spent within a framework agreement over its whole duration, including
 options and renewals. |*?*
 a|
@@ -1125,7 +1122,9 @@ efbc:ContractFrameworkIndicator
 ---- 
 
 |*Framework Notice Identifier (OPT-100)* |ID of the notice related to
-the Framework Contract under which the current contract takes place |*?*
+the Framework Contract under which the current contract takes place. 
+In either format: notice identifier (UUID) concatenated with its version 
+identifier (i.e. <UUID>-<vv>), or Notice Publication ID (XXXXXX-YYYY). |*?*
 a|
 [source,xpath,subs=attributes]
 ----
@@ -1197,8 +1196,8 @@ efac:DurationJustification{zwsp}/efac:AssetsList{zwsp}/efac:Asset{zwsp}/efbc:Ass
 ----
 
 
-|*Contract EU Funds Financing Identifier (BT-5011)* |An identifier of the European
-Union Programme used to at least partially finance the contract. The most
+|*Contract EU Funds Identifier (BT-5011)* |An identifier of the European
+Union funds used to at least partially finance the contract. The most
 concrete information must be given (e.g. about concrete projects, not
 just operational programs.) |*?* a|
 [source,xpath,subs=attributes]
@@ -1206,8 +1205,10 @@ just operational programs.) |*?* a|
 efac:Funding{zwsp}/efbc:FinancingIdentifier
 ---- 
 
-|*Contract EU Funds Programme (BT-722)* |The Programme of the European Union funds
-used to at least partially finance the contract. |*?* a|
+|*Contract EU Funds Name (BT-722)* |The name of the European Union funds
+used to at least partially finance the contract. The most concrete
+information must be given (e.g. about concrete projects, not just
+operational programs.) |*?* a|
 [source,xpath,subs=attributes]
 ----
 efac:Funding{zwsp}/cbc:FundingProgramCode 
@@ -1247,7 +1248,6 @@ An XML instance excerpt is provided below for illustration:
         <efbc:ContractFrameworkIndicator>true</efbc:ContractFrameworkIndicator>
         <cac:NoticeDocumentReference>
             <cbc:ID schemeName="ojs-notice-id">62783-2020</cbc:ID>
-            <cbc:ReferencedDocumentInternalAddress>RES-OOO3</cbc:ReferencedDocumentInternalAddress>
         </cac:NoticeDocumentReference>
         <cac:SignatoryParty>
             <cac:PartyIdentification>
