@@ -35,7 +35,7 @@ h| Notice Type |_To specify the type of notice (e.g. "PIN
 only")._
 
 h| Notice SubType |_To identify precisely the SubType of a
-Notice (e.g. any value from 1 to 40 for the eForms Regulation annex, E1
+Notice (e.g. any value from 1 to 40 for the eForms Regulation Annex, E1
 to E5 for extended forms ...)_
 
 h| Form Type |_To indicate the Form Type (i.e. major "phase"
