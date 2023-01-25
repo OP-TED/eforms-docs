@@ -8,7 +8,7 @@ Business Terms, a shortened description, its cardinality and the XML
 elements used to mark the information. The specified cardinality is
 more restrictive than the one in the schema; it is used to express
 requirements stated in https://ec.europa.eu/docsroom/documents/52697[the 2022
-Regulation annex].
+Regulation Annex].
 
 [[noticeRelatedInformationTable]]
 .Notice related information

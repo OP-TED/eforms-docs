@@ -7,22 +7,22 @@ notices in the field of public procurement and repealing Implementing
 Regulation (EU) 2015/1986 (eForms) (Text with EEA relevance)** ,
 _Official Journal of The European Union_, OJ L 272, Oct. 25^th^, 2019,
 pp. 7 - 73, available at
-[.MsoHyperlink]##http://data.europa.eu/eli/reg_impl/2019/1780/oj##,
-accessed January 27^th,^ 2020.
+http://data.europa.eu/eli/reg_impl/2019/1780/oj,
+accessed January 27^th^, 2020.
 * [[[oldForms, R2]]] **Commission Implementing Regulation (EU) 2015/1986 of 11
 November 2015 establishing standard forms for the publication of notices
 in the field of public procurement and repealing Implementing Regulation
 (EU) No 842/2011**, _Official Journal of The European Union_, OJ L 296,
 Nov. 12^th^, 2015, pp. 1 - 146, available at
-http://data.europa.eu/eli/reg_impl/2015/1986/oj##,
-accessed January 27^th,^ 2020
+http://data.europa.eu/eli/reg_impl/2015/1986/oj,
+accessed January 27^th^, 2020
 * [[[comComm,R3]]] **Communication From The Commission To The European Parliament,
 The Council, The European Economic And Social Committee And The
 Committee Of The Regions, Upgrading the Single Market: more
 opportunities for people and business**, Oct. 28^th^, 2015, 23 p.,
 available at
 https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52015DC0550[https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52015DC0550],
-accessed January 27^th,^ 2020
+accessed January 27^th^, 2020
 * [[[nutsCodes,R4]]] **NUTS -- Nomenclature of territorial units for statistics,
 **__Eurostat__,
 https://ec.europa.eu/eurostat/web/nuts/background[https://ec.europa.eu/eurostat/web/nuts/background],
@@ -32,15 +32,15 @@ coordination of the laws, regulations and administrative provisions
 relating to the application of review procedures to the award of public
 supply and public works contracts**, _Official Journal of The European
 Union_, OJ L 395 , Dec. 30^th^, 1989 pp. 33 -- 35, available at
-[.MsoHyperlink]##http://data.europa.eu/eli/dir/1989/665/oj##, accessed
-January 27^th,^ 2020
+http://data.europa.eu/eli/dir/1989/665/oj, accessed
+January 27^th^, 2020
 * [[[dir13,R6]]] **Council Directive 92/13/EEC of 25 February 1992 coordinating
 the laws, regulations and administrative provisions relating to the
 application of Community rules on the procurement procedures of entities
 operating in the water, energy, transport and telecommunications
 sectors**, _Official Journal of The European Union_, OJ L 076 , March
 23^rd^, 1992, pp. 14 - 20, available at
-[.MsoHyperlink]##http://data.europa.eu/eli/dir/1992/13/oj##, accessed
+http://data.europa.eu/eli/dir/1992/13/oj, accessed
 January 27^th^, 2020
 * [[[dir23,R7]]] **Directive 2014/23/EU of the European Parliament and of the
 Council of 26 February 2014 on the award of concession contracts, Text
@@ -80,5 +80,5 @@ accessed April 6^th^, 2021
 (EU) 2019/1780 establishing standard forms for the publication of 
 notices in the field of public procurement (Text with EEA relevance)** ,
 _Official Journal of The European Union_, OJ L 305, Nov. 25^th^, 2022, pp. 12 – 50, available at
-[.MsoHyperlink]##http://data.europa.eu/eli/reg_impl/2022/2303/oj##,
+http://data.europa.eu/eli/reg_impl/2022/2303/oj,
 accessed January 24^th^, 2023.

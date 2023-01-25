@@ -171,7 +171,7 @@ description, are provided.
 
 The concept of Notice Subtype has also been introduded for a quick, easy
 and univocal reference to a specific context allowing the identification
-of the applicable rules set. For the eForms Regulation annex, the
+of the applicable rules set. For the eForms Regulation Annex, the
 subtype value corresponds to the column number.
 
 [[noticeTypesSubtypesTable]]
