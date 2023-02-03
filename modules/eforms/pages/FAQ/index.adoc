@@ -14,12 +14,11 @@ The link:https://op.europa.eu/en/web/ted-esenders-webinar-2022/home[2022 TED eSe
 The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/[May 2022 eForms Technical Workshop] focused on eForms technical implementation for developers 
 and on building metadata-driven applications.
 +
-A link:https://op.europa.eu/en/web/eforms-2022/home[second eForms Technical Workshop] took place online on 29 & 30 September 2022.
+A link:https://op.europa.eu/en/web/eforms-2022/home[second eForms Technical Workshop] took place online on 29 & 30 September 2022, 
+followed by the link:https://op.europa.eu/en/web/ted-eforms/agenda[3rd eForms Technical Workshop of February 2023].
 +
 The Publications Office is organising a series of link:https://op.europa.eu/en/web/ted-eforms/home[follow-up eForms events for 2023].
-+
-You can now register for the link:https://op.europa.eu/en/web/ted-eforms/registration[3rd eForms technical workshop] 
-which will take place on 1 February 2023 at 10:00 CET. Past eForms events can also be found under "Previous editions" tab.
+
 
 
 What is the planned transition for eForms implementation on the TED portal?:: 
@@ -131,6 +130,9 @@ https://op.europa.eu/en/web/eforms-2022/agenda
 * eForms presentations from the TED eSenders annual seminar in December 2022 +
 https://op.europa.eu/en/web/ted-esenders-webinar-2022/agenda
 +
+* eForms presentations from the third eForms Technical Workshop in February 2023 +
+https://op.europa.eu/en/web/ted-eforms/agenda
++
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
 +
@@ -168,6 +170,12 @@ Table 1 of the Annex as the authoritative source of information.
 You may also find useful the “Initial mapping of current TED-XML schema to eForms (13/04/2022)”, 
 which was shared on SIMAP: https://simap.ted.europa.eu/web/simap/eforms 
 
+
+
+What is the lifecycle of an eForms notice?::
+
+An overview of the 
+link:https://op.europa.eu/documents/11465927/11661400/2023-01-02-Lifecycle+of+eForms+notices-3rd+eForms+Technical+Workshop.pptx/a83fc6b8-191e-3e20-a412-7b94ba5317cc?t=1675250338281[lifecycle of eForms notices] was presented during the 3rd eForms Technical Workshop.
 
 
 What is planned with eForms regarding the OJ S publication number?::
@@ -246,9 +254,11 @@ and questions concerning change notices on GitHub: https://github.com/OP-TED/eFo
 Currently an F14 may not be submitted until its previous notice is published. Will there be a change with eForms?:: 
 
 With eForms, there will be a Change notice, which is a reproduction of its parent notice with an extra section 
-to advertise changes to the procurement and procurement documents and for correction of clerical errors. 
+to advertise changes to the procurement and procurement documents and for correction of clerical errors.
+Major changes such as adding or removing Lots to a published Contract Notice cannot be done through a Change notice; 
+in this case, a new CN would be expected. 
 +
-A Change form will only be possible for notices whose parent notice has been published to avoid the possibility that different users 
+A Change form is only possible for notices whose parent notice has been published to avoid the possibility that different users 
 may act on the same notice at the same time. If the parent notice has not yet been published, users can stop publication and resubmit. 
 +
 In case of many clerical errors, it will be possible to cancel a notice, which will cancel the notice itself and make it null and void, 
