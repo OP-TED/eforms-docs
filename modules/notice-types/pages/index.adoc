@@ -286,6 +286,9 @@ values:  `true` or `false` _(default)_
 `_label`:: The identifier of the label that should be used for this `field` in the user interface of your application. +
 value: a label identifier
 
+`_presetValue`:: The known constant value that should be used for this `field` in your application. +
+value: a string value, which must be converted to the type of the field. "\{NOW\}" corresponds to the current date or time.
+
 .Property names starting with underscore 
 ****
 You may be wondering why some property names (like `_repeatable`) start with an underscore, while others (like `hidden` or `readOnly`) do not. What is the difference?
