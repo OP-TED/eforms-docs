@@ -38,7 +38,16 @@ This file contains some metadata, followed by the list of notice subtypes, and t
     {
       "id" : "PIN", // <12>
       "namespace" : "urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2", // <13>
-      "rootElement" : "PriorInformationNotice" // <14>
+      "rootElement" : "PriorInformationNotice", // <14>
+      "schemaLocation" : "schemas/maindoc/UBL-PriorInformationNotice-2.3.xsd", // <15>
+      "additionalNamespaces" : [ // <16>
+        {
+          "prefix" : "cac", // <17>
+          "uri" : "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2", // <18>
+          "schemaLocation" : "schemas/common/UBL-CommonAggregateComponents-2.3.xsd" // <19>
+        },
+        ...
+      ]
     },
     ...
   ]
@@ -58,9 +67,14 @@ This file contains some metadata, followed by the list of notice subtypes, and t
 <12> Identifier of the document type.
 <13> XML namespace for the document type.
 <14> Root XML element for the document type.
+<15> Location of the XSD file that contains the definition of the root element, relative to the root of the SDK.
+<16> Additional namespaces used in an XML instance of the document type.
+<17> Prefix to use in the declaration of the additional namespace.
+<18> Full URI of the additional namespace.
+<19> Location of the XSD file that contains the definition of the elements in the namespace, relative to the root of the SDK.
 
 From the information visible in the example above, we can see that the notice subtype 1 has the document type `PIN`, so the root element in the XML is `PriorInformationNotice`.
-The definition of each root element is in the corresponding file present in the folder `schemas/maindoc` in the eForms SDK.
+The definition of this root element is in the file indicated by the `schemaLocation` property.
 
 
 == Definition of a notice subtype
