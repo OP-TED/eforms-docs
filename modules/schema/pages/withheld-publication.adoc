@@ -1235,7 +1235,7 @@ fields.
                                 <efbc:PublicationDate>2022-04-01+01:00</efbc:PublicationDate>
                             </efac:FieldsPrivacy>
                             <!-- # UNPUB-53 : Award Criterion Number Threshold (BT-5423) publication will be delayed -->
-                            <efbc:ParameterCode listName="number-threshold">min-pass</efbc:ParameterCode>
+                            <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
                             <efbc:ParameterNumeric>50</efbc:ParameterNumeric>
                         </efac:AwardCriterionParameter>
                     </efext:EformsExtension>

@@ -1845,7 +1845,7 @@ within that Award Criteria no Award Criterion with Award Criterion Number Weight
                 <ext:ExtensionContent>
                     <efext:EformsExtension>
                         <efac:AwardCriterionParameter>
-                            <efbc:ParameterCode listName="number-threshold">min-pass</efbc:ParameterCode>
+                            <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
                             <efbc:ParameterNumeric>50</efbc:ParameterNumeric>
                         </efac:AwardCriterionParameter>
                         <efac:AwardCriterionParameter>
@@ -1860,7 +1860,7 @@ within that Award Criteria no Award Criterion with Award Criterion Number Weight
         <cbc:Name languageID="ENG">Fair and realistic price</cbc:Name>
         <cbc:Name languageID="FRA">Prix équitable et réaliste</cbc:Name>
         <cbc:Description languageID="ENG">Tenders with a price score lower than 50 ...</cbc:Description>
-        <cbc:Description languageID="FRA">Les offres avec un score sur les prix infèrieur ...</cbc:Description>
+        <cbc:Description languageID="FRA">Les offres avec un score sur les prix inférieur ...</cbc:Description>
     </cac:SubordinateAwardingCriterion>
     <cac:SubordinateAwardingCriterion>
         <ext:UBLExtensions>
@@ -1868,7 +1868,7 @@ within that Award Criteria no Award Criterion with Award Criterion Number Weight
                 <ext:ExtensionContent>
                     <efext:EformsExtension>
                         <efac:AwardCriterionParameter>
-                            <efbc:ParameterCode listName="number-threshold">min-pass</efbc:ParameterCode>
+                            <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
                             <efbc:ParameterNumeric>65</efbc:ParameterNumeric>
                         </efac:AwardCriterionParameter>
                         <efac:AwardCriterionParameter>
@@ -1883,7 +1883,7 @@ within that Award Criteria no Award Criterion with Award Criterion Number Weight
         <cbc:Name languageID="ENG">Technical merit</cbc:Name>
         <cbc:Name languageID="FRA">Mérite technique</cbc:Name>
         <cbc:Description languageID="ENG">Tenders with a quality score lower than 65 ...</cbc:Description>
-        <cbc:Description languageID="FRA">Les offres avec un score qualité infèrieur ...</cbc:Description>
+        <cbc:Description languageID="FRA">Les offres avec un score qualité inférieur ...</cbc:Description>
     </cac:SubordinateAwardingCriterion>
 </cac:AwardingCriterion>
 ----
