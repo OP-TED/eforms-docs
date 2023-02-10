@@ -2448,7 +2448,7 @@ cac:AuctionTerms{zwsp}/cbc:AuctionURI
 ----
 
 
-11+^|*Framework Agreement (+++*+++)*
+11+^|*Framework Agreement (+++**+++)*
 
 |*Framework Maximum Participants Number (BT-113)* |xref:frameworkAgreementSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- 
 a|
@@ -2504,6 +2504,11 @@ cac:ContractingSystem{zwsp}/cbc:ContractingSystemTypeCode
 ----
 /ContractAwardNotice{zwsp}/cac:TenderingProcess{zwsp}/
 
+/ContractAwardNotice{zwsp}/cac:ProcurementProjectLot{zwsp}/cac:TenderingProcess{zwsp}/
+
+(**)
+[source,xpath,subs=attributes]
+----
 /ContractAwardNotice{zwsp}/cac:ProcurementProjectLot{zwsp}/cac:TenderingProcess{zwsp}/
 ----
 
