@@ -181,7 +181,7 @@ Unpublished Business Terms Codes | |Cf. xref:withheld-publication.adoc[].
 |BT-330 |Group Identifier |Points to a defined Group of lots (BT-137,
 GLO-XXXX) |LotsGroup |GLO-XXXX
 
-|BT-556 |Group Framework Value Lot Identifier |Reference to the Group of
+|BT-556 |Group Framework Maximum Value Lot Identifier |Reference to the Group of
 lots the Framework applies to. |LotsGroup |GLO-XXXX
 
 .2+|BT-758 .2+|Change Notice Version Identifier |A combination of the 
