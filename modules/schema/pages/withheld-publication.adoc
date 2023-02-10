@@ -405,7 +405,7 @@ fields.
             <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
         </efac:FieldsPrivacy>
         <efac:FieldsPrivacy>
-            <!-- # UNPUB-15B : Framework Maximum Value (BT-660) will not be published until March 2nd, 2022 -->
+            <!-- # UNPUB-15B : Framework Re-estimated Value (BT-660) will not be published until March 2nd, 2022 -->
             <efbc:FieldIdentifierCode listName="non-publication-identifier">ree-val</efbc:FieldIdentifierCode>
             <cbc:ReasonCode listName="non-publication-justification"></cbc:ReasonCode>
             <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
