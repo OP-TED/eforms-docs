@@ -100,7 +100,7 @@ In change notices, section "Information about the change" should not be repeated
 
 On 10 and 11 January 2023, notices submitted may have acquired status “not published”; this issue is now fixed. 
 
-As of 19 December 2022, status “published” is not shown in Preview for notices that are submitted successfully. We are currently working on this issue.  
+As of 19 December 2022, status “published” may not be shown in Preview for notices that are submitted successfully. We are currently working on this issue.  
 
 Action “Export validation report” on notices in status “validation failed” is currently producing an error; we are working on this issue. 
 
