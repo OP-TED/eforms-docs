@@ -101,7 +101,7 @@ efbc:OverallApproximateFrameworkContractsAmount
 
 |*_Unpublish fields_* | | |
 
-|*Group Framework Value Lot Identifier (BT-556)* |Identifier of the
+|*Group Framework Maximum Value Lot Identifier (BT-556)* |Identifier of the
 group of lots within this procedure. |*1* a|
 [source,xpath,subs=attributes]
 ----
