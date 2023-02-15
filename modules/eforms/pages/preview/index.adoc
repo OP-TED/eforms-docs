@@ -52,7 +52,7 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.5.1
+Application version:: 1.6.2
 SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1
 
 
@@ -80,7 +80,7 @@ In the notice sections a search feature has been added and pagination for up to 
 
 
 ==== Known issues 
-At this point, the application is incomplete and many use cases are not fully implemented, e.g. the "import a notice" function is currently disabled. 
+At this point, the application is incomplete and many use cases are not fully implemented. 
 
 All validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”.
 
@@ -94,24 +94,19 @@ For the moment, it is not possible to link a TED-Schema notice to an eForms noti
     
 eNotices2 uses the codelists from the SDK, which have not been completely tailored. 
 
-Converting a notice to the latest SDK version will affect the change notice by removing its change section. 
-
-In change notices, section "Information about the change" should not be repeated. 
+In Change notices, section "Information about the change" should not be repeated. 
 
 On 10 and 11 January 2023, notices submitted may have acquired status “not published”; this issue is now fixed. 
 
 As of 19 December 2022, status “published” may not be shown in Preview for notices that are submitted successfully. We are currently working on this issue.  
 
-Action “Export validation report” on notices in status “validation failed” is currently producing an error; we are working on this issue. 
-
 
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
 
-   * Currently, the Contracting Authority (Notice Author) receives no automated notification upon submission of a notice. 
-   * Currently, "stop publication" on a submitted notice will return error 500 in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
+Currently, "stop publication" on a submitted notice will return error 500 in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
 
 
-NOTE: The Preview environment is for testing purposes; new SDK releases will first be made available on Preview before deployment in Production. Please note, however, that Preview only simulates Production and notices submitted in Preview are not published in a test environment of TED. “Published” is only a mock status that is automatically assigned to submitted notices at around 15:00 CET with the next mock-export (that in turn simulates the publication process). Preview will show status “published” regardless of the preferred publication date (if any). Notices submitted in Preview are not checked for lawfulness.
+NOTE: The Preview environment is for testing purposes; new SDK releases will first be made available on Preview before deployment in Production. Please note, however, that Preview only simulates Production and notices submitted in Preview are not published in a test environment of TED. “Published” is only a mock status that is automatically assigned to submitted notices at around 15:00 CET when they enter the export (notices are not actually published on TED). If there is a preferred publication date, Preview will show status “published” as soon as the export finishes, which is the previous working day at around 15:00 CET. As an example, if the preferred publication date falls on a Monday, the status will change to "published" the previous Friday at around 15:00 CET, when the export takes place (provided Friday is not a public holiday). Notices submitted in Preview are not checked for lawfulness.
 
 CAUTION: In Production (live environment), the actual export to TED happens on workdays around 16:00 CET depending on the number of notices to be published in the next OJ S. When this process is initiated and a submitted notice is in the daily export, it will be published on TED at 09:00 CET in the next available OJ S based on the release calendar. Its status will then change to “Published”. Please note that stopping publication of a notice is not allowed at this stage, i.e. between the export and publication. We will later introduce the status “Publishing” for such cases to avoid confusion. For more information on notice statuses, please see the eForms FAQ.
 
@@ -122,24 +117,27 @@ We are currently in the process of providing more guidance for users of the eNot
    * BT-747 Selection criteria must be entered 3 times using the 3 values from the codelist (except none). 
    * In multi-stage procedures (BT-105), the second stage indicator should be set to 'yes' on one of those 3 groups where the criterion is used. 
    * "Award criteria complicated" should be filled-in with a variation of "See the procurement documents" to avoid having to fill in Criterion parameters.
-   * Avoid repeating the award criteria group (first level).
-   * Please avoid using the section “Information about late submission” except for the mandatory fileds and the “Description of the NDA”.
+   * Please avoid using the section “Information about late submission” except for the mandatory fields and the “Description of the NDA”.
    * For Exclusion Grounds, use only once the code value and enter ”all other exclusion grounds apply" in the description; avoid repeating codelist values.
    * Group "Post Award Process" both indicators should be always set to "true".
    * Any date field which has a time attached must always have a value in the time field.
-   * In Contact notices of the Defence directive, BT-71-Lot should not be filled in.
-   
-   
+   * In Contract notices of the Defence directive, BT-71-Lot should not be filled in.
+ 
+If you are an eSender, please note that the concept of Workgroups is reserved for users of eNotices2 web User Interface (UI).  
+
+eSenders/ users of eNotices2 API can still create workgroups in the UI of eNotices2 but the API is not aware of the context or workgroups, i.e. no API function can be performed on a notice that has been manually transferred to the context of a Workgroup.  
+
+
 
 ==== Planned updates 
 [horizontal]
 Indicative planning:: March 2023
-Application version:: 1.6.0
-SDK version:: 1.5.x
+Application version:: 1.7
+SDK version:: 1.6
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current version of Preview is planned to go into Production by January 24.
+NOTE: The current version of Preview is planned to go into Production on 16 February 2023.
 
 
 === TED Central Validation Service 
