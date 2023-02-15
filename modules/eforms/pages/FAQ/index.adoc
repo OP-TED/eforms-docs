@@ -80,6 +80,28 @@ rules which implement the EU procurement regulations, it can be published in the
 It will be up to the notice authors to apply any additional tailoring required 
 by an individual Member State. 
  
+ 
+ 
+Currently with eSentool, several people can access the same front-end eSender account. Will eSenders be able to organise themselves the same way in eNotices2?::
+
+eNotices2 web user interface was designed with front-end users of eNotices2 in mind. 
+eSenders are API users and other than logging in eNotices2 once to pair their API key, 
+we would discourage them from using eNotices2 web user interface to avoid certain manual actions that may interfere with using the API. 
++
+For instance, eSenders can use eNotices2 to create “workgroups”, however, the API is not aware of this context 
+and no API function can be performed on a notice that has been manually transferred to the context of a “workgroup”. 
+We would, therefore, discourage any manual operations on notices via the user interface of eNotices2; 
+these sort of groupings and permissions should be handled in the eSender’s application instead. 
++
+For generating an API key via the TED Developer Portal, only one EU Login (and its email address) is allowed per account. 
+As an eSender, you should use a functional/ shared email address to generate your API key and your eNotices2 account.  
++
+The TED Developer Portal will soon offer the possibility to eSenders to add additional contact emails to their “Developer Profile” 
+so that they can receive communication from the Publications Office, such as important announcements. 
+Any email notifications coming from eNotices2 application that OP may develop in the future for eSenders will still be addressed 
+to the one email address/ EU Login of the eNotices2 account. 
+
+
 
 With eForms, will there be a fixed publication schedule as there is today?::
 
@@ -1151,6 +1173,8 @@ BT-738 allows to choose a preferred notice publication date. How will this work 
 The BT-738 Notice Publication Date Preferred is available to help the buyer to coordinate publication dates at national and European levels. 
 The submitted notice will be stored in the OP internal system (TED Monitor 2022). When the preferred publication date is reached, 
 the notice will be published on TED. The preferred publication date can be set for up to 3 months into the future. 
+With SDK 1.6, Notice Preferred Publication Date (BT-738-notice) shall be between 2 and 60 days after the Notice Dispatch Date (BT-05-notice). 
+Previous SDK versions will still allow the extra month.
 
 
 
