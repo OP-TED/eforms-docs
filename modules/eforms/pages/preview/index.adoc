@@ -86,7 +86,7 @@ All validation errors are currently displayed as a pop-up window, without pointi
 
 All the error messages and labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
 
-Notices go through CVS validation when they are submitted, or when the user clicks on "validate" in the user interface, however, the feature may be unstable.
+Notices go through CVS validation when they are submitted, or when the user clicks on "validate" in the user interface, however, the feature may be unstable. Notices created in the user interface of eNotices2 that trigger a lawfulness warning cannot be submitted.
 
 For the moment, CVS validation does not work dynamically, i.e. there is no check between notices. This has implications, e.g. for checking notices of the same procedure or the same UUID v4 and different version ID; currently, it is possible to submit and publish two notices that carry the same notice ID and different version IDs. See in contrast: https://docs.ted.europa.eu/eforms/latest/schema/notice-information.html#noticeIDSection.
 
