@@ -201,6 +201,7 @@ The properties that are assigned with static values are listed below:
 `legalType`:: The data type of the Business Term associated with the field as defined by the eForms Regulation.
 `maxLength`:: The maximum number of characters that the field can hold.
 `idScheme`:: Applicable only to fields of type `id`. Indicates the identifier scheme for this `id` field (e.g. "TPO" for Touch Point).
+`schemeName`:: Applicable only to fields of type `id`. Indicates the value that should be indicated for this field in the `schemeName` attribute in the XML.
 `idSchemes`:: Applicable only to fields of type `id-ref`. Provides an array of valid identifier schemes that this `id-ref` field can reference.
 
 Static properties are always assigned with a scalar value (a string, a boolean, a number, array of strings, etc.). If there is no value defined, the property is omitted.
