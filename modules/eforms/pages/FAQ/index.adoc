@@ -1292,6 +1292,14 @@ The conditions are visible in the Schematron rules as well as in the eForms expr
 
 
 
+Are the error messages returned by CVS translated?::
+
+Translations of the messages that can be returned by CVS when rules are not respected are still work in progress 
+and are progressively added in the https://github.com/OP-TED/eForms-SDK/tree/develop/translations[translations] file on the SDK on GitHub.
+When calling CVS API, the “text” element in the validation report will be returned in the language you passed as a parameter to your request. 
+
+
+
 Why do the validation rules differ in some cases between the Extended Annex to the Regulation and fields.json? For example, CELEX states that BT-52 (Successive Reduction) for eForm 16 is mandatory, but fields.json has no mandatory rule for this field.::
 
 The validation rules in the fields.json differ from those in the CELEX table because the business logic 
