@@ -197,7 +197,7 @@ The properties that are assigned with static values are listed below:
 `xpathAbsolute`:: The absolute XPath of the field. This value is calculated by combining all the relative XPaths in the hierarchy of nodes that include this field. See `parentNodeId`.
 `xpathRelative`:: The XPath of the field relative to its parent `node`. See `parentNodeId`.
 `type`:: The data type of the field. xref:#data-types[See Field data types].
-`presetValue`:: The known constant value of the field, if any. This property is always a string, but the value should be converted to the same type as the field. The value "\{NOW\}" corresponds to the current date or time.
+`presetValue`:: The value used to pre-fill a field. This property is always a string, but the value should be converted to the same type as the field. The value "\{NOW\}" corresponds to the current date or time.
 `legalType`:: The data type of the Business Term associated with the field as defined by the eForms Regulation.
 `maxLength`:: The maximum number of characters that the field can hold.
 `idScheme`:: Applicable only to fields of type `id`. Indicates the identifier scheme for this `id` field (e.g. "TPO" for Touch Point).

@@ -300,7 +300,7 @@ values:  `true` or `false` _(default)_
 `_label`:: The identifier of the label that should be used for this `field` in the user interface of your application. +
 value: a label identifier
 
-`_presetValue`:: The known constant value that should be used for this `field` in your application. +
+`_presetValue`:: The known value that should be used to pre-fill this `field` in your application. +
 value: a string value, which must be converted to the type of the field. "\{NOW\}" corresponds to the current date or time.
 
 .Property names starting with underscore 
