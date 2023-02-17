@@ -43,7 +43,8 @@ The following snippet shows the information provided for each node.
     "xpathAbsolute" : "/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']", // <3>
     "xpathRelative" : "cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']", // <4>
     "repeatable" : true, // <5>
-    "identifierFieldId" : "BT-137-Lot" // <6>
+    "identifierFieldId" : "BT-137-Lot", // <6>
+    "captionFieldId" : "BT-21-Lot" // <7>
   }
 ----
 <1> Identifier of the node.
@@ -51,7 +52,8 @@ The following snippet shows the information provided for each node.
 <3> Location of the node in an XML notice, as an absolute XPath.
 <4> Location of the node in an XML notice, as an XPath relative to its parent node.
 <5> Indicates if the node can be repeated inside its parent.
-<6> Indicates the field of type `id` that identifies this node, only present if applicable.
+<6> Indicates the field of type `id` that identifies specific instances of this node, only present if applicable.
+<7> Indicates the field that can be used to help a user recognise a specific instance of this node, like a name or title. Only present if applicable.
 
 The absolute XPath of a node can be constructed from the XPaths of its parent and successive ancestors. We provide it for each node as a convenience.
 
