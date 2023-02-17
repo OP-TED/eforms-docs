@@ -251,10 +251,16 @@ value: `"GROUP"` or `"SECTION"`
 value: a `node` identifier (a text string like `"ND-LotResult"`)
 
 `_identifierFieldId`:: Appears only if `_repeatable` is `true`. This property provides the identifier of the field that should be used to store the identifier generated for each instance of this repeatable `group`. The `identifierFieldId` can be retrieved through metadata of the associated `node` (`fields.json`) but it is provided also here for convenience. +
-value: a `field` identifier (a text string like `"BT-11-Procedure-Buyer"`)
+value: a `field` identifier (a text string like `"BT-137-Lot"`)
+
+`_captionFieldId`:: Appears only if `_repeatable` is `true`. This property provides the identifier of the field that can be used to help a user recognise a specific instance of this repeatable `group`, like a name or title. The `identifierFieldId` can be retrieved through metadata of the associated `node` (`fields.json`) but it is provided also here for convenience. +
+value: a `field` identifier (a text string like `"BT-21-Lot"`)
 
 `_idScheme`:: Appears only if `_repeatable` is `true`. Indicates the identifier scheme associated with the field in this `group` where the identifier of the `group` must be stored. It should be used as a prefix of identifiers generated for the instances of this repeatable group (e.g. `"LOT-0001"`). The value can be retrieved through the `field` metadata  (`fields.json`) but is provided also here for convenience.  +
 value: an `idScheme` identifier (a text string like `"LOT"`)
+
+`_schemeName`:: Appears only if `_repeatable` is `true`. Indicates the name of the scheme associated with the field in this `group` where the identifier of the `group` must be stored. The value can be retrieved through the `field` metadata  (`fields.json`) but is provided also here for convenience.  +
+value: an `schemeName` identifier (a text string like `"Lot"`)
 
 `_repeatable`:: Indicates that the user should be allowed to add multiple occurrences of this `group` element. The property is present only when its value is `true` (different than its default value). A repeatable `group` element is always associated with a repeatable `node`. The value can be retrieved from the `node` metadata (`fields.json`) but is also provided here for convenience. +
 values:  `true` or `false` _(default)_
