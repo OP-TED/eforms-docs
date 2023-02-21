@@ -82,13 +82,13 @@ urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2
 |urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2
 |Covers all UBL common extension components
 
-|*efext* |http://eforms/v1.0/Extensions |Covers all eForms specific
+|*efext* |http://data.europa.eu/p27/eforms-ubl-extensions/1 |Covers all eForms specific
 extension components
 
-|*efac* |http://eforms/v1.0/ExtensionAggregateComponents |Covers all
+|*efac* |http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1 |Covers all
 eForms specific extension aggregate components
 
-|*efbc* |http://eforms/v1.0/ExtensionBasicComponents |Covers all eForms
+|*efbc* |http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1 |Covers all eForms
 specific extension basic components
 |===
 
