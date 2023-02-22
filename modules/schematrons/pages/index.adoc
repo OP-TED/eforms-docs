@@ -4,7 +4,7 @@
 
 Schematron is a rule-based validation language for making assertions about the structure and content of XML documents. It is expressed in XML using a small number of elements and XPath. It has been standardised as part of ISO/IEC 19757.
 
-We use Schematron to express all validation rules to be applied on eForms XML notices. Our Central Validation Service (CVS) executes the Schematron files in order to produce a validation report in the Schematron Validation Report Language (SVRL).
+All validation rules to be applied on eForms XML notices are expressed in Schematron. The Central Validation Service (CVS) executes the Schematron files in order to produce a validation report in the Schematron Validation Report Language (SVRL).
 
 == Structure of schematron folder and files
 
@@ -73,7 +73,7 @@ The validation report indicates the rules that were executed, and gives detailed
 <3> The message for the failed assertion.
 <4> Additional information on the failure.
 
-NOTE: If you execute the Schematron validation yourself, the message will be the identifier of the message, as shown above. But if you use CVS, the validation report will contain the text of the message in the message indicated as a parameter of your request to CVS.
+MOTE: As described above, the messages for failed assertions included in a validation report are identifiers of translation text. These identifiers and their translations are held in "rule_*" files in the `translations` folder of the SDK. CVS performs an additional step after validation, replacing the identifiers in the messages with the text of the messages in the language specified in the request to CVS.
 
 The attributes of the `failed-assert` element provide specific information:
 
@@ -88,6 +88,6 @@ When relevant, additional information is provided via the `diagnostic-reference`
 
 [horizontal]
 `diagnostic`:: This attribute contains the identifier of the diagnostic information. This should not be used to extract information from the report.
-`see`:: This attribute contains the identifier of the node or field that is targetted by the failed assertion. The value starts either with `node:` or `field:` to distinguish the 2 types of identifiers.
-`text`:: This element contains the XPath of the XML element that is targetted by the failed assertion, when this is not already fully indicated in the `location` attribute of the `failed-assert` element. The XPath is relative to what is indicated in the `location` attribute. +
+`see`:: This attribute contains the identifier of the node or field that is targeted by the failed assertion. The value starts either with `node:` or `field:` to distinguish the 2 types of identifiers.
+`text`:: This element contains the XPath of the XML element that is targeted by the failed assertion, when this is not already fully indicated in the `location` attribute of the `failed-assert` element. The XPath is relative to what is indicated in the `location` attribute. +
 For example, if an assert that checks the presence of a mandatory element fails, the `location` points to the parent node of the missing element, and the `text` corresponds to the specific missing element.
