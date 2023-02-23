@@ -1,0 +1,93 @@
+= Schematron files
+
+== Introduction
+
+Schematron is a rule-based validation language for making assertions about the structure and content of XML documents. It is expressed in XML using a small number of elements and XPath. It has been standardised as part of ISO/IEC 19757.
+
+All validation rules to be applied on eForms XML notices are expressed in Schematron. The Central Validation Service (CVS) executes the Schematron files in order to produce a validation report in the Schematron Validation Report Language (SVRL).
+
+== Structure of schematron folder and files
+
+Schematron rules are organised in 2 folders under `schematrons`:
+
+* `static`: all rules that only use information in the notice being validated.
+* `dynamic`: all rules in `static`, plus rules that depend on information outside of the notice being validated, for example the current date, or the content of another notice.
+
+In each folder, the entry point is a file named `complete-validation.sch`. This file references all the other files with `include` statements.
+
+The individual Schematron files are executed in a logical sequence:
+
+. Check the required container elements are present, and forbidden container elements are not present.
+. Check the required leaf elements are present, and forbidden leaf elements are not present
+. Check the values in leaf elements: matching a pattern, or code from a codelist.
+. Check the presence and absence of leaf elements or their related values depending on specific conditions.
+. Check the values of leaf elements are consistent with each other.
+. For `dynamic`, check rules that depend on information outside of the notice being validated.
+
+== Configuration for dynamic rules
+
+Dynamic rules use information that is in another notice. The content of this other XML notice is retrieved based on its identifier, by making an HTTP request to a specific URL.
+
+The URL is configured in the file `config.sch`, via the variable `urlPrefix`. The notice identifier is appended to the value of the variable to build the complete URL used to fetch the notice content.
+
+== Schematron rules and assertions
+
+Schematron files contain a set of assertions grouped according to the context that they are tested within.
+
+[source,xml]
+----
+<rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject[$noticeSubType = '16']"> <!--1-->
+    ...
+    <assert id="BR-BT-00024-0178" role="ERROR" diagnostics="BT-24-Lot" test="count(cbc:Description) &gt; 0"> <!--2-->
+        rule|text|BR-BT-00024-0178 <!--3-->
+    </assert>
+    ...
+</rule>
+----
+<1> The rule element defines a set of assertions that will be executed at each location corresponding to the XPath expression in the context attribute.
+<2> The `assert` element define a single assertion with related information
+<3> The message used when the assertion is not true. This is the identifier of a translation text.
+
+The information in the `assert` element is used to provide details in the validation report. 
+
+== Validation report
+
+The validation report indicates the rules that were executed, and gives detailed information for each failed assertion.
+
+[source,xml]
+----
+<svrl:fired-rule context="/*/cac:TenderingProcess[$noticeSubType = '16']"/> <!--1-->
+...
+<svrl:failed-assert id="BR-BT-00024-0178"
+        location="/cn:ContractNotice/cac:ProcurementProjectLot[2]/cac:ProcurementProject"
+        test="count(cbc:Description) > 0"
+        role="ERROR"> <!--2-->
+    <svrl:text>rule|text|BR-BT-00024-0178</svrl:text> <!--3-->
+    <svrl:diagnostic-reference diagnostic="BT-24-Lot" see="field:BT-24-Lot"> <!--4-->
+        <svrl:text>cbc:Description</svrl:text>
+    </svrl:diagnostic-reference>
+</svrl:failed-assert>
+----
+<1> Indicates that the context for a specific rule was found in the notice
+<2> An `assert` failed because the `test` evaluated to `false`
+<3> The message for the failed assertion.
+<4> Additional information on the failure.
+
+MOTE: As described above, the messages for failed assertions included in a validation report are identifiers of translation text. These identifiers and their translations are held in "rule_*" files in the `translations` folder of the SDK. CVS performs an additional step after validation, replacing the identifiers in the messages with the text of the messages in the language specified in the request to CVS.
+
+The attributes of the `failed-assert` element provide specific information:
+
+[horizontal]
+`id`:: The identifier of the failed assertion
+`location`:: The exact location that was matched by the rule context, as an absolute XPath.
+`test`:: The XPath expression of the check that failed.
+`role`:: The severity of the failure, either `ERROR` or `WARN`.
+`flag`:: A specific characteristic of the failed assertion. The value `LAWFULNESS` indicates that the failure indicates the notice might not be suitable to be published.
+
+When relevant, additional information is provided via the `diagnostic-reference` element:
+
+[horizontal]
+`diagnostic`:: This attribute contains the identifier of the diagnostic information. This should not be used to extract information from the report.
+`see`:: This attribute contains the identifier of the node or field that is targeted by the failed assertion. The value starts either with `node:` or `field:` to distinguish the 2 types of identifiers.
+`text`:: This element contains the XPath of the XML element that is targeted by the failed assertion, when this is not already fully indicated in the `location` attribute of the `failed-assert` element. The XPath is relative to what is indicated in the `location` attribute. +
+For example, if an assert that checks the presence of a mandatory element fails, the `location` points to the parent node of the missing element, and the `text` corresponds to the specific missing element.

@@ -2505,6 +2505,7 @@ cac:ContractingSystem{zwsp}/cbc:ContractingSystemTypeCode
 /ContractAwardNotice{zwsp}/cac:TenderingProcess{zwsp}/
 
 /ContractAwardNotice{zwsp}/cac:ProcurementProjectLot{zwsp}/cac:TenderingProcess{zwsp}/
+----
 
 (**)
 [source,xpath,subs=attributes]
