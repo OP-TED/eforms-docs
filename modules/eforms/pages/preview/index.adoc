@@ -105,6 +105,8 @@ The eNotices2 API URLs and parameters will change in later releases. The link:ht
 
 Currently, "stop publication" on a submitted notice will return error 500 in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
 
+Currently, when submitting an XML to eNotices2 API that is invalid against XSD, error code 500 will be returned. To see if this the case, i.e. the XML is not compliant against XSD, please check the notice for now through CVS API. 
+
 
 NOTE: The Preview environment is for testing purposes; new SDK releases will first be made available on Preview before deployment in Production. Please note, however, that Preview only simulates Production and notices submitted in Preview are not published in a test environment of TED. “Published” is only a mock status that is automatically assigned to submitted notices at around 15:00 CET when they enter the export (notices are not actually published on TED). If there is a preferred publication date, Preview will show status “published” as soon as the export finishes, which is the previous working day at around 15:00 CET. As an example, if the preferred publication date falls on a Monday, the status will change to "published" the previous Friday at around 15:00 CET, when the export takes place (provided Friday is not a public holiday). Notices submitted in Preview are not checked for lawfulness.
 
