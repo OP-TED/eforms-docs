@@ -53,10 +53,12 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 ==== Currently available
 [horizontal] 
 Application version:: 1.6.2
-SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1
+SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.1
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4 and 1.5. In the codelist fields, prefilling of values is supported.  
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5 and 1.6. SDK version 1.6 is supported both in Preview and Production environments as of 6 March 2023. 
+
+In the codelist fields, prefilling of values is supported.  
 
 Users can see the validation returned from CVS and have their notices rendered in HTML and PDF.
 
@@ -77,6 +79,9 @@ Users can define personalised settings for the legal basis and notice types that
 * To get started, please fill in Organisation Name, Organisation Identifier and Oganisation Part Name under My Form Settings > Main Buyer Settings. 
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
+
+As of SDK version 1.6, the lot distribution for lot groups has changed; there is a new section for that in the procedure. 
+
 
 
 ==== Known issues 
@@ -139,7 +144,7 @@ SDK version:: 1.6
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current version of Preview is planned to go into Production on 16 February 2023.
+NOTE: The current application version of Preview went into Production on 16 February 2023.
 
 
 === TED Central Validation Service 
