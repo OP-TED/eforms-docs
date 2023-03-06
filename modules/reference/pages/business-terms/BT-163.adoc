@@ -1,0 +1,9 @@
+= `BT-163`: Concession Value Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-163-Tender`:: Concession Value Description

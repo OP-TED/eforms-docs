@@ -1,0 +1,15 @@
+= `gpp-criteria` codelist
+:navtitle: Codelists
+
+Green Public Procurement Criteria
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-805.adoc[`BT-805`] Green Procurement Criteria
+
+== Codes
+[horizontal]
+  `eu`::: EU GPP criteria
+  `national`::: National GPP criteria
+  `none`::: No GPP criteria
+  `other`::: Other GPP criteria

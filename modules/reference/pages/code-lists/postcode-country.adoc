@@ -1,0 +1,169 @@
+= `postcode-country` codelist
+:navtitle: Codelists
+
+List of country codes for countries having postcodes and requiring their use
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/country.adoc[`country`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `1A0`::: Kosovo
+  `AFG`::: Afghanistan
+  `ALA`::: Åland Islands
+  `ALB`::: Albania
+  `AND`::: Andorra
+  `ARG`::: Argentina
+  `ARM`::: Armenia
+  `AUS`::: Australia
+  `AUT`::: Austria
+  `AZE`::: Azerbaijan
+  `BEL`::: Belgium
+  `BGD`::: Bangladesh
+  `BGR`::: Bulgaria
+  `BHR`::: Bahrain
+  `BIH`::: Bosnia and Herzegovina
+  `BLM`::: Saint Barthélemy
+  `BLR`::: Belarus
+  `BMU`::: Bermuda
+  `BRA`::: Brazil
+  `BRB`::: Barbados
+  `BRN`::: Brunei
+  `BTN`::: Bhutan
+  `CAN`::: Canada
+  `CHE`::: Switzerland
+  `CHL`::: Chile
+  `CHN`::: China
+  `COL`::: Colombia
+  `CPT`::: Clipperton
+  `CPV`::: Cabo Verde
+  `CRI`::: Costa Rica
+  `CUB`::: Cuba
+  `CYM`::: Cayman Islands
+  `CYP`::: Cyprus
+  `CZE`::: Czechia
+  `DEU`::: Germany
+  `DJI`::: Djibouti
+  `DNK`::: Denmark
+  `DOM`::: Dominican Republic
+  `DZA`::: Algeria
+  `ECU`::: Ecuador
+  `EGY`::: Egypt
+  `ESP`::: Spain
+  `EST`::: Estonia
+  `ETH`::: Ethiopia
+  `FIN`::: Finland
+  `FRA`::: France
+  `FRO`::: Faroes
+  `FSM`::: Micronesia
+  `GBR`::: United Kingdom
+  `GEO`::: Georgia
+  `GGY`::: Guernsey
+  `GIN`::: Guinea
+  `GNB`::: Guinea-Bissau
+  `GRC`::: Greece
+  `GRL`::: Greenland
+  `GTM`::: Guatemala
+  `GUM`::: Guam
+  `HND`::: Honduras
+  `HRV`::: Croatia
+  `HTI`::: Haiti
+  `HUN`::: Hungary
+  `IDN`::: Indonesia
+  `IMN`::: Isle of Man
+  `IND`::: India
+  `IRN`::: Iran
+  `IRQ`::: Iraq
+  `ISL`::: Iceland
+  `ISR`::: Israel
+  `ITA`::: Italy
+  `JEY`::: Jersey
+  `JOR`::: Jordan
+  `JPN`::: Japan
+  `KAZ`::: Kazakhstan
+  `KEN`::: Kenya
+  `KGZ`::: Kyrgyzstan
+  `KHM`::: Cambodia
+  `KIR`::: Kiribati
+  `KOR`::: South Korea
+  `KWT`::: Kuwait
+  `LAO`::: Laos
+  `LBN`::: Lebanon
+  `LIE`::: Liechtenstein
+  `LKA`::: Sri Lanka
+  `LSO`::: Lesotho
+  `LTU`::: Lithuania
+  `LUX`::: Luxembourg
+  `LVA`::: Latvia
+  `MAF`::: Saint Martin
+  `MAR`::: Morocco
+  `MCO`::: Monaco
+  `MDA`::: Moldova
+  `MDG`::: Madagascar
+  `MDV`::: Maldives
+  `MEX`::: Mexico
+  `MHL`::: Marshall Islands
+  `MLT`::: Malta
+  `MMR`::: Myanmar/Burma
+  `MNE`::: Montenegro
+  `MNG`::: Mongolia
+  `MOZ`::: Mozambique
+  `MSR`::: Montserrat
+  `MUS`::: Mauritius
+  `MWI`::: Malawi
+  `MYS`::: Malaysia
+  `NAM`::: Namibia
+  `NCL`::: New Caledonia
+  `NER`::: Niger
+  `NGA`::: Nigeria
+  `NIC`::: Nicaragua
+  `NLD`::: Netherlands
+  `NOR`::: Norway
+  `NPL`::: Nepal
+  `NRU`::: Nauru
+  `NZL`::: New Zealand
+  `OMN`::: Oman
+  `PAK`::: Pakistan
+  `PER`::: Peru
+  `PHL`::: Philippines
+  `PNG`::: Papua New Guinea
+  `POL`::: Poland
+  `PRI`::: Puerto Rico
+  `PRT`::: Portugal
+  `PRY`::: Paraguay
+  `PSE`::: Palestine
+  `PYF`::: French Polynesia
+  `ROU`::: Romania
+  `RUS`::: Russia
+  `SAU`::: Saudi Arabia
+  `SDN`::: Sudan
+  `SEN`::: Senegal
+  `SGP`::: Singapore
+  `SJM`::: Svalbard and Jan Mayen
+  `SLV`::: El Salvador
+  `SMR`::: San Marino
+  `SPM`::: Saint Pierre and Miquelon
+  `SRB`::: Serbia
+  `SVK`::: Slovakia
+  `SVN`::: Slovenia
+  `SWE`::: Sweden
+  `SWZ`::: Eswatini
+  `THA`::: Thailand
+  `TJK`::: Tajikistan
+  `TKM`::: Turkmenistan
+  `TLS`::: Timor-Leste
+  `TTO`::: Trinidad and Tobago
+  `TUN`::: Tunisia
+  `TUR`::: Türkiye
+  `UKR`::: Ukraine
+  `URY`::: Uruguay
+  `USA`::: United States
+  `UZB`::: Uzbekistan
+  `VCT`::: Saint Vincent and the Grenadines
+  `VEN`::: Venezuela
+  `VGB`::: British Virgin Islands
+  `VIR`::: US Virgin Islands
+  `VNM`::: Vietnam
+  `WLF`::: Wallis and Futuna
+  `ZAF`::: South Africa

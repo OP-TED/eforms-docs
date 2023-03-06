@@ -1,0 +1,9 @@
+= `BT-792`: Review Remedy Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-792-Review`:: Review Remedy Type

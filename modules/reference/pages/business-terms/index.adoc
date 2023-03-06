@@ -1,0 +1,668 @@
+= Business Terms
+:icons: font
+
+
+The following Business Terms are included in version {page-component-version} of eForms SDK.
+
+// We display Business Terms grouped by Business Group
+[#BG-1]
+== `BG-1`: Notice
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-01` | Procedure Legal Basis | `CODE` a| xref:business-terms/BT-01.adoc[See fields]
+h| `BT-02` | Notice Type | `CODE` a| xref:business-terms/BT-02.adoc[See fields]
+h| `BT-03` | Form Type | `CODE` a| xref:business-terms/BT-03.adoc[See fields]
+h| `BT-04` | Procedure Identifier | `IDENTIFIER` a| xref:business-terms/BT-04.adoc[See fields]
+h| `BT-05` | Notice Dispatch Date | `DATE` a| xref:business-terms/BT-05.adoc[See fields]
+h| `BT-701` | Notice Identifier | `IDENTIFIER` a| xref:business-terms/BT-701.adoc[See fields]
+h| `BT-702` | Notice Official Language | `CODE` a| xref:business-terms/BT-702.adoc[See fields]
+h| `BT-738` | Notice Preferred Publication Date | `DATE` a| xref:business-terms/BT-738.adoc[See fields]
+h| `BT-757` | Notice Version | `IDENTIFIER` a| xref:business-terms/BT-757.adoc[See fields]
+h| `BT-803` | Notice Dispatch Date eSender | `DATE` a| xref:business-terms/BT-803.adoc[See fields]
+|===
+[#BG-100]
+== `BG-100`: Communication
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-99` | Review Deadline Description | `TEXT` a| xref:business-terms/BT-99.adoc[See fields]
+h| `BT-124` | Tool Atypical URL | `URL` a| xref:business-terms/BT-124.adoc[See fields]
+h| `BT-127` | Future Notice | `DATE` a| xref:business-terms/BT-127.adoc[See fields]
+h| `BT-130` | Dispatch Invitation Tender | `DATE` a| xref:business-terms/BT-130.adoc[See fields]
+h| `BT-631` | Dispatch Invitation Interest | `DATE` a| xref:business-terms/BT-631.adoc[See fields]
+h| `BT-632` | Tool Name | `TEXT` a| xref:business-terms/BT-632.adoc[See fields]
+h| `BT-724` | Tool Atypical | `INDICATOR` a| xref:business-terms/BT-724.adoc[See fields]
+h| `BT-13712` | Communication Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13712.adoc[See fields]
+|===
+[#BG-101]
+== `BG-101`: Procurement Documents
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-13` | Additional Information Deadline | `DATE` a| xref:business-terms/BT-13.adoc[See fields]
+h| `BT-14` | Documents Restricted | `INDICATOR` a| xref:business-terms/BT-14.adoc[See fields]
+h| `BT-15` | Documents URL | `URL` a| xref:business-terms/BT-15.adoc[See fields]
+h| `BT-615` | Documents Restricted URL | `URL` a| xref:business-terms/BT-615.adoc[See fields]
+h| `BT-707` | Documents Restricted Justification | `CODE` a| xref:business-terms/BT-707.adoc[See fields]
+h| `BT-708` | Documents Official Language | `CODE` a| xref:business-terms/BT-708.adoc[See fields]
+h| `BT-737` | Documents Unofficial Language | `CODE` a| xref:business-terms/BT-737.adoc[See fields]
+h| `BT-13718` | Documents Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13718.adoc[See fields]
+|===
+[#BG-102]
+== `BG-102`: Submission Terms
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-17` | Submission Electronic | `CODE` a| xref:business-terms/BT-17.adoc[See fields]
+h| `BT-18` | Submission URL | `URL` a| xref:business-terms/BT-18.adoc[See fields]
+h| `BT-19` | Submission Nonelectronic Justification | `CODE` a| xref:business-terms/BT-19.adoc[See fields]
+h| `BT-63` | Variants | `CODE` a| xref:business-terms/BT-63.adoc[See fields]
+h| `BT-75` | Guarantee Required Description | `TEXT` a| xref:business-terms/BT-75.adoc[See fields]
+h| `BT-97` | Submission Language | `CODE` a| xref:business-terms/BT-97.adoc[See fields]
+h| `BT-98` | Tender Validity Deadline | `DURATION` a| xref:business-terms/BT-98.adoc[See fields]
+h| `BT-131` | Deadline Receipt Tenders | `DATE` a| xref:business-terms/BT-131.adoc[See fields]
+h| `BT-132` | Public Opening Date | `DATE` a| xref:business-terms/BT-132.adoc[See fields]
+h| `BT-133` | Public Opening Place | `TEXT` a| xref:business-terms/BT-133.adoc[See fields]
+h| `BT-134` | Public Opening Description | `TEXT` a| xref:business-terms/BT-134.adoc[See fields]
+h| `BT-630` | Deadline Receipt Expressions | `DATE` a| xref:business-terms/BT-630.adoc[See fields]
+h| `BT-651` | Subcontracting Tender Indication | `CODE` a| xref:business-terms/BT-651.adoc[See fields]
+h| `BT-744` | Submission Electronic Signature | `INDICATOR` a| xref:business-terms/BT-744.adoc[See fields]
+h| `BT-745` | Submission Nonelectronic Description | `TEXT` a| xref:business-terms/BT-745.adoc[See fields]
+h| `BT-751` | Guarantee Required | `INDICATOR` a| xref:business-terms/BT-751.adoc[See fields]
+h| `BT-764` | Submission Electronic Catalogue | `CODE` a| xref:business-terms/BT-764.adoc[See fields]
+h| `BT-769` | Multiple Tenders | `INDICATOR` a| xref:business-terms/BT-769.adoc[See fields]
+h| `BT-771` | Late Tenderer Information | `CODE` a| xref:business-terms/BT-771.adoc[See fields]
+h| `BT-772` | Late Tenderer Information Description | `TEXT` a| xref:business-terms/BT-772.adoc[See fields]
+h| `BT-800` | Deadline Receipt Answers | `DATE` a| xref:business-terms/BT-800.adoc[See fields]
+h| `BT-1311` | Deadline Receipt Requests | `DATE` a| xref:business-terms/BT-1311.adoc[See fields]
+h| `BT-13719` | Submission Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13719.adoc[See fields]
+|===
+[#BG-125]
+== `BG-125`: Previous Planning
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-125` | Previous Planning Identifier | `IDENTIFIER` a| xref:business-terms/BT-125.adoc[See fields]
+h| `BT-1251` | Previous Planning Part Identifier | `IDENTIFIER` a| xref:business-terms/BT-1251.adoc[See fields]
+h| `BT-1371` | Previous Planning Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1371.adoc[See fields]
+|===
+[#BG-2]
+== `BG-2`: Purpose
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-21` | Title | `TEXT` a| xref:business-terms/BT-21.adoc[See fields]
+h| `BT-22` | Internal Identifier | `TEXT` a| xref:business-terms/BT-22.adoc[See fields]
+h| `BT-23` | Main Nature | `CODE` a| xref:business-terms/BT-23.adoc[See fields]
+h| `BT-24` | Description | `TEXT` a| xref:business-terms/BT-24.adoc[See fields]
+h| `BT-25` | Quantity | `NUMBER` a| xref:business-terms/BT-25.adoc[See fields]
+h| `BT-27` | Estimated Value | `VALUE` a| xref:business-terms/BT-27.adoc[See fields]
+h| `BT-53` | Options | `INDICATOR` a| xref:business-terms/BT-53.adoc[See fields]
+h| `BT-54` | Options Description | `TEXT` a| xref:business-terms/BT-54.adoc[See fields]
+h| `BT-94` | Recurrence | `INDICATOR` a| xref:business-terms/BT-94.adoc[See fields]
+h| `BT-95` | Recurrence Description | `TEXT` a| xref:business-terms/BT-95.adoc[See fields]
+h| `BT-137` | Purpose Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-137.adoc[See fields]
+h| `BT-271` | Framework Maximum Value | `VALUE` a| xref:business-terms/BT-271.adoc[See fields]
+h| `BT-531` | Additional Nature | `CODE` a| xref:business-terms/BT-531.adoc[See fields]
+h| `BT-625` | Unit | `CODE` a| xref:business-terms/BT-625.adoc[See fields]
+|===
+[#BG-261]
+=== `BG-261`: Classification
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-26` | Classification Type | `CODE` a| xref:business-terms/BT-26.adoc[See fields]
+h| `BT-262` | Main Classification Code | `CODE` a| xref:business-terms/BT-262.adoc[See fields]
+h| `BT-263` | Additional Classification Codes | `CODE` a| xref:business-terms/BT-263.adoc[See fields]
+|===
+[#BG-557]
+=== `BG-557`: Group Framework Maximum Value
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-157` | Group Framework Maximum Value | `VALUE` a| xref:business-terms/BT-157.adoc[See fields]
+h| `BT-557` | Group Framework Maximum Value Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-557.adoc[See fields]
+|===
+[#BG-36]
+== `BG-36`: Duration
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-36` | Duration Period | `DURATION` a| xref:business-terms/BT-36.adoc[See fields]
+h| `BT-57` | Renewal Description | `TEXT` a| xref:business-terms/BT-57.adoc[See fields]
+h| `BT-58` | Renewal Maximum | `NUMBER` a| xref:business-terms/BT-58.adoc[See fields]
+h| `BT-536` | Duration Start Date | `DATE` a| xref:business-terms/BT-536.adoc[See fields]
+h| `BT-537` | Duration End Date | `DATE` a| xref:business-terms/BT-537.adoc[See fields]
+h| `BT-538` | Duration Other | `CODE` a| xref:business-terms/BT-538.adoc[See fields]
+h| `BT-781` | Duration Additional Information | `TEXT` a| xref:business-terms/BT-781.adoc[See fields]
+h| `BT-1373` | Duration Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1373.adoc[See fields]
+|===
+[#BG-6]
+== `BG-6`: Procedure
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-09` | Cross Border Law | `TEXT` a| xref:business-terms/BT-09.adoc[See fields]
+h| `BT-31` | Lots Max Allowed | `NUMBER` a| xref:business-terms/BT-31.adoc[See fields]
+h| `BT-33` | Lots Max Awarded | `NUMBER` a| xref:business-terms/BT-33.adoc[See fields]
+h| `BT-88` | Procedure Features | `TEXT` a| xref:business-terms/BT-88.adoc[See fields]
+h| `BT-105` | Procedure Type | `CODE` a| xref:business-terms/BT-105.adoc[See fields]
+h| `BT-106` | Procedure Accelerated | `INDICATOR` a| xref:business-terms/BT-106.adoc[See fields]
+h| `BT-135` | Direct Award Justification Text | `TEXT` a| xref:business-terms/BT-135.adoc[See fields]
+h| `BT-136` | Direct Award Justification Code | `CODE` a| xref:business-terms/BT-136.adoc[See fields]
+h| `BT-763` | Lots All Required | `INDICATOR` a| xref:business-terms/BT-763.adoc[See fields]
+h| `BT-1252` | Direct Award Justification Previous Procedure Identifier | `IDENTIFIER` a| xref:business-terms/BT-1252.adoc[See fields]
+h| `BT-1351` | Procedure Accelerated Justification | `TEXT` a| xref:business-terms/BT-1351.adoc[See fields]
+|===
+[#BG-330]
+=== `BG-330`: Group Lot Award
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-330` | Group Identifier | `IDENTIFIER` a| xref:business-terms/BT-330.adoc[See fields]
+h| `BT-1375` | Group Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1375.adoc[See fields]
+|===
+[#BG-709]
+=== `BG-709`: Second Stage
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-50` | Minimum Candidates | `NUMBER` a| xref:business-terms/BT-50.adoc[See fields]
+h| `BT-51` | Maximum Candidates Number | `NUMBER` a| xref:business-terms/BT-51.adoc[See fields]
+h| `BT-52` | Successive Reduction | `INDICATOR` a| xref:business-terms/BT-52.adoc[See fields]
+h| `BT-120` | No Negotiation Necessary | `INDICATOR` a| xref:business-terms/BT-120.adoc[See fields]
+h| `BT-661` | Maximum Candidates Indicator | `INDICATOR` a| xref:business-terms/BT-661.adoc[See fields]
+h| `BT-1376` | Second Stage Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1376.adoc[See fields]
+|===
+[#BG-61]
+== `BG-61`: EU Funds
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-60` | EU Funds | `INDICATOR` a| xref:business-terms/BT-60.adoc[See fields]
+h| `BT-1374` | Funds Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1374.adoc[See fields]
+|===
+[#BG-612]
+== `BG-612`: Buyer Review Summary
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-712` | Buyer Review Complainants | `NUMBER` a| xref:business-terms/BT-712.adoc[See fields]
+h| `BT-13722` | Buyer Review Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13722.adoc[See fields]
+|===
+[#BG-613]
+=== `BG-613`: Buyer Review Requests
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-635` | Buyer Review Requests Count | `NUMBER` a| xref:business-terms/BT-635.adoc[See fields]
+h| `BT-636` | Buyer Review Requests Irregularity Type | `CODE` a| xref:business-terms/BT-636.adoc[See fields]
+|===
+[#BG-614]
+== `BG-614`: EU Funds Information
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-5010` | EU Funds Financing Identifier | `IDENTIFIER` a| xref:business-terms/BT-5010.adoc[See fields]
+h| `BT-6140` | EU Funds Details | `TEXT` a| xref:business-terms/BT-6140.adoc[See fields]
+h| `BT-7220` | EU Funds Programme | `CODE` a| xref:business-terms/BT-7220.adoc[See fields]
+|===
+[#BG-7]
+== `BG-7`: Notice Result
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-118` | Notice Framework Maximum Value | `VALUE` a| xref:business-terms/BT-118.adoc[See fields]
+h| `BT-161` | Notice Value | `VALUE` a| xref:business-terms/BT-161.adoc[See fields]
+h| `BT-1118` | Notice Framework Approximate Value | `VALUE` a| xref:business-terms/BT-1118.adoc[See fields]
+|===
+[#BG-137]
+=== `BG-137`: Procedure Lot Result
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-142` | Winner Chosen | `CODE` a| xref:business-terms/BT-142.adoc[See fields]
+h| `BT-144` | Not Awarded Reason | `CODE` a| xref:business-terms/BT-144.adoc[See fields]
+h| `BT-660` | Framework Re-estimated Value | `VALUE` a| xref:business-terms/BT-660.adoc[See fields]
+h| `BT-709` | Framework Maximum Value | `VALUE` a| xref:business-terms/BT-709.adoc[See fields]
+h| `BT-710` | Tender Value Lowest | `VALUE` a| xref:business-terms/BT-710.adoc[See fields]
+h| `BT-711` | Tender Value Highest | `VALUE` a| xref:business-terms/BT-711.adoc[See fields]
+h| `BT-13713` | Result Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13713.adoc[See fields]
+|===
+[#BG-712]
+==== `BG-712`: Received Submissions
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-759` | Received Submissions Count | `NUMBER` a| xref:business-terms/BT-759.adoc[See fields]
+h| `BT-760` | Received Submissions Type | `CODE` a| xref:business-terms/BT-760.adoc[See fields]
+|===
+[#BG-310]
+=== `BG-310`: Contract
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-145` | Contract Conclusion Date | `DATE` a| xref:business-terms/BT-145.adoc[See fields]
+h| `BT-150` | Contract Identifier | `IDENTIFIER` a| xref:business-terms/BT-150.adoc[See fields]
+h| `BT-151` | Contract URL | `URL` a| xref:business-terms/BT-151.adoc[See fields]
+h| `BT-721` | Contract Title | `TEXT` a| xref:business-terms/BT-721.adoc[See fields]
+h| `BT-768` | Contract Framework Agreement | `INDICATOR` a| xref:business-terms/BT-768.adoc[See fields]
+h| `BT-1451` | Winner Decision Date | `DATE` a| xref:business-terms/BT-1451.adoc[See fields]
+h| `BT-3202` | Contract Tender Identifier | `IDENTIFIER` a| xref:business-terms/BT-3202.adoc[See fields]
+|===
+[#BG-611]
+==== `BG-611`: Contract EU Funds
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-722` | Contract EU Funds Programme | `CODE` a| xref:business-terms/BT-722.adoc[See fields]
+h| `BT-5011` | Contract EU Funds Financing Identifier | `IDENTIFIER` a| xref:business-terms/BT-5011.adoc[See fields]
+h| `BT-6110` | Contract EU Funds Details | `TEXT` a| xref:business-terms/BT-6110.adoc[See fields]
+|===
+[#BG-320]
+=== `BG-320`: Tender
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-160` | Concession Revenue Buyer | `VALUE` a| xref:business-terms/BT-160.adoc[See fields]
+h| `BT-162` | Concession Revenue User | `VALUE` a| xref:business-terms/BT-162.adoc[See fields]
+h| `BT-163` | Concession Value Description | `TEXT` a| xref:business-terms/BT-163.adoc[See fields]
+h| `BT-171` | Tender Rank | `NUMBER` a| xref:business-terms/BT-171.adoc[See fields]
+h| `BT-191` | Country Origin | `CODE` a| xref:business-terms/BT-191.adoc[See fields]
+h| `BT-193` | Tender Variant | `INDICATOR` a| xref:business-terms/BT-193.adoc[See fields]
+h| `BT-720` | Tender Value | `VALUE` a| xref:business-terms/BT-720.adoc[See fields]
+h| `BT-779` | Tender Payment Value | `VALUE` a| xref:business-terms/BT-779.adoc[See fields]
+h| `BT-780` | Tender Payment Value Additional Information | `TEXT` a| xref:business-terms/BT-780.adoc[See fields]
+h| `BT-782` | Tender Penalties | `VALUE` a| xref:business-terms/BT-782.adoc[See fields]
+h| `BT-1711` | Tender Ranked | `INDICATOR` a| xref:business-terms/BT-1711.adoc[See fields]
+h| `BT-3201` | Tender Identifier | `IDENTIFIER` a| xref:business-terms/BT-3201.adoc[See fields]
+h| `BT-13714` | Tender Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13714.adoc[See fields]
+|===
+[#BG-180]
+==== `BG-180`: Subcontracting
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-553` | Subcontracting Value | `VALUE` a| xref:business-terms/BT-553.adoc[See fields]
+h| `BT-554` | Subcontracting Description | `TEXT` a| xref:business-terms/BT-554.adoc[See fields]
+h| `BT-555` | Subcontracting Percentage | `NUMBER` a| xref:business-terms/BT-555.adoc[See fields]
+h| `BT-730` | Subcontracting Value Known | `INDICATOR` a| xref:business-terms/BT-730.adoc[See fields]
+h| `BT-731` | Subcontracting Percentage Known | `INDICATOR` a| xref:business-terms/BT-731.adoc[See fields]
+h| `BT-773` | Subcontracting | `CODE` a| xref:business-terms/BT-773.adoc[See fields]
+|===
+[#BG-556]
+=== `BG-556`: Group Framework Value
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-156` | Group Framework Maximum Value | `VALUE` a| xref:business-terms/BT-156.adoc[See fields]
+h| `BT-556` | Group Framework Value Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-556.adoc[See fields]
+h| `BT-1561` | Group Framework Re-estimated Value | `VALUE` a| xref:business-terms/BT-1561.adoc[See fields]
+|===
+[#BG-701]
+== `BG-701`: Exclusion Grounds
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-67` | Exclusion Grounds | `TEXT` a| xref:business-terms/BT-67.adoc[See fields]
+|===
+[#BG-702]
+== `BG-702`: Selection Criteria
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-40` | Selection Criteria Second Stage Invite | `INDICATOR` a| xref:business-terms/BT-40.adoc[See fields]
+h| `BT-747` | Selection Criteria Type | `CODE` a| xref:business-terms/BT-747.adoc[See fields]
+h| `BT-748` | Selection Criteria Used | `CODE` a| xref:business-terms/BT-748.adoc[See fields]
+h| `BT-749` | Selection Criteria Name | `TEXT` a| xref:business-terms/BT-749.adoc[See fields]
+h| `BT-750` | Selection Criteria Description | `TEXT` a| xref:business-terms/BT-750.adoc[See fields]
+h| `BT-1378` | Selection Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1378.adoc[See fields]
+|===
+[#BG-72]
+=== `BG-72`: Selection Criteria Second Stage Invite Number
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-752` | Selection Criteria Second Stage Invite Number | `NUMBER` a| xref:business-terms/BT-752.adoc[See fields]
+h| `BT-7531` | Selection Criteria Second Stage Invite Number Weight | `CODE` a| xref:business-terms/BT-7531.adoc[See fields]
+h| `BT-7532` | Selection Criteria Second Stage Invite Number Threshold | `CODE` a| xref:business-terms/BT-7532.adoc[See fields]
+|===
+[#BG-703]
+== `BG-703`: Organisation
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-08` | Organisation Role | `CODE` a| xref:business-terms/BT-08.adoc[See fields]
+h| `BT-16` | Organisation Part Name | `TEXT` a| xref:business-terms/BT-16.adoc[See fields]
+h| `BT-500` | Organisation Name | `TEXT` a| xref:business-terms/BT-500.adoc[See fields]
+h| `BT-501` | Organisation Identifier | `IDENTIFIER` a| xref:business-terms/BT-501.adoc[See fields]
+h| `BT-502` | Organisation Contact Point | `TEXT` a| xref:business-terms/BT-502.adoc[See fields]
+h| `BT-503` | Organisation Contact Telephone Number | `TEXT` a| xref:business-terms/BT-503.adoc[See fields]
+h| `BT-505` | Organisation Internet Address | `URL` a| xref:business-terms/BT-505.adoc[See fields]
+h| `BT-506` | Organisation Contact Email Address | `TEXT` a| xref:business-terms/BT-506.adoc[See fields]
+h| `BT-507` | Organisation Country Subdivision | `CODE` a| xref:business-terms/BT-507.adoc[See fields]
+h| `BT-509` | Organisation eDelivery Gateway | `URL` a| xref:business-terms/BT-509.adoc[See fields]
+h| `BT-510` | Organisation Street | `TEXT` a| xref:business-terms/BT-510.adoc[See fields]
+h| `BT-512` | Organisation Post Code | `TEXT` a| xref:business-terms/BT-512.adoc[See fields]
+h| `BT-513` | Organisation City | `TEXT` a| xref:business-terms/BT-513.adoc[See fields]
+h| `BT-514` | Organisation Country Code | `CODE` a| xref:business-terms/BT-514.adoc[See fields]
+h| `BT-633` | Organisation Natural Person | `INDICATOR` a| xref:business-terms/BT-633.adoc[See fields]
+h| `BT-739` | Organisation Contact Fax | `TEXT` a| xref:business-terms/BT-739.adoc[See fields]
+h| `BT-770` | Organisation Subrole | `CODE` a| xref:business-terms/BT-770.adoc[See fields]
+h| `BT-13720` | Organisation Notice Section Identifier | `IDENTIFIER` a| xref:business-terms/BT-13720.adoc[See fields]
+|===
+[#BG-3]
+=== `BG-3`: Buyer
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-10` | Activity Authority | `CODE` a| xref:business-terms/BT-10.adoc[See fields]
+h| `BT-11` | Buyer Legal Type | `CODE` a| xref:business-terms/BT-11.adoc[See fields]
+h| `BT-508` | Buyer Profile URL | `URL` a| xref:business-terms/BT-508.adoc[See fields]
+h| `BT-610` | Activity Entity | `CODE` a| xref:business-terms/BT-610.adoc[See fields]
+h| `BT-740` | Buyer Contracting Entity | `INDICATOR` a| xref:business-terms/BT-740.adoc[See fields]
+|===
+[#BG-4]
+=== `BG-4`: Winner
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-165` | Winner Size | `CODE` a| xref:business-terms/BT-165.adoc[See fields]
+h| `BT-706` | Winner Owner Nationality | `CODE` a| xref:business-terms/BT-706.adoc[See fields]
+h| `BT-746` | Winner Listed | `INDICATOR` a| xref:business-terms/BT-746.adoc[See fields]
+|===
+[#BG-715]
+=== `BG-715`: Review Body
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-799` | Review Body Type | `CODE` a| xref:business-terms/BT-799.adoc[See fields]
+|===
+[#BG-704]
+== `BG-704`: Reward and Jury
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-41` | Following Contract | `INDICATOR` a| xref:business-terms/BT-41.adoc[See fields]
+h| `BT-42` | Jury Decision Binding | `INDICATOR` a| xref:business-terms/BT-42.adoc[See fields]
+h| `BT-45` | Rewards Other | `TEXT` a| xref:business-terms/BT-45.adoc[See fields]
+h| `BT-46` | Jury Member Name | `TEXT` a| xref:business-terms/BT-46.adoc[See fields]
+h| `BT-47` | Participant Name | `TEXT` a| xref:business-terms/BT-47.adoc[See fields]
+h| `BT-1377` | Rewards Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1377.adoc[See fields]
+|===
+[#BG-44]
+=== `BG-44`: Prize
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-44` | Prize Rank | `NUMBER` a| xref:business-terms/BT-44.adoc[See fields]
+h| `BT-644` | Prize Value | `VALUE` a| xref:business-terms/BT-644.adoc[See fields]
+|===
+[#BG-705]
+== `BG-705`: Other Requirements
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-71` | Reserved Participation | `CODE` a| xref:business-terms/BT-71.adoc[See fields]
+h| `BT-78` | Security Clearance Deadline | `DATE` a| xref:business-terms/BT-78.adoc[See fields]
+h| `BT-79` | Performing Staff Qualification | `CODE` a| xref:business-terms/BT-79.adoc[See fields]
+h| `BT-578` | Security Clearance | `INDICATOR` a| xref:business-terms/BT-578.adoc[See fields]
+h| `BT-732` | Security Clearance Description | `TEXT` a| xref:business-terms/BT-732.adoc[See fields]
+h| `BT-801` | Non Disclosure Agreement | `INDICATOR` a| xref:business-terms/BT-801.adoc[See fields]
+h| `BT-802` | Non Disclosure Agreement Description | `TEXT` a| xref:business-terms/BT-802.adoc[See fields]
+h| `BT-1379` | Requirements Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1379.adoc[See fields]
+|===
+[#BG-706]
+== `BG-706`: Techniques
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-109` | Framework Duration Justification | `TEXT` a| xref:business-terms/BT-109.adoc[See fields]
+h| `BT-111` | Framework Buyer Categories | `TEXT` a| xref:business-terms/BT-111.adoc[See fields]
+h| `BT-113` | Framework Maximum Participants Number | `NUMBER` a| xref:business-terms/BT-113.adoc[See fields]
+h| `BT-119` | Dynamic Purchasing System Termination | `INDICATOR` a| xref:business-terms/BT-119.adoc[See fields]
+h| `BT-122` | Electronic Auction Description | `TEXT` a| xref:business-terms/BT-122.adoc[See fields]
+h| `BT-123` | Electronic Auction URL | `URL` a| xref:business-terms/BT-123.adoc[See fields]
+h| `BT-765` | Framework Agreement | `CODE` a| xref:business-terms/BT-765.adoc[See fields]
+h| `BT-766` | Dynamic Purchasing System | `CODE` a| xref:business-terms/BT-766.adoc[See fields]
+h| `BT-767` | Electronic Auction | `INDICATOR` a| xref:business-terms/BT-767.adoc[See fields]
+h| `BT-778` | Framework Maximum Participants | `INDICATOR` a| xref:business-terms/BT-778.adoc[See fields]
+h| `BT-13711` | Techniques Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13711.adoc[See fields]
+|===
+[#BG-707]
+== `BG-707`: Award Criteria
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-543` | Award Criteria Complicated | `TEXT` a| xref:business-terms/BT-543.adoc[See fields]
+h| `BT-733` | Award Criteria Order Justification | `TEXT` a| xref:business-terms/BT-733.adoc[See fields]
+h| `BT-13710` | Award Criteria Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13710.adoc[See fields]
+|===
+[#BG-38]
+=== `BG-38`: Award Criterion
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-539` | Award Criterion Type | `CODE` a| xref:business-terms/BT-539.adoc[See fields]
+h| `BT-540` | Award Criterion Description | `TEXT` a| xref:business-terms/BT-540.adoc[See fields]
+h| `BT-734` | Award Criterion Name | `TEXT` a| xref:business-terms/BT-734.adoc[See fields]
+|===
+[#BG-541]
+==== `BG-541`: Award Criterion Number
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-541` | Award Criterion Number | `NUMBER` a| xref:business-terms/BT-541.adoc[See fields]
+h| `BT-5421` | Award Criterion Number Weight | `CODE` a| xref:business-terms/BT-5421.adoc[See fields]
+h| `BT-5422` | Award Criterion Number Fixed | `CODE` a| xref:business-terms/BT-5422.adoc[See fields]
+h| `BT-5423` | Award Criterion Number Threshold | `CODE` a| xref:business-terms/BT-5423.adoc[See fields]
+|===
+[#BG-708]
+== `BG-708`: Place of Performance
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-727` | Place Performance Services Other | `CODE` a| xref:business-terms/BT-727.adoc[See fields]
+h| `BT-728` | Place Performance Additional Information | `TEXT` a| xref:business-terms/BT-728.adoc[See fields]
+h| `BT-1372` | Place Performance Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-1372.adoc[See fields]
+h| `BT-5071` | Place Performance Country Subdivision | `CODE` a| xref:business-terms/BT-5071.adoc[See fields]
+h| `BT-5101` | Place Performance Street | `TEXT` a| xref:business-terms/BT-5101.adoc[See fields]
+h| `BT-5121` | Place Performance Post Code | `TEXT` a| xref:business-terms/BT-5121.adoc[See fields]
+h| `BT-5131` | Place Performance City | `TEXT` a| xref:business-terms/BT-5131.adoc[See fields]
+h| `BT-5141` | Place Performance Country Code | `CODE` a| xref:business-terms/BT-5141.adoc[See fields]
+|===
+[#BG-710]
+== `BG-710`: Additional Information
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-115` | GPA Coverage | `INDICATOR` a| xref:business-terms/BT-115.adoc[See fields]
+h| `BT-300` | Additional Information | `TEXT` a| xref:business-terms/BT-300.adoc[See fields]
+h| `BT-634` | Procurement Relaunch | `INDICATOR` a| xref:business-terms/BT-634.adoc[See fields]
+h| `BT-726` | Suitable For SMEs | `INDICATOR` a| xref:business-terms/BT-726.adoc[See fields]
+h| `BT-756` | PIN Competition Termination | `INDICATOR` a| xref:business-terms/BT-756.adoc[See fields]
+h| `BT-13715` | Additional Information Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13715.adoc[See fields]
+|===
+[#BG-711]
+== `BG-711`: Contract Terms
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-64` | Subcontracting Obligation Minimum | `NUMBER` a| xref:business-terms/BT-64.adoc[See fields]
+h| `BT-65` | Subcontracting Obligation | `CODE` a| xref:business-terms/BT-65.adoc[See fields]
+h| `BT-70` | Terms Performance | `TEXT` a| xref:business-terms/BT-70.adoc[See fields]
+h| `BT-76` | Tenderer Legal Form Description | `TEXT` a| xref:business-terms/BT-76.adoc[See fields]
+h| `BT-77` | Terms Financial | `TEXT` a| xref:business-terms/BT-77.adoc[See fields]
+h| `BT-92` | Electronic Ordering | `INDICATOR` a| xref:business-terms/BT-92.adoc[See fields]
+h| `BT-93` | Electronic Payment | `INDICATOR` a| xref:business-terms/BT-93.adoc[See fields]
+h| `BT-729` | Subcontracting Obligation Maximum | `NUMBER` a| xref:business-terms/BT-729.adoc[See fields]
+h| `BT-736` | Reserved Execution | `CODE` a| xref:business-terms/BT-736.adoc[See fields]
+h| `BT-743` | Electronic Invoicing | `CODE` a| xref:business-terms/BT-743.adoc[See fields]
+h| `BT-761` | Tenderer Legal Form | `INDICATOR` a| xref:business-terms/BT-761.adoc[See fields]
+h| `BT-13717` | Terms Lot Identifier | `IDENTIFIER` a| xref:business-terms/BT-13717.adoc[See fields]
+|===
+[#BG-713]
+== `BG-713`: Strategic Procurement
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-06` | Strategic Procurement | `CODE` a| xref:business-terms/BT-06.adoc[See fields]
+h| `BT-715` | Vehicles | `NUMBER` a| xref:business-terms/BT-715.adoc[See fields]
+h| `BT-716` | Vehicles Clean | `NUMBER` a| xref:business-terms/BT-716.adoc[See fields]
+h| `BT-717` | Clean Vehicles Directive | `INDICATOR` a| xref:business-terms/BT-717.adoc[See fields]
+h| `BT-725` | Vehicles Zero Emission | `NUMBER` a| xref:business-terms/BT-725.adoc[See fields]
+h| `BT-754` | Accessibility | `CODE` a| xref:business-terms/BT-754.adoc[See fields]
+h| `BT-755` | Accessibility Justification | `TEXT` a| xref:business-terms/BT-755.adoc[See fields]
+h| `BT-774` | Green Procurement | `CODE` a| xref:business-terms/BT-774.adoc[See fields]
+h| `BT-775` | Social Procurement | `CODE` a| xref:business-terms/BT-775.adoc[See fields]
+h| `BT-776` | Procurement of Innovation | `CODE` a| xref:business-terms/BT-776.adoc[See fields]
+h| `BT-777` | Strategic Procurement Description | `TEXT` a| xref:business-terms/BT-777.adoc[See fields]
+h| `BT-805` | Green Procurement Criteria | `CODE` a| xref:business-terms/BT-805.adoc[See fields]
+h| `BT-13721` | Strategic Procurement Notice Section Identifier | `IDENTIFIER` a| xref:business-terms/BT-13721.adoc[See fields]
+|===
+[#BG-714]
+== `BG-714`: CVD Information
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-735` | CVD Contract Type | `CODE` a| xref:business-terms/BT-735.adoc[See fields]
+|===
+[#BG-7141]
+== `BG-7141`: CVD Vehicles
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-723` | Vehicle Category | `CODE` a| xref:business-terms/BT-723.adoc[See fields]
+|===
+[#BG-716]
+== `BG-716`: Review
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-783` | Review Request or Decision | `CODE` a| xref:business-terms/BT-783.adoc[See fields]
+h| `BT-784` | Review Identifier | `IDENTIFIER` a| xref:business-terms/BT-784.adoc[See fields]
+h| `BT-785` | Review Previous Identifier | `IDENTIFIER` a| xref:business-terms/BT-785.adoc[See fields]
+h| `BT-786` | Review Notice Section Identifier | `IDENTIFIER` a| xref:business-terms/BT-786.adoc[See fields]
+h| `BT-787` | Review Date | `DATE` a| xref:business-terms/BT-787.adoc[See fields]
+h| `BT-788` | Review Title | `TEXT` a| xref:business-terms/BT-788.adoc[See fields]
+h| `BT-789` | Review Description | `TEXT` a| xref:business-terms/BT-789.adoc[See fields]
+h| `BT-790` | Review Decision Type | `CODE` a| xref:business-terms/BT-790.adoc[See fields]
+h| `BT-791` | Review Irregularity Type | `CODE` a| xref:business-terms/BT-791.adoc[See fields]
+h| `BT-792` | Review Remedy Type | `CODE` a| xref:business-terms/BT-792.adoc[See fields]
+h| `BT-793` | Review Remedy Value | `VALUE` a| xref:business-terms/BT-793.adoc[See fields]
+h| `BT-794` | Review URL | `URL` a| xref:business-terms/BT-794.adoc[See fields]
+h| `BT-795` | Review Request Fee | `VALUE` a| xref:business-terms/BT-795.adoc[See fields]
+h| `BT-796` | Review Request Withdrawn | `INDICATOR` a| xref:business-terms/BT-796.adoc[See fields]
+h| `BT-797` | Review Request Withdrawn Date | `DATE` a| xref:business-terms/BT-797.adoc[See fields]
+h| `BT-798` | Review Request Withdrawn Reasons | `TEXT` a| xref:business-terms/BT-798.adoc[See fields]
+|===
+[#BG-77]
+== `BG-77`: Modification
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-200` | Modification Reason Code | `CODE` a| xref:business-terms/BT-200.adoc[See fields]
+h| `BT-201` | Modification Reason Description | `TEXT` a| xref:business-terms/BT-201.adoc[See fields]
+h| `BT-202` | Modification Description | `TEXT` a| xref:business-terms/BT-202.adoc[See fields]
+h| `BT-1501` | Modification Previous Notice Section Identifier | `IDENTIFIER` a| xref:business-terms/BT-1501.adoc[See fields]
+|===
+[#BG-8]
+== `BG-8`: Not Immediately Published
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-195` | Unpublished Identifier | `IDENTIFIER` a| xref:business-terms/BT-195.adoc[See fields]
+h| `BT-196` | Unpublished Justification Description | `TEXT` a| xref:business-terms/BT-196.adoc[See fields]
+h| `BT-197` | Unpublished Justification Code | `CODE` a| xref:business-terms/BT-197.adoc[See fields]
+h| `BT-198` | Unpublished Access Date | `DATE` a| xref:business-terms/BT-198.adoc[See fields]
+|===
+[#BG-9]
+== `BG-9`: Change
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `BT-140` | Change Reason Code | `CODE` a| xref:business-terms/BT-140.adoc[See fields]
+h| `BT-141` | Change Description | `TEXT` a| xref:business-terms/BT-141.adoc[See fields]
+h| `BT-718` | Change Procurement Documents | `INDICATOR` a| xref:business-terms/BT-718.adoc[See fields]
+h| `BT-719` | Change Procurement Documents Date | `DATE` a| xref:business-terms/BT-719.adoc[See fields]
+h| `BT-758` | Change Notice Version Identifier | `IDENTIFIER` a| xref:business-terms/BT-758.adoc[See fields]
+h| `BT-762` | Change Reason Description | `TEXT` a| xref:business-terms/BT-762.adoc[See fields]
+h| `BT-13716` | Change Previous Notice Section Identifier | `IDENTIFIER` a| xref:business-terms/BT-13716.adoc[See fields]
+|===
+
+// At the end we add an additional group with business terms that do not have a business group
+== `Other`
+// The Business Terms without Business Group
+[cols="1,4,1,1", role="fixed-layout"]
+|===
+h| Identifier h| Description h| Data Type h| Details
+h| `OPT-001` | UBL version ID (UBL) | `-` a| xref:business-terms/OPT-001.adoc[See fields]
+h| `OPT-002` | Customization ID (UBL) | `-` a| xref:business-terms/OPT-002.adoc[See fields]
+h| `OPP-010` | Notice Publication Number | `-` a| xref:business-terms/OPP-010.adoc[See fields]
+h| `OPP-011` | OJEU Identifier | `-` a| xref:business-terms/OPP-011.adoc[See fields]
+h| `OPP-012` | OJEU Publication Date | `-` a| xref:business-terms/OPP-012.adoc[See fields]
+h| `OPP-020` | Assets related contract extension indicator | `-` a| xref:business-terms/OPP-020.adoc[See fields]
+h| `OPP-021` | Used asset | `-` a| xref:business-terms/OPP-021.adoc[See fields]
+h| `OPP-022` | Significance (%) | `-` a| xref:business-terms/OPP-022.adoc[See fields]
+h| `OPP-023` | Predominance (%) | `-` a| xref:business-terms/OPP-023.adoc[See fields]
+h| `OPP-030` | Contract conditions Code | `-` a| xref:business-terms/OPP-030.adoc[See fields]
+h| `OPT-030` | Provided Service Type | `-` a| xref:business-terms/OPT-030.adoc[See fields]
+h| `OPP-031` | Contract conditions Decription (other than revenue allocation) | `-` a| xref:business-terms/OPP-031.adoc[See fields]
+h| `OPP-032` | Revenues Allocation | `-` a| xref:business-terms/OPP-032.adoc[See fields]
+h| `OPP-033` | Penalties & Rewards Code | `-` a| xref:business-terms/OPP-033.adoc[See fields]
+h| `OPP-034` | Penalties and Rewards Description | `-` a| xref:business-terms/OPP-034.adoc[See fields]
+h| `OPP-040` | Main Nature - Sub Type | `-` a| xref:business-terms/OPP-040.adoc[See fields]
+h| `OPP-050` | Buyers Group Lead Indicator | `-` a| xref:business-terms/OPP-050.adoc[See fields]
+h| `OPT-050` | Document Status | `-` a| xref:business-terms/OPT-050.adoc[See fields]
+h| `OPP-051` | Awarding CPB Buyer Indicator | `-` a| xref:business-terms/OPP-051.adoc[See fields]
+h| `OPP-052` | Acquiring CPB Buyer Indicator | `-` a| xref:business-terms/OPP-052.adoc[See fields]
+h| `OPP-070` | Notice Subtype | `-` a| xref:business-terms/OPP-070.adoc[See fields]
+h| `OPT-070` | Reserved Execution Justification | `-` a| xref:business-terms/OPT-070.adoc[See fields]
+h| `OPT-071` | Quality Target Code | `-` a| xref:business-terms/OPT-071.adoc[See fields]
+h| `OPT-072` | Quality Target Description | `-` a| xref:business-terms/OPT-072.adoc[See fields]
+h| `OPP-080` | Kilometers Public Transport | `-` a| xref:business-terms/OPP-080.adoc[See fields]
+h| `OPP-090` | Previous Notice | `-` a| xref:business-terms/OPP-090.adoc[See fields]
+h| `OPT-090` | Buyer Categories | `-` a| xref:business-terms/OPT-090.adoc[See fields]
+h| `OPT-091` | Party Type | `-` a| xref:business-terms/OPT-091.adoc[See fields]
+h| `OPT-092` | Party Type Description | `-` a| xref:business-terms/OPT-092.adoc[See fields]
+h| `OPP-100` | Notice Purpose | `-` a| xref:business-terms/OPP-100.adoc[See fields]
+h| `OPT-100` | Framework Notice Identifier | `-` a| xref:business-terms/OPT-100.adoc[See fields]
+h| `OPP-105` | Sector of activity | `-` a| xref:business-terms/OPP-105.adoc[See fields]
+h| `OPP-110` | Place of registration - Town | `-` a| xref:business-terms/OPP-110.adoc[See fields]
+h| `OPT-110` | URL to Fiscal Legislation | `-` a| xref:business-terms/OPT-110.adoc[See fields]
+h| `OPP-111` | Place of registration - Postcode | `-` a| xref:business-terms/OPP-111.adoc[See fields]
+h| `OPT-111` | Fiscal Legislation Document ID | `-` a| xref:business-terms/OPT-111.adoc[See fields]
+h| `OPP-112` | Place of registration - Country | `-` a| xref:business-terms/OPP-112.adoc[See fields]
+h| `OPT-112` | Environmental Legislation Document ID | `-` a| xref:business-terms/OPT-112.adoc[See fields]
+h| `OPP-113` | Date of registration | `-` a| xref:business-terms/OPP-113.adoc[See fields]
+h| `OPT-113` | Employment Legislation Document ID | `-` a| xref:business-terms/OPT-113.adoc[See fields]
+h| `OPP-120` | Name of Publication | `-` a| xref:business-terms/OPP-120.adoc[See fields]
+h| `OPT-120` | URL to Environmental Legislation | `-` a| xref:business-terms/OPT-120.adoc[See fields]
+h| `OPP-121` | Title of the announcement | `-` a| xref:business-terms/OPP-121.adoc[See fields]
+h| `OPP-122` | URL of the announcement | `-` a| xref:business-terms/OPP-122.adoc[See fields]
+h| `OPP-123` | Date of publication | `-` a| xref:business-terms/OPP-123.adoc[See fields]
+h| `OPP-130` | Additional information | `-` a| xref:business-terms/OPP-130.adoc[See fields]
+h| `OPT-130` | URL to Employment Legislation | `-` a| xref:business-terms/OPT-130.adoc[See fields]
+h| `OPP-131` | Sender email address | `-` a| xref:business-terms/OPP-131.adoc[See fields]
+h| `OPT-140` | Procurement Documents ID | `-` a| xref:business-terms/OPT-140.adoc[See fields]
+h| `OPT-150` | Subcontracting Allowed | `-` a| xref:business-terms/OPT-150.adoc[See fields]
+h| `OPT-155` | Vehicule Type | `-` a| xref:business-terms/OPT-155.adoc[See fields]
+h| `OPT-156` | Vehicule Numeric | `-` a| xref:business-terms/OPT-156.adoc[See fields]
+h| `OPT-160` | First Name | `-` a| xref:business-terms/OPT-160.adoc[See fields]
+h| `OPT-170` | Tendering Party Leader  | `-` a| xref:business-terms/OPT-170.adoc[See fields]
+h| `OPT-200` | Company Technical Identifier | `-` a| xref:business-terms/OPT-200.adoc[See fields]
+h| `OPT-201` | TouchPoint Technical Identifier | `-` a| xref:business-terms/OPT-201.adoc[See fields]
+h| `OPT-202` | Beneficial Owner Technical Identifier | `-` a| xref:business-terms/OPT-202.adoc[See fields]
+h| `OPT-210` | Tendering Party ID | `-` a| xref:business-terms/OPT-210.adoc[See fields]
+h| `OPT-300` | Party Identifier Reference | `-` a| xref:business-terms/OPT-300.adoc[See fields]
+h| `OPT-301` | Party (ID reference) | `-` a| xref:business-terms/OPT-301.adoc[See fields]
+h| `OPT-302` | Beneficial Owner Reference | `-` a| xref:business-terms/OPT-302.adoc[See fields]
+h| `OPT-310` | Tendering Party ID Reference | `-` a| xref:business-terms/OPT-310.adoc[See fields]
+h| `OPT-315` | Contract Identifier Reference | `-` a| xref:business-terms/OPT-315.adoc[See fields]
+h| `OPT-316` | Contract Technical Identifier | `-` a| xref:business-terms/OPT-316.adoc[See fields]
+h| `OPT-320` | Tender Identifier Reference | `-` a| xref:business-terms/OPT-320.adoc[See fields]
+h| `OPT-321` | Tender Technical Identifier | `-` a| xref:business-terms/OPT-321.adoc[See fields]
+h| `OPT-322` | LotResult Technical Identifier | `-` a| xref:business-terms/OPT-322.adoc[See fields]
+h| `OPT-999` | Dummy Tender Award Date | `-` a| xref:business-terms/OPT-999.adoc[See fields]
+|===

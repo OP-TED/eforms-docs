@@ -1,0 +1,9 @@
+= `BT-701`: Notice Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-701-notice`:: Notice Identifier

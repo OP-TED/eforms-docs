@@ -1,0 +1,8 @@
+= `OPP-022`: Significance (%)
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-022-Contract`:: Significance (%)

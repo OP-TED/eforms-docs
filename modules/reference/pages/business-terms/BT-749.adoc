@@ -1,0 +1,9 @@
+= `BT-749`: Selection Criteria Name
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-749-Lot`:: Selection Criteria Name

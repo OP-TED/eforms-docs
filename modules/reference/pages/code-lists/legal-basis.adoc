@@ -1,0 +1,22 @@
+= `legal-basis` codelist
+:navtitle: Codelists
+
+This table provides the legal basis  based on the legal acts  used for a given public procurement procedure. The table is provided by the Publications Office.
+[horizontal]
+Version:: 20221214-0
+URI:: http://publications.europa.eu/resource/dataset/legal-basis
+Tailored by:: xref:code-lists/eforms-legal-basis.adoc[`eforms-legal-basis`], xref:code-lists/legal-basis-1.adoc[`legal-basis-1`], xref:code-lists/legal-basis-10.adoc[`legal-basis-10`], xref:code-lists/legal-basis-11.adoc[`legal-basis-11`], xref:code-lists/legal-basis-12.adoc[`legal-basis-12`], xref:code-lists/legal-basis-13.adoc[`legal-basis-13`], xref:code-lists/legal-basis-14.adoc[`legal-basis-14`], xref:code-lists/legal-basis-15.adoc[`legal-basis-15`], xref:code-lists/legal-basis-16.adoc[`legal-basis-16`], xref:code-lists/legal-basis-17.adoc[`legal-basis-17`], xref:code-lists/legal-basis-18.adoc[`legal-basis-18`], xref:code-lists/legal-basis-19.adoc[`legal-basis-19`], xref:code-lists/legal-basis-2.adoc[`legal-basis-2`], xref:code-lists/legal-basis-20.adoc[`legal-basis-20`], xref:code-lists/legal-basis-21.adoc[`legal-basis-21`], xref:code-lists/legal-basis-22.adoc[`legal-basis-22`], xref:code-lists/legal-basis-23.adoc[`legal-basis-23`], xref:code-lists/legal-basis-24.adoc[`legal-basis-24`], xref:code-lists/legal-basis-25.adoc[`legal-basis-25`], xref:code-lists/legal-basis-26.adoc[`legal-basis-26`], xref:code-lists/legal-basis-27.adoc[`legal-basis-27`], xref:code-lists/legal-basis-28.adoc[`legal-basis-28`], xref:code-lists/legal-basis-29.adoc[`legal-basis-29`], xref:code-lists/legal-basis-3.adoc[`legal-basis-3`], xref:code-lists/legal-basis-30.adoc[`legal-basis-30`], xref:code-lists/legal-basis-31.adoc[`legal-basis-31`], xref:code-lists/legal-basis-32.adoc[`legal-basis-32`], xref:code-lists/legal-basis-33.adoc[`legal-basis-33`], xref:code-lists/legal-basis-34.adoc[`legal-basis-34`], xref:code-lists/legal-basis-35.adoc[`legal-basis-35`], xref:code-lists/legal-basis-36.adoc[`legal-basis-36`], xref:code-lists/legal-basis-37.adoc[`legal-basis-37`], xref:code-lists/legal-basis-38.adoc[`legal-basis-38`], xref:code-lists/legal-basis-39.adoc[`legal-basis-39`], xref:code-lists/legal-basis-4.adoc[`legal-basis-4`], xref:code-lists/legal-basis-40.adoc[`legal-basis-40`], xref:code-lists/legal-basis-5.adoc[`legal-basis-5`], xref:code-lists/legal-basis-6.adoc[`legal-basis-6`], xref:code-lists/legal-basis-7.adoc[`legal-basis-7`], xref:code-lists/legal-basis-8.adoc[`legal-basis-8`], xref:code-lists/legal-basis-9.adoc[`legal-basis-9`], xref:code-lists/legal-basis-cei.adoc[`legal-basis-cei`], xref:code-lists/legal-basis-e1.adoc[`legal-basis-e1`], xref:code-lists/legal-basis-e2.adoc[`legal-basis-e2`], xref:code-lists/legal-basis-e3.adoc[`legal-basis-e3`], xref:code-lists/legal-basis-e4.adoc[`legal-basis-e4`], xref:code-lists/legal-basis-e5.adoc[`legal-basis-e5`], xref:code-lists/legal-basis-t01.adoc[`legal-basis-t01`], xref:code-lists/legal-basis-t02.adoc[`legal-basis-t02`], xref:code-lists/legal-basis-x01.adoc[`legal-basis-x01`], xref:code-lists/legal-basis-x02.adoc[`legal-basis-x02`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `31985R2137`::: Regulation (EEC) No 2137/85
+  `32001R2157`::: Regulation (EC) No 2157/2001
+  `32003R1435`::: Regulation (EC) No 1435/2003
+  `32007R1370`::: Regulation (EC) No 1370/2007
+  `32009L0081`::: Directive 2009/81/EC
+  `32014L0023`::: Directive 2014/23/EU
+  `32014L0024`::: Directive 2014/24/EU
+  `32014L0025`::: Directive 2014/25/EU
+  `32018R1046`::: Regulation (EU, Euratom) 2018/1046
+  `other`::: Other

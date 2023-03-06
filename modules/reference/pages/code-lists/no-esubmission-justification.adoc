@@ -1,0 +1,17 @@
+= `no-esubmission-justification` codelist
+:navtitle: Codelists
+
+List of codes to justify the impossibility to submit electronically
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/communication-justification.adoc[`communication-justification`]
+Structure:: flat
+Used in:: xref:business-terms/BT-19.adoc[`BT-19`] Submission Nonelectronic Justification
+
+== Codes
+[horizontal]
+  `ipr-iss`::: Intellectual property right issues
+  `phy-mod`::: Inclusion of a physical model
+  `sen-info`::: Protection of particularly sensitive information
+  `sp-of-eq`::: Buyer would need specialised office equipment
+  `tdf-non-av`::: Tools, devices, or file formats not generally available

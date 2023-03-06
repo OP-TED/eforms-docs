@@ -1,0 +1,9 @@
+= `BT-556`: Group Framework Value Lot Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-556-NoticeResult`:: Group Framework Value Lot Identifier

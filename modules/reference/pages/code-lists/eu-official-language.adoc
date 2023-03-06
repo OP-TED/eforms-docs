@@ -1,0 +1,36 @@
+= `eu-official-language` codelist
+:navtitle: Codelists
+
+List of codes of the EU official languages
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/language.adoc[`language`]
+Structure:: flat
+Used in:: xref:business-terms/BT-702.adoc[`BT-702`] Notice Official Language
+
+== Codes
+[horizontal]
+  `BUL`::: Bulgarian
+  `CES`::: Czech
+  `DAN`::: Danish
+  `DEU`::: German
+  `ELL`::: Greek
+  `ENG`::: English
+  `EST`::: Estonian
+  `FIN`::: Finnish
+  `FRA`::: French
+  `GLE`::: Irish
+  `HRV`::: Croatian
+  `HUN`::: Hungarian
+  `ITA`::: Italian
+  `LAV`::: Latvian
+  `LIT`::: Lithuanian
+  `MLT`::: Maltese
+  `NLD`::: Dutch
+  `POL`::: Polish
+  `POR`::: Portuguese
+  `RON`::: Romanian
+  `SLK`::: Slovak
+  `SLV`::: Slovenian
+  `SPA`::: Spanish
+  `SWE`::: Swedish

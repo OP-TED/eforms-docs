@@ -1,0 +1,86 @@
+= `nuts-pol-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Poland
+[horizontal]
+Version:: 2021
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `PL213`::: Miasto Kraków
+  `PL214`::: Krakowski
+  `PL217`::: Tarnowski
+  `PL218`::: Nowosądecki
+  `PL219`::: Nowotarski
+  `PL21A`::: Oświęcimski
+  `PL224`::: Częstochowski
+  `PL225`::: Bielski
+  `PL227`::: Rybnicki
+  `PL228`::: Bytomski
+  `PL229`::: Gliwicki
+  `PL22A`::: Katowicki
+  `PL22B`::: Sosnowiecki
+  `PL22C`::: Tyski
+  `PL411`::: Pilski
+  `PL414`::: Koniński
+  `PL415`::: Miasto Poznań
+  `PL416`::: Kaliski
+  `PL417`::: Leszczyński
+  `PL418`::: Poznański
+  `PL424`::: Miasto Szczecin
+  `PL426`::: Koszaliński
+  `PL427`::: Szczecinecko-pyrzycki
+  `PL428`::: Szczeciński
+  `PL431`::: Gorzowski
+  `PL432`::: Zielonogórski
+  `PL514`::: Miasto Wrocław
+  `PL515`::: Jeleniogórski
+  `PL516`::: Legnicko-głogowski
+  `PL517`::: Wałbrzyski
+  `PL518`::: Wrocławski
+  `PL523`::: Nyski
+  `PL524`::: Opolski
+  `PL613`::: Bydgosko-toruński
+  `PL616`::: Grudziądzki
+  `PL617`::: Inowrocławski
+  `PL618`::: Świecki
+  `PL619`::: Włocławski
+  `PL621`::: Elbląski
+  `PL622`::: Olsztyński
+  `PL623`::: Ełcki
+  `PL633`::: Trójmiejski
+  `PL634`::: Gdański
+  `PL636`::: Słupski
+  `PL637`::: Chojnicki
+  `PL638`::: Starogardzki
+  `PL711`::: Miasto Łódź
+  `PL712`::: Łódzki
+  `PL713`::: Piotrkowski
+  `PL714`::: Sieradzki
+  `PL715`::: Skierniewicki
+  `PL721`::: Kielecki
+  `PL722`::: Sandomiersko-jędrzejowski
+  `PL811`::: Bialski
+  `PL812`::: Chełmsko-zamojski
+  `PL814`::: Lubelski
+  `PL815`::: Puławski
+  `PL821`::: Krośnieński
+  `PL822`::: Przemyski
+  `PL823`::: Rzeszowski
+  `PL824`::: Tarnobrzeski
+  `PL841`::: Białostocki
+  `PL842`::: Łomżyński
+  `PL843`::: Suwalski
+  `PL911`::: Miasto Warszawa
+  `PL912`::: Warszawski wschodni
+  `PL913`::: Warszawski zachodni
+  `PL921`::: Radomski
+  `PL922`::: Ciechanowski
+  `PL923`::: Płocki
+  `PL924`::: Ostrołęcki
+  `PL925`::: Siedlecki
+  `PL926`::: Żyrardowski
+  `PLZZZ`::: Extra-Regio NUTS 3

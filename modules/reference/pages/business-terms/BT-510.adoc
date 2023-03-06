@@ -1,0 +1,20 @@
+= `BT-510`: Organisation Street
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-510(a)-Business`:: Street
+  `BT-510(a)-Organization-Company`:: Street
+  `BT-510(a)-Organization-TouchPoint`:: Street
+  `BT-510(a)-UBO`:: Street
+  `BT-510(b)-Business`:: Street
+  `BT-510(b)-Organization-Company`:: Streetline 1
+  `BT-510(b)-Organization-TouchPoint`:: Streetline 1
+  `BT-510(b)-UBO`:: Streetline 1
+  `BT-510(c)-Business`:: addressline
+  `BT-510(c)-Organization-Company`:: Streetline 2
+  `BT-510(c)-Organization-TouchPoint`:: Streetline 2
+  `BT-510(c)-UBO`:: Streetline 2

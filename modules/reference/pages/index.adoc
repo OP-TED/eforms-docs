@@ -1,0 +1,15 @@
+= eForms Metadata Reference
+
+This section of the eForms SDK documentation is auto-generated from our central metadata repository. 
+The information in this section is therefore identical to the metadata included in the corresponding version of the eForms SDK ({page-component-version}).
+
+== Contents
+
+* xref:eforms:reference:business-terms/index.adoc[Business Terms] +
+All Business Terms organized by Business Group, together with the fields that implement them. 
+* xref:eforms:reference:business-rules/index.adoc[Business Rules] +
+Every Business Rule included in SDK {page-component-version} together with all details on when and how it is applied.
+* xref:eforms:reference:code-lists/index.adoc[Codelists] +
+All codelists included in eFroms SDK {page-component-version}, together with their respective codes, their usage in eForms fields as well as their relationships to each-other (tailored codelists).
+
+NOTE: This information is specific to eForms SDK {page-component-version}.
