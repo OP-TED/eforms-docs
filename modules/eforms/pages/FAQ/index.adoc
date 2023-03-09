@@ -861,6 +861,46 @@ i.e. submitting/ validating/ visualising notices. Any user can be a Web Services
 
 
 
+Where can I get an API key?::
+
+API keys can be generated from the TED Developer Portal. Only one API key is allowed/ active at a time per EU Login.  
++
+API keys are only valid for the environment they were created in. For instance, to send notices to Production via the eNotices2 API, 
+you would need to generate your key in the link:https://developer.ted.europa.eu/home[Developer Portal in Production].
++
+For a key to work in a link:https://docs.ted.europa.eu/home/eforms/preview/index.html[Preview] environment, e.g. CVS API in Preview, 
+it needs to be generated in the link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview].
++
+To use eNotices2 API (either in Preview or in Production), an eSender should log in at least once in the corresponding environment 
+of the User Interface to pair their API key with their eNotices2 account. 
+
+
+
+What is the purpose of the Developer Profile?::
+
+The Developer Profile was first presented to eSenders and their developers in the 
+link:https://op.europa.eu/en/web/eforms-2022/agenda[2nd eForms Technical Workshop] of September 2022 (TED Developer Portal and using eForms APIs). 
++
+The TED Developer Portal is envisioned to be a central hub for TED developer services. OP will be gradually adding features 
+for developer groups that are interested in TED developer products or data services. One of the first features will be the Developer Profile 
+(to be deployed in Preview and Production environment in Q2 2023).
++
+The Developer Profile can be used by eSenders to set up/ manage their eSender profile as part of the sign-up process in the TED Developer Portal 
+and before they are able to generate an (or a new) API Key. For eSenders, we would recommend using a functional/ shared email address 
+instead of a personal email address to set up your eSender profile in the Developer Portal in the Production environment. 
+The identifier of your eSender profile should also be used as the identifier of your eSender organisation in the XML of the eForms notices you submit. 
+We recommend that you only have one eSender account in Production, while your developers and testers 
+can have the accounts they need in the Preview environment.
++
+Making the profile public is entirely optional. The information eSenders provide in “Public profile” will be used (with their consent) 
+to automatically generate a list of eSenders using eForms, which is the next step in the development. These lists will eventually replace the page
+link:https://simap.ted.europa.eu/web/simap/list-of-ted-esenders[SIMAP-List of TED eSenders], which will not be maintained with eForms.
++
+The latest developments and the next steps will be presented in the link:https://op.europa.eu/en/web/ted-eforms/home[4th eForms Technical Workshop]
+of 28-29 March.
+
+
+
 Will the URL to which we send the messages remain the same?::  
 
 The URL used for eForms notices will be different to the one used for
