@@ -53,10 +53,10 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 ==== Currently available
 [horizontal] 
 Application version:: 1.6.2
-SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1
+SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.1
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5.
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5 and 1.6. SDK version 1.6 is supported both in Preview and Production environments as of 15 March 2023.
 
 In the codelist fields, prefilling of values is supported.  
 
@@ -79,6 +79,8 @@ Users can define personalised settings for the legal basis and notice types that
 * To get started, please fill in Organisation Name, Organisation Identifier and Oganisation Part Name under My Form Settings > Main Buyer Settings. 
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
+
+As of SDK version 1.6, the lot distribution for lot groups has changed; there is a new section for that in the procedure. 
 
 
 
@@ -103,6 +105,7 @@ On 10 and 11 January 2023, notices submitted may have acquired status “not pub
 
 As of 19 December 2022, status “published” may not be shown in Preview for notices that are submitted successfully. We are currently working on this issue.  
 
+Notices created before 15 March 2023 in Preview or Production environments and updated to SDK 1.6 may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
 
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
 
@@ -128,10 +131,15 @@ We are currently in the process of providing more guidance for users of the eNot
    * Any date field which has a time attached must always have a value in the time field.
    * In Contract notices of the Defence directive, BT-71-Lot should not be filled in.
  
-If you are an eSender, please note that the concept of Workgroups is reserved for users of eNotices2 web User Interface (UI).  
 
-eSenders/ users of eNotices2 API can still create workgroups in the UI of eNotices2 but the API is not aware of the context or workgroups, i.e. no API function can be performed on a notice that has been manually transferred to the context of a Workgroup.  
+==== Tips for eSenders
 
+    * If you are an eSender, please note that the concept of Workgroups is reserved for users of eNotices2 web User Interface (UI). eSenders/ users of eNotices2 API       can still create workgroups in the UI of eNotices2 but the API is not aware of the context or workgroups, i.e. no API function can be performed on a notice           that has been manually transferred to the context of a Workgroup. 
+    * To avoid authorisation issues when using eNotices2 API, make sure you generate your API key in the corresponding environment of the TED Developer Portal. Then log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account:  
+      ** link:https://developer.ted.europa.eu/home[Developer Portal in Production] 
+      ** link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview]
+    * For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
+      https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
 
 
 ==== Planned updates 
@@ -185,8 +193,8 @@ Scope:: Users can generate an API key
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: Q3 2023
-Scope:: Addition of a developer profile for eSenders
+Indicative planning:: Q2 2023
+Scope:: Addition of a Developer Profile for eSenders; this feature is currently scheduled to be deployed in the Preview and the Production environment of the TED Developer Portal in Q2 2023. Setting up a Developer Profile will be part of the sign-up process and mandatory before eSenders are able to generate an (or a new) API key. Making your profile public is entirely optional. Public profiles will be made available at a later stage and will eventually replace the list of eSenders on SIMAP. 
 
 
 
