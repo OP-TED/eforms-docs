@@ -821,9 +821,8 @@ qualification procedure for eForms and any user with an API key and an eNotices2
 will be able to submit notices via the API. Similarly, Qualification and Simulation endpoints will cease to exist. 
 The environments available will be instead Production and Preview.  
 +
-The Preview environment that we are currently setting up will be available indefinitely 
-so that users can test validation of notices against new versions of the SDK. The latter will first be implemented 
-in Preview environment during a pre-announced transition period before going into Production. 
+The Preview environment will be available indefinitely so that users can test validation of notices against new versions of the SDK. 
+The latter will first be implemented in Preview environment during a pre-announced transition period before going into Production. 
 An SDK Management Service will be accessible as an API so that users can check all active versions of the SDK at any given time. 
 +
 A Central Validation Service (CVS) will be remotely available so that you can check the validity of eForms
@@ -873,6 +872,10 @@ it needs to be generated in the link:https://developer.preview.ted.europa.eu/hom
 +
 To use eNotices2 API (either in Preview or in Production), an eSender should log in at least once in the corresponding environment 
 of the User Interface to pair their API key with their eNotices2 account. 
++
+A guide on how to test in "Preview" was presented in
+link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
+link:https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-Sep29-eForms-Technical-Workshop.pptx/d0237e8e-500d-4b11-526c-e66c23ec773c?t=1664438251508["TED Developer Portal and using eForms APIs"].
 
 
 
