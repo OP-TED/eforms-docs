@@ -1,0 +1,21 @@
+site:
+  title: eForms Documentation
+  start_page: home::index.adoc
+
+content:
+  edit_url: false
+  sources:
+
+  ### Local content
+  - url: ..
+    start_path: /   
+    branches: 1.7.x, 1.7.x-generated
+
+urls:
+  redirect_facility: static
+  latest_version_segment: latest
+
+ui:
+  bundle:
+    url: https://github.com/OP-TED/antora-eui/releases/download/ui-bundle/eForms-SDK-customisations/ui-bundle.zip
+    snapshot: true

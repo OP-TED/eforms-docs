@@ -1,0 +1,25 @@
+{
+  "packageManager": "yarn@4.0.0-rc.18",
+  "scripts": {
+    "build": "gulp generate",
+    "preview": "gulp generate && gulp serve",
+    "live-preview": "gulp generate && cross-env LIVERELOAD=true gulp serve"
+  },
+  "devDependencies": {
+    "@antora/asciidoc-loader": "^3.1.1",
+    "@antora/content-classifier": "^3.1.1",
+    "@antora/document-converter": "^3.1.1",
+    "@antora/site-generator-default": "^3.1.1",
+    "@openapitools/openapi-generator-cli": "^2.5.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cross-env": "^7.0.3",
+    "del": "^7.0.0",
+    "global-agent": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "html-entities": "^2.3.2",
+    "js-yaml": "^3.14.1",
+    "lunr": "2.3.8",
+    "vinyl-paths": "^5.0.0"
+  }
+}
