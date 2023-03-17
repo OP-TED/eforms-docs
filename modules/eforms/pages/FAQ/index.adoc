@@ -941,9 +941,16 @@ DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATI
 +
 Notice status VALIDATION_FAILED is only relevant to eSenders (users of eNotices2 API) and refers to notices that failed validation 
 – i.e. that triggered CVS errors – upon submission. Such notices will never reach status “submitted” and will instead appear 
-in the user interface and when querying the API with status “validation failed”. The same notice businessID (noticeID + versionID) cannot be reused. 
+in the user interface and when querying the API with status “validation failed”. 
++
+HTTP response is in this case “201 created” with "validationReportUrl" 
+and "success"=false. The validation report is stored in eNotices2 and can be retrieved with the given URL (with proper authentication) 
+or exported directly from the User Interface of eNotices2. The same notice businessID (noticeID + versionID) cannot be reused. 
++
 Via the concept of Notice Author, an email notification will be sent to the Contracting Authority only, detailing what failed validation. 
-
++
+An overview of eForms notice statuses was presented during the 3rd eForms Technical Workshop - 
+link:https://op.europa.eu/en/web/ted-eforms/agenda[The lifecycle of eForms notices]
 
 
 When can I stop publication of a notice via the API?::
