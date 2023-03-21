@@ -139,9 +139,10 @@ We are currently in the process of providing more guidance for users of the eNot
 ==== Tips for eSenders
 
     * If you are an eSender, please note that the concept of Workgroups is reserved for users of eNotices2 web User Interface (UI). eSenders/ users of eNotices2 API       can still create workgroups in the UI of eNotices2 but the API is not aware of the context or workgroups, i.e. no API function can be performed on a notice           that has been manually transferred to the context of a Workgroup. 
-    * To avoid authorisation issues when using eNotices2 API, make sure you generate your API key in the corresponding environment of the TED Developer Portal. Then log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account:  
-      ** link:https://developer.ted.europa.eu/home[Developer Portal in Production] 
+    * To avoid authorisation issues when using eNotices2 API, make sure you generate your API key in the corresponding environment of the TED Developer Portal:  
       ** link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview]
+    * To avoid authorisation issues when using eNotices2 API, log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account and make sure that your eNotices2 account is active:
+      ** link:https://enotices2.preview.ted.europa.eu/home[eNotices2 in Preview]
     * For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
       https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
 
