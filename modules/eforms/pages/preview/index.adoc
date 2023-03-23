@@ -101,9 +101,11 @@ eNotices2 uses the codelists from the SDK, which have not been completely tailor
 
 In Change notices, section "Information about the change" should not be repeated. 
 
+As of 19 December 2022, status “published” may not have been shown in Preview for notices that were submitted successfully; this issue is now fixed.  
+
 On 10 and 11 January 2023, notices submitted may have acquired status “not published”; this issue is now fixed. 
 
-As of 19 December 2022, status “published” may not be shown in Preview for notices that are submitted successfully. We are currently working on this issue.  
+Due to an error in the processing of notices at export time some notices remain in "submitted" status; we are working on fixing this issue. 
 
 Notices created before 15 March 2023 in Preview or Production environments and updated to SDK 1.6 may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
 
