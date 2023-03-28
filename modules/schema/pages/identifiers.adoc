@@ -156,7 +156,7 @@ Cf. <<sectionsIDsTable>>
 |BT-1375 |Group Lot Identifier |Reference to individual lots that
 constitute a Group of lot |Lot |LOT-XXXX
 
-.2+|BT-1501(n) .2+|Modification Previous Notice Section Identifier |Reference
+.2+|BT-1501(n) .2+|Modification Previous Notice Identifier |Reference
 to the CAN (eforms notice only) that announced the contract now subject
 to modification, using a combination of the Notice Identifier (BT-701) 
 and the Notice Version (BT-757) |notice-id-ref a|UUID-vv
