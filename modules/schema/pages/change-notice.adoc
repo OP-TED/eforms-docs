@@ -11,12 +11,12 @@ the first Change notice, the original notice,
 (e.g. changed procurement documents),
 
 While changes may apply to notices of any form type, the Change notice 
-Form Type and Notice Type values must respectively correspond to 
-"change" and "corr". A change notice may only concern a single notice 
+Form Type and Notice Type values must be identical to the ones of the 
+original notice. A change notice may only concern a single notice 
 and  contains all the information from that initial notice with applied 
 changes in addition to the information on those changes.
 
-When a change is applied to a previous change notice, the consolidated
+When a change is applied to a previous change notice, the consolidated 
 text must integrate all changes from previous Change notices, and only 
 the latest changes are described in the changes section. This section 
 will allow the reporting of:
@@ -119,19 +119,19 @@ a|
 efac:Change/efbc:ProcurementDocumentsChangeIndicator
 ---- 
 
-|*Change Previous Section Identifier (BT-13716)* |Identification of the
-changed sections |*** a|
-[source,xpath]
-----
-efac:Change/efbc:ChangedSectionIdentifier
-----
-
 |*Change Description (BT-141)* |Description of the changes |***
 a|
 [source,xpath]
 ----
 efac:Change/efbc:ChangeDescription
 ---- 
+
+|*Change Previous Section Identifier (BT-13716)* |Identification of the
+changed sections |*** a|
+[source,xpath]
+----
+efac:Change/efac:ChangedSection/efbc:ChangedSectionIdentifier
+----
 
 |*Change Reason Code (BT-140)* |Code to express the background
 reasons for the change |*1* a|
@@ -164,14 +164,18 @@ well as information about changes to procurement documents:
                     <efac:Changes>
                         <efbc:ChangedNoticeIdentifier schemeName="notice-id-ref">755db7f6-6aa1-453b-9087-1df5f7725112-02</efbc:ChangedNoticeIdentifier>
                         <efac:Change>
-                            <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
                             <efbc:ChangeDescription languageID="ENG">The changes have been applied to ...</efbc:ChangeDescription>
+                            <efac:ChangedSection>
+                                <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
+                            </efac:ChangedSection>
                         </efac:Change>
                         <efac:Change>
-                            <efbc:ChangedSectionIdentifier>LOT-0002</efbc:ChangedSectionIdentifier>
                             <efbc:ProcurementDocumentsChangeDate>2019-10-24+01:00</efbc:ProcurementDocumentsChangeDate>    
                             <efbc:ProcurementDocumentsChangeIndicator>true</efbc:ProcurementDocumentsChangeIndicator>
                             <efbc:ChangeDescription languageID="ENG">Updated procurement documents</efbc:ChangeDescription>
+                            <efac:ChangedSection>
+                                <efbc:ChangedSectionIdentifier>LOT-0002</efbc:ChangedSectionIdentifier>
+                            </efac:ChangedSection>
                         </efac:Change>
                         <efac:ChangeReason>
                             <cbc:ReasonCode listName="change-corrig-justification">update-add </cbc:ReasonCode>
