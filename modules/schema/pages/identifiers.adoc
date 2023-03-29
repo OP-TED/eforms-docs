@@ -483,6 +483,12 @@ with a "Change"._
 [[pointlessDueToDesignSection]]
 == Pointless Business Terms due to design
 
+Structural differences between the eForms Regulation Annex and UBL 
+(e.g. normalized vs denormalized data) make some Business Terms not 
+necessary and not possible to represent.
+Additionally, some indicators based rules make those indicators and 
+their associated Business Terms useless.
+
 [[pointlessBTsDueToTechnicalDesignTable]]
 .Pointless BTs due to technical design
 [cols=",,",options="header",]
