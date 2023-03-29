@@ -2544,7 +2544,7 @@ The name of the electronic tool or device used for electronic
 communication.
 
 This optional Business Term is to be used, for PIN and CN notices only, in
-conjunction with BT-724 & BT-124. It shall be marked using the extension
+conjunction with BT-124. It shall be marked using the extension
 mechanism at the level of the "_cac:TenderingProcess_" element of the
 Lot or Part it applies to.
 

@@ -1,7 +1,7 @@
 :xrefstyle: short
 
 [[identifiersAndReferencesSection]]
-= Identifiers and References
+= Identifiers, References and Pointless Business Terms
 
 In the sections below, the different identifiers are listed.
 
@@ -156,7 +156,7 @@ Cf. <<sectionsIDsTable>>
 |BT-1375 |Group Lot Identifier |Reference to individual lots that
 constitute a Group of lot |Lot |LOT-XXXX
 
-.2+|BT-1501(n) .2+|Modification Previous Notice Section Identifier |Reference
+.2+|BT-1501(n) .2+|Modification Previous Notice Identifier |Reference
 to the CAN (eforms notice only) that announced the contract now subject
 to modification, using a combination of the Notice Identifier (BT-701) 
 and the Notice Version (BT-757) |notice-id-ref a|UUID-vv
@@ -481,7 +481,13 @@ with a "Change"._
 |===
 
 [[pointlessDueToDesignSection]]
-== Pointless due to design
+== Pointless Business Terms due to design
+
+Structural differences between the eForms Regulation Annex and UBL 
+(e.g. normalized vs denormalized data) make some Business Terms not 
+necessary and not possible to represent.
+Additionally, some indicators based rules make those indicators and 
+their associated Business Terms useless.
 
 [[pointlessBTsDueToTechnicalDesignTable]]
 .Pointless BTs due to technical design
@@ -530,4 +536,14 @@ elements at dedicated places within the XML (cf. xref:parties.adoc#linkingRolesS
 |BT-13722 |Buyer Review Lot Identifier |BT-137
 
 |BT-13715 |Additional Information Lot Identifier |BT-137
+
+|BT-53 |Options |Not represented in UBL. Not required as BT-54 is mandatory 
+when BT-53 is "Yes". If BT-54 is not there, then BT-53 is "No"
+
+|BT-724 |Tool Atypical |When dealing with an atypical tool, the URL where 
+the tool may be found (BT-124) is mandatory, else it is not allowed. The 
+presence of BT-124 is sufficient to detect whether the tool is atypical or not.
+
+|BT-778 |Framework Maximum Participants |Not represented in UBL. Not required, 
+if BT-113 is mandatory when BT-778 is "Yes". If BT-113 is not there, then BT-778 is "No"
 |===
