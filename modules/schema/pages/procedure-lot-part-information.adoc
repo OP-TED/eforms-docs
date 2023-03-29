@@ -240,7 +240,10 @@ grounds, reserved participation/execution.
 <<tenderingTermsRelatedInformationTable>> lists, in their order of appearance in the XML, each of the
 eForms Business Terms that have a corresponding component in the
 "_cac:TenderingTerms_" element, along with a short description,
-indicative cardinalitiesfootnote:[For readability and quick access, the number of columns has been reduced and cardinalities synthetized. While further details may be provided in the explanations after the table, the Annexes of the Regulation will remain the reference.]
+indicative cardinalitiesfootnote:[For readability and quick access, 
+the number of columns has been reduced and cardinalities synthetized. 
+While further details may be provided in the explanations after the 
+table, the Annexes of the Regulation will remain the reference.]
 and the relative XPATH to the node(s) used to mark it.
 
 Cardinalities are expressed using the following notation:
@@ -2445,7 +2448,7 @@ cac:AuctionTerms{zwsp}/cbc:AuctionURI
 ----
 
 
-11+^|*Framework Agreement (+++*+++)*
+11+^|*Framework Agreement (+++**+++)*
 
 |*Framework Maximum Participants Number (BT-113)* |xref:frameworkAgreementSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- 
 a|
@@ -2460,7 +2463,7 @@ cac:FrameworkAgreement{zwsp}/cbc:MaximumOperatorQuantity
 cac:FrameworkAgreement{zwsp}/cbc:Justification
 ----
 
-|*Group Framework Estimated Maximum Value (BT-157)* |xref:frameworkAgreementSection[xrefstyle=short] |-- h|? |-- |-- h|? |-- h|? |-- 
+|*Group Framework Maximum Value (BT-157)* |xref:frameworkAgreementSection[xrefstyle=short] |-- h|? |-- |-- h|? |-- h|? |-- 
 a|
 [source,xpath,subs=attributes]
 ----
@@ -2501,6 +2504,11 @@ cac:ContractingSystem{zwsp}/cbc:ContractingSystemTypeCode
 ----
 /ContractAwardNotice{zwsp}/cac:TenderingProcess{zwsp}/
 
+/ContractAwardNotice{zwsp}/cac:ProcurementProjectLot{zwsp}/cac:TenderingProcess{zwsp}/
+
+(**)
+[source,xpath,subs=attributes]
+----
 /ContractAwardNotice{zwsp}/cac:ProcurementProjectLot{zwsp}/cac:TenderingProcess{zwsp}/
 ----
 
@@ -3130,7 +3138,7 @@ should be specified.
 
 When, for a Group of Lots, a framework agreement (FA) is foreseen (PIN & CN) for the execution:
 
-* the Group Framework Estimated Maximum Value (BT-157)footnote:[Evaluation at start of the call for competition, only in the context of a group when this group has a foreseen framework agreement.]
+* the Group Framework Maximum Value (BT-157)footnote:[Evaluation at start of the call for competition, only in the context of a group when this group has a foreseen framework agreement.]
 
 should be specified.
 
@@ -3147,7 +3155,7 @@ Generally:
 
 * the duration justification (BT-109) shall be of type text,
 
-* the estimated framework maximum value for the Group of Lots (BT-157)
+* the framework maximum value for the Group of Lots (BT-157)
 shall be a monetary value,
 
 * the buyer categories shall be of type text; and
@@ -3182,7 +3190,7 @@ For a CAN, when for a given Group of Lots a Framework Agreement is involved, onl
 information is expected at the level of the Group of Lots
 definition:
 
-* Group Framework Estimated Maximum Value (BT-157).
+* Group Framework Maximum Value (BT-157).
 
 [source,xml]
 ----
@@ -3301,7 +3309,7 @@ a|
 cac:ProcurementAdditionalType{zwsp}/cbc:ProcurementTypeCode{zwsp}[@listName='social-objective']
 ----
 
-|*Innovative Procurement (BT-776)* |xref:strategicProcurementSection[xrefstyle=short] |-- |-- |*** |-- |-- |*** |-- |*** 
+|*Procurement of Innovation (BT-776)* |xref:strategicProcurementSection[xrefstyle=short] |-- |-- |*** |-- |-- |*** |-- |*** 
 a|
 [source,xpath,subs=attributes]
 ----
@@ -3624,14 +3632,14 @@ for strategic procurement BT-06,
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/environmental-impact[environmental-impact]
 for Green Procurement BT-774,
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/innovative-acquisition[innovative-acquisition]
-for Innovative Procurement BT-776,
+for Procurement of Innovation BT-776,
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/social-objective[social-objective]
 for Social Procurement BT-775,
 gpp-criteria for Green Procurement Criteria BT-805).
 
 Multiple "_cac:ProcurementAdditionalType_" elements may be used to
 highlight the different aspects of the procurement (e.g. for an
-innovative procurement aiming at reducing environmental impacts as
+Procurement of Innovation aiming at reducing environmental impacts as
 illustrated in the example below).
 
 The Strategic Procurement description (BT-777) shall be marked 

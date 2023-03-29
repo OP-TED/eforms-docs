@@ -51,7 +51,7 @@ procedure |NA |No restriction yet
 |BT-501 |Organisation Identifier |Discussions ongoing. It will be
 encoded by the Contracting Authority | |No restriction yet
 
-|BT-5011 |Contract EU Funds Identifier |Financing Identifier;  The 
+|BT-5011 |Contract EU Funds Financing Identifier |Financing Identifier;  The 
 most concrete information must be given (e.g. grant agreement number, 
 national identifier, project acronym, contract number) | | 
 
@@ -181,7 +181,7 @@ Unpublished Business Terms Codes | |Cf. xref:withheld-publication.adoc[].
 |BT-330 |Group Identifier |Points to a defined Group of lots (BT-137,
 GLO-XXXX) |LotsGroup |GLO-XXXX
 
-|BT-556 |Group Framework Value Lot Identifier |Reference to the Group of
+|BT-556 |Group Framework Maximum Value Lot Identifier |Reference to the Group of
 lots the Framework applies to. |LotsGroup |GLO-XXXX
 
 .2+|BT-758 .2+|Change Notice Version Identifier |A combination of the 
@@ -494,7 +494,7 @@ their associated Business Terms useless.
 [cols=",,",options="header",]
 |===
 |*Field* |*Name of the field* |*Explanation*
-|BT-557 |Group Framework Estimated Maximum Value Lot Identifier |BT-137
+|BT-557 |Group Framework Maximum Value Lot Identifier |BT-137
 
 |BT-1371 |Previous Planning Lot Identifier |BT-137
 
@@ -546,4 +546,6 @@ presence of BT-124 is sufficient to detect whether the tool is atypical or not.
 
 |BT-778 |Framework Maximum Participants |Not represented in UBL. Not required, 
 if BT-113 is mandatory when BT-778 is "Yes". If BT-113 is not there, then BT-778 is "No"
+
+|BT-5561 |Group Framework Re-estimated Value Lot Identifier |BT-556
 |===

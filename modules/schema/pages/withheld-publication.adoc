@@ -26,7 +26,7 @@ To activate the mechanism, four business terms have to be used:
 
 * Unpublished Justification Description (BT-196)
 
-* Unpublished Accessibility Date (BT-198)
+* Unpublished Access Date (BT-198)
 
 The information is encoded using dedicated elements:
 
@@ -61,13 +61,13 @@ This covers the withheld publication of:
 
 * Notice Value (BT-161),
 
-* Notice Maximum Value (BT-118),
+* Notice Framework Maximum Value (BT-118),
 
 * Notice Framework Approximate Value (BT-1118),
 
-* Group Maximum Value Lot Identifier (BT-556),
+* Group Framework Maximum Value Lot Identifier (BT-556),
 
-* Group Maximum Value (BT-156),
+* Group Framework Maximum Value (BT-156),
 
 * Group Framework Re-estimated Value (BT-1561).
 
@@ -104,21 +104,21 @@ a|
 {noticeresult}/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='not-app-val']
 ----
 
-|*not-max-val* |Notice Maximum Value (BT-118)
+|*not-max-val* |Notice Framework Maximum Value (BT-118)
 a|
 [source,xpath,subs=attributes]
 ----
 {noticeresult}/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='not-max-val']
 ----
 
-|*gro-max-ide* |Group Maximum Value Lot Identifier (BT-556)
+|*gro-max-ide* |Group Framework Maximum Value Lot Identifier (BT-556)
 a|
 [source,xpath,subs=attributes]
 ----
 {noticeresult}/efac:GroupFramework{zwsp}/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='gro-max-ide']
 ----
 
-|*gro-max-val* |Group Maximum Value (BT-156)
+|*gro-max-val* |Group Framework Maximum Value (BT-156)
 a|
 [source,xpath,subs=attributes]
 ----
@@ -156,7 +156,7 @@ fields.
                         <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
                     </efac:FieldsPrivacy>
                     <efac:FieldsPrivacy>
-                        <!-- # UNPUB-02 : The Notice Maximum Value (BT-118) will not be published until March 2nd, 2022 -->
+                        <!-- # UNPUB-02 : The Notice Framework Maximum Value (BT-118) will not be published until March 2nd, 2022 -->
                         <efbc:FieldIdentifierCode listName="non-publication-identifier">not-max-val</efbc:FieldIdentifierCode>
                         <cbc:ReasonCode listName="non-publication-justification">...</cbc:ReasonCode>
                         <efbc:ReasonDescription languageID="ENG">...</efbc:ReasonDescription>
@@ -165,11 +165,11 @@ fields.
                     </efac:FieldsPrivacy>
                     <!-- # UNPUB-01 : Notice Value (BT-161) publication will be delayed -->
                     <cbc:TotalAmount currencyID="EUR">123456.00</cbc:TotalAmount>
-                    <!-- # UNPUB-02 : The Notice Maximum Value (BT-118) publication will be delayed -->
+                    <!-- # UNPUB-02 : The Notice Framework Maximum Value (BT-118) publication will be delayed -->
                     <efbc:OverallMaximumFrameworkContractsAmount currencyID="EUR">6000</efbc:OverallMaximumFrameworkContractsAmount>
                     <efac:GroupFramework>
                         <efac:FieldsPrivacy>
-                            <!-- # UNPUB-03 : The Group Maximum Value (BT-156) will not be published until March 2nd, 2022 -->
+                            <!-- # UNPUB-03 : The Group Framework Maximum Value (BT-156) will not be published until March 2nd, 2022 -->
                             <efbc:FieldIdentifierCode listName="non-publication-identifier">gro-max-val</efbc:FieldIdentifierCode>
                             <cbc:ReasonCode listName="non-publication-justification">...</cbc:ReasonCode>
                             <efbc:ReasonDescription languageID="ENG">The following ...</efbc:ReasonDescription>
@@ -177,16 +177,16 @@ fields.
                             <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
                         </efac:FieldsPrivacy>
                         <efac:FieldsPrivacy>
-                            <!-- # UNPUB-04 : The Group Maximum Value Lot Identifier (BT-556) will not be published until March 2nd, 2022 -->
+                            <!-- # UNPUB-04 : The Group Framework Maximum Value Lot Identifier (BT-556) will not be published until March 2nd, 2022 -->
                             <efbc:FieldIdentifierCode listName="non-publication-identifier">gro-max-ide</efbc:FieldIdentifierCode>
                             <cbc:ReasonCode listName="non-publication-justification">...</cbc:ReasonCode>
                             <efbc:ReasonDescription languageID="ENG">...</efbc:ReasonDescription>
                             <efbc:ReasonDescription languageID="FRA">...</efbc:ReasonDescription>
                             <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
                         </efac:FieldsPrivacy>
-                        <!-- # UNPUB-03 : Group Maximum Value (BT-156) publication will be delayed -->
+                        <!-- # UNPUB-03 : Group Framework Maximum Value (BT-156) publication will be delayed -->
                         <efbc:GroupFrameworkMaximumValueAmount currencyID="EUR">1200000</efbc:GroupFrameworkMaximumValueAmount>
-                        <!-- # UNPUB-04 : Group Maximum Value Lot Identifier (BT-556) publication will be delayed -->
+                        <!-- # UNPUB-04 : Group Framework Maximum Value Lot Identifier (BT-556) publication will be delayed -->
                         <efac:TenderLot>
                             <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
                         </efac:TenderLot>
@@ -209,7 +209,9 @@ This covers the withheld publication of:
 
 * Not Awarded Reason (BT-144),
 
-* Maximum Value (BT-709),
+* Framework Re-estimated Value (BT-660),
+
+* Framework Maximum Value (BT-709),
 
 * Received Submissions Count (BT-759),
 
@@ -243,7 +245,14 @@ a|
 {LotResult}/efac:DecisionReason/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='no-awa-rea']
 ----
 
-|*max-val* |Maximum Value (BT-709)
+|*ree-val* |Framework Re-estimated Value (BT-660)
+a|
+[source,xpath,subs=attributes]
+----
+{LotResult}/efac:FrameworkAgreementValues{zwsp}/efac:FieldsPrivacy{zwsp}[efbc:FieldIdentifierCode/text()='ree-val']
+----
+
+|*max-val* |Framework Maximum Value (BT-709)
 a|
 [source,xpath,subs=attributes]
 ----
@@ -388,15 +397,24 @@ fields.
     </efac:LotTender>
     <efac:FrameworkAgreementValues>
         <efac:FieldsPrivacy>
-            <!-- # UNPUB-15 : Maximum Value (BT-709) will not be published until March 2nd, 2022 -->
+            <!-- # UNPUB-15A : Framework Maximum Value (BT-709) will not be published until March 2nd, 2022 -->
             <efbc:FieldIdentifierCode listName="non-publication-identifier">max-val</efbc:FieldIdentifierCode>
             <cbc:ReasonCode listName="non-publication-justification"></cbc:ReasonCode>
             <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
             <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
             <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
         </efac:FieldsPrivacy>
-        <!-- # UNPUB-15 : Maximum Value (BT-709) publication will be delayed -->
+        <efac:FieldsPrivacy>
+            <!-- # UNPUB-15B : Framework Re-estimated Value (BT-660) will not be published until March 2nd, 2022 -->
+            <efbc:FieldIdentifierCode listName="non-publication-identifier">ree-val</efbc:FieldIdentifierCode>
+            <cbc:ReasonCode listName="non-publication-justification"></cbc:ReasonCode>
+            <efbc:ReasonDescription languageID="ENG">..</efbc:ReasonDescription>
+            <efbc:ReasonDescription languageID="FRA">..</efbc:ReasonDescription>
+            <efbc:PublicationDate>2022-03-02+01:00</efbc:PublicationDate>
+        </efac:FieldsPrivacy>
+        <!-- # UNPUB-15A : Framework Maximum Value (BT-709) publication will be delayed -->
         <cbc:MaximumValueAmount currencyID="EUR">12345</cbc:MaximumValueAmount>
+        <!-- # UNPUB-15B : Framework Re-estimated Value (BT-660) publication will be delayed -->
         <efbc:ReestimatedValueAmount currencyID="EUR">123</efbc:ReestimatedValueAmount>
     </efac:FrameworkAgreementValues>
     <efac:ReceivedSubmissionsStatistics>

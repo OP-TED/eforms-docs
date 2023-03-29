@@ -7,8 +7,8 @@ concern the information listed in <<noticeRelatedInformationTable>>. This table 
 Business Terms, a shortened description, its cardinality and the XML
 elements used to mark the information. The specified cardinality is
 more restrictive than the one in the schema; it is used to express
-requirements stated in https://ec.europa.eu/docsroom/documents/38172[the
-Regulation annex].
+requirements stated in https://ec.europa.eu/docsroom/documents/52697[the 2022
+Regulation Annex].
 
 [[noticeRelatedInformationTable]]
 .Notice related information
@@ -48,7 +48,7 @@ cbc:IssueTime
 
 |Notice Version (BT-757) |xref:noticeIDSection[xrefstyle=short] |*1* |cbc:VersionID
 
-|Notice Publication Date Preferred (BT-738) | xref:preferredDateSection[xrefstyle=short] |*0..1*
+|Notice Preferred Publication Date (BT-738) | xref:preferredDateSection[xrefstyle=short] |*0..1*
 |cbc:RequestedPublicationDate
 
 |Future Notice (BT-127) | xref:futureNoticeSection[xrefstyle=short] |*0..1* |cbc:PlannedDate
@@ -192,9 +192,9 @@ to OP shall be marked:
 ----
 
 [[preferredDateSection]]
-== Notice Publication Date Preferred
+== Notice Preferred Publication Date
 
-The "Notice Publication Date Preferred" is the date on which the buyer
+The "Notice Preferred Publication Date" is the date on which the buyer
 wishes the notice to be published on the TED website. It can be used to
 help the buyer respect the requirements that exist between publications
 at national and European levels.
