@@ -101,8 +101,9 @@ applicability:
 
 These are eProcurement codelists published and maintained on the 
 https://op.europa.eu/en/web/eu-vocabularies/e-procurement/tables[Authority tables and taxonomies used in eProcurement]
-page of EU Vocabularies. They are used as provided, no changes are made, and 
-all codes are available for use in the relevant eForms XML elements. 
+page of EU Vocabularies. Codelists, for which a _use-context_ is defined, are 
+tailored based on its definition to ensure only active and relevant codes 
+are kept. All codes are available for use in the relevant eForms XML elements. 
 The canonical source of these codelists is the EU Vocabularies website.
 
 ==== Tailored codelists
