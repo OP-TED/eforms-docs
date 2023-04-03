@@ -87,13 +87,14 @@ The various characteristics of each field are indicated as properties of the JSO
     "btId" : "BT-01", // <4>
     "xpathAbsolute" : "/*/cbc:RegulatoryDomain", // <5>
     "xpathRelative" : "cbc:RegulatoryDomain", // <6>
-    "type" : "code", // <7>
-    "legalType" : "CODE", // <8>
-    "maxLength" : 400, // <9>
-    "repeatable" : { // <10>
+    "xsdSequenceOrder" : [ { "cbc:RegulatoryDomain" : 18 } ], // <7>
+    "type" : "code", // <8>
+    "legalType" : "CODE", // <9>
+    "maxLength" : 400, // <10>
+    "repeatable" : { // <11>
       "value" : false
     },
-    "codeList" : { // <11>
+    "codeList" : { // <12>
       "value" : {
         "id" : "legal-basis",
         "type" : "flat"
@@ -106,14 +107,15 @@ The various characteristics of each field are indicated as properties of the JSO
     "btId" : "BT-137",
     "xpathAbsolute" : "/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cbc:ID",
     "xpathRelative" : "cbc:ID",
+    "xsdSequenceOrder" : [ { "cbc:ID" : 2 } ],
     "type" : "id",
-    "idScheme" : "LOT", // <12>
+    "idScheme" : "LOT", // <13>
     "legalType" : "IDENTIFIER",
     "repeatable" : {
       "value" : false,
       "severity" : "ERROR"
     },
-    "forbidden" : { // <13>
+    "forbidden" : { // <14>
       "value" : false,
       "severity" : "ERROR",
       "constraints" : [ {
@@ -122,7 +124,7 @@ The various characteristics of each field are indicated as properties of the JSO
         "severity" : "ERROR"
       } ]
     },
-    "mandatory" : { // <14>
+    "mandatory" : { // <15>
       "value" : false,
       "severity" : "ERROR",
       "constraints" : [ {
@@ -131,7 +133,7 @@ The various characteristics of each field are indicated as properties of the JSO
         "severity" : "ERROR"
       } ]
     },
-    "pattern" : { // <15>
+    "pattern" : { // <16>
       "value" : "^LOT-\\d{4}$",
       "severity" : "ERROR"
     }
@@ -142,8 +144,9 @@ The various characteristics of each field are indicated as properties of the JSO
     "btId" : "BT-13714",
     "xpathAbsolute" : "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeResult/efac:LotTender/efac:TenderLot/cbc:ID",
     "xpathRelative" : "efac:TenderLot/cbc:ID",
+    "xsdSequenceOrder" : [ { "efac:TenderLot" : 14 }, { "cbc:ID" : 1 } ],
     "type" : "id-ref",
-    "idSchemes" : [ "LOT", "GLO" ], // <16>
+    "idSchemes" : [ "LOT", "GLO" ], // <17>
     "legalType" : "IDENTIFIER",
     "repeatable" : {
       "value" : false,
@@ -168,17 +171,18 @@ The various characteristics of each field are indicated as properties of the JSO
 <4> Identifier of the business term to which the field corresponds.
 <5> Location of the field in an XML notice, as an absolute XPath.
 <6> Location of the field in an XML notice, relative to its parent node.
-<7> Technical data type of the field.
-<8> Data type of the business term, as indicated in the eForms Regulation.
-<9> Maximum number of characters allowed in the value of the field, optional. 
-<10> Indicates if the field can appear more than once inside its container
-<11> Identifier of the code list from which the field value must belong.
+<7> Position of each XML element relative to its siblings. <<xsdSequenceOrder,See below for details>>. 
+<8> Technical data type of the field.
+<9> Data type of the business term, as indicated in the eForms Regulation.
+<10> Maximum number of characters allowed in the value of the field, optional. 
+<11> Indicates if the field can appear more than once inside its container
+<12> Identifier of the code list from which the field value must belong.
 Applicable only for fields of type "code" or "internal-code"
-<12> Identifier scheme used by a field with `"type" : "id"`.
-<13> This property provides information on when a field's presence is forbidden.
-<14> This property provides information on when a field's value is mandatory.
-<15> A RegEx pattern the field's value must match.
-<16> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "id-ref"`) can reference.
+<13> Identifier scheme used by a field with `"type" : "id"`.
+<14> This property provides information on when a field's presence is forbidden.
+<15> This property provides information on when a field's value is mandatory.
+<16> A RegEx pattern the field's value must match.
+<17> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "id-ref"`) can reference.
 
 
 === Property Values
@@ -196,6 +200,7 @@ The properties that are assigned with static values are listed below:
 `btId`:: The identifier of the Business Term that this field instantiates.
 `xpathAbsolute`:: The absolute XPath of the field. This value is calculated by combining all the relative XPaths in the hierarchy of nodes that include this field. See `parentNodeId`.
 `xpathRelative`:: The XPath of the field relative to its parent `node`. See `parentNodeId`.
+[#xsdSequenceOrder]`xsdSequenceOrder`:: This indicates, for each XML element that is part of `xpathRelative`, the position that this element should have relative to its siblings in order to have an XML instance valid against the XML Schema. This information is extracted from the definition of the corresponding complex type in the XSD files.
 `type`:: The data type of the field. xref:#data-types[See Field data types].
 `presetValue`:: The value used to pre-fill a field. This property is always a string, but the value should be converted to the same type as the field. The value "\{NOW\}" corresponds to the current date or time.
 `legalType`:: The data type of the Business Term associated with the field as defined by the eForms Regulation.
