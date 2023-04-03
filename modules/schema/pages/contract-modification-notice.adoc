@@ -11,14 +11,6 @@ however appears during contract execution and applies to a CAN only.
 |===
 ^|*eForms BT* ^|*Description* |*Cardin.* ^|*XSD element*
 
-|*Modification Previous Section Identifier (BT-1501)* |Identification of
-the modified sections |*+*
-a|
-[source,xpath]
-----
-efac:Change/efbc:ChangedSectionIdentifier
----- 
-
 |*Modification Description (BT-202)* |Description of the modification
 |*1* a|
 [source,xpath]
@@ -39,6 +31,14 @@ reasons expressed as text |*1* a|
 ----
 efac:ChangeReason/efbc:ReasonDescription
 ----
+
+|*Modification Previous Section Identifier (BT-1501)* |Identification of
+the modified sections |*+*
+a|
+[source,xpath]
+----
+efac:Change/efac:ChangedSection/efbc:ChangedSectionIdentifier
+---- 
 
 |===
 
@@ -72,10 +72,16 @@ Modification notice using the contract technical identifier.
 <efac:ContractModification>
     <efbc:ChangedNoticeIdentifier>755db7f6-6aa1-453b-9087-1df5f7725112-02</efbc:ChangedNoticeIdentifier>
     <efac:Change>
-        <efbc:ChangedSectionIdentifier>CON-0001</efbc:ChangedSectionIdentifier>
-        <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
-        <efbc:ChangedSectionIdentifier>LOT-0003</efbc:ChangedSectionIdentifier>
         <efbc:ChangeDescription languageID="ENG">The scope of the procurement ...</efbc:ReasonDescription>
+        <efac:ChangedSection>
+            <efbc:ChangedSectionIdentifier>CON-0001</efbc:ChangedSectionIdentifier>
+        </efac:ChangedSection>
+        <efac:ChangedSection>
+            <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
+        </efac:ChangedSection>
+        <efac:ChangedSection>
+            <efbc:ChangedSectionIdentifier>LOT-0003</efbc:ChangedSectionIdentifier>
+        </efac:ChangedSection>
     </efac:Change>
     <efac:ChangeReason>
         <cbc:ReasonCode listName="modification-justification">mod-cir</cbc:ReasonCode>
