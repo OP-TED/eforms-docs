@@ -52,8 +52,8 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.6.2
-SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.1
+Application version:: 1.7.1
+SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0
 
 
 In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5 and 1.6. SDK version 1.6 is supported both in Preview and Production environments as of 15 March 2023.
@@ -152,13 +152,13 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: March 2023
-Application version:: 1.7
-SDK version:: 1.6
+Indicative planning:: April 2023
+Application version:: 1.8
+SDK version:: 1.7
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version of Preview went into Production on 16 February 2023.
+NOTE: The current application version of Preview went into Production on 29 March 2023.
 
 
 === TED Central Validation Service 
@@ -183,7 +183,7 @@ API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/i
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.2.8
+Application version:: 1.2.9
 SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
