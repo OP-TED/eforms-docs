@@ -8,16 +8,16 @@ many vocabularies for use across a wide range of sectors on the
 website.
 
 A subset of these vocabularies are relevant to the domain of eProcurement; 
-most of these 
-are flat lists of terms and their definitions; some, such as the NUTS 
+most of these are flat lists of terms and their definitions; some, such as the NUTS 
 (Nomenclature of Territorial Units for Statistics) are hierarchical 
-taxonomies. They are listed on the  
+taxonomies. They are listed on the 
 https://op.europa.eu/en/web/eu-vocabularies/e-procurement/tables[Authority tables and taxonomies used in eProcurement]
 page.
 
+
 == Codelists
 
-A codelist is a flat (non-hierarchical) implementation of a vocabulary: a 
+A codelist implements a vocabulary: a 
 list of language-independent codes that represent an agreed set of values 
 for a particular data context. 
 
@@ -90,20 +90,84 @@ which has no attributes:
 There are three types of codelist used in eForms, based on their source and 
 applicability:
 
-* Entire codelists from the EU Vocabularies site
+* Codelists derived from the EU Vocabularies site
 
 * Tailored codelists
 
 * Technical codelists
 
 
-==== Entire codelists
+==== Codelists from EU Vocabularies
 
 These are eProcurement codelists published and maintained on the 
 https://op.europa.eu/en/web/eu-vocabularies/e-procurement/tables[Authority tables and taxonomies used in eProcurement]
-page of EU Vocabularies. They are used as provided, no changes are made, and 
-all codes are available for use in the relevant eForms XML elements. 
-The canonical source of these codelists is the EU Vocabularies website.
+page of EU Vocabularies.
+
+In the SDK we include only the codes that are relevant to eForms. For example we don't include currencies that are currently not in use.
+Those codes are marked with the "EFORMS" use context, which is available in the SKOS files available on EU Vocabularies
+
+[source, xml]
+----
+<lemon:context rdf:resource="http://publications.europa.eu/resource/authority/use-context/EFORMS"/>
+----
+
+As NUTS and CPV have no use-context we take the complete current version of these codelists.
+
+
+===== Hierarchical codelists
+
+Some codelists have a tree-like structure, with some codes corresponding to subdivisions of other codes. This is the case for the NUTS and CPV codelists.
+
+In order to provide information on this structure, the parent code is indicated in the genericode file, in an additional column called "ParentCode".
+The parent code is optional, as top level elements do not have a parent.
+
+[source, xml]
+----
+<ColumnSet>
+  ...
+  <Column Id="parentCode" Use="optional"> <!--1-->
+    <ShortName>ParentCode</ShortName>
+    <Data Lang="eng" Type="normalizedString"/>
+  </Column>
+  ...
+</ColumnSet>
+...
+<Row>
+  <Value ColumnRef="code">
+    <SimpleValue>FR</SimpleValue> <!--2-->
+  </Value>
+  <Value ColumnRef="Name">
+    <SimpleValue>France</SimpleValue>
+  </Value>
+  <Value ColumnRef="eng_label">
+    <SimpleValue>France</SimpleValue>
+  </Value>
+  ...
+</Row>
+<Row>
+  <Value ColumnRef="code">
+    <SimpleValue>FRD</SimpleValue> <!--3-->
+  </Value>
+  <Value ColumnRef="Name">
+    <SimpleValue>Normandie</SimpleValue>
+  </Value>
+  <Value ColumnRef="parentCode">
+    <SimpleValue>FR</SimpleValue> <!--4-->
+  </Value>
+  <Value ColumnRef="eng_label">
+    <SimpleValue>Normandie</SimpleValue>
+  </Value>
+  ...
+</Row>
+...
+----
+
+<1> Column definition for the optional parent code
+<2> The code "FR" representing France
+<3> The code "FRD" representing Normandie
+<4> The parent code of "FRD" is "FR", linking Normandie to France
+
+The parent code is not indicated in tailored codelists based on hierarchical codelists.
 
 ==== Tailored codelists
 
