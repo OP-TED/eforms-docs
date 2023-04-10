@@ -9,7 +9,7 @@ WARNING: This is a pre-release version of this document.
 The main goal of version 2.0.0 of the eForms SDK is to update the EFX grammar. We have tried to focus exclusively on the EFX grammar and avoid any other changes in order to minimise the impact on existing applications. Here is an overview of the changes:
 
 * Updated EFX grammar
-* ...
+* _No other changes currently foreseen_
 
 === EFX 2
 

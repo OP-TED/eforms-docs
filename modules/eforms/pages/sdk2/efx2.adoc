@@ -1,6 +1,6 @@
-= What's is new in EFX 2
+= What's new in EFX 2
 
-NOTE: This is a pre-release version of this document. 
+WARNING: This is a pre-release version of this document. 
  The eForms SDK 2.0.0 is still under development.
  This notice will be removed when the document is finalized.
 
@@ -62,7 +62,7 @@ One of the issues of EFX 1 is that it adopted the existing Field and Node identi
 To make EFX Expressions more readable, EFX 2 introduces the concept of Field and Node aliases. A Field or Node alias is an alternative name that can be used to reference a Field or Node in an EFX expression. We decided to add these aliases (instead of renaming existing identifiers) in order to maintain backwards compatibility with EFX 1 expressions and to avoid disrupting ongoing development efforts.
 
 ==== Naming conventions
-* Node aliases are written in PascalCase.Therefore node aliases always start with an uppercase letter. For example: The node with identifier "ND-Root" now has an alias "Root"; the node with identifier "ND-Lot" now has an alias "Lot". 
+* Node aliases are written in PascalCase. Therefore node aliases always start with an uppercase letter. For example: The node with identifier "ND-Root" now has an alias "Root"; the node with identifier "ND-Lot" now has an alias "Lot". 
 * Field aliases are written in camelCase. Therefore field aliases always start with a lowercase letter. For example: The field with identifier "BT-Name" now has an alias "name"; the field with identifier "FD-Description" now has an alias "description".
 * When an alias is composed of several parts, then those parts are separated by an underscore and are written in descending order from container to content (container_content). Each part follows the capitalisation of the corresponding type (Nodes_Are_PascalCase, fields_are_camelCase).
 

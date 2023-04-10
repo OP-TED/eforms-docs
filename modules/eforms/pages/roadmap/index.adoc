@@ -1,35 +1,15 @@
 = eForms SDK Roadmap
 
-== eForms SDK 1.0.0
+== eForms SDK 1.x.x
 
-On August 5 2022, we plan to release eForms SDK 1.0.0. This is a major milestone for the eForms SDK that is meant to stabilise its structure and allow implementers to continue receiving and using future versions of the SDK without having to modify their applications.
+Since the release of the eForms SDK 1.0.0 in August 2022, we have continued to release updates to the SDK that incrementally improve the eForms metadata that is included in it. These updates are all backwards compatible with the SDK 1.0.0 and therefore they can be used by applications that have already been adapted to the SDK 1.0.0. At the time of updating this roadmap (April 2023), the latest version of the SDK is 1.6.0, while testing is underway for the release of 1.7.0 foreseen to be released next week.
 
-[quanda]
+Further updates to SDK 1.x.x will continue to be released with the frequency of roughly one update per month. We are dedicated in the continued support of the SDK 1.x.x and we will continue to update it with new minor releases as well as patches to all active SDK versions. Minor releases will introduce updates to the eForms business rules as needed, while patches will ensure updated translations and other metadata are made available to all eSender applications regardless of whether or not they are already using the latest minor version of the eForms SDK.
 
-What the SDK 1.0.0 is::
-SDK 1.0.0 is the result of our final attempt to clean-up, rationalise and stabilise the kinds of information that are included in future SDK releases, as well as the format that this information is encoded in. This does not mean that what we came up with is perfect, but it means that it is reasonable and usable enough for us to refrain from making any further corrections or improvements to it for the foreseeable future.   
+== eForms SDK 2.0.0
 
-What SDK 1.0.0 is not::
-- SDK 1.0.0 is *not the final version* of the eForms SDK. There will be several releases that update it. However, they will all be under the same  major version (1.x.x) which means that all future releases will be backwards compatible for all the eSender applications that read and use the eForms SDK 1.0.0.
-- SDK 1.0.0 is *not the version that will be* active when eForms goes *live on November 14*, 2022. There will be several updates released during the Fall of 2022 that will incrementally correct and improve the eForms metadata (rules, translations, etc.) included in the SDK. However, as pointed out in the previous paragraph, all these updates will be under the major version 1.x.x and therefore they will be backwards compatible for your applications.
-- SDK 1.0.0 is *not free of errors* in the eForms metadata. To the contrary, there are several mistakes, omissions and possibly even inconsistencies in the metadata contained in this version of the SDK. As stated in the previous paragraphs these issues will be corrected in several subsequent releases of the SDK that will always be backwards compatible.  
+In parallel, we are working on the next major version of the eForms SDK, which we plan to release by the end of June 2023. The new version aims at improving the grammar of EFX to make it more flexible and easier to read and write. Its main goal is to improve the expressiveness of EFX Templates so that we can overcome current limitations in notice visualisation. We are also adding new functions that will allow us to better manipulate and format notice data, as well as improve our current internationalisation capabilities. 
 
-Why release SDK 1.0.0 before its eForms metadata content is final?::
-It is reasonable for someone to expect that a version labelled 1.0.0 is "perfect in every way". However, waiting for the eForms metadata to be production-ready before releasing SDK 1.0.0 was not an option, as it would not leave enough time for applications to adapt to it before the November 14 go-live deadline. Our goal was therefore to provide every developer with a version of the SDK that is structurally stable as soon as possible. From a developers perspective the correctness or completeness of the eForms metadata is irrelevant as their metadata driven applications are (or at least should be) designed to be agnostic of the actual eForms metadata content of each SDK release.
+For more details on what is coming with SDK 2.0.0, you can consult the xref:sdk2/index.adoc[SDK 2 preliminary documentation] that we have made available. You can find more xref:sdk2/efx2.adoc[details on EFX 2 here]. 
 
-How is SDK 1.0.0 different than 0.7.0?::
-The release notes of SDK 1.0.0 will give you complete list of the changes that we have made since 0.7.0. However, I can already give you a general idea on what has changed:
-- We added some new information in existing files. For example information on what fields can be changed by a change notice is now provided in `fields.json`.
-- We added a few "index" files in SDK folders that provide more metadata on the content of each folder. For example the `view-templates` folder now contains a `view-templates.json` file that better describes each view template.
-- We changed the names of a few concepts to improve consistency and clarity. For example the `decoration|name` labels are now identified as `auxiliary|text`.
-- Most importantly though, we added several features in the eForms Expression Language (EFX) that allow us to improve the view templates as well as the business rules that we provide. This is probably the most impactful change for developers that have already implemented their own EFX transpilers or interpreters.
-
-== What is next
-
-Our next goals are:
-
-- to continuously expand and improve the *SDK documentation* as the documentation of SDK 1.0.0 that will be available on the day of its release will not be at the level we want it to be.
-- to continuously correct and improve the *eForms metadata* provided with the SDK and release them for use by your applications as often as possible.
-- to expand and improve the *sample applications* that we provide in Github. Apart from the "Notice Viewer" sample application which is already available, we have a "Notice Editor" as well as a "Notice Validator" sample which we want to make publicly available.
-- to streamline and improve the process of releasing *future versions* of the SDK so that we can get future updates of metadata to your applications as quickly as possible.
-- to listen to you, our *developer community*, and to help you to the best of our ability to get your metadata driven applications up and running.
+NOTE: Please note that the SDK 2 documentation is still a work in progress and that it will be updated as we make progress on the development of SDK 2.0.0. 
