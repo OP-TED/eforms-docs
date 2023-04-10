@@ -116,7 +116,7 @@ Currently, "stop publication" on a submitted notice will return error 500 in cer
 
 Currently, when submitting an XML to eNotices2 API that is invalid against XSD, error code 500 will be returned. To see if this the case, i.e. the XML is not compliant against XSD, please check the notice for now through CVS API. 
 
-The 'validationReportUrl' property  present in the response body for submit notice is currently not fully correct; /api/v2/ is missing in the URL. Until this bug is fixed, eSenders should use instead URL pattern: 'https://enotices2.preview.ted.europa.eu/esenders/api/v2/notice/notices/{businessId}/validation-report' where the {businessId} is replaced with value taken from the submitted notice ('noticeId-versionId') or with {businessId} from validationReportUrl.
+The 'validationReportUrl' property  present in the response body for submit notice is currently not fully correct; /api/v2/ is missing in the URL. Until this bug is fixed, eSenders should use instead URL pattern: 'https://enotices2.preview.ted.europa.eu/esenders/api/v2/notice/notices/\{businessId\}/validation-report' where the \{businessId\} is replaced with value taken from the submitted notice ('noticeId-versionId') or with \{businessId\} from validationReportUrl.
 
 
 
