@@ -1,0 +1,28 @@
+= eForms SDK 2.0.0
+
+WARNING: This is a pre-release version of this document. 
+ The eForms SDK 2.0.0 is still under development.
+ This notice will be removed when the document is finalized.
+
+== What's new
+
+The main goal of version 2.0.0 of the eForms SDK is to update the EFX grammar. We have tried to focus exclusively on the EFX grammar and avoid any other changes in order to minimise the impact on existing applications. Here is an overview of the changes:
+
+* Updated EFX grammar
+* ...
+
+=== EFX 2
+
+EFX 1 had a number of limitations that we are trying to address in EFX 2. More specifically, 
+
+* we have enriched the syntax for creating EFX Templates in order to overcome current limitations in notice visualisation.
+* we have added a number of new functions that give us more control over formatting, text manipulation and internationalisation.
+* we have introduced aliases for Fields and Nodes, in order to make EFX Expressions more readable.   
+
+In short EFX 2 allows us to improve notice visualisation while making EFX expressions simpler to read and write.
+
+For details on what has changed on EFX 2, see the dedicate page on xref:sdk2/efx2.adoc[*"What's new in EFX 2"*].
+
+== Migration
+
+_A complete migration guide will be provided._

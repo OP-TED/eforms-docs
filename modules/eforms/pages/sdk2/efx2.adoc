@@ -1,0 +1,122 @@
+= What's is new in EFX 2
+
+NOTE: This is a pre-release version of this document. 
+ The eForms SDK 2.0.0 is still under development.
+ This notice will be removed when the document is finalized.
+
+EFX 2 is the version of EFX released with SDK 2.0.0. EFX 2 focuses mostly on adding features and flexibility to EFX Templates. However, it also includes several improvements for EFX Expressions.
+
+== Backwards compatibility
+
+EFX 2 contains new features, that are not supported by EFX 1. Although, most EFX 1 expressions are still valid EFX 2 expressions, some EFX 1 expressions need to be slightly modified before they can be parsed by an EFX 2 parser. More specifically, EFX 1 expressions that use *codelist identifiers* need to be modified. See the section "Breaking change in codelist identifiers" for more details.
+
+
+== EFX Templates
+
+=== Template variables
+
+One of the difficulties we had with EFX 1 was the complexity of expressions required to navigate complex relationships in the XML files. The main cause of this difficulty was the fact that the context of a template line in EFX 1 was unique to each line and there was no way to share context between template lines. As a result it was impossible to navigate complex relationships in nested template lines without writing unnecessarily complex expressions.
+
+To solve this issue, EFX 2 introduces template variables. Template variables are declared within the context declaration block of a template line, and are visible within the template block headed by that line. A "template block" is a group of nested template lines. 
+
+The new syntax for context declaration block is as follows:
+
+[source]
+----
+// For example: {context:$ctx = fieldAlias1, number:$number = numericFieldAlias2}
+contextDeclarationBlock: StartExpression contextDeclaration (Comma templateVariableList)? EndExpression;
+
+contextDeclaration: contextVariableInitializer | fieldContext | nodeContext;
+
+templateVariableList: templateVariableInitializer (Comma templateVariableInitializer)*;
+
+// For example: context:$ctx = fieldAlias
+contextVariableInitializer: ContextTypeCast Variable Assignment fieldContext;
+
+// For example: text:$variable = concat(fieldAlias1, fieldAlias2)
+templateVariableInitializer
+    : TextTypeCast Variable Assignment stringExpression
+    | BooleanTypeCast Variable Assignment booleanExpression
+    | NumericTypeCast Variable Assignment numericExpression
+    | DateTypeCast Variable Assignment dateExpression
+    | TimeTypeCast Variable Assignment timeExpression
+    | DurationTypeCast Variable Assignment durationExpression
+    ;
+----
+
+==== Impact of change
+
+NOTE: This change only impacts implementers that have created custom EFX parsers with EFX Template parsing functionality. Custom parsers that are not used for EFX Template parsing are not impacted by this change. EFX Template features are used only for generating visualisation templates for eForms notices.
+
+If you have developed a custom EFX Template parser, then you will need to update your parser to support the new syntax. The intervention that wil be required involves tracking of the scope of template variables. Your parser already tracks template line nesting. As the scope of template variables is limited to template blocks, you will be able to track the variable scope together with template line nesting. 
+
+If you have  developed a custom EFX Template parser, you probably also have developed your own notice visualisation application that uses your translated templates. This application will also need to be updated to implement the new capabilities introduced by template variables. Your application already has a notion of template "fragments" that correspond to the template blocks defined in the source EFX template file. The intervention required for your visualisation application, involves enabling your existing template fragments to take and use parameters. Template variables are evaluated in the template line (fragment) where they are declared, and are passed as parameters to nested template fragments.
+
+
+== EFX Expressions
+
+=== Field and Node aliases
+
+One of the issues of EFX 1 is that it adopted the existing Field and Node identifiers for referencing Fields and Nodes in EFX expressions. The problem is that these identifiers were defined before the introduction of EFX, and their naming conventions did not take under consideration the readability of expressions that may contain them. As a result, it is hard to understand what an EFX 1 expression is trying to achieve without looking-up the definitions of the Fields and Nodes that are referenced in the expression. 
+
+To make EFX Expressions more readable, EFX 2 introduces the concept of Field and Node aliases. A Field or Node alias is an alternative name that can be used to reference a Field or Node in an EFX expression. We decided to add these aliases (instead of renaming existing identifiers) in order to maintain backwards compatibility with EFX 1 expressions and to avoid disrupting ongoing development efforts.
+
+==== Naming conventions
+* Node aliases are written in PascalCase.Therefore node aliases always start with an uppercase letter. For example: The node with identifier "ND-Root" now has an alias "Root"; the node with identifier "ND-Lot" now has an alias "Lot". 
+* Field aliases are written in camelCase. Therefore field aliases always start with a lowercase letter. For example: The field with identifier "BT-Name" now has an alias "name"; the field with identifier "FD-Description" now has an alias "description".
+* When an alias is composed of several parts, then those parts are separated by an underscore and are written in descending order from container to content (container_content). Each part follows the capitalisation of the corresponding type (Nodes_Are_PascalCase, fields_are_camelCase).
+
+===== Examples:
+[source, text]
+----
+* NR-Root -> Root
+* ND-Lot -> Lot
+* ND-LotProcurementScope -> Lot_ProcurementScope
+* BT-262-Lot -> lot_mainClassificationCode
+* BT-262-Part -> part_mainClassificationCode
+* BT-262-Procedure -> procedure_mainClassificationCode
+----
+
+As Field identifiers use short Business Term numbers, it is reasonable that the introduction of descriptive aliases will increase the length of EFX expressions. However their readability will also improve drastically.
+ 
+=== Breaking change in codelist identifiers
+
+In EFX 1, there are five different uses of identifiers:
+
+* Node identifiers (eg. `ND-NodeName`)
+* Field identifiers (eg. `BT-123-Context`)
+* Variable identifiers (eg. `$variableName`) 
+* Attribute identifiers (eg. `@attributeName`)
+* Codelist identifiers (eg. `(codeListName)`)
+
+As EFX 1 only supports built-in functions, function names are not included in this list.
+
+The introduction of aliases for Fields and Nodes makes the current notation of codelist identifiers ambiguous, because the parenthesis used to wrap a codelist name in EFX 1 are also used for controlling the order of evaluation and for grouping function arguments. For example, the identifier `(accessibility)` could refer to the Codelist named `accessibility`, or to a Field with alias `accessibility`. In order to avoid this ambiguity, we decided to change the notation of Codelist identifiers. The new notation uses a prefix `codelist:` to distinguish Codelist identifiers from other identifiers. For example, the identifier `(accessibility)` now becomes `codelist:accessibility`.
+
+Therefore, in EFX 2 the five different uses of identifiers listed above become:
+
+|===
+|Identifier type |EFX 1 |EFX 2| Comment
+|Node |`ND-NodeName` |`ND-NodeName` or `Context_NodeName`| Improved readability
+|Field |`BT-123-Context` |`BT-123-Context` or `context_fieldName`| Improved readability
+|Variable |`$variableName` |`$variableName` | No change
+|Attribute |`@attributeName` |`@attributeName` | No change
+|Codelist |`(accessibility)` |`codelist:accessibility` | New notation (breaking change)
+|===
+
+CAUTION: This change is a *breaking change*. Therefore, EFX 1 expressions that use codelist identifiers need to be slightly modified before they can be parsed by an EFX 2 parser.
+
+=== New functions:
+
+==== `string-join` function
+
+The string join function allows to join a list of strings into a single string. The function takes two arguments: the list of strings to join, and the separator to use between each string.
+
+The following example shows how to use the string join function:
+
+[source, efx]
+----
+string-join(("a", "b", "c"), ", ")
+----
+
+The result of the above expression is the string `a, b, c`.
