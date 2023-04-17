@@ -922,8 +922,7 @@ the information from the previous TED schema form will need to be entered again 
 If a field in a TED XML notice doesn’t exist in eForms, it’s only possible to use the free text of Additional Information field (BT-300).
 +
 A new release of the TED XML to eForms Converter (TEDXDC) has been published on link:https://github.com/OP-TED/ted-xml-data-converter[GitHub]. 
-This release of the tool can convert all TED Contract Notice forms and all TED Contract Award Notice forms. 
-It also caters for the multilingual versions of text elements and added options to control the reporting of messages to the user. 
+This release of the tool can partially convert all the main forms for the R2.0.9 schema: PIN, CN and CAN.
 
 
 
