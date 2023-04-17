@@ -14,8 +14,7 @@ The link:https://op.europa.eu/en/web/ted-esenders-webinar-2022/home[2022 TED eSe
 The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/[May 2022 eForms Technical Workshop] focused on eForms technical implementation for developers 
 and on building metadata-driven applications.
 +
-A link:https://op.europa.eu/en/web/eforms-2022/home[second eForms Technical Workshop] took place online on 29 & 30 September 2022, 
-followed by the link:https://op.europa.eu/en/web/ted-eforms/agenda[3rd eForms Technical Workshop of February 2023].
+A link:https://op.europa.eu/en/web/eforms-2022/agenda[2nd eForms Technical Workshop] took place online on 29 & 30 September 2022, followed by the link:https://op.europa.eu/en/web/ted-eforms/previous-editions[3rd & 4th eForms Technical Workshops of February and March 2023] .
 +
 The Publications Office is organising a series of link:https://op.europa.eu/en/web/ted-eforms/home[follow-up eForms events for 2023].
 
@@ -154,6 +153,9 @@ https://op.europa.eu/en/web/ted-esenders-webinar-2022/agenda
 +
 * eForms presentations from the third eForms Technical Workshop in February 2023 +
 https://op.europa.eu/en/web/ted-eforms/agenda
++
+* eForms presentations from the fourth eForms Technical Workshop in March 2023 +
+https://op.europa.eu/en/web/ted-eforms/agenda-4th-eforms-03-2023
 +
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
@@ -899,8 +901,8 @@ Making the profile public is entirely optional. The information eSenders provide
 to automatically generate a list of eSenders using eForms, which is the next step in the development. These lists will eventually replace the page
 link:https://simap.ted.europa.eu/web/simap/list-of-ted-esenders[SIMAP-List of TED eSenders], which will not be maintained with eForms.
 +
-The latest developments and the next steps will be presented in the link:https://op.europa.eu/en/web/ted-eforms/home[4th eForms Technical Workshop]
-of 28-29 March.
+The latest developments and next steps of the TED Developer Portal were presented in the 
+link:https://op.europa.eu/documents/11465927/12140313/2023-03-28+TED+Developer+Portal+-+4th+eForms+technical+workshop.pptx/2daf351f-50be-dd34-4044-4d30e908e0ed?t=1679990131820[4th eForms Technical Workshop] of 28 March.
 
 
 
