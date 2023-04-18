@@ -291,13 +291,16 @@ values:  `true` or `false` _(default)_
 values:  `true` or `false`  _(default)_
 
 `valueSource`:: This property indicates that the value of this field should be a copy of the value of another field. It provides the identifier of the referenced field whose value should be copied over. It is most commonly used for hidden fields of type `id-ref`. +
-value: any string (e.g. `"BT-137-LotsGroup"`)
+value: a text string (e.g. `"BT-137-LotsGroup"`)
 
-`unpublishGroupId`:: Indicates the group which contains the data about unpublishing this field (e.g. `"GR-Unpublish-BT-105-Procedure"`)
+`unpublishGroupId`:: Indicates the group which contains the data about unpublishing this field.  +
+value: a text string (e.g. `"GR-Unpublish-BT-105-Procedure"`)
 
-`unpublishFieldId`:: Indicates the field id of the unpublished identifier (e.g. `"BT-195(BT-105)-Procedure"`)
+`unpublishFieldId`:: Indicates the field id of the unpublished identifier.  +
+value: a text string (e.g. `"BT-195(BT-105)-Procedure"`)
 
-`unpublishCode`:: Indicates the privacy code (e.g. `"pro-typ"`)
+`unpublishCode`:: Indicates the privacy code.  +
+value: a text string (e.g. `"pro-typ"`)
 
 `_idScheme`:: It appears only for the fields of type `id` (identifier) which are intended to store the identifier of a repeatable `group` element. The value can be retrieved from the `field` metadata (`fields.json`) but is also provided here for convenience. +
 value: any string (e.g. `"LOT"`)
