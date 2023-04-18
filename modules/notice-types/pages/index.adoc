@@ -291,7 +291,7 @@ values:  `true` or `false` _(default)_
 values:  `true` or `false`  _(default)_
 
 `valueSource`:: This property indicates that the value of this field should be a copy of the value of another field. It provides the identifier of the referenced field whose value should be copied over. It is most commonly used for hidden fields of type `id-ref`. +
-value: a text string (e.g. `"BT-137-LotsGroup"`)
+value: any string (e.g. `"BT-137-LotsGroup"`)
 
 `unpublishGroupId`:: Indicates the group which contains the data about unpublishing this field.  +
 value: a text string (e.g. `"GR-Unpublish-BT-105-Procedure"`)
