@@ -1,0 +1,11 @@
+= `BT-5071`: Place Performance Country Subdivision
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-5071-Lot`:: Place Performance Country Subdivision
+  `BT-5071-Part`:: Place Performance Country Subdivision
+  `BT-5071-Procedure`:: Place Performance Country Subdivision

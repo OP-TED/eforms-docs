@@ -1,0 +1,8 @@
+= `OPT-071`: Quality Target Code
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-071-Lot`:: Quality Target Code

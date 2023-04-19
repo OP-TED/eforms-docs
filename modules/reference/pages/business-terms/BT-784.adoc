@@ -1,0 +1,9 @@
+= `BT-784`: Review Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-784-Review`:: Review Identifier

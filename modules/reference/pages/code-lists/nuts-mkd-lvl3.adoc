@@ -1,0 +1,21 @@
+= `nuts-mkd-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Former Yugoslav Republic of Macedonia
+[horizontal]
+Version:: 1.7.0
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `MK001`::: Вардарски
+  `MK002`::: Источен
+  `MK003`::: Југозападен
+  `MK004`::: Југоисточен
+  `MK005`::: Пелагониски
+  `MK006`::: Полошки
+  `MK007`::: Североисточен
+  `MK008`::: Скопски
+  `MKZZZ`::: Extra-Regio NUTS 3

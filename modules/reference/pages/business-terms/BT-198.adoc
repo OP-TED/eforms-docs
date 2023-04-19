@@ -1,0 +1,64 @@
+= `BT-198`: Unpublished Access Date
+:navtitle: Business Terms
+
+[horizontal]
+Type:: DATE
+
+== Fields
+[horizontal]
+  `BT-198(BT-09)-Procedure`:: Unpublished Access Date
+  `BT-198(BT-105)-Procedure`:: Unpublished Access Date
+  `BT-198(BT-106)-Procedure`:: Unpublished Access Date
+  `BT-198(BT-1118)-NoticeResult`:: Unpublished Access Date
+  `BT-198(BT-118)-NoticeResult`:: Unpublished Access Date
+  `BT-198(BT-1252)-Procedure`:: Unpublished Access Date
+  `BT-198(BT-135)-Procedure`:: Unpublished Access Date
+  `BT-198(BT-1351)-Procedure`:: Unpublished Access Date
+  `BT-198(BT-136)-Procedure`:: Unpublished Access Date
+  `BT-198(BT-142)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-144)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-156)-NoticeResult`:: Unpublished Access Date
+  `BT-198(BT-1561)-NoticeResult`:: Unpublished Access Date
+  `BT-198(BT-160)-Tender`:: Unpublished Access Date
+  `BT-198(BT-161)-NoticeResult`:: Unpublished Access Date
+  `BT-198(BT-162)-Tender`:: Unpublished Access Date
+  `BT-198(BT-163)-Tender`:: Unpublished Access Date
+  `BT-198(BT-171)-Tender`:: Unpublished Access Date
+  `BT-198(BT-191)-Tender`:: Unpublished Access Date
+  `BT-198(BT-193)-Tender`:: Unpublished Access Date
+  `BT-198(BT-539)-Lot`:: Unpublished Access Date
+  `BT-198(BT-539)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-540)-Lot`:: Unpublished Access Date
+  `BT-198(BT-540)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-541)-Lot`:: Unpublished Access Date
+  `BT-198(BT-541)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-5421)-Lot`:: Unpublished Access Date
+  `BT-198(BT-5421)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-5422)-Lot`:: Unpublished Access Date
+  `BT-198(BT-5422)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-5423)-Lot`:: Unpublished Access Date
+  `BT-198(BT-5423)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-543)-Lot`:: Unpublished Access Date
+  `BT-198(BT-543)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-553)-Tender`:: Unpublished Access Date
+  `BT-198(BT-554)-Tender`:: Unpublished Access Date
+  `BT-198(BT-555)-Tender`:: Unpublished Access Date
+  `BT-198(BT-556)-NoticeResult`:: Unpublished Access Date
+  `BT-198(BT-635)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-636)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-660)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-709)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-710)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-711)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-712)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-720)-Tender`:: Unpublished Access Date
+  `BT-198(BT-730)-Tender`:: Unpublished Access Date
+  `BT-198(BT-731)-Tender`:: Unpublished Access Date
+  `BT-198(BT-733)-Lot`:: Unpublished Access Date
+  `BT-198(BT-733)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-734)-Lot`:: Unpublished Access Date
+  `BT-198(BT-734)-LotsGroup`:: Unpublished Access Date
+  `BT-198(BT-759)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-760)-LotResult`:: Unpublished Access Date
+  `BT-198(BT-773)-Tender`:: Unpublished Access Date
+  `BT-198(BT-88)-Procedure`:: Unpublished Access Date

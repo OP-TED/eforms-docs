@@ -1,0 +1,9 @@
+= `BT-46`: Jury Member Name
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-46-Lot`:: Jury Member Name

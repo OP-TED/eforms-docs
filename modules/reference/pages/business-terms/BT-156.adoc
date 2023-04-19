@@ -1,0 +1,9 @@
+= `BT-156`: Group Framework Maximum Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-156-NoticeResult`:: Group Framework Maximum Value

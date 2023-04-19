@@ -1,0 +1,15 @@
+= `usage` codelist
+:navtitle: Codelists
+
+List of codes to indicate whether the associated concept should be used or not.
+[horizontal]
+Version:: 20220316-0
+URI:: http://publications.europa.eu/resource/dataset/usage
+Structure:: flat
+Used in:: xref:business-terms/BT-748.adoc[`BT-748`] Selection Criteria Used
+
+== Codes
+[horizontal]
+  `n-used`::: Not used
+  `nyk`::: Not yet known
+  `used`::: Used

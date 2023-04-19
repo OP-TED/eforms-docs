@@ -1,0 +1,8 @@
+= `OPP-110`: Place of registration - Town
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-110-Business`:: Place of registration - Town

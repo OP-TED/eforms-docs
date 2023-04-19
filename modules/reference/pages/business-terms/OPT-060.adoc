@@ -1,0 +1,9 @@
+= `OPT-060`: Execution Requirements Factor
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `OPT-060-Lot`:: Execution Requirements Factor

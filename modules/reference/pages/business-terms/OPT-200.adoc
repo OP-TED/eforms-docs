@@ -1,0 +1,8 @@
+= `OPT-200`: Company Technical Identifier
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-200-Organization-Company`:: Organisation Technical Identifier

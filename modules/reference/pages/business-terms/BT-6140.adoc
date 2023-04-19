@@ -1,0 +1,9 @@
+= `BT-6140`: EU Funds Details
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-6140-Lot`:: EU Funds Details

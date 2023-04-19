@@ -1,0 +1,14 @@
+= `tender-guarantee-required` codelist
+:navtitle: Codelists
+
+List of codes to specify whether a Tender Guarantee is required or not.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+Used in:: xref:business-terms/BT-751.adoc[`BT-751`] Guarantee Required
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

@@ -1,0 +1,15 @@
+= `missing-info-submission` codelist
+:navtitle: Codelists
+
+This table provides the list of codes indicating whether tenderer-related information (complete or partial) can be supplemented even after the submission deadline.
+[horizontal]
+Version:: 20220928-0
+URI:: http://publications.europa.eu/resource/dataset/missing-info-submission
+Structure:: flat
+Used in:: xref:business-terms/BT-771.adoc[`BT-771`] Late Tenderer Information
+
+== Codes
+[horizontal]
+  `late-all`::: At the discretion of the buyer, all missing tenderer-related documents may be submitted later.
+  `late-none`::: No documents can be submitted later.
+  `late-some`::: At the discretion of the buyer, some missing tenderer-related documents may be submitted later.
