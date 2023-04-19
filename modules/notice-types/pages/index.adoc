@@ -293,13 +293,13 @@ values:  `true` or `false`  _(default)_
 `valueSource`:: This property indicates that the value of this field should be a copy of the value of another field. It provides the identifier of the referenced field whose value should be copied over. It is most commonly used for hidden fields of type `id-ref`. +
 value: any string (e.g. `"BT-137-LotsGroup"`)
 
-`unpublishGroupId`:: Indicates the group which contains the data about unpublishing this field.  +
+`unpublishGroupId`:: Indicates the group which contains the unpublish fields. +
 value: a text string (e.g. `"GR-Unpublish-BT-105-Procedure"`)
 
-`unpublishFieldId`:: Indicates the field id of the unpublished identifier.  +
+`unpublishFieldId`:: Indicates the id of the field carrying the identifier of the field to be unpublished. +
 value: a text string (e.g. `"BT-195(BT-105)-Procedure"`)
 
-`unpublishCode`:: Indicates the privacy code.  +
+`unpublishCode`:: Indicates the code used to identify the field to be unpublished. +
 value: a text string (e.g. `"pro-typ"`)
 
 `_idScheme`:: It appears only for the fields of type `id` (identifier) which are intended to store the identifier of a repeatable `group` element. The value can be retrieved from the `field` metadata (`fields.json`) but is also provided here for convenience. +
