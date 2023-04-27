@@ -192,6 +192,9 @@ being changed (eForms notices only).
 |Publication ID of the notice being changed. eForms or TEDXML
 notices. |ojs-notice-id |XXXXXXXX-YYYY
 
+|OPP-090 |Previous Notice |Publication ID of the previous (TED XML) notice.
+|ojs-notice-id |XXXXXXXX-YYYY
+
 .2+a|
 OPT-100
 
