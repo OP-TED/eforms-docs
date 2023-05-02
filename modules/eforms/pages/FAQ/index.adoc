@@ -225,9 +225,23 @@ current standard forms. As there is no Procedure Identifier in the
 current forms, in these cases the notice number of the previous TED XML
 notice (as published in the OJ S) must be entered in the previous
 publication field in the eForms notice. 
++
 See link:https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#previousNoticeSection[Previous Notice (OPP-090)] in the documentation. 
++
+OPP-090 should be used exclusively to point to a TED XML notice if it may not be covered by other fields, i.e.:
++
+* Change Notice Version Identifier (BT-758),
++
+* Modification Previous Notice Section Identifier (BT-1501),
++
+* Previous Planning Identifier (BT-125), or
++
+* Framework Notice Identifier (OPT-100).
 
- 
++
+Any referenced notice must have been already published. Referring to a TED XML notice, the format may only be ‘XXXXXX-YYYY’, i.e. Notice Publication ID.  
+
+
  
 In the documentation we can read that we must use a UUID version 4 for the Procedure Identifier. Are there any limitations? Can we use every possible identifier and is it possible that two or more eSenders use the same number identifier in this case?::
 
