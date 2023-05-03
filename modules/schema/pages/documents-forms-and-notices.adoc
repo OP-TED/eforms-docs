@@ -186,13 +186,13 @@ subtype value corresponds to the column number.
 
 |PIN time limit |7-9 <|Prior information notice, or periodic indicative notice, used to shorten time limits for receipt of tenders
 
-.7+|Competition .3+|PIN |PIN CFC general |10-11 <|Prior information notice, or periodic indicative notice, used as a call for competition -- standard regime
+.7+|Competition .2+|PIN |PIN CFC general |10-11 <|Prior information notice, or periodic indicative notice, used as a call for competition -- standard regime
 
 |PIN CFC social |12-14 <|Prior information notice, or periodic indicative notice, used as a call for competition -- light regime
 
-|QS |15 <|Notice on the existence of a qualification system
+.5+|CN |QS |15 <|Notice on the existence of a qualification system
 
-.4+|CN |CN general |16-19 <|Contract, or concession, notice -- standard regime
+|CN general |16-19 <|Contract, or concession, notice -- standard regime
 
 |CN social |20-21 <|Contract notice -- light regime
 
