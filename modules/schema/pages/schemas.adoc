@@ -20,11 +20,11 @@ h|Prior Information / Periodic Indicative Notice a|
 * PIN time limit
 * PIN CFC general
 * PIN CFC social
-* QS
 
 |PriorInformationNotice
 
 h|Contract Notice a|
+* QS
 * CN general
 * CN social
 * CN subco
