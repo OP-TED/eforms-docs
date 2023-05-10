@@ -1195,8 +1195,8 @@ before the Unpublished Accessibility Date (BT-198), and then the notice is publi
 Whenever an Unpublished Accessibility Date (BT-198) is reached, the notice is republished with the relevant Not Immediately Published Data included. 
 The notice has the same Notice ID, but a new Publication ID. 
 +
-The BT-198 should be within the next 10 years. If the date is not filled, the unpublished fields will never be published 
-(and the notice is therefore only published once). 
+BT-198 should be within the next 10 years; Unpublished Access Date (BT-198) value must be between 2 days and 10 years after the Notice Dispatch Date (BT-05). 
+If the date is not filled, the unpublished fields will never be published (and the notice is therefore only published once). 
 
 
 
