@@ -52,7 +52,7 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.7.1
+Application version:: 1.8.3
 SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0
 
 
@@ -76,7 +76,6 @@ Users can define personalised settings for the legal basis and notice types that
 
 * Confidential fields can be set to be always confidential or non-confidential.  
 
-* To get started, please fill in Organisation Name, Organisation Identifier and Oganisation Part Name under My Form Settings > Main Buyer Settings. 
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
 
@@ -85,9 +84,9 @@ As of SDK version 1.6, the lot distribution for lot groups has changed; there is
 
 
 ==== Known issues 
-At this point, the application is incomplete and many use cases are not fully implemented. 
+At this point, the application is incomplete and some use cases are not fully implemented. 
 
-All validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”.
+Some validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”.
 
 All the error messages and labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
 
@@ -109,14 +108,25 @@ Due to an error in the processing of notices at export time some notices remain 
 
 Notices created before 15 March 2023 in Preview or Production environments and updated to SDK 1.6 may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
 
+The following issues have been identified as of application version 1.8.3:
+
+* Groups of Lots cannot and should not be used in the User Interface of eNotices2. 
+* Legal basis of the procedure (ELI - CELEX) (BT-01(c)-Procedure); Legal basis (BT-01(e)-Procedure) and Applicable cross-border law (BT-09(a)-Procedure) cannot be filled in together. Any combination will lead to invalid XML. 
+* OPT-060-Lot in the subtypes where it's mandatory "17", "18", "22" might prevent users from submitting a notice. 
+* T02 cannot be submitted until SDK 1.8. 
+* Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice. 
+* BT-125(i) and OPP-090-Procedure; respectively the previous planning identifier and the previous notice identifier (in TED-Schema) don’t appear in the XML even if completed in the form-filling tool. 
+* Currently, it is not possible to refer to a TED-XML notice (using nnnnnn-yyyy publication number in BT-758) in a Change notice; a Change notice can only refer to an eForms notice ID (uuid) in BT-758. An issue in our back-office system (TED Monitor) will reject such notices causing them to end up in status "Not Published”. The workaround is to refer to the original notice in the additional information field.  We are working to fix this bug by July 2023. 
+
 ==== Known eNotices2 API issues 
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
 
-Currently, "stop publication" on a submitted notice will return error 500 in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
+Please note that the HTTP responses are still a work in progress; in certain cases, error code 500 is returned instead of 400. We are in the process of identifying these cases and correcting the responses and their corresponding messages to clearly indicate that the error is on client side and not on the server side. For instance, an error code 400 would mean that the notice is rejected by eNotices2 API and does not even get validated by CVS. In this case, the instance/ notice cannot be created in eNotices2. 
 
-Currently, when submitting an XML to eNotices2 API that is invalid against XSD, error code 500 will be returned. To see if this the case, i.e. the XML is not compliant against XSD, please check the notice for now through CVS API. 
+Currently, "stop publication" on a submitted notice will return error code in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
 
-The 'validationReportUrl' property  present in the response body for submit notice is currently not fully correct; /api/v2/ is missing in the URL. Until this bug is fixed, eSenders should use instead URL pattern: 'https://enotices2.preview.ted.europa.eu/esenders/api/v2/notice/notices/\{businessId\}/validation-report' where the \{businessId\} is replaced with value taken from the submitted notice ('noticeId-versionId') or with \{businessId\} from validationReportUrl.
+Currently, when submitting an XML to eNotices2 API that is invalid against the XML schema XSD, error code 500 will be returned. To see if this the case, i.e. if the XML is not compliant against XSD, please check the notice for now through CVS API. 
+
 
 
 
@@ -126,21 +136,21 @@ CAUTION: In Production (live environment), the actual export to TED happens on w
 
 ==== Tips for using the form-filling tool of eNotices2
 
-We are currently in the process of providing more guidance for users of the eNotices2 web interface. In recent weeks we have loosened many rules that required fields to be mandatory under certain conditions, which makes it easier to fill in the forms.  However, as certain co-constraints and conditional rules have been removed, the same is not true for CVS validation upon validating a notice or trying to submit it via the user interface of eNotices2. Until we can provide some more guidance and until known issues are fixed and more rules are re-enforced, we have provisionally gathered here some tips to help users with avoiding validation errors: 
+We are currently in the process of providing more guidance for users of the eNotices2 web interface. Until we can provide some more guidance and until known issues are fixed and more rules are re-enforced, we have provisionally gathered here some tips to help users with avoiding validation errors: 
 
-   * BT-747 Selection criteria must be entered 3 times using the 3 values from the codelist (except none). 
    * In multi-stage procedures (BT-105), the second stage indicator should be set to 'yes' on one of those 3 groups where the criterion is used. 
-   * "Award criteria complicated" should be filled-in with a variation of "See the procurement documents" to avoid having to fill in Criterion parameters.
    * Please avoid using the section “Information about late submission” except for the mandatory fields and the “Description of the NDA”.
-   * For Exclusion Grounds, use only once the code value and enter ”all other exclusion grounds apply" in the description; avoid repeating codelist values.
    * Group "Post Award Process" both indicators should be always set to "true".
    * Any date field which has a time attached must always have a value in the time field.
    * In Contract notices of the Defence directive, BT-71-Lot should not be filled in.
+   * For structured organisations, to get started, please fill in Organisation Name, Organisation Identifier and Oganisation Part Name under My Form Settings > Main Buyer Settings. 
+   * There is no need to remove any preset values from the form-filling tool; if necessary, please complete any associated fields as you would normally. If there is no need to complete any associated fields, please ignore the preset values. 
  
 
 ==== Tips for eSenders
 
     * If you are an eSender, please note that the concept of Workgroups is reserved for users of eNotices2 web User Interface (UI). eSenders/ users of eNotices2 API       can still create workgroups in the UI of eNotices2 but the API is not aware of the context or workgroups, i.e. no API function can be performed on a notice           that has been manually transferred to the context of a Workgroup. 
+    * eSenders are discouraged from using the User Interface of eNotices2 to continue a procedure or create a Change notice on a parent notice originally sent via the API. 
     * To avoid authorisation issues when using eNotices2 API, make sure you generate your API key in the corresponding environment of the TED Developer Portal:  
       ** link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview]
     * To avoid authorisation issues when using eNotices2 API, log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account and make sure that your eNotices2 account is active:
@@ -148,17 +158,18 @@ We are currently in the process of providing more guidance for users of the eNot
     * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5 and 1.6. SDK version 1.6 is supported both in Preview and Production environments as of 15 March 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
       https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
     * Until dynamic rules are in place, please avoid using past dates for preferred publication date in the XML; this may cause your notice to remain in status "submitted" and not be published.
+    * Dynamic rules that check between notices are not yet in place, users, however, should still respect the workflow of eForms notices. For instance, users may currently be able to submit a Change notice that refers to a parent notice that has not been yet published. The notice will still be blocked by our internal system (will enter in error). Currently, it is not possible to stop the publication of a notice that has entered in error in the Preview environment, but we are seeing what could be improved for these situations. 
     
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: April 2023
-Application version:: 1.8
-SDK version:: 1.7
+Indicative planning:: June 2023
+Application version:: 1.9
+SDK version:: 1.8
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version of Preview went into Production on 29 March 2023.
+NOTE: The current application version of Preview goes into Production on 21 May 2023.
 
 
 === TED Central Validation Service 
@@ -184,7 +195,7 @@ API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/i
 ==== Currently available 
 [horizontal]
 Application version:: 1.2.9
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0
+SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
