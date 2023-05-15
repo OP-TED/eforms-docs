@@ -2,29 +2,34 @@
 :navtitle: Business Rules
 
 == `forbidden`
-[cols="<3,<6,>1", role="fixed-layout"]
+[cols="<3,3,<6,>1", role="fixed-layout"]
 |====
-h| Field h|Details h|Severity 
+h| Business Rule h| Field h|Details h|Severity
+h|
 h|`BT-13(d)-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-13(t)-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-14-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-15-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-15-Lot`
 a|
 
@@ -36,76 +41,91 @@ a|
 not(BT-14-Lot == 'non-restricted-document')
 ----
 |`ERROR`
+h|
 h|`BT-21-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-22-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-23-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-24-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-26(m)-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-26(a)-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-27-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-36-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-41-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-42-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-46-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-47-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-64-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-65-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-70-Lot`
 a|
 
@@ -117,1496 +137,1795 @@ a|
 OPT-060-Lot is not present
 ----
 |`ERROR`
+h|
 h|`BT-71-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-94-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-95-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-106-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-115-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-115-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-118-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-119-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-120-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-124-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-125(i)-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-127-notice`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-131(d)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-131(t)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-132(d)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-132(t)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-133-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-134-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-135-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-136-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-137-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-142-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-144-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-145-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-150-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-151-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-156-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-160-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-161-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-162-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-163-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-165-Organization-Company`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-171-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-191-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-193-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-118)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-161)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-556)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-156)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-142)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-710)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-711)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-709)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-712)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-144)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-760)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-759)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-171)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-193)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-720)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-162)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-160)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-163)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-191)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-553)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-554)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-555)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-773)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-731)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-730)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-09)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-105)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-88)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-106)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-1351)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-136)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-1252)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-135)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-733)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-543)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-5421)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-5422)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-5423)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-541)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-734)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-539)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-540)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-733)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-543)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-5421)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-5422)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-5423)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-541)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-734)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-539)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-540)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-635)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-636)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-1118)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-1561)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-195(BT-660)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-118)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-161)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-556)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-156)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-142)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-710)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-711)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-709)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-712)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-144)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-760)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-759)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-171)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-193)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-720)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-162)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-160)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-163)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-191)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-553)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-554)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-555)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-773)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-731)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-730)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-09)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-105)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-88)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-106)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-1351)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-136)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-1252)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-135)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-733)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-543)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-5421)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-5422)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-5423)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-541)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-734)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-539)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-540)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-733)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-543)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-5421)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-5422)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-5423)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-541)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-734)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-539)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-540)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-635)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-636)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-1118)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-1561)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-196(BT-660)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-118)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-161)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-556)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-156)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-142)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-710)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-711)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-709)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-712)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-144)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-760)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-759)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-171)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-193)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-720)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-162)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-160)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-163)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-191)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-553)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-554)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-555)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-773)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-731)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-730)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-09)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-105)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-88)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-106)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-1351)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-136)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-1252)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-135)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-733)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-543)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-5421)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-5422)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-5423)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-541)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-734)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-539)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-540)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-733)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-543)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-5421)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-5422)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-5423)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-541)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-734)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-539)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-540)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-635)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-636)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-1118)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-1561)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-197(BT-660)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-118)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-161)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-556)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-156)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-142)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-710)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-711)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-709)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-712)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-144)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-760)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-759)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-171)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-193)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-720)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-162)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-160)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-163)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-191)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-553)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-554)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-555)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-773)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-731)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-730)-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-09)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-105)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-88)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-106)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-1351)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-136)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-1252)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-135)-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-733)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-543)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-5421)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-5422)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-5423)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-541)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-734)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-539)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-540)-LotsGroup`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-733)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-543)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-5421)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-5422)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-5423)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-541)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-734)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-539)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-540)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-635)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-636)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-1118)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-1561)-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-198(BT-660)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-200-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-201-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-202-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-262-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-263-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-300-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-500-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-500-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-501-Business-National`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-501-Business-European`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-502-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-503-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-503-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-505-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-506-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-506-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-507-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-507-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-510(a)-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-510(b)-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-510(c)-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-510(a)-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-510(b)-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-510(c)-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-512-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-512-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-513-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-513-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-514-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-514-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-531-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-536-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-537-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-538-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-553-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-554-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-555-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-556-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-615-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-615-Lot`
 a|
 
@@ -1618,46 +1937,55 @@ a|
 not(BT-14-Lot == 'restricted-document')
 ----
 |`ERROR`
+h|
 h|`BT-632-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-633-Organization`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-635-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-636-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-651-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-660-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-706-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-707-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-707-Lot`
 a|
 
@@ -1669,756 +1997,907 @@ a|
 not(BT-14-Lot == 'restricted-document')
 ----
 |`ERROR`
+h|
 h|`BT-708-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-709-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-710-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-711-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-712(a)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-712(b)-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-720-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-721-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-722-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-723-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-726-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-727-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-728-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-729-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-730-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-731-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-735-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-736-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-737-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-739-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-739-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-740-Procedure-Buyer`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-746-Organization`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-756-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-759-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-760-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-765-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-766-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-768-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-773-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-779-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-780-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-781-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-782-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-783-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-784-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-785-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-786-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-787-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-788-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-789-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-790-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-791-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-792-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-793-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-794-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-795-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-796-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-797-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-798-Review`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-799-ReviewBody`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-800(d)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-800(t)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1118-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1251-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1252-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1311(d)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1311(t)-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1351-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1451-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1501(n)-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1501(s)-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1561-NoticeResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-1711-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-3201-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-3202-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-5011-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-5071-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-5101(a)-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-5101(b)-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-5101(c)-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-5121-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-5131-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-5141-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-6110-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-13713-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-13714-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-020-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-021-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-022-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-023-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-030-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-031-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-032-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-033-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-034-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-040-Procedure`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-080-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-100-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-105-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-110-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-111-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-112-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-113-Business-European`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-120-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-121-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-122-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-123-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-130-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-131-Business`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPA-36-Part-Number`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-050-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-070-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-071-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-072-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-091-ReviewReq`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-092-ReviewBody`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-092-ReviewReq`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-100-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-110-Part-FiscalLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-111-Part-FiscalLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-112-Part-EnvironLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-113-Part-EmployLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPA-118-NoticeResult-Currency`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-120-Part-EnvironLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-130-Part-EmployLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-140-Part`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-150-Lot`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-155-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-156-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-160-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPA-161-NoticeResult-Currency`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-170-Tenderer`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-202-UBO`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-210-Tenderer`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-300-Contract-Signatory`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-300-Tenderer`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-LotResult-Financing`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-LotResult-Paying`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Tenderer-SubCont`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Tenderer-MainCont`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-FiscalLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-EnvironLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-EmployLegis`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-AddInfo`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-DocProvider`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-TenderReceipt`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-TenderEval`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-ReviewOrg`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-ReviewInfo`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-Part-Mediator`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-ReviewBody`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-301-ReviewReq`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-302-Organization`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-310-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-315-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-316-Contract`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-320-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-321-Tender`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-322-LotResult`
 a|
 
 *Always forbidden* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-999`
 a|
 
@@ -2427,214 +2906,256 @@ a|
 |====
 
 == `mandatory`
-[cols="<3,<6,>1", role="fixed-layout"]
+[cols="<3,3,<6,>1", role="fixed-layout"]
 |====
-h| Field h|Details h|Severity 
+h| Business Rule h| Field h|Details h|Severity
+h|
 h|`BT-01-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-02-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-03-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-04-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-05(a)-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-05(b)-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-15-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-21-Procedure`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-21-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-22-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-23-Procedure`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-23-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-24-Procedure`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-24-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-26(m)-Procedure`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-26(m)-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-70-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-71-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-88-Procedure`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-97-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-137-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-262-Procedure`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-262-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-500-Organization-Company`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-501-Organization-Company`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-503-Organization-Company`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-506-Organization-Company`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-513-Organization-Company`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-514-Organization-Company`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-615-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-630(d)-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-630(t)-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-701-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-702(a)-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-736-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-747-Lot`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`BT-757-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPP-070-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-001-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-002-notice`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-200-Organization-Company`
 a|
 
 *Always mandatory* in notice sub-type 13.
 |`ERROR`
+h|
 h|`OPT-300-Procedure-Buyer`
 a|
 
