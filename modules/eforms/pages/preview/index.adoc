@@ -53,10 +53,10 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 ==== Currently available
 [horizontal] 
 Application version:: 1.8.3
-SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0
+SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5 and 1.6. SDK version 1.6 is supported both in Preview and Production environments as of 15 March 2023.
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6 and 1.7. SDK version 1.7 is supported both in Preview and Production environments as of 15 May 2023.
 
 In the codelist fields, prefilling of values is supported.  
 
@@ -116,16 +116,16 @@ The following issues have been identified as of application version 1.8.3:
 * T02 cannot be submitted until SDK 1.8. 
 * Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice. 
 * BT-125(i) and OPP-090-Procedure; respectively the previous planning identifier and the previous notice identifier (in TED-Schema) don’t appear in the XML even if completed in the form-filling tool. 
-* Currently, it is not possible to refer to a TED-XML notice (using nnnnnn-yyyy publication number in BT-758) in a Change notice; a Change notice can only refer to an eForms notice ID (uuid) in BT-758. An issue in our back-office system (TED Monitor) will reject such notices causing them to end up in status "Not Published”. The workaround is to refer to the original notice in the additional information field.  We are working to fix this bug by July 2023. 
+* Currently, it is not possible to refer to a TED-XML notice (using nnnnnn-yyyy publication number in BT-758) in a Change notice; a Change notice can only refer to an eForms notice ID (uuid) in BT-758. An issue in our back-office system (TED Monitor) will reject such notices causing them to end up in status "Not Published”. We are working to fix this bug as soon as possible.
 
 ==== Known eNotices2 API issues 
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
 
-Please note that the HTTP responses are still a work in progress; in certain cases, error code 500 is returned instead of 400. We are in the process of identifying these cases and correcting the responses and their corresponding messages to clearly indicate that the error is on client side and not on the server side. For instance, an error code 400 would mean that the notice is rejected by eNotices2 API and does not even get validated by CVS. In this case, the instance/ notice cannot be created in eNotices2. 
+* Please note that the HTTP responses are still a work in progress; in certain cases, error code 500 is returned instead of 400. We are in the process of identifying these cases and correcting the responses and their corresponding messages to clearly indicate that the error is on client side and not on the server side. For instance, an error code 400 would mean that the notice is rejected by eNotices2 API and does not even get validated by CVS. In this case, the instance/ notice cannot be created in eNotices2. 
 
-Currently, "stop publication" on a submitted notice will return error code in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
+* Currently, "stop publication" on a submitted notice will return error code in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
 
-Currently, when submitting an XML to eNotices2 API that is invalid against the XML schema XSD, error code 500 will be returned. To see if this the case, i.e. if the XML is not compliant against XSD, please check the notice for now through CVS API. 
+* Currently, when submitting an XML to eNotices2 API that is invalid against the XML schema XSD, error code 500 will be returned. To see if this the case, i.e. if the XML is not compliant against XSD, please check the notice for now through CVS API. 
 
 
 
@@ -155,9 +155,8 @@ We are currently in the process of providing more guidance for users of the eNot
       ** link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview]
     * To avoid authorisation issues when using eNotices2 API, log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account and make sure that your eNotices2 account is active:
       ** link:https://enotices2.preview.ted.europa.eu/home[eNotices2 in Preview]
-    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5 and 1.6. SDK version 1.6 is supported both in Preview and Production environments as of 15 March 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
+    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5, 1.6 and 1.7. SDK version 1.7 is supported both in Preview and Production environments as of 15 May 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
       https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
-    * Until dynamic rules are in place, please avoid using past dates for preferred publication date in the XML; this may cause your notice to remain in status "submitted" and not be published.
     * Dynamic rules that check between notices are not yet in place, users, however, should still respect the workflow of eForms notices. For instance, users may currently be able to submit a Change notice that refers to a parent notice that has not been yet published. The notice will still be blocked by our internal system (will enter in error). Currently, it is not possible to stop the publication of a notice that has entered in error in the Preview environment, but we are seeing what could be improved for these situations. 
     
 
@@ -169,7 +168,7 @@ SDK version:: 1.8
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version of Preview goes into Production on 21 May 2023.
+NOTE: The current application version of Preview went into Production on 12 May 2023.
 
 
 === TED Central Validation Service 
