@@ -149,7 +149,7 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Tips for eSenders
 
-    * If you are an eSender, please note that the concept of Workgroups is reserved for users of eNotices2 web User Interface (UI). eSenders/ users of eNotices2 API       can still create workgroups in the UI of eNotices2 but the API is not aware of the context or workgroups, i.e. no API function can be performed on a notice           that has been manually transferred to the context of a Workgroup. 
+    * If you are an eSender, please note that the concept of Workgroups is reserved for users of eNotices2 web User Interface (UI). eSenders/ users of eNotices2 API       can still create workgroups in the UI of eNotices2 but the API is not aware of the context of workgroups, i.e. no API function can be performed on a notice           that has been manually transferred to the context of a Workgroup. 
     * eSenders are discouraged from using the User Interface of eNotices2 to continue a procedure or create a Change notice on a parent notice originally sent via the API. 
     * To avoid authorisation issues when using eNotices2 API, make sure you generate your API key in the corresponding environment of the TED Developer Portal:  
       ** link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview]
