@@ -56,7 +56,7 @@ Application version:: 1.8.3
 SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6 and 1.7. SDK version 1.7 is supported in Preview environment as of 15 May 2023.
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6 and 1.7. SDK version 1.7 is supported in Preview environment as of 15 May 2023. In Production, SDK version 1.7 is supported as of 16 May 2023.
 
 In the codelist fields, prefilling of values is supported.  
 
@@ -155,7 +155,7 @@ We are currently in the process of providing more guidance for users of the eNot
       ** link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview]
     * To avoid authorisation issues when using eNotices2 API, log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account and make sure that your eNotices2 account is active:
       ** link:https://enotices2.preview.ted.europa.eu/home[eNotices2 in Preview]
-    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5, 1.6 and 1.7. SDK version 1.7 is supported in Preview environment as of 15 May 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
+    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5, 1.6 and 1.7. SDK version 1.7 is supported in Preview environment as of 15 May 2023 and in Production as of 16 May 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
       https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
     * Dynamic rules that check between notices are not yet in place, users, however, should still respect the workflow of eForms notices. For instance, users may currently be able to submit a Change notice that refers to a parent notice that has not been yet published. The notice will still be blocked by our internal system (will enter in error). Currently, it is not possible to stop the publication of a notice that has entered in error in the Preview environment, but we are seeing what could be improved for these situations. 
     
