@@ -239,7 +239,19 @@ OPP-090 should be used exclusively to point to a TED XML notice if it may not be
 * Framework Notice Identifier (OPT-100).
 
 +
-Any referenced notice must have been already published. Referring to a TED XML notice, the format may only be ‘XXXXXX-YYYY’, i.e. Notice Publication ID.  
+Any referenced notice must have been already published. Referring to a TED XML notice, the format may only be ‘XXXXXX-YYYY’, i.e. Notice Publication ID.
+
++ 
+To link from an eForms Notice to a published TED XML notice: 
+* When modifying one or more Contracts, use a Contract Modification Notice, with BT-1501 Modification Previous Notice Identifier holding the Publication ID of the original Contract Award Notice.
++
+* When changing any Notice, or the procurement documents associated with a Notice, publish a Change Notice with BT-758 holding the Publication ID of the previous Change notice, or if this is the first Change notice, the original notice. 
++
+* When linking a Lot or Part to one or more Parts of a preceding Prior Information Notice, BT-125 should contain the Publication ID of the PIN Notice. 
++
+* When linking a specific SettledContract to a Framework Contract, OPT-100 should contain the Publication ID of the notice related to the Framework Contract. 
++
+* If none of the above options apply, a preceding notice may be linked to by putting its Publication ID in OPP-090. 
 
 
  
