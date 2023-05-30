@@ -849,7 +849,7 @@ The environments available will be instead Production and Preview.
 +
 The Preview environment will be available indefinitely so that users can test validation of notices against new versions of the SDK. 
 The latter will first be implemented in Preview environment during a pre-announced transition period before going into Production. 
-Users can check all active versions of the SDK at any given time via the CVS API and version-range. See link:https://cvs.ted.europa.eu/swagger-ui/index.html[Swagger]. 
+Users can check the version range of the currently available SDK at any given time via the CVS API and version-range. See link:https://cvs.ted.europa.eu/swagger-ui/index.html[Swagger]. 
 +
 A Central Validation Service (CVS) will be remotely available so that you can check the validity of eForms
 notices. As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation 
