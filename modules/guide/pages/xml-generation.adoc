@@ -134,7 +134,7 @@ TIP: Simply splitting the XPath string on `'/'` won't work. You can use regular 
 NOTE: We know that extracting the `steps` from an XPath is not rocket science and that you can do it yourself; but it would have been much easier for everyone, if we had provided this information pre-processed and ready for you inside `fields.json`. This is something we intend to do in a future release of the SDK. 
 
 === Getting the element order right
-Ideally we would like you to be able to generate the XML without ever needing to look at the XSD. For the moment however, there is a piece of necessary information that you can only find inside the XSD: the correct order of XML elements within their parent element. This is because the order of XML elements inside an `xsd:sequence` is significant.
-
-NOTE: We are aware that having to open the XSD just to lookup the order of XML elements is not very convenient. So we plan to add this in `fields.json` in a future release of the SDK.
+Ideally we would like you to be able to generate the XML without ever needing to look at the XSD. 
+For this reason we now provide the `xsdSequenceOrder` in the `fields.json`.
+One possible algorithm to use for sorting notice XML will be provided in the editor demo project, the previous algorithm was fully XSD sequence based.
 
