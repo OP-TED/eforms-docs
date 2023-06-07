@@ -1,0 +1,8 @@
+antora-playbook-local.yml
+build
+.vscode/settings.json
+node_modules
+.node
+.yarn
+.pnp.cjs
+.pnp.loader.mjs
