@@ -106,11 +106,25 @@ Therefore, in EFX 2 the five different uses of identifiers listed above become:
 
 CAUTION: This change is a *breaking change*. Therefore, EFX 1 expressions that use codelist identifiers need to be slightly modified before they can be parsed by an EFX 2 parser.
 
+=== Indexers
+
+Sequences now support an index notation which allows an expression to access the element of a sequence at a specific index. The index notation is similar to the one used on XPath (but is also common to several other programming languages). Like XPath, (but unlike other programming languages), the index notation uses a 1-based index. 
+
+For example: 
+
+[source, efx]
+----
+('a', 'b', 'c')[2]
+----
+
+The above expression returns the string `b` because the index `2` refers to the second element in the sequence.
+
+
 === New functions:
 
 ==== `string-join` function
 
-The string join function allows to join a list of strings into a single string. The function takes two arguments: the list of strings to join, and the separator to use between each string.
+The `string-join` function allows to join a list of strings into a single string. The function takes two arguments: the list of strings to join, and the separator to use between each string.
 
 The following example shows how to use the string join function:
 
@@ -120,3 +134,15 @@ string-join(("a", "b", "c"), ", ")
 ----
 
 The result of the above expression is the string `a, b, c`.
+
+==== `preferred-language` function
+
+The `preferred-language` function is used to determine the identifier of the language that should be displayed, among the languages available in a given multilingual text field. It is meant to be used in a predicate to select the appropriate linguistic version of a multilingual text field.
+
+The function, only takes a simple reference to a multilingual text field as a parameter. Using the field reference, it can determine the available linguistic versions of the field's text.
+
+This function is only available to EFX templates (not to EFX expressions).
+
+==== `preferred-language-text` function
+
+This functions is used to retrieve the text of a multilingual text field in the preferred language. In essence it uses the `preferred-language` function to determine the preferred language, and then returns the text of the field in that language.
