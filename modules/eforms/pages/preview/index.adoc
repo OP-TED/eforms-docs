@@ -214,8 +214,8 @@ Scope:: Users can generate an API key
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: Q2 2023
-Scope:: Addition of a Developer Profile for eSenders; this feature is currently scheduled to be deployed in the Preview and the Production environment of the TED Developer Portal in Q2 2023. Setting up a Developer Profile will be part of the sign-up process and mandatory before eSenders are able to generate an (or a new) API key. Making your profile public is entirely optional. Public profiles will be made available at a later stage and will eventually replace the list of eSenders on SIMAP. 
+Indicative planning:: 20 June 2023
+Scope:: Addition of a Developer Profile for eSenders; this feature is currently scheduled to be deployed in the Preview environment of the TED Developer Portal on 20 June 2023 and shortly after in Production. Setting up a Developer Profile will be part of the sign-up process and mandatory before eSenders are able to generate an (or a new) API key. Making your profile public is entirely optional. Public profiles will be made available at a later stage and will eventually replace the list of eSenders on SIMAP. 
 
 
 
