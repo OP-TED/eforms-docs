@@ -207,7 +207,7 @@ Scope:: Ongoing improvements with successive SDK releases
 ==== Currently available 
 [horizontal]
 Website URL:: https://developer.preview.ted.europa.eu/home 
-Scope:: Users can generate an API key. As of 20 June in Preview and 26 June in Production, eSenders should set up their Developer Profile as it is now mandatory.
+Scope:: Users can generate an API key. 
 
 ==== Planned updates
 [horizontal]
