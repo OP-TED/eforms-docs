@@ -98,7 +98,8 @@ changes and their corresponding elements.
 
 |*Change Notice Version Identifier (BT-758)* |Reference to the notice being 
 changed (a combination of the Notice Identifier (BT-701) and the Notice 
-Version (BT-757)) |*1* a|
+Version (BT-757) for eForms notices only; or Publication ID of the notice being 
+changed for eForms or TEDXML notices.) |*1* a|
 [source,xpath]
 ----
 efbc:ChangedNoticeIdentifier
