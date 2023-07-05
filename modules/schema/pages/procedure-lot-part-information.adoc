@@ -1290,7 +1290,7 @@ codelist. When access is not restricted, _cbc:DocumentType_ shall have
 the "non-restricted-document" value and the element
 _cbc:DocumentTypeCode_ shall not be used.
 
-When there is a need to specify the linguistic version (BT-708 or BT-737), 
+When there is a need to specify the language(s) in which the documents are available (BT-708 or BT-737), 
 this has to be specified with values from the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/language[language]
 codelist.
