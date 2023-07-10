@@ -133,8 +133,34 @@ TIP: Simply splitting the XPath string on `'/'` won't work. You can use regular 
 
 NOTE: We know that extracting the `steps` from an XPath is not rocket science and that you can do it yourself; but it would have been much easier for everyone, if we had provided this information pre-processed and ready for you inside `fields.json`. This is something we intend to do in a future release of the SDK. 
 
-=== Getting the element order right
-Ideally we would like you to be able to generate the XML without ever needing to look at the XSD. 
-For this reason we now provide the `xsdSequenceOrder` in the `fields.json`.
-One possible algorithm to use for sorting notice XML will be provided in the editor demo project, the previous algorithm was fully XSD sequence based.
+=== Getting the XML element order right
+In `fields/fields.json` a property called `xsdSequenceOrder` is available for every field that is not pointing to an XML attribute and node that is not `ND-Root`.
+You can read more about it in the link:https://docs.ted.europa.eu/eforms/latest/fields/index.html[fields documentation].
 
+Simplified example field from the `fields.json`:
+
+....
+{
+    "id" : "BT-13713-LotResult",
+    "parentNodeId" : "ND-LotResult",
+    "xpathRelative" : "efac:TenderLot/cbc:ID",
+    "xsdSequenceOrder" : [ { "efac:TenderLot" : 16 }, { "cbc:ID" : 1 } ]
+....
+
+Here the `xpathRelative` has two parts, for each part we want the order of the element relative to the other child under the same parent element:
+
+* `efac:TenderLot` is at child order number 16 under the element of parent node `ND-LotResult`, meaning potentially 15 elements could be in front
+* `cbc:ID` has child order number 1 under `efac:TenderLot`, meaning if it is present it must be the first child
+
+==== Order of repeating elements
+If a field or node is repeatable, then the repeated elements should be next to each other in the XML.
+The original order of the repeating items should be preserved.
+
+==== Order of attributes
+Even if XML is not imposing an attribute order, they could be sorted in alphabetic order.
+This can avoid to have variations each time the same XML is generated.
+
+==== Demo sorting algorithm
+In general we recommend to first build the entire notice XML and do the sorting at the end.
+An algorithm for sorting a notice XML is provided in the link:https://github.com/OP-TED/eforms-notice-editor[editor demo].
+Note that before SDK 1.8 the XML sorting algorithm in the editor demo relied only information found the schemas (XSD) of the SDK.
