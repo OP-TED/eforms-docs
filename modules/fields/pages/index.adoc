@@ -447,7 +447,7 @@ The possible technical values for a field type are:
 `integer`:: whole-valued positive number
 `number`:: numerical value, with optional decimal places.
 `amount`:: monetary amount, comprised of a numerical value and a currency
-`measure`:: numerical value associated with a measurement unit
+`measure`:: duration expressed using a numerical value and a unit
 `code`:: string representing a concept in a code list
 `date`:: date, always with time zone
 `time`:: time, always with time zone

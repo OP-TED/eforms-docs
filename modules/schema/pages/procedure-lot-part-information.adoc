@@ -2525,9 +2525,11 @@ the process will be restarted.
 The "_efbc:ProcedureRelaunchIndicator_" element shall only be used when
 "true"; when it applies to the whole procurement, it shall appear in the
 "_cac:TenderingProcess_" of the notice (i.e. at notice level) only.
-When applied to a Lot, all the individual Lots included in a Group of
-Lots with that same Lot shall be marked as such, and Group of Lots
-containing the Lot, shall not exist anymore.
+
+When applied to a Lot that is included in a Group of Lots defined in 
+preceding notices of the same procedure, all the individual Lots included 
+in that Group of Lots shall be marked as such, and that Group of Lots 
+shall not exist in the current notice.
 
 [source,xml]
 ----
