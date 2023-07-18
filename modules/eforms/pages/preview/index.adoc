@@ -104,8 +104,6 @@ As of 19 December 2022, status “published” may not have been shown in Previe
 
 On 10 and 11 January 2023, notices submitted may have acquired status “not published”; this issue is now fixed. 
 
-Due to an error in the processing of notices at export time some notices remain in "submitted" status; we are working on fixing this issue. 
-
 Notices created before 15 March 2023 in Preview or Production environments and updated to SDK 1.6 may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
 
 The following issues have been identified as of application version 1.8.3:
@@ -113,7 +111,7 @@ The following issues have been identified as of application version 1.8.3:
 * OPT-060-Lot in the subtypes where it's mandatory "17", "18", "22" might prevent users from submitting a notice. 
 * T02 cannot be submitted until SDK 1.8. 
 * Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice. 
-* If you send a Change notice (referring to the TED XML schema – publication ID ‘XXXXXX-XXXX’ or eForms notice (publication id or notice id), you should not stop it because it is not possible to use the same publication id or notice id twice in the ChangedNoticeIdentifier element. The same is true for the User Interface of eNotices2 and when using field BT-758-notice (version of the previous notice to be changed). A bug in our internal application will currently reject any second or third Change notice, etc., that refers to the same notice identifier (TED XML schema or eForms). We are working to fix this issue by end of June. For now, please avoid stopping the publication of Change notices. In case of mistakes, you should publish the Change notice and make corrections after its publication by referencing the newly published notice in the ChangedNoticeIdentifier. 
+
 
 
 ==== Known eNotices2 API issues 
