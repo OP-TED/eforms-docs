@@ -507,10 +507,6 @@ their associated Business Terms useless.
 
 |BT-1374 |Funds Lot Identifier |BT-137
 
-|BT-330 |Group Identifier |BT-137
-
-|BT-1375 |Group Lot Identifier |BT-137
-
 |BT-1376 |Second Stage Lot Identifier |BT-137
 
 |BT-1377 |Rewards Lot Identifier |BT-137

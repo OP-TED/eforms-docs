@@ -909,7 +909,7 @@ cac:LotDistribution{zwsp}/cbc:MaximumLotsSubmittedNumeric
 |*Group Identifier (BT-330)* | xref:maxLotsSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
-cac:LotDistribution{zwsp}/cac:LotsGroup{zwsp}/cbc:ID
+cac:LotDistribution{zwsp}/cac:LotsGroup{zwsp}/cbc:LotsGroupID
 ----
 
 |*Group Lot Identifier (BT-1375)* | xref:maxLotsSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- 

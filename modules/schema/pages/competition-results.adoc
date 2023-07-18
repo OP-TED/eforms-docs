@@ -150,7 +150,7 @@ efbc:GroupFrameworkReestimatedValueAmount
 ----
 <efac:NoticeResult>
     <cbc:TotalAmount currencyID="EUR">123456.00</cbc:TotalAmount>
-    <efbc:OverallMaximumFrameworkContractsAmount currencyID="EUR">6000</efbc:OverallMaximumFrameworkContractsAmount>
+    <efbc:OverallMaximumFrameworkContractsAmount currencyID="EUR">3400000</efbc:OverallMaximumFrameworkContractsAmount>
     <efac:GroupFramework>
         <efbc:GroupFrameworkMaximumValueAmount currencyID="EUR">1200000</efbc:GroupFrameworkMaximumValueAmount>
         <efac:TenderLot>
