@@ -24,7 +24,26 @@ For the example above, the fields defined for BT-27 are:
 * BT-27-Procedure : estimated value of the procedure
 * BT-27-Lot : estimated value of a lot
 * BT-27-Part : estimated value of a part
-* BT-27-LotsGroup : estimated value of a group of lots 
+* BT-27-LotsGroup : estimated value of a group of lots
+
+=== Fields other than "BT-*"
+
+In addition to the above, some fields do not correspond to a business term in the eForms Regulation. They are needed because of the specific structure of the XML notices, or to fulfil a specific requirement.
+
+The identifiers for those fields all start with "OP" (the abbreviation for "Publications Office"), followed by a letter indicating the nature of the field:
+
+`OPT`:: Technical field, needed because of a technical design choice or constraint.
++
+For example, "OPT-300-Procedure-Buyer" corresponds to the reference to the identifier of the organisation for the buyer.
+
+`OPP`:: "Production" field, needed for the production and publication processes, or for forms that are not defined in the eForms Regulation.
++
+For example, "OPP-012-notice" corresponds to the date of publication of the notice in the Official Journal of the EU.
+
+`OPA`:: "Alias" field, needed to get the numerical value of a regular field that also has a unit (duration, monetary amount, etc.). Those fields can be ignored when generating the XML notice, as the regular field has the numerical value and unit.
++
+For example, "OPA-36-Lot-Number" corresponds to the numerical value of "BT-36-Lot", which is the estimated duration of the contract.
+
 
 [#field-repository]
 == The field repository
