@@ -40,7 +40,7 @@ For example, "OPT-300-Procedure-Buyer" corresponds to the reference to the ident
 +
 For example, "OPP-012-notice" corresponds to the date of publication of the notice in the Official Journal of the EU.
 
-`OPA`:: "Alias" field, needed to get the numerical value of a regular field that also has a unit (duration, monetary amount, etc.). Those fields can be ignored when generating the XML notice, as the regular field has the numerical value and unit.
+`OPA`:: "Alias" field, needed to separately identify the numerical value and the unit of a regular field that has both (duration, monetary amount, etc.). Those fields can be ignored when generating the XML notice, as the regular field has the numerical value and unit.
 +
 For example, "OPA-36-Lot-Number" corresponds to the numerical value of "BT-36-Lot", which is the estimated duration of the contract.
 
