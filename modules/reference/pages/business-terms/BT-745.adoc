@@ -1,0 +1,9 @@
+= `BT-745`: Submission Nonelectronic Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-745-Lot`:: Submission Nonelectronic Description

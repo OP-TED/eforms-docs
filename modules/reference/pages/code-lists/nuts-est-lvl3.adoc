@@ -1,0 +1,18 @@
+= `nuts-est-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Estonia
+[horizontal]
+Version:: 1.7.0
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `EE001`::: Põhja-Eesti
+  `EE004`::: Lääne-Eesti
+  `EE008`::: Lõuna-Eesti
+  `EE009`::: Kesk-Eesti
+  `EE00A`::: Kirde-Eesti
+  `EEZZZ`::: Extra-Regio NUTS 3

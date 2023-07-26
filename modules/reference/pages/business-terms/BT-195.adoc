@@ -1,0 +1,68 @@
+= `BT-195`: Unpublished Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-195(BT-09)-Procedure`:: Unpublished Identifier
+  `BT-195(BT-105)-Procedure`:: Unpublished Identifier
+  `BT-195(BT-106)-Procedure`:: Unpublished Identifier
+  `BT-195(BT-1118)-NoticeResult`:: Unpublished Identifier
+  `BT-195(BT-118)-NoticeResult`:: Unpublished Identifier
+  `BT-195(BT-1252)-Procedure`:: Unpublished Identifier
+  `BT-195(BT-135)-Procedure`:: Unpublished Identifier
+  `BT-195(BT-1351)-Procedure`:: Unpublished Identifier
+  `BT-195(BT-136)-Procedure`:: Unpublished Identifier
+  `BT-195(BT-142)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-144)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-156)-NoticeResult`:: Unpublished Identifier
+  `BT-195(BT-1561)-NoticeResult`:: Unpublished Identifier
+  `BT-195(BT-160)-Tender`:: Unpublished Identifier
+  `BT-195(BT-161)-NoticeResult`:: Unpublished Identifier
+  `BT-195(BT-162)-Tender`:: Unpublished Identifier
+  `BT-195(BT-163)-Tender`:: Unpublished Identifier
+  `BT-195(BT-171)-Tender`:: Unpublished Identifier
+  `BT-195(BT-191)-Tender`:: Unpublished Identifier
+  `BT-195(BT-193)-Tender`:: Unpublished Identifier
+  `BT-195(BT-539)-Lot`:: Unpublished Identifier
+  `BT-195(BT-539)-LotsGroup`:: Unpublished Identifier
+  `BT-195(BT-540)-Lot`:: Unpublished Identifier
+  `BT-195(BT-540)-LotsGroup`:: Unpublished Identifier
+  `BT-195(BT-541)-Lot-Fixed`:: Unpublished Identifier
+  `BT-195(BT-541)-Lot-Threshold`:: Unpublished Identifier
+  `BT-195(BT-541)-Lot-Weight`:: Unpublished Identifier
+  `BT-195(BT-541)-LotsGroup-Fixed`:: Unpublished Identifier
+  `BT-195(BT-541)-LotsGroup-Threshold`:: Unpublished Identifier
+  `BT-195(BT-541)-LotsGroup-Weight`:: Unpublished Identifier
+  `BT-195(BT-5421)-Lot`:: Unpublished Identifier
+  `BT-195(BT-5421)-LotsGroup`:: Unpublished Identifier
+  `BT-195(BT-5422)-Lot`:: Unpublished Identifier
+  `BT-195(BT-5422)-LotsGroup`:: Unpublished Identifier
+  `BT-195(BT-5423)-Lot`:: Unpublished Identifier
+  `BT-195(BT-5423)-LotsGroup`:: Unpublished Identifier
+  `BT-195(BT-543)-Lot`:: Unpublished Identifier
+  `BT-195(BT-543)-LotsGroup`:: Unpublished Identifier
+  `BT-195(BT-553)-Tender`:: Unpublished Identifier
+  `BT-195(BT-554)-Tender`:: Unpublished Identifier
+  `BT-195(BT-555)-Tender`:: Unpublished Identifier
+  `BT-195(BT-556)-NoticeResult`:: Unpublished Identifier
+  `BT-195(BT-635)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-636)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-660)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-709)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-710)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-711)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-712)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-720)-Tender`:: Unpublished Identifier
+  `BT-195(BT-730)-Tender`:: Unpublished Identifier
+  `BT-195(BT-731)-Tender`:: Unpublished Identifier
+  `BT-195(BT-733)-Lot`:: Unpublished Identifier
+  `BT-195(BT-733)-LotsGroup`:: Unpublished Identifier
+  `BT-195(BT-734)-Lot`:: Unpublished Identifier
+  `BT-195(BT-734)-LotsGroup`:: Unpublished Identifier
+  `BT-195(BT-759)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-760)-LotResult`:: Unpublished Identifier
+  `BT-195(BT-773)-Tender`:: Unpublished Identifier
+  `BT-195(BT-88)-Procedure`:: Unpublished Identifier

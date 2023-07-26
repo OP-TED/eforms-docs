@@ -1,0 +1,9 @@
+= `BT-1561`: Group Framework Re-estimated Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-1561-NoticeResult`:: Group Framework Re-estimated Value

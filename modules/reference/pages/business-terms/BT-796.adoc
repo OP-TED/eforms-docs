@@ -1,0 +1,9 @@
+= `BT-796`: Review Request Withdrawn
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-796-Review`:: Review Request Withdrawn

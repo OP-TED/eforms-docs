@@ -1,0 +1,19 @@
+= `social-objective` codelist
+:navtitle: Codelists
+
+List of codes for values linked to any social objective promoted by the specifications, award / selection criteria or contract performance conditions included in a procurement.
+[horizontal]
+Version:: 20221214-0
+URI:: http://publications.europa.eu/resource/dataset/social-objective
+Structure:: flat
+Used in:: xref:business-terms/BT-775.adoc[`BT-775`] Social Procurement
+
+== Codes
+[horizontal]
+  `acc-all`::: Accessibility for all
+  `et-eq`::: Ethnic equality
+  `gen-eq`::: Gender equality
+  `hum-right`::: Human rights due diligence in global supply chains
+  `opp`::: Employment opportunities for the long-term unemployed, disadvantaged and/or for persons with disabilities
+  `other`::: Other
+  `work-cond`::: Fair working conditions

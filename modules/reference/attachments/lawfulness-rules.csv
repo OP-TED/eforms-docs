@@ -1,0 +1,6 @@
+"ruleId","ruleType","fieldId","description","noticeSubtype","condition","expression","target","severity","cvsStage"
+"BR-BT-00024-0207","lawfulness","BT-24-Lot","If BT-24-Lot is in English, it should not contain the word 'sale'","NULL","BT-24-Lot exists","NULL","all","WARN","5"
+"BR-BT-00024-0208","lawfulness","BT-24-LotsGroup","If BT-24-LotsGroup is in English, it should not contain the word 'sale'","NULL","BT-24-LotsGroup exists","NULL","all","WARN","5"
+"BR-BT-00024-0209","lawfulness","BT-24-Part","If BT-24-Part is in English, it should not contain the word 'sale'","NULL","BT-24-Part exists","NULL","all","WARN","5"
+"BR-BT-00024-0210","lawfulness","BT-24-Procedure","If BT-24-Procedure is in English, it should not contain the word 'sale'","NULL","BT-24-Procedure exists","NULL","all","WARN","5"
+"BR-BT-00514-0304","lawfulness","BT-514-Organization-Company","The procurement should be related to a project or a program financed by European Union funds (BT-60-Lot), or the buyer should be in a country for which the publication is expressly authorized","NULL","the organisation (OPT-200-Organization-Company) is a Buyer (OPT-300-Procedure-Buyer)","NULL","all","WARN","5"

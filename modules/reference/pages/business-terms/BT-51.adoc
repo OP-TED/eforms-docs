@@ -1,0 +1,9 @@
+= `BT-51`: Maximum Candidates Number
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-51-Lot`:: Maximum Candidates Number

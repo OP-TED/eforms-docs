@@ -1,0 +1,19 @@
+= `change-corrig-justification` codelist
+:navtitle: Codelists
+
+This table provides the codes and values used in case of justification of corrections applied to a notice within the context of public procurement.
+[horizontal]
+Version:: 20220928-0
+URI:: http://publications.europa.eu/resource/dataset/change-corrig-justification
+Structure:: flat
+Used in:: xref:business-terms/BT-140.adoc[`BT-140`] Change Reason Code
+
+== Codes
+[horizontal]
+  `cancel`::: Notice cancelled
+  `cancel-intent`::: Cancellation intention
+  `cor-buy`::: Buyer correction
+  `cor-esen`::: eSender correction
+  `cor-pub`::: Publisher correction
+  `info-release`::: Information now available
+  `update-add`::: Information updated

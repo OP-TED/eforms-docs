@@ -1,0 +1,3489 @@
+= Business rules for notice sub-type `35`
+:navtitle: Business Rules
+
+== `forbidden`
+[cols="<3,3,<6,>1", role="fixed-layout"]
+|====
+h| Business Rule h| Field h|Details h|Severity
+h|`BR-BT-00010-0064`
+h|`BT-10-Procedure-Buyer`
+a|
+
+*Forbidden if* Buyer Legal Type (BT-11-Procedure-Buyer) is not "Body governed by public law", "Body governed by public law, controlled by a central government authority", "Body governed by public law, controlled by a local authority", "Body governed by public law, controlled by a regional authority", "Central government authority", "Defence contractor", "EU institution, body or agency", "Group of public authorities", "International organisation", "Local authority", "Organisation awarding a contract subsidised by a contracting authority", "Organisation awarding a contract subsidised by a central government authority", "Organisation awarding a contract subsidised by a local authority", "Organisation awarding a contract subsidised by a regional authority" or "Regional authority".
+
+.Condition in EFX
+[source, EFX]
+----
+BT-11-Procedure-Buyer not in ('body-pl','body-pl-cga','body-pl-la','body-pl-ra','cga','def-cont','eu-ins-bod-ag','grp-p-aut','int-org','la','org-sub','org-sub-cga','org-sub-la','org-sub-ra','ra')
+----
+|`ERROR`
+h|`BR-BT-00013-0044`
+h|`BT-13(d)-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00013-0096`
+h|`BT-13(t)-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00013-0148`
+h|`BT-13(d)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00013-0200`
+h|`BT-13(t)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00014-0044`
+h|`BT-14-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00014-0095`
+h|`BT-14-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00015-0044`
+h|`BT-15-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00015-0095`
+h|`BT-15-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00017-0044`
+h|`BT-17-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00018-0044`
+h|`BT-18-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00019-0044`
+h|`BT-19-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00021-0096`
+h|`BT-21-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00022-0095`
+h|`BT-22-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00023-0095`
+h|`BT-23-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00024-0096`
+h|`BT-24-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00026-0294`
+h|`BT-26(m)-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00026-0594`
+h|`BT-26(a)-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00027-0095`
+h|`BT-27-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00031-0044`
+h|`BT-31-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00033-0044`
+h|`BT-33-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00036-0044`
+h|`BT-36-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00036-0095`
+h|`BT-36-Lot`
+a|
+
+*Forbidden if* BT-537-Lot or BT-538-Lot is present.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-537-Lot is present) or (BT-538-Lot is present)
+----
+|`ERROR`
+h|`BR-BT-00040-0044`
+h|`BT-40-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00041-0044`
+h|`BT-41-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00042-0044`
+h|`BT-42-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00044-0044`
+h|`BT-44-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00045-0044`
+h|`BT-45-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00046-0044`
+h|`BT-46-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00047-0044`
+h|`BT-47-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00050-0044`
+h|`BT-50-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00051-0044`
+h|`BT-51-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00052-0044`
+h|`BT-52-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00063-0044`
+h|`BT-63-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00064-0044`
+h|`BT-64-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00065-0044`
+h|`BT-65-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00067-0044`
+h|`BT-67(a)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00067-0095`
+h|`BT-67(b)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00070-0044`
+h|`BT-70-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00071-0044`
+h|`BT-71-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00071-0094`
+h|`BT-71-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00075-0044`
+h|`BT-75-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00076-0044`
+h|`BT-76-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00077-0044`
+h|`BT-77-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00078-0044`
+h|`BT-78-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00079-0044`
+h|`BT-79-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00092-0044`
+h|`BT-92-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00093-0044`
+h|`BT-93-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00094-0044`
+h|`BT-94-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00095-0044`
+h|`BT-95-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00097-0044`
+h|`BT-97-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00098-0044`
+h|`BT-98-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00106-0044`
+h|`BT-106-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00109-0044`
+h|`BT-109-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00111-0044`
+h|`BT-111-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00113-0044`
+h|`BT-113-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00115-0044`
+h|`BT-115-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00115-0095`
+h|`BT-115-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00118-0044`
+h|`BT-118-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00119-0044`
+h|`BT-119-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00120-0044`
+h|`BT-120-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00122-0044`
+h|`BT-122-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00123-0044`
+h|`BT-123-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00124-0044`
+h|`BT-124-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00124-0094`
+h|`BT-124-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00125-0044`
+h|`BT-125(i)-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00127-0044`
+h|`BT-127-notice`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00130-0044`
+h|`BT-130-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00131-0044`
+h|`BT-131(d)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00131-0096`
+h|`BT-131(t)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00132-0044`
+h|`BT-132(d)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00132-0096`
+h|`BT-132(t)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00133-0044`
+h|`BT-133-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00134-0044`
+h|`BT-134-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00137-0044`
+h|`BT-137-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00144-0059`
+h|`BT-144-LotResult`
+a|
+
+*Forbidden if* the value chosen for BT-142-LotResult is not equal to 'No winner was chosen and the competition is closed'.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-142-LotResult == 'clos-nw')
+----
+|`ERROR`
+h|`BR-BT-00145-0060`
+h|`BT-145-Contract`
+a|
+
+*Forbidden if* BT-3202-Contract is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-3202-Contract is not present
+----
+|`ERROR`
+h|`BR-BT-00150-0094`
+h|`BT-150-Contract`
+a|
+
+*Forbidden if* Contract Technical ID (OPT-316-Contract) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(OPT-316-Contract is not present)
+----
+|`ERROR`
+h|`BR-BT-00151-0044`
+h|`BT-151-Contract`
+a|
+
+*Forbidden if* BT-3202-Contract is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-3202-Contract is not present
+----
+|`ERROR`
+h|`BR-BT-00156-0044`
+h|`BT-156-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00157-0044`
+h|`BT-157-LotsGroup`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00160-0053`
+h|`BT-160-Tender`
+a|
+
+*Forbidden if* Tender Technical ID (OPT-321-Tender) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+OPT-321-Tender is not present
+----
+|`ERROR`
+h|`BR-BT-00162-0053`
+h|`BT-162-Tender`
+a|
+
+*Forbidden if* Tender Technical ID (OPT-321-Tender) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+OPT-321-Tender is not present
+----
+|`ERROR`
+h|`BR-BT-00163-0053`
+h|`BT-163-Tender`
+a|
+
+*Forbidden if* Tender Technical ID (OPT-321-Tender) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+OPT-321-Tender is not present
+----
+|`ERROR`
+h|`BR-BT-00171-0044`
+h|`BT-171-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00191-0044`
+h|`BT-191-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-0044`
+h|`BT-195(BT-118)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-0146`
+h|`BT-195(BT-556)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-0197`
+h|`BT-195(BT-156)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-0298`
+h|`BT-195(BT-710)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-0349`
+h|`BT-195(BT-711)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-0400`
+h|`BT-195(BT-709)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-0653`
+h|`BT-195(BT-171)-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-0959`
+h|`BT-195(BT-191)-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-1622`
+h|`BT-195(BT-106)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-1673`
+h|`BT-195(BT-1351)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-3002`
+h|`BT-195(BT-1118)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-3054`
+h|`BT-195(BT-1561)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-3108`
+h|`BT-195(BT-660)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00195-3243`
+h|`BT-195(BT-541)-LotsGroup-Weight`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-LotsGroup-WeightNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-LotsGroup-WeightNumber is not present
+----
+|`ERROR`
+h|`BR-BT-00195-3293`
+h|`BT-195(BT-541)-Lot-Weight`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-Lot-WeightNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-Lot-WeightNumber is not present
+----
+|`ERROR`
+h|`BR-BT-00195-3343`
+h|`BT-195(BT-541)-LotsGroup-Fixed`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-LotsGroup-FixedNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-LotsGroup-FixedNumber is not present
+----
+|`ERROR`
+h|`BR-BT-00195-3393`
+h|`BT-195(BT-541)-Lot-Fixed`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-Lot-FixedNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-Lot-FixedNumber is not present
+----
+|`ERROR`
+h|`BR-BT-00195-3443`
+h|`BT-195(BT-541)-LotsGroup-Threshold`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-LotsGroup-ThresholdNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-LotsGroup-ThresholdNumber is not present
+----
+|`ERROR`
+h|`BR-BT-00195-3493`
+h|`BT-195(BT-541)-Lot-Threshold`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-Lot-ThresholdNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-Lot-ThresholdNumber is not present
+----
+|`ERROR`
+h|`BR-BT-00196-0044`
+h|`BT-196(BT-118)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-0148`
+h|`BT-196(BT-556)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-0200`
+h|`BT-196(BT-156)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-0304`
+h|`BT-196(BT-710)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-0356`
+h|`BT-196(BT-711)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-0408`
+h|`BT-196(BT-709)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-0668`
+h|`BT-196(BT-171)-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-0980`
+h|`BT-196(BT-191)-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-1656`
+h|`BT-196(BT-106)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-1708`
+h|`BT-196(BT-1351)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-3686`
+h|`BT-196(BT-1118)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-3746`
+h|`BT-196(BT-1561)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-4105`
+h|`BT-196(BT-660)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00196-4239`
+h|`BT-196(BT-541)-LotsGroup-Weight`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Weight) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Weight is not present
+----
+|`ERROR`
+h|`BR-BT-00196-4284`
+h|`BT-196(BT-541)-Lot-Weight`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Weight) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Weight is not present
+----
+|`ERROR`
+h|`BR-BT-00196-4339`
+h|`BT-196(BT-541)-LotsGroup-Fixed`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Fixed) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Fixed is not present
+----
+|`ERROR`
+h|`BR-BT-00196-4384`
+h|`BT-196(BT-541)-Lot-Fixed`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Fixed) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Fixed is not present
+----
+|`ERROR`
+h|`BR-BT-00196-4439`
+h|`BT-196(BT-541)-LotsGroup-Threshold`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Threshold) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Threshold is not present
+----
+|`ERROR`
+h|`BR-BT-00196-4484`
+h|`BT-196(BT-541)-Lot-Threshold`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Threshold) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Threshold is not present
+----
+|`ERROR`
+h|`BR-BT-00197-0044`
+h|`BT-197(BT-118)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-0146`
+h|`BT-197(BT-556)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-0197`
+h|`BT-197(BT-156)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-0299`
+h|`BT-197(BT-710)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-0350`
+h|`BT-197(BT-711)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-0401`
+h|`BT-197(BT-709)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-0656`
+h|`BT-197(BT-171)-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-0962`
+h|`BT-197(BT-191)-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-1625`
+h|`BT-197(BT-106)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-1676`
+h|`BT-197(BT-1351)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-3688`
+h|`BT-197(BT-1118)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-3749`
+h|`BT-197(BT-1561)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-4111`
+h|`BT-197(BT-660)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-4239`
+h|`BT-197(BT-541)-LotsGroup-Weight`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Weight) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Weight is not present
+----
+|`ERROR`
+h|`BR-BT-00197-4284`
+h|`BT-197(BT-541)-Lot-Weight`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Weight) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Weight is not present
+----
+|`ERROR`
+h|`BR-BT-00197-4439`
+h|`BT-197(BT-541)-LotsGroup-Fixed`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Fixed) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Fixed is not present
+----
+|`ERROR`
+h|`BR-BT-00197-4484`
+h|`BT-197(BT-541)-Lot-Fixed`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Fixed) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Fixed is not present
+----
+|`ERROR`
+h|`BR-BT-00197-4639`
+h|`BT-197(BT-541)-LotsGroup-Threshold`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Threshold) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Threshold is not present
+----
+|`ERROR`
+h|`BR-BT-00197-4684`
+h|`BT-197(BT-541)-Lot-Threshold`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Threshold) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Threshold is not present
+----
+|`ERROR`
+h|`BR-BT-00198-0044`
+h|`BT-198(BT-118)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-0148`
+h|`BT-198(BT-556)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-0200`
+h|`BT-198(BT-156)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-0304`
+h|`BT-198(BT-710)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-0356`
+h|`BT-198(BT-711)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-0408`
+h|`BT-198(BT-709)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-0668`
+h|`BT-198(BT-171)-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-0980`
+h|`BT-198(BT-191)-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-1656`
+h|`BT-198(BT-106)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-1708`
+h|`BT-198(BT-1351)-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-4264`
+h|`BT-198(BT-1118)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-4328`
+h|`BT-198(BT-1561)-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-4691`
+h|`BT-198(BT-660)-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-4839`
+h|`BT-198(BT-541)-LotsGroup-Weight`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Weight) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Weight is not present
+----
+|`ERROR`
+h|`BR-BT-00198-4884`
+h|`BT-198(BT-541)-Lot-Weight`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Weight) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Weight is not present
+----
+|`ERROR`
+h|`BR-BT-00198-4939`
+h|`BT-198(BT-541)-LotsGroup-Fixed`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Fixed) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Fixed is not present
+----
+|`ERROR`
+h|`BR-BT-00198-4984`
+h|`BT-198(BT-541)-Lot-Fixed`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Fixed) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Fixed is not present
+----
+|`ERROR`
+h|`BR-BT-00198-5039`
+h|`BT-198(BT-541)-LotsGroup-Threshold`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Threshold) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-LotsGroup-Threshold is not present
+----
+|`ERROR`
+h|`BR-BT-00198-5084`
+h|`BT-198(BT-541)-Lot-Threshold`
+a|
+
+*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Threshold) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-195(BT-541)-Lot-Threshold is not present
+----
+|`ERROR`
+h|`BR-BT-00200-0044`
+h|`BT-200-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00201-0044`
+h|`BT-201-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00202-0044`
+h|`BT-202-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00262-0094`
+h|`BT-262-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00263-0094`
+h|`BT-263-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00271-0044`
+h|`BT-271-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00271-0146`
+h|`BT-271-LotsGroup`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00271-0197`
+h|`BT-271-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00300-0096`
+h|`BT-300-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00500-0199`
+h|`BT-500-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00501-0094`
+h|`BT-501-Business-National`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00501-0250`
+h|`BT-501-Business-European`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00502-0146`
+h|`BT-502-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00503-0200`
+h|`BT-503-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00505-0146`
+h|`BT-505-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00506-0200`
+h|`BT-506-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00507-0197`
+h|`BT-507-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00510-0503`
+h|`BT-510(a)-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00510-0554`
+h|`BT-510(b)-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00510-0605`
+h|`BT-510(c)-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00512-0197`
+h|`BT-512-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00513-0197`
+h|`BT-513-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00514-0197`
+h|`BT-514-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00531-0144`
+h|`BT-531-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00536-0044`
+h|`BT-536-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00536-0097`
+h|`BT-536-Lot`
+a|
+
+*Forbidden if* Duration Period (BT-36-Lot) and Duration End Date (BT-537-Lot) are not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-36-Lot is not present and BT-537-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-00537-0044`
+h|`BT-537-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00537-0096`
+h|`BT-537-Lot`
+a|
+
+*Forbidden if* BT-36-Lot or BT-538-Lot is present.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-36-Lot is present) or (BT-538-Lot is present)
+----
+|`ERROR`
+h|`BR-BT-00538-0044`
+h|`BT-538-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00538-0095`
+h|`BT-538-Lot`
+a|
+
+*Forbidden if* BT-36-Lot or BT-537-Lot is present.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-36-Lot is present) or (BT-537-Lot is present)
+----
+|`ERROR`
+h|`BR-BT-00541-0243`
+h|`BT-541-LotsGroup-WeightNumber`
+a|
+
+*Forbidden if* Award Criterion Description (BT-540-LotsGroup) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-540-LotsGroup is not present
+----
+|`ERROR`
+h|`BR-BT-00541-0293`
+h|`BT-541-Lot-WeightNumber`
+a|
+
+*Forbidden if* Award Criterion Description (BT-540-Lot) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-540-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-00541-0443`
+h|`BT-541-LotsGroup-FixedNumber`
+a|
+
+*Forbidden if* Award Criterion Description (BT-540-LotsGroup) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-540-LotsGroup is not present
+----
+|`ERROR`
+h|`BR-BT-00541-0493`
+h|`BT-541-Lot-FixedNumber`
+a|
+
+*Forbidden if* Award Criterion Description (BT-540-Lot) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-540-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-00541-0643`
+h|`BT-541-LotsGroup-ThresholdNumber`
+a|
+
+*Forbidden if* Award Criterion Description (BT-540-LotsGroup) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-540-LotsGroup is not present
+----
+|`ERROR`
+h|`BR-BT-00541-0693`
+h|`BT-541-Lot-ThresholdNumber`
+a|
+
+*Forbidden if* Award Criterion Description (BT-540-Lot) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-540-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-00556-0044`
+h|`BT-556-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00578-0044`
+h|`BT-578-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00610-0056`
+h|`BT-610-Procedure-Buyer`
+a|
+
+*Forbidden if* Buyer Legal Type (BT-11-Procedure-Buyer) is not "Public undertaking", "Public undertaking, controlled by a central government authority", "Public undertaking, controlled by a local authority", "Public undertaking, controlled by a regional authority" or "Entity with special or exclusive rights"..
+
+.Condition in EFX
+[source, EFX]
+----
+BT-11-Procedure-Buyer not in ('pub-undert','pub-undert-cga','pub-undert-la','pub-undert-ra','spec-rights-entity')
+----
+|`ERROR`
+h|`BR-BT-00615-0044`
+h|`BT-615-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00615-0095`
+h|`BT-615-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00630-0044`
+h|`BT-630(d)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00630-0096`
+h|`BT-630(t)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00631-0044`
+h|`BT-631-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00632-0044`
+h|`BT-632-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00632-0095`
+h|`BT-632-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00633-0044`
+h|`BT-633-Organization`
+a|
+
+*Forbidden if* the organization is not a Service Provider, and is not a Tenderer or Subcontractor which is not on a regulated market..
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-200-Organization-Company in /OPT-300-Procedure-SProvider) and not(((OPT-200-Organization-Company in /OPT-301-Tenderer-SubCont) or (OPT-200-Organization-Company in /OPT-300-Tenderer)) and (not(BT-746-Organization == TRUE)))
+----
+|`ERROR`
+h|`BR-BT-00644-0044`
+h|`BT-644-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00651-0044`
+h|`BT-651-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00660-0044`
+h|`BT-660-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00661-0044`
+h|`BT-661-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00707-0044`
+h|`BT-707-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00707-0095`
+h|`BT-707-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00708-0044`
+h|`BT-708-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00708-0094`
+h|`BT-708-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00709-0044`
+h|`BT-709-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00710-0044`
+h|`BT-710-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00711-0044`
+h|`BT-711-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00717-0044`
+h|`BT-717-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00721-0044`
+h|`BT-721-Contract`
+a|
+
+*Forbidden if* BT-3202-Contract is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-3202-Contract is not present
+----
+|`ERROR`
+h|`BR-BT-00723-0044`
+h|`BT-723-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00726-0044`
+h|`BT-726-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00726-0095`
+h|`BT-726-LotsGroup`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00726-0146`
+h|`BT-726-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00727-0095`
+h|`BT-727-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00727-0184`
+h|`BT-727-Lot`
+a|
+
+*Forbidden if* BT-5071-Lot is present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5071-Lot is present
+----
+|`ERROR`
+h|`BR-BT-00727-0221`
+h|`BT-727-Procedure`
+a|
+
+*Forbidden if* BT-5071-Procedure is present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5071-Procedure is present
+----
+|`ERROR`
+h|`BR-BT-00728-0044`
+h|`BT-728-Procedure`
+a|
+
+*Forbidden if* Place Performance Services Other (BT-727) and Place Performance Country Code (BT-5141) are not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-727-Procedure is not present and BT-5141-Procedure is not present
+----
+|`ERROR`
+h|`BR-BT-00728-0096`
+h|`BT-728-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00728-0148`
+h|`BT-728-Lot`
+a|
+
+*Forbidden if* Place Performance Services Other (BT-727) and Place Performance Country Code (BT-5141) are not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-727-Lot is not present and BT-5141-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-00729-0044`
+h|`BT-729-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00732-0044`
+h|`BT-732-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00735-0044`
+h|`BT-735-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00735-0095`
+h|`BT-735-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00736-0044`
+h|`BT-736-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00736-0095`
+h|`BT-736-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00737-0044`
+h|`BT-737-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00737-0094`
+h|`BT-737-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00739-0200`
+h|`BT-739-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00743-0044`
+h|`BT-743-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00744-0044`
+h|`BT-744-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00745-0044`
+h|`BT-745-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00746-0044`
+h|`BT-746-Organization`
+a|
+
+*Forbidden if* the Organization is a not a main contractor (OPT-300-Tenderer) and not a subcontractor (OPT-301-Tenderer-SubCont)).
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-200-Organization-Company in OPT-300-Tenderer) and not(OPT-200-Organization-Company in OPT-301-Tenderer-SubCont)
+----
+|`ERROR`
+h|`BR-BT-00747-0044`
+h|`BT-747-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00748-0044`
+h|`BT-748-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00749-0044`
+h|`BT-749-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00750-0044`
+h|`BT-750-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00751-0044`
+h|`BT-751-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00752-0044`
+h|`BT-752-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00761-0044`
+h|`BT-761-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00763-0044`
+h|`BT-763-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00764-0044`
+h|`BT-764-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00765-0044`
+h|`BT-765-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00765-0095`
+h|`BT-765-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00766-0044`
+h|`BT-766-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00766-0096`
+h|`BT-766-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00769-0044`
+h|`BT-769-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00771-0044`
+h|`BT-771-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00772-0044`
+h|`BT-772-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00773-0044`
+h|`BT-773-Tender`
+a|
+
+*Forbidden if* Tender Technical ID (OPT-321-Tender) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+OPT-321-Tender is not present
+----
+|`ERROR`
+h|`BR-BT-00779-0044`
+h|`BT-779-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00780-0044`
+h|`BT-780-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00781-0044`
+h|`BT-781-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00782-0044`
+h|`BT-782-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00783-0044`
+h|`BT-783-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00784-0044`
+h|`BT-784-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00785-0044`
+h|`BT-785-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00786-0044`
+h|`BT-786-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00787-0044`
+h|`BT-787-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00788-0044`
+h|`BT-788-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00789-0044`
+h|`BT-789-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00790-0044`
+h|`BT-790-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00791-0044`
+h|`BT-791-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00792-0044`
+h|`BT-792-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00793-0044`
+h|`BT-793-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00794-0044`
+h|`BT-794-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00795-0044`
+h|`BT-795-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00796-0044`
+h|`BT-796-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00797-0044`
+h|`BT-797-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00798-0044`
+h|`BT-798-Review`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00799-0044`
+h|`BT-799-ReviewBody`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00800-0044`
+h|`BT-800(d)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00800-0094`
+h|`BT-800(t)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00801-0044`
+h|`BT-801-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00802-0044`
+h|`BT-802-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00803-0094`
+h|`BT-803(t)-notice`
+a|
+
+*Forbidden if* Notice Dispatch Date eSender (BT-803(d)-notice) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-803(d)-notice is not present
+----
+|`ERROR`
+h|`BR-BT-01118-0044`
+h|`BT-1118-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-01251-0044`
+h|`BT-1251-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-01311-0044`
+h|`BT-1311(d)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-01311-0096`
+h|`BT-1311(t)-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-01351-0044`
+h|`BT-1351-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-01451-0044`
+h|`BT-1451-Contract`
+a|
+
+*Forbidden if* Contract Technical ID (OPT-316-Contract) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(OPT-316-Contract is not present)
+----
+|`ERROR`
+h|`BR-BT-01501-0044`
+h|`BT-1501(n)-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-01501-0095`
+h|`BT-1501(s)-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-01561-0044`
+h|`BT-1561-NoticeResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-01711-0044`
+h|`BT-1711-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-03201-0064`
+h|`BT-3201-Tender`
+a|
+
+*Forbidden if* Tender Technical ID (OPT-321-Tender) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+OPT-321-Tender is not present
+----
+|`ERROR`
+h|`BR-BT-05010-0044`
+h|`BT-5010-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05071-0095`
+h|`BT-5071-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05071-0184`
+h|`BT-5071-Lot`
+a|
+
+*Forbidden if* Place Performance Services Other (BT-727) is present or Place Performance Country Code (BT-5141) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-727-Lot is present or BT-5141-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-05071-0221`
+h|`BT-5071-Procedure`
+a|
+
+*Forbidden if* Place Performance Services Other (BT-727) is present or Place Performance Country Code (BT-5141) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-727-Procedure is present or BT-5141-Procedure is not present
+----
+|`ERROR`
+h|`BR-BT-05101-0044`
+h|`BT-5101(a)-Procedure`
+a|
+
+*Forbidden if* Place Performance City (BT-5131) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5131-Procedure is not present
+----
+|`ERROR`
+h|`BR-BT-05101-0095`
+h|`BT-5101(b)-Procedure`
+a|
+
+*Forbidden if* Place Performance Street (BT-5101(a)-Procedure) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5101(a)-Procedure is not present
+----
+|`ERROR`
+h|`BR-BT-05101-0146`
+h|`BT-5101(c)-Procedure`
+a|
+
+*Forbidden if* Place Performance Street (BT-5101(b)-Procedure) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5101(b)-Procedure is not present
+----
+|`ERROR`
+h|`BR-BT-05101-0197`
+h|`BT-5101(a)-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05101-0248`
+h|`BT-5101(b)-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05101-0299`
+h|`BT-5101(c)-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05101-0350`
+h|`BT-5101(a)-Lot`
+a|
+
+*Forbidden if* Place Performance City (BT-5131) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5131-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-05101-0401`
+h|`BT-5101(b)-Lot`
+a|
+
+*Forbidden if* Place Performance Street (BT-5101(a)-Lot) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5101(a)-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-05101-0452`
+h|`BT-5101(c)-Lot`
+a|
+
+*Forbidden if* Place Performance Street (BT-5101(b)-Lot) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5101(b)-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-05121-0044`
+h|`BT-5121-Procedure`
+a|
+
+*Forbidden if* Place Performance City (BT-5131) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5131-Procedure is not present
+----
+|`ERROR`
+h|`BR-BT-05121-0095`
+h|`BT-5121-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05121-0146`
+h|`BT-5121-Lot`
+a|
+
+*Forbidden if* Place Performance City (BT-5131) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5131-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-05131-0044`
+h|`BT-5131-Procedure`
+a|
+
+*Forbidden if* Place Performance Services Other (BT-727) is present or Place Performance Country Code (BT-5141) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-727-Procedure is present or BT-5141-Procedure is not present
+----
+|`ERROR`
+h|`BR-BT-05131-0095`
+h|`BT-5131-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05131-0146`
+h|`BT-5131-Lot`
+a|
+
+*Forbidden if* Place Performance Services Other (BT-727) is present or Place Performance Country Code (BT-5141) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-727-Lot is present or BT-5141-Lot is not present
+----
+|`ERROR`
+h|`BR-BT-05141-0095`
+h|`BT-5141-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05141-0184`
+h|`BT-5141-Lot`
+a|
+
+*Forbidden if* the value chosen for BT-727-Lot is 'Anywhere' or 'Anywhere in the European Economic Area'.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-727-Lot in ('anyw', 'anyw-eea')
+----
+|`ERROR`
+h|`BR-BT-05141-0221`
+h|`BT-5141-Procedure`
+a|
+
+*Forbidden if* the value chosen for BT-727-Procedure is 'Anywhere' or 'Anywhere in the European Economic Area'.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-727-Procedure in ('anyw', 'anyw-eea')
+----
+|`ERROR`
+h|`BR-BT-05421-0044`
+h|`BT-5421-LotsGroup`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-LotsGroup-WeightNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-LotsGroup-WeightNumber is not present
+----
+|`ERROR`
+h|`BR-BT-05421-0095`
+h|`BT-5421-Lot`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-Lot-WeightNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-Lot-WeightNumber is not present
+----
+|`ERROR`
+h|`BR-BT-05422-0044`
+h|`BT-5422-LotsGroup`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-LotsGroup-FixedNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-LotsGroup-FixedNumber is not present
+----
+|`ERROR`
+h|`BR-BT-05422-0095`
+h|`BT-5422-Lot`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-Lot-FixedNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-Lot-FixedNumber is not present
+----
+|`ERROR`
+h|`BR-BT-05423-0044`
+h|`BT-5423-LotsGroup`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-LotsGroup-ThresholdNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-LotsGroup-ThresholdNumber is not present
+----
+|`ERROR`
+h|`BR-BT-05423-0095`
+h|`BT-5423-Lot`
+a|
+
+*Forbidden if* Award Criterion Number (BT-541-Lot-ThresholdNumber) is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-541-Lot-ThresholdNumber is not present
+----
+|`ERROR`
+h|`BR-BT-06140-0044`
+h|`BT-6140-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-07220-0044`
+h|`BT-7220-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-07531-0044`
+h|`BT-7531-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-07532-0044`
+h|`BT-7532-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-13713-0065`
+h|`BT-13713-LotResult`
+a|
+
+*Forbidden if* LotResult Technical ID (OPT-322) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+OPT-322-LotResult is not present
+----
+|`ERROR`
+h|`BR-BT-13714-0064`
+h|`BT-13714-Tender`
+a|
+
+*Forbidden if* BT-3201-Tender is not present.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-3201-Tender is not present
+----
+|`ERROR`
+h|`BR-OPP-00020-0044`
+h|`OPP-020-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00021-0044`
+h|`OPP-021-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00022-0044`
+h|`OPP-022-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00023-0044`
+h|`OPP-023-Contract`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00030-0044`
+h|`OPP-030-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00031-0044`
+h|`OPP-031-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00032-0044`
+h|`OPP-032-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00033-0044`
+h|`OPP-033-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00034-0044`
+h|`OPP-034-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00040-0044`
+h|`OPP-040-Procedure`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00050-0094`
+h|`OPP-050-Organization`
+a|
+
+*Forbidden if* Organization is not a buyer or there is only one buyer.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-200-Organization-Company in OPT-300-Procedure-Buyer) or (count(OPT-300-Procedure-Buyer) < 2)
+----
+|`ERROR`
+h|`BR-OPP-00051-0044`
+h|`OPP-051-Organization`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00052-0044`
+h|`OPP-052-Organization`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00080-0044`
+h|`OPP-080-Tender`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00100-0044`
+h|`OPP-100-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00105-0044`
+h|`OPP-105-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00110-0044`
+h|`OPP-110-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00111-0044`
+h|`OPP-111-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00112-0044`
+h|`OPP-112-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00113-0044`
+h|`OPP-113-Business-European`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00120-0044`
+h|`OPP-120-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00121-0044`
+h|`OPP-121-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00122-0044`
+h|`OPP-122-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00123-0044`
+h|`OPP-123-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00130-0044`
+h|`OPP-130-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00131-0044`
+h|`OPP-131-Business`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00036-0044`
+h|`OPA-36-Part-Number`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00036-1044`
+h|`OPA-36-Part-Unit`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00050-0044`
+h|`OPT-050-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00050-0094`
+h|`OPT-050-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00060-0044`
+h|`OPT-060-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00070-0094`
+h|`OPT-070-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00071-0044`
+h|`OPT-071-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00072-0044`
+h|`OPT-072-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00090-0095`
+h|`OPT-090-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00091-0044`
+h|`OPT-091-ReviewReq`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00092-0044`
+h|`OPT-092-ReviewBody`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00092-0096`
+h|`OPT-092-ReviewReq`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00098-0044`
+h|`OPA-98-Lot-Number`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00098-1044`
+h|`OPA-98-Lot-Unit`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00110-0044`
+h|`OPT-110-Part-FiscalLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00111-0044`
+h|`OPT-111-Part-FiscalLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00112-0044`
+h|`OPT-112-Part-EnvironLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00113-0044`
+h|`OPT-113-Part-EmployLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00118-0044`
+h|`OPA-118-NoticeResult-Currency`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00120-0044`
+h|`OPT-120-Part-EnvironLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00130-0044`
+h|`OPT-130-Part-EmployLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00140-0044`
+h|`OPT-140-Part`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00140-0095`
+h|`OPT-140-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00150-0044`
+h|`OPT-150-Lot`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00155-0044`
+h|`OPT-155-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00156-0044`
+h|`OPT-156-LotResult`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0245`
+h|`OPT-301-Part-FiscalLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0295`
+h|`OPT-301-Part-EnvironLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0345`
+h|`OPT-301-Part-EmployLegis`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0395`
+h|`OPT-301-Part-AddInfo`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0446`
+h|`OPT-301-Part-DocProvider`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0497`
+h|`OPT-301-Part-TenderReceipt`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0548`
+h|`OPT-301-Part-TenderEval`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0599`
+h|`OPT-301-Part-ReviewOrg`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0650`
+h|`OPT-301-Part-ReviewInfo`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0701`
+h|`OPT-301-Part-Mediator`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-1002`
+h|`OPT-301-Lot-TenderReceipt`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-1052`
+h|`OPT-301-Lot-TenderEval`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-1278`
+h|`OPT-301-ReviewBody`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-1329`
+h|`OPT-301-ReviewReq`
+a|
+
+*Always forbidden* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-1453`
+h|`OPT-301-Tenderer-MainCont`
+a|
+
+*Forbidden if* no Tenderer (OPT-300-Tenderer) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+OPT-300-Tenderer is not present
+----
+|`ERROR`
+h|`BR-OPT-00302-0064`
+h|`OPT-302-Organization`
+a|
+
+*Forbidden if* the Organization is not involved in a tendering party, or is a natural person (BT-633-Organization), or is listed on a regulated market (BT-746-Organization).
+
+.Condition in EFX
+[source, EFX]
+----
+(not(OPT-200-Organization-Company in OPT-300-Tenderer) and not(OPT-200-Organization-Company in OPT-301-Tenderer-SubCont)) or (BT-633-Organization == TRUE) or (BT-746-Organization == TRUE)
+----
+|`ERROR`
+h|`BR-OPT-00310-0065`
+h|`OPT-310-Tender`
+a|
+
+*Forbidden if* Tender Technical ID (OPT-321-Tender) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+OPT-321-Tender is not present
+----
+|`ERROR`
+h|`BR-OPT-00315-0059`
+h|`OPT-315-LotResult`
+a|
+
+*Forbidden if* the value chosen for BT-142-LotResult is not 'At least one winner was chosen' or LotResult Technical ID (OPT-322) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-142-LotResult == 'selec-w') or (OPT-322-LotResult is not present)
+----
+|`ERROR`
+h|`BR-OPT-00316-0061`
+h|`OPT-316-Contract`
+a|
+
+*Forbidden if* no lot has been awarded.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-142-LotResult == 'selec-w')
+----
+|`ERROR`
+h|`BR-OPT-00320-0060`
+h|`OPT-320-LotResult`
+a|
+
+*Forbidden if* there is no LotResult, or there is no Tender for the Lot covered by the LotResult and no Tender for any Group of Lot that would contain the Lot of the LotResult, or there is no tender and no lot is specified for the LotResult, or the competition is ongoing.
+
+.Condition in EFX
+[source, EFX]
+----
+(OPT-322-LotResult is not present) or ((BT-13713-LotResult is present) and not(BT-13714-Tender in BT-13713-LotResult) and not(BT-1375-Procedure[BT-330-Procedure in BT-13714-Tender] in BT-13713-LotResult)) or ((BT-13713-LotResult is not present) and (OPT-321-Tender is not present)) or (BT-142-LotResult == 'open-nw')
+----
+|`ERROR`
+h|`BR-OPT-00321-0065`
+h|`OPT-321-Tender`
+a|
+
+*Forbidden if* no lot has been awarded and there is no other non-awarding reason than "no received tenders"..
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-142-LotResult == 'selec-w') and not(BT-144-LotResult != 'no-rece')
+----
+|`ERROR`
+|====
+
+== `mandatory`
+[cols="<3,3,<6,>1", role="fixed-layout"]
+|====
+h| Business Rule h| Field h|Details h|Severity
+h|`BR-BT-00001-0044`
+h|`BT-01-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00002-0044`
+h|`BT-02-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00003-0044`
+h|`BT-03-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00004-0044`
+h|`BT-04-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00005-0044`
+h|`BT-05(a)-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00005-0096`
+h|`BT-05(b)-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00010-0044`
+h|`BT-10-Procedure-Buyer`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00011-0044`
+h|`BT-11-Procedure-Buyer`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00021-0044`
+h|`BT-21-Procedure`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00021-0200`
+h|`BT-21-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00022-0197`
+h|`BT-22-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00023-0044`
+h|`BT-23-Procedure`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00023-0146`
+h|`BT-23-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00024-0044`
+h|`BT-24-Procedure`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00024-0200`
+h|`BT-24-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00026-0655`
+h|`BT-26(m)-Procedure`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00026-0692`
+h|`BT-26(m)-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00137-0146`
+h|`BT-137-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00142-0044`
+h|`BT-142-LotResult`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00144-0044`
+h|`BT-144-LotResult`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00145-0044`
+h|`BT-145-Contract`
+a|
+
+*Mandatory if* Procedure Type (BT-105-Procedure) value is different from "Negotiated without prior call for competition" and Procedure Legal Basis (BT-01-notice) value is different from "Financial regulation" and there is at least one Contract Tender Identified (BT-3202-Contract).
+
+.Condition in EFX
+[source, EFX]
+----
+BT-01-notice != '32018R1046' and BT-105-Procedure != 'neg-wo-call' and BT-3202-Contract is present
+----
+|`ERROR`
+h|`BR-BT-00150-0044`
+h|`BT-150-Contract`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00160-0044`
+h|`BT-160-Tender`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00162-0044`
+h|`BT-162-Tender`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00163-0044`
+h|`BT-163-Tender`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-4317`
+h|`BT-197(BT-541)-LotsGroup-Weight`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-4327`
+h|`BT-197(BT-541)-Lot-Weight`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-4517`
+h|`BT-197(BT-541)-LotsGroup-Fixed`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-4527`
+h|`BT-197(BT-541)-Lot-Fixed`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-4717`
+h|`BT-197(BT-541)-LotsGroup-Threshold`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00197-4727`
+h|`BT-197(BT-541)-Lot-Threshold`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00262-0044`
+h|`BT-262-Procedure`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00262-0145`
+h|`BT-262-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00500-0044`
+h|`BT-500-Organization-Company`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00501-0044`
+h|`BT-501-Organization-Company`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00503-0044`
+h|`BT-503-Organization-Company`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00506-0044`
+h|`BT-506-Organization-Company`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00513-0044`
+h|`BT-513-Organization-Company`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00514-0044`
+h|`BT-514-Organization-Company`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00536-0138`
+h|`BT-536-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00610-0044`
+h|`BT-610-Procedure-Buyer`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00701-0044`
+h|`BT-701-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00702-0044`
+h|`BT-702(a)-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00728-0189`
+h|`BT-728-Procedure`
+a|
+
+*Mandatory if* Place Performance Services Other (BT-727) does not exist, and Place Performance Country Subdivision (BT-5071) does not exist, and Place Performance City (BT-5131) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-727-Procedure is not present) and (BT-5071-Procedure is not present) and (BT-5131-Procedure is not present)
+----
+|`ERROR`
+h|`BR-BT-00728-0229`
+h|`BT-728-Lot`
+a|
+
+*Mandatory if* Place Performance Services Other (BT-727) does not exist, and Place Performance Country Subdivision (BT-5071) does not exist, and Place Performance City (BT-5131) does not exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-727-Lot is not present) and (BT-5071-Lot is not present) and (BT-5131-Lot is not present)
+----
+|`ERROR`
+h|`BR-BT-00740-0044`
+h|`BT-740-Procedure-Buyer`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00746-0063`
+h|`BT-746-Organization`
+a|
+
+*Mandatory if* the Organization is a Winner (i.e. an organization (OPT-200-Organization-Company) identified as a main contractor (OPT-300-Tenderer) or a subcontractor (OPT-301-Tenderer-SubCont) within a tendering party (OPT-210-Tenderer) that submitted a tender (OPT-310-Tender), which (OPT-321-Tender) led to a contract (BT-3202-Contract)).
+
+.Condition in EFX
+[source, EFX]
+----
+(OPT-200-Organization-Company in OPT-300-Tenderer[OPT-210-Tenderer in OPT-310-Tender[OPT-321-Tender in BT-3202-Contract]]) or (OPT-200-Organization-Company in OPT-301-Tenderer-SubCont[OPT-210-Tenderer in OPT-310-Tender[OPT-321-Tender in BT-3202-Contract]])
+----
+|`ERROR`
+h|`BR-BT-00757-0044`
+h|`BT-757-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00803-0044`
+h|`BT-803(t)-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-03201-0044`
+h|`BT-3201-Tender`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05071-0044`
+h|`BT-5071-Procedure`
+a|
+
+*Mandatory if* Place Performance Services Other (BT-727) does not exist, and the Place Performance Country (BT-5141) has NUTS codes.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-727-Procedure is not present) and BT-5141-Procedure in (nuts-country)
+----
+|`ERROR`
+h|`BR-BT-05071-0146`
+h|`BT-5071-Lot`
+a|
+
+*Mandatory if* Place Performance Services Other (BT-727) does not exist, and the Place Performance Country (BT-5141) has NUTS codes.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-727-Lot is not present) and BT-5141-Lot in (nuts-country)
+----
+|`ERROR`
+h|`BR-BT-05121-0200`
+h|`BT-5121-Procedure`
+a|
+
+*Mandatory if* the Place Performance Country (BT-5141) is part of the countries requiring post codes, and Place Performance Street (BT-5101(a)) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5141-Procedure in (postcode-country) and BT-5101(a)-Procedure is present
+----
+|`ERROR`
+h|`BR-BT-05121-0296`
+h|`BT-5121-Lot`
+a|
+
+*Mandatory if* the Place Performance Country (BT-5141) is part of the countries requiring post codes, and Place Performance Street (BT-5101(a)) exists.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-5141-Lot in (postcode-country) and BT-5101(a)-Lot is present
+----
+|`ERROR`
+h|`BR-BT-05141-0044`
+h|`BT-5141-Procedure`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05141-0146`
+h|`BT-5141-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05421-0148`
+h|`BT-5421-LotsGroup`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05421-0198`
+h|`BT-5421-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05422-0148`
+h|`BT-5422-LotsGroup`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05422-0198`
+h|`BT-5422-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05423-0148`
+h|`BT-5423-LotsGroup`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-05423-0198`
+h|`BT-5423-Lot`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-13713-0044`
+h|`BT-13713-LotResult`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-13714-0044`
+h|`BT-13714-Tender`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00050-0044`
+h|`OPP-050-Organization`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`WARN`
+h|`BR-OPP-00070-0044`
+h|`OPP-070-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00001-0044`
+h|`OPT-001-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00002-0044`
+h|`OPT-002-notice`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00200-0044`
+h|`OPT-200-Organization-Company`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00300-0144`
+h|`OPT-300-Procedure-Buyer`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0195`
+h|`OPT-301-Tenderer-MainCont`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-0902`
+h|`OPT-301-Lot-AddInfo`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00301-1102`
+h|`OPT-301-Lot-ReviewOrg`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00310-0044`
+h|`OPT-310-Tender`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00315-0044`
+h|`OPT-315-LotResult`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00316-0044`
+h|`OPT-316-Contract`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00320-0044`
+h|`OPT-320-LotResult`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00321-0044`
+h|`OPT-321-Tender`
+a|
+
+*Mandatory if* there is at least one awarded lot.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-142-LotResult == 'selec-w'
+----
+|`ERROR`
+h|`BR-OPT-00322-0044`
+h|`OPT-322-LotResult`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00999-0044`
+h|`OPT-999`
+a|
+
+*Always mandatory* in notice sub-type 35.
+|`ERROR`
+|====
+
