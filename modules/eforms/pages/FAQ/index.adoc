@@ -264,7 +264,7 @@ There are no limitations at this stage and version 4 UUID was chosen as the chan
 
 
 
-How can a Contract Notice (current schema) be linked to a Contract Award Notice (eForms)?::
+How can a Result Notice (eForms) be linked to a Competition Notice (TED XML schema)?::
 
 eForms include some BTs with the identifier of the previous notice, regardless of 
 whether the notice uses the current TED schema or is an eForms notice. 
@@ -273,6 +273,14 @@ For eForms, the previous notice identifier can be the Notice ID (UUID-vv).
 +
 See also link:https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#previousNoticeSection[Previous Notice (OPP-090)]
 in the documentation. 
+
+
+
+How can a Result Notice (eForms) be linked to a Competition Notice (eForms)?::
+
+Association of an eForms Result notice with its corresponding eForms Competition notice is performed using the Procedure ID. 
+All eForms result notices of a same procedure shall share the same procedure ID. 
+OPP-090 is only expected for references to TED XML notices. 
 
 
 
