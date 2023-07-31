@@ -201,6 +201,12 @@ Scope:: Final version of the application with full rendering of HTML and PDF and
 Scope:: Ongoing improvements with successive SDK releases
 
 
+==== Known issues
+
+In SDK 1.7 and 1.8, the “Results” section is not displayed properly on TED in Production. This bug will be fixed in SDK 1.9. 
+
+
+
 === TED Developer Portal
 
 ==== Currently available 
