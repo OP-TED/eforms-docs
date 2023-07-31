@@ -97,16 +97,9 @@ Basing the development of the eForms schema on the UBL schema, as well as
 conferring many advantages, has also imposed some constraints. These 
 constraints have required the creation of a number of terms which were not 
 anticipated in the eForms Regulation; they do not have a true Business 
-justification. They have been assigned different abbreviations to distinguish 
-them from the BT terms defined in the eForms Regulation.
-
-Two abbreviations for these fields have been introduced: "OPP" and "OPT". "OP" 
-is the abbreviation for the Publications Office of the European Union as 
-defined above. "P" stands for Production; these fields are required for the 
-production processes, particularly for the non-standard forms (not defined in 
-the eForms Regulation) that also use the eForms schema. "T" stands for 
-Technical, these are required for some technical constraints and chosen 
-design options.
+justification. They have been assigned different abbreviations, starting with
+"OP" to distinguish them from the BT terms defined in the eForms Regulation
+(see xref:fields:index.adoc[] for more details).
 
 == Dates and Times
 
