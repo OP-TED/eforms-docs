@@ -190,7 +190,8 @@ For a mapping of standard forms to eForms notices, please refer to COMMISSION IM
 Table 1 of the Annex as the authoritative source of information. 
 +
 You may also find useful the “Initial mapping of current TED-XML schema to eForms (13/04/2022)”, 
-which was shared on SIMAP: https://simap.ted.europa.eu/web/simap/eforms 
+as well as the "Table of correspondence between TED-XML standard forms and eForms (03/08/2023)", 
+which were both shared on SIMAP: https://simap.ted.europa.eu/web/simap/eforms
 
 
 
@@ -852,8 +853,10 @@ Will there be a TED qualification environment available for eForms? When will th
 
 Unlike the current standard forms in eSentool, there will be no
 qualification procedure for eForms and any user with an API key and an eNotices2 account 
-will be able to submit notices via the API. Similarly, Qualification and Simulation endpoints will cease to exist. 
-The environments available will be instead Production and Preview.  
+will be able to submit notices via the API. 
+eSenders, however, are required to be familiar with the link:https://enotices2.ted.europa.eu/cookies-legal-notice[“Terms of service”].
++
+Qualification and Simulation endpoints will cease to exist; the environments available will be instead Production and Preview.  
 +
 The Preview environment will be available indefinitely so that users can test validation of notices against new versions of the SDK. 
 The latter will first be implemented in Preview environment during a pre-announced transition period before going into Production. 
@@ -911,6 +914,18 @@ A guide on how to test in "Preview" was presented in
 link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
 link:https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-Sep29-eForms-Technical-Workshop.pptx/d0237e8e-500d-4b11-526c-e66c23ec773c?t=1664438251508["TED Developer Portal and using eForms APIs"].
 
+
+
+Does my API key expire?::
+
+Yes, your key has a validity of 2 years from the date it was generated from the TED Developer Portal 
+(you may have different API keys generated in both in Preview and Production environments). 
+28 days before expiration, the owner of the key will receive an email with a token/ link to prolong their key; 
+the token is valid for 21 days and can prolong the key’s validity period to 1 year from its previous expiration date. 
+A last reminder will be sent 1 week before the key expires.  
++
+For a key to work with eNotices2 API, there needs to be a corresponding eNotices2 account. 
+eSenders need to log in once to pair their key and perform at least one valid API request to eNotices2 API with this key.
 
 
 What is the purpose of the Developer Profile?::
@@ -994,6 +1009,20 @@ and OP has initiated the process of publication of the next OJ S (which happens 
 its status will change to “PUBLISHING” and subsequently to “PUBLISHED” (once published in TED). In this case it will only be possible 
 to submit a change notice for publication in the OJ S cancelling the initial notice, i.e. by creating a change notice with ReasonCode “cancel” 
 from change-corrig-justification.gc. Both the original notice and its change notice will be published in the OJ S. 
+
+
+
+When using eNotices2 API, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLocale". What should an eSender input in the parameters?::
+
+Notice author email (mandatory property “noticeAuthorEmail” in the metadata) must be a valid email address. 
+The email is used to identify the person responsible for the notice, i.e. the Contracting Authority. 
++ 
+eSenders must make sure to provide a valid email address to identify the buyer when submitting notices for publication to the Production environment, 
+so that the Publications Office can notify them regarding e.g. the rejection/ publication of their notices.
++
+Mandatory property “noticeAuthorLocale” in the metadata indicates the EU official language in which the Contracting Authority 
+wishes to be notified by the Publications Office. Locale value should conform to ISO 639-1 Language Code List and must be 
+one of the following: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv. 
 
 
 
