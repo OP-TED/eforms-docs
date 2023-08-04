@@ -569,7 +569,7 @@ cac:TendererQualificationRequest{zwsp}/cac:SpecificTendererRequirement{zwsp}/cbc
 ----
 
 
-11+^|*Subcontracting obligations (Dir. 81 only) (+++**+++)*
+11+^|*Subcontracting Indication and obligations (Dir. 81 only) (+++**+++)*
 
 |*Subcontracting Tender Indication (BT-651)* | xref:subcontractingObligationSection[xrefstyle=short] |-- |-- h|* |-- |-- h|+ |-- |--
 a|
@@ -579,7 +579,7 @@ ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:
 ----
 
 
-|*Subcontracting Obligation (BT-65)* | xref:subcontractingObligationSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |--
+|*Subcontracting Obligation (BT-65)* | xref:subcontractingObligationSection[xrefstyle=short] |-- |-- h|* |-- |-- h|* |-- |--
 a|
 [source,xpath,subs=attributes]
 ----
