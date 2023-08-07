@@ -57,7 +57,12 @@ A change may contain all the following business terms:
 
 * Change Description (BT-141)
 
-There must exist at least one "_efac:Change_" element in the Change Notice.
+There must exist at least one "_efac:Change_" element in the Change Notice, 
+except for the case of:
+* a _cancel notice_ (i.e. Change Reason set to "cancel") where no "_efac:Change_" 
+node is expected, and
+* an _intent to cancel_ a lot/procedure (i.e. Change Reason set to "cancel-intent") 
+where "_efac:Change_" node may be used to identify the lots.
 
 A change may cover one or more sections of a notice and the element used to
 reference sections (i.e. "_efbc:ChangedSectionIdentifier_", BT-13716) is repeatable.
