@@ -52,13 +52,13 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.10.1
+Application version:: 1.10.2
 SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0
 
 
 In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6, 1.7 and 1.8. SDK version 1.8 is supported in Preview environment as of 1 August 2023. 
 
-In the Production environment, SDK version 1.7 is supported as of 16 May 2023.
+In the Production environment, SDK version 1.8 is supported as of 9 August 2023.
 
 In the codelist fields, prefilling of values is supported.  
 
@@ -86,15 +86,14 @@ As of SDK version 1.6, the lot distribution for lot groups has changed; there is
 
 
 ==== Known issues 
-This new version brings some usability improvements and will support eSenders, however, it will also create some temporary technical issues for the web interface of eNotices2. As a result, it will not be possible to validate and submit notices via the web interface of eNotices2. For example, even when certain mandatory fields are filled in, front-end users will still get error messages to say that the field is mandatory. 
-
-We are aware of these issues and currently working to fix them as soon as possible. Users can still test in Preview and save their draft notices. eNotices2 API in Preview is not affected by these technical issues. 
 
 At this point, the application is incomplete and some use cases are not fully implemented. 
 
 Some validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”.
 
 All the error messages and labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
+
+Notices go through CVS validation when they are submitted, or when the user clicks on "validate" in the user interface, however, the feature may be unstable.
 
 For the moment, CVS validation does not work dynamically, i.e. there is no check between notices. This has implications, e.g. for checking notices of the same procedure or the same UUID v4 and different version ID; currently, it is possible to submit and publish two notices that carry the same notice ID and different version IDs. See in contrast: https://docs.ted.europa.eu/eforms/latest/schema/notice-information.html#noticeIDSection.
     
@@ -111,6 +110,7 @@ Notices created before 15 March 2023 in Preview or Production environments and u
 The following issues have been identified as of application version 1.8.3:
 
 * OPT-060-Lot in the subtypes where it's mandatory "17", "18", "22" might prevent users from submitting a notice. 
+* T02 cannot be submitted.
 * Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice. 
 
 
@@ -153,7 +153,7 @@ We are currently in the process of providing more guidance for users of the eNot
     * To avoid authorisation issues when using eNotices2 API, log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account and make sure that you perform at least one valid API request with your key to eNotices2 API:
       ** link:https://enotices2.preview.ted.europa.eu/home[eNotices2 in Preview]
       ** https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/ 
-    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5, 1.6, 1.7 and 1.8. SDK version 1.8 is supported in Preview environment as of 1 August 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
+    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5, 1.6, 1.7 and 1.8. SDK version 1.8 is supported in Preview environment as of 1 August 2023 and in Production as of 9 August 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
       https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
     * Dynamic rules that check between notices are not yet in place, users, however, should still respect the workflow of eForms notices. For instance, users may currently be able to submit a Change notice that refers to a parent notice that has not been yet published. The notice will still be blocked by our internal system (will enter in error). Currently, it is not possible to stop the publication of a notice that has entered in error in the Preview environment, but we are seeing what could be improved for these situations. 
     * Currently, there are some checks performed by eNotices2 API upon submission of a notice, e.g. eNotices2 will check (and reject) a notice with the same id and version id if it already exists in the system. In the future, such checks will be performed by CVS. 
@@ -161,13 +161,13 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: August 2023
+Indicative planning:: September 2023
 Application version:: 1.10.x
-SDK version:: 1.8
+SDK version:: 1.9
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The Production environment is currently on application version 1.9 with SDK version 1.7.
+NOTE: The current application version of Preview is into Production as of 9 August 2023.
 
 
 === TED Central Validation Service 
