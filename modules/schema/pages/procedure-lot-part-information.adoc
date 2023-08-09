@@ -2823,8 +2823,8 @@ additional information is encoded as follows:
 [[previousNoticeSection]]
 === Previous Notice (OPP-090)
 
-Previous Notice (OPP-090) may be used to associate a notice to one or 
-more immediately preceding notices. It is not intended to replace:
+Previous Notice (OPP-090) may be used to associate a notice to one or more 
+immediately preceding TEDXML notices. It is also not intended to replace:
 
 * Change Notice Version Identifier (BT-758),
 
@@ -2832,29 +2832,29 @@ more immediately preceding notices. It is not intended to replace:
 
 * Previous Planning Identifier (BT-125), or
 
-* Framework Notice Identifier (OPT-100).
+* Framework Notice Identifier (OPT-100),
 
-It is only foreseen for cases where no other option to refer to a previous notice exists. 
-It may be useful when some notices for a Procedure have been published in TEDXML, 
-and it is desired to publish following notices of the Procedure in eForms. This 
-Business Term allows the notices to be associated despite the absence of Procedure ID in TEDXML.
+which should still be used even when referring to a TEDXML notice.
 
-A notice is referred to using either of the two identifiers:
+Previous Notice (OPP-090) is only foreseen for cases where no other option 
+to refer to a previous notice exists. It may be useful when some notices 
+for a Procedure have been published in TEDXML (format which does not have 
+a Procedure ID), and it is desired to publish following notices of the 
+Procedure in eForms. This Business Term allows the notices to be associated 
+despite the absence of Procedure ID in TEDXML.
 
-* its notice identifier (UUID) concatenated with its version identifier (e.g. <UUID>-<vv>), or 
+A TEDXML notice is referred to using its Notice Publication ID (XXXXXX-YYYY).
 
-* its Notice Publication ID (XXXXXX-YYYY).
-
-Previous Notice (OPP-090) applies to the whole notice, and not just a single lot.
-It may also be repeated to point to multiple previous notices when needed.
+Previous Notice (OPP-090) applies to the whole notice, and not just a single 
+lot. It may also be repeated to point to multiple previous notices when needed.
 
 [source,xml]
 ----
 <cac:NoticeDocumentReference>
-    <cbc:ID schemeName="notice-id-ref">123e4567-e89b-12d3-a456-426614174000-06</cbc:ID>
+    <cbc:ID schemeName="ojs-notice-id">1624-2023</cbc:ID>
 </cac:NoticeDocumentReference>
 <cac:NoticeDocumentReference>
-    <cbc:ID schemeName="notice-id-ref">33b03807-58ce-4eb2-aac2-25702d0ad624-06</cbc:ID>
+    <cbc:ID schemeName="ojs-notice-id">38976-2022</cbc:ID>
 </cac:NoticeDocumentReference>
 ----
 
