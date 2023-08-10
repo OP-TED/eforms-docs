@@ -110,9 +110,12 @@ Notices created before 15 March 2023 in Preview or Production environments and u
 The following issues have been identified as of application version 1.8.3:
 
 * OPT-060-Lot in the subtypes where it's mandatory "17", "18", "22" might prevent users from submitting a notice. 
-* T02 cannot be submitted.
+* T02 cannot be submitted until SDK 1.9.
 * Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice. 
 
+The following issues have been identified as of application version 1.10.2:
+
+* Filling in any of the "(published later)" sections, will result in an invalid notice that cannot be submitted.
 
 
 ==== Known eNotices2 API issues 
