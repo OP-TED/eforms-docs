@@ -285,6 +285,22 @@ OPP-090 is only expected for references to TED XML notices.
 
 
 
+What are the cases when a reference to a specific notice is expected?::
+
+The only cases where a reference to a specific notice is expected are: 
++
+* Identification of the notice object to a Change with Change Notice Version Identifier (BT-758).
++
+* Identification of the notice containing the contract subject to a Modification with Modification Previous Notice Section Identifier (BT-1501).
++
+* Identification of the PIN only notice whose Parts contributed to the definition of the Lot with Previous Planning Identifier (BT-125). 
++
+* Identification of the notice that announced the Framwork Contract used for the current contract with Framework Notice Identifier (OPT-100).
++
+* Identification of the previous notice which wa a TEDXML and does not therefore contain a Procedure ID using Previous Notice (OPP-090). 
+
+
+
 How do we make a correction (F14) to a notice published in current schema, after transitioning to eForms?::
 
 In the same way that it will be possible to link current form notices to eForms 
