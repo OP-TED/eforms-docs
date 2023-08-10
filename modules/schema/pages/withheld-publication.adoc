@@ -15,7 +15,7 @@ The reason for keeping the information private shall be specified using
 a code from the codelist
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/non-publication-justification[non-publication-justification]
 and a description. The field whose information publication shall be
-withhold is identified using a code as specified in the following
+withheld is identified using a code as specified in the following
 subsections.
 
 To activate the mechanism, four business terms have to be used:
