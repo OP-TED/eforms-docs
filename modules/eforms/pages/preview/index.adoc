@@ -4,7 +4,7 @@
 
 The Publications Office (OP) has developed a range of applications for the collection, validation, processing, visualisation and dissemination of eForms notices. These applications are collectively known as "TED Apps for eForms" and went into production use on 14 November 2022. 
 
-We have prepared an additional "Preview" environment for eSenders and stakeholders, where we deploy releases of the TED Apps for eForms as they become available. This environment allows access to the applications before they are deployed in Production, and provides a testing environment that is closely aligned with production. 
+We have prepared an additional "Preview" environment for eSenders and stakeholders, where we deploy releases of the TED Apps for eForms as they become available. This environment allows access to the applications before they are deployed in Production, and provides a testing environment that is closely aligned with production, but with no guarantee of features, data or availability. See our link:https://enotices2.preview.ted.europa.eu/cookies-legal-notice[Terms of service for TED publishing services].
 
 The application features, URLs as well as the data present in the "Preview" environment, are subject to unannounced changes. 
 
@@ -185,7 +185,7 @@ Scope:: Complete implementation, including the execution of the validation rules
 We are working on resolving the following limitations and known issues:
 
 * Large notices (3 MB or above) cannot be sent, due to a technical restriction.
-* The validation mode "dynamic" currently does not fetch information from other notices. Compared to the "static" mode, the only additional rule checks the value of the dispatch date (BT-05) against the current date.
+* The validation mode "dynamic" currently does not fetch information from other notices. Compared to the "static" mode, the only additional rule checks the value of the dispatch date (BT-05) against the current date. The rule may be currently more permissive, but as of SDK 2.0, it will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time.
 
 
 === TED Viewer
