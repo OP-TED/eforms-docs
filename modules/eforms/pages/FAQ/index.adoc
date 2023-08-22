@@ -510,11 +510,11 @@ so they appear in the eForms schema and rules as forms X01 and X02.
 
  
 
-What is foreseen in eForms for countries that have no NUTS code?::
+What is foreseen in eForms for countries that have no NUTS codes?::
 
 The eForms Regulation Annex 2 states that for both BT-507 Organisation Country Subdivision, and BT-5071 Place Performance Country Subdivision, 
 "The NUTS3 classification code must be used." BT-507 and BT-5071 are intended to be used only when the NUTS3 level is known.
-If a country does not have NUTS3 code, then it is not required. SDK 0.5.0 and future versions have reduced the NUTS codelist to only level 3 NUTS codes. 
+If a country does not have NUTS3 codes, then they are not required. SDK 0.5.0 and future versions have reduced the NUTS codelist to only level 3 NUTS codes. 
 +
 BT-507 is only mandatory if one or more of BT-513 Organisation City, BT-512 Organisation Post Code, or BT-510 Organisation Street is present. 
 And BT-5071 is only mandatory if one or more of BT-5131 Place Performance City, BT-5121 Place Performance Post Code, or BT-5101 Place Performance Street 
