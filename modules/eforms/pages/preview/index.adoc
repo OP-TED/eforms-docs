@@ -205,7 +205,9 @@ Scope:: Ongoing improvements with successive SDK releases
 
 ==== Known issues
 
-In SDK 1.7 and 1.8, the “Results” section is not displayed properly on TED in Production. This bug will be fixed in SDK 1.9. 
+* In SDK 1.7 and 1.8, the “Results” section is not displayed properly on TED in Production. This bug will be fixed in SDK 1.9. 
+* Currency values are currently not rendered correctly, e.g. “10,000,000.00” instead of “10 000 000,00”. This will be fixed with SDK 2.0, 
+so that currency values are also correctly displayed in the OJ S. 
 
 
 
