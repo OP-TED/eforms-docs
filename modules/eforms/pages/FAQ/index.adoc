@@ -297,7 +297,8 @@ The only cases where a reference to a specific notice is expected are:
 +
 * Identification of the notice that announced the Framwork Contract used for the current contract with Framework Notice Identifier (OPT-100).
 +
-* Identification of the previous notice which wa a TEDXML and does not therefore contain a Procedure ID using Previous Notice (OPP-090). 
+* Identification of the previous notice which was a TEDXML and does not therefore contain a Procedure ID using Previous Notice (OPP-090) 
+and for which none of the above may apply. 
 
 
 
