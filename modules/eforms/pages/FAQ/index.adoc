@@ -366,7 +366,8 @@ A Change notice must contain all the information reported in the initial notice,
 describing the latest changes (to the immediately preceding Notice): 
 +
 Changes may apply to notices of any form type. A Change notice may only concern a single notice and contains all the information from 
-that initial notice with applied changes in addition to the information on those changes. 
+that initial notice with applied changes in addition to the information on those changes (with one exception: 
+a change may not be applied on a Change notice that cancelled its previous notice).
 +
 When a change is applied to a previous Change notice, the consolidated text must integrate all changes from previous versions, 
 and only the latest changes are described in the changes section. 
@@ -393,8 +394,7 @@ to describe a notice or any of the related Change notices.
 We understand that the Change notice shall have its own identifier and version that differs from the one of the notice that has been changed. Does that mean that the initial notice always keeps the same version number?::
 
 Yes. Multiple version IDs are for pre-publication, when eSenders might have multiple versions of the same notice on their systems 
-and submit some of them. Each time a notice with the same notice identifier is submitted and accepted by the destination application 
-(and publication is not stopped by the user), it must have a different version ID (starting at "01" and incrementing).
+and submit some of them. Each time a notice with the same notice identifier is submitted, it must have a different version ID (starting at "01" and incrementing).
 +
 The first time the notice is accepted and published, the version ID of the notice they submitted is then final, 
 and no other notices with the same notice identifier will be accepted. The version ID should increase if the notice is stopped 
@@ -1052,6 +1052,10 @@ What is a Group of Lots and is it optional?::
 
 Grouping of Lots is optional and simply a question of ease of use, as some buyers might find it easier to group lots together for a particular reason. 
 +
+Grouping lots may provide some economic benefits for the buyer; when all the lots of the group are awarded to the same provider, 
+costs may be reduced (e.g. impact of the learning curve, required investments for the provider) and the value of the group of lots may generally be lower 
+than the sum of the values of the lots taken individually. Some specific Group of lots Business Terms have been defined to cater for that.
++
 At the level of Competition, you may have some lots that you feel can be grouped together under a specific set of tendering terms 
 and allow companies to submit their offers for the group. This is also related to the maximum awarded lots and 
 the quantity of lots the buyer wishes to award to the same company. At the level of the Result, the Group of Lots is just a concept,
@@ -1200,7 +1204,9 @@ Joint procurement / consortia are handled by use of the Tendering Party
 In the .xsd files elements "cbc:ActivityTypeCode" and "cbc:ActivityType" are found for BT-10 and BT-610, but in samples it's used rather as only a value from the codelist. Is ActivityType ever implemented or is this element redundant and all activities are covered by the codelist?::
 
 The element cbc:ActivityType is not implemented for eForms. The requirements for BT-10 and BT-610 are only for code values, 
-hence only the element cbc:ActivityTypeCode is used. The element cbc:ActivityType is redundant, and all activities are covered by the codelist.
+hence only the element cbc:ActivityTypeCode is used. The standard used to build the schema (UBL) defines numerous elements not used in eForms; 
+“cbc:ActivtyType” is defined in to allow for further information in a text form, while eForms does not expect this, 
+and all possible activities are covered by the codelist.
 
 
 What is the meaning of “multilingual text” in BT-500?::
@@ -1228,7 +1234,7 @@ As the fields are optional, there are no plans to have any business rules for th
 Is BT-195 really an identifier?::
 
 BT-195 is named as "Unpublished Identifier" in the Annex spreadsheet. It is an identifier in a general sense, 
-in that it is intended to identify the BT that is "unpublished". But in the UBL schema, the XML elements for the BTs 
+in that it is intended to identify the BT that is "unpublished". But in the schema, the XML elements for the BTs 
 that need to be unpublished do not have identifier elements associated with them. Instead, we have created a codelist 
 which maps codes to the associated BTs. This codelist is included in the SDK identified by the listName attribute 
 "non-publication-identifier", filename non-publication-identifier.gc.
@@ -1242,8 +1248,8 @@ which can be "unpublished", some related to all Directives and others only for D
 The fields themselves are handled by the use of a codelist and for each of them the fields of BG-8 are requested in the XML. 
 +
 For example, BT-118 Notice Framework Value, can be unpublished. If that is the case, the user will be able to identify it as such 
-and then will have to insert BT-197 (why it is unpublished), and BT-198 (when this field will be made public). 
-A user may also want to add BT-196 (an optional description). 
+using BT-195 and then will have to insert BT-197 (why it is unpublished).
+A user may also want to add BT-196 (an optional description), and BT-198 (when this field will be made public).
 +
 On TED, the unpublished fields will still be present, but their content will be replaced with masking values, 
 e.g. text fields will contain "unpublished" and numbers will be set to -1. 
@@ -1277,20 +1283,22 @@ There is no implication or meaning to the choice of which language is specified 
 
 BT-125 and more specifically BT-1251 refer to the Previous Planning Part Identifier. What is a “part” of a notice. How can one define a “part” without using lots?::
 
-The "Previous Planning" refers to Notices of type "Planning". The "Part Identifier" refers to a Part that is included in such Planning Notices. 
+The "Previous Planning" refers to Notices of type "Planning" (i.e. PIN Only). The "Part Identifier" refers to a Part that is included in such Planning Notices. 
 The Part may later become a Lot or a self-standing procedure. Field BT-125 Previous Planning Identifier is only to be used 
-to identify previous planning notices. Within a framework agreement, the field BT-1252 "Direct Award Justification Previous Procedure Identifier" 
-should contain the identifier of the procedure under which the framework agreement was concluded (BT-04). 
+to identify previous planning notices. BT-1251 is used to identify the Part of the PIN Only notice, 
+that alone or together with other Parts from the same or other notices, lead to the definition of the Lot or the self-standing procedure. 
 
 
 
 Why is BT-1371 Previous Planning Lot Identifier not documented?::
 
-Most of the elements “XYZ Lot Identifier” Business Terms that exist in the extended annex  spreadsheet do not appear in this annex 
+Most of the elements “XYZ Lot Identifier” Business Terms that exist in the extended annex  spreadsheet do not appear in the technical implementation 
 as they are just a way to link a BG to a Lot/Part. When looking at the regulation extended annex (file “CELEX_32019R1780_EN_ANNEX_TABLE2”) 
 you will observe for multiple Business Groups the presence of elements of the kind “XYZ Lot Identifier” just after the row for the Business Group; 
-in most cases this is a way to associate a Business Group (and its content) to one or more specific lots. 
-In the XML, this information is pointless by design as the information of the Business Group may be found inside the element representing the lot.
+in most cases this is a way to associate an occurence of a Business Group (and its content) to one or more specific lots. 
+In the XML, (the Regulation Annex is a normalized representation); in the technical implementationthis information is pointless by design 
+as the information of the Business Group may be found inside the element representing the lot (except for some Result specific information, 
+the Technical Implementation is a denormalized representation). 
 +
 Some of the BTs for identifiers are not needed due to the way that the schema has been developed. There is a list of these in the documentation, 
 under the section https://docs.ted.europa.eu/eforms/latest/schema/identifiers.html#pointlessDueToDesignSection["Pointless due to design"].
