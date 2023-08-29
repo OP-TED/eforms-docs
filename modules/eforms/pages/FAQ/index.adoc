@@ -982,13 +982,13 @@ For the URLs and TED API documentation, please read the docs: https://docs.ted.e
 Will there be some API available, which users can use to transform/ convert TED XML to eForms?::
 
 A converter is being developed, which will take a TED XML and convert it to a partial eForms XML. “Partial” because eForms notices 
-contain more information than current TED notices. We will expose the converter to users through an API as a call service;
-however, a full conversion will not be possible. For notice types that the converter does not cover, 
+contain more information than current TED notices, often in a different format. For notice types that the converter does not cover, 
 the information from the previous TED schema form will need to be entered again in the eForm for procedures that span the transition period.
 If a field in a TED XML notice doesn’t exist in eForms, it’s only possible to use the free text of Additional Information field (BT-300).
 +
-A new release of the TED XML to eForms Converter (TEDXDC) has been published on link:https://github.com/OP-TED/ted-xml-data-converter[GitHub]. 
-This release of the tool can partially convert all the main forms for the R2.0.9 schema: PIN, CN and CAN.
+The XSLT code for the TED XML to eForms Converter (TEDXDC) is published on link:https://github.com/OP-TED/ted-xml-data-converter[GitHub]. 
+TThe current release of the tool can partially convert all the main forms for the R2.0.9 schema: PIN, CN and CAN. 
+We will expose the converter to users through an API as a call service. 
 
 
 
