@@ -1309,7 +1309,7 @@ BT-738 allows to choose a preferred notice publication date. How will this work 
 
 The BT-738 Notice Publication Date Preferred is available to help the buyer to coordinate publication dates at national and European levels. 
 The submitted notice will be stored in the OP internal system (TED Monitor 2022). When the preferred publication date is reached, 
-the notice will be published on TED. The preferred publication date can be set for up to 3 months into the future. 
+the notice will be published on TED. The preferred publication date can be set for up to 60 days into the future. 
 With SDK 1.6, Notice Preferred Publication Date (BT-738-notice) shall be between 2 and 60 days after the Notice Dispatch Date (BT-05-notice). 
 Previous SDK versions will still allow the extra month.
 
