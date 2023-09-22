@@ -105,7 +105,7 @@ In Change notices, section "Information about the change" should not be repeated
 
 Notices created before 15 March 2023 in Preview or Production environments and updated to SDK 1.6 may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
 
-Notices submitted to Preview eNotices2 as of 9 August 2023 do not acquire status “published” due to an error in the export process. We are working to fix this known issue as soon as possible.
+Notices submitted to Preview eNotices2 as of 8 September 2023 did not acquire status “published” due to an error in the export process. The export is now working, the status published is sent back and the root cause of the current issue has been identified. You might still encounter some delays in getting the status published until the final fix will be available in the next release of the application but a workaround is in place.
 
 The following issues have been identified as of application version 1.8.3:
 
