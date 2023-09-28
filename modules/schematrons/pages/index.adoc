@@ -4,7 +4,7 @@
 
 Schematron is a rule-based validation language for making assertions about the structure and content of XML documents. It is expressed in XML using a small number of elements and XPath. It has been standardised as part of ISO/IEC 19757.
 
-All validation rules to be applied on eForms XML notices are expressed in Schematron. The Central Validation Service (CVS) executes the Schematron files in order to produce a validation report in the Schematron Validation Report Language (SVRL).
+All validation rules to be applied on eForms XML notices are expressed in Schematron. The Central Validation Service (CVS) executes the Schematron files in order to produce a validation report in the Schematron Validation Report Language (SVRL). SVRL as also described as part of the ISO/IEC 19757 standard.
 
 == Structure of schematron folder and files
 
@@ -73,7 +73,7 @@ The validation report indicates the rules that were executed, and gives detailed
 <3> The message for the failed assertion.
 <4> Additional information on the failure.
 
-MOTE: As described above, the messages for failed assertions included in a validation report are identifiers of translation text. These identifiers and their translations are held in "rule_*" files in the `translations` folder of the SDK. CVS performs an additional step after validation, replacing the identifiers in the messages with the text of the messages in the language specified in the request to CVS.
+NOTE: As shown in the example above, after executing the Schematron files, the messages for failed assertions in the validation report are identifiers of translation text. These identifiers and their translations are held in "rule_*" files in the `translations` folder of the SDK. CVS performs an additional step after validation, replacing the identifiers in the messages with the text of the messages in the language specified in the request to CVS.
 
 The attributes of the `failed-assert` element provide specific information:
 
