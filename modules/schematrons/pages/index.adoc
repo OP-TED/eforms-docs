@@ -59,7 +59,7 @@ The definition of the phases is in the `complete-validation.sch` file:
 
 When validating a notice, you can look up its subtype by getting the value of the field "Notice Subtype" (OPP-070-notice), and use this value as the phase to use when executing the Schematron. This will avoid trying to execute all the rules that apply only to other notice subtypes.
 
-As the large majority of rules is specific to a notice subtype, this significantly reduces the execution time of the Schematron, in particular for large notices.
+As the large majority of rules are specific to a notice subtype, this significantly reduces the execution time of the Schematron, in particular for large notices.
 
 If you do not use the phases when executing the Schematron, you will get the same behaviour as for SDK versions before 1.10.0:
 
