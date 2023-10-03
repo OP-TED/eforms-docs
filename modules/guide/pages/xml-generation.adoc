@@ -135,7 +135,7 @@ NOTE: We know that extracting the `steps` from an XPath is not rocket science an
 
 === Getting the XML element order right
 In `fields/fields.json` a property called `xsdSequenceOrder` is available for every field that is not pointing to an XML attribute and node that is not `ND-Root`.
-You can read more about it in the link:https://docs.ted.europa.eu/eforms/latest/fields/index.html[fields documentation].
+You can read more about it in the xref:fields:index.adoc[field metadata documentation].
 
 Simplified example field from the `fields.json`:
 
