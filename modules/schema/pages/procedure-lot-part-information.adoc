@@ -2646,11 +2646,34 @@ reported in the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/procurement-procedure-type[procurement-procedure-type]
 codelist.
 
-For procedures types codified with the "oth-mult" or "oth-single" values
-(i.e. PIN CFC social & CN social), the procedure features (BT-88) must
+The following table provides the list of possible Procedure Type values for a given Notice subtype, bold italic characters highlights 
+the cases where the procedure may be accelerated:
+
+[[procedureTypePerNoticeSubtypeTable]]
+.Procedure Type per Notice Subtype Table
+[cols=">.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^.^,^",]
+[%noheader]
+|===
+|eForms subtype |1 |2 |3 |4 |5 |6 |7 |8 |9 |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |20 |21 |22 |23 |24 |25 |26 |27 |28 |29 |30 |31 |32 |33 |34 |35 |36 |37 |38 |39 |40 |CEI |T01 |T02 |X01 |X02
+|Legal basis |D24 |D25 |D81 |D24 |D25 |D81 |D24 |D25 |D81 |D24 |D25 |D24 |D25 |D23 |D25 |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D24 |D25 |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D23 |D24 |D25 |D23 |D24 |D25 |D24 |D25 |D23 |R1046 |R1370 |R1370 |R2157
+R1435 |R2137
+|Forbidden - Optional - Mandatory |F |F |F |F |F |F |O |O |O |M |M |O |O |F |F |M |M |M |F |O |O |F |M |M |M |M |M |M |M |M |M |F |O |O |F |M |M |F |F |F |F |M |M |F |F
+|open |-- |-- |-- |-- |-- |-- |X |X |-- |-- |-- |-- |-- |-- |-- |_*X*_ |_*X*_ |-- |-- |X |X |-- |X |X |-- |-- |-- |-- |_*X*_  |_*X*_  |-- |-- |X |X |-- |X |X |-- |-- |-- |-- |-- |-- |-- |
+|restricted |-- |-- |-- |-- |-- |-- |X |-- |X |X |X |X |X |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |X |X |-- |-- |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |X |X |-- |-- |-- |-- |-- |-- |-- |
+|neg-w-call |-- |-- |-- |-- |-- |-- |X |X |X |X |X |X |X |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |-- |-- |-- |-- |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |
+|neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |X |X |X |X |X |X |X |-- |X |X |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |
+|comp-dial |-- |-- |-- |-- |-- |-- |-- |-- |-- |X |X |X |X |-- |-- |X |_*X*_ |X |-- |X |X |-- |-- |-- |-- |-- |-- |-- |X |_*X*_ |X |-- |X |X |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |
+|innovation |-- |-- |-- |-- |-- |-- |-- |-- |-- |X |X |X |X |-- |-- |X |X |-- |-- |X |X |-- |-- |-- |-- |-- |-- |-- |X |X |-- |-- |X |X |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |
+|oth-single |-- |-- |-- |-- |-- |-- |x |x |-- |x |x |x |x |-- |-- |x |x |x |-- |x |x |-- |x |x |x |x |x |x |x |x |x |-- |x |x |-- |x |x |-- |-- |-- |-- |-- |-- |-- |
+|oth-mult |-- |-- |-- |-- |-- |-- |x |X |-- |x |x |x |x |-- |-- |x |x |x |-- |x |x |-- |x |x |x |x |x |x |x |x |x |-- |x |x |-- |x |x |-- |-- |-- |-- |-- |-- |-- |
+|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |x |x |-- |
+|===
+
+
+For PIN CFC social & CN social notices with procedure type "oth-mult" or "oth-single", the procedure features (BT-88) must
 also be specified.
 
-For a competitive dialog, the Procedure Type shall be marked:
+For a competitive dialog, the Procedure Type is marked:
 
 [source,xml]
 ----
