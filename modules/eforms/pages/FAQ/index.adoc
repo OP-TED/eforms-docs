@@ -155,6 +155,9 @@ https://op.europa.eu/en/web/ted-eforms/agenda-4th-eforms-03-2023
 * eForms presentations from the fifth eForms Technical Workshop in May 2023 +
 https://op.europa.eu/en/web/ted-eforms/agenda-5th-eforms-05-2023
 +
+* eForms presentations from the sixth eForms Technical Workshop in September 2023 +
+https://op.europa.eu/en/web/ted-eforms/agenda-6th-eforms-09-2023
++
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
 +
@@ -561,7 +564,7 @@ The formal change management governance is currently being set up and a change m
 
  
 
-Has development of eNotices2 started?:: 
+What is the function of eNotices2?:: 
 
 The development of eNotices2 started in 2020 and the application went in production in November 2022. 
 +
@@ -575,9 +578,10 @@ it easier and more streamlined for contracting parties to publish
 notices, while mitigating the inherent complexity of the eForms
 regulation as much as possible.
 +
-Presentations are available at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar]. An updated demo 
-of eNotices2 front-end application was presented during the 
-link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[eForms Technical Workshop of May 2022]. 
+Presentations are available at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar]. A demo of eNotices2 
+front-end application was presented during the  
+link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[eForms Technical Workshop of May 2022]
+and an updated presentation was given during the link:https://www.youtube.com/watch?v=Znx2ljypv6s[eNotices2 webinar of 19 September 2023].
 +
 eNotices2 is also available in link:https://docs.ted.europa.eu/home/eforms/preview/index.html#_enotices2["Preview"] for testing purposes.
 
@@ -1029,6 +1033,15 @@ from change-corrig-justification.gc. Both the original notice and its change not
 
 
 
+Are there any differences in the notice workflow and statuses between Production and Preview environments?::
+
+Production and Preview environments of eNotices2 are closely aligned. However, notices submitted in Preview 
+are not published in a test environment of TED and "Publishing” and “Published” are only mock statuses that are assigned to submitted notices 
+at around 15.00 and 16:00 respectively when these enter the export. Status “not published” is done upon request in Preview 
+provided that the submitted notice triggers a lawfulness warning. For more details, please see the Preview environment page.
+
+
+
 When using eNotices2 API, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLocale". What should an eSender input in the parameters?::
 
 Notice author email (mandatory property “noticeAuthorEmail” in the metadata) must be a valid email address. 
@@ -1068,9 +1081,8 @@ should also be mentioned. It is still going to be possible to award all the lots
 Should a single lot in a notice have the ID LOT-0000 or LOT-0001? What makes a lot "technical"?::
 
 In eForms, at least one Lot is mandatory. A single Lot is a "technical" lot with LOT-0000 as the only accepted identifier. 
-This means that a LOT-0001 would only exist if there were also a LOT-0002. Numerical sequence in numbering 
-does not have to be observed and there can be gaps in the numbering. If the notice contains multiple lots, 
-it is not allowed to have a technical lot. If you need to refer to a lot in the next step in the procedure, 
+Numerical sequence in numbering does not have to be observed and there can be gaps in the numbering. 
+If the notice contains multiple lots, it is not allowed to have a technical lot. If you need to refer to a lot in the next step in the procedure, 
 you would need to refer to the Internal Identifier, BT-22, which will be implemented as mandatory by OP. 
 +
 Similarly, a Prior Information Notice or Periodic Indicative Notice used only for information without multiple parts 
@@ -1083,8 +1095,8 @@ in the documentation.
 
 Which BT is planned to identify if the procurement is divided into lots or not?::
 
-None. This will be implied from the number of ProcurementProjectLot elements. If there is only one ProcurementProjectLot element, 
-then the procurement is not divided into lots. 
+None. This will be implied from the number of ProcurementProjectLot elements in the competition notice. 
+If there is only one ProcurementProjectLot element, then the procurement is not divided into lots. 
 
 
 
@@ -1353,7 +1365,7 @@ are expected in BT-760, even when null.
 
 Are BT-715 and BT-716 made redundant through OPT-155 and OPT-156? In this case will there be a codelist available for the three applicable vehicle types?:: 
 
-Yes, BT-715 and -716 have been made redundant by OPT-155 and OPT-156. 
+Yes, BT-715 and -716 have been made redundant by OPT-155 and OPT-156. The codelist “vehicles” (file vehicles.gc) is distributed with the SDK.
 
 
 
