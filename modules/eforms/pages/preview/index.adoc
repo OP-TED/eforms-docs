@@ -54,13 +54,13 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.10.2
-SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0
+Application version:: 1.11.1
+SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6, 1.7 and 1.8. SDK version 1.8 is supported in Preview environment as of 1 August 2023. 
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6, 1.7, 1.8 and 1.9. 
 
-In the Production environment, SDK version 1.8 is supported as of 9 August 2023.
+SDK version 1.9 is supported in Preview environment as of 10 October 2023. In the Production environment, SDK version 1.9 is supported as of 11 October 2023.
 
 In the codelist fields, prefilling of values is supported.  
 
@@ -109,14 +109,15 @@ Notices submitted to Preview eNotices2 as of 8 September 2023 did not acquire st
 
 The following issues have been identified as of application version 1.8.3:
 
-* OPT-060-Lot in the subtypes where it's mandatory "17", "18", "22" might prevent users from submitting a notice. 
-* T02 cannot be submitted until SDK 1.9.
+* In subtypes "17", "18", "22" when OPT-060-Lot rule is triggered, users must fill in BT-70-Lot. 
+* T02 cannot be submitted yet.
 * Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice.
 * Feature “Add a new language” and using the automatic translation service to prefill your new notice linguistic version is currently not working. 
 
-The following issues have been identified as of application version 1.10.2:
+The following issues have been identified as of application version 1.11.1:
 
-* Filling in any of the "(published later)" sections, will result in an invalid notice that cannot be submitted.
+* Legal basis (BT-01(f)-Procedure) field cannot be repeated.
+* If you are filling in an Organisation in the form-filling tool, Registration number (BT-501-Organization-Company) cannot be exported to the address book.
 
 
 ==== Known eNotices2 API issues 
@@ -124,17 +125,12 @@ The eNotices2 API URLs and parameters will change in later releases. The link:ht
 
 * Please note that the HTTP responses are still a work in progress; in certain cases, error code 500 is returned instead of 400. We are in the process of identifying these cases and correcting the responses and their corresponding messages to clearly indicate that the error is on client side and not on the server side. For instance, an error code 400 would mean that the notice is rejected by eNotices2 API and does not even get validated by CVS. In this case, the instance/ notice cannot be created in eNotices2. 
 
-* Currently, "stop publication" on a submitted notice will return error code in certain cases, i.e when the notice is being processed and ready to be published. The process will be simplified in the future with the introduction of status “PUBLISHING”, which will forbid stopping publication of a notice of this status. For more information on notice statuses, please see the link:https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[eForms FAQ].
 
-
-
-
-
-NOTE: The Preview environment is for testing purposes; new SDK releases will first be made available on Preview before deployment in Production. Please note, however, that Preview only simulates Production and notices submitted in Preview are not published in a test environment of TED. “Published” is only a mock status that is automatically assigned to submitted notices at around 15:00 CET when they enter the export (notices are not actually published on TED). If there is a preferred publication date, Preview will show status “published” as soon as the export finishes, which is the previous working day at around 15:00 CET. As an example, if the preferred publication date falls on a Monday, the status will change to "published" the previous Friday at around 15:00 CET, when the export takes place (provided Friday is not a public holiday). 
+NOTE: The Preview environment is for testing purposes; new SDK releases will first be made available on Preview before deployment in Production. Please note, however, that Preview only simulates Production and notices submitted in Preview are not published in a test environment of TED. "Publishing” and “Published” are mock statuses that will be assigned to submitted notices at around 15.00 and 16:00 respectively when they enter the export. If there is a preferred publication date, Preview will show status “published” as soon as the export finishes, which is the previous working day at around 16:00 CET. As an example, if the preferred publication date falls on a Monday, the status will change to "published" the previous Friday at around 16:00 CET, when the export takes place (provided Friday is not a public holiday). 
 
 NOTE: Notices submitted in Preview are only checked for lawfulness upon request. Please note that the lawfulness feature is activated in Preview as of 24 May 2023; this means that any notices submitted in Preview that trigger a lawfulness warning will remain in status "submitted" unless we receive your request to manually reject it. The feature has been activated so that eSenders can test the status "NOT_PUBLISHED" that a notice will receive when manually rejected by OP. Precondition for this is that the notice triggers lawfulness warning and we receive your request to reject it by business ID (i.e. notice ID + version ID).
 
-CAUTION: In Production (live environment), the actual export to TED happens on workdays around 16:00 CET depending on the number of notices to be published in the next OJ S. When this process is initiated and a submitted notice is in the daily export, it will be published on TED at 09:00 CET in the next available OJ S based on the release calendar. Its status will then change to “Published”. Please note that stopping publication of a notice is not allowed at this stage, i.e. between the export and publication. In the Preview environment, the notice is only in Publishing status for a few seconds because there is a mock process to imitate publishing on TED. In Production, the notice will be in "Publishing" status between the daily afternoon export and publication on TED the next morning (working days). We will later introduce the status “Publishing” for such cases to avoid confusion. For more information on notice statuses, please see the eForms FAQ.
+CAUTION: In Production (live environment), the actual export to TED happens on workdays around 16:00 CET depending on the number of notices to be published in the next OJ S. When this process is initiated and a submitted notice is in the daily export, it will be published on TED at 09:00 CET in the next available OJ S based on the release calendar. Its status will then change to “Published”. Please note that stopping publication of a notice is not allowed at this stage, i.e. between the export and publication. In the Preview environment, a notice reaches Publishing status on workdays between 15:00 and 16:00 CET once the export is done by our internal service. In Production, the notice will be in "Publishing" status between the daily afternoon export and publication on TED the next morning (working days). For more information on notice statuses, please see the eForms FAQ.
 
 ==== Tips for using the form-filling tool of eNotices2
 
@@ -157,7 +153,7 @@ We are currently in the process of providing more guidance for users of the eNot
     * To avoid authorisation issues when using eNotices2 API, log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account and make sure that you perform at least one valid API request with your key to eNotices2 API:
       ** link:https://enotices2.preview.ted.europa.eu/home[eNotices2 in Preview]
       ** https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/ 
-    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5, 1.6, 1.7 and 1.8. SDK version 1.8 is supported in Preview environment as of 1 August 2023 and in Production as of 9 August 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
+    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5, 1.6, 1.7, 1.8 and 1.9. SDK version 1.9 is supported in Preview environment as of 10 October 2023 and in Production as of 11 October 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
       https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
     * Dynamic rules that check between notices are not yet in place, users, however, should still respect the workflow of eForms notices. For instance, users may currently be able to submit a Change notice that refers to a parent notice that has not been yet published. The notice will still be blocked by our internal system (will enter in error). Currently, it is not possible to stop the publication of a notice that has entered in error in the Preview environment, but we are seeing what could be improved for these situations. 
     * Currently, there are some checks performed by eNotices2 API upon submission of a notice, e.g. eNotices2 will check (and reject) a notice with the same id and version id if it already exists in the system. In the future, such checks will be performed by CVS. 
@@ -166,12 +162,12 @@ We are currently in the process of providing more guidance for users of the eNot
 ==== Planned updates 
 [horizontal]
 Indicative planning:: September 2023
-Application version:: 1.10.x
+Application version:: 1.11.x
 SDK version:: 1.9
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version of Preview is into Production as of 9 August 2023.
+NOTE: The current application version of Preview is into Production as of 11 October 2023.
 
 
 === TED Central Validation Service 
@@ -197,7 +193,7 @@ API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/i
 ==== Currently available 
 [horizontal]
 Application version:: 1.3
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0
+SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
@@ -207,7 +203,6 @@ Scope:: Ongoing improvements with successive SDK releases
 
 ==== Known issues
 
-* In SDK 1.7 and 1.8, the “Results” section is not displayed properly on TED in Production. This bug will be fixed in SDK 1.9. 
 * Currency values are currently not rendered correctly, e.g. “10,000,000.00” instead of “10 000 000,00”. This will be fixed with SDK 2.0, 
 so that currency values are also correctly displayed in the OJ S. 
 
