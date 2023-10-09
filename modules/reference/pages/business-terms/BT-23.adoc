@@ -1,0 +1,13 @@
+= `BT-23`: Main Nature
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-23-Lot`:: Main Nature
+  `BT-23-Part`:: Main Nature
+  `BT-23-Part-List`:: Main Nature Listname
+  `BT-23-Procedure`:: Main Nature
+  `BT-23-Procedure-List`:: Main Nature Listname

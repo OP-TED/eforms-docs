@@ -1,0 +1,10 @@
+= `BT-60`: EU Funds
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-60-Lot`:: EU Funds
+  `BT-60-Lot-List`:: EU Funds Listname

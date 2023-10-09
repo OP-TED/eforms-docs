@@ -1,0 +1,10 @@
+= `BT-162`: Concession Revenue User
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-162-Tender`:: Concession Revenue User
+  `BT-162-Tender-Currency`:: Concession Revenue User Currency

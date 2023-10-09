@@ -1,0 +1,8 @@
+= `OPT-211`: Tendering Party Name
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-211-Tenderer`:: Tendering Party Name

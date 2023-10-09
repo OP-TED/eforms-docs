@@ -1,0 +1,10 @@
+= `BT-791`: Review Irregularity Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-791-Review`:: Review Irregularity Type
+  `BT-791-Review-List`:: Review Irregularity Type Listname

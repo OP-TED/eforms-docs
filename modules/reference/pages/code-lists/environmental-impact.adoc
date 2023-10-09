@@ -1,0 +1,19 @@
+= `environmental-impact` codelist
+:navtitle: Codelists
+
+This table provides the information about whether a procurement includes (and how) an approach to reducing the environmental impacts of the work, supply or service used in the technical specifications, award criteria, selection criteria or contract perfor
+[horizontal]
+Version:: 20230614-0
+URI:: http://publications.europa.eu/resource/dataset/environmental-impact
+Structure:: flat
+Used in:: xref:business-terms/BT-774.adoc[`BT-774`] Green Procurement
+
+== Codes
+[horizontal]
+  `biodiv-eco`::: The protection and restoration of biodiversity and ecosystems
+  `circ-econ`::: The transition to a circular economy
+  `clim-adapt`::: Climate change adaptation
+  `clim-mitig`::: Climate change mitigation
+  `other`::: Other
+  `pollu-prev`::: Pollution prevention and control
+  `water-mar`::: The sustainable use and protection of water and marine resources

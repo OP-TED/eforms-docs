@@ -1,0 +1,12 @@
+= `rewards-penalties` codelist
+:navtitle: Codelists
+
+List of codes for rewards and penalties associated to a Public Transportation Service.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/OPP-033.adoc[`OPP-033`] Penalties & Rewards Code
+
+== Codes
+[horizontal]
+  `rew-pen`::: Rewards and penalties

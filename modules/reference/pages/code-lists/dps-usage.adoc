@@ -1,0 +1,15 @@
+= `dps-usage` codelist
+:navtitle: Codelists
+
+This table provides a list whether a dynamic purchasing system is involved in a procurement and, in case of central purchasing bodies, whether it can be used by buyers not listed in the notice of the Official Journal of the European Union.
+[horizontal]
+Version:: 20230614-0
+URI:: http://publications.europa.eu/resource/dataset/dps-usage
+Structure:: flat
+Used in:: xref:business-terms/BT-766.adoc[`BT-766`] Dynamic Purchasing System
+
+== Codes
+[horizontal]
+  `dps-list`::: Dynamic purchasing system, only usable by buyers listed in this notice
+  `dps-nlist`::: Dynamic purchasing system, also usable by buyers not listed in this notice
+  `none`::: No dynamic purchase system

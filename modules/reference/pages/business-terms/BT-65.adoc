@@ -1,0 +1,10 @@
+= `BT-65`: Subcontracting Obligation
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-65-Lot`:: Subcontracting Obligation
+  `BT-65-Lot-List`:: Subcontracting Obligation Listname

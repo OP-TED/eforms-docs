@@ -1,0 +1,99 @@
+= `corporate-body` codelist
+:navtitle: Codelists
+
+The Corporate body authority table is a controlled vocabulary which provides the varying names of EU corporate bodies for a given time span.
+[horizontal]
+Version:: 20230614-0
+URI:: http://publications.europa.eu/resource/dataset/corporate-body
+Structure:: flat
+
+== Codes
+[horizontal]
+  `ACER`::: European Union Agency for the Cooperation of Energy Regulators
+  `BERD`::: European Bank for Reconstruction and Development
+  `BEREC_OFFICE`::: Agency for Support for BEREC
+  `CAJU`::: Clean Aviation Joint Undertaking
+  `CBEJU`::: Circular Bio-based Europe Joint Undertaking
+  `CDT`::: Translation Centre
+  `CEDEFOP`::: Cedefop
+  `CEPOL`::: European Union Agency for Law Enforcement Training
+  `CERN`::: CERN
+  `CERT`::: Computer Emergency Response Team for the EU institutions, bodies and agencies
+  `CFCA`::: European Fisheries Control Agency
+  `CHJU`::: Clean Hydrogen Joint Undertaking
+  `CINEA`::: European Climate, Infrastructure and Environment Executive Agency
+  `COM`::: European Commission
+  `CONSIL`::: Council of the European Union
+  `COR`::: European Committee of the Regions
+  `COU_EUR`::: Council of Europe
+  `COU_EUR_DB`::: Council of Europe Development Bank
+  `CPVO`::: Community Plant Variety Office
+  `CURIA`::: Court of Justice of the European Union
+  `EACEA`::: European Education and Culture Executive Agency
+  `EASA`::: European Union Aviation Safety Agency
+  `EBA`::: European Banking Authority
+  `ECA`::: European Court of Auditors
+  `ECB`::: European Central Bank
+  `ECDC`::: European Centre for Disease Prevention and Control
+  `ECHA`::: European Chemicals Agency
+  `ECHR`::: European Court of Human Rights
+  `EDA`::: European Defence Agency
+  `EDPS`::: European Data Protection Supervisor
+  `EEA`::: European Environment Agency
+  `EEAS`::: European External Action Service
+  `EESC`::: European Economic and Social Committee
+  `EFSA`::: European Food Safety Authority
+  `EFTA`::: European Free Trade Association
+  `EIB`::: European Investment Bank
+  `EIF`::: European Investment Fund
+  `EIGE`::: European Institute for Gender Equality
+  `EIOPA`::: European Insurance and Occupational Pensions Authority
+  `EISMEA`::: European Innovation Council and SMEs Executive Agency
+  `EIT`::: European Institute of Innovation and Technology
+  `ELA`::: European Labour Authority
+  `EMCDDA`::: European Monitoring Centre for Drugs and Drug Addiction
+  `EMEA`::: European Medicines Agency
+  `EMSA`::: European Maritime Safety Agency
+  `ENISA`::: European Union Agency for Cybersecurity
+  `EP`::: European Parliament
+  `EPORG`::: European Patent Organisation
+  `EPPO`::: European Public Prosecutor’s Office
+  `EPSO`::: European Personnel Selection Office
+  `ERA`::: European Union Agency for Railways
+  `ERC`::: European Research Council Executive Agency
+  `ESA`::: European Space Agency
+  `ESM`::: European Stability Mechanism
+  `ESMA`::: European Securities and Markets Authority
+  `ETF`::: European Training Foundation
+  `EUAA`::: European Union Agency for Asylum
+  `EUISS`::: European Union Institute for Security Studies
+  `EURAIL`::: Europe’s Rail Joint Undertaking
+  `EURATOM`::: Euratom Supply Agency
+  `EUROCONTROL`::: Eurocontrol
+  `EUROFOUND`::: Eurofound
+  `EUROHPC`::: European High-Performance Computing Joint Undertaking
+  `EUROJUST`::: European Union Agency for Criminal Justice Cooperation
+  `EUROPOL`::: Europol
+  `EURSCHOOL`::: European schools
+  `EUSC`::: European Union Satellite Centre
+  `EUSPA`::: European Union Agency for the Space Programme
+  `FAO`::: Food and Agriculture Organization
+  `FRA`::: European Union Agency for Fundamental Rights
+  `FRONTEX`::: Frontex
+  `FUSEN`::: Fusion for Energy Joint Undertaking
+  `HERA`::: Health Emergency Preparedness and Response Authority
+  `IEA`::: International Energy Agency
+  `IHIJU`::: Innovative Health Initiative Joint Undertaking
+  `ILO`::: International Labour Organization
+  `INTERPOL`::: Interpol
+  `KDTJU`::: Key Digital Technologies Joint Undertaking
+  `LISA`::: European Union Agency for the Operational Management of Large-Scale IT Systems in the Area of Freedom, Security and Justice
+  `NATO`::: North Atlantic Treaty Organization
+  `OAMI`::: European Union Intellectual Property Office
+  `OECD`::: Organisation for Economic Co-operation and Development
+  `OMB`::: European Ombudsman
+  `OSHA`::: European Agency for Safety and Health at Work
+  `PUBL`::: Publications Office of the European Union
+  `REA`::: European Research Executive Agency
+  `SESAR`::: Single European Sky ATM Research 3 Joint Undertaking
+  `SRB`::: Single Resolution Board

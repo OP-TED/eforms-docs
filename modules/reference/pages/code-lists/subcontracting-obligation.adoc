@@ -1,0 +1,16 @@
+= `subcontracting-obligation` codelist
+:navtitle: Codelists
+
+This table provides the list of codes and values used for the obligation of the economic operator of sharing parts of the original contract to third parties. The share may refer to the portion of work, services or supplies.
+[horizontal]
+Version:: 20230614-0
+URI:: http://publications.europa.eu/resource/dataset/subcontracting-obligation
+Structure:: flat
+Used in:: xref:business-terms/BT-65.adoc[`BT-65`] Subcontracting Obligation
+
+== Codes
+[horizontal]
+  `none`::: No subcontracting obligation applies.
+  `subc-chng`::: The contractor must indicate any change of subcontractors during the execution of the contract.
+  `subc-min`::: The contractor must subcontract a minimum percentage of the contract using the procedure set out in Title III of Directive 2009/81/EC.
+  `subc-oblig-2009-81`::: The buyer may oblige the contractor to award all or certain subcontracts through the procedure set out in Title III of Directive 2009/81/EC.

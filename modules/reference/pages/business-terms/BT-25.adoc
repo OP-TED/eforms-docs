@@ -1,0 +1,9 @@
+= `BT-25`: Quantity
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-25-Lot`:: Quantity

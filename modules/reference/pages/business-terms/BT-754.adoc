@@ -1,0 +1,10 @@
+= `BT-754`: Accessibility
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-754-Lot`:: Accessibility
+  `BT-754-Lot-List`:: Accessibility Listname

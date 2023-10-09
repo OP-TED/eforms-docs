@@ -1,0 +1,10 @@
+= `BT-202`: Modification Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-202-Contract`:: Modification Description
+  `BT-202-Contract-Language`:: Modification Description Language

@@ -1,0 +1,5 @@
+= `BT-557`: Group Framework Maximum Value Lot Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER

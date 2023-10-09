@@ -1,0 +1,10 @@
+= `BT-45`: Rewards Other
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-45-Lot`:: Rewards Other
+  `BT-45-Lot-Language`:: Rewards Other Language
