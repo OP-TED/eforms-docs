@@ -97,7 +97,6 @@ All the error messages and labels in the user interface (UI), notices and fields
 
 Notices go through CVS validation when they are submitted, or when the user clicks on "validate" in the user interface, however, the feature may be unstable.
 
-For the moment, CVS validation does not work dynamically, i.e. there is no check between notices. This has implications, e.g. for checking notices of the same procedure or the same UUID v4 and different version ID; currently, it is possible to submit and publish two notices that carry the same notice ID and different version IDs. See in contrast: https://docs.ted.europa.eu/eforms/latest/schema/notice-information.html#noticeIDSection.
     
 eNotices2 uses the codelists from the SDK, which have not been completely tailored. 
 
@@ -176,14 +175,17 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.3.0
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.4, 1.4.3, 1.5.3, 1.6.1, 1.7.0, 1.8.0
+Application version:: 1.4.1
+SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.4, 1.4.3, 1.5.3, 1.6.1, 1.7.0, 1.8.0, 1.9.0
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
 We are working on resolving the following limitations and known issues:
 
 * Large notices (3 MB or above) cannot be sent, due to a technical restriction.
-* The validation mode "dynamic" currently does not fetch information from other notices. Compared to the "static" mode, the only additional rule checks the value of the dispatch date (BT-05) against the current date. The rule may be currently more permissive, but as of SDK 2.0, it will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time.
+* Since SDK 1.7, the dispatch date (BT-05) rule checks the value against the current date. The rule may be currently more permissive, but as of SDK 2.0, it will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time.
+
+
+NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. As of SDK 1.9 a dynamic rule was added which checks that a notice ID does not match a notice ID that has already been published on TED.
 
 
 === TED Viewer
@@ -218,7 +220,7 @@ Scope:: Users can generate an API key. As of 5 July in Preview and 10 July 2023 
 ==== Planned updates
 [horizontal]
 Indicative planning:: Q4 2023
-Scope:: Public profiles will be made available at a later stage and will eventually replace the list of eSenders on SIMAP.
+Scope:: Public profiles will be made available at a later stage as a catalogue of eSenders and will eventually replace the list of eSenders on SIMAP.
 
 
 
