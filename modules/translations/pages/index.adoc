@@ -17,9 +17,9 @@ languages other than English have often been obtained via automated translation,
 ====
 
 [#index]
-== Index file
+== Information on the translations
 
-`translations.json` is the translations folder index file, it contains two arrays documented below.
+The file `translations.json` provides information on the available translations files in this folder, and the list of languages for which translations are provided.
 
 [#files]
 === Files array
@@ -92,7 +92,12 @@ field_en.xml
 ----
 
 The `<asset-type>` indicates the type of element the labels in the file are associated with. The possible asset types can be found in the xref:#asset-types[relevant section below]. The language identifier used is the standard 2 letter code in lowercase.
-There is a file named `language-codes.xml` (ending with .xml), this xref:#language-codes-xml[xml file] could be problematic for applications which do not expect the presence of this file, it is recommended to first go through the xref:#index[index file] found in the folder and get the desired xref:#files[filenames].
+
+[NOTE]
+====
+There is a file named `language-codes.xml`, because it has the `.xml` extension this xref:#language-codes-xml[xml file] could be problematic for applications which do not expect the presence of this file.
+Instead of reading every `.xml` file found in the folder, it is recommended to first go through the xref:#index[translations.json] file found in the folder and get the desired xref:#files[filenames].
+====
 
 == File format
 
