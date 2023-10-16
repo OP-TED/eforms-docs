@@ -22,13 +22,7 @@ and Contracting Entities is optional and the Publications Office (OP) will
 accept both the current TED schema notices and new eForms notices. The
 TED portal will show both the current TED schema and eForms notices. 
 +
-From 25 October 2023 onwards, the usage of eForms is mandatory and the
-Publications Office will no longer accept the current TED schema notices
-but only eForms notices. The TED portal will continue to show the TED
-schema notices that will have been received until 24 October 2023. 
-+
-The last day when OP will accept notices in the current TED schema format 
-will be 24 October 2023, in line with the repeal of Implementing Regulation (EU) 2015/1986.
+The current reception (eSentool and current eNotices) and production applications will be closed on 31 January 2024.
  
 
 Which systems will be available for eSenders during the transition period?:: 
@@ -39,36 +33,26 @@ that will help eSenders to develop and test their own applications. A guide on h
 link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
 link:https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-Sep29-eForms-Technical-Workshop.pptx/d0237e8e-500d-4b11-526c-e66c23ec773c?t=1664438251508["TED Developer Portal and using eForms APIs"].
 +
-Notices sent to the current eSentool will continue to be accepted until
-24 October 2023 and published on TED. As of 14 November 2022, eSenders
-will have the possibility to send notices in the new format; however,
-this will not become mandatory before 25 October 2023. 
-+
-As of 14 November 2022, TED displays the new eForms while it will continue showing all notices 
-submitted for the past 10 years even after 2024. 
-From 14 November 2022 until 24 October 2023, the Publications Office
-will run two systems in parallel, but it is up to the eSenders to
-implement changes on their systems as and when best suits them during
-this time. The current reception (eSentool and current eNotices) and production systems will be discontinued at the end of 2023.
+The current reception (eSentool and current eNotices) and production applications will be closed on 31 January 2024.
 
- 
+
 
 Until when will the current eNotices application be available?:: 
  
-The current eNotices application will be available to submit notices until 24 October 2023. 
+The current eNotices application will be available to submit notices until 31 January 2024. 
 +
-The new eNotices2 application is available as of 14 November 2022
-and will be running in parallel with the current eNotices application during the
+The new eNotices2 application has been available since 14 November 2022
+and is running in parallel with the current eNotices application during the
 transition period. 
 +
 eNotices2 is an application that performs both functions carried out 
 by the current eNotices and eSentool applications. Authorised applications 
-will be able to send complete notices to the API data interface of eNotices2, 
+can send complete notices to the API data interface of eNotices2, 
 and if they are valid, they will be published in the Supplement to the Official Journal 
-of the European Union (OJ S). Individuals with an eNotices2 account will be able to 
+of the European Union (OJ S). Individuals with an eNotices2 account can
 create notices within eNotices2 using its interactive web forms. 
 +
-eNotices2 will not take into account the different tailoring policies of Member States. 
+eNotices2 does not take into account the different tailoring policies of Member States. 
 As long as a submitted notice is valid against the eForms schema and the validation 
 rules which implement the EU procurement regulations, it can be published in the OJ S. 
 It will be up to the notice authors to apply any additional tailoring required 
@@ -106,18 +90,6 @@ When submitting a notice, users can select a preferred publication date, or can 
   
 
 
-What is the earliest possible time by when eForms could be introduced on a national level?:: 
-
-The application of the eForms regulation in national legislation is
-not under the control of OP or the European
-Commission. We assume that in any case the earliest possible time by
-when eForms could be introduced at a national level would be the same as
-for the EU level, namely 14 November 2022. 
-+
-See also the section on link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[implementation in EU countries].
-
-
- 
 What sources of information are available for eForms?:: 
 
 The following websites cover the various aspects of eForms: 
@@ -476,8 +448,7 @@ E1, E2, E3, E4 and E5 refer to forms that are not part of
 the eForms regulation, but they were included in the “Extended Annex” to
 regulation 2019/1780 available at: https://ec.europa.eu/docsroom/documents/43488
 +
-These forms will be implemented after eForms are mandatory in October
-2023 and their use, which currently has no EU legal basis, will be optional. 
+These optional forms will be implemented in 2024, as defined in the second amendment to the eForms implementing regulation. 
 +
 They would extend (E) the set of the other forms and correspond to the
 following notices:  
@@ -589,10 +560,10 @@ eNotices2 is also available in link:https://docs.ted.europa.eu/home/eforms/previ
  
 From 14 November 2022, will EU public buyers be able to create their eForms in eNotices2? Will it propose all the fields (mandatory and optional)?::
 
-This is the point of eNotices2: it will provide all mandatory and optional fields 
+This is the point of eNotices2: it provides all mandatory and optional fields 
 and it will have rules to determine which fields are mandatory under certain conditions. 
-There will also be a feature for users to make some of the optional fields mandatory. In the same way, 
-it is also foreseen that if an optional field is not relevant for some users, the administrator of 
+There is also be a feature for users to make some of the optional fields mandatory. In the same way, 
+it is also possible that if an optional field is not relevant for some users, the administrator of 
 the organisation can “hide” these optional fields from view should they wish so.
 
 
@@ -784,20 +755,7 @@ See also related GitHub discussion from a technical perspective: https://github.
 
 
 
-Is it possible to predict and announce how many SDK releases there will be or how often these will happen before October 2023?::
-
-We cannot predict with certainty how many SDK versions we will have in 2023. Our current release pace is quite fast 
-while we correct and improve the SDK content but, very roughly, we estimate that we might have 5 or 6 minor versions until the summer of 2023.  
-There will be at least one minor version of more significance towards the end of 2023 if there is an amendment to the eForms regulation. 
-+
-There will be as many patch releases as needed for each SDK version, i.e. releases that don’t affect the validity of submitted XMLs, 
-like essential changes to translations or the view templates. As multiple versions of the SDK can be used at the same time 
-given that they are still acceptable, eSenders would not need to upgrade to the latest SDK version; we would, however, encourage you 
-to try to plan regular updates as this will gradually make the adjustment effort necessary less and less significant. 
-
-
-
-With which SDK version can an eSender go live by October 2023?::
+With which SDK version can an eSender go live?::
 
 We will not stop support of an SDK version before a 6-month transition period, during which eSenders will have time 
 to update their applications and test in Preview environment. Supporting several SDK versions in parallel allows for 
@@ -1420,7 +1378,7 @@ establishing standard forms for the publication of notices in the field of publi
 - The spreadsheet explicitly lists lot identifiers (e.g. Purpose Lot Identifier BT-137), while the Annex of the Implementing Regulation does not.
 +
 In both cases, these additional details are useful to know for technical implementation, but are an excessive technical detail to be included in the act itself.   +
-- The extended Annex includes additional notices that will be made available to national authorities for voluntary use after October 2023. 
+- The extended Annex includes additional notices that will be made available to national authorities for voluntary use in 2024. 
 These are marked as "E1" - "E5" in the notice number field and their use is explained in chapter 3 of the eForms Policy Implementation Handbook. 
 Extended notices E1 and E5 contain fields not used in other notices. These cases are marked in column AZ of the ‘Annex’ sheet.    
 
