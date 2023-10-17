@@ -2677,11 +2677,11 @@ the cases where the procedure may be accelerated:
 |eForms subtype |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |20 |21 |22 |23 |24 
 |Legal basis |D24 |D25 |D24 |D25 |D23 |D25 |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D24 |D25 
 |Forbidden - Optional - Mandatory |M |M |O |O |F |F |M |M |M |F |O |O |F |M |M 
-|open |-- |-- |-- |-- |-- |-- |_*X*_ |_*X*_ |-- |-- |X |X |-- |X |X 
-|restricted |X |X |X |X |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |X |X 
-|neg-w-call |X |X |X |X |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |-- |-- 
+|open |-- |-- |-- |-- |-- |-- |*_X_* |*_X_* |-- |-- |X |X |-- |X |X 
+|restricted |X |X |X |X |-- |-- |*_X_* |*_X_* |*_X_* |-- |X |X |-- |X |X 
+|neg-w-call |X |X |X |X |-- |-- |*_X_* |*_X_* |*_X_* |-- |X |X |-- |-- |-- 
 |neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|comp-dial |X |X |X |X |-- |-- |X |_*X*_ |X |-- |X |X |-- |-- |-- 
+|comp-dial |X |X |X |X |-- |-- |X |*_X_* |X |-- |X |X |-- |-- |-- 
 |innovation |X |X |X |X |-- |-- |X |X |-- |-- |X |X |-- |-- |-- 
 |oth-single |x |x |x |x |-- |-- |x |x |x |-- |x |x |-- |x |x 
 |oth-mult |x |x |x |x |-- |-- |x |x |x |-- |x |x |-- |x |x 
@@ -2697,11 +2697,11 @@ the cases where the procedure may be accelerated:
 |eForms subtype |25 |26 |27 |28 |29 |30 |31 |32 |33 |34 |35 |36 |37 |38 |39 |40 
 |Legal basis |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D23 |D24 |D25 |D23 |D24 |D25 |D24 |D25 |D23 
 |Forbidden - Optional - Mandatory |M |M |M |M |M |M |M |F |O |O |F |M |M |F |F |F 
-|open |-- |-- |-- |-- |_*X*_  |_*X*_  |-- |-- |X |X |-- |X |X |-- |-- |-- 
-|restricted |-- |-- |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |X |X |-- |-- |-- 
-|neg-w-call |-- |-- |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |-- |-- |-- |-- |-- 
+|open |-- |-- |-- |-- |*_X_*  |*_X_*  |-- |-- |X |X |-- |X |X |-- |-- |-- 
+|restricted |-- |-- |-- |-- |*_X_* |*_X_* |*_X_* |-- |X |X |-- |X |X |-- |-- |-- 
+|neg-w-call |-- |-- |-- |-- |*_X_* |*_X_* |*_X_* |-- |X |X |-- |-- |-- |-- |-- |-- 
 |neg-wo-call |X |X |X |X |X |X |X |-- |X |X |-- |-- |-- |-- |-- |-- 
-|comp-dial |-- |-- |-- |-- |X |_*X*_ |X |-- |X |X |-- |-- |-- |-- |-- |-- 
+|comp-dial |-- |-- |-- |-- |X |*_X_* |X |-- |X |X |-- |-- |-- |-- |-- |-- 
 |innovation |-- |-- |-- |-- |X |X |-- |-- |X |X |-- |-- |-- |-- |-- |-- 
 |oth-single |x |x |x |x |x |x |x |-- |x |x |-- |x |x |-- |-- |-- 
 |oth-mult |x |x |x |x |x |x |x |-- |x |x |-- |x |x |-- |-- |--  
