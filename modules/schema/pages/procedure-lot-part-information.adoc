@@ -2691,21 +2691,21 @@ the cases where the procedure may be accelerated:
 
 [[procedureTypePerNoticeSubtypeTableResultForms]]
 .Procedure Type per Notice Subtype Table - DAP, Result and Contract Modification forms
-[cols=">.^15%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%",]
+[cols=">.^15%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%",]
 [%noheader]
 |===
 |eForms subtype |25 |26 |27 |28 |29 |30 |31 |32 |33 |34 |35 |36 |37 |38 |39 |40 
 |Legal basis |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D23 |D24 |D25 |D23 |D24 |D25 |D24 |D25 |D23 
 |Forbidden - Optional - Mandatory |M |M |M |M |M |M |M |F |O |O |F |M |M |F |F |F 
-|open |-- |-- |-- |-- |_*X*_  |_*X*_  |-- |-- |X |X |-- |X |X |-- |-- 
-|restricted |-- |-- |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |X |X |-- |-- 
-|neg-w-call |-- |-- |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |-- |-- |-- |-- 
-|neg-wo-call |X |X |X |X |X |X |X |-- |X |X |-- |-- |-- |-- |-- 
-|comp-dial |-- |-- |-- |-- |X |_*X*_ |X |-- |X |X |-- |-- |-- |-- |-- 
-|innovation |-- |-- |-- |-- |X |X |-- |-- |X |X |-- |-- |-- |-- |--  
-|oth-single |x |x |x |x |x |x |x |-- |x |x |-- |x |x |-- |--  
-|oth-mult |x |x |x |x |x |x |x |-- |x |x |-- |x |x |-- |--  
-|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|open |-- |-- |-- |-- |_*X*_  |_*X*_  |-- |-- |X |X |-- |X |X |-- |-- |-- 
+|restricted |-- |-- |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |X |X |-- |-- |-- 
+|neg-w-call |-- |-- |-- |-- |_*X*_ |_*X*_ |_*X*_ |-- |X |X |-- |-- |-- |-- |-- |-- 
+|neg-wo-call |X |X |X |X |X |X |X |-- |X |X |-- |-- |-- |-- |-- |-- 
+|comp-dial |-- |-- |-- |-- |X |_*X*_ |X |-- |X |X |-- |-- |-- |-- |-- |-- 
+|innovation |-- |-- |-- |-- |X |X |-- |-- |X |X |-- |-- |-- |-- |-- |-- 
+|oth-single |x |x |x |x |x |x |x |-- |x |x |-- |x |x |-- |-- |-- 
+|oth-mult |x |x |x |x |x |x |x |-- |x |x |-- |x |x |-- |-- |--  
+|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |===
 
 
