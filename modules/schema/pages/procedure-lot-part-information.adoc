@@ -2732,7 +2732,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 For PIN CFC social & CN social notices with procedure type "oth-mult" or "oth-single", the procedure features (BT-88) must
 also be specified.
 
-For a competitive dialog, the Procedure Type is marked:
+As an example of the XML markup, for a competetive dialog, the Procedure Type is marked:
 
 [source,xml]
 ----
