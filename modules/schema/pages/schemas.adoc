@@ -55,6 +55,10 @@ namespaces and schema versioning is provided below.
 The namespaces used in the eForms schemas are described below in Table
 3.
 
+Please note that the names below are URIs (i.e. Uniform Resouce Identifiers) used to 
+uniquely identify the domains. They are not URLs (i.e. Uniform Resource Locators) to 
+any online resource.
+
 [[namespacePrefixesNamesTable]]
 .Namespace prefixes & names
 [cols="^.^5%,.^25%,.^70%",]
@@ -82,13 +86,13 @@ urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2
 |urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2
 |Covers all UBL common extension components
 
-|*efext* |http://data.europa.eu/p27/eforms-ubl-extensions/1 |Covers all eForms specific
+|*efext* |\http://data.europa.eu/p27/eforms-ubl-extensions/1 |Covers all eForms specific
 extension components
 
-|*efac* |http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1 |Covers all
+|*efac* |\http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1 |Covers all
 eForms specific extension aggregate components
 
-|*efbc* |http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1 |Covers all eForms
+|*efbc* |\http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1 |Covers all eForms
 specific extension basic components
 |===
 
