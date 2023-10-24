@@ -11,19 +11,19 @@ The schema files are organised in 2 folders under `schemas`, following the same 
 * `maindoc`: schemas for the individual document types.
 * `common`: schemas in the common library, referenced and used from the document types defined in the `maindoc` folder.
 
-The entry point to validate an XML notices against the schema is a one of the files in the `maindoc` folder. The appropriate file can be selected based on the root element, namespace, or notice subtype of the XML notice, using the information provided in the xref:notice-types:index.adoc[`notice-types.json` file].
+The entry point to validate an XML notice against the schema is a one of the files in the `maindoc` folder. The appropriate file can be selected based on the root element, namespace, or notice subtype of the XML notice, using the information provided in the xref:notice-types:index.adoc[`notice-types.json` file].
 
 == Differences with UBL
 
 In order to meet some requirements specific to eForms, we have extended the UBL 2.3 standard, through the extension mechanism it provides, and also by creating an additional document type.
 
-This means that any valid eForms XML notice is also conforms to UBL 2.3.
+This means that any valid eForms XML notice also conforms to UBL 2.3.
 
-The files coming from the UBL standard (with names starting with `UBL` and `BDNDR`) have been left unmodified, with the exception of `UBL-ExtensionContentDataType-2.3.xsd`, which has been modified to reference only the eForms extension.
+The files taken from the UBL standard (with names starting with `UBL` and `BDNDR`) have been left unmodified, with the exception of `UBL-ExtensionContentDataType-2.3.xsd`, which has been modified to reference only the eForms extension.
 
-The XSD files that are part of the UBL standard but are not used in eForms are not included in the eForms SDK.
+The XSD files that are part of the UBL standard but not used in eForms are not included in the eForms SDK.
 
-The XSD files added for eForms have a name that starts with `EFORMS`:
+The XSD files added for eForms have names that start with `EFORMS`:
 
 `maindoc\EFORMS-BusinessRegistrationInformationNotice.xsd`::
 Specific document type for business registration notices (notice subtypes X01 and X02).
