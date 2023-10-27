@@ -89,7 +89,7 @@ As of SDK version 1.6, the lot distribution for lot groups has changed; there is
 
 ==== Known issues 
 
-At this point, the application is incomplete and some use cases are not fully implemented. 
+Some use cases and features are still in the process of being implemented.
 
 Some validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”.
 
