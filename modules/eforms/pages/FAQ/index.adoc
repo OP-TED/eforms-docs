@@ -949,7 +949,7 @@ the information from the previous TED schema form will need to be entered again 
 If a field in a TED XML notice doesn’t exist in eForms, it’s only possible to use the free text of Additional Information field (BT-300).
 +
 The XSLT code for the TED XML to eForms Converter (TEDXDC) is published on link:https://github.com/OP-TED/ted-xml-data-converter[GitHub]. 
-TThe current release of the tool can partially convert all the main forms for the R2.0.9 schema: PIN, CN and CAN. 
+The current release of the tool can partially convert all the main forms for the R2.0.9 schema: PIN, CN and CAN. 
 We will expose the converter to users through an API as a call service. 
 
 
