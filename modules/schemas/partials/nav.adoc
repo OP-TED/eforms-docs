@@ -1,0 +1,1 @@
+* xref:{page-component-version}@eforms:schemas:index.adoc[XML Schemas]
