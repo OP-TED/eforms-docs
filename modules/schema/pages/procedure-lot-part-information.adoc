@@ -4034,6 +4034,36 @@ Multiple exclusive ways exist to report the Procurement duration:
 
 and the most suitable one shall be adopted.
 
+Also some flexibility is given with the possibility to combine some elements for further precision 
+without contradicting the previous requirement. All the possible cases are reported in the table 
+below where X indicates that an element is used and (X) that an element may be used under some condition 
+only:
+
+[[variousPlannedPeriodPossibleCombinationsTable]]
+.List of various possible combinations for Planned Period
+[cols="^.^20%,^.^20%,^.^20%,^.^20%,^.^20%",]
+|===
+|*Case* |*Duration Start Date (BT-536)* |*Duration End Date (BT-537)* |*Duration Period (BT-36)* 
+|*Duration Other (BT-538)* 
+
+|#1 |X |X | |
+
+|#2 | | |X |
+
+|#3 | | | |X
+
+|#4 |X | |X |
+
+|#5 | |X |X |
+
+|#6 |X | | |X
+
+|#7 | |(X) | |X
+
+|===
+
+(X): only possible when duration other differs from "unlimited"
+
 * **+++Duration is "unlimited" or "unknown"+++** _(Duration
 Other BT-538)_
 
