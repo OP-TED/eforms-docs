@@ -118,6 +118,8 @@ The following issues have been identified as of application version 1.11.1:
 * Legal basis (BT-01(f)-Procedure) field cannot be repeated.
 * If you are filling in an Organisation in the form-filling tool, Registration number (BT-501-Organization-Company) cannot be exported to the address book.
 
+Due to an error in our internal systems, notices submitted to eNotices2 Preview as of 6 November 2023 do not get status Published; we are working to fix this as soon as possible.
+
 
 ==== Known eNotices2 API issues 
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
