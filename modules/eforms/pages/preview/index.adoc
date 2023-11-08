@@ -118,7 +118,7 @@ The following issues have been identified as of application version 1.11.1:
 * Legal basis (BT-01(f)-Procedure) field cannot be repeated.
 * If you are filling in an Organisation in the form-filling tool, Registration number (BT-501-Organization-Company) cannot be exported to the address book.
 
-Due to an error in our internal systems, notices submitted to eNotices2 Preview as of 6 November 2023 do not get status Published; we are working to fix this as soon as possible.
+Due to an error in our internal systems, notices submitted to eNotices2 Preview from 6 to 8 November 2023 did not get status Published; the issue was fixed on 8 November.
 
 
 ==== Known eNotices2 API issues 
