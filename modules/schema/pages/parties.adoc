@@ -1743,6 +1743,10 @@ Different stakeholders associated to the buyer share the same
 
 * the eSender.
 
+Any Contracting Party must contain one and only one reference to an organisation acting 
+as Buyer (OPT-300-Procedure-Buyer), when multiple buyers must explicitely be identified, 
+then multiple "_cac:ContractingParty_" elements must be used.
+
 A mark-up sample with:
 
 * a procurement service provider, and
