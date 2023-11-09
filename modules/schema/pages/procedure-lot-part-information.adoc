@@ -3019,24 +3019,27 @@ of which the use of codes is context dependent as shown in <<directAwardJustific
 |===
 
 [[maxCandidatesSection]]
-=== Maximum Candidates Indicator (BT-661), Maximum & Minimum Candidates (Procedure) (BT-50)
+=== Maximum Candidates Indicator (BT-661), Maximum & Minimum Candidates (Procedure) (BT-51, BT-50)
 
 Respectively:
 
-* the existence of a maximum number of candidates,
+* the existence of a maximum number of candidates (BT-661),
 
-* this maximum number of candidates, and
+* this maximum number of candidates (BT-51), and
 
 * the minimum number of candidates to be invited for the second
-stage,
+stage (BT-50),
 
 are marked as follows:
 
 [source,xml]
 ----
 <cac:EconomicOperatorShortList>
+    <!-- Maximum Candidates Indicator (BT-661) -->
     <cbc:LimitationDescription>true</cbc:LimitationDescription>
+    <!-- Maximum Candidates Number (BT-51) -->
     <cbc:MaximumQuantity>10</cbc:MaximumQuantity>
+    <!-- Minimum Candidates (BT-50) -->
     <cbc:MinimumQuantity>3</cbc:MinimumQuantity>
 </cac:EconomicOperatorShortList>
 ----
