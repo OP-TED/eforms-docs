@@ -54,6 +54,9 @@ namespaces and schema versioning is provided below.
 
 The namespaces used in the eForms schemas are described below in Table
 3.
+Please note that the names below are URIs (i.e. Uniform Resouce Identifiers) used to 
+uniquely identify the domains. They are not URLs (i.e. Uniform Resource Locators) to 
+any online resource.
 
 Please note that the names below are URIs (i.e. Uniform Resouce Identifiers) used to 
 uniquely identify the domains. They are not URLs (i.e. Uniform Resource Locators) to 

@@ -16,6 +16,72 @@ The texts provided are not final and are subject to change. In particular,
 languages other than English have often been obtained via automated translation, and have not been reviewed yet. We will continue to add and update procurement labels in every future release of the SDK.
 ====
 
+[#index]
+== Information on the translations
+
+The file `translations.json` provides information on the available translations files in this folder, and the list of languages for which translations are provided.
+
+[#files]
+=== Files array
+
+The `files` array contains metadata about each translation XML file:
+----
+  "files" : [ {
+    "assetType" : "business-term",
+    "twoLetterCode" : "bg",
+    "threeLetterCode" : "bul",
+    "filename" : "business-term_bg.xml"
+  }, {
+    "assetType" : "business-term",
+    "twoLetterCode" : "cs",
+    "threeLetterCode" : "ces",
+    "filename" : "business-term_cs.xml"
+  }, { ...
+----
+It is recommended that applications go through this array to find the filenames instead of relying on file naming conventions.
+For example this could be used to find translations for a given xref:#asset-types[asset types] and xref:#languages[languages].
+
+[#languages]
+=== Languages array
+
+The `languages` array lists available languages:
+----
+  "languages" : [ {
+    "description" : "Bulgarian",
+    "twoLetterCode" : "bg",
+    "threeLetterCode" : "bul"
+  }, {
+    "description" : "Czech",
+    "twoLetterCode" : "cs",
+    "threeLetterCode" : "ces"
+  }, { ...
+----
+In combination with a codelist like `language.gc` this could be used to list available languages in your application. This could also be used to go from two to three letter codes or the other way around.
+
+[#language-codes-xml]
+== Language codes XML
+
+The `language-codes.xml` is provided for convenience for use inside XML based solutions.
+Equivalent information is available in the `translations.json` file in an array called xref:#languages[languages].
+
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<languages>
+   <language>
+      <twoLetterCode>bg</twoLetterCode>
+      <threeLetterCode>bul</threeLetterCode>
+      <description>Bulgarian</description>
+   </language>
+   <language>
+      <twoLetterCode>cs</twoLetterCode>
+      <threeLetterCode>ces</threeLetterCode>
+      <description>Czech</description>
+   </language>
+   <!--...-->
+</languages>
+----
+
 == File naming conventions
 
 The file name is composed of two parts: `<asset-type>_<language-identifier>.xml`. The filename is always in lower case.
@@ -26,6 +92,12 @@ field_en.xml
 ----
 
 The `<asset-type>` indicates the type of element the labels in the file are associated with. The possible asset types can be found in the xref:#asset-types[relevant section below]. The language identifier used is the standard 2 letter code in lowercase.
+
+[NOTE]
+====
+There is a file named `language-codes.xml`, because it has the `.xml` extension this xref:#language-codes-xml[xml file] could be problematic for applications which do not expect the presence of this file.
+Instead of reading every `.xml` file found in the folder, it is recommended to first go through the xref:#index[translations.json] file found in the folder and get the desired xref:#files[filenames].
+====
 
 == File format
 
