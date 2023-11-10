@@ -29,8 +29,6 @@ How each notice type is structured.
 Reusable templates for visualising notices.
 * xref:translations:index.adoc[Translations] +
 Find out which translations are included in the SDK and learn how to use them.
-* xref:schemas:index.adoc[XML Schemas] +
-The XSD files that define the structure of XML notices.
 * xref:schematrons:index.adoc[Schematron] +
 The Schematron files used to validate XML notices.
 * xref:efx:index.adoc[eForms Expression Language] +

@@ -10,7 +10,6 @@ include::{page-component-version}@eforms:codelists:partial$nav.adoc[]
 include::{page-component-version}@eforms:notice-types:partial$nav.adoc[]
 include::{page-component-version}@eforms:viewer-templates:partial$nav.adoc[]
 include::{page-component-version}@eforms:translations:partial$nav.adoc[]
-include::{page-component-version}@eforms:schemas:partial$nav.adoc[]
 include::{page-component-version}@eforms:schematrons:partial$nav.adoc[]
 include::{page-component-version}@eforms:efx:partial$nav.adoc[]
 

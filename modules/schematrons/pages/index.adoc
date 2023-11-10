@@ -14,7 +14,6 @@ Schematron rules are organised in 2 folders under `schematrons`:
 * `dynamic`: all rules in `static`, plus rules that depend on information outside of the notice being validated, for example the current date, or the content of another notice.
 
 In each folder, the entry point is a file named `complete-validation.sch`. This file references all the other files with `include` statements.
-The included files each define one pattern, which is a set of rules.
 
 The individual Schematron files are executed in a logical sequence:
 
@@ -24,47 +23,6 @@ The individual Schematron files are executed in a logical sequence:
 . Check the presence and absence of leaf elements or their related values depending on specific conditions.
 . Check the values of leaf elements are consistent with each other.
 . For `dynamic`, check rules that depend on information outside of the notice being validated.
-
-=== Phases
-
-Starting from SDK version 1.10.0, the Schematron files make use of phases, a feature of the Schematron standard. A phase defines a named group of active patterns, and you can set the phase to use when executing the Schematron validation, thus defining the subset of rules to be executed.
-
-The various patterns in the schematron files contain either rules that apply only to a specific notice subtype, or rules that apply to any notice.
-
-We have defined one phase for each notice subtype, with an identifier equal to the notice subtype, and all the rules that must be applied to notices of that subtype: all patterns for this subtype, and all patterns not specific to a subtype.
-
-The definition of the phases is in the `complete-validation.sch` file:
-
-[source,xml]
-----
-<phase id="16"> <!--1-->
-    <active pattern="EFORMS-validation-stage-1a" /> <!--2-->
-    <active pattern="EFORMS-validation-stage-1b-16" /> <!--3-->
-    <active pattern="EFORMS-validation-stage-2a-16" />
-    <active pattern="EFORMS-validation-stage-2b" />
-    <active pattern="EFORMS-validation-stage-3a" />
-    <active pattern="EFORMS-validation-stage-3b" />
-    <active pattern="EFORMS-validation-stage-3b-16" />
-    <active pattern="EFORMS-validation-stage-4-16" />
-    <active pattern="EFORMS-validation-stage-5" />
-</phase>
-<phase id="17">
-    <active pattern="EFORMS-validation-stage-1a" />
-    <active pattern="EFORMS-validation-stage-1b-17" />
-    ...
-----
-<1> Definition of a phase with its identifier.
-<2> Pattern containing rules not specific to a subtype.
-<3> Pattern containing rules that apply only to notices with subtype 16.
-
-When validating a notice, you can look up its subtype by getting the value of the field "Notice Subtype" (OPP-070-notice), and use this value as the phase to use when executing the Schematron. This will avoid trying to execute all the rules that apply only to other notice subtypes.
-
-As the large majority of rules are specific to a notice subtype, this significantly reduces the execution time of the Schematron, in particular for large notices.
-
-If you do not use the phases when executing the Schematron, you will get the same behaviour as for SDK versions before 1.10.0:
-
-* If no phase is set when executing the Schematron, all patterns are considered active, so all rules will be executed.
-* The rules that apply only to a specific notice subtype all have the corresponding restriction (with a predicate in the rule context).
 
 == Configuration for dynamic rules
 

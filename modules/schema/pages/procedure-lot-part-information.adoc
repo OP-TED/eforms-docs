@@ -2646,93 +2646,11 @@ reported in the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/procurement-procedure-type[procurement-procedure-type]
 codelist.
 
-The following tables provide the list of possible Procedure Type values for a given Notice subtype (X: allowed code; --: forbidden 
-code; A: allowed code and procedure may additionally be accelerated) :
-
-[[procedureTypePerNoticeSubtypeTablePlanningForms]]
-.Procedure Type per Notice Subtype Table - Planning forms
-[cols=">.^18%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%",]
-[%noheader]
-|===
-|eForms subtype |1 |2 |3 |4 |5 |6 |7 |8 |9 
-|Legal basis |D24 |D25 |D81 |D24 |D25 |D81 |D24 |D25 |D81 
-|Forbidden - Optional - Mandatory |F |F |F |F |F |F |O |O |O 
-|open |-- |-- |-- |-- |-- |-- |X |X |-- 
-|restricted |-- |-- |-- |-- |-- |-- |X |-- |X 
-|neg-w-call |-- |-- |-- |-- |-- |-- |X |X |X 
-|neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|comp-dial |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|innovation |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|oth-single |-- |-- |-- |-- |-- |-- |X |X |-- 
-|oth-mult |-- |-- |-- |-- |-- |-- |X |X |-- 
-|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|===
-
-
-[[procedureTypePerNoticeSubtypeTableCompetitionForms]]
-.Procedure Type per Notice Subtype Table - Competition forms
-[cols=">.^10%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%",]
-[%noheader]
-|===
-|eForms subtype |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |20 |21 |22 |23 |24 
-|Legal basis |D24 |D25 |D24 |D25 |D23 |D25 |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D24 |D25 
-|Forbidden - Optional - Mandatory |M |M |O |O |F |F |M |M |M |F |O |O |F |M |M 
-|open |-- |-- |-- |-- |-- |-- |A |A |-- |-- |X |X |-- |X |X 
-|restricted |X |X |X |X |-- |-- |A |A |A |-- |X |X |-- |X |X 
-|neg-w-call |X |X |X |X |-- |-- |A |A |A |-- |X |X |-- |-- |-- 
-|neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|comp-dial |X |X |X |X |-- |-- |X |A |X |-- |X |X |-- |-- |-- 
-|innovation |X |X |X |X |-- |-- |X |X |-- |-- |X |X |-- |-- |-- 
-|oth-single |X |X |X |X |-- |-- |X |X |X |-- |X |X |-- |X |X 
-|oth-mult |X |X |X |X |-- |-- |X |X |X |-- |X |X |-- |X |X 
-|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|===
-
-
-[[procedureTypePerNoticeSubtypeTableResultForms]]
-.Procedure Type per Notice Subtype Table - DAP, Result and Contract Modification forms
-[cols=">.^15%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%",]
-[%noheader]
-|===
-|eForms subtype |25 |26 |27 |28 |29 |30 |31 |32 |33 |34 |35 |36 |37 |38 |39 |40 
-|Legal basis |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D23 |D24 |D25 |D23 |D24 |D25 |D24 |D25 |D23 
-|Forbidden - Optional - Mandatory |M |M |M |M |M |M |M |F |O |O |F |M |M |F |F |F 
-|open |-- |-- |-- |-- |A  |A  |-- |-- |X |X |-- |X |X |-- |-- |-- 
-|restricted |-- |-- |-- |-- |A |A |A |-- |X |X |-- |X |X |-- |-- |-- 
-|neg-w-call |-- |-- |-- |-- |A |A |A |-- |X |X |-- |-- |-- |-- |-- |-- 
-|neg-wo-call |X |X |X |X |X |X |X |-- |X |X |-- |-- |-- |-- |-- |-- 
-|comp-dial |-- |-- |-- |-- |X |A |X |-- |X |X |-- |-- |-- |-- |-- |-- 
-|innovation |-- |-- |-- |-- |X |X |-- |-- |X |X |-- |-- |-- |-- |-- |-- 
-|oth-single |X |X |X |X |X |X |X |-- |X |X |-- |X |X |-- |-- |-- 
-|oth-mult |X |X |X |X |X |X |X |-- |X |X |-- |X |X |-- |-- |--  
-|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|===
-
-
-[[procedureTypePerNoticeSubtypeTableAtypicalForms]]
-.Procedure Type per Notice Subtype Table - Atypical and small forms
-[cols=">.^25%,^.^15%,^.^15%,^.^15%,^.^15%,^.^15%",]
-[%noheader]
-|===
-|eForms subtype |CEI |T01 |T02 |X01 |X02
-|Legal basis |R1046 |R1370 |R1370 |R2157 R1435 |R2137
-|Forbidden - Optional - Mandatory |F |M |M |F |F
-|open |-- |-- |-- |-- |-- 
-|restricted |-- |-- |-- |-- |-- 
-|neg-w-call |-- |-- |-- |-- |-- 
-|neg-wo-call |-- |-- |-- |-- |-- 
-|comp-dial |-- |-- |-- |-- |-- 
-|innovation |-- |-- |-- |-- |-- 
-|oth-single |-- |-- |-- |-- |-- 
-|oth-mult |-- |-- |-- |-- |-- 
-|comp-tend |-- |X |X |-- |-- 
-|===
-
-
-For PIN CFC social & CN social notices with procedure type "oth-mult" or "oth-single", the procedure features (BT-88) must
+For procedures types codified with the "oth-mult" or "oth-single" values
+(i.e. PIN CFC social & CN social), the procedure features (BT-88) must
 also be specified.
 
-As an example of the XML markup, for a competetive dialog, the Procedure Type is marked:
+For a competitive dialog, the Procedure Type shall be marked:
 
 [source,xml]
 ----
@@ -4036,36 +3954,6 @@ Multiple exclusive ways exist to report the Procurement duration:
 * using start & end dates,
 
 and the most suitable one shall be adopted.
-
-Also some flexibility is given with the possibility to combine some elements for further precision 
-without contradicting the previous requirement. All the possible cases are reported in the table 
-below where X indicates that an element is used and (X) that an element may be used under some condition 
-only:
-
-[[variousPlannedPeriodPossibleCombinationsTable]]
-.List of various possible combinations for Planned Period
-[cols="^.^20%,^.^20%,^.^20%,^.^20%,^.^20%",]
-|===
-|*Case* |*Duration Start Date (BT-536)* |*Duration End Date (BT-537)* |*Duration Period (BT-36)* 
-|*Duration Other (BT-538)* 
-
-|#1 |X |X | |
-
-|#2 | | |X |
-
-|#3 | | | |X
-
-|#4 |X | |X |
-
-|#5 | |X |X |
-
-|#6 |X | | |X
-
-|#7 | |(X) | |X
-
-|===
-
-(X): only possible when duration other differs from "unlimited"
 
 * **+++Duration is "unlimited" or "unknown"+++** _(Duration
 Other BT-538)_
