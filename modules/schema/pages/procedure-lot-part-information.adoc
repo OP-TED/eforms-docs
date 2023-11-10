@@ -241,7 +241,7 @@ grounds, reserved participation/execution.
 eForms Business Terms that have a corresponding component in the
 "_cac:TenderingTerms_" element, along with a short description,
 indicative cardinalitiesfootnote:[For readability and quick access, 
-the number of columns has been reduced and cardinalities synthetized. 
+the number of columns has been reduced and cardinalities synthesized. 
 While further details may be provided in the explanations after the 
 table, the Annexes of the Regulation will remain the reference.]
 and the relative XPATH to the node(s) used to mark it.
@@ -1065,7 +1065,7 @@ each BG-614.
     </efac:Funding>
     <efac:Funding>
         <efbc:FinancingIdentifier>CAS-LEO/2022/PDM</efbc:FinancingIdentifier>
-        <cbc:FundingProgramCode listName="eu-proramme">ERDF_2021</cbc:FundingProgramCode>
+        <cbc:FundingProgramCode listName="eu-programme">ERDF_2021</cbc:FundingProgramCode>
         <cbc:Description languageID="ENG">This local project ...</cbc:Description>
         <cbc:Description languageID="FRA">Ce projet local ...</cbc:Description>
     </efac:Funding>
@@ -2732,7 +2732,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 For PIN CFC social & CN social notices with procedure type "oth-mult" or "oth-single", the procedure features (BT-88) must
 also be specified.
 
-As an example of the XML markup, for a competetive dialog, the Procedure Type is marked:
+As an example of the XML markup, for a competitive dialog, the Procedure Type is marked:
 
 [source,xml]
 ----
