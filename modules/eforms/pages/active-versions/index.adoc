@@ -1,0 +1,123 @@
+= SDK Active versions
+
+As indicated in the page on the xref:eforms:ROOT:versioning.adoc[versioning of the eForms SDK], every XML notice must indicate the version of the SDK that was used to create the notice.
+
+At any point in time, there is a specific set of SDK versions that are accepted for publication. Those versions are referred to as "active", and are defined only in terms of `major.minor`, as changes made in a `patch` release (incrementing only the `revision number`) do not impact the validity of notice.
+
+Any notice that refers to an SDK version (via the `cbc:CustomizationID` element) that is not in the set of active versions will be rejected. This is enforced by the Central Validation Service (CVS). The response from CVS when you try to validate a notice for an SDK version that is not active is the same as for an SDK version that does not exist.
+
+The Central Validation Service offers an xref:api:ROOT:endpoints/cvs-ted-europa-eu.adoc#_versionrange[API operation named "version-range"] that returns the reference information on the set of active SDK versions, including planned changes to this set. For more details on the information returned, see the <<version-range,section below>>.
+
+The tables below indicate the active SDK versions in our environments.
+
+NOTE: These tables are provided for information only, the information provided by CVS should always be considered the reference.
+
+.Active versions of the SDK in the Production environment
+[%header,cols="1,1"]
+|===
+|SDK Version
+|Planned removal
+
+|1.3
+|31/01/2024
+
+|1.4
+|31/01/2024
+
+|1.5
+|31/01/2024
+
+|1.6
+|
+
+|1.7
+|
+
+|1.8
+|
+
+|1.9
+|
+|===
+
+.Active versions of the SDK in the Preview environment
+[%header,cols="1,1"]
+|===
+|SDK Version
+|Planned removal
+
+|1.0
+|31/01/2024
+
+|1.1
+|31/01/2024
+
+|1.2
+|31/01/2024
+
+|1.3
+|
+
+|1.4
+|
+
+|1.5
+|
+
+|1.6
+|
+
+|1.7
+|
+
+|1.8
+|
+
+|1.9
+|
+|===
+
+[#version-range]
+== Information on active SDK versions
+
+The Central Validation Service provides information on the set of active SDK versions in a JSON file.
+
+[source,json]
+----
+{
+  "updatedOn": "2022-07-20T15:16:00", // <1>
+  "activeVersionRange": {
+    "earliest": { // <2>
+      "before": "1.0", // <3>
+      "after": "1.1", // <4>
+      "switchDate": "2022-10-31T01:00:00+02:00" // <5>
+    },
+    "latest": { // <6>
+      "before": "1.5",
+      "after": "1.6",
+      "switchDate": "2023-03-08T01:00:00+02:00"
+    },
+    "excluded": { // <7>
+      "before": [ "1.2" ],
+      "after": [ "1.2", "1.3" ],
+      "switchDate": "2023-01-10T01:00:00+02:00"
+    }
+  }
+}
+----
+<1> Date and time when the information in this file was last updated.
+<2> Information on lowest active version.
+<3> Lowest active version before the switch date.
+<4> Lowest active version after the switch date.
+<5> Date and time when the effective value goes from what's indicated in `before` to what's indicated in `after`.
+<6> Information on highest active version.
+<7> List of versions excluded from the set of active versions.
+
+For the earliest, latest and excluded versions, changes can be planned: if the current date and time is before "switchDate", then the value in "before" must be used, otherwise the value in "after" must be used.
+
+So for the example above:
+
+* on 2022-10-30, the active versions are: 1.0, 1.1, 1.3, 1.4, 1.5 (1.0 to 1.5; version 1.2 is excluded)
+* on 2022-11-01, the active versions are: 1.1, 1.3, 1.4, 1.5 (1.1 to 1.5; version 1.2 is excluded)
+* on 2023-01-11, the active versions are: 1.1, 1.4, 1.5 (1.1 to 1.5; versions 1.2 and 1.3 are excluded)
+* on 2023-03-09, the active versions are: 1.1, 1.4, 1.5, 1.6 (1.1 to 1.6; versions 1.2 and 1.3 are excluded)
