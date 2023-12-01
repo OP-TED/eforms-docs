@@ -38,6 +38,9 @@ NOTE: These tables are provided for information only, the information provided b
 
 |1.9
 |
+
+|1.10
+|
 |===
 
 .Active versions of the SDK in the Preview environment
@@ -74,6 +77,9 @@ NOTE: These tables are provided for information only, the information provided b
 |
 
 |1.9
+|
+
+|1.10
 |
 |===
 
