@@ -1,0 +1,18 @@
+= `timeperiod` codelist
+:navtitle: Codelists
+
+List of codes for the main timeperiods (seasons, duration units of measure) commonly used in procurement.
+[horizontal]
+Version:: 20230927-0
+URI:: http://publications.europa.eu/resource/dataset/timeperiod
+Tailored by:: xref:code-lists/duration.adoc[`duration`], xref:code-lists/duration-unit.adoc[`duration-unit`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `DAY`::: Day
+  `MONTH`::: Month
+  `UNKNOWN`::: Unknown
+  `UNLIMITED`::: Unlimited
+  `WEEK`::: Week
+  `YEAR`::: Year

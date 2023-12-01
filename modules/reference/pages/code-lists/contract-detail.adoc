@@ -1,0 +1,18 @@
+= `contract-detail` codelist
+:navtitle: Codelists
+
+This table provides a framework to represent data relating to procurement.
+[horizontal]
+Version:: 20230927-0
+URI:: http://publications.europa.eu/resource/dataset/contract-detail
+Tailored by:: xref:code-lists/contract-term.adoc[`contract-term`], xref:code-lists/revenue-allocation.adoc[`revenue-allocation`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `all-rev-tic`::: Allocation of revenues of sales from tickets
+  `cost-comp`::: Cost parameters for compensation payments
+  `exc-right`::: Exclusive rights are granted
+  `other`::: Other
+  `publ-ser-obl`::: Public service obligations
+  `soc-stand`::: Social standards

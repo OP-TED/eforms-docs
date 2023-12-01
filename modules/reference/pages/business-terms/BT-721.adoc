@@ -1,0 +1,10 @@
+= `BT-721`: Contract Title
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-721-Contract`:: Contract Title
+  `BT-721-Contract-Language`:: Contract Title Language

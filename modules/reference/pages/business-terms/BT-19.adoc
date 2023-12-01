@@ -1,0 +1,10 @@
+= `BT-19`: Submission Nonelectronic Justification
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-19-Lot`:: Submission Nonelectronic Justification
+  `BT-19-Lot-List`:: Submission Nonelectronic Justification Listname

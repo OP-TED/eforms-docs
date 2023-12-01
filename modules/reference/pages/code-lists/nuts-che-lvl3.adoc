@@ -1,0 +1,39 @@
+= `nuts-che-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Switzerland
+[horizontal]
+Version:: 1.7.0
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `CH011`::: Vaud
+  `CH012`::: Valais / Wallis
+  `CH013`::: Genève
+  `CH021`::: Bern / Berne
+  `CH022`::: Fribourg / Freiburg
+  `CH023`::: Solothurn
+  `CH024`::: Neuchâtel
+  `CH025`::: Jura
+  `CH031`::: Basel-Stadt
+  `CH032`::: Basel-Landschaft
+  `CH033`::: Aargau
+  `CH040`::: Zürich
+  `CH051`::: Glarus
+  `CH052`::: Schaffhausen
+  `CH053`::: Appenzell Ausserrhoden
+  `CH054`::: Appenzell Innerrhoden
+  `CH055`::: St. Gallen
+  `CH056`::: Graubünden / Grigioni / Grischun
+  `CH057`::: Thurgau
+  `CH061`::: Luzern
+  `CH062`::: Uri
+  `CH063`::: Schwyz
+  `CH064`::: Obwalden
+  `CH065`::: Nidwalden
+  `CH066`::: Zug
+  `CH070`::: Ticino
+  `CHZZZ`::: Extra-Regio NUTS 3

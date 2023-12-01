@@ -1,0 +1,9 @@
+= `BT-92`: Electronic Ordering
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-92-Lot`:: Electronic Ordering

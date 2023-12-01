@@ -1,0 +1,10 @@
+= `BT-70`: Terms Performance
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-70-Lot`:: Terms Performance
+  `BT-70-Lot-Language`:: Terms Performance Language

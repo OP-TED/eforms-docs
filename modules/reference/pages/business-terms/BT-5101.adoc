@@ -1,0 +1,17 @@
+= `BT-5101`: Place Performance Street
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-5101(a)-Lot`:: Place Performance Street
+  `BT-5101(a)-Part`:: Place Performance Street
+  `BT-5101(a)-Procedure`:: Place Performance Street
+  `BT-5101(b)-Lot`:: Place Performance Streetline 1
+  `BT-5101(b)-Part`:: Place Performance Streetline 1
+  `BT-5101(b)-Procedure`:: Place Performance Streetline 1
+  `BT-5101(c)-Lot`:: Place Performance Streetline 2
+  `BT-5101(c)-Part`:: Place Performance Streetline 2
+  `BT-5101(c)-Procedure`:: Place Performance Streetline 2

@@ -1,0 +1,13 @@
+= `document-distribution` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the document distribution is restricted or not.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-14.adoc[`BT-14`] Documents Restricted
+
+== Codes
+[horizontal]
+  `non-restricted-document`::: Not Restricted Document
+  `restricted-document`::: Restricted Document

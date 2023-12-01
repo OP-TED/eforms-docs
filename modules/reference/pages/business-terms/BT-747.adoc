@@ -1,0 +1,10 @@
+= `BT-747`: Selection Criteria Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-747-Lot`:: Selection Criteria Type
+  `BT-747-Lot-List`:: Selection Criteria Type Listname

@@ -1,0 +1,22 @@
+= `procurement-procedure-type` codelist
+:navtitle: Codelists
+
+This table provides a list of activities leading to the conclusion of public contracts used in public procurement according to the legislation.
+[horizontal]
+Version:: 20220928-0
+URI:: http://publications.europa.eu/resource/dataset/procurement-procedure-type
+Tailored by:: xref:code-lists/procedure-type-10.adoc[`procedure-type-10`], xref:code-lists/procedure-type-11.adoc[`procedure-type-11`], xref:code-lists/procedure-type-12.adoc[`procedure-type-12`], xref:code-lists/procedure-type-13.adoc[`procedure-type-13`], xref:code-lists/procedure-type-16.adoc[`procedure-type-16`], xref:code-lists/procedure-type-17.adoc[`procedure-type-17`], xref:code-lists/procedure-type-18.adoc[`procedure-type-18`], xref:code-lists/procedure-type-20.adoc[`procedure-type-20`], xref:code-lists/procedure-type-21.adoc[`procedure-type-21`], xref:code-lists/procedure-type-23.adoc[`procedure-type-23`], xref:code-lists/procedure-type-24.adoc[`procedure-type-24`], xref:code-lists/procedure-type-25.adoc[`procedure-type-25`], xref:code-lists/procedure-type-26.adoc[`procedure-type-26`], xref:code-lists/procedure-type-27.adoc[`procedure-type-27`], xref:code-lists/procedure-type-28.adoc[`procedure-type-28`], xref:code-lists/procedure-type-29.adoc[`procedure-type-29`], xref:code-lists/procedure-type-30.adoc[`procedure-type-30`], xref:code-lists/procedure-type-31.adoc[`procedure-type-31`], xref:code-lists/procedure-type-33.adoc[`procedure-type-33`], xref:code-lists/procedure-type-34.adoc[`procedure-type-34`], xref:code-lists/procedure-type-36.adoc[`procedure-type-36`], xref:code-lists/procedure-type-37.adoc[`procedure-type-37`], xref:code-lists/procedure-type-7.adoc[`procedure-type-7`], xref:code-lists/procedure-type-8.adoc[`procedure-type-8`], xref:code-lists/procedure-type-9.adoc[`procedure-type-9`], xref:code-lists/procedure-type-e1.adoc[`procedure-type-e1`], xref:code-lists/procedure-type-e2.adoc[`procedure-type-e2`], xref:code-lists/procedure-type-e3.adoc[`procedure-type-e3`], xref:code-lists/procedure-type-e4.adoc[`procedure-type-e4`], xref:code-lists/procedure-type-e5.adoc[`procedure-type-e5`], xref:code-lists/procedure-type-t01.adoc[`procedure-type-t01`], xref:code-lists/procedure-type-t02.adoc[`procedure-type-t02`]
+Structure:: flat
+Used in:: xref:business-terms/BT-105.adoc[`BT-105`] Procedure Type
+
+== Codes
+[horizontal]
+  `comp-dial`::: Competitive dialogue
+  `comp-tend`::: Competitive tendering
+  `innovation`::: Innovation partnership
+  `neg-w-call`::: Negotiated with prior publication of a call for competition / competitive with negotiation
+  `neg-wo-call`::: Negotiated without prior call for competition
+  `open`::: Open
+  `oth-mult`::: Other multiple stage procedure
+  `oth-single`::: Other single stage procedure
+  `restricted`::: Restricted

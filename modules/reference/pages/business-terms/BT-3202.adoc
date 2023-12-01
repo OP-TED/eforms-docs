@@ -1,0 +1,10 @@
+= `BT-3202`: Contract Tender Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-3202-Contract`:: Contract Tender ID (Reference)
+  `BT-3202-Contract-Scheme`:: Contract Tender ID (Reference) Schemename

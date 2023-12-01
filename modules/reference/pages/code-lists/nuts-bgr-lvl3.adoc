@@ -1,0 +1,41 @@
+= `nuts-bgr-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Bulgaria
+[horizontal]
+Version:: 1.7.0
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `BG311`::: Видин
+  `BG312`::: Монтана
+  `BG313`::: Враца
+  `BG314`::: Плевен
+  `BG315`::: Ловеч
+  `BG321`::: Велико Търново
+  `BG322`::: Габрово
+  `BG323`::: Русе
+  `BG324`::: Разград
+  `BG325`::: Силистра
+  `BG331`::: Варна
+  `BG332`::: Добрич
+  `BG333`::: Шумен
+  `BG334`::: Търговище
+  `BG341`::: Бургас
+  `BG342`::: Сливен
+  `BG343`::: Ямбол
+  `BG344`::: Стара Загора
+  `BG411`::: София (столица)
+  `BG412`::: София
+  `BG413`::: Благоевград
+  `BG414`::: Перник
+  `BG415`::: Кюстендил
+  `BG421`::: Пловдив
+  `BG422`::: Хасково
+  `BG423`::: Пазарджик
+  `BG424`::: Смолян
+  `BG425`::: Кърджали
+  `BGZZZ`::: Extra-Regio NUTS 3

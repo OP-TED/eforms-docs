@@ -1,0 +1,10 @@
+= `BT-752`: Selection Criteria Second Stage Invite Number
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-752-Lot-ThresholdNumber`:: Selection Criteria Second Stage Invite Threshold Number
+  `BT-752-Lot-WeightNumber`:: Selection Criteria Second Stage Invite Weight Number

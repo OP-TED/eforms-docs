@@ -1,0 +1,10 @@
+= `BT-744`: Submission Electronic Signature
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-744-Lot`:: Submission Electronic Signature
+  `BT-744-Lot-List`:: Submission Electronic Signature Listname

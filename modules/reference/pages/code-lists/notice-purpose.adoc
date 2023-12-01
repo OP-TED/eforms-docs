@@ -1,0 +1,17 @@
+= `notice-purpose` codelist
+:navtitle: Codelists
+
+List of codes to specify the purpose of the Business Register Information Notice
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/OPP-100.adoc[`OPP-100`] Notice Purpose
+
+== Codes
+[horizontal]
+  `del`::: Deletion
+  `for`::: Formation
+  `liq`::: Completion of the liquidation
+  `reg`::: Registration
+  `tra-del`::: Transfer-deletion
+  `tra-reg`::: Transfer-registration
