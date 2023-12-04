@@ -55,12 +55,12 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 ==== Currently available
 [horizontal] 
 Application version:: 1.12.3
-SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0
+SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0, 1.10.0
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6, 1.7, 1.8 and 1.9. 
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9 and 1.10.
 
-SDK version 1.9 is supported in Preview environment as of 10 October 2023. In the Production environment, SDK version 1.9 is supported as of 11 October 2023.
+You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 In the codelist fields, prefilling of values is supported.  
 
@@ -102,23 +102,24 @@ eNotices2 uses the codelists from the SDK, which have not been completely tailor
 
 In Change notices, section "Information about the change" should not be repeated. 
 
-Notices created before 15 March 2023 in Preview or Production environments and updated to SDK 1.6 may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
+Notices created before 15 March 2023 in Preview or Production environments and updated to older SDK versions may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
 
-Notices submitted to Preview eNotices2 as of 8 September 2023 did not acquire status “published” due to an error in the export process. The export is now working, the status published is sent back and the root cause of the current issue has been identified. You might still encounter some delays in getting the status published until the final fix will be available in the next release of the application but a workaround is in place.
 
 The following issues have been identified as of application version 1.8.3:
 
-* In subtypes "17", "18", "22" when OPT-060-Lot rule is triggered, users must fill in BT-70-Lot. 
 * T02 cannot be submitted yet.
 * Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice.
-* Feature “Add a new language” and using the automatic translation service to prefill your new notice linguistic version is currently not working. 
+* Feature “Add a new language” and using the automatic translation service to prefill your new notice linguistic version will lock the notice while the notice is being processed for eTranslation. If there is no language version added, it means translation has failed. 
 
-The following issues have been identified as of application version 1.11.1:
+The following issue has been identified as of application version 1.11.1:
 
-* Legal basis (BT-01(f)-Procedure) field cannot be repeated.
 * If you are filling in an Organisation in the form-filling tool, Registration number (BT-501-Organization-Company) cannot be exported to the address book.
 
-Due to an error in our internal systems, notices submitted to eNotices2 Preview from 6 to 8 November 2023 did not get status Published; the issue was fixed on 8 November.
+The following issues have been identified as of application version 1.12.3: 
+
+* If you have procurement documents, then OPT-140-lot must always be filled in. 
+* If you have a prize, then BT-44-lot must always be filled in. 
+* If you have selection or award criteria, please make sure that there is a weight and a number. 
 
 
 ==== Known eNotices2 API issues 
@@ -154,7 +155,7 @@ We are currently in the process of providing more guidance for users of the eNot
     * To avoid authorisation issues when using eNotices2 API, log in at least once in the corresponding environment of the User Interface to pair your API key with your eNotices2 account and make sure that you perform at least one valid API request with your key to eNotices2 API:
       ** link:https://enotices2.preview.ted.europa.eu/home[eNotices2 in Preview]
       ** https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/ 
-    * eNotices2 API supports currently SDK versions 1.3, 1.4, 1.5, 1.6, 1.7, 1.8 and 1.9. SDK version 1.9 is supported in Preview environment as of 10 October 2023 and in Production as of 11 October 2023. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
+    * You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html. For the value to indicate in the cbc:CustomizationID element, it should always have the format "eforms-sdk-major.minor".  See this page for more details: 
       https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
     * Dynamic rules that check between notices are not yet in place, users, however, should still respect the workflow of eForms notices. For instance, users may currently be able to submit a Change notice that refers to a parent notice that has not been yet published. The notice will still be blocked by our internal system (will enter in error). Currently, it is not possible to stop the publication of a notice that has entered in error in the Preview environment, but we are seeing what could be improved for these situations. 
     * Currently, there are some checks performed by eNotices2 API upon submission of a notice, e.g. eNotices2 will check (and reject) a notice with the same id and version id if it already exists in the system. In the future, such checks will be performed by CVS. 
@@ -162,7 +163,7 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: November 2023
+Indicative planning:: December 2023
 Application version:: 1.13
 SDK version:: 1.10
 
@@ -186,7 +187,7 @@ We are working on resolving the following limitations and known issues:
 * Since SDK 1.7, the dispatch date (BT-05) rule checks the value against the current date. The rule may be currently more permissive, but as of SDK 2.0, it will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time.
 
 
-NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. As of SDK 1.9 a dynamic rule was added which checks that a notice ID does not match a notice ID that has already been published on TED. You can find the SDK Active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
+NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. As of SDK 1.9 a dynamic rule was added which checks that a notice ID does not match a notice ID that has already been published on TED. You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 
 === TED Viewer
@@ -195,8 +196,8 @@ API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/i
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.3
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0
+Application version:: 1.3.3
+SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0, 1.10.0
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
@@ -220,7 +221,7 @@ Scope:: Users can generate an API key. As of 5 July in Preview and 10 July 2023 
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: Q4 2023
+Indicative planning:: Q1 2024
 Scope:: Public profiles will be made available at a later stage as a catalogue of eSenders and will eventually replace the list of eSenders on SIMAP.
 
 
