@@ -177,17 +177,16 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.4.1
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.4, 1.4.3, 1.5.3, 1.6.1, 1.7.0, 1.8.0, 1.9.0
+Application version:: 1.4.2
+SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.4, 1.4.3, 1.5.3, 1.6.1, 1.7.0, 1.8.0, 1.9.0, 1.10.0
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
 We are working on resolving the following limitations and known issues:
 
-* Large notices (3 MB or above) cannot be sent, due to a technical restriction.
 * Since SDK 1.7, the dispatch date (BT-05) rule checks the value against the current date. The rule may be currently more permissive, but as of SDK 2.0, it will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time.
 
 
-NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. As of SDK 1.9 a dynamic rule was added which checks that a notice ID does not match a notice ID that has already been published on TED.
+NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. As of SDK 1.9 a dynamic rule was added which checks that a notice ID does not match a notice ID that has already been published on TED. You can find the SDK Active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 
 === TED Viewer
