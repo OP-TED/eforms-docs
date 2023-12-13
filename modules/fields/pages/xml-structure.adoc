@@ -2,7 +2,7 @@
 
 == Introduction
 
-The field metadata in the fields repository file (fields.json) describe the properties and behaviour of each field. Each field, representing an element in an XML document, is ultimately part of a greater tree-like structure. Actually, there is more than one such structure that each field is a part of:
+The field metadata in the fields repository file (fields.json) describes the properties and behaviour of each field. Each field, representing an element in an XML document, is ultimately part of a greater tree-like structure. Actually, there is more than one such structure that each field is a part of:
 
 * The physical structure in which each field is stored inside the notice XML file.
 This page documents how this physical structure is represented in the SDK.
@@ -15,7 +15,7 @@ This physical structure (XML structure) is included in the eForms SDK to allow i
 
 == XML structure in the field repository
 
-The XML structure is provided as a flat list of "nodes" at the end of the field repository file (fields.json). Every node represents an XML element. Each node can "contain" other nodes and/or fields. Every field provides a `parentNodeId` property which points to its parent node in the XML structure. Every node provides a `parentId` property which points to its parent node. Using this information you can reconstruct the entire XML tree. The absolute XPath of each node is also provided as well as the XPath relative to its parent node.
+The XML structure is provided as an array called "xmlStructure" near the top of field repository file (fields.json). Every item represents an XML element. Each item (a node) can "contain" other nodes and/or fields. Every field provides a `parentNodeId` property which points to its parent node in the XML structure. Every node provides a `parentId` property which points to its parent node (except the root). Using this information you can reconstruct the entire XML tree. The absolute XPath of each node is also provided as well as the XPath relative to its parent node.
 
 NOTE: The `xmlStructure` list provided in fields.json is a flat list. The logical hierarchy of the nodes is represented using the `parentId` property.
 

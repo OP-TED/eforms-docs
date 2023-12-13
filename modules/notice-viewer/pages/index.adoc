@@ -2,7 +2,7 @@
 
 To demonstrate how you can use the eForms SDK in a *metadata driven application* that visualises eForms notices, we have created this sample application. The application is https://github.com/OP-TED/eforms-notice-viewer[available on Github]. You are encouraged to use it for inspiration or as a basis for further development. You are also welcome to contribute with pull requests any improvements that you want to share with us and other eSenders.
 
-CAUTION: The notice viewer is not a production ready application. It is intended to demonstrate the use of concepts and resources available in the eForms SDK. You can use it as an inspiration or a starting point for your own apps.
+CAUTION: The notice viewer is not a production ready application. It is intended to demonstrate the use of concepts and resources available in the eForms SDK. You can use it as an inspiration or a starting point for your own applications.
 
 == Goal
 
@@ -57,7 +57,7 @@ After the XSL is generated, the Saxon XSLT processor is called to apply the XSL 
 
 If a label is not found in the available version of the SDK, then the label's identifier is displayed instead.
 
-The CSS stylesheet is very basic and uses several colors to visually identify different types of artefacts in the final output. For example, "static" labels are displayed with a different color than "dynamic" labels. A "dynamic" label in this context is a label who's identifier depends on the value of a field (like the label of a codelist or indicator field). Our goal was not to make the notice visually pleasing, but to make the output more clear to a developer exploring the application.
+The CSS stylesheet is very basic and uses several colors to visually identify different types of artifacts in the final output. For example, "static" labels are displayed with a different color than "dynamic" labels. A "dynamic" label in this context is a label who's identifier depends on the value of a field (like the label of a codelist or indicator field). Our goal was not to make the notice visually pleasing, but to make the output more clear to a developer exploring the application.
 
 NOTE: The application actually tries to use the correct version of the SDK as specified in the XML notice being visualised. However, as view templates were not available before eForms SDK version 0.6.0, the application is unable to render notices created with versions of the SDK prior to 0.6.0.
 
@@ -65,7 +65,7 @@ The section numbers displayed in the HTML notice are automatically generated (ap
 
 NOTE: The application tries to implement a mechanism for using multiple versions of the eForms SDK in parallel. However, this first version of the application can only work with one version of the SDK as currently there is no other version of the eForms SDK that contains any view templates. Therefore, the current implementation of the mechanism that handles multiple versions of the SDK in parallel is incomplete. 
 
-WARNING: The view templates currently included in SDK 0.7.0 are a "work in progress". You may find templates that contain mistakes or even "to-do" comments included in this version of the SDK.
+WARNING: The view templates included in SDK 0.7.0 are a "work in progress". You may find templates that contain mistakes or even "to-do" comments included in this version of the SDK.
 
 '''
 *See also:*

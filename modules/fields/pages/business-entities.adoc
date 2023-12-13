@@ -1,0 +1,50 @@
+= Business Entities
+
+== Introduction
+
+Each field belongs to a business entity, this is independent from the XML representation even if there can be some overlap.
+This logical structure is included in the eForms SDK to group information about identifiers and can also be used in a UI to group fields by their business entity.
+
+== Properties of a business entity
+
+The following snippet shows the information that can be provided:
+
+[source,json]
+----
+  {
+    "id" : "contract", // <1>
+    "parentId" : "noticeResult", // <2>
+    "name" : "Contract", // <3>
+    "description" : "Information on a contract", // <4>
+    "repeatable" : true, // <5>
+    "schemeName" : "contract", // <6>
+    "instanceIdentifier" : { // <7>
+      "formatName" : "prefixedNumber", // <8>
+      "text" : "CON" // <9>
+    },
+    "identifierFieldId" : "OPT-316-Contract", // <10>
+    "captionFieldId" : "BT-150-Contract" // <11>
+  }, {
+    "id" : "contractModification",
+    "name" : "Contract modification",
+    "description" : "Information on the modifications",
+    "repeatable" : true,
+    "instanceIdentifier" : {
+      "formatName" : "fixedText", // <8>
+      "text" : "CONTRACT-MODIFICATION" // <9>
+    }
+  }
+----
+<1> Identifier of the business entity.
+<2> Identifier of the direct parent that contains the business entity (not always present).
+<3> A short name.
+<4> A descriptive text, it is longer than the "name".
+<5> Indicates if the business entity can be repeated inside its parent.
+<6> Indicates the schemeName if applicable (we indirectly get the field "schemeName" from there).
+<7> An object to document the instance identifier (if applicable).
+<8> The format name, for now we have two, the "prefixedNumber" or "fixedText".
+<9> The identifier prefix or the fixed text.
+<10> Indicates which field id identifies this business entity instance.
+<11> Indicates which field id can be used to display this business entity instance to a user.
+
+NOTE: the fields can have a "businessEntityId" but nodes cannot.
