@@ -131,7 +131,13 @@ planning notice |notice-id-ref |UUID-XX
 the previous planning notice Part | |PAR-XXXX
 
 |BT-1252 |Direct Award Justification Previous Procedure Identifier
-|Procedure Identifier (BT-04) | |UUID v4
+a|Procedure Identifier (BT-04), or
+
+TEDXML OJS Notice ID | a|
+
+UUID v4,
+ 
+XXXXXXXX-YYYY
 
 |BT-13713 |Result Lot Identifier |Points to the Lot (BT-137, LOT-XXXX)
 the result is about |Lot |LOT-XXXX

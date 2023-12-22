@@ -3037,13 +3037,13 @@ justification is encoded with the "_ProcessReason_" element:
 ----
 
 [[directAwardSection]]
-=== Direct Award Justification (BT-135, BT-136, BT-1252) 
-
+==== Direct Award Justification (BT-135, BT-136, BT-1252) 
 When the Procedure Type is a Direct Award, then the justification is
 encoded with the "_cbc:ProcessReasonCode_" element. The
 "_cbc:ProcessReason_" element may be used to provide further information
 as text when required and "_cbc:Description_" may be used to refer to the previous
-procedure (using its UUID) that justified the Direct Award:
+procedure (using its UUID for an eForms notice) or to the Result or Change notice 
+(using its ojs-notice-id for a TEDXML notice) that justified the Direct Award:
 
 [source,xml]
 ----
