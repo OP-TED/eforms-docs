@@ -2682,7 +2682,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |neg-w-call |X |X |X |X |-- |-- |A |A |A |-- |X |X |-- |-- |-- 
 |neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |comp-dial |X |X |X |X |-- |-- |X |A |X |-- |X |X |-- |-- |-- 
-|innovation |X |X |X |X |-- |-- |X |X |-- |-- |X |X |-- |-- |-- 
+|innovation |X |X |X |X |-- |-- |X |A |-- |-- |X |X |-- |-- |-- 
 |oth-single |X |X |X |X |-- |-- |X |X |X |-- |X |X |-- |X |X 
 |oth-mult |X |X |X |X |-- |-- |X |X |X |-- |X |X |-- |X |X 
 |comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
@@ -2702,7 +2702,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |neg-w-call |-- |-- |-- |-- |A |A |A |-- |X |X |-- |-- |-- |-- |-- |-- 
 |neg-wo-call |X |X |X |X |X |X |X |-- |X |X |-- |-- |-- |-- |-- |-- 
 |comp-dial |-- |-- |-- |-- |X |A |X |-- |X |X |-- |-- |-- |-- |-- |-- 
-|innovation |-- |-- |-- |-- |X |X |-- |-- |X |X |-- |-- |-- |-- |-- |-- 
+|innovation |-- |-- |-- |-- |X |A |-- |-- |X |X |-- |-- |-- |-- |-- |-- 
 |oth-single |X |X |X |X |X |X |X |-- |X |X |-- |X |X |-- |-- |-- 
 |oth-mult |X |X |X |X |X |X |X |-- |X |X |-- |X |X |-- |-- |--  
 |comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
