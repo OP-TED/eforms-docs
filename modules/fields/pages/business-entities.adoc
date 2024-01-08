@@ -2,12 +2,20 @@
 
 == Introduction
 
-Each field belongs to a business entity, this is independent from the XML representation even if there can be some overlap.
-This logical structure is included in the eForms SDK to group information about identifiers and can also be used in a UI to group fields by their business entity.
+Some identifiers like for example "PROCEDURE" were not present in the SDK except in the "pattern" of some fields.
+This gave us a hint that technical, machine readable information was missing from the SDK.
+The information about identifiers was also spread across the fields and patterns with no clear overview.
+
+To solve this we decided to add business entities to the SDK.
+Each field should belong to one and only one business entity.
+The business entities are independent from the XML structure even if there can be some overlap.
+The business entities describe what we call the logical structure.
+
+NOTE: the fields can have a "businessEntityId" but we decided that nodes of the `xmlStructure` would have none.
 
 == Properties of a business entity
 
-The following snippet shows the information that can be provided:
+The following snippet shows cases of information provided about business entities in `fields.json`:
 
 [source,json]
 ----
@@ -36,15 +44,67 @@ The following snippet shows the information that can be provided:
   }
 ----
 <1> Identifier of the business entity.
-<2> Identifier of the direct parent that contains the business entity (not always present).
-<3> A short name.
+<2> Identifier of the direct parent business entity that contains the business entity (if applicable).
+<3> A short name which can be used for display (instead of the id)
 <4> A descriptive text, it is longer than the "name".
 <5> Indicates if the business entity can be repeated inside its parent.
-<6> Indicates the schemeName if applicable (we indirectly get the field "schemeName" from there).
+<6> Indicates the schemeName (if applicable).
 <7> An object to document the instance identifier (if applicable).
 <8> The format name, for now we have two, the "prefixedNumber" or "fixedText".
 <9> The identifier prefix or the fixed text.
-<10> Indicates which field id identifies this business entity instance.
-<11> Indicates which field id can be used to display this business entity instance to a user.
+<10> Indicates which field id identifies this business entity instance (if applicable).
+<11> Indicates which field id can be used to display this business entity instance to a user (if applicable).
 
-NOTE: the fields can have a "businessEntityId" but nodes cannot.
+== Usage
+
+=== Interfaces
+
+==== Grouping fields naturally
+
+This can be used in a UI to group or filter fields by their business entity.
+It can be more natural to group them by business entity than to group them by XML structure node.
+In that case the fields can be first sorted by business entity and second by alphabetical order.
+
+==== Hardcoded identifiers
+
+Some identifiers like for example "PROCEDURE" were not present in the SDK except in the "pattern" of some fields.
+These identifiers are made of fixed text, in the business entities they have `"formatName"` with value `"fixedText"`.
+The identifier value is given by the `"text"`, for example `"text" : "PROCEDURE"`.
+
+==== Detecting changes
+
+The process of detecting changes could be automated inside of applications.
+In order to populate the data of the field `BT-13716-notice` the following logic can be used: 
+
+* If the data of a field was changed
+* Read the "businessEntityId" of the field via `fields.json`
+* Get the business entity by business entity id via `fields.json`
+
+After this there are two cases.
+
+===== Fixed identifiers
+
+The simplest case is if the business entity has the fixed identifier format `fixedText`.
+In that case the `text` gives the identifier that changed.
+
+===== Prefixed identifiers
+
+A more complex case is when the identifier has the prefixed number format `prefixedNumber`.
+In that case the "instanceIdentifier" field can be found via the business entity.
+The field business entity id of a field always points to the most precise business entity.
+But if the field is repeatable the application must pick the correct instance, the one to which the changed field belongs.
+
+=== Usage in XML generation
+
+In simple cases fields of type `id-ref` can only reference one type of identifier, in that case the scheme name is given.
+But in some cases for fields of type `id-ref` the user can select between multiple identifier types.
+For example `ORG` or `TPO`, this means the user will decide the `schemeName`, it cannot be determined in advance.
+Assuming the user selected `Touch point one (TPO-0001)`:
+
+* The application puts the correct id `TPO-0001` into the field
+* From the value `TPO-0001` the application can extract the `TPO` prefix 
+* In `fields.json` the application can find the business entity that has the prefix `TPO`
+* From the business entity the application can infer the `schemeName` which is `touchpoint`
+
+The `schemeName` is an XML attribute which must be set on some XML elements and the value must be `touchpoint` in this example.
+It is possible to achieve this without the business entities but the business entities make the link more obvious.
