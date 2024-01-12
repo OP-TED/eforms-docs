@@ -163,7 +163,7 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: December 2023
+Indicative planning:: February 2024
 Application version:: 1.13
 SDK version:: 1.10
 
@@ -192,11 +192,11 @@ NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the 
 
 === TED Viewer
 
-API documentation:: To come at https://viewer.preview.ted.europa.eu/swagger-ui/index.html
+API documentation:: https://viewer.preview.ted.europa.eu/swagger-ui/index.html
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.3.3
+Application version:: 1.5.2
 SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0, 1.10.0
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
