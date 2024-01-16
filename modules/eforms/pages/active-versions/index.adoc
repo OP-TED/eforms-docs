@@ -2,9 +2,11 @@
 
 As indicated in the page on the xref:eforms:ROOT:versioning.adoc[versioning of the eForms SDK], every XML notice must indicate the version of the SDK that was used to create the notice.
 
-At any point in time, there is a specific set of SDK versions that are accepted for submission and publication. Those versions are referred to as "active", and are defined only in terms of `major.minor`, as changes made in a `patch` release (incrementing only the `revision number`) do not impact the validity of notice.
+At any point in time, there is a specific set of SDK versions that are accepted for submission and publication. Those versions are referred to as "active", and are defined only in terms of `major.minor`, as changes made in a `patch` release (incrementing only the `revision number`) do not impact the validity of notice. 
 
-Any notice that refers to an SDK version (via the `cbc:CustomizationID` element) that is not in the set of active versions will be rejected. This is enforced by the Central Validation Service (CVS). The response from CVS when you try to validate a notice for an SDK version that is not active is the same as for an SDK version that does not exist.
+Any notice that refers to an SDK version (via the `cbc:CustomizationID` element) that is not in the set of active versions will be rejected. This is enforced by the Central Validation Service (CVS). The response from CVS when you try to validate a notice for an SDK version that is not active is the same as for an SDK version that does not exist. 
+
+SDK versions are supported while they are active; the end of active period for an SDK version also marks its end of support. Only "active" SDK versions are patched and the Publications Office may not respond to Helpdesk or GitHub questions regarding deprecated SDK versions. 
 
 The Central Validation Service offers an xref:api:ROOT:endpoints/cvs-ted-europa-eu.adoc#_versionrange[API operation named "version-range"] that returns the reference information on the set of active SDK versions, including planned changes to this set. For more details on the information returned, see the <<version-range,section below>>.
 
