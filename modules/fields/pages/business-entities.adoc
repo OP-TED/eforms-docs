@@ -29,8 +29,8 @@ The information about identifiers was spread across the fields, nodes and patter
 
 To solve this we decided to add what we call "business entities" to the SDK.
 We also decided that each field should belong to one and only one business entity.
-The business entities are independent from the XML structure (nodes).
-Thus in `fields.json` the fields have a `businessEntityId` and we decided that nodes of the `xmlStructure` would have none.
+The business entities are independent from the XML structure (nodes) even if there are common points.
+Thus in `fields.json` the fields have a `businessEntityId` and we decided that nodes of the `xmlStructure` nodes would only have a business entity if repeatable.
 
 The business entities describe what we call the logical structure.
 
@@ -44,17 +44,18 @@ Business entities are provided as a JSON array called `businessEntities` in the 
 `name`:: A short name which can be used for display (instead of the id).
 `description`:: A descriptive text, it is longer than the `name`.
 `repeatable`:: Indicates if the business entity can be repeated inside its parent.
-`schemeName`:: Indicates the schemeName (if applicable).
+`repeatsWithNodeId`:: Indicates the node the business entity repeats with, present if it repeats.
 `identifierFieldId`:: Indicates which field id identifies this business entity instance (if applicable).
 `captionFieldId`:: Indicates which field id can be used to display this business entity instance to a user (if applicable).
 `instanceIdentifier`:: An object to document the instance identifier (if applicable).
 `formatName`:: Found in `instanceIdentifier`, the format name, for now we have two, the "prefixedNumber" or "fixedText".
 `text`:: Found in `instanceIdentifier`, the identifier prefix or the fixed text.
+`schemeName`:: Indicates the schemeName (if applicable).
 
 == Legacy data
 
-The business entities make some of the `fields.json` data obsolete.
-We will keep this data for backward compatibility reasons, it could be removed in a future SDK.
+The business entities could make some of the `fields.json` data obsolete.
+We will keep this data for backward compatibility reasons, but it could be removed in a future SDK.
 
 For example:
 
@@ -62,14 +63,13 @@ For example:
 ----
     "businessEntityId" : "groupOfLots",
     "idScheme" : "GLO",
-    "schemeName" : "LotsGroup",
+    ...
+      "schemeName" : "LotsGroup",
 ----
 
 The field `schemeName` is coming from the business entity, it should ideally be retrieved via the business entity of the field.
-We will keep this `schemeName` in the `fields.json`.
-The same is true for the `idScheme`.
-
-There are similar cases for the nodes `identifierFieldId` and `captionFieldId`, both of which are provided by the business entities but the relationship is more indirect.
+We will keep the `schemeName` in the `fields.json` for backward compatibility.
+The same is true for the `idScheme`, `identifierFieldId` and `captionFieldId`.
 
 == Usage
 
@@ -94,7 +94,7 @@ In order to populate the data of the field `BT-13716-notice` the following logic
 * Read the `businessEntityId` of the field via `fields.json`
 * Get the business entity by business entity id via `fields.json`
 
-After this there are two cases.
+After this there are two cases fixed and prefixed identifiers.
 
 ==== Fixed identifiers
 

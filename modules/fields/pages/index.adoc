@@ -177,7 +177,8 @@ The various characteristics of each field are indicated as properties of the JSO
     "type" : "id-ref",
     "attributes" : [ "BT-13714-Tender-Scheme" ],
     "businessEntityId" : "tender",
-    "idSchemes" : [ "LOT", "GLO" ], // <18>
+    "idSchemes" : [ "GLO", "LOT" ], // <18>
+    "schemeNames" : [ "LotsGroup", "Lot" ], // <19>
     "legalType" : "IDENTIFIER",
     "repeatable" : {
       "value" : false,
@@ -215,7 +216,7 @@ Applicable only for fields of type "code".
 <16> This property provides information on when a field's value is mandatory.
 <17> A RegEx pattern the field's value must match.
 <18> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "id-ref"`) can reference.
-
+<19> Array indicating the valid `schemeName` values which this identifier reference field (`"type" : "id-ref"`) can reference.
 
 === Property Values
 
@@ -241,6 +242,7 @@ The properties that are assigned with static values are listed below:
 `businessEntityId`:: The id of the business entity the field belongs to. See xref:fields:business-entities.adoc[Business Entities]. 
 `idSchemes`:: Applicable only to fields of type `id-ref`. Provides an array of valid identifier schemes that this `id-ref` field can reference.
 `idScheme`:: Applicable only to fields of type `id`. Indicates the identifier scheme for this `id` field (e.g. "TPO" for Touch Point).
+`schemeNames`:: Applicable only to fields of type `id-ref`. Provides an array of valid scheme names that this `id-ref` field can reference.
 `schemeName`:: Applicable only to fields of type `id`. Indicates the value that should be indicated for this field in the `schemeName` attribute in the XML.
 `legalType`:: The data type of the Business Term associated with the field as defined by the eForms Regulation.
 `maxLength`:: The maximum number of characters that the field can hold.
@@ -482,8 +484,8 @@ This expression is made of two parts:
 The possible technical values for a field type are:
 
 [horizontal]
-`id`:: string representing an identifier (may have an associated `idScheme`)
-`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes`)
+`id`:: string representing an identifier (may have an associated `idScheme` and `schemeName`)
+`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes` and `schemeNames`)
 `indicator`:: boolean (true or false)
 `integer`:: whole-valued positive number
 `number`:: numerical value, with optional decimal places.
@@ -497,5 +499,4 @@ The possible technical values for a field type are:
 `url`:: string representing a URL
 `text`:: language-independent string
 `text-multilingual`:: string that can be translated into multiple languages
-
 
