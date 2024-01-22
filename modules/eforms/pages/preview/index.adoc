@@ -121,6 +121,11 @@ The following issues have been identified as of application version 1.12.3:
 * If you have a prize, then BT-44-lot must always be filled in. 
 * If you have selection or award criteria, please make sure that there is a weight and a number. 
 
+The following issue has been identified as of SDK version 1.10:
+
+* If you choose to withhold the publishing of certain fields in Results notices, please ensure that the "Date of when this will be published" (BT-198) is always filled. There is currently a bug which means that the field will be published on TED if you provide no date. There are also certain other "Published later" fields that may stop your notice from being published. We aim to solve these issues in February. 
+
+
 
 ==== Known eNotices2 API issues 
 The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
