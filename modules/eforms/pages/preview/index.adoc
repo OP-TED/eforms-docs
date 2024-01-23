@@ -54,7 +54,7 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.12.3
+Application version:: 1.12.4
 SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0, 1.10.0
 
 
@@ -170,11 +170,11 @@ We are currently in the process of providing more guidance for users of the eNot
 [horizontal]
 Indicative planning:: February 2024
 Application version:: 1.13
-SDK version:: 1.10
+SDK version:: 1.11
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version of Preview is into Production as of 8 November 2023.
+NOTE: The current application version of Preview is into Production as of 24 January 2024.
 
 
 === TED Central Validation Service 
