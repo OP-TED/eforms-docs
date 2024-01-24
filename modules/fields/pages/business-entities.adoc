@@ -40,10 +40,9 @@ Business entities are provided as a JSON array called `businessEntities` in the 
 
 [horizontal]
 `id`:: Identifier of the business entity.
-`parentId`:: Identifier of the direct parent business entity (if applicable).
 `name`:: A short name which can be used for display (instead of the id).
 `description`:: A descriptive text, it is longer than the `name`.
-`repeatable`:: Indicates if the business entity can be repeated inside its parent.
+`repeatable`:: Indicates if the business entity can be repeated.
 `repeatsWithNodeId`:: Indicates the node the business entity repeats with, present if it repeats.
 `identifierFieldId`:: Indicates which field id identifies this business entity instance (if applicable).
 `captionFieldId`:: Indicates which field id can be used to display this business entity instance to a user (if applicable).
