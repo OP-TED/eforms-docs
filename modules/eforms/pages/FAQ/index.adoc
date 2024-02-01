@@ -9,45 +9,29 @@ Is there a general presentation of eForms available?::
 
 The policy background of eForms is available on the link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[DG GROW website].
 +
-The Publications Office is organising a series of link:https://op.europa.eu/en/web/ted-eforms/home[follow-up eForms events for 2023]. All previous editions of eForms Technical Workshops/ events can be found link:https://op.europa.eu/en/web/ted-eforms/previous-editions[online].
-+
+The Publications Office organised a series of link:https://op.europa.eu/en/web/ted-eforms/home[eForms events for 2023]. All previous editions of eForms Technical Workshops/ events can be found link:https://op.europa.eu/en/web/ted-eforms/previous-editions[online]. We will soon update our link:https://op.europa.eu/en/web/ted-eforms/home[events homepage] with the 2024 workshop dates. 
 
 
+What systems are available to eSenders?:: 
 
-
-What is the planned transition for eForms implementation on the TED portal?:: 
-
-Starting on 14 November 2022, usage of eForms by Contracting Authorities
-and Contracting Entities is optional and the Publications Office (OP) will
-accept both the current TED schema notices and new eForms notices. The
-TED portal will show both the current TED schema and eForms notices. 
-+
-The current reception (eSentool and current eNotices) and production applications will be closed on 31 January 2024.
- 
-
-Which systems will be available for eSenders during the transition period?:: 
-
-OP is developing a range of applications to manage the collection, validation, processing, visualisation and dissemination of eForms notices. 
-OP has made available the relevant applications through a link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment 
-that will help eSenders to develop and test their own applications. A guide on how to test in "Preview" was presented in
-link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
+OP has developed and made available since 14 November 2022 a range of applications (TED Apps for eForms) to manage the collection, validation, processing, 
+visualisation and dissemination of eForms notices.  The relevant applications are also available through a 
+link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment to help eSenders develop and test their own applications. 
+A guide on how to test in "Preview" was presented in link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
 link:https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-Sep29-eForms-Technical-Workshop.pptx/d0237e8e-500d-4b11-526c-e66c23ec773c?t=1664438251508["TED Developer Portal and using eForms APIs"].
-+
-The current reception (eSentool and current eNotices) and production applications will be closed on 31 January 2024.
 
 
 
-Until when will the current eNotices application be available?:: 
+Until when will the eNotices and eSentool applications be available?:: 
  
-The current eNotices application will be available to submit notices until 31 January 2024. 
+The submission of notices via eSentool and eNotices was closed on 31 January 2024. 
+It will be possible to continue to view your published notices in eNotices until 30 June 2024 
+and your submitted notices in eSentool until 30 April 2024. 
 +
-The new eNotices2 application has been available since 14 November 2022
-and is running in parallel with the current eNotices application during the
-transition period. 
+The new eNotices2 application is an application that performs both functions carried out by the current eNotices and eSentool applications; 
+it has been available since 14 November 2022 and ran in parallel with eNotices and eSentool applications during the transition period. 
 +
-eNotices2 is an application that performs both functions carried out 
-by the current eNotices and eSentool applications. Authorised applications 
-can send complete notices to the API data interface of eNotices2, 
+Authorised applications can send complete notices to the API data interface of eNotices2, 
 and if they are valid, they will be published in the Supplement to the Official Journal 
 of the European Union (OJ S). Individuals with an eNotices2 account can
 create notices within eNotices2 using its interactive web forms. 
@@ -60,7 +44,7 @@ by an individual Member State.
  
  
  
-Currently with eSentool, several people can access the same front-end eSender account. Will eSenders be able to organise themselves the same way in eNotices2?::
+With eSentool, several people could access the same front-end eSender account. Will eSenders be able to organise themselves the same way in eNotices2?::
 
 eNotices2 web user interface was designed with front-end users of eNotices2 in mind. 
 eSenders are API users and other than logging in eNotices2 once to pair their API key, 
@@ -130,6 +114,9 @@ https://op.europa.eu/en/web/ted-eforms/agenda-5th-eforms-05-2023
 * eForms presentations from the sixth eForms Technical Workshop in September 2023 +
 https://op.europa.eu/en/web/ted-eforms/agenda-6th-eforms-09-2023
 +
+* eForms presentations from the TED eSenders annual seminar in December 2023 +
+https://op.europa.eu/en/web/ted-eforms/agenda-annual-esenders-seminar-2023
++
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
 +
@@ -178,17 +165,10 @@ link:https://op.europa.eu/documents/11465927/11661400/2023-01-02-Lifecycle+of+eF
 
 What is planned with eForms regarding the OJ S publication number?::
 
-Starting on 14 November any notices submitted as eForms will have a publication number of 8 digits, 
-meaning that any application handling eForms must use this format. As of SDK 1.7, eForms notices will have up to 8 digits (leading zeros allowed). 
+Starting on 14 November 2023, any notices submitted as eForms will have a publication number of 8 digits, 
+meaning that any application handling eForms must use this format. As of SDK 1.7, eForms notices have up to 8 digits (leading zeros allowed). 
 On TED, eForms notices will therefore have a publication number of up to 8 digits
-and TED-XML notices will continue to have a 6-digit publication number. 
-+
-The current TED website will continue to have a limitation of 6 digits when addressing a notice in its URL, meaning that it will be necessary to 
-remove the two leading zeros in the publication number when linking to an eForms notice.  For example, to link to eForms notice 00654321-2022, 
-the URL would be https://ted.europa.eu/udl?uri=TED:NOTICE:654321-2022:TEXT:EN:HTML 
-+
-TED publication numbers will not exceed 1 million per year and can continue to be expressed in 6 digits. 
-This limitation will end with the launch of the TED 2.0 website in the second half of 2023. 
+and the legacy TED-XML notices will continue to have a 6-digit publication number. 
 
 
 
@@ -277,7 +257,7 @@ and for which none of the above may apply.
 
 
 
-How do we make a correction (F14) to a notice published in current schema, after transitioning to eForms?::
+How do we make a correction to a notice published in current schema, after transitioning to eForms?::
 
 In the same way that it will be possible to link current form notices to eForms 
 for procedures that started with the current form TED schema and ended with eForms. 
@@ -291,7 +271,7 @@ in TED format can be converted to a partial eForms notice; "partial", because eF
 contain much more information than TED notices. However, the "partial" eForms notice 
 will have to be completed and checked in the eSenders’ systems. 
 +
-Regarding the F14, there is no longer a specific form for corrections such as the current F14. 
+There is no longer a specific form for corrections. 
 The Change notice Business Group will instead work as a separate section that will be 
 attached to any notice, to indicate that this notice corrects, changes, or otherwise modifies 
 a "parent" notice with the use of BG-9 and in particular BT-140 Change Reason Code. Both the original notice and its change notice will be published.
@@ -301,9 +281,9 @@ and questions concerning change notices on GitHub: https://github.com/OP-TED/eFo
 
 
 
-Currently an F14 may not be submitted until its previous notice is published. Will there be a change with eForms?:: 
+What is a Change notice in eForms?:: 
 
-With eForms, there will be a Change notice, which is a reproduction of its parent notice with an extra section 
+A Change notice is a reproduction of its parent notice with an extra section 
 to advertise changes to the procurement and procurement documents and for correction of clerical errors.
 Major changes such as adding or removing Lots to a published Contract Notice cannot be done through a Change notice; 
 in this case, a new CN would be expected. 
@@ -311,7 +291,7 @@ in this case, a new CN would be expected.
 A Change form is only possible for notices whose parent notice has been published to avoid the possibility that different users 
 may act on the same notice at the same time. If the parent notice has not yet been published, users can stop publication and resubmit. 
 +
-In case of many clerical errors, it will be possible to cancel a notice, which will cancel the notice itself and make it null and void, 
+In case of many clerical errors, it is possible to cancel a notice, which will cancel the notice itself and make it null and void, 
 but this will not cancel the procedure. The user can - in this case - republish the same notice. 
 To cancel the procedure, we would expect a Contract Award Notice with no winner - regardless of whether the submission deadlines have been reached or not – 
 along with a reason.  
@@ -538,6 +518,7 @@ The formal change management governance is currently being set up and a change m
 What is the function of eNotices2?:: 
 
 The development of eNotices2 started in 2020 and the application went in production in November 2022. 
+eNotices2 is also available in link:https://docs.ted.europa.eu/home/eforms/preview/index.html#_enotices2["Preview"] for testing purposes.
 +
 The scope of the application is to implement the eForms requirements in
 a product that will allow at least the same functionalities that are
@@ -551,27 +532,24 @@ regulation as much as possible.
 +
 Presentations are available at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar]. A demo of eNotices2 
 front-end application was presented during the  
-link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[eForms Technical Workshop of May 2022]
-and an updated presentation was given during the link:https://www.youtube.com/watch?v=Znx2ljypv6s[eNotices2 webinar of 19 September 2023].
+link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[eForms Technical Workshop of May 2022].
 +
-eNotices2 is also available in link:https://docs.ted.europa.eu/home/eforms/preview/index.html#_enotices2["Preview"] for testing purposes.
+eNotices2 webinar video recordings are available here:
++
+* 2023-09-19 - link:https://www.youtube.com/watch?v=Znx2ljypv6s[Explanation on how to fill-in a Contract Notice]
+* 2023-10-12 - link:https://www.youtube.com/watch?v=_Lk35tfQ_ns[Explanation on how to fill-in a Contract Award Notice. Creation of Workgroups and Structured Organisations]
+* 2023-11-13 - link:https://www.youtube.com/watch?v=DqYibbWT2Ak[How to continue a procedure created in eNotices, Change notice, Workgroup and Structured Organisation settings]
 
 
- 
+
+
 From 14 November 2022, will EU public buyers be able to create their eForms in eNotices2? Will it propose all the fields (mandatory and optional)?::
 
 This is the point of eNotices2: it provides all mandatory and optional fields 
-and it will have rules to determine which fields are mandatory under certain conditions. 
+and it has rules to determine which fields are mandatory under certain conditions. 
 There is also be a feature for users to make some of the optional fields mandatory. In the same way, 
 it is also possible that if an optional field is not relevant for some users, the administrator of 
 the organisation can “hide” these optional fields from view should they wish so.
-
-
-
-Will there be a test system where users can test their eForms applications/ development?::
-
-An instance of the OP applications is deployed as a link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment. 
-The applications started to be made progressively available during Q2 2022.
 
 
 
@@ -591,8 +569,7 @@ system within eNotices2 and once this is in place, we may consider continuing wi
 For notices sent through Web Services and which have failed validation, an email notification will be sent 
 to the Notice Author detailing all the rules that failed. 
 +
-For the initial stages, there will be no email notifications for eSenders that submit notices via the API. 
-eSenders will need to rely on their queries.
+eSenders will need to rely on their API queries for notice status.
 
 
 
@@ -624,8 +601,8 @@ that can visualise an eForms notice in HTML; it is not a production-ready applic
 
 How will eForms notices be published and displayed on the TED website?:: 
 
-For information about the future changes planned for the TED website, please refer to the relevant presentation in the 2021 eSenders Seminar: 
-https://op.europa.eu/documents/8651547/0/eForms-in-TED-and-the-future-TED-2-0-2021-eSenders-seminar.pptx/317c4f15-9a18-58c3-a38e-be283206b977?t=1636106124942.
+This information was shared during the workshops organised by the Publications Office for the Reusers of TED DATA,
+available at: https://op.europa.eu/en/web/ted-reusers-workshops/home 
 
 
 
@@ -763,6 +740,9 @@ more flexibility as to when eSenders choose to upgrade their applications.
 +
 We would, however, suggest that keeping up to date with later SDK versions (and changes these will include) may help eSenders 
 adjust more easily and minimise the effort required. 
++
+For the planned removal/ end of support of an SDK version, please see the link:https://docs.ted.europa.eu/home/eforms/active-versions/index.html[SDK Active versions] 
+page on the TED Developer Docs. 
 
 
 
@@ -815,11 +795,8 @@ for example, when continuing a procedure that overlaps the switch between the tw
 
 [NOTE]
 ====
-Please note that the eForms SDK is updated regularly. 
-Updates are announced on link:https://simap.ted.europa.eu/web/simap/eforms[SIMAP]  
-and on the link:https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?spaceKey=TEDeSender&title=TED+eSenders[TED eSenders Workspace].
-
-You can also use the "watch" repository feature of Github to receive notifications for new releases.
+Please note that the eForms SDK is updated regularly.
+You can use the "watch" repository feature of Github to receive notifications for new releases.
 ====
 
 
@@ -828,14 +805,12 @@ You can also use the "watch" repository feature of Github to receive notificatio
 [qanda]
  
 
-Will there be a TED qualification environment available for eForms? When will there be a way to test the submission of eForms notices?:: 
+Is there a TED qualification environment available for eForms? How can we test the submission of eForms notices?:: 
 
-Unlike the current standard forms in eSentool, there will be no
-qualification procedure for eForms and any user with an API key and an eNotices2 account 
-will be able to submit notices via the API. 
+There is no qualification procedure for eForms and any user with an API key and an eNotices2 account is able to submit notices via the API. 
 eSenders, however, are required to be familiar with the link:https://enotices2.ted.europa.eu/cookies-legal-notice[“Terms of service”].
 +
-Qualification and Simulation endpoints will cease to exist; the environments available will be instead Production and Preview.  
+The environments available are Production and Preview. 
 +
 The Preview environment will be available indefinitely so that users can test validation of notices against new versions of the SDK. 
 The latter will first be implemented in Preview environment during a pre-announced transition period before going into Production. 
@@ -845,34 +820,23 @@ A Central Validation Service (CVS) will be remotely available so that you ca
 notices. As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation 
 will not be taken into account for the CVS.
 +
-Any announcements on the availability of the CVS will be made via SIMAP at +
-https://simap.ted.europa.eu/web/simap/eforms
+SDK active versions and their planned removal/ end of support can be found at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html 
 
 
 
-Will a Sandbox be provided for testing the Web Services?::
+Will there be any limitations for using the Central Validation Service?::
 
-A link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment has been made available. 
-We plan to offer the possibility for users to go through all the steps from submission to publication, 
-but this is done incrementally, gradually adding steps to the environment. 
-
-
-
-Will there be any limitations for using TED API Validation Service?::
-
-The Central Validation Service (CVS) will be available to users the same way as for eNotices2. 
+The Central Validation Service (CVS) is available to users the same way as for eNotices2. 
 There should be no limitations in using the CVS through the TED API. However, there will be some throttling 
 to prevent that possible abuse of the system would degrade the experience for users. Therefore, there will be some limits 
 to make sure the system works well for everyone, but the exact limitations will be communicated at a later stage. 
 
 
 
-Will there be change in authentication method for the new eForms and if so, what authentication method will be used for the API?::
+What is the authentication method used for eForms and TED API?::
 
-For the new systems, we will be using API Keys, which is - as a mechanism - very close to what we have in eSentool. 
-Instead, however, of basic authentication with a username and password, an API key will be sent to the user 
-in another HTTP Header; this API key will verify the user’s identity and through it, the user will be able to connect to various services, 
-i.e. submitting/ validating/ visualising notices. Any user can be a Web Services user as long as they have an API key. 
+TED Apps for eForms use an API Key that verifies the user’s identity and through it, the user will be able to connect to various services, 
+i.e. to submit/ validate/ visualise/ search (for one's own) notices. Any user can be a Web Services user as long as they have a valid API key. 
 
 
 
@@ -886,7 +850,7 @@ you would need to generate your key in the link:https://developer.ted.europa.eu/
 For a key to work in a link:https://docs.ted.europa.eu/home/eforms/preview/index.html[Preview] environment, e.g. CVS API in Preview, 
 it needs to be generated in the link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview].
 +
-To use eNotices2 API (either in Preview or in Production), an eSender should log in at least once in the corresponding environment 
+To use TED API of eNotices2 (either in Preview or in Production), an eSender should log in at least once in the corresponding environment 
 of the User Interface to pair their API key with their eNotices2 account. 
 +
 A guide on how to test in "Preview" was presented in
@@ -932,12 +896,9 @@ link:https://op.europa.eu/documents/11465927/12140313/2023-03-28+TED+Developer+P
 
 
 
-Will the URL to which we send the messages remain the same?::  
+Where can I find the URLs and TED API documentation?::  
 
-The URL used for eForms notices will be different to the one used for
-the current notices in eSentool.  
-+
-For the URLs and TED API documentation, please read the docs: https://docs.ted.europa.eu/api/index.html 
+Please read the link:https://docs.ted.europa.eu/api/index.html[TED Developer docs]. 
 
 
 
@@ -962,7 +923,7 @@ No, the notices must be complete before they are submitted via API.
  
 What are the notice statuses that eSenders will be able to query via the API?::
 
-eSenders will be be able to query their notices with the below statuses:  
+eSenders will be able to query their notices with the below statuses:  
 +
 DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING. 
 +
