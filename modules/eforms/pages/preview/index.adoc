@@ -55,12 +55,10 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 ==== Currently available
 [horizontal] 
 Application version:: 1.12.4
-SDK versions:: 1.3.2, 1.4.1, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0, 1.10.0
+SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest. The fields which are available, along with their behaviour, are consistent with SDK versions 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9 and 1.10.
-
-You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
+In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest.
 
 In the codelist fields, prefilling of values is supported.  
 
@@ -184,7 +182,7 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 ==== Currently available 
 [horizontal]
 Application version:: 1.4.2
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.4, 1.4.3, 1.5.3, 1.6.1, 1.7.0, 1.8.0, 1.9.0, 1.10.0
+SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
 We are working on resolving the following limitations and known issues:
@@ -192,7 +190,7 @@ We are working on resolving the following limitations and known issues:
 * Since SDK 1.7, the dispatch date (BT-05) rule checks the value against the current date. The rule may be currently more permissive, but as of SDK 2.0, it will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time.
 
 
-NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. As of SDK 1.9 a dynamic rule was added which checks that a notice ID does not match a notice ID that has already been published on TED. You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
+NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. As of SDK 1.9 a dynamic rule was added which checks that a notice ID does not match a notice ID that has already been published on TED. 
 
 
 === TED Viewer
@@ -202,7 +200,7 @@ API documentation:: https://viewer.preview.ted.europa.eu/swagger-ui/index.html
 ==== Currently available 
 [horizontal]
 Application version:: 1.5.2
-SDK versions:: 1.0.0, 1.1.1, 1.2.1, 1.3.2, 1.4.2, 1.5.0, 1.5.1, 1.6.0, 1.7.0, 1.8.0, 1.9.0, 1.10.0
+SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
 ==== Planned updates
