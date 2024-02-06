@@ -71,22 +71,6 @@ _(Buyer, CPB, Service Provider ...)_
 |  xref:organizationsSection[xrefstyle=short] |*1..n* |cac:ContractingParty and child elements
 |===
 
-[[dispatchDateEsender]]
-== Notice Dispatch Date eSender (BT-803)
-
-The Notice Dispatch Date eSender (BT-803) represents the date and time the notice was transmitted 
-electronically by the eSender to the Publications Office of the European Union. It may be indicated 
-in the extensions at Root by specifying its two components (date & time):
-
-[source, xml]
-----
-    <efbc:TransmissionDate>2022-11-17+01:00</efbc:TransmissionDate>
-    <efbc:TransmissionTime>08:30:03+01:00</efbc:TransmissionTime>
-----
-
-When it comes to validation and date controls, the Notice Dispatch Date eSender (BT-803), when specified, 
-is used instead of the Notice Dispatch Date (BT-05).
-
 [[pubInfoSection]]
 == Notice Publication information
 
@@ -178,12 +162,31 @@ sequence and content of notices will be carefully checked).
 
 This information does not exist for notices of "_Planning_" form type.
 
+[[dispatchDateEsender]]
+== Notice Dispatch Date eSender (BT-803)
+
+The Notice Dispatch Date eSender (BT-803) represents the date and time the notice was transmitted 
+electronically by the eSender to the Publications Office of the European Union. It may be indicated 
+in the extensions at Root by specifying its two components (date & time):
+
+[source, xml]
+----
+    <efbc:TransmissionDate>2022-11-17+01:00</efbc:TransmissionDate>
+    <efbc:TransmissionTime>08:30:03+01:00</efbc:TransmissionTime>
+----
+
+When it comes to validation and date controls, the Notice Dispatch Date eSender (BT-803), when specified, 
+is used instead of the Notice Dispatch Date (BT-05), see below.
+
 [[dispatchDateSection]]
 == Notice Dispatch Date
 
-The *+++date and time+++* of the notice submission by the Buyer. This date will be
+The *+++date and time+++* of the notice submission by the buyer. This date will be
 added before its submission to OP and its trustworthiness evaluated
 based on the actual receipt time and a range of acceptable variationsfootnote:[CVS checks the value against the current date. The rule is currently permissive, allowing for "Notice Dispatch Date (BT-05), or Notice Dispatch Date eSender (BT-803) if provided, to be 1 day before or after the current date." Rule will get tightened to 24 hours before the current date as of SDK 2.].
+
+When the processing by the eSender introduces a significant delay after the submission by the buyer, 
+to avoid falling outside of the acceptable range, the use of the Notice Dispatch Date eSender (BT-803) should be considered.
 
 A notice sent on November 26^th^, 2019 at 1:38:54 PM CET (i.e. UTC +1)
 to OP shall be marked:
