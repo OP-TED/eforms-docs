@@ -66,6 +66,16 @@ efac:ChangeReason/efbc:ReasonDescription
 
 |===
 
+The possible values Modified Notice Part Reference may have are: 
+* BUYER to refer to the buyers,
+* RESULT to refer to the Notice Result,
+* The technical identifier of an existing LotResult (RES-xxxx),
+* The technical identifier of an existing LotTender (TEN-xxxx),
+* The technical identifier of an existing Tendering Party (TPA-xxxx),
+* The technical identifier of an existing Touchpoint (TPO-xxxx),
+* The technical identifier of an existing Organisation (ORG-xxxx),
+* The technical identifier of an existing Ultimate Beneficial Owner (UBO-xxxx)
+
 The possible Modification reason code values are referenced in the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/modification-justification[modification-justification]
 codelist.
@@ -82,7 +92,7 @@ technical identifier.
 ----
 <efac:ContractModification>
     <!-- Modification Previous Notice Identifier BT-1501(n)-Contract -->
-    <efbc:ChangedNoticeIdentifier>755db7f6-6aa1-453b-9087-1df5f7725112-02</efbc:ChangedNoticeIdentifier>
+    <efbc:ChangedNoticeIdentifier schemeName="notice-id-ref">755db7f6-6aa1-453b-9087-1df5f7725112-02</efbc:ChangedNoticeIdentifier>
     <!-- Modified Contract Reference BT-1501(c)-Contract -->
     <efbc:ModifiedContractIdentifier schemeName="contract">CON-0001</efbc: ModifiedContractIdentifier>
     <efac:Change>
