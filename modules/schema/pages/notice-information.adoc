@@ -84,6 +84,9 @@ in the extensions at Root by specifying its two components (date & time):
     <efbc:TransmissionTime>08:30:03+01:00</efbc:TransmissionTime>
 ----
 
+When it comes to validation and date controls, the Notice Dispatch Date eSender (BT-803), when specified, 
+is used instead of the Notice Dispatch Date (BT-05).
+
 [[pubInfoSection]]
 == Notice Publication information
 
@@ -178,9 +181,9 @@ This information does not exist for notices of "_Planning_" form type.
 [[dispatchDateSection]]
 == Notice Dispatch Date
 
-The *+++date and time+++* of the notice receipt by OP. This date will be
+The *+++date and time+++* of the notice submission by the Buyer. This date will be
 added before its submission to OP and its trustworthiness evaluated
-based on the actual receipt time and a range of acceptable variationsfootnote:[To be defined by Business].
+based on the actual receipt time and a range of acceptable variationsfootnote:[CVS checks the value against the current date. The rule is currently permissive, allowing for "Notice Dispatch Date (BT-05), or Notice Dispatch Date eSender (BT-803) if provided, to be 1 day before or after the current date." Rule will get tightened to 24 hours before the current date as of SDK 2.].
 
 A notice sent on November 26^th^, 2019 at 1:38:54 PM CET (i.e. UTC +1)
 to OP shall be marked:
