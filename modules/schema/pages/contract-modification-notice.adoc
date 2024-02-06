@@ -67,13 +67,21 @@ efac:ChangeReason/efbc:ReasonDescription
 |===
 
 The possible values Modified Notice Part Reference may have are: 
+
 * BUYER to refer to the buyers,
+
 * RESULT to refer to the Notice Result,
+
 * The technical identifier of an existing LotResult (RES-xxxx),
+
 * The technical identifier of an existing LotTender (TEN-xxxx),
+
 * The technical identifier of an existing Tendering Party (TPA-xxxx),
+
 * The technical identifier of an existing Touchpoint (TPO-xxxx),
+
 * The technical identifier of an existing Organisation (ORG-xxxx),
+
 * The technical identifier of an existing Ultimate Beneficial Owner (UBO-xxxx)
 
 The possible Modification reason code values are referenced in the
@@ -101,11 +109,11 @@ technical identifier.
         <efbc:ChangeDescription languageID="FRE">Le périmètre de ...</efbc:ReasonDescription>
         <efac:ChangedSection>
             <!-- Modified Notice Part Reference BT-1501(p)-Contract -->
-            <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
+            <efbc:ChangedSectionIdentifier>TEN-0001</efbc:ChangedSectionIdentifier>
         </efac:ChangedSection>
         <efac:ChangedSection>
            <!-- Modified Notice Part Reference BT-1501(p)-Contract -->
-           <efbc:ChangedSectionIdentifier>LOT-0003</efbc:ChangedSectionIdentifier>
+           <efbc:ChangedSectionIdentifier>TEN-0003</efbc:ChangedSectionIdentifier>
         </efac:ChangedSection>
     </efac:Change>
     <efac:ChangeReason>
