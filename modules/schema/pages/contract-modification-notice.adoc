@@ -2,45 +2,87 @@
 
 = Contract Modification Notice
 
-A contract modification follows the same structure as a change, it
-however appears during contract execution and applies to a CAN only.
+A contract modification may occur during contract execution and applies 
+to a Result or Contract Modification notice only.
+
+With a single Contract Modification notice, it is only possible to modify contracts 
+belonging to the same notice, and only if none of them have been modified in the meantime. 
+When some contracts in a notice have already been modified, then any further contract 
+modification for these contracts has to be applied on the latest Contract Modification 
+notice. For contracts that have not been modified, the new contract modification may be 
+performed based on the result notice but shall not include contracts already modified.
+
+If a notice only contains N SettledContract elements, then there may not be more than N 
+references to contracts in the Contract Modification notice. A Contract Modification may 
+only refer to a single contract; there may be multiple Contract Modification elements, they 
+each have to refer to a different contract.
 
 [[modificationComponentsTable]]
 .Modification components
-[cols="<.^,<.^,^.^,<.^",]
+[cols="<.^,<.^,<.^,^.^,<.^",]
 |===
-^|*eForms BT* ^|*Description* |*Cardin.* ^|*XSD element*
+^|*Field ID* ^|*Field Name* |*Description* |*Cardin.* ^|*XSD element*
 
-|*Modification Description (BT-202)* |Description of the modification
-|*1* a|
+|BT-1501(n)-Contract |*Modification Previous Notice Identifier* |Reference 
+to the previous notice (Result or Contract Modification) |*1* a|
 [source,xpath]
 ----
-efac:Change/efbc:ChangeDescription
+efac:ContractModification/efbc:ChangedNoticeIdentifier
 ---- 
 
-|*Modification Reason Code (BT-200)* |Code to express the modification
-background reasons |*1* a|
+|BT-1501(c)-Contract |*Modified Contract Reference* |Reference to the modified 
+contract (i.e. technical ID CON-xxxx) |*1* a|
 [source,xpath]
 ----
-efac:ChangeReason/cbc:ReasonCode
+efac:ContractModification/efbc:ModifiedContractIdentifier
 ---- 
 
-|*Modification Reason Description (BT-201)* |Modification background
-reasons expressed as text |*1* a|
+|BT-202-Contract |*Modification Description* |Description of the modification h|* a|
+[source,xpath]
+----
+efac:ContractModification/efac:Change/efbc:ChangeDescription
+---- 
+
+|BT-1501(p)-Contract |*Modified Notice Part Reference* |Identification of the modified 
+parts of the notice h|*
+a|
+[source,xpath]
+----
+efac:ContractModification/efac:Change/efac:ChangedSection/efbc:ChangedSectionIdentifier
+---- 
+
+|BT-200-Contract |*Modification Reason Code* |Main reason for modifying the contract |*1* a|
+[source,xpath]
+----
+efac:ContractModification/efac:ChangeReason/cbc:ReasonCode
+---- 
+
+|BT-201-Contract |*Modification Reason Description* |Reason, expressed as text, that justifies 
+the Contract Modification |*1* a|
 [source,xpath]
 ----
 efac:ChangeReason/efbc:ReasonDescription
 ----
 
-|*Modification Previous Section Identifier (BT-1501)* |Identification of
-the modified sections |*+*
-a|
-[source,xpath]
-----
-efac:Change/efac:ChangedSection/efbc:ChangedSectionIdentifier
----- 
-
 |===
+
+The possible values Modified Notice Part Reference may have are: 
+
+* BUYER to refer to the buyers,
+
+* RESULT to refer to the Notice Result,
+
+* The technical identifier of an existing LotResult (RES-xxxx),
+
+* The technical identifier of an existing LotTender (TEN-xxxx),
+
+* The technical identifier of an existing Tendering Party (TPA-xxxx),
+
+* The technical identifier of an existing Touchpoint (TPO-xxxx),
+
+* The technical identifier of an existing Organisation (ORG-xxxx),
+
+* The technical identifier of an existing Ultimate Beneficial Owner (UBO-xxxx)
 
 The possible Modification reason code values are referenced in the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/modification-justification[modification-justification]
@@ -49,43 +91,37 @@ codelist.
 The Contract Modification elements occur in the extensions at the root
 of the notice. 
 
-With a single Contract Modification notice, it is only possible to 
-modify contracts belonging to the same notice, and only if none of 
-them have been modified in the meantime. When some contracts in a 
-notice have already been modified, then any further contract 
-modification for these contracts has to be applied on the latest 
-Contract Modification notice. For contracts that have not 
-been modified, the new contract modification may be performed based 
-on the result notice but shall not include contracts already modified.
-
-If a notice only contains N SettledContract elements, then there may not be 
-more than N references to contracts in the Contract Modification notice.
-
-For each "_efac:ContractModification_" element, as part of the changed 
-sections, there shall be, in addition to the other sections 
-impacted, a unique reference to a contract within the Contract 
-Modification notice using the contract technical identifier.
+For each "_efac:ContractModification_" element, as part of the changed sections, there shall 
+be, a unique reference to a contract within the Contract Modification notice using the contract 
+technical identifier.
 
 
 [source,xml]
 ----
 <efac:ContractModification>
-    <efbc:ChangedNoticeIdentifier>755db7f6-6aa1-453b-9087-1df5f7725112-02</efbc:ChangedNoticeIdentifier>
+    <!-- Modification Previous Notice Identifier BT-1501(n)-Contract -->
+    <efbc:ChangedNoticeIdentifier schemeName="notice-id-ref">755db7f6-6aa1-453b-9087-1df5f7725112-02</efbc:ChangedNoticeIdentifier>
+    <!-- Modified Contract Reference BT-1501(c)-Contract -->
+    <efbc:ModifiedContractIdentifier schemeName="contract">CON-0001</efbc: ModifiedContractIdentifier>
     <efac:Change>
+        <!-- Modification Description BT-202-Contract -->
         <efbc:ChangeDescription languageID="ENG">The scope of the procurement ...</efbc:ReasonDescription>
+        <efbc:ChangeDescription languageID="FRE">Le périmètre de ...</efbc:ReasonDescription>
         <efac:ChangedSection>
-            <efbc:ChangedSectionIdentifier>CON-0001</efbc:ChangedSectionIdentifier>
+            <!-- Modified Notice Part Reference BT-1501(p)-Contract -->
+            <efbc:ChangedSectionIdentifier>TEN-0001</efbc:ChangedSectionIdentifier>
         </efac:ChangedSection>
         <efac:ChangedSection>
-            <efbc:ChangedSectionIdentifier>LOT-0001</efbc:ChangedSectionIdentifier>
-        </efac:ChangedSection>
-        <efac:ChangedSection>
-            <efbc:ChangedSectionIdentifier>LOT-0003</efbc:ChangedSectionIdentifier>
+           <!-- Modified Notice Part Reference BT-1501(p)-Contract -->
+           <efbc:ChangedSectionIdentifier>TEN-0003</efbc:ChangedSectionIdentifier>
         </efac:ChangedSection>
     </efac:Change>
     <efac:ChangeReason>
+        <!-- Modification Reason Code BT-200-Contract -->
         <cbc:ReasonCode listName="modification-justification">mod-cir</cbc:ReasonCode>
+        <!-- Modification Reason Description BT-201-Contract -->
         <efbc:ReasonDescription languageID="ENG">Following an Act of God ...</efbc:ReasonDescription>
+        <efbc:ReasonDescription languageID="FRE">Suite à un événement ...</efbc:ReasonDescription>
     </efac:ChangeReason>
 </cac:ContractModification>
 ----
