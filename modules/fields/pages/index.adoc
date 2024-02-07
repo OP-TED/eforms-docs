@@ -178,7 +178,7 @@ The various characteristics of each field are indicated as properties of the JSO
     "attributes" : [ "BT-13714-Tender-Scheme" ],
     "businessEntityId" : "tender",
     "idSchemes" : [ "GLO", "LOT" ], // <18>
-    "schemeNames" : [ "LotsGroup", "Lot" ], // <19>
+    "referencedBusinessEntityIds" : [ "groupOfLots", "lot" ], // <19>
     "legalType" : "IDENTIFIER",
     "repeatable" : {
       "value" : false,
@@ -242,7 +242,7 @@ The properties that are assigned with static values are listed below:
 `businessEntityId`:: The id of the business entity the field belongs to. See xref:fields:business-entities.adoc[Business Entities]. 
 `idSchemes`:: Applicable only to fields of type `id-ref`. Provides an array of valid identifier schemes that this `id-ref` field can reference.
 `idScheme`:: Applicable only to fields of type `id`. Indicates the identifier scheme for this `id` field (e.g. "TPO" for Touch Point).
-`schemeNames`:: Applicable only to fields of type `id-ref`. Provides an array of valid scheme names that this `id-ref` field can reference.
+`referencedBusinessEntityIds`:: Applicable only to fields of type `id-ref`. Provides an array of business entities that this `id-ref` field can reference.
 `schemeName`:: Applicable only to fields of type `id`. Indicates the value that should be indicated for this field in the `schemeName` attribute in the XML.
 `legalType`:: The data type of the Business Term associated with the field as defined by the eForms Regulation.
 `maxLength`:: The maximum number of characters that the field can hold.
@@ -485,7 +485,7 @@ The possible technical values for a field type are:
 
 [horizontal]
 `id`:: string representing an identifier (may have an associated `idScheme` and `schemeName`)
-`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes` and `schemeNames`)
+`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes` and `referencedBusinessEntities`)
 `indicator`:: boolean (true or false)
 `integer`:: whole-valued positive number
 `number`:: numerical value, with optional decimal places.
