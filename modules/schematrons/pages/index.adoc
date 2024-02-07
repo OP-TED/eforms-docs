@@ -31,13 +31,15 @@ Starting from SDK version 1.10.0, the Schematron files make use of phases, a fea
 
 The various patterns in the schematron files contain either rules that apply only to a specific notice subtype, or rules that apply to any notice.
 
-We have defined one phase for each notice subtype, with an identifier equal to the notice subtype, and all the rules that must be applied to notices of that subtype: all patterns for this subtype, and all patterns not specific to a subtype.
+We have defined one phase for each notice subtype, with an identifier equal to "eforms-" followed by the notice subtype. This "eforms-" prefix is needed because in the Schematron standard, identifiers should not start with a digit.
+
+Each phase contains all the rules that must be applied to notices of the corresponding subtype: all patterns for this subtype, and all patterns not specific to a subtype.
 
 The definition of the phases is in the `complete-validation.sch` file:
 
 [source,xml]
 ----
-<phase id="16"> <!--1-->
+<phase id="eforms-16"> <!--1-->
     <active pattern="EFORMS-validation-stage-1a" /> <!--2-->
     <active pattern="EFORMS-validation-stage-1b-16" /> <!--3-->
     <active pattern="EFORMS-validation-stage-2a-16" />
@@ -48,7 +50,7 @@ The definition of the phases is in the `complete-validation.sch` file:
     <active pattern="EFORMS-validation-stage-4-16" />
     <active pattern="EFORMS-validation-stage-5" />
 </phase>
-<phase id="17">
+<phase id="eforms-17">
     <active pattern="EFORMS-validation-stage-1a" />
     <active pattern="EFORMS-validation-stage-1b-17" />
     ...
@@ -57,7 +59,7 @@ The definition of the phases is in the `complete-validation.sch` file:
 <2> Pattern containing rules not specific to a subtype.
 <3> Pattern containing rules that apply only to notices with subtype 16.
 
-When validating a notice, you can look up its subtype by getting the value of the field "Notice Subtype" (OPP-070-notice), and use this value as the phase to use when executing the Schematron. This will avoid trying to execute all the rules that apply only to other notice subtypes.
+When validating a notice, you can look up its subtype by getting the value of the field "Notice Subtype" (OPP-070-notice), preprend it with "eforms-" and use this value as the phase to use when executing the Schematron. This will avoid trying to execute all the rules that apply only to other notice subtypes.
 
 As the large majority of rules are specific to a notice subtype, this significantly reduces the execution time of the Schematron, in particular for large notices.
 
