@@ -485,7 +485,7 @@ The possible technical values for a field type are:
 
 [horizontal]
 `id`:: string representing an identifier (may have an associated `idScheme` and `schemeName`)
-`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes` and `referencedBusinessEntities`)
+`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes` and `referencedBusinessEntityIds`)
 `indicator`:: boolean (true or false)
 `integer`:: whole-valued positive number
 `number`:: numerical value, with optional decimal places.
