@@ -1475,6 +1475,23 @@ regular expression patterns associated with the relevant fields, within "pattern
 
 
 
+With eForms, is the Publications Office validating the dispatch date of notices?::
+
+Regarding dispatch dates, also referred to across the directives as ‘transmitted’, ‘sent’ or ‘dispatched’, there are two business terms:
++
+* dispatch date (BT-05) – when the notice is sent by the buyer to the eSender (or submitted via eNotices2),
+* (since November 2022 amendment) eSender dispatch date (BT-803) – when the notice is sent by the eSender via the API; it is optional, but it could be mandatory in the future. 
+
++
+There shouldn’t be any time discrepancies when it comes to the dispatch date (i.e. it cannot be 1 day before the day of submission or after the current time, etc.), 
+it should always reflect the real situation. 
+CVS checks dynamically the dispatch date (BT-05) value against the current date. 
+The rule may be currently more permissive, allowing for Notice Dispatch Date (BT-05), or Notice Dispatch Date eSender (BT-803) (if provided), 
+to be 1 day before or after the current date.
+As of SDK 2.0, the rule will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time. 
+
+
+
 Are there any official regular expression patterns that will be used to validate received notices regarding e.g. email addresses, phone numbers, URLs, postal codes etc.?::
 
 The regular expression patterns we currently have (used in the Schematron files) are used to validate certain fields. 
