@@ -40,6 +40,11 @@ The file named `view-templates.json` provides information on each view template.
 <7> List of the notice subtypes that can be visualised with this view template.
 <8> Identifier of the label for the name of the view template. The label is available in the xref:translations:index.adoc[translations] folder.
 
+NOTE: The properties `ublVersion`, `sdkVersion`, and `metadataDatabase` are deprecated.
+The values in those properties may not be updated if the file is not modified, for example in a patch version, so they might differ from the exact version of the SDK.
+You should use the version of the SDK package, or the content of the VERSION file in the top-level folder of the SDK.
+
+
 For this version of the eForms SDK there is only one template available for every notice subtype. In addition, there is a `summary` template that can be used for any notice subtype, and, as the name implies, it generates a summarised view of the notice.
 
 == Template language syntax

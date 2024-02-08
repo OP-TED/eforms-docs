@@ -92,6 +92,10 @@ The field repository is mainly an array of fields, preceded by some version info
 <4> General structure of XML notices. See the xref:xml-structure.adoc[] page.
 <5> List of fields.
 
+NOTE: The properties `ublVersion`, `sdkVersion`, and `metadataDatabase` are deprecated.
+The values in those properties may not be updated if the file is not modified, for example in a patch version, so they might differ from the exact version of the SDK.
+You should use the version of the SDK package, or the content of the VERSION file in the top-level folder of the SDK.
+
 == Field properties
 
 The various characteristics of each field are indicated as properties of the JSON object that represents it.

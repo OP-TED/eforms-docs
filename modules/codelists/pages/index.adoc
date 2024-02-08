@@ -75,6 +75,10 @@ The file named `codelists.json` provides information on each codelist.
 <7> Description of the codelist.
 <8> Identifier of the label for the name of the codelist. The label is available in the xref:translations:index.adoc[translations] folder.
 
+NOTE: The properties `ublVersion`, `sdkVersion`, and `metadataDatabase` are deprecated.
+The values in those properties may not be updated if the file is not modified, for example in a patch version, so they might differ from the exact version of the SDK.
+You should use the version of the SDK package, or the content of the VERSION file in the top-level folder of the SDK.
+
 In eForms, codelists are referenced using their identifier. The identifier is 
 also indicated in the codelist Genericode files, in the "LongName" element
 which has no attributes:

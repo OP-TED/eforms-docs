@@ -73,6 +73,10 @@ This file contains some metadata, followed by the list of notice subtypes, and t
 <18> Full URI of the additional namespace.
 <19> Location of the XSD file that contains the definition of the elements in the namespace, relative to the root of the SDK.
 
+NOTE: The properties `ublVersion`, `sdkVersion`, and `metadataDatabase` are deprecated.
+The values in those properties may not be updated if the file is not modified, for example in a patch version, so they might differ from the exact version of the SDK.
+You should use the version of the SDK package, or the content of the VERSION file in the top-level folder of the SDK.
+
 From the information visible in the example above, we can see that the notice subtype 1 has the document type `PIN`, so the root element in the XML is `PriorInformationNotice`.
 The definition of this root element is in the file indicated by the `schemaLocation` property.
 
