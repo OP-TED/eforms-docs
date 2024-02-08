@@ -240,7 +240,7 @@ The properties that are assigned with static values are listed below:
 `attributes`:: An array of one or more identifiers of the fields representing the XML attributes the XML element represented by the field can have.
 `presetValue`:: The value used to pre-fill a field. This property is always a string, but the value should be converted to the same type as the field. The value "\{NOW\}" corresponds to the current date or time.
 `businessEntityId`:: The id of the business entity the field belongs to. See xref:fields:business-entities.adoc[Business Entities]. 
-`idSchemes`:: Applicable only to fields of type `id-ref`. Provides an array of valid identifier schemes that this `id-ref` field can reference.
+`idSchemes`:: Applicable only to fields of type `id-ref`. Provides an array of "prefixedNumber" identifier schemes that this `id-ref` field can reference (this will be deprecated later, referencedBusinessEntityIds should be used as it has more complete data).
 `idScheme`:: Applicable only to fields of type `id`. Indicates the identifier scheme for this `id` field (e.g. "TPO" for Touch Point).
 `referencedBusinessEntityIds`:: Applicable only to fields of type `id-ref`. Provides an array of business entities that this `id-ref` field can reference.
 `schemeName`:: Applicable only to fields of type `id`. Indicates the value that should be indicated for this field in the `schemeName` attribute in the XML.
