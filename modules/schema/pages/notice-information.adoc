@@ -186,7 +186,7 @@ added before its submission to OP and its trustworthiness evaluated
 based on the actual receipt time and a range of acceptable variationsfootnote:[CVS checks the value against the current date. The rule is currently permissive, allowing for "Notice Dispatch Date (BT-05), or Notice Dispatch Date eSender (BT-803) if provided, to be 1 day before or after the current date." Rule will get tightened to 24 hours before the current date as of SDK 2.].
 
 When the processing by the eSender introduces a significant delay after the submission by the buyer, 
-to avoid falling outside of the acceptable range, the use of the Notice Dispatch Date eSender (BT-803) should be considered.
+to avoid falling outside of the acceptable range, the Notice Dispatch Date eSender (BT-803) can also be used.
 
 A notice sent on November 26^th^, 2019 at 1:38:54 PM CET (i.e. UTC +1)
 to OP shall be marked:
