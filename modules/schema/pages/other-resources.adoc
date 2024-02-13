@@ -11,8 +11,8 @@ https://github.com/eprocurementontology/eprocurementontology[https://github.com/
 https://github.com/eForms/eForms[https://github.com/eForms/eForms]
 
 * [[eFormSimap,W-04]] 
-eForms on SIMAP (communication channel to eSenders)
-https://simap.ted.europa.eu/en_GB/web/simap/eforms[https://simap.ted.europa.eu/en_GB/web/simap/eforms]
+eForms on the TED website
+https://ted.europa.eu/en/simap/eforms[https://ted.europa.eu/en/simap/eforms]
 
 * [[lawInsiderTenderingParty,W-05]] 
 Law Insider, Dictionary, Tendering Party definition
