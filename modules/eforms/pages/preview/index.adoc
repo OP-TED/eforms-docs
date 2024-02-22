@@ -54,7 +54,7 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.12.4
+Application version:: 1.13.2
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 
@@ -74,7 +74,7 @@ Users can create workgroups between themselves and test the definitions of roles
 
 Users can define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available: 
 
-* Optional fields can be set to mandatory or hidden, however, please note that we have removed the Conditional rules as of SDK 1.3 – please leave the default behaviour of the fields, otherwise conditional mandatory fields won't be displayed in newly created notices.
+* Optional fields can be set to mandatory or hidden, however; please see the application https://enotices2.preview.ted.europa.eu/help[Help] page for more information: “I want to submit a notice but I have too many validation errors. What can I do?” 
 
 * Confidential fields can be set to be always confidential or non-confidential.  
 
@@ -87,31 +87,18 @@ As of SDK version 1.6, the lot distribution for lot groups has changed; there is
 
 ==== Known issues 
 
-Some use cases and features are still in the process of being implemented.
+* Some use cases and features are still in the process of being implemented. 
 
-Some validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”.
+* Some validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”. 
 
-All the error messages and labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress. 
+* All the error messages and labels in the user interface (UI), notices and fields are subject to change – translation of labels is still work in progress.  
 
-Notices go through CVS validation when they are submitted, or when the user clicks on "validate" in the user interface, however, the feature may be unstable.
+* Notices go through CVS validation when they are submitted, or when the user clicks on "validate" in the user interface, however, the feature may be unstable. 
 
-    
-eNotices2 uses the codelists from the SDK, which have not been completely tailored. 
+* Conversion from older SDK versions may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
 
-In Change notices, section "Information about the change" should not be repeated. 
-
-Notices created before 15 March 2023 in Preview or Production environments and updated to older SDK versions may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
-
-
-The following issues have been identified as of application version 1.8.3:
-
-* T02 cannot be submitted yet.
-* Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice.
 * Feature “Add a new language” and using the automatic translation service to prefill your new notice linguistic version will lock the notice while the notice is being processed for eTranslation. If there is no language version added, it means translation has failed. 
 
-The following issue has been identified as of application version 1.11.1:
-
-* If you are filling in an Organisation in the form-filling tool, Registration number (BT-501-Organization-Company) cannot be exported to the address book.
 
 The following issues have been identified as of application version 1.12.3: 
 
@@ -135,14 +122,17 @@ CAUTION: In Production (live environment), the actual export to TED happens on w
 
 ==== Tips for using the form-filling tool of eNotices2
 
+Please consult our https://enotices2.preview.ted.europa.eu/help[Help] page to get started. 
+
 We are currently in the process of providing more guidance for users of the eNotices2 web interface. Until we can provide some more guidance and until known issues are fixed and more rules are re-enforced, we have provisionally gathered here some tips to help users with avoiding validation errors: 
 
+   * Each TPO (Touchpoint) should be assigned a role; users may have to remove TPOs from the notice if there are not enough roles to fill. In particular, for notice subtypes 1 to 3, no roles can be assigned to Touchpoints at the moment, meaning that all touchpoints should be removed from the notice. 
    * In multi-stage procedures (BT-105), the second stage indicator should be set to 'yes' on one of those 3 groups where the criterion is used. 
    * Please avoid using the section “Information about late submission” except for the mandatory fields and the “Description of the NDA”.
    * Any date field which has a time attached must always have a value in the time field.
    * In Contract notices of the Defence directive, BT-71-Lot should not be filled in.
-   * For structured organisations, to get started, please fill in Organisation Name, Organisation Identifier and Oganisation Part Name under My Form Settings > Main Buyer Settings. 
-   * There is no need to remove any preset values from the form-filling tool; if necessary, please complete any associated fields as you would normally. If there is no need to complete any associated fields, please ignore the preset values. 
+   * For structured organisations, to get started, please fill in Organisation Name, Organisation Identifier and Organisation Part Name under My Form Settings > Main Buyer Settings. 
+   * When filling in the subcontracting section of a tender (GR-LotTender-Subcontracting), you should complete the field BT-773-Tender. If you need to enter the value or the percentage of the subcontracting, you should also set the corresponding indicator (fields BT-730-Tender and BT-731-Tender) to ‘yes’. 
  
 
 ==== Tips for eSenders
@@ -162,13 +152,13 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: February 2024
-Application version:: 1.13
+Indicative planning:: April 2024
+Application version:: 1.14
 SDK version:: 1.11
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version of Preview is into Production as of 24 January 2024.
+NOTE: The current application version of Preview is planned to go into Production on 27 February 2024.
 
 
 === TED Central Validation Service 
