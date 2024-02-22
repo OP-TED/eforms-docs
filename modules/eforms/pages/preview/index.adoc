@@ -148,6 +148,7 @@ We are currently in the process of providing more guidance for users of the eNot
       https://docs.ted.europa.eu/eforms/latest/versioning.html#_significance_of_the_sdk_version_in_notice_handling_and_validation 
     * Dynamic rules that check between notices are not yet in place, users, however, should still respect the workflow of eForms notices. For instance, users may currently be able to submit a Change notice that refers to a parent notice that has not been yet published. The notice will still be blocked by our internal system (will enter in error). Currently, it is not possible to stop the publication of a notice that has entered in error in the Preview environment, but we are seeing what could be improved for these situations. 
     * Currently, there are some checks performed by eNotices2 API upon submission of a notice, e.g. eNotices2 will check (and reject) a notice with the same id and version id if it already exists in the system. In the future, such checks will be performed by CVS. 
+    * With the new application version 1.13.2 we have added "expectedPublicationDate" to the list of notice metadata, which is retrieved as the results list of the searched notices, or the notice being stopped.   
     
 
 ==== Planned updates 
