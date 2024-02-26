@@ -2666,6 +2666,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |oth-single |-- |-- |-- |-- |-- |-- |X |X |-- 
 |oth-mult |-- |-- |-- |-- |-- |-- |X |X |-- 
 |comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |===
 
 
@@ -2686,6 +2687,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |oth-single |X |X |X |X |-- |-- |X |X |X |-- |X |X |-- |X |X 
 |oth-mult |X |X |X |X |-- |-- |X |X |X |-- |X |X |-- |X |X 
 |comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |===
 
 
@@ -2706,6 +2708,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |oth-single |X |X |X |X |X |X |X |-- |X |X |-- |X |X |-- |-- |-- 
 |oth-mult |X |X |X |X |X |X |X |-- |X |X |-- |X |X |-- |-- |--  
 |comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |===
 
 
@@ -2720,12 +2723,13 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |open |-- |-- |-- |-- |-- 
 |restricted |-- |-- |-- |-- |-- 
 |neg-w-call |-- |-- |-- |-- |-- 
-|neg-wo-call |-- |-- |-- |-- |-- 
+|neg-wo-call |-- |X |X |-- |-- 
 |comp-dial |-- |-- |-- |-- |-- 
 |innovation |-- |-- |-- |-- |-- 
 |oth-single |-- |-- |-- |-- |-- 
 |oth-mult |-- |-- |-- |-- |-- 
 |comp-tend |-- |X |X |-- |-- 
+|exp-int-rail |-- |X |X |-- |-- 
 |===
 
 
