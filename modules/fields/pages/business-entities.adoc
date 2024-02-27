@@ -2,7 +2,8 @@
 
 == Introduction
 
-In some fields there are patterns like:
+Here we will cover historical reasons for the addition of the business entities to the SDK.
+In some fields there was a pattern like:
 
 [source,json]
 ----
@@ -22,15 +23,15 @@ Or this pattern:
   }
 ----
 
-Values like `LOT` are described in various places outside of the pattern.
-But some values like `PROCEDURE` only existed in the SDK.
+Values like `LOT` are described in the SDK in various places outside of the pattern.
+But some values like `PROCEDURE`, `BUYER` only existed in these patterns.
 This gave us a hint that machine readable information was missing somewhere in the SDK.
-The information about identifiers was spread across the fields, nodes and patterns.
+Also information about identifiers was spread across the fields, nodes and patterns, nothing centralised this information.
 
 To solve this we decided to add what we call "business entities" to the SDK.
 We also decided that each field should belong to one and only one business entity.
 The business entities are independent from the XML structure (nodes) even if there are common points.
-Thus in `fields.json` the fields have a `businessEntityId` and we decided that nodes of the `xmlStructure` nodes would only have a business entity if repeatable.
+In `fields.json` the fields have a `businessEntityId` and we decided that nodes of the `xmlStructure` nodes would only have a business entity if repeatable.
 
 The business entities describe what we call the logical structure.
 
@@ -38,20 +39,25 @@ The business entities describe what we call the logical structure.
 
 Business entities are provided as a JSON array called `businessEntities` in the `fields.json`
 
-[horizontal]
-`id`:: Identifier of the business entity.
-`name`:: A short name which can be used for display (instead of the id).
-`description`:: A descriptive text, it is longer than the `name`.
-`repeatable`:: Indicates if the business entity can be repeated.
-`repeatsWithNodeId`:: Indicates the node the business entity repeats with, present if it repeats.
-`identifierFieldId`:: Indicates which field id identifies this business entity instance (if applicable).
-`captionFieldId`:: Indicates which field id can be used to display this business entity instance to a user (if applicable).
-`instanceIdentifier`:: An object to document the instance identifier (if applicable).
-`formatName`:: Found in `instanceIdentifier`, the format name, for now we have two, the "prefixedNumber" or "fixedText".
-`text`:: Found in `instanceIdentifier`, the identifier prefix or the fixed text.
-`schemeName`:: Indicates the schemeName (if applicable).
+* `id` Identifier of the business entity.
+* `name` A short name which can be used for display (instead of the id).
+* `description` A descriptive text, it is longer than the `name`.
+* `repeatable` Indicates if the business entity can be repeated.
+* `repeatsWithNodeId` Indicates the node the business entity repeats with, present if it repeats.
 
-== Legacy data
+* `changeIdentification` An object to document the what should be done when something changed in the business entity.
+**  `identifyInChangeNotice` A boolean to determine if a change in this business entity should be reported
+**  `useInstanceIdentifier` A boolean to determine if the instanceIdentifier should be used
+**  `changeIdentifier` A string to use to identify the change, if present it should be used
+
+* `instanceIdentifier` An object containing instance identifier information (if applicable).
+**  `referencedBusinessEntityId` A referenced business entity identifier, if present it means this business entity relies on another business entity for the identifiers.
+**  `prefix` Found in `instanceIdentifier`, the identifier prefix.
+**  `schemeName` Indicates the scheme name (if applicable).
+**  `identifierFieldId` Indicates which field id identifies this business entity instance (if applicable).
+**  `captionFieldId` Indicates which field id can be used to display this business entity instance to a user (if applicable).
+
+== Future
 
 The business entities could make some of the `fields.json` data obsolete.
 We will keep this data for backward compatibility reasons, but it could be removed in a future SDK.
@@ -78,12 +84,6 @@ This can be used in a UI to group or filter fields by their business entity.
 It can be more natural to group them by business entity than to group them by XML structure node.
 In that case the fields can be first sorted by business entity and second by alphabetical order.
 
-=== Hardcoded identifiers
-
-Some identifiers like for example `PROCEDURE` were not present in the SDK except in the `pattern` of some fields.
-These identifiers are made of fixed text, in the business entities they have `"formatName"` with value `"fixedText"`.
-The identifier value is given by the `"text"`, for example `"text" : "PROCEDURE"`.
-
 === Detecting changes
 
 The process of detecting changes could be automated inside of applications.
@@ -92,20 +92,14 @@ In order to populate the data of the field `BT-13716-notice` the following logic
 * If the data of a field was changed
 * Read the `businessEntityId` of the field via `fields.json`
 * Get the business entity by business entity id via `fields.json`
+* Read the `identifyInChangeNotice` boolean
 
-After this there are two cases fixed and prefixed identifiers.
+After this there are several scenarios.
 
-==== Fixed identifiers
-
-The simplest case is if the business entity has the fixed identifier format `fixedText`.
-In that case the `text` gives the identifier that changed.
-
-==== Prefixed identifiers
-
-A more complex case is when the identifier has the prefixed number format `prefixedNumber`.
-In that case the `instanceIdentifier` field can be found via the business entity.
-The field business entity id of a field always points to the most precise business entity.
-But if the field is repeatable the application must pick the correct instance, the one to which the changed field belongs.
+* If `identifyInChangeNotice` is false, then do nothing.
+* If `identifyInChangeNotice` is true:
+** If `useInstanceIdentifier` is true, then the identifier of the modified instance must be found via the `instanceIdentifier`
+** If `useInstanceIdentifier` is false, then the `changeIdentifier` gives the identifier that changed
 
 === XML generation and schemeName attribute
 
