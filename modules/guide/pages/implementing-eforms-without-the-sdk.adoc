@@ -53,8 +53,6 @@ Coding and maintaining thousands of business rules manually is quite a challenge
 
 NOTE: The Business Rules are also formally expressed in EFX (the eForms Expression Language). However, since you are not using the SDK, you will not find this formal definition very helpful.
 
-TIP: If you want to find out how we address these issues in the eForms SDK follow this link.
-
 == Creating a form to fill-in a notice
 There is no suggested solution to this problem for eSenders that do not use the SDK. You will need to make your own decisions on how to code this functionality of your application by studying the xref:schema:index.adoc[eForms Specification] and the eForms schemas.
 
