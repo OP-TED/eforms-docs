@@ -1,14 +1,24 @@
 = eForms SDK Roadmap
 
+link:https://docs.ted.europa.eu/eforms/latest/versioning.html[SDK versions] are released several times per year to improve the metadata or to implement regulatory needs. Releases are announced directly on GitHub, where you can watch for updates or follow the discussions. 
+
+xref:active-versions/index.adoc[Active SDK versions] may also be patched, which currently applies the latest labels/translations and view-templates to previous versions. In exceptional cases, such as legal corrections, certain rule changes may also be backported in a patch as long as they never make the rules stricter. 
+
+link:https://github.com/OP-TED/eForms-SDK/discussions/833[The SDK Explorer] can help you with upgrading between versions. 
+
 == eForms SDK 1.x.x
 
-Since the release of the eForms SDK 1.0.0 in August 2022, we have continued to release updates to the SDK that incrementally improve the eForms metadata that is included in it. These updates are all backwards compatible with the SDK 1.0.0 and therefore they can be used by applications that have already been adapted to the SDK 1.0.0. At the time of updating this roadmap (April 2023), the latest version of the SDK is 1.6.0, while testing is underway for the release of 1.7.0 foreseen to be released next week.
+Since the release of the eForms SDK 1.0.0 in August 2022, we have continued to release updates to the SDK that incrementally improve the eForms metadata that is included in it. These updates are all backwards compatible with the SDK 1.0.0 and therefore they can be used by applications that have already been adapted to the SDK 1.0.0. 
 
-Further updates to SDK 1.x.x will continue to be released with the frequency of roughly one update per month. We are dedicated in the continued support of the SDK 1.x.x and we will continue to update it with new minor releases as well as patches to all active SDK versions. Minor releases will introduce updates to the eForms business rules as needed, while patches will ensure updated translations and other metadata are made available to all eSender applications regardless of whether or not they are already using the latest minor version of the eForms SDK.
+n 2024, there will be at least two SDK releases to satisfy the changes and deadlines required by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[December 2023 amendment to the eForms implementing regulation]. 
+
+One SDK release, no later than May, will include the new fields for the link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_001_fsr.pdf[Foreign Subsidies Regulation (FSR)] and link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_002_ipi.pdf[International Procurement Instrument (IPI)] as well as the updates to exclusion and selection criteria. A further SDK release, no later than October, will include the rest of the amendment changes, notably including the six voluntary forms E1-E6. 
+
+Other SDK improvements will be released during the year, which might be combined with these two regulatory updates. 
 
 == eForms SDK 2.0.0
 
-In parallel, we are working on the next major version of the eForms SDK, which we plan to release by the end of June 2023. The new version aims at improving the grammar of EFX to make it more flexible and easier to read and write. Its main goal is to improve the expressiveness of EFX Templates so that we can overcome current limitations in notice visualisation. We are also adding new functions that will allow us to better manipulate and format notice data, as well as improve our current internationalisation capabilities. 
+In parallel, we are working on the next major version of the eForms SDK. The new version aims at improving the grammar of EFX to make it more flexible and easier to read and write. Its main goal is to improve the expressiveness of EFX Templates so that we can overcome current limitations in notice visualisation. We are also adding new functions that will allow us to better manipulate and format notice data, as well as improve our current internationalisation capabilities. 
 
 For more details on what is coming with SDK 2.0.0, you can consult the xref:sdk2/index.adoc[SDK 2 preliminary documentation] that we have made available. You can find more xref:sdk2/efx2.adoc[details on EFX 2 here]. 
 
