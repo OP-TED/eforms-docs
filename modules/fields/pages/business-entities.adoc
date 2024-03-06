@@ -1,0 +1,118 @@
+= Business Entities
+
+== Introduction
+
+Here we will cover historical reasons for the addition of the business entities to the SDK.
+In some fields there was a pattern like:
+
+[source,json]
+----
+  "pattern" : {
+    "value" : "^(RESULT|((CON|RES|TEN|TPA|TPO|ORG)-\\d{4}))$",
+    "severity" : "ERROR"
+  },
+----
+
+Or this pattern:
+
+[source,json]
+----
+  "pattern" : {
+    "value" : "^(PROCEDURE|BUYER|RESULT|((PAR|LOT|GLO|RES|ORG)-\\d{4}))$",
+    "severity" : "ERROR"
+  }
+----
+
+Values like `LOT` are described in the SDK in various places outside of the pattern.
+But some values like `PROCEDURE`, `BUYER` only existed in these patterns.
+This gave us a hint that machine readable information was missing somewhere in the SDK.
+Also information about identifiers was spread across the fields, nodes and patterns, nothing centralised this information.
+
+To solve this we decided to add what we call "business entities" to the SDK.
+We also decided that each field should belong to one and only one business entity.
+The business entities are independent from the XML structure (nodes) even if there are common points.
+In `fields.json` the fields have a `businessEntityId` and we decided that nodes of the `xmlStructure` nodes would only have a business entity if repeatable.
+
+The business entities describe what we call the logical structure.
+
+== Business entities in the SDK
+
+Business entities are provided as a JSON array called `businessEntities` in the `fields.json`
+
+* `id` Identifier of the business entity.
+* `name` A short name which can be used for display (instead of the id).
+* `description` A descriptive text, it is longer than the `name`.
+* `repeatable` Indicates if the business entity can be repeated.
+* `repeatsWithNodeId` Indicates the node the business entity repeats with, present if it repeats.
+
+* `changeIdentification` An object to document the what should be done when something changed in the business entity.
+**  `identifyInChangeNotice` A boolean to determine if a change in this business entity should be reported
+**  `useInstanceIdentifier` A boolean to determine if the instanceIdentifier should be used
+**  `changeIdentifier` A string to use to identify the change, if present it should be used
+
+* `instanceIdentifier` An object containing instance identifier information (if applicable).
+**  `referencedBusinessEntityId` A referenced business entity identifier, if present it means this business entity relies on another business entity for the identifiers.
+**  `prefix` Found in `instanceIdentifier`, the identifier prefix.
+**  `schemeName` Indicates the scheme name (if applicable).
+**  `identifierFieldId` Indicates which field id identifies this business entity instance (if applicable).
+**  `captionFieldId` Indicates which field id can be used to display this business entity instance to a user (if applicable).
+
+== Future
+
+The business entities could make some of the `fields.json` data obsolete.
+We will keep this data for backward compatibility reasons, but it could be removed in a future SDK.
+
+For example:
+
+[source,json]
+----
+    "businessEntityId" : "groupOfLots",
+    "idScheme" : "GLO",
+    ...
+      "schemeName" : "LotsGroup",
+----
+
+The field `schemeName` is coming from the business entity, it should ideally be retrieved via the business entity of the field.
+We will keep the `schemeName` in the `fields.json` for backward compatibility.
+The same is true for the `idScheme`, `identifierFieldId` and `captionFieldId`.
+
+== Usage
+
+=== User interfaces
+
+This can be used in a UI to group or filter fields by their business entity.
+It can be more natural to group them by business entity than to group them by XML structure node.
+In that case the fields can be first sorted by business entity and second by alphabetical order.
+
+=== Detecting changes
+
+The process of detecting changes could be automated inside of applications.
+In order to populate the data of the field `BT-13716-notice` the following logic can be used: 
+
+* If the data of a field was changed
+* Read the `businessEntityId` of the field via `fields.json`
+* Get the business entity by business entity id via `fields.json`
+* Read the `identifyInChangeNotice` boolean
+
+After this there are several scenarios.
+
+* If `identifyInChangeNotice` is false, then do nothing.
+* If `identifyInChangeNotice` is true:
+** If `useInstanceIdentifier` is true, then the identifier of the modified instance must be found via the `instanceIdentifier`
+** If `useInstanceIdentifier` is false, then the `changeIdentifier` gives the identifier that changed
+
+=== XML generation and schemeName attribute
+
+In simple cases fields of type `id-ref` can only reference one type of identifier, in that case the scheme name is given.
+But in some cases for fields of type `id-ref` the user can select between multiple identifier types.
+For example `ORG` or `TPO`, this means the user will decide the `schemeName`, it cannot be determined in advance.
+
+Assuming the user selected `Touch point one (TPO-0001)`:
+
+* The application puts the correct id `TPO-0001` into the field
+* From the value `TPO-0001` the application can extract the `TPO` prefix 
+* In `fields.json` the application can find the business entity that has the prefix `TPO`
+* From the business entity the application can infer the `schemeName` which is `touchpoint`
+
+The `schemeName` is an XML attribute which must be set on some XML elements and the value must be `touchpoint` in this example.
+It is possible to achieve this without the business entities but the business entities make the link more obvious.

@@ -65,7 +65,7 @@ We are using this file to provide the definition of all fields to our
 form-filling application (eNotices2). Each form is then made of a specific
 subset of those fields.
 
-The field repository is mainly an array of fields, preceded by some version information and the general structure of XML notices:
+The field repository is mainly an array of fields, preceded by some version information, the business entities and the general structure of XML notices:
 
 [source,json]
 ----
@@ -76,11 +76,15 @@ The field repository is mainly an array of fields, preceded by some version info
     "version": "0.2.53",
     "createdOn": "2021-11-20T16:46:39"
   },
-  "xmlStructure" : [ // <4>
+  "businessEntities" : [ // <4>
+    { ... },
+    ...
+  ]
+  "xmlStructure" : [ // <5>
     { ... },
     ...
   ],
-  "fields": [ // <5>
+  "fields": [ // <6>
     { ... },
     ...
   ]
@@ -89,8 +93,9 @@ The field repository is mainly an array of fields, preceded by some version info
 <1> Version of the UBL standard used.
 <2> Version of the eForms SDK the file belongs to.
 <3> Version number and date of the data used to create this file.
-<4> General structure of XML notices. See the xref:xml-structure.adoc[] page.
-<5> List of fields.
+<4> Logical structure defined by the business entities. See the xref:business-entities.adoc[] page.
+<5> General structure of XML notices. See the xref:xml-structure.adoc[] page.
+<6> List of fields.
 
 NOTE: The properties `ublVersion`, `sdkVersion`, and `metadataDatabase` are deprecated.
 The values in those properties may not be updated if the file is not modified, for example in a patch version, so they might differ from the exact version of the SDK.
@@ -112,16 +117,19 @@ The various characteristics of each field are indicated as properties of the JSO
     "xpathRelative" : "cbc:RegulatoryDomain", // <6>
     "xsdSequenceOrder" : [ { "cbc:RegulatoryDomain" : 18 } ], // <7>
     "type" : "code", // <8>
-    "legalType" : "CODE", // <9>
-    "maxLength" : 400, // <10>
-    "repeatable" : { // <11>
-      "value" : false
+    "businessEntityId" : "procedure", // <9>
+    "legalType" : "CODE", // <10>
+    "maxLength" : 400, // <11>
+    "repeatable" : { // <12>
+      "value" : false,
+      "severity" : "ERROR"
     },
-    "codeList" : { // <12>
+    "codeList" : { // <13>
       "value" : {
-        "id" : "legal-basis",
+        "id" : "eforms-legal-basis",
         "type" : "flat"
-      }
+      },
+      "severity" : "ERROR"
     }
   }, {
     "id" : "BT-137-Lot",
@@ -132,13 +140,15 @@ The various characteristics of each field are indicated as properties of the JSO
     "xpathRelative" : "cbc:ID",
     "xsdSequenceOrder" : [ { "cbc:ID" : 2 } ],
     "type" : "id",
-    "idScheme" : "LOT", // <13>
+    "attributes" : [ "BT-137-Lot-Scheme" ],
+    "businessEntityId" : "lot",
+    "idScheme" : "LOT", // <14>
     "legalType" : "IDENTIFIER",
     "repeatable" : {
       "value" : false,
       "severity" : "ERROR"
     },
-    "forbidden" : { // <14>
+    "forbidden" : { // <15>
       "value" : false,
       "severity" : "ERROR",
       "constraints" : [ {
@@ -147,7 +157,7 @@ The various characteristics of each field are indicated as properties of the JSO
         "severity" : "ERROR"
       } ]
     },
-    "mandatory" : { // <15>
+    "mandatory" : { // <16>
       "value" : false,
       "severity" : "ERROR",
       "constraints" : [ {
@@ -156,7 +166,7 @@ The various characteristics of each field are indicated as properties of the JSO
         "severity" : "ERROR"
       } ]
     },
-    "pattern" : { // <16>
+    "pattern" : { // <17>
       "value" : "^LOT-\\d{4}$",
       "severity" : "ERROR"
     }
@@ -169,7 +179,10 @@ The various characteristics of each field are indicated as properties of the JSO
     "xpathRelative" : "efac:TenderLot/cbc:ID",
     "xsdSequenceOrder" : [ { "efac:TenderLot" : 14 }, { "cbc:ID" : 1 } ],
     "type" : "id-ref",
-    "idSchemes" : [ "LOT", "GLO" ], // <17>
+    "attributes" : [ "BT-13714-Tender-Scheme" ],
+    "businessEntityId" : "tender",
+    "idSchemes" : [ "GLO", "LOT" ], // <18>
+    "referencedBusinessEntityIds" : [ "groupOfLots", "lot" ], // <19>
     "legalType" : "IDENTIFIER",
     "repeatable" : {
       "value" : false,
@@ -196,17 +209,18 @@ The various characteristics of each field are indicated as properties of the JSO
 <6> Location of the field in an XML notice, relative to its parent node.
 <7> Position of each XML element relative to its siblings. <<xsdSequenceOrder,See below for details>>. 
 <8> Technical data type of the field.
-<9> Data type of the business term, as indicated in the eForms Regulation.
-<10> Maximum number of characters allowed in the value of the field, optional. 
-<11> Indicates if the field can appear more than once inside its container
-<12> Identifier of the code list from which the field value must belong.
-Applicable only for fields of type "code" or "internal-code"
-<13> Identifier scheme used by a field with `"type" : "id"`.
-<14> This property provides information on when a field's presence is forbidden.
-<15> This property provides information on when a field's value is mandatory.
-<16> A RegEx pattern the field's value must match.
-<17> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "id-ref"`) can reference.
-
+<9> The id of the business entity the field belongs to.
+<10> Data type of the business term, as indicated in the eForms Regulation.
+<11> Maximum number of characters allowed in the value of the field, optional. 
+<12> Indicates if the field can appear more than once inside its container
+<13> Identifier of the code list from which the field value must belong.
+Applicable only for fields of type "code".
+<14> Identifier scheme used by a field with `"type" : "id"`.
+<15> This property provides information on when a field's presence is forbidden.
+<16> This property provides information on when a field's value is mandatory.
+<17> A RegEx pattern the field's value must match.
+<18> Array indicating the valid `idScheme` values which this identifier reference field (`"type" : "id-ref"`) can reference.
+<19> Array indicating the valid `schemeName` values which this identifier reference field (`"type" : "id-ref"`) can reference.
 
 === Property Values
 
@@ -225,15 +239,17 @@ The properties that are assigned with static values are listed below:
 `xpathRelative`:: The XPath of the field relative to its parent `node`. See `parentNodeId`.
 [#xsdSequenceOrder]`xsdSequenceOrder`:: This indicates, for each XML element that is part of `xpathRelative`, the position that this element should have relative to its siblings in order to have an XML instance valid against the XML Schema. This information is extracted from the definition of the corresponding complex type in the XSD files.
 `type`:: The data type of the field. xref:#data-types[See Field data types].
-`attributeOf`:: If the field represents an XML attribute this indicates the identifier of the field representing the XML element which has the attribute.
 `attributeName`:: The name of the XML attribute represented by the field.
+`attributeOf`:: If the field represents an XML attribute this indicates the identifier of the field representing the XML element which has the attribute.
 `attributes`:: An array of one or more identifiers of the fields representing the XML attributes the XML element represented by the field can have.
 `presetValue`:: The value used to pre-fill a field. This property is always a string, but the value should be converted to the same type as the field. The value "\{NOW\}" corresponds to the current date or time.
+`businessEntityId`:: The id of the business entity the field belongs to. See xref:fields:business-entities.adoc[Business Entities]. 
+`idSchemes`:: Applicable only to fields of type `id-ref`. Provides an array of "prefixedNumber" identifier schemes that this `id-ref` field can reference (this will be deprecated later, referencedBusinessEntityIds should be used as it has more complete data).
+`idScheme`:: Applicable only to fields of type `id`. Indicates the identifier scheme for this `id` field (e.g. "TPO" for Touch Point).
+`referencedBusinessEntityIds`:: Applicable only to fields of type `id-ref`. Provides an array of business entities that this `id-ref` field can reference.
+`schemeName`:: Applicable only to fields of type `id`. Indicates the value that should be indicated for this field in the `schemeName` attribute in the XML.
 `legalType`:: The data type of the Business Term associated with the field as defined by the eForms Regulation.
 `maxLength`:: The maximum number of characters that the field can hold.
-`idScheme`:: Applicable only to fields of type `id`. Indicates the identifier scheme for this `id` field (e.g. "TPO" for Touch Point).
-`schemeName`:: Applicable only to fields of type `id`. Indicates the value that should be indicated for this field in the `schemeName` attribute in the XML.
-`idSchemes`:: Applicable only to fields of type `id-ref`. Provides an array of valid identifier schemes that this `id-ref` field can reference.
 
 Static properties are always assigned with a scalar value (a string, a boolean, a number, array of strings, etc.). If there is no value defined, the property is omitted.
 
@@ -421,7 +437,7 @@ In the following snippet, a dynamic value is assigned to the `forbidden` dynamic
   } ]
 },
 ----
-<1> The default value of the property will be false in this example
+<1> The default value of the property will be false in this example.
 <2> List of constraints for this property.
 <3> The first constraint in this example specifies a different value than the default one in the case that the field is used in one of the notice types indicated.
 <4> The value of this dynamic property in the case that the constraint applies is indicated here.
@@ -462,7 +478,7 @@ The value of the `condition` property of a constraint is a string representing a
 
 This expression is made of two parts:
 
-* The context under which the expression is evaluated. It's often the parent node of the field.
+* The context under which the expression is evaluated. It is often the parent node of the field.
 * The boolean expression itself.
 
 
@@ -472,8 +488,8 @@ This expression is made of two parts:
 The possible technical values for a field type are:
 
 [horizontal]
-`id`:: string representing an identifier (may have an associated `idScheme`)
-`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes`)
+`id`:: string representing an identifier (may have an associated `idScheme` and `schemeName`)
+`id-ref`:: string representing a reference to an identifier (has an associated `idSchemes` and `referencedBusinessEntityIds`)
 `indicator`:: boolean (true or false)
 `integer`:: whole-valued positive number
 `number`:: numerical value, with optional decimal places.
@@ -487,5 +503,4 @@ The possible technical values for a field type are:
 `url`:: string representing a URL
 `text`:: language-independent string
 `text-multilingual`:: string that can be translated into multiple languages
-
 
