@@ -10,7 +10,7 @@ link:https://github.com/OP-TED/eForms-SDK/discussions/833[The SDK Explorer] can 
 
 Since the release of the eForms SDK 1.0.0 in August 2022, we have continued to release updates to the SDK that incrementally improve the eForms metadata that is included in it. These updates are all backwards compatible with the SDK 1.0.0 and therefore they can be used by applications that have already been adapted to the SDK 1.0.0. 
 
-n 2024, there will be at least two SDK releases to satisfy the changes and deadlines required by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[December 2023 amendment to the eForms implementing regulation]. 
+In 2024, there will be at least two SDK releases to satisfy the changes and deadlines required by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[December 2023 amendment to the eForms implementing regulation]. 
 
 One SDK release, no later than May, will include the new fields for the link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_001_fsr.pdf[Foreign Subsidies Regulation (FSR)] and link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_002_ipi.pdf[International Procurement Instrument (IPI)] as well as the updates to exclusion and selection criteria. A further SDK release, no later than October, will include the rest of the amendment changes, notably including the six voluntary forms E1-E6. 
 
