@@ -6,85 +6,54 @@ At any point in time, there is a specific set of SDK versions that are accepted 
 
 Any notice that refers to an SDK version (via the `cbc:CustomizationID` element) that is not in the set of active versions will be rejected. This is enforced by the Central Validation Service (CVS). The response from CVS when you try to validate a notice for an SDK version that is not active is the same as for an SDK version that does not exist. 
 
-SDK versions are supported while they are active; the end of active period for an SDK version also marks its end of support. Only "active" SDK versions are patched and the Publications Office may not respond to Helpdesk or GitHub questions regarding deprecated SDK versions. 
-
 The Central Validation Service offers an xref:api:ROOT:endpoints/cvs-ted-europa-eu.adoc#_versionrange[API operation named "version-range"] that returns the reference information on the set of active SDK versions, including planned changes to this set. For more details on the information returned, see the <<version-range,section below>>.
 
-The tables below indicate the active SDK versions in our environments.
+SDK versions may be patched for the first year after their initial release. SDK versions are also generally kept active for one year after release. 
 
-As a general convention, SDK versions are kept active in Production for 12 months after their release. In the Preview environment, one earlier SDK version is kept active.
+Exceptionally, the active period has been extended for versions expiring in 2024 to allow for the effort of the first SDK upgrades for most eSenders. This means that notices can be submitted to TED until the end of activity but the SDK version will no longer be patched during the extended active period. 
+
+The table below indicate the end of patches and of activity for SDK versions. The Preview environment has the same active range as the Production environment. 
 
 NOTE: These tables are provided for information only, the information provided by CVS should always be considered the reference.
 
-.Active versions of the SDK in the Production environment
-[%header,cols="1,1"]
+.Patched and Active versions of the SDK
+[%header,cols="1,1,1"]
 |===
 |SDK Version
-|Planned removal
+|End of patches
+|End of activity
 
 |1.3
-|31/1/2024
+|31 December 2023
+|31 January 2024
 
 |1.4
-|31/1/2024
+|31 December 2023
+|31 January 2024
 
 |1.5
-|31/1/2024
+|31 December 2023
+|31 January 2024
 
 |1.6
-|6/3/2024
+|6 March 2024
+|31 July 2024
 
 |1.7
-|11/5/2024
+|11 May 2024
+|30 September 2024
 
 |1.8
-|26/7/2024
+|26 July 2024
+|30 November 2024
 
 |1.9
-|9/10/2024
+|9 October 2024
+|28 February 2025
 
 |1.10
-|1/12/2024
-|===
-
-.Active versions of the SDK in the Preview environment
-[%header,cols="1,1"]
-|===
-|SDK Version
-|Planned removal
-
-|1.0
-|31/1/2024
-
-|1.1
-|31/1/2024
-
-|1.2
-|31/1/2024
-
-|1.3
-|6/3/2024
-
-|1.4
-|6/3/2024
-
-|1.5
-|6/3/2024
-
-|1.6
-|11/5/2024
-
-|1.7
-|26/7/2024
-
-|1.8
-|9/10/2024
-
-|1.9
-|1/12/2024
-
-|1.10
-|Q1/2025
+|1 December 2024
+|28 February 2025
 |===
 
 [#version-range]
