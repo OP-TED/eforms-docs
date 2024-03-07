@@ -33,9 +33,6 @@ SDK standard lifespan::
   The standard lifespan of an SDK version is the first twelve (12) months after its release date.
 SDK extended lifespan::
   To accommodate the needs of eSenders, the Publications Office may decide to extend the lifespan of an SDK version beyond its standard length. If the lifespan of an SDK version is extended beyond the standard lifespan of twelve (12) months, the version is said to be in its "extended lifespan". 
-Deprecated SDK::
-  An SDK version is said to be "deprecated" after its expiry date has been reached. After this date, TEDCVS will no longer accept notices created using that version of the SDK.
-
 
 == Support and updates for active SDK versions
 
