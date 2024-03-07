@@ -13,7 +13,7 @@ For details see the xref:eforms:ROOT:versioning.adoc[SDK Versioning] page.
 
 ****
 
-New versions of the SDK are released periodically, not only to accommodate regulatory changes, but also to fix bugs and enrich the existing metadata. To maintain an overall consistency of the data collected through eForms notices, in terms of completeness and quality, it is in the general interest of the public procurement community to ensure that outdated versions of the eForms specification are withdrawn from active use for applications that create eForms notices. 
+New versions of the SDK are released periodically, not only to accommodate regulatory changes, but also to correct and enrich the existing metadata. To maintain an overall consistency of the data collected through eForms notices, in terms of completeness and quality, it is in the general interest of the public procurement community to ensure that outdated versions of the eForms specification are withdrawn from active use for applications that create eForms notices. 
 
 To encourage the timely adoption of the most recent version of the eForms specification, the Publications Office has established the following policy for the withdrawal of outdated versions of the SDK.
 
@@ -23,25 +23,25 @@ The policy is based on the notion that every SDK version has a predefined lifesp
 
 SDK release date::
   The date when a new version of the SDK is released.
-SDK expiration date::
+SDK expiry date::
   The date beyond which an SDK version is no longer accepted by the TED Central Validation Service. 
   This date is initially set for every SDK version to twelve (12) months after its release date.
-  The expiration date of an SDK version may be extended beyond the standard lifespan of twelve (12) months (see "SDK extended lifespan" below).
+  The expiry date of an SDK version may be extended beyond the standard lifespan of twelve (12) months (see "SDK extended lifespan" below).
 Active SDK::
-  A version of the SDK is said to be "active" during the period that TEDCVS accepts notices based on it. This period is defined by the SDK release date and the SDK expiration date.
+  A version of the SDK is said to be "active" during the period that TEDCVS accepts notices based on it. This period is defined by the SDK release date and the SDK expiry date.
 SDK standard lifespan::
   The standard lifespan of an SDK version is the first twelve (12) months after its release date.
 SDK extended lifespan::
   To accommodate the needs of eSenders, the Publications Office may decide to extend the lifespan of an SDK version beyond its standard length. If the lifespan of an SDK version is extended beyond the standard lifespan of twelve (12) months, the version is said to be in its "extended lifespan". 
 Deprecated SDK::
-  An SDK version is said to be "deprecated" after its expiration date has been reached. After this date, TEDCVS will no longer accept notices created using that version of the SDK.
+  An SDK version is said to be "deprecated" after its expiry date has been reached. After this date, TEDCVS will no longer accept notices created using that version of the SDK.
 
 
 == Support and updates for active SDK versions
 
 The Publications Office provides support only for **active** SDK versions through its Helpdesk and GitHub discussions. Priority is given to SDK versions that are in their **standard lifespan**. 
 
-The Publications Office also updates active SDK versions by releasing patches that fix bugs and improve the provided metadata as needed. However, to conserve resources, patches are provided only during the **standard lifespan** of active SDK versions. SDK versions that are in their **extended lifespan** will only be patched under exceptional circumstances to address critical issues.
+The Publications Office also updates active SDK versions by releasing patches that correct and improve the provided metadata as needed. However, to conserve resources, patches are provided only during the **standard lifespan** of active SDK versions. SDK versions that are in their **extended lifespan** will only be patched under exceptional circumstances to address critical issues.
 
 == List of active SDK versions
 
