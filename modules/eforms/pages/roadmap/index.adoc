@@ -1,10 +1,10 @@
 = eForms SDK Roadmap
 
-link:https://docs.ted.europa.eu/eforms/latest/versioning.html[SDK versions] are released several times per year to improve the metadata or to implement regulatory needs. Releases are announced directly on GitHub, where you can watch for updates or follow the discussions. 
+link:https://docs.ted.europa.eu/eforms/latest/versioning.html[SDK versions] are released several times per year to improve the provided metadata or to implement regulatory changes. Releases are announced directly on GitHub, where you can watch for updates or follow the discussions. 
 
-xref:active-versions/index.adoc[Active SDK versions] may also be patched, which currently applies the latest labels/translations and view-templates to previous versions. In exceptional cases, such as legal corrections, certain rule changes may also be backported in a patch as long as they never make the rules stricter. 
+xref:active-versions/index.adoc[Active SDK versions] may also be patched, which currently applies the latest labels/translations and view-templates to previous versions. In exceptional cases, such as legal corrections, certain rule changes may also be backported in a patch as long as they never make the rules stricter.
 
-link:https://github.com/OP-TED/eForms-SDK/discussions/833[The SDK Explorer] can help you with upgrading between versions. 
+link:https://docs.ted.europa.eu/eforms-sdk-explorer/[The SDK Explorer] can help you with upgrading between versions. 
 
 == eForms SDK 1.x.x
 
@@ -18,7 +18,9 @@ Other SDK improvements will be released during the year, which might be combined
 
 == eForms SDK 2.0.0
 
-In parallel, we are working on the next major version of the eForms SDK. The new version aims at improving the grammar of EFX to make it more flexible and easier to read and write. Its main goal is to improve the expressiveness of EFX Templates so that we can overcome current limitations in notice visualisation. We are also adding new functions that will allow us to better manipulate and format notice data, as well as improve our current internationalisation capabilities. 
+In parallel, we have been working on the next major version of the eForms SDK. We initially tried to complete and release SDK 2.0.0 by June 2023 to give enough time to eSenders to adopt it before going live with eForms on October 2023. However we realised that the timing was not right for most eSenders and decided to freeze further development until after the full roll-out of eForms across the eSender network with SDK 1. We intend to restart the effort on completing the work for SDK 2.0.0 in the second half of 2024. We are aiming to release SDK 2.0.0 by the end of 2024 or early 2025. 
+
+The new version aims at improving the grammar of EFX to make it more flexible and easier to read and write. Its main goal is to improve the expressiveness of EFX Templates so that we can overcome current limitations in notice visualisation. We are also adding new functions that will allow us to better manipulate and format notice data, as well as improve our current internationalisation capabilities. 
 
 For more details on what is coming with SDK 2.0.0, you can consult the xref:sdk2/index.adoc[SDK 2 preliminary documentation] that we have made available. You can find more xref:sdk2/efx2.adoc[details on EFX 2 here]. 
 
