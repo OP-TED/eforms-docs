@@ -16,7 +16,7 @@ CAUTION: URLs and API keys in "Production" and "Preview" environments are not in
 
 The TED applications for eForms are: 
 
-TED eNotices2:: eNotices2 is the reception system for eForms. Notices can be submitted and managed through the web front-end or via the TED API. eNotices2 replaces the current eNotices and eSentool applications. eNotices2 calls the Central Validation Service to validate submitted notices before sending them to TED Monitor for processing and publication.
+TED eNotices2:: eNotices2 is the reception system for eForms. Notices can be submitted and managed through the web front-end or via the TED API. eNotices2 replaces the current eNotices and eSentool applications. eNotices2 calls the Central Validation Service to validate submitted notices before sending them to TED Monitor for processing and publication. 
 
 TED Central Validation Service:: 
 The Central Validation Service (also known as TED CVS) provides an API for validating eForms notices. It is called by eNotices2 to check the validity of a submitted notice, but it can also be called by eSender applications to validate a notice at any time.
