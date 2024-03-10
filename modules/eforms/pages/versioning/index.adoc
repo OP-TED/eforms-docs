@@ -1,0 +1,54 @@
+= eForms SDK versioning
+:page-aliases: eforms:ROOT:versioning.adoc
+
+The eForms SDK has adopted semantic versioning (https://semver.org/[SemVer]). The SDK version is indicated using a triplet of numbers separated with dots in the form `major`.`minor`.`revision`. 
+
+Every new version of the SDK increases one of these three numbers by one and resets to zero any number(s) that follow it, while leaving unchanged any number(s) that precede it.
+
+The first number indicates the `major` version and is incremented only when the new version contains changes that are not backwards compatible. When the `major` version number is incremented, then the `minor` version and `revision` numbers are reset to zero.
+
+The second number indicates the `minor` version and is incremented only when the new version of the SDK introduces changes that do not break backwards compatibility. When the `minor` version number is incremented, then the `revision` number is reset to zero, while the `major` version remains the same.  
+
+Finally, the `revision` number (also known as `patch`) is incremented only when the new version fixes a bug of the previous one without introducing new features or otherwise altering the content of the SDK.       
+
+== Backwards compatibility
+A new version of the eForms SDK is considered to be backwards compatible if it can be read directly by the same software that was able to read the previous version without requiring any modifications in its code. 
+
+=== Major version changes
+An example of a change that would break backwards compatibility is renaming, moving, or removing a file in the SDK. Another example would be changing the format of the contents of a file in the SDK. A more concrete example would be altering the structure of objects inside fields.json, or renaming or removing some of their properties. Any change in the EFX grammar would also constitute a breaking change. In case of such changes, software that was able to consume the previous version of the SDK, will be unable to extract the eForms metadata from the new version without developer intervention.
+
+Such changes are always introduced with a new `major` version of the SDK.
+
+=== Minor version changes
+If the changes introduced by a new version of the SDK are limited to changes in its metadata content, then the SDK still can be read (consumed) by the same software that was able to consume the previous version. In this case we consider the change to be backwards compatible and therefore we only increase the `minor` version number.
+
+Examples of changes that maintain backwards compatibility could be changes in the eForms Schema, the addition, removal or modification of business rules, changes in translations, the addition or removal of fields, or the introduction of changes in the hierarchy of fields, etc. 
+
+NOTE: At first glance, these types of changes may seem "too big" to be backwards compatible. However, keep in mind the definition of backwards compatibility that we gave at the beginning of this section: a change breaks backwards compatibility only when developer intervention is necessary before an application that could read the previous SDK version, is able to also read the new SDK version. None of the changes in the examples above would require any changes in the application as all these changes are changes exclusively in the metadata content. 
+
+IMPORTANT: It is important to keep in mind that this is only meaningful for *metadata driven applications* which actually use the eForms SDK. If the SDK is not used to drive your application but is used instead merely as a source of information or inspiration, then obviously any change could be a breaking change for your application and the versioning scheme of the SDK will be insignificant for you in such case.
+
+=== Revisions 
+The `revision` number, as already stated above, changes only when we discover a minor mistake or omission in a release which we decide to fix with a quick update. In this case the metadata content is mostly the same as the previous version and the `revision` number is incremented to indicate that this newer version is preferred over the previous one as it contains at least one less mistake. Examples of such changes could be as simple as correcting spelling errors, or even adding back a file that was accidentally omitted in the last release.
+
+
+== Significance of the SDK version in notice handling and validation
+
+Every notice XML file includes a `cbc:CustomizationID` element that indicates the version of the SDK that was used to create the notice. The value of the element is in the format `eforms-sdk-_major_._minor_` (for example `eforms-sdk-1.0`). 
+
+The `CustomizationID` is there to tell you which version of the SDK your application should use to handle the specific notice. Notice that the `revision` number is omitted from the `CustomizationID`. 
+
+A few examples will help you understand this better.
+
+[example]
+====
+Let's assume that the latest version of the eForms SDK is today 1.1.0. Let's also assume that an eSender (for some reason) is still using 1.0.2 in their application. Finally let's assume that a SDK version 1.0.3 has also been released but is not yet used by our hypothetical eSender.
+
+The eSender creates a new notice and sends it to TED CVS for validation. The notice, having been created using the SDK 1.0.2 by the eSender, will contain a `CustomizationID` element indicating that `eforms-sdk-1.0` was used to create it. When the notice arrives at TED CVS, the validation service will open the notice, read the `CustomizationID` and use the latest `revision` available for the `minor` version of the SDK that was used to create the notice. So, TED CVS will effectively validate the notice using SDK 1.0.3 (instead of using the latest SDK version which would be 1.1.0). This is the correct and expected behaviour for all applications.  
+====
+
+[example]
+====
+Continuing in our previous example let's assume that 6 months later the eSender has updated their SDK repository which now contains all the subsequent versions of the SDK since 1.0.2 which they had used to create the specific notice. Let's assume that the eSender needs to visualise the  same notice for some reason. The eSender's application will open the notice XML, look at the `CustomizationID` and use SDK 1.0.3 to visualise the notice because 1.0.3 is the latest `revision` available in their SDK repository for the `minor` version (1.0) that was used to create the specific notice. The same will be the behaviour of TED Viewer when it is called to visualise a notice. It will always use the latest `revision` of the `minor` version that was used to create the notice.
+====
+
