@@ -8,14 +8,14 @@ This page provides an overview of the upcoming releases and the changes that are
 
 Since the release of the eForms SDK 1.0.0 in August 2022, we have continued to release updates to the SDK that incrementally improve the eForms metadata that is included in it. These updates are all backwards compatible with the SDK 1.0.0 and therefore they can be used by applications that have already been adapted to the SDK 1.0.0. 
 
-=== SDK 1.12.0
-SDK 1.12.0, which will be released shortly after SDK 1.11.0 in March 2024, will not include any metadata updates but **will extend the conceptual model** by introducing **Business Entities**  in `fields.json`. 
+// === SDK 1.12.0
+// SDK 1.12.0, which will be released shortly after SDK 1.11.0, will not include any metadata updates but **will extend the conceptual model** by introducing **Business Entities**  in `fields.json`. 
 
-This new concept will allow us to better link notice type definitions with the conceptual model. More specifically it allows us to link instances of repeatable nodes and fields with instance identifiers in cases where it was not previously possible. For example, applications will be able to provide better user experiences when filling-in change notices, as well as in other cross-referencing use cases of `id-ref` fields.
+// This new concept will allow us to better link notice type definitions with the conceptual model. More specifically it allows us to link instances of repeatable nodes and fields with instance identifiers in cases where it was not previously possible. For example, applications will be able to provide better user experiences when filling-in change notices, as well as in other cross-referencing use cases of `id-ref` fields.
 
-The introduction of this new concept will not break backwards compatibility. We wil provide more details on the concept of Business Entities in the March 2024 eSender meeting. Appropriate documentation for the new feature will also be made available together with the release of SDK 1.12.0.
+// The introduction of this new concept will not break backwards compatibility. We wil provide more details on the concept of Business Entities in the March 2024 eSender meeting. Appropriate documentation for the new feature will also be made available together with the release of SDK 1.12.0.
 
-=== Other releases during 2024
+// === Other releases during 2024
 In 2024, there will be at least two SDK releases to satisfy the changes and deadlines required by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[December 2023 amendment to the eForms implementing regulation]. 
 
 One SDK release, no later than May, will include the new fields for the link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_001_fsr.pdf[Foreign Subsidies Regulation (FSR)] and link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_002_ipi.pdf[International Procurement Instrument (IPI)] as well as the updates to exclusion and selection criteria. A further SDK release, no later than October, will include the rest of the amendment changes, notably including the six voluntary forms E1-E6. 
