@@ -19,9 +19,9 @@ include::{page-component-version}@eforms:efx:partial$nav.adoc[]
 include::{page-component-version}@eforms:guide:partial$nav.adoc[]
 
 * [.separated]#**Java Libraries**#
-include::{page-component-version}@eforms:efx-toolkit:partial$nav.adoc[]
-include::{page-component-version}@eforms:eforms-core:partial$nav.adoc[]
+include::home:efx-toolkit:partial$nav.adoc[]
+include::home:eforms-core:partial$nav.adoc[]
 
 * [.separated]#**Sample Applications**#
-include::{page-component-version}@eforms:notice-viewer:partial$nav.adoc[]
-include::{page-component-version}@eforms:notice-editor:partial$nav.adoc[]
+include::home:notice-viewer:partial$nav.adoc[]
+include::home:notice-editor:partial$nav.adoc[]
