@@ -1,0 +1,76 @@
+= Notice Viewer Sample Application
+:page-aliases: eforms:notice-viewer:index.adoc
+
+To demonstrate how you can use the eForms SDK in a *metadata driven application* that visualises eForms notices, we have created this sample application. The application is https://github.com/OP-TED/eforms-notice-viewer[available on Github]. You are encouraged to use it for inspiration or as a basis for further development. You are also welcome to contribute with pull requests any improvements that you want to share with us and other eSenders.
+
+CAUTION: The notice viewer is not a production ready application. It is intended to demonstrate the use of concepts and resources available in the eForms SDK. You can use it as an inspiration or a starting point for your own apps.
+
+== Goal
+
+The goal of the application is to create an HTML visualisation of any given XML notice. To do this, the application generates an XSLT template from the corresponding view template found in the eForms SDK, and then uses the generated XSLT to transform the notice XML to HTML. 
+
+== How it works
+
+The notice-viewer is a command line application written in Java. It takes as a parameter the pathname of the notice XML file to visualise. The target language can also be specified (the default is English).  
+
+The application opens the given XML file to determine the version number of the eForms SDK needed to visualise it, as well as the notice subtype that the notice corresponds to.
+
+Using the notice subtype, the notice-viewer infers the appropriate EFX template needed to visualise the notice. 
+
+The application loads the eForms metadata from the eForms SDK and uses the EFX translator to translate the selected EFX template to XSLT.
+
+It then uses an XSLT processor to transform the notice XML to HTML using the XSLT generated in the previous step. The generated HTML is stored in a local file and can be opened for inspection by the user in any web browser.
+
+== Behind the scenes
+
+The application has a runtime dependency to the eForms SDK. as well as a compile-time dependency to the  xref:efx-toolkit:index.adoc[EFX Toolkit for Java] (`efx-toolkit-java` https://github.com/OP-TED/efx-toolkit-java[in Github]).
+
+[source]
+----
+    <!--  eForms SDK -->
+    <dependency>
+      <groupId>eu.europa.ted.eforms</groupId>
+      <artifactId>eforms-sdk</artifactId>
+      <version>0.6.0</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <!-- EFX Toolkit -->
+    <dependency>
+      <groupId>eu.europa.ted.eforms</groupId>
+      <artifactId>efx-toolkit-java</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+----
+
+* The application uses the `EfxTranslator` included in `efx-toolkit-java` to generate a XSL template which it then uses to transform the notice XML file to HTML.
+* To access the eForms metadata, the application implements the `SymbolResolver` interface in its `SdkSymbolResolver` class.
+* To generate XPath, it uses the `XPathScriptGenerator` which is included in `efx-toolkit-java`.
+* To generate XSL, it implements the `ScriptGenerator` interface in its `XslScriptGenerator` class.
+
+Finally, the application also has a dependency to https://mvnrepository.com/artifact/net.sf.saxon/Saxon-HE/11.3[Saxon], which it uses to perform the final XSL transformation that generates the HTML output.
+
+The `EfxTranslator` is called to translate the EFX template to XSLT. The translator calls the `XPathScriptGenerator` to translate EFX expressions to XPath and the `XslScriptGenerator` to translate the EFX template to XSL markup.
+
+After the XSL is generated, the Saxon XSLT processor is called to apply the XSL transformation to the input XML file. References to labels and field values are resolved during this final transformation stage. The label identifiers are resolved directly through the XML files provided in the eForms SDK. 
+
+== Behaviour & known issues
+
+If a label is not found in the available version of the SDK, then the label's identifier is displayed instead.
+
+The CSS stylesheet is very basic and uses several colors to visually identify different types of artefacts in the final output. For example, "static" labels are displayed with a different color than "dynamic" labels. A "dynamic" label in this context is a label who's identifier depends on the value of a field (like the label of a codelist or indicator field). Our goal was not to make the notice visually pleasing, but to make the output more clear to a developer exploring the application.
+
+NOTE: The application actually tries to use the correct version of the SDK as specified in the XML notice being visualised. However, as view templates were not available before eForms SDK version 0.6.0, the application is unable to render notices created with versions of the SDK prior to 0.6.0.
+
+The section numbers displayed in the HTML notice are automatically generated (apart from the ones of root level sections). Some numbers may appear to be skipped in the HTML output. This is because the automatic numbering is currently done when the XSL template is being generated, (instead of the time it is being applied to the input). As a result the numbering of sections follows the list of "anticipated sections" rather than the list of "sections actually present" in the XML input. Therefore, if a section is not present in the XML input, then the corresponding section will not appear in the HTML output; however, the numbers of subsequent sections will not be adjusted to eliminate gaps.
+
+NOTE: The application tries to implement a mechanism for using multiple versions of the eForms SDK in parallel. However, this first version of the application can only work with one version of the SDK as currently there is no other version of the eForms SDK that contains any view templates. Therefore, the current implementation of the mechanism that handles multiple versions of the SDK in parallel is incomplete. 
+
+WARNING: The view templates currently included in SDK 0.7.0 are a "work in progress". You may find templates that contain mistakes or even "to-do" comments included in this version of the SDK.
+
+'''
+*See also:*
+
+* xref:viewer-templates:index.adoc[Notice View Templates]
+* xref:efx-toolkit:index.adoc[EFX Toolkit for Java]
+* xref:efx:template-syntax.adoc[EFX template syntax]

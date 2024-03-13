@@ -1,0 +1,10 @@
+= eForms Core Library for Java developers  🚧
+:page-aliases: eforms:eforms-core:index.adoc
+
+NOTE: The documentation of the eForms Core Library is **not yet ready** for publication. We are working on it and we will update this page as soon as we have something we can share.
+
+The eForms Core Library provides a set of classes that can be used when implementing some features typical (common) to eForms Applications:
+
+* Automatically discovering and downloading new versions of the eForms SDK.
+* Maintaining and instantiating at runtime the correct application component versions for different major versions of the SDK.
+
