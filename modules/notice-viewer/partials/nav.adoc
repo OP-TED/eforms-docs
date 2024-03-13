@@ -1,1 +1,1 @@
-* xref:notice-viewer:index.adoc[Notice Viewer (Java)]
+* xref:home:notice-viewer:index.adoc[Notice Viewer (Java)]

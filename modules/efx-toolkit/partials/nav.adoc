@@ -1,1 +1,1 @@
-* xref:efx-toolkit:index.adoc[EFX Toolkit]
+* xref:home:efx-toolkit:index.adoc[EFX Toolkit]
