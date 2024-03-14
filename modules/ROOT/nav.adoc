@@ -1,10 +1,13 @@
-* xref:index.adoc[Home]
+* xref:eforms-common::FAQ/index.adoc[Frequently Asked Questions]
+* xref:eforms-common::preview/index.adoc[Preview Environment]
+* xref:eforms-common::active-versions/index.adoc[Active SDK Versions]
+* xref:eforms-common::versioning/index.adoc[SDK Versioning]
 
-* [.separated]#**General Reference**#
+* [.separated]#**General Reference** `{page-component-version}`#
 include::{page-component-version}@eforms:schema:partial$nav.adoc[]
 include::{page-component-version}@eforms:reference:partial$nav.adoc[]
 
-* [.separated]#**SDK Contents**#
+* [.separated]#**SDK Contents** `{page-component-version}`#
 include::{page-component-version}@eforms:fields:partial$nav.adoc[]
 include::{page-component-version}@eforms:codelists:partial$nav.adoc[]
 include::{page-component-version}@eforms:notice-types:partial$nav.adoc[]
@@ -14,14 +17,13 @@ include::{page-component-version}@eforms:schemas:partial$nav.adoc[]
 include::{page-component-version}@eforms:schematrons:partial$nav.adoc[]
 include::{page-component-version}@eforms:efx:partial$nav.adoc[]
 
-* [.separated]#**Developer Guide**#
-
+* [.separated]#**Developer Guide** `{page-component-version}`#
 include::{page-component-version}@eforms:guide:partial$nav.adoc[]
 
 * [.separated]#**Java Libraries**#
-include::home:efx-toolkit:partial$nav.adoc[]
-include::home:eforms-core:partial$nav.adoc[]
+include::eforms-common:efx-toolkit:partial$nav.adoc[]
+include::eforms-common:eforms-core:partial$nav.adoc[]
 
 * [.separated]#**Sample Applications**#
-include::home:notice-viewer:partial$nav.adoc[]
-include::home:notice-editor:partial$nav.adoc[]
+include::eforms-common:notice-viewer:partial$nav.adoc[]
+include::eforms-common:notice-editor:partial$nav.adoc[]
