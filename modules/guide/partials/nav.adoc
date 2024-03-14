@@ -1,7 +1,6 @@
 * xref:{page-component-version}@eforms:guide:index.adoc[Start Here]
 * xref:{page-component-version}@eforms:guide:understanding-the-sdk.adoc[Understanding the SDK]
 * xref:{page-component-version}@eforms:guide:sdk-glossary.adoc[SDK glossary]
-* xref:eforms::versioning.adoc[SDK versioning]
 * Working with the SDK
 ** xref:{page-component-version}@eforms:guide:notice-forms.adoc[Create the forms]
 ** xref:{page-component-version}@eforms:guide:xml-generation.adoc[Generate XML]
