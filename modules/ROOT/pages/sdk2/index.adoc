@@ -1,4 +1,5 @@
 = eForms SDK 2.0.0
+:page-aliases: home:eforms:sdk2/index.adoc
 
 WARNING: This is a pre-release version of this document. 
  The eForms SDK 2.0.0 is still under development.

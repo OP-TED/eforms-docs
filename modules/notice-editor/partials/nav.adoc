@@ -1,1 +1,1 @@
-* xref:home:notice-editor:index.adoc[Notice Editor (Java)]
+* xref:eforms-common:notice-editor:index.adoc[Notice Editor (Java)]

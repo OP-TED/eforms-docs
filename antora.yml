@@ -1,2 +1,5 @@
-name: home
+name: eforms-common
+title: eForms SDK
 version: ~
+nav:
+- modules/ROOT/nav.adoc

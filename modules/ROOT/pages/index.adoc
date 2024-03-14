@@ -1,0 +1,93 @@
+= eForms SDK Documentation
+
+eForms is the new notification standard for public procurement procedures in the EU. The eForms SDK is a collection of resources, models and schemas providing the foundation for building eForms applications. The objective of eForms applications is to create, submit for publications, read, visualise or otherwise manipulate eForms notices.
+
+This site organises the eForms documentation into several different parts.
+
+== Cross-version documentation
+
+NOTE: The pages linked below provide information that is not maintained per version o the SDK, but rather reflects the latest information available for the respective topics.
+
+The eForms documentation contains certain resources that are common to all versions of the eForms SDK. These include:
+
+=== General Information
+* xref:FAQ/index.adoc[eForms FAQ] +
+  Answers to frequently asked questions about eForms.
+* xref:preview/index.adoc[Preview Environment] +  
+  Test-driving your applications on the eForms Preview Environment.
+* xref:active-versions/index.adoc[Active Versions] + 
+  Information on the SDK versions that a currently active and their expiry dates.
+* xref:versioning/index.adoc[SDK Versioning] + 
+  Understand the logic and rules behind the versioning scheme used by the eForms SDK.
+
+=== Java Libraries
+* xref:eforms:efx-toolkit:index.adoc[EFX Toolkit for Java] +
+A toolkit that you can use to translate EFX expressions and templates for your runtime environment.
+* xref:eforms:eforms-core:index.adoc[eForms Core Java Library] +
+A Java library useful when implementing some standard features of eForms Applications.
+
+=== Sample Applications
+* xref:eforms:notice-viewer:index.adoc[Notice Viewer sample application] +
+See how you can create a metadata driven application for visualising any eForms notice.
+* xref:eforms:notice-editor:index.adoc[Notice Editor sample application] +
+See how you can create a metadata driven application for filling-in and submitting eForms notices. 
+
+== Version-specific documentation 
+
+[NOTE]
+====
+The links in this section will take you to the corresponding pages for the latest SDK version (**SDK {eforms_latest_version}**).
+
+To view the documentation for a specific version of the eForms SDK, select the version from the version selector on the bottom left corner of the page. Pages providing version-specific information also include a page version selector on the top-right corner of the page which you can use to jump to the same topic for a different SDK version.
+====
+
+Detailed, version-specific documentation is provided for all xref:active-versions/index.adoc[active versions] of the eForms SDK. This includes updated versions of the eForms general reference, detailed information on the format and usage of the contents of each SDK version, developer guides, and other resources. 
+
+
+=== General Reference
+* xref:eforms:schema:index.adoc[*eForms Specification*] +
+Extensive documentation of the XML Schema used by eForms.
+* xref:eforms:reference:index.adoc[eForms Metadata Reference] +
+The eForms metadata contained in the SDK in a readable form. 
+
+=== SDK Contents
+
+* xref:eforms:fields:index.adoc[Field Metadata] +
+Learn what a field is, and how its properties and behaviours are  defined.
+* xref:eforms:codelists:index.adoc[Codelists in the SDK] +
+Find out why we include every codelist in the SDK and learn how to use them.
+* xref:eforms:notice-types:index.adoc[Notice Structure] +
+How each notice type is structured.
+* xref:eforms:viewer-templates:index.adoc[Notice View Templates] +
+Reusable templates for visualising notices.
+* xref:eforms:translations:index.adoc[Translations] +
+Find out which translations are included in the SDK and learn how to use them.
+* xref:eforms:schemas:index.adoc[XML Schemas] +
+The XSD files that define the structure of XML notices.
+* xref:eforms:schematrons:index.adoc[Schematron] +
+The Schematron files used to validate XML notices.
+* xref:eforms:efx:index.adoc[eForms Expression Language] +
+The formal language used to express business rules.
+
+=== eForms Developer Guide
+
+* xref:eforms:guide:index.adoc[Start here] + 
+Get a guide to the developers guide.
+
+* xref:eforms:guide:understanding-the-sdk.adoc[Understanding the eForms SDK]. + 
+Learn how the SDK came to be, what problems it tries to solve and how.
+
+* xref:eforms:guide:notice-forms.adoc[Filling-in notices]
+Learn how to generate the notice forms (instead of hardcoding them).
+
+* xref:eforms:guide:xml-generation.adoc[Creating the notice XML]
+Learn how to save a notice in a valid XML file. 
+
+* xref:eforms:guide:validation.adoc[Validating notices] + 
+Lear how to approach notice validation.
+
+* xref:eforms:guide:visualisation.adoc[Visualising notices] + 
+Learn how to preview or print a notice in PDF, HTML or other document format?
+
+* xref:eforms::metadata-driven-applications.adoc[Creating eForms applications] +
+How to approach the creation of an eForms Application.

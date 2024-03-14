@@ -1,1 +1,1 @@
-* xref:home:notice-viewer:index.adoc[Notice Viewer (Java)]
+* xref:eforms-common:notice-viewer:index.adoc[Notice Viewer (Java)]
