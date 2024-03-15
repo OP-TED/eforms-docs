@@ -9,7 +9,7 @@ This page provides an overview of the upcoming releases and the changes that are
 Since the release of the eForms SDK 1.0.0 in August 2022, we have continued to release updates to the SDK that incrementally improve the eForms metadata that is included in it. These updates are all backwards compatible with the SDK 1.0.0 and therefore they can be used by applications that have already been adapted to the SDK 1.0.0. 
 
 // === SDK 1.12.0
-// SDK 1.12.0, which will be released shortly after SDK 1.11.0 in March 2024, will not include any metadata updates but **will extend the conceptual model** by introducing **Business Entities**  in `fields.json`. 
+// SDK 1.12.0, which will be released shortly after SDK 1.11.0, will not include any metadata updates but **will extend the conceptual model** by introducing **Business Entities**  in `fields.json`. 
 
 // This new concept will allow us to better link notice type definitions with the conceptual model. More specifically it allows us to link instances of repeatable nodes and fields with instance identifiers in cases where it was not previously possible. For example, applications will be able to provide better user experiences when filling-in change notices, as well as in other cross-referencing use cases of `id-ref` fields.
 
