@@ -1,5 +1,5 @@
 = eForms FAQ
-:page-aliases: home:FAQ:eforms.adoc
+:page-aliases: home:FAQ:eforms.adoc, home:eforms:FAQ/index.adoc
 
 == General overview of eForms 
 [qanda]

@@ -1,4 +1,5 @@
 = eForms Preview environment
+:page-aliases: home:eforms:preview/index.adoc
 
 == Scope and purpose
 

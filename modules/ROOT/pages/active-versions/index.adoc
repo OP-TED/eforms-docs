@@ -1,4 +1,5 @@
 = SDK version lifespan
+:page-aliases: home:eforms:active-versions/index.adoc
 
 The eForms SDK encodes the eForms specification in a machine-readable format. As the business domain of public procurement evolves over time, the eForms specification is also updated to incorporate the necessary changes. This evolution is reflected in the SDK versions, which permit us to bundle together all the artifacts necessary to interpret notices that have been created in different points in time (and thus under a possibly different regulatory framework). 
 

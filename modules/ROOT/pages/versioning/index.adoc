@@ -1,5 +1,5 @@
 = eForms SDK versioning
-:page-aliases: eforms:ROOT:versioning.adoc
+:page-aliases: eforms:ROOT:versioning.adoc, home:eforms:versioning/index.adoc
 
 The eForms SDK has adopted semantic versioning (https://semver.org/[SemVer]). The SDK version is indicated using a triplet of numbers separated with dots in the form `major`.`minor`.`revision`. 
 

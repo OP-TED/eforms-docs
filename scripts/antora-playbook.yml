@@ -1,6 +1,6 @@
 site:
   title: eForms Documentation
-  start_page: home::index.adoc
+  start_page: eforms-common::index.adoc
 
 content:
   edit_url: false
