@@ -1,33 +1,31 @@
 
-* xref:index.adoc[Home]
 * xref:FAQ/index.adoc[Frequently Asked Questions]
 * xref:preview/index.adoc[Preview Environment]
 * xref:active-versions/index.adoc[Active SDK Versions]
 * xref:versioning/index.adoc[SDK Versioning]
 
-* [.separated]#**Latest Version `{eforms_latest_version}`**#
-* General Reference
-** xref:eforms:schema:index.adoc[eForms Specification]
-** xref:eforms:reference:index.adoc[Metadata Reference]
-* SDK Contents
-** xref:eforms:fields:index.adoc[Field Metadata]
-** xref:eforms:codelists:index.adoc[Codelists]
-** xref:eforms:notice-types:index.adoc[Notice Types]
-** xref:eforms:viewer-templates:index.adoc[View Templates]
-** xref:eforms:translations:index.adoc[Translations]
-** xref:eforms:schemas:index.adoc[Schemas]
-** xref:eforms:schematrons:index.adoc[Schematron]
-** xref:eforms:efx:index.adoc[EFX Grammar]
-* Developer Guide
-** xref:eforms:guide:index.adoc[Start Here]
-** xref:eforms:guide:understanding-the-sdk.adoc[Understanding the SDK]
-** xref:eforms:guide:sdk-glossary.adoc[SDK glossary]
-** Working with the SDK
-*** xref:eforms:guide:notice-forms.adoc[Create the forms]
-*** xref:eforms:guide:xml-generation.adoc[Generate XML]
-*** xref:eforms:guide:visualisation.adoc[Visualise notices]
-*** xref:eforms:guide:validation.adoc[Validate notices]
-** xref:eforms:guide:implementing-eforms-without-the-sdk.adoc[Working without the SDK]
+* [.separated]#**General Reference** `{eforms_latest_version}`#
+* xref:eforms:schema:index.adoc[eForms Specification]
+* xref:eforms:reference:index.adoc[Metadata Reference]
+* [.separated]#**SDK Contents** `{eforms_latest_version}`#
+* xref:eforms:fields:index.adoc[Field Metadata]
+* xref:eforms:codelists:index.adoc[Codelists]
+* xref:eforms:notice-types:index.adoc[Notice Types]
+* xref:eforms:viewer-templates:index.adoc[View Templates]
+* xref:eforms:translations:index.adoc[Translations]
+* xref:eforms:schemas:index.adoc[Schemas]
+* xref:eforms:schematrons:index.adoc[Schematron]
+* xref:eforms:efx:index.adoc[EFX Grammar]
+* [.separated]#**Developer Guide** `{eforms_latest_version}`#
+* xref:eforms:guide:index.adoc[Start Here]
+* xref:eforms:guide:understanding-the-sdk.adoc[Understanding the SDK]
+* xref:eforms:guide:sdk-glossary.adoc[SDK glossary]
+* Working with the SDK
+** xref:eforms:guide:notice-forms.adoc[Create the forms]
+** xref:eforms:guide:xml-generation.adoc[Generate XML]
+** xref:eforms:guide:visualisation.adoc[Visualise notices]
+** xref:eforms:guide:validation.adoc[Validate notices]
+* xref:eforms:guide:implementing-eforms-without-the-sdk.adoc[Working without the SDK]
 
 * [.separated]#**SDK Explorer**#
 * https://docs.ted.europa.eu/eforms-sdk-explorer[Launch SDK Explorer, window=_blank]
