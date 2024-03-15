@@ -109,7 +109,7 @@ The following issues have been identified as of application version 1.12.3:
 
 The following issue has been identified as of 27 February 2024 in Preview:
 
-* Notices submitted to Preview eNotices2 as of 27 February 2024 do not acquire status “published” due to an error in the export process. We are currently working to fix this issue, which may also affect the “expected publication date”. 
+* Notices submitted to Preview eNotices2 as of 27 February 2024 did not acquire status “published” due to an error in the export process. This issue, which may also have affected the “expected publication date”, was fixed on 14 March. 
 
  
 
