@@ -1,7 +1,5 @@
 name: eforms
 title: eForms SDK
 version: '1.11'
-display_version: &ver '1.11.0'
-prerelease: true
 nav:
 - modules/ROOT/nav.adoc
