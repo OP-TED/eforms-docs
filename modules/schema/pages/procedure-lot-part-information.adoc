@@ -507,13 +507,13 @@ a|
 cac:ProcurementLegislationDocumentReference{zwsp}/cbc:DocumentDescription
 ----
 
-|*Legal Basis (BT-01) -- Local - Code* | xref:otherLegalBasisSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
+|*Other Legal Basis (BT-01) -- Local - Code* | xref:otherLegalBasisSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:ProcurementLegislationDocumentReference{zwsp}/cbc:ID
 ----
 
-|*Legal Basis (BT-01) -- Local - Text* | xref:otherLegalBasisSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |--
+|*Other Legal Basis (BT-01) -- Local - Text* | xref:otherLegalBasisSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |--
 a|
 [source,xpath,subs=attributes]
 ----
@@ -1356,24 +1356,27 @@ information about the legislation reported in the
 ----
 
 [[otherLegalBasisSection]]
-=== Legal Basis (BT-01)
+=== Other Legal Basis (BT-01)
 
-Local legal basis shall be marked the same way as Cross Border Law:
+Local legal basis that apply to the procurement may also be specified.
+It shall be marked the same way as Cross Border Law:
 
-* Specifying the European Legislation Identifier (ELI) in the
-"_cbc:ID_" element with the appropriate schemeName:
+* when an identifier exists, specifying the Identifier (e.g. ELI, celex) in the _BT-01(c)-Procedure_ field 
+("_cbc:ID_" element) in addition to the legislation description in the _BT-01(d)-Procedure_ field 
+("_cbc:DocumentDescription_" element):
 
 [source,xml]
 ----
 <cac:ProcurementLegislationDocumentReference>
-    <cbc:ID schemeName="ELI">http://data.europa.eu/eli/dir/2014/24/oj</cbc:ID>
+    <cbc:ID>http://data.europa.eu/eli/dir/2014/24/oj</cbc:ID>
     <cbc:DocumentDescription languageID="ENG">Directive XYZ applies ...</cbc:DocumentDescription>
     <cbc:DocumentDescription languageID="FRA">La directive XYZ ...</cbc:DocumentDescription>
 </cac:ProcurementLegislationDocumentReference>
 ----
 
-* Or, when ELI is not available, the identifier
-"_LocalLegalBasis_" and a short text (description) of applicable law(s):
+* Or, when no identifier is available, specifying the predefined text "_LocalLegalBasis_" in 
+the _BT-01(e)-Procedure_ field  ("_cbc:ID_" element) in addition to a short description 
+of applicable law(s) in the _BT-01(f)-Procedure_ field ("_cbc:DocumentDescription_" element): :
 
 [source,xml]
 ----
