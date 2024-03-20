@@ -184,7 +184,7 @@ We are working on resolving the following limitations and known issues:
 * Since SDK 1.7, the dispatch date (BT-05) rule checks the value against the current date. The rule may be currently more permissive, but as of SDK 2.0, it will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time.
 
 
-NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. As of SDK 1.9 a dynamic rule was added which checks that a notice ID does not match a notice ID that has already been published on TED. 
+NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the current date or information in another notice. 
 
 
 === TED Viewer
