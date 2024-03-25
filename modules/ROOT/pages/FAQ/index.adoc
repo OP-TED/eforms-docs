@@ -649,10 +649,10 @@ will be published as a Change notice for a link:https://docs.ted.europa.eu/eform
 
 What is the correct procedure when creating a Contract Modification Notice with multiple changes, in particular, regarding Modification Previous Notice Section Identifier (BT-1501)? How should we reference previous Contract Modification Notices?::
 
-You can consult the https://docs.ted.europa.eu/eforms/latest/schema/contract-modification-notice.html[TED Developer Docs]. As with Change notices, the Contract Modification notice should contain the consolidated
-information for a given contract. While a Contract Modification notice may contain multiple Contract Modification sections, 
-a Contract Modification section can only change one contract at a time and should only contain the information relevant to the modified contract, 
-e.g. other contract(s) and lots not related to the modified contract, should not be included. 
+You can consult the https://docs.ted.europa.eu/eforms/latest/schema/contract-modification-notice.html[TED Developer Docs]. 
+As with Change notices, the Contract Modification notice should contain the consolidated information. While a Contract Modification notice may contain 
+multiple Contract Modification sections, a Contract Modification section can only change one contract at a time and should only contain the information 
+relevant to the modified contract, e.g. other contract(s) and lots not related to the modified contract, should not be included. 
 +
 Some additional information is, however, necessary (e.g. Contract Modification Reason) and 
 is grouped in the Contract Modification section. 
@@ -678,13 +678,13 @@ While the Contract Modification section is repeatable, each occurrence should:
 * identify the notice on which it is based (BT-1501(n)-Contract).
 +
 All data not pertaining to the modified contract(s) must be removed from the contract modification notice 
-i.e. all lots, groups of lots, Tenders, Tendering parties, Contracts, Organizations not directly 
-mentioned in the modified contract(s). 
+i.e. all lots, groups of lots, Tenders, Tendering parties, Contracts, Organizations not related to any modified contract(s). 
 +
 You may find Contract Modification examples in the https://github.com/OP-TED/eForms-SDK/tree/develop/examples/notices[SDK]
 whose names start with “can-modif…”.
 +
-The Contract Modification notice should group all the available changes for a given Contract and there should not be concurrent Contract Modification Notices submitted. 
+When contracts are modified, the Contract Modification notice should contain all the updates for the modified Contract(s) 
+and no concurrent Contract Modification Notices may be submitted. 
 
 
 
