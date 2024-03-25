@@ -647,6 +647,45 @@ will be published as a Change notice for a link:https://docs.ted.europa.eu/eform
 
 
 
+What is the correct procedure when creating a Contract Modification Notice with multiple changes, in particular, regarding Modification Previous Notice Section Identifier (BT-1501)? How should we reference previous Contract Modification Notices?::
+
+You can consult the https://docs.ted.europa.eu/eforms/latest/schema/contract-modification-notice.html[TED Developer Docs]. 
+As with Change notices, the Contract Modification notice should contain the consolidated information. While a Contract Modification notice may contain 
+multiple Contract Modification sections, a Contract Modification section can only change one contract at a time and should only contain the information 
+relevant to the modified contract, e.g. other contract(s) and lots not related to the modified contract, should not be included. 
++
+Some additional information is, however, necessary (e.g. Contract Modification Reason) and 
+is grouped in the Contract Modification section. 
++
+To make sure all the historical modifications from previous notices are present, the modifications made to each contract
+must be initiated from the latest not cancelled notice (i.e. original Result, if no Contract Modification has been made
+so far, or latest Contract Modification notice for a previously Modified Contract), even if it is a Change. 
+For each contract that is modified for the first time, the link must be made to the original contract award notice 
+or its latest Change. 
++
+The Contract Modification section of the notice is repeatable and multiple contracts may be modified with a single
+notice, given they were already all in the same previous notice; this is important for situations where a lot 
+has multiple winners, as a modification on the lot will affect all the associated contracts.
++
+While the Contract Modification section is repeatable, each occurrence should: 
+
+* refer to one and only one contract (BT-1501(s)-Contract), 
+* have the main reason for that contract modification expressed as code (BT-200-Contract), 
+* have further details about the reason for modification expressed as text (BT-201Contract), 
+* provide a high-level textual description of what has been modified (e.g. amount, quantity …) (BT-202-Contract), 
+* identify the sections of the notice in which modifications have been made (a list may be found in the link:https://docs.ted.europa.eu/eforms/latest/schema/identifiers.html#_referring_to_sections_of_a_notice[documentation])
+(BT-1501(s)-Contract), 
+* identify the notice on which it is based (BT-1501(n)-Contract).
++
+All data not pertaining to the modified contract(s) must be removed from the contract modification notice 
+i.e. all lots, groups of lots, Tenders, Tendering parties, Contracts, Organizations not related to any modified contract(s). 
++
+You may find Contract Modification examples in the https://github.com/OP-TED/eForms-SDK/tree/develop/examples/notices[SDK]
+whose names start with “can-modif…”.
++
+When contracts are modified, the Contract Modification notice should contain all the updates for the modified Contract(s) 
+and no concurrent Contract Modification Notices may be submitted. 
+
 
 
 == Technical documentation and Software Development Kit 
