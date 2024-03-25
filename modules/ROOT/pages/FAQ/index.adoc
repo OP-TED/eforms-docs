@@ -650,9 +650,9 @@ will be published as a Change notice for a link:https://docs.ted.europa.eu/eform
 What is the correct procedure when creating a Contract Modification Notice with multiple changes, in particular, regarding Modification Previous Notice Section Identifier (BT-1501)? How should we reference previous Contract Modification Notices?::
 
 You can consult the https://docs.ted.europa.eu/eforms/latest/schema/contract-modification-notice.html[TED Developer Docs]. As with Change notices, the Contract Modification notice should contain the consolidated
-information for a given contract. A Contract Modification notice can only change one contract at a time 
-and should only contain the information relevant to the modified contract, i.e. other contracts and lots 
-not related to the modified contract, should not be included. 
+information for a given contract. While a Contract Modification notice may contain multiple Contract Modification sections, 
+a Contract Modification section can only change one contract at a time and should only contain the information relevant to the modified contract, 
+e.g. other contract(s) and lots not related to the modified contract, should not be included. 
 +
 Some additional information is, however, necessary (e.g. Contract Modification Reason) and 
 is grouped in the Contract Modification section. 
@@ -661,7 +661,7 @@ To make sure all the historical modifications from previous notices are present,
 must be initiated from the latest not cancelled notice (i.e. original Result, if no Contract Modification has been made
 so far, or latest Contract Modification notice for a previously Modified Contract), even if it is a Change. 
 For each contract that is modified for the first time, the link must be made to the original contract award notice 
-or the latest change to a contract award notice. 
+or its latest Change. 
 +
 The Contract Modification section of the notice is repeatable and multiple contracts may be modified with a single
 notice, given they were already all in the same previous notice; this is important for situations where a lot 
