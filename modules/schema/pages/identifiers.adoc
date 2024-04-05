@@ -99,7 +99,7 @@ previous one. |NA |2 digits.
 decision. When appealed to a higher review body instance, a review request must receive a 
 new identifier. | |
 
-|OPP-010 |Notice Publication ID |OPP-010-notice |Information added by OP prior to
+|OPP-010 |Notice Publication Number |OPP-010-notice |Information added by OP prior to
 publication |ojs-notice-id |XXXXXXXXXX-YYYY
 
 |OPP-011 |OJEU Identifier |OPP-011-notice |Information added by OP prior to publication
@@ -119,7 +119,7 @@ versioning |NA |eforms-sdk-x.y
 Should be unique between all Review technical identifiers of the
 procedure  |review |REV-XXXX
 
-|OPT-111 |Tax Legislation Document ID a|OPT-111-Lot-FiscalLegis
+|OPT-111 |Fiscal Legislation Document ID a|OPT-111-Lot-FiscalLegis
 
 OPT-111-Part-FiscalLegis
 |Technical ID required by the
@@ -143,7 +143,7 @@ OPT-140-Part
 |Technical ID required by the
 standard | |No restriction
 
-|OPT-200 |Company Technical Identifier |OPT-200-Organization-Company |Identifier used in the notice to
+|OPT-200 |Organisation Technical Identifier |OPT-200-Organization-Company |Identifier used in the notice to
 refer to the Organisation |organization |ORG-XXXX
 
 |OPT-201 |TouchPoint Technical Identifier |OPT-201-Organization-TouchPoint |Identifier used in the notice
@@ -157,7 +157,7 @@ notice to refer to the Ultimate Beneficial Owner |ubo |UBO-XXXX
 LotResult (or from the LotTender) to the Tendering Party with its
 composition (Tenderers and subcontractors). |Tendering-party |TPA-XXXX
 
-|OPT-316 |Contract Technical ID |OPT-316-Contract |Technical ID allowing reference to the contract. 
+|OPT-316 |Contract Technical Identifier |OPT-316-Contract |Technical ID allowing reference to the contract. 
 Should be unique between all contract technical identifiers of the
 procedure|contract |CON-XXXX
 
@@ -220,7 +220,7 @@ LOT-XXXX,
 
 GLO-XXXX
 
-|BT-13716 |Change Previous Notice Section Identifier |BT-13716-notice |NB: points to the
+|BT-13716 |Change Previous Section Identifier |BT-13716-notice |NB: points to the
 section of the current notice | a|
 For eForms notices:
 
@@ -241,7 +241,7 @@ now subject to modification, using the Publication Number |ojs-notice-id
 |BT-1501(c) |Modified Contract |BT-1501(c)-Contract |Reference to the Contract that is being modified, 
 using the Contract Technical ID (OPT-316-Contract) |contract|CON-XXXX
 
-|BT-1501(p) |Modification Previous Notice Section Identifier |BT-1501(p)-Contract a|
+|BT-1501(p) |Modified Notice Part Reference |BT-1501(p)-Contract a|
 NB: points to the section of the current notice
 | a|
 For eForms notices:
@@ -251,13 +251,13 @@ Cf. <<sectionsIDsTable>>
 |BT-195 |Unpublished Identifier | |Values defined in a codelist of
 Unpublished Business Terms Codes | |Cf. xref:withheld-publication.adoc[].
 
-|BT-3202 |Contract Tender Identifier |BT-3202-Contract |Points to one of the existing
+|BT-3202 |Contract Tender ID (Reference) |BT-3202-Contract |Points to one of the existing
 (Lot-) Tenders (OPT-321) |tender |TEN-XXXX
 
 |BT-330 |Group Identifier |BT-330-Procedure |Points to a defined Group of Lots (BT-137,
 GLO-XXXX) |LotsGroup |GLO-XXXX
 
-|BT-556 |Group Framework Maximum Value Lot Identifier |BT-556-NoticeResult |Reference to the Group of
+|BT-556 |Group Framework Value Lot Identifier |BT-556-NoticeResult |Reference to the Group of
 Lots the Framework applies to. |LotsGroup |GLO-XXXX
 
 .2+|BT-758 .2+|Change Notice Version Identifier .2+|BT-758-notice |A combination of the 
@@ -276,7 +276,7 @@ that led to this decision or a review decision that is being appealed by this re
 within this notice. The information in the review section refers to this section or these sections.
 | |
 
-|OPP-090 |Previous Notice |OPP-090-Procedure |Publication ID of the previous (TED XML) notice.
+|OPP-090 |Previous Notice Identifier |OPP-090-Procedure |Publication ID of the previous (TED XML) notice.
 |ojs-notice-id |XXXXXXXX-YYYY
 
 .2+a|
@@ -368,7 +368,7 @@ ORG-XXXX,
 
 TPO-XXXX
 
-|OPT-301 |Tax Legislation Information Provider Technical Identifier Reference
+|OPT-301 |Fiscal Legislation Information Provider Technical Identifier Reference
 a|OPT-301-Lot-FiscalLegis
 
 OPT-301-Part-FiscalLegis
@@ -409,7 +409,7 @@ TPO-XXXX
 |OPT-301 |Payer Party (ID reference) |OPT-301-LotResult-Paying |Points to the Organisation
 executing the payments |organization |ORG-XXXX
 
-|OPT-301 |Review Information Providing Organization Technical Identifier Reference a|OPT-301-Lot-ReviewInfo
+|OPT-301 |Review Info Provider Technical Identifier Reference a|OPT-301-Lot-ReviewInfo
 
 OPT-301-Part-ReviewInfo
 |Points to
@@ -472,10 +472,10 @@ ORG-XXXX,
 
 TPO-XXXX
 
-|OPT-301 |Review Body |OPT-301-ReviewBody |Points to the Organisation acting as a Review Body 
+|OPT-301 |Review Body (Reference ID) |OPT-301-ReviewBody |Points to the Organisation acting as a Review Body 
 |organization |ORG-XXXX
 
-|OPT-301 |Review Requester |OPT-301-ReviewReq |Points to the Organisation that requested the review 
+|OPT-301 |Review Requester (Reference ID) |OPT-301-ReviewReq |Points to the Organisation that requested the review 
 |organization |ORG-XXXX
 
 |OPT-302 |Beneficial Owner Reference |OPT-302-Organization |For an economic operator acting as
