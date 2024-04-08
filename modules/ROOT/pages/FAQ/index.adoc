@@ -582,7 +582,7 @@ eNotices2 webinar video recordings are available here:
 * 2023-10-12 - link:https://www.youtube.com/watch?v=_Lk35tfQ_ns[Explanation on how to fill-in a Contract Award Notice. Creation of Workgroups and Structured Organisations]
 * 2023-11-13 - link:https://www.youtube.com/watch?v=DqYibbWT2Ak[How to continue a procedure created in eNotices, Change notice, Workgroup and Structured Organisation settings]
 * 2024-03-13 - link:https://www.youtube.com/watch?v=KzqXMC2d6gA[How to fill in a Contract notice, validation, create a Contract award notice from a procedure created in eNotices for beginners]
-* 2024-03-21 - link:https://www.youtube.com/watch?v=Msw9w9-RwTE
+* 2024-03-21 - link:https://www.youtube.com/watch?v=Msw9w9-RwTE[How to fill in a Contract modification notice, importing a notice from TED, Contract award notice for advanced users]
 
 
 
