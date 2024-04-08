@@ -743,7 +743,7 @@ Is there a roadmap (release plan) for future eForms SDK releases or a set releas
 
 The eForms SDK is a complicated development and information is made available as fast as possible. 
 +
-The lifespan of the various SDK version is documented on the link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html[Active SDK versions] page, however, eSenders should always consult the information provided by the TED API. 
+The lifespan of the various SDK versions is documented on the link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html[Active SDK versions] page, however, eSenders should always consult the information provided by the TED API. 
 
 
 
@@ -869,7 +869,7 @@ For a key to work in a link:https://docs.ted.europa.eu/home/eforms/preview/index
 it needs to be generated in the link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview].
 +
 To use TED API of eNotices2 (either in Preview or in Production), an eSender should log in at least once in the corresponding environment 
-of the User Interface to pair their API key with their eNotices2 account. To avoid authientication issues after generating a key, eSenders should perform at least one valid API request to eNotices2 with their key.
+of the User Interface to pair their API key with their eNotices2 account. To avoid authentication issues after generating a key, eSenders should perform at least one valid API request to eNotices2 with their key.
 +
 A guide on how to test in "Preview" was presented in
 link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
