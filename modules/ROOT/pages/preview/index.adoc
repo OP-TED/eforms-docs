@@ -35,7 +35,7 @@ Also known as "TED Monitor 2022", this application is the internal production sy
 NOTE: TED Monitor is not accessible by eSenders in the "preview" environment.
 
 TED Website:: 
-TED is the public dissemination website for European procurement notices. It is the digital (and only) form of the Supplement to the Official Journal of the EU (OJ S). The current TED website, which has been adapted to handle eForms notices, has been replaced by a totally new, built-from-scratch version (also known as https://ted.europa.eu/en/browse-by-business-opportunity[TED 2.0]). 
+TED is the public dissemination website for European procurement notices. It is the digital (and only) form of the Supplement to the Official Journal of the EU (OJ S). The new TED website, also known as link:https://ted.europa.eu/en/news/welcome-to-the-new-ted[TED 2.0], was developed to handle eForms notices.
 +
 NOTE: The TED website is not available in the "preview" environment.
 
