@@ -218,6 +218,7 @@ The `text` label-type is also used with the `auxiliary` asset type to provide so
 [cols=">1,^1,^1,^1,^1,^1,^1,^1"]
 |===
 h|  h| `name` h| `description` h| `hint` h| `when&#8209;true` h| `when&#8209;false` h|`text` h|`template`
+h|`business&#8209;entity` |X|X|X||||
 h|`business&#8209;term` |X|X|X||||
 h|`field` |X|X|X||||
 h|`node` |X|X|X||||
