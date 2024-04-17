@@ -175,7 +175,7 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.4.2
+Application version:: 1.6.1
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
@@ -193,7 +193,7 @@ API documentation:: https://viewer.preview.ted.europa.eu/swagger-ui/index.html
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.5.2
+Application version:: 1.5.3
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
@@ -218,7 +218,7 @@ Scope:: Users can generate an API key. As of 5 July in Preview and 10 July 2023 
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: Q1 2024
+Indicative planning:: Q3 2024
 Scope:: Public profiles will be made available at a later stage as a catalogue of eSenders and will eventually replace the list of eSenders on SIMAP.
 
 
