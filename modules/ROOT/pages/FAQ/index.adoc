@@ -802,7 +802,7 @@ This Excel file is provided "as is" and may serve as a guide. It will not be fur
 OP is sharing the XSLT files with the actual implementation of these mappings, which will be progressively enriched: 
 https://github.com/OP-TED/ted-xml-data-converter. 
 +
-OP has also developed an application to convert from TED XML to eForms XML using these XSLT files and which will is provided as a public API service. 
+OP has also developed an application to convert from TED XML to eForms XML using these XSLT files and which is provided as a public API service. 
 +
 The conversion of TED XML will always result in an invalid eForms XML because, for example, not all fields exist, or text fields 
 cannot be turned into codelist values. But it should allow users and systems to carry over as much as possible of existing notices into the new format, 
@@ -990,6 +990,16 @@ so that the Publications Office can notify them regarding e.g. the rejection/ pu
 Mandatory property “noticeAuthorLocale” in the metadata indicates the EU official language in which the Contracting Authority 
 wishes to be notified by the Publications Office. Locale value should conform to ISO 639-1 Language Code List and must be 
 one of the following: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv. 
+
+
+
+What are search parameters "submittedAt", "updadedAt" and “expectedPublicationDate” and what dates do they represent?::
+
+"submittedAt" reflects the value that an eSender inputs in Notice Dispatch Date (BT-05). It is up to the eSender to input a value; as long as the notice passes CVS validation and lawfulness, it will be published.
++
+"updadedAt" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that. In the future, OP is planning to introduce search parameters for the date/ time of Notice Dispatch Date eSender (BT-803) in the XML (if any), as well as a search parameter for the date/ time a notice was created in eNotices2 application.
++
+“expectedPublicationDate” is assigned by our internal system (TED Monitor) and is the next available OJS issue date based on the link:https://ted.europa.eu/en/release-calendar[release calendar] from the date the notice was successfully submitted. Notices will be published by default as soon as possible when the eSender has not indicated a Notice Preferred Publication Date (BT-738).
 
 
 
