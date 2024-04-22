@@ -1,0 +1,24 @@
+= `measurement-unit` codelist
+:navtitle: Codelists
+
+List of codes for the most commonly used Unit of Measures in international trades.
+[horizontal]
+Version:: 20231213-0
+URI:: http://publications.europa.eu/resource/dataset/measurement-unit
+Structure:: flat
+Used in:: xref:business-terms/BT-625.adoc[`BT-625`] Unit
+
+== Codes
+[horizontal]
+  `GRM`::: gram
+  `H87`::: piece
+  `HUR`::: hour
+  `KGM`::: kilogram
+  `KMK`::: square kilometre
+  `KTM`::: kilometre
+  `LTR`::: litre
+  `MGM`::: milligram
+  `MLT`::: millilitre
+  `MTK`::: square metre
+  `MTR`::: metre
+  `TNE`::: tonne

@@ -1,0 +1,15 @@
+= `procedure-type-t02` codelist
+:navtitle: Codelists
+
+Allowed procedure type for notice subtype T02
+[horizontal]
+Version:: 20220928-0
+Subset of:: xref:code-lists/procurement-procedure-type.adoc[`procurement-procedure-type`]
+Structure:: flat
+Used in:: xref:business-terms/BT-105.adoc[`BT-105`] Procedure Type
+
+== Codes
+[horizontal]
+  `comp-tend`::: Competitive tendering
+  `exp-int-rail`::: Request for expression of interest – only for rail (article 5(3b) of regulation 1370/2007)
+  `neg-wo-call`::: Negotiated without prior call for competition

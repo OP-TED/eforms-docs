@@ -1,0 +1,10 @@
+= `BT-95`: Recurrence Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-95-Lot`:: Recurrence Description
+  `BT-95-Lot-Language`:: Recurrence Description Language

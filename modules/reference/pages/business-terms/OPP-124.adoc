@@ -1,0 +1,9 @@
+= `OPP-124`: Gazette Issue Identifier
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-124-Business`:: Gazette Issue Identifier
+  `OPP-124-Business-Scheme`:: Gazette Issue Identifier Schemename

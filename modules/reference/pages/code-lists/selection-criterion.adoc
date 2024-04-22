@@ -1,0 +1,16 @@
+= `selection-criterion` codelist
+:navtitle: Codelists
+
+List of codes to express conditions that are concerned for evaluation purposes. This codelist is a subset of the ESPD codelist CriterionTaxonomy.
+[horizontal]
+Version:: 20221214-0
+URI:: http://publications.europa.eu/resource/dataset/selection-criterion
+Structure:: flat
+Used in:: xref:business-terms/BT-747.adoc[`BT-747`] Selection Criteria Type
+
+== Codes
+[horizontal]
+  `ef-stand`::: Economic and financial standing
+  `other`::: Other
+  `sui-act`::: Suitability to pursue the professional activity
+  `tp-abil`::: Technical and professional ability

@@ -1,0 +1,159 @@
+= `eforms-language` codelist
+:navtitle: Codelists
+
+List of language codes allowed in eforms
+[horizontal]
+Version:: 20220928-0
+Subset of:: xref:code-lists/language.adoc[`language`]
+Structure:: flat
+Used in:: xref:business-terms/BT-97.adoc[`BT-97`] Submission Language, xref:business-terms/BT-708.adoc[`BT-708`] Documents Official Language, xref:business-terms/BT-737.adoc[`BT-737`] Documents Unofficial Language
+
+== Codes
+[horizontal]
+  `AFR`::: Afrikaans
+  `AKA`::: Akan
+  `AMH`::: Amharic
+  `ARA`::: Arabic
+  `AYM`::: Aymara
+  `AZE`::: Azerbaijani
+  `BEL`::: Belarusian
+  `BEN`::: Bengali
+  `BIS`::: Bislama
+  `BOD`::: Tibetan
+  `BOS`::: Bosnian
+  `BRE`::: Breton
+  `BUL`::: Bulgarian
+  `CAT`::: Catalan
+  `CES`::: Czech
+  `CHA`::: Chamorro
+  `CNR`::: Montenegrin
+  `COR`::: Cornish
+  `COS`::: Corsican
+  `CYM`::: Welsh
+  `DAN`::: Danish
+  `DEU`::: German
+  `DIV`::: Dhivehi
+  `DZO`::: Dzongkha
+  `ELL`::: Greek
+  `ENG`::: English
+  `EST`::: Estonian
+  `EUS`::: Basque
+  `EWE`::: Ewe
+  `FAO`::: Faroese
+  `FAS`::: Persian
+  `FIJ`::: Fijian
+  `FIL`::: Filipino
+  `FIN`::: Finnish
+  `FRA`::: French
+  `FRY`::: Frisian
+  `FUL`::: Fula
+  `GLA`::: Scottish Gaelic
+  `GLE`::: Irish
+  `GLG`::: Galician
+  `GLV`::: Manx
+  `GRN`::: Guarani
+  `HAT`::: Haitian
+  `HAU`::: Hausa
+  `HEB`::: Hebrew
+  `HIN`::: Hindi
+  `HMO`::: Hiri Motu
+  `HRV`::: Croatian
+  `HSB`::: Upper Sorbian
+  `HUN`::: Hungarian
+  `HYE`::: Armenian
+  `IBO`::: Igbo
+  `IND`::: Indonesian
+  `ISL`::: Icelandic
+  `ITA`::: Italian
+  `JPN`::: Japanese
+  `KAL`::: Greenlandic
+  `KAT`::: Georgian
+  `KAZ`::: Kazakh
+  `KHM`::: Khmer
+  `KIN`::: Kinyarwanda
+  `KIR`::: Kyrgyz
+  `KON`::: Kikongo
+  `KOR`::: Korean
+  `KUR`::: Kurdish
+  `LAO`::: Lao
+  `LAT`::: Latin
+  `LAV`::: Latvian
+  `LIN`::: Lingala
+  `LIT`::: Lithuanian
+  `LTZ`::: Luxembourgish
+  `LUA`::: Luba-Lulua
+  `MAH`::: Marshallese
+  `MAN`::: Manding
+  `MIN`::: Minangkabau
+  `MKD`::: Macedonian
+  `MLG`::: Malagasy
+  `MLT`::: Maltese
+  `MON`::: Mongolian
+  `MRI`::: Māori
+  `MSA`::: Malaysian
+  `MYA`::: Burmese
+  `NAU`::: Nauruan
+  `NBL`::: Southern Ndebele
+  `NEP`::: Nepali
+  `NIU`::: Niuean
+  `NLD`::: Dutch
+  `NNO`::: Norwegian Nynorsk
+  `NOB`::: Norwegian Bokmål
+  `NOR`::: Norwegian
+  `NSO`::: Northern Sotho
+  `NYA`::: Chewa
+  `OCI`::: Occitan
+  `OSS`::: Ossetic
+  `PAN`::: Punjabi
+  `PAP`::: Papiamento
+  `PAU`::: Palauan
+  `POL`::: Polish
+  `POR`::: Portuguese
+  `PUS`::: Pashto
+  `QUE`::: Quechua
+  `RAR`::: Rarotongan
+  `ROH`::: Romansh
+  `ROM`::: Romani
+  `RON`::: Romanian
+  `RUN`::: Kirundi
+  `RUS`::: Russian
+  `SAG`::: Sango
+  `SCO`::: Scots
+  `SIN`::: Sinhala
+  `SLK`::: Slovak
+  `SLV`::: Slovenian
+  `SME`::: Northern Sami
+  `SMO`::: Samoan
+  `SOM`::: Somali
+  `SOT`::: Southern Sotho
+  `SPA`::: Spanish
+  `SQI`::: Albanian
+  `SRP`::: Serbian
+  `SSW`::: Swazi
+  `SWA`::: Swahili
+  `SWE`::: Swedish
+  `TAM`::: Tamil
+  `TET`::: Tetum
+  `TGK`::: Tajik
+  `THA`::: Thai
+  `TIR`::: Tigrinya
+  `TKL`::: Tokelauan
+  `TON`::: Tongan
+  `TPI`::: Tok Pisin
+  `TSN`::: Tswana
+  `TSO`::: Tsonga
+  `TUK`::: Turkmen
+  `TUR`::: Turkish
+  `TVL`::: Tuvaluan
+  `UKR`::: Ukrainian
+  `URD`::: Urdu
+  `UZB`::: Uzbek
+  `VEN`::: Venda
+  `VIE`::: Vietnamese
+  `WLN`::: Walloon
+  `WOL`::: Wolof
+  `XHO`::: Xhosa
+  `YID`::: Yiddish
+  `YOR`::: Yoruba
+  `ZHO`::: Chinese
+  `ZUL`::: Zulu

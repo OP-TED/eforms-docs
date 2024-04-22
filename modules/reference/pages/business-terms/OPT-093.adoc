@@ -1,0 +1,10 @@
+= `OPT-093`: Review Technical Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `OPT-093-Review`:: Review Technical Identifier
+  `OPT-093-Review-Scheme`:: Review Technical Identifier Schemename

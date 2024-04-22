@@ -1,0 +1,10 @@
+= `BT-793`: Review Remedy Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-793-Review`:: Review Remedy Value
+  `BT-793-Review-Currency`:: Review Remedy Value Currency

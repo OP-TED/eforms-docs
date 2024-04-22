@@ -1,0 +1,1790 @@
+=== `accelerated-procedure`
+List of codes to specify whether a procedure is accelerated or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/accelerated-procedure.adoc[details & codes]
+
+'''
+
+=== `authority-activity`
+List of Main Activity codes allowed for a Contracting Authority
+[horizontal]
+Subset of:: <<_main_activity,`main-activity`>>
+Version:: 20220316-0
+
+See xref:code-lists/authority-activity.adoc[details & codes]
+
+'''
+
+=== `bri`
+List of allowed Notice Type codes for a Business Register Information document
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/bri.adoc[details & codes]
+
+'''
+
+=== `brin-ecs`
+List of allowed Notice Subtype codes for a notice concerning a European Company or a European Cooperative Society registration processing.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/brin-ecs.adoc[details & codes]
+
+'''
+
+=== `brin-eeig`
+List of allowed Notice Subtype codes for a notice concerning a European Economic Interest Grouping registration processing.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/brin-eeig.adoc[details & codes]
+
+'''
+
+=== `can-desg`
+List of allowed Notice Subtype codes for a notice of CAN Design Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-desg.adoc[details & codes]
+
+'''
+
+=== `can-modif`
+List of allowed Notice Subtype codes for a notice of Contract Modification Notice Type .
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-modif.adoc[details & codes]
+
+'''
+
+=== `can-social`
+List of allowed Notice Subtype codes for a notice of CAN Social Notice Type .
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-social.adoc[details & codes]
+
+'''
+
+=== `can-standard`
+List of allowed Notice Subtype codes for a notice of CAN Standard Notice Type .
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-standard.adoc[details & codes]
+
+'''
+
+=== `can-tran`
+List of allowed Notice Subtype codes for a notice of CAN Public Transport Service Notice Type .
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/can-tran.adoc[details & codes]
+
+'''
+
+=== `cn-desg`
+List of allowed Notice Subtype codes for a notice of CN Design Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/cn-desg.adoc[details & codes]
+
+'''
+
+=== `cn-social`
+List of allowed Notice Subtype codes for a notice of CN Social Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/cn-social.adoc[details & codes]
+
+'''
+
+=== `cn-standard`
+List of allowed Notice Subtype codes for a notice of CN Standard Design Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/cn-standard.adoc[details & codes]
+
+'''
+
+=== `competition`
+List of allowed Notice Type codes for a notice of Competition Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/competition.adoc[details & codes]
+
+'''
+
+=== `cont-modif`
+List of allowed Notice Type codes for a notice of Contract Modification Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/cont-modif.adoc[details & codes]
+
+'''
+
+=== `contract-term`
+TODO
+[horizontal]
+Subset of:: <<_contract_detail,`contract-detail`>>
+Version:: 20220316-0
+
+See xref:code-lists/contract-term.adoc[details & codes]
+
+'''
+
+=== `cvd-scope`
+List of codes to specify whether the procurement falls within the scope of the European Parliament and Council 2009/33/EC (Clean Vehicles Directive – CVD).
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/cvd-scope.adoc[details & codes]
+
+'''
+
+=== `dir-awa-pre`
+List of allowed Notice Type codes for a Direct Award Preannouncement Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/dir-awa-pre.adoc[details & codes]
+
+'''
+
+=== `duration`
+List of codes for undefined duration
+[horizontal]
+Subset of:: <<_timeperiod,`timeperiod`>>
+Version:: 20190918-0
+
+See xref:code-lists/duration.adoc[details & codes]
+
+'''
+
+=== `duration-unit`
+List of codes for eforms allowed duration unit of measure
+[horizontal]
+Subset of:: <<_timeperiod,`timeperiod`>>
+Version:: 20190918-0
+
+See xref:code-lists/duration-unit.adoc[details & codes]
+
+'''
+
+=== `ecatalog-submission`
+List of codes to specify whether the submission of electronic catalogues is allowed or not.
+[horizontal]
+Subset of:: <<_permission,`permission`>>
+Version:: 20220316-0
+
+See xref:code-lists/ecatalog-submission.adoc[details & codes]
+
+'''
+
+=== `eea-country`
+List of codes of the European Economic Area countries
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20230915-0
+
+See xref:code-lists/eea-country.adoc[details & codes]
+
+'''
+
+=== `eforms-buyer-legal-type`
+List of buyer-legal-type codes allowed in eforms
+[horizontal]
+Subset of:: <<_buyer_legal_type,`buyer-legal-type`>>
+Version:: 20220615-0
+
+See xref:code-lists/eforms-buyer-legal-type.adoc[details & codes]
+
+'''
+
+=== `eforms-contract-nature`
+List of eforms allowed codes to specify the main and additional natures of a purchase
+[horizontal]
+Subset of:: <<_contract_nature,`contract-nature`>>
+Version:: 20210317-0
+
+See xref:code-lists/eforms-contract-nature.adoc[details & codes]
+
+'''
+
+=== `eforms-currency`
+List of currency codes allowed in eforms
+[horizontal]
+Subset of:: <<_currency,`currency`>>
+Version:: 20230315-0
+
+See xref:code-lists/eforms-currency.adoc[details & codes]
+
+'''
+
+=== `eforms-language`
+List of language codes allowed in eforms
+[horizontal]
+Subset of:: <<_language,`language`>>
+Version:: 20220928-0
+
+See xref:code-lists/eforms-language.adoc[details & codes]
+
+'''
+
+=== `eforms-legal-basis`
+List of Legal Basis codes allowed in eForms
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/eforms-legal-basis.adoc[details & codes]
+
+'''
+
+=== `einvoicing`
+List of codes to specify whether the use of electronic invoicing is allowed or not.
+[horizontal]
+Subset of:: <<_permission,`permission`>>
+Version:: 20220316-0
+
+See xref:code-lists/einvoicing.adoc[details & codes]
+
+'''
+
+=== `entity-activity`
+List of Main Activity codes allowed for a Contracting Entity
+[horizontal]
+Subset of:: <<_main_activity,`main-activity`>>
+Version:: 20220316-0
+
+See xref:code-lists/entity-activity.adoc[details & codes]
+
+'''
+
+=== `esignature-submission`
+List of codes to dpecify whether electronic signature may be used or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/esignature-submission.adoc[details & codes]
+
+'''
+
+=== `esubmission`
+List of codes to specify whether the electronic submission is allowed or not.
+[horizontal]
+Subset of:: <<_permission,`permission`>>
+Version:: 20220316-0
+
+See xref:code-lists/esubmission.adoc[details & codes]
+
+'''
+
+=== `eu-country`
+List of codes of the EU countries
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20230915-0
+
+See xref:code-lists/eu-country.adoc[details & codes]
+
+'''
+
+=== `eu-official-language`
+List of codes of the EU official languages
+[horizontal]
+Subset of:: <<_language,`language`>>
+Version:: 20220928-0
+
+See xref:code-lists/eu-official-language.adoc[details & codes]
+
+'''
+
+=== `exclusion-ground`
+List of codes for Exclusion Ground identification
+[horizontal]
+Subset of:: <<_criterion,`criterion`>>
+Version:: 20230315-0
+
+See xref:code-lists/exclusion-ground.adoc[details & codes]
+
+'''
+
+=== `lawful-country`
+List of countries for which there is a legal basis for publication in the Supplement to the Official Journal of the European Union
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20230915-0
+
+See xref:code-lists/lawful-country.adoc[details & codes]
+
+'''
+
+=== `legal-basis-1`
+Allowed Legal Basis values for notice subtype 1
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-1.adoc[details & codes]
+
+'''
+
+=== `legal-basis-10`
+Allowed Legal Basis values for notice subtype 10
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-10.adoc[details & codes]
+
+'''
+
+=== `legal-basis-11`
+Allowed Legal Basis values for notice subtype 11
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-11.adoc[details & codes]
+
+'''
+
+=== `legal-basis-12`
+Allowed Legal Basis values for notice subtype 12
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-12.adoc[details & codes]
+
+'''
+
+=== `legal-basis-13`
+Allowed Legal Basis values for notice subtype 13
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-13.adoc[details & codes]
+
+'''
+
+=== `legal-basis-14`
+Allowed Legal Basis values for notice subtype 14
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-14.adoc[details & codes]
+
+'''
+
+=== `legal-basis-15`
+Allowed Legal Basis values for notice subtype 15
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-15.adoc[details & codes]
+
+'''
+
+=== `legal-basis-16`
+Allowed Legal Basis values for notice subtype 16
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-16.adoc[details & codes]
+
+'''
+
+=== `legal-basis-17`
+Allowed Legal Basis values for notice subtype 17
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-17.adoc[details & codes]
+
+'''
+
+=== `legal-basis-18`
+Allowed Legal Basis values for notice subtype 18
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-18.adoc[details & codes]
+
+'''
+
+=== `legal-basis-19`
+Allowed Legal Basis values for notice subtype 19
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-19.adoc[details & codes]
+
+'''
+
+=== `legal-basis-2`
+Allowed Legal Basis values for notice subtype 2
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-2.adoc[details & codes]
+
+'''
+
+=== `legal-basis-20`
+Allowed Legal Basis values for notice subtype 20
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-20.adoc[details & codes]
+
+'''
+
+=== `legal-basis-21`
+Allowed Legal Basis values for notice subtype 21
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-21.adoc[details & codes]
+
+'''
+
+=== `legal-basis-22`
+Allowed Legal Basis values for notice subtype 22
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-22.adoc[details & codes]
+
+'''
+
+=== `legal-basis-23`
+Allowed Legal Basis values for notice subtype 23
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-23.adoc[details & codes]
+
+'''
+
+=== `legal-basis-24`
+Allowed Legal Basis values for notice subtype 24
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-24.adoc[details & codes]
+
+'''
+
+=== `legal-basis-25`
+Allowed Legal Basis values for notice subtype 25
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-25.adoc[details & codes]
+
+'''
+
+=== `legal-basis-26`
+Allowed Legal Basis values for notice subtype 26
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-26.adoc[details & codes]
+
+'''
+
+=== `legal-basis-27`
+Allowed Legal Basis values for notice subtype 27
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-27.adoc[details & codes]
+
+'''
+
+=== `legal-basis-28`
+Allowed Legal Basis values for notice subtype 28
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-28.adoc[details & codes]
+
+'''
+
+=== `legal-basis-29`
+Allowed Legal Basis values for notice subtype 29
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-29.adoc[details & codes]
+
+'''
+
+=== `legal-basis-3`
+Allowed Legal Basis values for notice subtype 3
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-3.adoc[details & codes]
+
+'''
+
+=== `legal-basis-30`
+Allowed Legal Basis values for notice subtype 30
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-30.adoc[details & codes]
+
+'''
+
+=== `legal-basis-31`
+Allowed Legal Basis values for notice subtype 31
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-31.adoc[details & codes]
+
+'''
+
+=== `legal-basis-32`
+Allowed Legal Basis values for notice subtype 32
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-32.adoc[details & codes]
+
+'''
+
+=== `legal-basis-33`
+Allowed Legal Basis values for notice subtype 33
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-33.adoc[details & codes]
+
+'''
+
+=== `legal-basis-34`
+Allowed Legal Basis values for notice subtype 34
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-34.adoc[details & codes]
+
+'''
+
+=== `legal-basis-35`
+Allowed Legal Basis values for notice subtype 35
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-35.adoc[details & codes]
+
+'''
+
+=== `legal-basis-36`
+Allowed Legal Basis values for notice subtype 36
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-36.adoc[details & codes]
+
+'''
+
+=== `legal-basis-37`
+Allowed Legal Basis values for notice subtype 37
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-37.adoc[details & codes]
+
+'''
+
+=== `legal-basis-38`
+Allowed Legal Basis values for notice subtype 38
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-38.adoc[details & codes]
+
+'''
+
+=== `legal-basis-39`
+Allowed Legal Basis values for notice subtype 39
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-39.adoc[details & codes]
+
+'''
+
+=== `legal-basis-4`
+Allowed Legal Basis values for notice subtype 4
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-4.adoc[details & codes]
+
+'''
+
+=== `legal-basis-40`
+Allowed Legal Basis values for notice subtype 40
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-40.adoc[details & codes]
+
+'''
+
+=== `legal-basis-5`
+Allowed Legal Basis values for notice subtype 5
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-5.adoc[details & codes]
+
+'''
+
+=== `legal-basis-6`
+Allowed Legal Basis values for notice subtype 6
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-6.adoc[details & codes]
+
+'''
+
+=== `legal-basis-7`
+Allowed Legal Basis values for notice subtype 7
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-7.adoc[details & codes]
+
+'''
+
+=== `legal-basis-8`
+Allowed Legal Basis values for notice subtype 8
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-8.adoc[details & codes]
+
+'''
+
+=== `legal-basis-9`
+Allowed Legal Basis values for notice subtype 9
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-9.adoc[details & codes]
+
+'''
+
+=== `legal-basis-cei`
+Allowed Legal Basis values for notice subtype CEI
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-cei.adoc[details & codes]
+
+'''
+
+=== `legal-basis-e1`
+Allowed Legal Basis values for notice subtype E1
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-e1.adoc[details & codes]
+
+'''
+
+=== `legal-basis-e2`
+Allowed Legal Basis values for notice subtype E2
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-e2.adoc[details & codes]
+
+'''
+
+=== `legal-basis-e3`
+Allowed Legal Basis values for notice subtype E3
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-e3.adoc[details & codes]
+
+'''
+
+=== `legal-basis-e4`
+Allowed Legal Basis values for notice subtype E4
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-e4.adoc[details & codes]
+
+'''
+
+=== `legal-basis-e5`
+Allowed Legal Basis values for notice subtype E5
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-e5.adoc[details & codes]
+
+'''
+
+=== `legal-basis-t01`
+Allowed Legal Basis values for notice subtype T01
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-t01.adoc[details & codes]
+
+'''
+
+=== `legal-basis-t02`
+Allowed Legal Basis values for notice subtype T02
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-t02.adoc[details & codes]
+
+'''
+
+=== `legal-basis-x01`
+Allowed Legal Basis values for notice subtype X01
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-x01.adoc[details & codes]
+
+'''
+
+=== `legal-basis-x02`
+Allowed Legal Basis values for notice subtype X02
+[horizontal]
+Subset of:: <<_legal_basis,`legal-basis`>>
+Version:: 20220615-0
+
+See xref:code-lists/legal-basis-x02.adoc[details & codes]
+
+'''
+
+=== `linguistic-status`
+List of codes to specify whether a linguistic version has or not a legal status.
+[horizontal]
+Subset of:: <<_document_status,`document-status`>>
+Version:: 1.0
+
+See xref:code-lists/linguistic-status.adoc[details & codes]
+
+'''
+
+=== `nda`
+List of codes to specify whether a non-disclosure agreement is required.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/nda.adoc[details & codes]
+
+'''
+
+=== `no-esubmission-justification`
+List of codes to justify the impossibility to submit electronically
+[horizontal]
+Subset of:: <<_communication_justification,`communication-justification`>>
+Version:: 20220316-0
+
+See xref:code-lists/no-esubmission-justification.adoc[details & codes]
+
+'''
+
+=== `nuts-alb-lvl3`
+List of level 3 NUTS codes for Albania
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-alb-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-aut-lvl3`
+List of level 3 NUTS codes for Austria
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-aut-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-bel-lvl3`
+List of level 3 NUTS codes for Belgium
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-bel-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-bgr-lvl3`
+List of level 3 NUTS codes for Bulgaria
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-bgr-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-che-lvl3`
+List of level 3 NUTS codes for Switzerland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-che-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-country`
+List of codes for Countries having NUTS codes
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20230915-0
+
+See xref:code-lists/nuts-country.adoc[details & codes]
+
+'''
+
+=== `nuts-cyp-lvl3`
+List of level 3 NUTS codes for Cyprus
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-cyp-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-cze-lvl3`
+List of level 3 NUTS codes for Czech Republic
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-cze-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-deu-lvl3`
+List of level 3 NUTS codes for Germany
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-deu-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-dnk-lvl3`
+List of level 3 NUTS codes for Denmark
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-dnk-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-esp-lvl3`
+List of level 3 NUTS codes for Spain
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-esp-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-est-lvl3`
+List of level 3 NUTS codes for Estonia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-est-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-fin-lvl3`
+List of level 3 NUTS codes for Finland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-fin-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-fra-lvl3`
+List of level 3 NUTS codes for France
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-fra-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-gbr-lvl3`
+List of level 3 NUTS codes for United Kingdom
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-gbr-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-grc-lvl3`
+List of level 3 NUTS codes for Greece
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-grc-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-hrv-lvl3`
+List of level 3 NUTS codes for Croatia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-hrv-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-hun-lvl3`
+List of level 3 NUTS codes for Hungary
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-hun-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-irl-lvl3`
+List of level 3 NUTS codes for Ireland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-irl-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-isl-lvl3`
+List of level 3 NUTS codes for Iceland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-isl-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-ita-lvl3`
+List of level 3 NUTS codes for Italy
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-ita-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-lie-lvl3`
+List of level 3 NUTS codes for Lichtenstein
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-lie-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-ltu-lvl3`
+List of level 3 NUTS codes for Lithuania
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-ltu-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-lux-lvl3`
+List of level 3 NUTS codes for Luxembourg
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-lux-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-lva-lvl3`
+List of level 3 NUTS codes for Latvia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-lva-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-lvl3`
+List of all level 3 NUTS codes
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-mkd-lvl3`
+List of level 3 NUTS codes for Former Yugoslav Republic of Macedonia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-mkd-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-mlt-lvl3`
+List of level 3 NUTS codes for Malta
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-mlt-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-mne-lvl3`
+List of level 3 NUTS codes for Montenegro
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-mne-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-nld-lvl3`
+List of level 3 NUTS codes for Netherlands
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-nld-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-nor-lvl3`
+List of level 3 NUTS codes for Norway
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-nor-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-pol-lvl3`
+List of level 3 NUTS codes for Poland
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-pol-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-prt-lvl3`
+List of level 3 NUTS codes for Portugal
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-prt-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-rou-lvl3`
+List of level 3 NUTS codes for Romania
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-rou-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-srb-lvl3`
+List of level 3 NUTS codes for Serbia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-srb-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-svk-lvl3`
+List of level 3 NUTS codes for Slovakia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-svk-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-svn-lvl3`
+List of level 3 NUTS codes for Slovenia
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-svn-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-swe-lvl3`
+List of level 3 NUTS codes for Sweden
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-swe-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-tur-lvl3`
+List of level 3 NUTS codes for Turkey
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 1.7.0
+
+See xref:code-lists/nuts-tur-lvl3.adoc[details & codes]
+
+'''
+
+=== `organisation-role-service`
+List of possible service codes for Procurement Service Providers
+[horizontal]
+Subset of:: <<_organisation_role,`organisation-role`>>
+Version:: 20210616-0
+
+See xref:code-lists/organisation-role-service.adoc[details & codes]
+
+'''
+
+=== `pin-buyer`
+List of allowed Notice Subtype codes for a notice of PIN Buyer Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-buyer.adoc[details & codes]
+
+'''
+
+=== `pin-cfc-social`
+List of allowed Notice Subtype codes for a notice of PIN Call for Competition Social Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-cfc-social.adoc[details & codes]
+
+'''
+
+=== `pin-cfc-standard`
+List of allowed Notice Subtype codes for a notice of PIN Call for Competition Standard Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-cfc-standard.adoc[details & codes]
+
+'''
+
+=== `pin-only`
+List of allowed Notice Subtype codes for a notice of PIN Only Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-only.adoc[details & codes]
+
+'''
+
+=== `pin-rtl`
+List of allowed Notice Subtype codes for a notice of PIN Reduced Time Limit Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-rtl.adoc[details & codes]
+
+'''
+
+=== `pin-tran`
+List of allowed Notice Subtype codes for a notice of PIN for Public Transportation Service Contract Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/pin-tran.adoc[details & codes]
+
+'''
+
+=== `planning`
+List of allowed Notice Type codes for a Planning Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/planning.adoc[details & codes]
+
+'''
+
+=== `postcode-country`
+List of country codes for countries having postcodes and requiring their use
+[horizontal]
+Subset of:: <<_country,`country`>>
+Version:: 20230915-0
+
+See xref:code-lists/postcode-country.adoc[details & codes]
+
+'''
+
+=== `procedure-type-10`
+Allowed procedure type for notice subtype 10
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-10.adoc[details & codes]
+
+'''
+
+=== `procedure-type-11`
+Allowed procedure type for notice subtype 11
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-11.adoc[details & codes]
+
+'''
+
+=== `procedure-type-12`
+Allowed procedure type for notice subtype 12
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-12.adoc[details & codes]
+
+'''
+
+=== `procedure-type-13`
+Allowed procedure type for notice subtype 13
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-13.adoc[details & codes]
+
+'''
+
+=== `procedure-type-16`
+Allowed procedure type for notice subtype 16
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-16.adoc[details & codes]
+
+'''
+
+=== `procedure-type-17`
+Allowed procedure type for notice subtype 17
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-17.adoc[details & codes]
+
+'''
+
+=== `procedure-type-18`
+Allowed procedure type for notice subtype 18
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-18.adoc[details & codes]
+
+'''
+
+=== `procedure-type-20`
+Allowed procedure type for notice subtype 20
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-20.adoc[details & codes]
+
+'''
+
+=== `procedure-type-21`
+Allowed procedure type for notice subtype 21
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-21.adoc[details & codes]
+
+'''
+
+=== `procedure-type-23`
+Allowed procedure type for notice subtype 23
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-23.adoc[details & codes]
+
+'''
+
+=== `procedure-type-24`
+Allowed procedure type for notice subtype 24
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-24.adoc[details & codes]
+
+'''
+
+=== `procedure-type-25`
+Allowed procedure type for notice subtype 25
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-25.adoc[details & codes]
+
+'''
+
+=== `procedure-type-26`
+Allowed procedure type for notice subtype 26
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-26.adoc[details & codes]
+
+'''
+
+=== `procedure-type-27`
+Allowed procedure type for notice subtype 27
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-27.adoc[details & codes]
+
+'''
+
+=== `procedure-type-28`
+Allowed procedure type for notice subtype 28
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-28.adoc[details & codes]
+
+'''
+
+=== `procedure-type-29`
+Allowed procedure type for notice subtype 29
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-29.adoc[details & codes]
+
+'''
+
+=== `procedure-type-30`
+Allowed procedure type for notice subtype 30
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-30.adoc[details & codes]
+
+'''
+
+=== `procedure-type-31`
+Allowed procedure type for notice subtype 31
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-31.adoc[details & codes]
+
+'''
+
+=== `procedure-type-33`
+Allowed procedure type for notice subtype 33
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-33.adoc[details & codes]
+
+'''
+
+=== `procedure-type-34`
+Allowed procedure type for notice subtype 34
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-34.adoc[details & codes]
+
+'''
+
+=== `procedure-type-36`
+Allowed procedure type for notice subtype 36
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-36.adoc[details & codes]
+
+'''
+
+=== `procedure-type-37`
+Allowed procedure type for notice subtype 37
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-37.adoc[details & codes]
+
+'''
+
+=== `procedure-type-7`
+Allowed procedure type for notice subtype 7
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-7.adoc[details & codes]
+
+'''
+
+=== `procedure-type-8`
+Allowed procedure type for notice subtype 8
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-8.adoc[details & codes]
+
+'''
+
+=== `procedure-type-9`
+Allowed procedure type for notice subtype 9
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-9.adoc[details & codes]
+
+'''
+
+=== `procedure-type-e1`
+Allowed procedure type for notice subtype E1
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-e1.adoc[details & codes]
+
+'''
+
+=== `procedure-type-e2`
+Allowed procedure type for notice subtype E2
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-e2.adoc[details & codes]
+
+'''
+
+=== `procedure-type-e3`
+Allowed procedure type for notice subtype E3
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-e3.adoc[details & codes]
+
+'''
+
+=== `procedure-type-e4`
+Allowed procedure type for notice subtype E4
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-e4.adoc[details & codes]
+
+'''
+
+=== `procedure-type-e5`
+Allowed procedure type for notice subtype E5
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-e5.adoc[details & codes]
+
+'''
+
+=== `procedure-type-t01`
+Allowed procedure type for notice subtype T01
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-t01.adoc[details & codes]
+
+'''
+
+=== `procedure-type-t02`
+Allowed procedure type for notice subtype T02
+[horizontal]
+Subset of:: <<_procurement_procedure_type,`procurement-procedure-type`>>
+Version:: 20220928-0
+
+See xref:code-lists/procedure-type-t02.adoc[details & codes]
+
+'''
+
+=== `qu-sy`
+List of allowed Notice Subtype codes for a notice of Qualification System Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/qu-sy.adoc[details & codes]
+
+'''
+
+=== `required`
+List of codes to specify whether the associated requirement applies or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/required.adoc[details & codes]
+
+'''
+
+=== `reserved-execution`
+List of codes to express whether a contract execution is reserved or not.
+[horizontal]
+Subset of:: <<_applicability,`applicability`>>
+Version:: 20220316-0
+
+See xref:code-lists/reserved-execution.adoc[details & codes]
+
+'''
+
+=== `result`
+List of allowed Notice Type codes for a Result Form Type
+[horizontal]
+Subset of:: <<_notice_type,`notice-type`>>
+Version:: 20210929-0
+
+See xref:code-lists/result.adoc[details & codes]
+
+'''
+
+=== `revenue-allocation`
+Revenue allocation
+[horizontal]
+Subset of:: <<_contract_detail,`contract-detail`>>
+Version:: 20230927-0
+
+See xref:code-lists/revenue-allocation.adoc[details & codes]
+
+'''
+
+=== `review-requester-type`
+Category of Stakeholders that requested a review
+[horizontal]
+Subset of:: <<_organisation_role,`organisation-role`>>
+Version:: 20210616-0
+
+See xref:code-lists/review-requester-type.adoc[details & codes]
+
+'''
+
+=== `social-service-cpv`
+Codes for social service of CPV
+[horizontal]
+Subset of:: <<_cpv,`cpv`>>
+Version:: 2008
+
+See xref:code-lists/social-service-cpv.adoc[details & codes]
+
+'''
+
+=== `subco`
+List of allowed Notice Subtype codes for a notice of Subcontracting Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/subco.adoc[details & codes]
+
+'''
+
+=== `subcontracting-allowed`
+List of codes to specify whether subcontracting is allowed or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/subcontracting-allowed.adoc[details & codes]
+
+'''
+
+=== `tender-guarantee-required`
+List of codes to specify whether a Tender Guarantee is required or not.
+[horizontal]
+Subset of:: <<_indicator,`indicator`>>
+Version:: 1.0
+
+See xref:code-lists/tender-guarantee-required.adoc[details & codes]
+
+'''
+
+=== `veat`
+List of allowed Notice Subtype codes for a notice of Voluntary ex-ante Transparency Notice Type.
+[horizontal]
+Subset of:: <<_notice_subtype,`notice-subtype`>>
+Version:: 1.0
+
+See xref:code-lists/veat.adoc[details & codes]
+
+'''
+

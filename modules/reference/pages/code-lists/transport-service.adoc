@@ -1,0 +1,20 @@
+= `transport-service` codelist
+:navtitle: Codelists
+
+This table provides a list of transport services.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/OPP-040.adoc[`OPP-040`] Main Nature - Sub Type
+
+== Codes
+[horizontal]
+  `bus-s`::: Bus transport services (urban/regional)
+  `coach-s`::: Coach transport services (long-distance)
+  `lrail-s`::: Light rail transport services
+  `metro-s`::: Metro transport services
+  `other`::: Other transport services
+  `port-s`::: Inland waterway and maritime transport services
+  `rail-s`::: Rail transport services
+  `tram-s`::: Tram transport services
+  `trolley-s`::: Trolleybus transport services

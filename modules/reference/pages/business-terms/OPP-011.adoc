@@ -1,0 +1,9 @@
+= `OPP-011`: OJEU Identifier
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-011-notice`:: OJEU Identifier
+  `OPP-011-notice-Scheme`:: OJEU Identifier Schemename

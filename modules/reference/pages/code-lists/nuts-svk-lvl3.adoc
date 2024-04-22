@@ -1,0 +1,21 @@
+= `nuts-svk-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Slovakia
+[horizontal]
+Version:: 1.7.0
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `SK010`::: Bratislavský kraj
+  `SK021`::: Trnavský kraj
+  `SK022`::: Trenčiansky kraj
+  `SK023`::: Nitriansky kraj
+  `SK031`::: Žilinský kraj
+  `SK032`::: Banskobystrický kraj
+  `SK041`::: Prešovský kraj
+  `SK042`::: Košický kraj
+  `SKZZZ`::: Extra-Regio NUTS 3

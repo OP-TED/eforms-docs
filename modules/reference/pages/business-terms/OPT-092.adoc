@@ -1,0 +1,11 @@
+= `OPT-092`: Party Type Description
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-092-ReviewBody`:: Review Body Type Description
+  `OPT-092-ReviewBody-Language`:: Review Body Type Description Language
+  `OPT-092-ReviewReq`:: Review Requester Type Description
+  `OPT-092-ReviewReq-Language`:: Review Requester Type Description Language

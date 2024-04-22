@@ -1,0 +1,10 @@
+= `BT-1375`: Group Lot Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-1375-Procedure`:: Group Lot Identifier
+  `BT-1375-Procedure-Scheme`:: Group Lot Identifier Schemename

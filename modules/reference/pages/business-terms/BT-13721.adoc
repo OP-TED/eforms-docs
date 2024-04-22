@@ -1,0 +1,5 @@
+= `BT-13721`: Strategic Procurement Notice Section Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER

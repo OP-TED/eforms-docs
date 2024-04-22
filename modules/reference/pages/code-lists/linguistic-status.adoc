@@ -1,0 +1,13 @@
+= `linguistic-status` codelist
+:navtitle: Codelists
+
+List of codes to specify whether a linguistic version has or not a legal status.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/document-status.adoc[`document-status`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `non-official`::: Non-official linguistic version
+  `official`::: Official linguistic version

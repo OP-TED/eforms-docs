@@ -1,0 +1,9 @@
+= `OPP-031`: Contract conditions Decription (other than revenue allocation)
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-031-Tender`:: Contract Conditions Description (other than revenue allocation)
+  `OPP-031-Tender-Language`:: Contract Conditions Description (other than revenue allocation) Language

@@ -1,0 +1,21 @@
+= `review-decision-type` codelist
+:navtitle: Codelists
+
+This table describes the decision made a review body.
+[horizontal]
+Version:: 20230927-0
+URI:: http://publications.europa.eu/resource/dataset/review-decision-type
+Structure:: flat
+Used in:: xref:business-terms/BT-790.adoc[`BT-790`] Review Decision Type
+
+== Codes
+[horizontal]
+  `accepted`::: Accepted
+  `other`::: Other
+  `rej-dl-passed`::: Rejected, because the complainant does not have legal standing, as the deadline for submitting a review request has already passed
+  `rej-ncomp`::: Rejected, because the review body does not have the competence to conduct the review
+  `rej-nirreg`::: Rejected for no irregularities
+  `rej-npaid`::: Rejected, because the fee was not paid
+  `rej-other`::: Rejected, because the complainant does not have legal standing, for other reasons than the deadline for submitting a review request has already passed
+  `rej-resolv`::: Rejected, because the problem has already been resolved
+  `rej-signed`::: Rejected, because the contract has already been signed

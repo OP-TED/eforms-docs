@@ -1,0 +1,15 @@
+= `OPT-300`: Party Identifier Reference
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-300-Contract-Signatory`:: Signatory Identifier Reference
+  `OPT-300-Contract-Signatory-Scheme`:: Signatory Identifier Reference Schemename
+  `OPT-300-Procedure-Buyer`:: Buyer Technical Identifier Reference
+  `OPT-300-Procedure-Buyer-Scheme`:: Buyer Technical Identifier Reference Schemename
+  `OPT-300-Procedure-SProvider`:: Service Provider Technical Identifier Reference
+  `OPT-300-Procedure-SProvider-Scheme`:: Service Provider Technical Identifier Reference Schemename
+  `OPT-300-Tenderer`:: Tenderer ID Reference
+  `OPT-300-Tenderer-Scheme`:: Tenderer ID Reference Schemename

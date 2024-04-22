@@ -1,0 +1,16 @@
+= `strategic-procurement` codelist
+:navtitle: Codelists
+
+This table provides the values linked to any social objective promoted by the technical specifications, award criteria, selection criteria or contract performance conditions included in a procurement.
+[horizontal]
+Version:: 20230614-0
+URI:: http://publications.europa.eu/resource/dataset/strategic-procurement
+Structure:: flat
+Used in:: xref:business-terms/BT-06.adoc[`BT-06`] Strategic Procurement
+
+== Codes
+[horizontal]
+  `env-imp`::: Reduction of environmental impacts
+  `inn-pur`::: Innovative purchase
+  `none`::: No strategic procurement
+  `soc-obj`::: Fulfilment of social objectives
