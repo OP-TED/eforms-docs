@@ -312,18 +312,11 @@ ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:
 
 11+^|*Selection Criteria (++*++)* 
 
-|*Selection Criteria Type (BT-747)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+|*Selection Criteria (BT-809)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
 ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:SelectionCriteria{zwsp}/cbc:CriterionTypeCode
-----
-
-|*Selection Criteria Name (BT-749)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
-a|
-[source,xpath,subs=attributes]
-----
-ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:SelectionCriteria{zwsp}/cbc:Name
 ----
 
 |*Selection Criteria Description (BT-750)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
@@ -331,13 +324,6 @@ a|
 [source,xpath,subs=attributes]
 ----
 ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:SelectionCriteria{zwsp}/cbc:Description
-----
-
-|*Selection Criteria Used (BT-748)* | xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
-a|
-[source,xpath,subs=attributes]
-----
-ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:SelectionCriteria{zwsp}/cbc:CalculationExpressionCode
 ----
 
 
@@ -515,12 +501,20 @@ a|
 cac:ProcurementLegislationDocumentReference{zwsp}/cbc:DocumentDescription
 ----
 
-|*Exclusion Grounds (BT-67)* | xref:exclusionGrounds[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Exclusion Grounds Source (BT-806)* | xref:exclusionGroundsSourceSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |--
+a|
+[source,xpath,subs=attributes]
+----
+cac:TendererQualificationRequest{zwsp}/cac:SpecificTendererRequirement{zwsp}/cbc:TendererRequirementTypeCode{zwsp}[@listName='exclusion-grounds-source']
+----
+
+|*Exclusion Grounds (BT-67(a))* | xref:exclusionGrounds[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:TendererQualificationRequest{zwsp}/cac:SpecificTendererRequirement{zwsp}/cbc:TendererRequirementTypeCode{zwsp}[@listName='exclusion-ground']
 ----
-AND
+
+|*Exclusion Grounds Description (BT-67(b))* | xref:exclusionGrounds[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:TendererQualificationRequest{zwsp}/cac:SpecificTendererRequirement{zwsp}/cbc:Description
@@ -1397,19 +1391,38 @@ of applicable law(s) in the _BT-01(f)-Procedure_ field ("_cbc:DocumentDescriptio
 ----
 
 [[exclusionGrounds]]
-=== Exclusion Grounds (BT-67)
+=== Exclusion Grounds (BT-67(a)-Procedure, BT-67(b)-Procedure, BT-806-Procedure)
 
-Exclusion Grounds (BT-67) refer to criteria that, not met and justified
+The information source for Exclusion Grounds (BT-806-Procedure) may be:
+* the Procurement Documents, 
+* the Notice, 
+* the ESPD. 
+
+Multiple sources may be specified, each in a dedicated "cac:SpecificTendererRequirement" element, 
+and further details on Exclusion Grounds may and has to be provided in the notice when the "notice" 
+is identified as a source for exclusion grounds.
+
+Exclusion Grounds (BT-67(a)-Procedure) refer to criteria that, not met and justified
 (even with self-declaration), lead to the tenderer exclusion. This
 information is expected as a code from the technical codelist
-"exclusion-ground" tailored from the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/criterion[criterion] codelist. More than one exclusion
-ground may be used, each in a dedicated
+"exclusion-ground" tailored from the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/criterion[criterion] codelist. 
+More than one exclusion ground may be used, each in a dedicated
 "_cac:SpecificTendererRequirement_" element, a given code may however be
-used only once. Additionally to the code, a text ("cbc:Description") may
+used only once. Additionally to the code, a text ("cbc:Description", BT-67(b)-Procedure) may
 be used.
 
 [source,xml]
 ----
+<cac:TendererQualificationRequest>
+    <!-- Exclusion Grounds Source (BT-806) -->
+    <cac:SpecificTendererRequirement>
+        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">proc-doc</cbc:TendererRequirementTypeCode>
+    </cac:SpecificTendererRequirement>
+    <cac:SpecificTendererRequirement>
+        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">notice</cbc:TendererRequirementTypeCode>
+    </cac:SpecificTendererRequirement>
+</cac:TendererQualificationRequest>
+
 <cac:TendererQualificationRequest>
     <cac:SpecificTendererRequirement>
         <cbc:TendererRequirementTypeCode listName="exclusion-ground">crime-org</cbc:TendererRequirementTypeCode>
