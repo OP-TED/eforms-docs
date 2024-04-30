@@ -990,7 +990,7 @@ An XML instance excerpt is provided below for illustration:
     <efac:LotTender>
         <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
         <cbc:RankCode>1</cbc:RankCode>
-        <efbc:ForeignSubsidiesMeasuresCode listName=”foreign-subsidies-measure-conclusion”>adm-clos</efbc:ForeignSubsidiesMeasuresCode >
+        <efbc:ForeignSubsidiesMeasuresCode listName="foreign-subsidies-measure-conclusion">adm-clos</efbc:ForeignSubsidiesMeasuresCode >
         <efbc:TenderRankedIndicator>true</efbc:TenderRankedIndicator>
         <efbc:TenderVariantIndicator>true</efbc:TenderVariantIndicator>
         <cac:LegalMonetaryTotal>
