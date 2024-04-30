@@ -622,6 +622,14 @@ cac:ContractExecutionRequirement{zwsp}[cbc:ExecutionRequirementCode{zwsp}/@listN
 ----
 
 
+|*Foreign Subsidies Regulation (BT-681)* | xref:foreignSubsidiesRegulationSection[xrefstyle=short] |-- |-- |-- |-- |-- h|? |-- h|? 
+a|
+[source,xpath,subs=attributes]
+----
+cac:ContractExecutionRequirement/cbc:ExecutionRequirementCode[@listName='fsr']
+----
+
+
 |*Terms Performance (BT-70)* | xref:termsPerformanceSection[xrefstyle=short] |-- |-- h|? |-- |-- h|? |-- |-- a|
 [source,xpath,subs=attributes]
 ----
@@ -1607,6 +1615,25 @@ and either the 'true' or 'false' value. When the value is set to 'true', further
 <cac:ContractExecutionRequirement>
     <cbc:ExecutionRequirementCode listName="nda">true</cbc:ExecutionRequirementCode>
     <cbc:Description languageID="ENG">A Non Disclosure Agreement will need to ...</cbc:Description>
+</cac:ContractExecutionRequirement>
+----
+
+[[foreignSubsidiesRegulationSection]]
+=== Foreign Subsidies Regulation indicator (BT-681)
+
+The field Foreign Subsidies Regulation (BT-681-Lot) is an indicator that helps identify whether the 
+procedure for that lot falls under the Foreign Subsidies Regulation (EU) 2022/2560 in line with Article 
+28 thereof.
+
+BT-681-Lot may have any of the two codes of the "_fsr_" codelist: "_true_" or "_false_". When the value 
+is set to "_false_", Foreign Subsidies Measures (BT-682-Tender) may not exist for any tender for that Lot; 
+when the value is set to "_true_", Foreign Subsidies Measures (BT-682-Tender) may exist and shall be 
+specified for any tender for that Lot subject to such measures.
+
+[source,xml]
+----
+<cac:ContractExecutionRequirement>
+    <cbc:ExecutionRequirementCode listName="fsr">true</cbc:ExecutionRequirementCode>
 </cac:ContractExecutionRequirement>
 ----
 
