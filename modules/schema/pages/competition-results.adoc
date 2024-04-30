@@ -666,6 +666,8 @@ Multiple information items may be found in a LotTender:
 
 * The Tender Rank,
 
+* Conclusion on the application of Foreign Subsidies Measure,
+
 * The Public transportation cumulated distance (for T02 form
 only),
 
@@ -722,6 +724,12 @@ innovation partnership. |*?* a|
 [source,xpath,subs=attributes]
 ----
 cbc:RankCode
+---- 
+
+|*Foreign Subsidies Measures (BT-682)* |Measures applied under the Foreign Subsidies Regulation (EU) 2022/2560. |*?* a|
+[source,xpath,subs=attributes]
+----
+efbc:ForeignSubsidiesMeasuresCode
 ---- 
 
 |*Kilometers Public Transport (OPP-080)* |Aggregated number of public
@@ -982,6 +990,7 @@ An XML instance excerpt is provided below for illustration:
     <efac:LotTender>
         <cbc:ID schemeName="tender">TEN-0001</cbc:ID>
         <cbc:RankCode>1</cbc:RankCode>
+        <efbc:ForeignSubsidiesMeasuresCode listName=”foreign-subsidies-measure-conclusion”>adm-clos</efbc:ForeignSubsidiesMeasuresCode >
         <efbc:TenderRankedIndicator>true</efbc:TenderRankedIndicator>
         <efbc:TenderVariantIndicator>true</efbc:TenderVariantIndicator>
         <cac:LegalMonetaryTotal>
