@@ -18,9 +18,10 @@ Since the release of the eForms SDK 1.0.0 in August 2022, we have continued to r
 // === Other releases during 2024
 In 2024, there will be at least two SDK releases to satisfy the changes and deadlines required by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[December 2023 amendment to the eForms implementing regulation]. 
 
-One SDK release, no later than May, will include the new fields for the link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_001_fsr.pdf[Foreign Subsidies Regulation (FSR)] and link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_002_ipi.pdf[International Procurement Instrument (IPI)] as well as the updates to exclusion and selection criteria. A further SDK release, no later than October, will include the rest of the amendment changes, notably including the six voluntary forms E1-E6. 
+SDK release 1.12 will include: the technical changes for link:https://op.europa.eu/documents/d/ted-eforms/2024-03-20_technical_issues-esender_workshop[business entities], the link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_001_fsr.md[additional fields for FSR] (Foreign Subsidies Regulation), the changes to link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_003_esc.md[exclusion grounds and selection grounds] (as foreseen in the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[December 2023 amendment] to the eForms regulation), as well as some incremental updates and improvements. 
 
-Other SDK improvements will be released during the year, which might be combined with these two regulatory updates. 
+SDK 1.12 should be released no later than the end of June 2024. 
+The following SDK release 1.13 will be a very significant release including: the link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_002_ipi.md[additional fields for IPI] (International Procurement Instrument) and for EED (Energy Efficiency Directive) and the six new voluntary forms E1 to E6. SDK 1.13 should be released no later than the end of October 2024. 
 
 == eForms SDK 2.0.0
 
