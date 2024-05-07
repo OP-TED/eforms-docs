@@ -1077,37 +1077,19 @@ each BG-614.
 === Selection criteria
 
 Selection criteria apply at "_Lot_" level.
-There are different types of selection criteria (BT-747), and the main
-ones are "Technical", "Financial" and "Professional". Each of these
-categories is respectively encoded with the "tp-abil", "ef-stand" and
-"sui-act" value of the
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/selection-criterion[selection-criterion] codelistfootnote:[For criteria that would not fit into any of the three previous categories, the value "other" is also available.].
+There are different selection criteria (BT-809) which are identified using a value of the
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/selection-criterion[selection-criterion] 
+codelistfootnote:[For criteria that would not fit into the predefined list, the value "other" is also available.].
 This information is marked using the "_cbc:CriterionTypeCode_" element.
-Multiple instances of Selection Criteria using the same type may be used.
 
-A name (BT-749) may be given to a single selection criterion (or to a
-group of them). When specified, the name, of type text, must be provided
-in all linguistic versions identified as official languages for the
-notice. Information is marked with the "_cbc:Name_" element.
+When the Notice itself is identified as one of the sources for Selection Criteria (i.e. BT-821-Lot 
+is set to 'true'), then Selection Criteria code (BT-809-Lot) and Selection Criteria Description 
+(BT-750-Lot) are mandatory. Multiple codes and their associated description may be provided.
 
-The Selection Criteria Used (BT-748) indicates whether the selection criteria
-are "used", "not used" or "not yet known". This is marked using the 
-"_cbc:CalculationExpressionCode_" element. Codes are from the 
-https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/usage[usage]
-codelist. The "nyk" value to express that the use of the criteria/criterion is 
-"not yet known", is only allowed for "PIN time limit" and "PIN CFC" notices.
+When the notice is not identified as a Source for Selection Criteria, then Selection Criteria code 
+(BT-809-Lot) and Selection Criteria Description (BT-750-Lot) are forbidden.
 
-If the "used" value is used for BT-748, Selection Criteria Description 
-(BT-750) shall be provided in the "_cbc:Description_" element. This includes:
-
-* minimum requirements,
-
-* required information (e.g. self-declaration, documentation)
-and
-
-* criteria usage for selection of candidates to be invited for
-the second stage of the procedure (if a maximum number of candidates was
-set).
+Selection Criteria Second Stage Invite (BT-40) is only allowed when BT-809-Lot exists.
 
 The indication that the criteria/criterion is used for 
 selection of candidates for a second stage is given by the presence of the 
@@ -1118,22 +1100,26 @@ is set to 'true', then details about the criteria/criterion associated numbers
 may be provided (BT-7531, BT-7532, BT-752).
 
 These details are reported in the "_efac:CriterionParameter_" element. The 
-type of criterion is indicated by the "_efbc:ParameterCode_" element, with 
-BT-7531 Selection Criteria Second Stage Invite Number Weight using one 
-of the values from the 
+type of criterion parameter is indicated by the "_efbc:ParameterCode_" element, with:
+
+* BT-7531 Selection Criteria Second Stage Invite Number Weight using one of the values from the 
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-weight[number-weight]
-codelist, and BT-7532 Selection Criteria Second Stage Invite Number 
-Threshold using one of the values from the 
+codelist, or
+
+* BT-7532 Selection Criteria Second Stage Invite Number Threshold using one of the values from the 
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/number-threshold[number-threshold]
-codelist. The "_efbc:ParameterNumeric_" element shall hold the value 
-associated with the criterion. 
+codelist.
+
+The "_efbc:ParameterNumeric_" element holds the value associated with the type of criterion parameter. 
 
 When shall second stage information be reported?
 
 1. When this is applicable, also information is mandatory for CN
 General under Directive 24
 
-2. If Procedure Type (BT-105) isfootnote:[Possible Procedure codes are from the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/procurement-procedure-type[Procurement Procedure Type] codelist: "open", "oth-single", "neg-wo-call", "restricted", "neg-w-call", "comp-dial", "innovation", "oth-mult".]:
+2. If Procedure Type (BT-105) isfootnote:[Possible Procedure codes are from the 
+https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/procurement-procedure-type[Procurement Procedure Type] 
+codelist: "open", "oth-single", "neg-wo-call", "restricted", "neg-w-call", "comp-dial", "innovation", "oth-mult".]:
 
 * _"open"_, _"other single stage procedure"_ or _"negotiated without
 prior call for competition"_, then the 2^nd^ stage information is not
@@ -1147,11 +1133,8 @@ information may/shall be reported.
 ----
 <efac:SelectionCriteria>
         <cbc:CriterionTypeCode listName="selection-criterion">ef-stand</cbc:CriterionTypeCode>
-        <cbc:Name languageID="ENG">Minimum Turnover</cbc:Name>
-        <cbc:Name languageID="FRA">Chiffre d'affaire (HT) minimal</cbc:Name>
         <cbc:Description languageID="ENG">Turnover over contract value rate</cbc:Description>
         <cbc:Description languageID="FRA">Rapport Chiffre d'affaire sur valeur du contrat.</cbc:Description>
-        <cbc:CalculationExpressionCode listName="usage">used</cbc:CalculationExpressionCode>
         <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
         <efac:CriterionParameter>
             <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
@@ -1160,11 +1143,8 @@ information may/shall be reported.
     </efac:SelectionCriteria>
     <efac:SelectionCriteria>
         <cbc:CriterionTypeCode listName="selection-criterion">tp-abil</cbc:CriterionTypeCode>
-        <cbc:Name languageID="ENG">Experience with similar projects</cbc:Name>
-        <cbc:Name languageID="FRA">Expérience avec des projets similaires</cbc:Name>
         <cbc:Description languageID="ENG">Minimum number of years of experience on similar projects</cbc:Description>
         <cbc:Description languageID="FRA">Nombre minimal d'années d'expérience avec des projets similaires</cbc:Description>
-        <cbc:CalculationExpressionCode listName="usage">used</cbc:CalculationExpressionCode>
         <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
         <efac:CriterionParameter>
             <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
