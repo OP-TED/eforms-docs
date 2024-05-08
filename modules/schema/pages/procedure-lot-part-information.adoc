@@ -1082,8 +1082,16 @@ https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/selection
 codelistfootnote:[For criteria that would not fit into the predefined list, the value "other" is also available.].
 This information is marked using the "_cbc:CriterionTypeCode_" element.
 
+The information source for Selection Criteria (BT-821-Lot) may be:
+
+* the Procurement Documents, 
+* the Notice, 
+* the ESPD. 
+
+Multiple sources may be specified, each in a dedicated "cac:SpecificTendererRequirement" element.
+
 When the Notice itself is identified as one of the sources for Selection Criteria (i.e. BT-821-Lot 
-is set to 'true'), then Selection Criteria code (BT-809-Lot) and Selection Criteria Description 
+is set to 'epo-Notice'), then Selection Criteria code (BT-809-Lot) and Selection Criteria Description 
 (BT-750-Lot) are mandatory. Multiple codes and their associated description may be provided.
 
 When the notice is not identified as a Source for Selection Criteria, then Selection Criteria code 
@@ -1382,13 +1390,19 @@ of applicable law(s) in the _BT-01(f)-Procedure_ field ("_cbc:DocumentDescriptio
 === Exclusion Grounds (BT-67(a)-Procedure, BT-67(b)-Procedure, BT-806-Procedure)
 
 The information source for Exclusion Grounds (BT-806-Procedure) may be:
+
 * the Procurement Documents, 
 * the Notice, 
 * the ESPD. 
 
-Multiple sources may be specified, each in a dedicated "cac:SpecificTendererRequirement" element, 
-and further details on Exclusion Grounds may and has to be provided in the notice when the "notice" 
-is identified as a source for exclusion grounds.
+Multiple sources may be specified, each in a dedicated "cac:SpecificTendererRequirement" element.
+
+When the Notice itself is identified as one of the sources for Exclusion Grounds (i.e. BT-806-Procedure 
+is set to 'epo-Notice'), then Exclusion Ground code (BT-67(a)-Procedure) and Exclusion Ground Description 
+(BT-67(b)-Procedure) are mandatory. Multiple codes and their associated description may be provided.
+
+When the notice is not identified as a Source for Exclusion Grounds, then Exclusion Ground code 
+(BT-67(a)-Procedure) and Exclusion Ground Description (BT-67(b)-Procedure) are forbidden.
 
 Exclusion Grounds (BT-67(a)-Procedure) refer to criteria that, not met and justified
 (even with self-declaration), lead to the tenderer exclusion. This
