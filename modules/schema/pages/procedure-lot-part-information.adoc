@@ -1084,9 +1084,9 @@ This information is marked using the "_cbc:CriterionTypeCode_" element.
 
 The information source for Selection Criteria (BT-821-Lot) may be:
 
-* the Procurement Documents, 
-* the Notice, 
-* the ESPD. 
+* the Procurement Documents (epo-ProcurementDocument), 
+* the Notice (epo-Notice), 
+* the ESPD (epo-sub-ESPD). 
 
 Multiple sources may be specified, each in a dedicated "cac:SpecificTendererRequirement" element.
 
@@ -1391,15 +1391,15 @@ of applicable law(s) in the _BT-01(f)-Procedure_ field ("_cbc:DocumentDescriptio
 
 The information source for Exclusion Grounds (BT-806-Procedure) may be:
 
-* the Procurement Documents, 
-* the Notice, 
-* the ESPD. 
+* the Procurement Documents (epo-ProcurementDocument), 
+* the Notice (epo-Notice), 
+* the ESPD (epo-sub-ESPD). 
 
 Multiple sources may be specified, each in a dedicated "cac:SpecificTendererRequirement" element.
 
 When the Notice itself is identified as one of the sources for Exclusion Grounds (i.e. BT-806-Procedure 
-is set to 'epo-Notice'), then Exclusion Ground code (BT-67(a)-Procedure) and Exclusion Ground Description 
-(BT-67(b)-Procedure) are mandatory. Multiple codes and their associated description may be provided.
+is set to 'epo-Notice'), then Exclusion Ground code (BT-67(a)-Procedure) is mandatory and Exclusion Ground Description 
+(BT-67(b)-Procedure) may additionally be specified. Multiple codes and their associated description may be provided.
 
 When the notice is not identified as a Source for Exclusion Grounds, then Exclusion Ground code 
 (BT-67(a)-Procedure) and Exclusion Ground Description (BT-67(b)-Procedure) are forbidden.
@@ -1418,10 +1418,10 @@ be used.
 <cac:TendererQualificationRequest>
     <!-- Exclusion Grounds Source (BT-806) -->
     <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">proc-doc</cbc:TendererRequirementTypeCode>
+        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">epo-ProcurementDocument</cbc:TendererRequirementTypeCode>
     </cac:SpecificTendererRequirement>
     <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">notice</cbc:TendererRequirementTypeCode>
+        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">epo-Notice</cbc:TendererRequirementTypeCode>
     </cac:SpecificTendererRequirement>
 </cac:TendererQualificationRequest>
 
