@@ -88,6 +88,10 @@ IMPORTANT: The table below is updated manually and may not be always accurate. T
 |1.10
 |1 December 2024
 |28 February 2025
+
+|1.11
+|22 April 2025
+|22 April 2025
 |===
 
 NOTE: The Preview environment has the same active range as the Production environment. 
