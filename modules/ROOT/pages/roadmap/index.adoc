@@ -1,4 +1,6 @@
 = eForms SDK Roadmap
+:page-aliases: eforms:ROOT:roadmap.adoc, home:eforms:roadmap/index.adoc
+
 
 SDK versions are released several times per year to improve the provided metadata and implement regulatory changes. Releases are announced in the link:https://github.com/OP-TED/eForms-SDK/discussions/categories/announcements[eForms developer forum on GitHub], where you can watch for updates or follow the discussions. 
 
