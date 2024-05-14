@@ -1,5 +1,6 @@
 * xref:eforms-common::FAQ/index.adoc[Frequently Asked Questions]
 * xref:eforms-common::preview/index.adoc[Preview Environment]
+* xref:eforms-common::roadmap/index.adoc[SDK Roadmap]
 * xref:eforms-common::active-versions/index.adoc[Active SDK Versions]
 * xref:eforms-common::versioning/index.adoc[SDK Versioning]
 
