@@ -100,19 +100,15 @@ As of SDK version 1.6, the lot distribution for lot groups has changed; there is
 
 * Feature “Add a new language” and using the automatic translation service to prefill your new notice linguistic version will lock the notice while the notice is being processed for eTranslation. If there is no language version added, it means translation has failed. 
 
+* OPP-080-Tender field cannot be used in T02.
+
 
 The following issues have been identified as of application version 1.12.3: 
 
 * If you have procurement documents, then OPT-140-lot must always be filled in. 
 * If you have a prize, then BT-44-lot must always be filled in. 
 * If you have selection or award criteria, please make sure that there is a weight and a number. 
-
-The following issue has been identified as of 27 February 2024 in Preview:
-
-* Notices submitted to Preview eNotices2 as of 27 February 2024 did not acquire status “published” due to an error in the export process. This issue, which may also have affected the “expected publication date”, was fixed on 14 March. 
-
  
-
 
 
 ==== Known eNotices2 API issues 
@@ -160,9 +156,9 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: April 2024
+Indicative planning:: June 2024
 Application version:: 1.14
-SDK version:: 1.11
+SDK version:: 1.12
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
