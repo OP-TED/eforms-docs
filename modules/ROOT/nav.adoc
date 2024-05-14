@@ -1,6 +1,7 @@
 
 * xref:FAQ/index.adoc[Frequently Asked Questions]
 * xref:preview/index.adoc[Preview Environment]
+* xref:roadmap/index.adoc[SDK Roadmap]
 * xref:active-versions/index.adoc[Active SDK Versions]
 * xref:versioning/index.adoc[SDK Versioning]
 
