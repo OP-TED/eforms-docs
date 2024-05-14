@@ -741,7 +741,10 @@ For more information and examples of metadata driven applications: https://docs.
 
 Is there a roadmap (release plan) for future eForms SDK releases or a set release date for SDK versions?::
 
-The eForms SDK is a complicated development and information is made available as fast as possible. 
+The eForms SDK is a complicated development and information is made available as fast as possible.
+The SDK roadmap is available at link:https://docs.ted.europa.eu/eforms-common/roadmap/index.html[eForms SDK roadmap] 
+and is updated progressively. The page was created with a view to outlining the changes and additions to the eForms SDK 
+planned in the upcoming releases.
 +
 The lifespan of the various SDK versions is documented on the link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html[Active SDK versions] page, however, eSenders should always consult the information provided by the TED API. 
 
