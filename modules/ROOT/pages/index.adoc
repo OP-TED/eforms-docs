@@ -42,7 +42,7 @@ Get a guide to the developers guide.
 * xref:guide:understanding-the-sdk.adoc[Understanding the eForms SDK]. + 
 Learn how the SDK came to be, what problems it tries to solve and how.
 
-* xref:versioning/index.adoc[SDK Versioning] +
+* xref:eforms-common::versioning/index.adoc[SDK Versioning] +
 Learn about the significance of SDK version numbers.
 
 * xref:guide:notice-forms.adoc[Filling-in notices]
