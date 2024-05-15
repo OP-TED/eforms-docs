@@ -55,7 +55,7 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.13.2
+Application version:: 1.14.0
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 
@@ -157,12 +157,12 @@ We are currently in the process of providing more guidance for users of the eNot
 ==== Planned updates 
 [horizontal]
 Indicative planning:: June 2024
-Application version:: 1.14
+Application version:: 1.15
 SDK version:: 1.12
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version of Preview is in Production as of 28 February 2024.
+NOTE: The current application version of Preview is in Production as of 16 May 2024.
 
 
 === TED Central Validation Service 
@@ -189,7 +189,7 @@ API documentation:: https://viewer.preview.ted.europa.eu/swagger-ui/index.html
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.5.3
+Application version:: 1.5.4
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
