@@ -63,7 +63,8 @@ How to approach the creation of an eForms Application.
 == Java Libraries
 * xref:eforms:efx-toolkit/index.adoc[EFX Toolkit for Java] +
 A toolkit that you can use to translate EFX expressions and templates for your runtime environment.
-* xref:eforms:eforms-core/index.adoc[eForms Core Java Library] +
+* xref:eforms-common::eforms-core/index.adoc[eForms Core Java Library] +
+* xref:eforms-common:eforms-core/index.adoc[eForms Core Java Library] +
 A Java library useful when implementing some standard features of eForms Applications.
 
 == Sample Applications
