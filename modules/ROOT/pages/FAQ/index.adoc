@@ -60,9 +60,10 @@ For generating an API key via the TED Developer Portal, only one EU Login (and i
 As an eSender, you should use a functional/ shared email address to generate your API key and your eNotices2 account.  
 +
 The TED Developer Portal offers the possibility to eSenders to add additional contact emails to their “Developer Profile” 
-so that they can receive communication from the Publications Office, such as important announcements. 
-Any email notifications coming from eNotices2 application that OP may develop in the future for eSenders will still be addressed 
-to the one email address/ EU Login of the eNotices2 account. 
+so that they can receive communication from the Publications Office, such as important announcements, events and downtime notifications.
++
+Any automated notifications coming from eNotices2 application that OP may develop in the future for eSenders will still be addressed 
+to the one email address/ EU Login of the eNotices2 account. As of application version 1.14.0 of eNotices2, the eSender’s email address is also included in copy of the automated notifications regarding the various statuses of notices. 
 
 
 
@@ -606,14 +607,11 @@ to publish a Contract Award Notice will be sent through an email notification, t
 
 
 
-Will eNotices2 send email notification for notices submitted by Web Services about publications or non-publication?::
+Will eNotices2 send email notifications for notices submitted by Web Services about publication or non-publication?::
 
-This is currently under discussion. There is going to be an extensive notification 
-system within eNotices2 and once this is in place, we may consider continuing with email notifications. 
-For notices sent through Web Services and which have failed validation, an email notification will be sent 
-to the Notice Author detailing all the rules that failed. 
+eSenders need to rely primarily on their API queries for the status of their notices. 
 +
-eSenders will need to rely on their API queries for notice status.
+The automated notifications of eNotices2 regarding the various notice statuses are primarily addressed to the Notice Author email address that the eSender needs to provide in the metadata. These emails have been improved as of application version 1.14.0 to also include the eSender’s email address in copy. As part of the improvement, the Publication notification email includes a link to the published notice on TED. 
 
 
 
@@ -953,7 +951,7 @@ HTTP response is in this case “201 created” with "validationReportUrl"
 and "success"=false. The validation report is stored in eNotices2 and can be retrieved with the given URL (with proper authentication) 
 or exported directly from the User Interface of eNotices2. The same notice businessID (noticeID + versionID) cannot be reused. 
 +
-Via the concept of Notice Author, an email notification will be sent to the Contracting Authority only, detailing what failed validation. 
+Via the concept of Notice Author, an email notification is sent to the Contracting Authority, detailing what failed validation. 
 +
 An overview of eForms notice statuses was presented during the 3rd eForms Technical Workshop - 
 link:https://op.europa.eu/en/web/ted-eforms/agenda[The lifecycle of eForms notices]
