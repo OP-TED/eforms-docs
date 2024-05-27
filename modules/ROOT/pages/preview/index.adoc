@@ -109,6 +109,9 @@ The following issues have been identified as of application version 1.12.3:
 * If you have a prize, then BT-44-lot must always be filled in. 
 * If you have selection or award criteria, please make sure that there is a weight and a number. 
  
+The following issue has been identified as of SDK 1.11:
+
+* With the implementation of the new rules, both fields BT-759-LotResult and BT-760-LotResult, Received Submissions Count and Received Submissions Type, have become mandatory in Result notices. In order to avoid a validation error both must be completed.
 
 
 ==== Known eNotices2 API issues 
