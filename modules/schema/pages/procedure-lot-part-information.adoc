@@ -312,14 +312,14 @@ ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:
 
 11+^|*Selection Criteria (++*++)* 
 
-|*Selection Criteria (BT-809)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+|*Selection Criterion (BT-809)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
 ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:SelectionCriteria{zwsp}/cbc:CriterionTypeCode
 ----
 
-|*Selection Criteria Description (BT-750)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
+|*Selection Criterion Description (BT-750)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
 a|
 [source,xpath,subs=attributes]
 ----
@@ -508,13 +508,13 @@ a|
 cac:TendererQualificationRequest{zwsp}/cac:SpecificTendererRequirement{zwsp}/cbc:TendererRequirementTypeCode{zwsp}[@listName='exclusion-grounds-source']
 ----
 
-|*Exclusion Grounds (BT-67(a))* | xref:exclusionGrounds[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Exclusion Ground Code (BT-67(a))* | xref:exclusionGrounds[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:TendererQualificationRequest{zwsp}/cac:SpecificTendererRequirement{zwsp}/cbc:TendererRequirementTypeCode{zwsp}[@listName='exclusion-ground']
 ----
 
-|*Exclusion Grounds Description (BT-67(b))* | xref:exclusionGrounds[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Exclusion Ground Description (BT-67(b))* | xref:exclusionGrounds[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:TendererQualificationRequest{zwsp}/cac:SpecificTendererRequirement{zwsp}/cbc:Description
@@ -1079,23 +1079,23 @@ each BG-614.
 Selection criteria apply at "_Lot_" level.
 There are different selection criteria (BT-809) which are identified using a value of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/selection-criterion[selection-criterion] 
-codelistfootnote:[For criteria that would not fit into the predefined list, the value "other" is also available.].
+codelist.
 This information is marked using the "_cbc:CriterionTypeCode_" element.
 
 The information source for Selection Criteria (BT-821-Lot) may be:
 
-* the Procurement Documents (epo-ProcurementDocument), 
-* the Notice (epo-Notice), 
-* the ESPD (epo-sub-ESPD). 
+* the Procurement Documents (epo-procurement-document), 
+* the Notice (epo-notice), 
+* the ESPD (epo-sub-espd). 
 
 Multiple sources may be specified, each in a dedicated "cac:SpecificTendererRequirement" element.
 
 When the Notice itself is identified as one of the sources for Selection Criteria (i.e. BT-821-Lot 
-is set to 'epo-Notice'), then Selection Criteria code (BT-809-Lot) and Selection Criteria Description 
+is set to 'epo-notice'), then Selection Criterion code (BT-809-Lot) and Selection Criterion Description 
 (BT-750-Lot) are mandatory. Multiple codes and their associated description may be provided.
 
-When the notice is not identified as a Source for Selection Criteria, then Selection Criteria code 
-(BT-809-Lot) and Selection Criteria Description (BT-750-Lot) are forbidden.
+When the notice is not identified as a Source for Selection Criteria, then Selection Criterion code 
+(BT-809-Lot) and Selection Criterion Description (BT-750-Lot) are forbidden.
 
 Selection Criteria Second Stage Invite (BT-40) is only allowed when BT-809-Lot exists.
 
@@ -1139,8 +1139,20 @@ information may/shall be reported.
 
 [source,xml]
 ----
-<efac:SelectionCriteria>
-        <cbc:CriterionTypeCode listName="selection-criterion">ef-stand</cbc:CriterionTypeCode>
+    <cac:TendererQualificationRequest>
+        <!-- Selection Criteria Source (BT-821) -->
+        <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="selection-criteria-source">epo-procurement-document</cbc:TendererRequirementTypeCode>
+        </cac:SpecificTendererRequirement>
+        <cac:SpecificTendererRequirement>
+            <cbc:TendererRequirementTypeCode listName="selection-criteria-source">epo-notice</cbc:TendererRequirementTypeCode>
+        </cac:SpecificTendererRequirement>
+    </cac:TendererQualificationRequest>
+    
+    <!-- interrupted mark-up -->
+
+    <efac:SelectionCriteria>
+        <cbc:CriterionTypeCode listName="selection-criterion">slc-stand-to-avg</cbc:CriterionTypeCode>
         <cbc:Description languageID="ENG">Turnover over contract value rate</cbc:Description>
         <cbc:Description languageID="FRA">Rapport Chiffre d'affaire sur valeur du contrat.</cbc:Description>
         <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
@@ -1150,7 +1162,7 @@ information may/shall be reported.
         </efac:CriterionParameter>
     </efac:SelectionCriteria>
     <efac:SelectionCriteria>
-        <cbc:CriterionTypeCode listName="selection-criterion">tp-abil</cbc:CriterionTypeCode>
+        <cbc:CriterionTypeCode listName="selection-criterion">slc-abil-facil-res</cbc:CriterionTypeCode>
         <cbc:Description languageID="ENG">Minimum number of years of experience on similar projects</cbc:Description>
         <cbc:Description languageID="FRA">Nombre minimal d'années d'expérience avec des projets similaires</cbc:Description>
         <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
@@ -1391,23 +1403,22 @@ of applicable law(s) in the _BT-01(f)-Procedure_ field ("_cbc:DocumentDescriptio
 
 The information source for Exclusion Grounds (BT-806-Procedure) may be:
 
-* the Procurement Documents (epo-ProcurementDocument), 
-* the Notice (epo-Notice), 
-* the ESPD (epo-sub-ESPD). 
+* the Procurement Documents (epo-procurement-document), 
+* the Notice (epo-notice), 
+* the ESPD (epo-sub-espd). 
 
 Multiple sources may be specified, each in a dedicated "cac:SpecificTendererRequirement" element.
 
 When the Notice itself is identified as one of the sources for Exclusion Grounds (i.e. BT-806-Procedure 
-is set to 'epo-Notice'), then Exclusion Ground code (BT-67(a)-Procedure) is mandatory and Exclusion Ground Description 
+is set to 'epo-notice'), then Exclusion Ground code (BT-67(a)-Procedure) is mandatory and Exclusion Ground Description 
 (BT-67(b)-Procedure) may additionally be specified. Multiple codes and their associated description may be provided.
 
 When the notice is not identified as a Source for Exclusion Grounds, then Exclusion Ground code 
 (BT-67(a)-Procedure) and Exclusion Ground Description (BT-67(b)-Procedure) are forbidden.
 
-Exclusion Grounds (BT-67(a)-Procedure) refer to criteria that, not met and justified
+Exclusion Ground Code (BT-67(a)-Procedure) refers to criterion that, not met and justified
 (even with self-declaration), lead to the tenderer exclusion. This
-information is expected as a code from the technical codelist
-"exclusion-ground" tailored from the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/criterion[criterion] codelist. 
+information is expected as a code from the "exclusion-ground" codelist. 
 More than one exclusion ground may be used, each in a dedicated
 "_cac:SpecificTendererRequirement_" element, a given code may however be
 used only once. Additionally to the code, a text ("cbc:Description", BT-67(b)-Procedure) may
@@ -1418,21 +1429,21 @@ be used.
 <cac:TendererQualificationRequest>
     <!-- Exclusion Grounds Source (BT-806) -->
     <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">epo-ProcurementDocument</cbc:TendererRequirementTypeCode>
+        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">epo-procurement-document</cbc:TendererRequirementTypeCode>
     </cac:SpecificTendererRequirement>
     <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">epo-Notice</cbc:TendererRequirementTypeCode>
+        <cbc:TendererRequirementTypeCode listName="exclusion-grounds-source">epo-notice</cbc:TendererRequirementTypeCode>
     </cac:SpecificTendererRequirement>
 </cac:TendererQualificationRequest>
 
 <cac:TendererQualificationRequest>
     <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="exclusion-ground">crime-org</cbc:TendererRequirementTypeCode>
+        <cbc:TendererRequirementTypeCode listName="exclusion-ground">exg-crim-part</cbc:TendererRequirementTypeCode>
         <cbc:Description languageID="ENG">Applicants not satisfying ...</cbc:Description>
         <cbc:Description languageID="FRA">Les candidats ne satisfaisant pas ...</cbc:Description>
     </cac:SpecificTendererRequirement>
     <cac:SpecificTendererRequirement>
-        <cbc:TendererRequirementTypeCode listName="exclusion-ground">fraud</cbc:TendererRequirementTypeCode>
+        <cbc:TendererRequirementTypeCode listName="exclusion-ground">exg-crim-fraud</cbc:TendererRequirementTypeCode>
         <cbc:Description languageID="ENG">Applicants not satisfying ...</cbc:Description>
         <cbc:Description languageID="FRA">Les candidats ne satisfaisant pas ...</cbc:Description>
     </cac:SpecificTendererRequirement>
