@@ -61,5 +61,5 @@ For details on how to translate the provided EFX templates to the template langu
 '''
 *See also:*
 
-* xref:efx-toolkit:index.adoc[EFX Toolkit for Java]
-* xref:notice-viewer:index.adoc[Notice Viewer sample application]
+* xref:eforms:efx-toolkit:index.adoc[EFX Toolkit for Java]
+* xref:eforms:notice-viewer:index.adoc[Notice Viewer sample application]
