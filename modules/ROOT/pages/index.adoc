@@ -62,20 +62,18 @@ How to approach the creation of an eForms Application.
 
 == Java Libraries
 
-* xref:eforms-common:efx-toolkit/index.adoc[EFX Toolkit for Java] +
-* xref:eforms-common::efx-toolkit/index.adoc[EFX Toolkit for Java] +
+
 * xref:eforms-common:efx-toolkit:index.adoc[EFX Toolkit for Java] +
-* xref:eforms-common::efx-toolkit/index.adoc[EFX Toolkit for Java] +
 A toolkit that you can use to translate EFX expressions and templates for your runtime environment.
-* xref:eforms-common::eforms-core/index.adoc[eForms Core Java Library] +
+* xref:eforms-common:eforms-core:index.adoc[eForms Core Java Library] +
 A Java library useful when implementing some standard features of eForms Applications.
 * xref:eforms-common:efx-toolkit:index.adoc[EFX Toolkit]
 
 == Sample Applications
 
-* xref:eforms-common::notice-viewer/index.adoc[Notice Viewer sample application] +
+* xref:eforms-common:notice-viewer:index.adoc[Notice Viewer sample application] +
 See how you can create a metadata driven application for visualising any eForms notice.
-* xref:eforms-common::notice-editor/index.adoc[Notice Editor sample application] +
+* xref:eforms-common:notice-editor:index.adoc[Notice Editor sample application] +
 See how you can create a metadata driven application for filling-in and submitting eForms notices.
 
 TIP: For every release of the eForms SDK, a copy of the corresponding documentation is maintained in this website. You can select the version of documentation that you want to consult by selecting the corresponding version of the SDK either in the dropdown menu available on the top right of this page, or the component navigation panel available on the bottom left of each page. +
