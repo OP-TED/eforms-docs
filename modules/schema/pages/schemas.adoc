@@ -99,4 +99,4 @@ specific extension basic components
 [[versioningSection]]
 == Versioning
 
-Please consult the versioning information provided in detail xref:ROOT:versioning.adoc[here].
+Please consult the versioning information provided in detail xref:eforms-common::versioning/index.adoc[here].
