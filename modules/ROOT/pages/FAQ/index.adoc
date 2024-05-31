@@ -1486,7 +1486,7 @@ terminology) as on TED (which follows the EU terminology).
 
 What are the technical restrictions in eForms?::
 
-There will be some throttling to prevent possible abuse of the system. The new eNotices2 application has a limit of 2000 Lots for the user interface, however, OP may decide to impose lower limits in the future. 
+There will be some throttling to prevent possible abuse of the system. OP will discuss and decide at a later stage whether there should be limits imposed on number of lots and organisations.
 + 
 The technical limit for the number of LOTs is 9999. This is because the technical identifier of a LOT is 
 "LOT-" followed by four digits. The identifier value "LOT-0000" is reserved as a "technical" lot for Procedures without LOTs. 
