@@ -205,4 +205,4 @@ When in doubt, use the EFX Translator implementations available in the EFX Toolk
 *See also:*
 
 * xref:eforms:efx-toolkit:index.adoc[EFX Toolkit for Java]
-* xref::eforms-common:notice-viewer:index.adoc[Notice Viewer sample application]
+* xref:eforms:notice-viewer:index.adoc[Notice Viewer sample application]
