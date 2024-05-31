@@ -43,6 +43,7 @@ To demonstrate how an EFX template translator can be created and used, we have d
 '''
 *See also:*
 
-* xref:eforms:efx-toolkit:index.adoc[EFX Toolkit for Java]
+* xref:eforms-common:efx-toolkit:index.adoc[EFX Toolkit for Java]
+* xref:eforms-common:efx-toolkit/index.adoc[EFX Toolkit for Java]
 * xref:efx:expression-syntax.adoc[EFX expression syntax]
 * xref:efx:template-syntax.adoc[EFX template syntax]
