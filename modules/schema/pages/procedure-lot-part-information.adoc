@@ -501,7 +501,7 @@ a|
 cac:ProcurementLegislationDocumentReference{zwsp}/cbc:DocumentDescription
 ----
 
-|*Exclusion Grounds Source (BT-806)* | xref:exclusionGroundsSourceSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |--
+|*Exclusion Grounds Source (BT-806)* | xref:exclusionGrounds[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |--
 a|
 [source,xpath,subs=attributes]
 ----
