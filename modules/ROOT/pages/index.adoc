@@ -68,7 +68,7 @@ A Java library useful when implementing some standard features of eForms Applica
 
 == Sample Applications
 
-* xref:notice-viewer:index.adoc[Notice Viewer sample application] +
+* xref:eforms:notice-viewer:index.adoc[Notice Viewer sample application] +
 See how you can create a metadata driven application for visualising any eForms notice.
 * xref:eforms:notice-editor:index.adoc[Notice Editor sample application] +
 See how you can create a metadata driven application for filling-in and submitting eForms notices.
