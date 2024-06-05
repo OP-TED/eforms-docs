@@ -23,13 +23,12 @@ link:https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-
 
 
 
-Until when will the eNotices and eSentool applications be available?:: 
+Until when were the eNotices and eSentool applications available?:: 
  
 The submission of notices via eSentool and eNotices was closed on 31 January 2024. 
-It will be possible to continue to view your published notices in eNotices until 30 June 2024 
-and your submitted notices in eSentool until 30 April 2024. 
+It will be possible to continue to view your published notices in eNotices until 30 June 2024. eSentool remained available until 30 April 2024. 
 +
-The new eNotices2 application is an application that performs both functions carried out by the current eNotices and eSentool applications; 
+The new eNotices2 application is an application that performs both functions carried out by eNotices and eSentool applications; 
 it has been available since 14 November 2022 and ran in parallel with eNotices and eSentool applications during the transition period. 
 +
 Authorised applications can send complete notices to the API data interface of eNotices2, 
