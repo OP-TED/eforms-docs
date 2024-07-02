@@ -174,7 +174,7 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.6.1
+Application version:: 1.7.0
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
@@ -192,7 +192,7 @@ API documentation:: https://viewer.preview.ted.europa.eu/swagger-ui/index.html
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.5.4
+Application version:: 1.6.1
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
