@@ -26,9 +26,9 @@ link:https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-
 Until when were the eNotices and eSentool applications available?:: 
  
 The submission of notices via eSentool and eNotices was closed on 31 January 2024. 
-It will be possible to continue to view your published notices in eNotices until 30 June 2024. eSentool remained available until 30 April 2024. 
+eNotices and eSentool remained available for users to view their published notices until 30 June and 30 April 2024 respectively. 
 +
-The new eNotices2 application is an application that performs both functions carried out by eNotices and eSentool applications; 
+The new eNotices2 application performs both functions once carried out by eNotices and eSentool applications; 
 it has been available since 14 November 2022 and ran in parallel with eNotices and eSentool applications during the transition period. 
 +
 Authorised applications can send complete notices to the API data interface of eNotices2, 
@@ -120,6 +120,9 @@ https://op.europa.eu/en/web/ted-eforms/agenda-annual-esenders-seminar-2023
 +
 * eForms presentations from the TED eSender Workshop in March 2024 +
 https://op.europa.eu/en/web/ted-eforms/agenda-q1-20-march-2024
++
+* eForms presentations from the TED eSender Workshop in June 2024 +
+https://op.europa.eu/en/web/ted-eforms/agenda-q2-20-june-2024
 +
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
@@ -264,8 +267,7 @@ In the same way that it is possible to link TED XML notices to eForms
 for procedures that started with TED schema and ended with eForms. 
 +
 The notice in eForms format will link to the preceding TED format notice 
-by referencing its OJ S number. However, a TED format notice cannot follow a notice 
-in eForms format. 
+by referencing its OJ S number.
 +
 OP has created a converter, so a published notice 
 in TED format can be converted to a partial eForms notice; "partial", because eForms notices 
@@ -364,8 +366,8 @@ Changes may only be applied on published notices, therefore, the use case where 
 while the first one has not been published should be addressed either way: 
 +
 --
-* Complete and submit the first Change notice to have it published and then proceed with the second
-* Integrate all changes in a single valid Change notice
+* Complete and submit the first Change notice to have it published and then proceed with the second.
+* Integrate all changes in a single valid Change notice.
 --
 +
 When the non publication of the first Change is purely associated to non reliable transmission, then, 
@@ -448,8 +450,7 @@ For more information, see the relevant section: https://docs.ted.europa.eu/home/
 What is the meaning of notice status “Not published”? Will there be reason codes for “Not Published” notices?::
 
 If a notice is rejected due to manual lawfulness checks, or a technical error occurs in TED Monitor 2022, 
-the notice will obtain status “Not published”, which can be queried through the API. Rejection due to lawfulness manual check 
-will be communicated via email to the contracting authority only. 
+the notice will obtain status “Not published”, which can be queried through the API. 
 
 
 
@@ -470,7 +471,7 @@ E1, E2, E3, E4 and E5 refer to forms that are not part of
 the eForms regulation, but they were included in the “Extended Annex” to
 regulation 2019/1780 available at: https://ec.europa.eu/docsroom/documents/43488
 +
-These optional forms will be implemented in 2024, as defined in the second amendment to the eForms implementing regulation. 
+These optional forms will be implemented in 2024, as defined in the second amendment to the eForms implementing regulation. The new voluntary forms will be included in SDK release 1.13, scheduled to be released no later than the end of October 2024. 
 +
 They would extend (E) the set of the other forms and correspond to the
 following notices:  
@@ -529,14 +530,14 @@ How will tailoring by Member States be handled by TED and the Publications Offic
 National specificities and their implementation at national, regional
 and local level are outside OP's remit. 
 +
-In the eNotices2 form-filling tool user interface, users will be able to fill in and
+In the eNotices2 form-filling tool user interface, users are able to fill in and
 send notices based on the eForms regulation. eNotices2 is not aware of
 and does not apply any compliance with Member State tailoring; for
 example, it will not check if an optional field (according to the EU
 regulation) is mandatory at national level.  
 +
-The same applies to notices sent by eSenders via the eNotices API
-(the successor of eSentool). All notices go through the same checks of
+The same applies to notices sent by eSenders via the TED API 
+(the successor to eSentool). All notices go through the same checks of
 the Central Validation Service, not applying any Member State
 tailoring. It is up to each user (or eSender) to ensure that their
 notices comply with the national implementation of eForms.  +
@@ -559,18 +560,9 @@ The formal change management governance is currently being set up and a change m
 
 What is the function of eNotices2?:: 
 
-The development of eNotices2 started in 2020 and the application went in production in November 2022. 
-eNotices2 is also available in link:https://docs.ted.europa.eu/home/eforms/preview/index.html#_enotices2["Preview"] for testing purposes.
-+
-The scope of the application is to implement the eForms requirements in
-a product that will allow at least the same functionalities that are
-available in the current eNotices and the main functionalities that
-are currently available in eSentool.  
-+
-The application also has a number of new features that will make
-it easier and more streamlined for contracting parties to publish
-notices, while mitigating the inherent complexity of the eForms
-regulation as much as possible.
+The development of eNotices2 started in 2020 and the application went in production in November 2022 
+with the aim to implement the eForms requirements while mitigating the inherent complexity of the eForms
+regulation as much as possible. eNotices2 is also available in link:https://docs.ted.europa.eu/home/eforms/preview/index.html#_enotices2["Preview"] for testing purposes.
 +
 Presentations are available at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar]. A demo of eNotices2 
 front-end application was presented during the  
@@ -586,10 +578,9 @@ eNotices2 webinar video recordings are available here:
 
 
 
-
 Does eNotices2 propose all the fields (mandatory and optional)?::
 
-This is the point of eNotices2: it provides all mandatory and optional fields 
+eNotices2 provides all mandatory and optional fields 
 and it has rules to determine which fields are mandatory under certain conditions. 
 There is also be a feature for users to make some of the optional fields mandatory. In the same way, 
 it is also possible that if an optional field is not relevant for some users, the administrator of 
@@ -600,8 +591,8 @@ the organisation can “hide” these optional fields from view should they wish
 Will you continue to send email notifications, e.g. to the Contracting Authorities, to remind them to publish a contract award notice?::
 
 We have foreseen quite an extensive notification system, which will contain several methods for communication with eNotices2 users, 
-including email communications. We should also provide the means to retrieve the information about the contracting authority 
-sending notice through an eSender via the Notice Author concept, when it is needed. We have not yet decided if the reminder 
+including email communications. We also provide the means to retrieve the information about the contracting authority 
+sending notices through an eSender via the Notice Author concept. We have not yet decided if the reminder 
 to publish a Contract Award Notice will be sent through an email notification, though it will likely be the case at some point.
 
 
@@ -633,7 +624,7 @@ is the decision to group almost all the organisation information in one section.
 but it is quite close to what the eForms TED Viewer will produce. 
 +
 The link:https://github.com/OP-TED/eForms-SDK/tree/develop/view-templates[view-templates] available in the SDK 
-contain the technical definition of how an HTML/ PDF will be generated by TED Viewer 2022. 
+contain the technical definition of how an HTML/ PDF is generated by TED Viewer 2022. 
 +
 The link:https://github.com/OP-TED/eforms-notice-viewer[eForms notice viewer] is available on GitHub as a sample application 
 that can visualise an eForms notice in HTML; it is not a production-ready application. 
@@ -668,7 +659,7 @@ Will the Publications Office be providing eForms-rendering stylesheets?::
 OP does not intend to provide XSL stylesheets. The view-templates in the SDK define how eForms will be displayed by TED Viewer 2022, 
 using the eForms expression language (EFX). 
 +
-Users will also be able to render eForms notices in HTML or PDF using the service provided by TED Viewer 2022, which is available through an API.
+Users are able to render eForms notices in HTML or PDF using the service provided by TED Viewer 2022, which is available through an API.
 
 
 
@@ -683,7 +674,7 @@ They are not the same notices as the ones used in the PDF views but they are ali
  
 What is the meaning of section 10.CHANGE in eForms 40 - Contract Modification Notice?::
 
-eForm 40 is the equivalent of current TED schema form 20; it is used to publicise changes in ongoing contracts. 
+eForm 40 is used to publicise changes in ongoing contracts. 
 As with all other forms, it may be corrected, in which case, a form 40 will contain section 10 (change) and 
 will be published as a Change notice for a link:https://docs.ted.europa.eu/eforms/latest/schema/contract-modification-notice.html[Contract Modification Notice].
 
@@ -728,9 +719,7 @@ are built to integrate the SDK components.
 +
 More information about the SDK was presented at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar].
 +
-The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[May 2022 eForms Technical Workshop] focused on building metadata-driven 
-applications using the SDK, followed by the link:https://op.europa.eu/en/web/eforms-2022/agenda[second eForms Technical Workshop of September 2022] and 
-the link:https://op.europa.eu/en/web/ted-esenders-webinar-2022/home[TED eSenders annual seminar of 2022]. 
+The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[May 2022 eForms Technical Workshop] focused on building metadata-driven applications using the SDK.
 +
 For more information and examples of metadata driven applications: https://docs.ted.europa.eu/eforms/latest/metadata-driven-applications.html
 
@@ -748,7 +737,7 @@ Since the codelists are bound to SDK versions, is there a risk that an SDK versi
 
 Versions of the SDK might be short-lived due to various reasons; however, multiple versions of the SDK can be used at the same time 
 provided they are still acceptable. OP will aim to avoid breaking changes but stopping support for an SDK 
-will often come for legal reasons and will be given a six-month transition time. Technically, there would be no reason 
+will often come for legal reasons. Technically, there would be no reason 
 to deprecate a version of the SDK. Significant business changes, such as making mandatory some fields that were previously optional, 
 might force us to deprecate an active version of the SDK after a pre-announced transition period.
 +
@@ -784,29 +773,6 @@ Yes, customisations and tailoring would need to be applied locally, on the user�
 
 
 
-Will OP be providing a mapping of current TED XML schema to eForms?::
-
-To support the transition between the two data formats, OP is mapping the fields of the current TED XML schema to the eForms schema. 
-+
-This link:https://simap.ted.europa.eu/documents/10184/320101/TED-XML-to-eForms-mapping-OP-public-20220404/a0fed751-76cb-491b-957d-96985fdc82a4[mapping in Excel]
-builds on the 2021 mapping of business terms by the European Commission and completes it with the technical mapping of TED XML 
-to the fields of the eForms schema at XPath level. 
-+
-Not all standard forms (SF) are included, and there is not an exact business correspondence between each SF and each eForm notice. 
-+
-This Excel file is provided "as is" and may serve as a guide. It will not be further updated but any feedback is welcome via ted@publications.europa.eu 
-+
-OP is sharing the XSLT files with the actual implementation of these mappings, which will be progressively enriched: 
-https://github.com/OP-TED/ted-xml-data-converter. 
-+
-OP has also developed an application to convert from TED XML to eForms XML using these XSLT files and which is provided as a public API service. 
-+
-The conversion of TED XML will always result in an invalid eForms XML because, for example, not all fields exist, or text fields 
-cannot be turned into codelist values. But it should allow users and systems to carry over as much as possible of existing notices into the new format, 
-for example, when continuing a procedure that overlaps the switch between the two schemas. 
-
-
-
 [NOTE]
 ====
 Please note that the eForms SDK is updated regularly.
@@ -821,7 +787,7 @@ You can use the "watch" repository feature of Github to receive notifications fo
 
 Is there a TED qualification environment available for eForms? How can we test the submission of eForms notices?:: 
 
-There is no qualification procedure for eForms and any user with an API key and an eNotices2 account is able to submit notices via the API. 
+There is no qualification procedure for eForms and any user with an API key and an eNotices2 account is able to submit notices via the TED API. 
 eSenders, however, are required to be familiar with the link:https://enotices2.ted.europa.eu/cookies-legal-notice[“Terms of service”].
 +
 The environments available are Production and Preview. 
@@ -835,16 +801,8 @@ The Central Validation Service (CVS) is remotely available so that you can c
 notices. As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation 
 will not be taken into account for the CVS.
 +
-SDK active versions and their planned removal/ end of support can be found at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html 
-
-
-
-Will there be any limitations for using the Central Validation Service?::
-
-The Central Validation Service (CVS) is available to users the same way as for eNotices2. 
-There should be no limitations in using the CVS through the TED API. However, there will be some throttling 
-to prevent that possible abuse of the system would degrade the experience for users. Therefore, there will be some limits 
-to make sure the system works well for everyone, but the exact limitations will be communicated at a later stage. 
+SDK active versions and their planned removal/ end of support can be found on our 
+link:https://docs.ted.europa.eu/home/eforms/active-versions/index.html[Active SDK versions] page. 
 
 
 
@@ -884,6 +842,25 @@ A last reminder will be sent 1 week before the key expires.
 +
 For a key to work with eNotices2 API, there needs to be a corresponding eNotices2 account. 
 eSenders need to log in once to pair their key and perform at least one valid API request to eNotices2 API with this key in order to avoid authentication issues.
+
+
+
+Are there any limitations in place for the TED API?::
+
+OP will discuss and decide at a later stage whether there should be limits imposed on the number of lots and organisations for submitted notices. Regarding limits in general, the timeout is the first limit to be reached and there is no specific limit for the file size.
++
+We currently have a timeout of 3 minutes for any request to our APIs. This applies for requests made directly to CVS, and requests to the publication/submission API.
++
+The time spent validating and submitting a notice does depend on the number of lots and the number of organisations, but those are not the only factors. Other factors are: 
++ 
+* The type of notice: a result notice has more information to validate than a competition notice with the same number of lots and organisations. 
+* The number of other types of entities: buyers, tenders, tendering parties, contracts, etc. 
+* The number of references to entities: we check that the identifier in each reference corresponds to an entity in the notice. 
++
+We are constantly working on reducing the time required to process notices, which then allows us to process bigger notices before the timeout. This includes improvements in our applications, and changes in the content of the eForms SDK. For example, the restructuring of the Schematron files in SDK 1.10.0 significantly reduces the time needed to validate large notices. 
++
+For larger Result notices, OP’s recommendation is to break them up into smaller notices; this may reduce the possibility of a timeout and also make the notice more legible for readers and end users. 
+
 
 
 What is the purpose of the Developer Profile?::
@@ -932,17 +909,17 @@ The converter is available as an API in link:https://enotices2.ted.europa.eu/ese
 
 Can I send an incomplete notice via Web Service-API and continue via eNotices2 UI?::
 
-No, the notices must be complete before they are submitted via API.
+No, the notices must be complete before they are submitted via API and eSenders are discouraged from using the eNotices2 UI.
  
  
  
-What are the notice statuses that eSenders will be able to query via the API?::
+What are the notice statuses that eSenders can query via the API?::
 
-eSenders will be able to query their notices with the below statuses:  
+eSenders can query their notices with the below statuses:  
 +
 DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING. 
 +
-Notice status VALIDATION_FAILED is only relevant to eSenders (users of eNotices2 API) and refers to notices that failed validation 
+Notice status VALIDATION_FAILED is only relevant to eSenders (users of TED API) and refers to notices that failed validation 
 – i.e. that triggered CVS errors – upon submission. Such notices will never reach status “submitted” and will instead appear 
 in the user interface and when querying the API with status “validation failed”. 
 +
@@ -1231,7 +1208,7 @@ How will BT-702 Notice Official Language work in practice?::
 Any Contracting Authority may publish an eForms Notice in one or more of the EU Official languages. 
 The chosen languages are considered of equal status. EU Institutions publishing eForms Notices are obliged to publish them in all 24 EU Official languages. 
 +
-If more than one language is chosen, all text content of the Notice is capable of being expressed in different languages 
+If more than one language is chosen, all text content of the Notice that can be expressed in different languages, 
 must be expressed in all chosen languages. Due to the technical requirements of UBL, only one language may be specified 
 using the element <cbc:NoticeLanguageCode>; the others must use the element <cbc:ID> within the element <cac:AdditionalNoticeLanguage>. 
 There is no implication or meaning to the choice of which language is specified using <cbc:NoticeLanguageCode>. 
