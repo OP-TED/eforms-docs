@@ -155,7 +155,7 @@ We are currently in the process of providing more guidance for users of the eNot
     * Dynamic rules that check between notices are not yet in place, users, however, should still respect the workflow of eForms notices. For instance, users may currently be able to submit a Change notice that refers to a parent notice that has not been yet published. The notice will still be blocked by our internal system (will enter in error). Currently, it is not possible to stop the publication of a notice that has entered in error in the Preview environment, but we are seeing what could be improved for these situations. 
     * Currently, there are some checks performed by eNotices2 API upon submission of a notice, e.g. eNotices2 will check (and reject) a notice with the same id and version id if it already exists in the system. In the future, such checks will be performed by CVS. 
     * With application version 1.13.2 we have added "expectedPublicationDate" to the list of notice metadata, which is retrieved as the results list of the searched notices, or the notice being stopped.  
-    * As of application version 1.14.0, which is in the Production environment from 16 May, we have improved the automated notifications/ emails regarding the various statuses of notices so that the eSender’s email address is included in copy. As part of the improvement, the Publication notification email includes a link to the published notice on TED. As a reminder, mandatory property “noticeAuthorEmail” in the metadata must be a valid email address and is intended to identify the buyer, i.e. must correspond to the Contracting Authority, so that the Publications Office can notify them about the workflow of their notice, e.g. the publication/rejection of their notices. 
+    * As of application version 1.14.0, which went into Production environment on 16 May, we have improved the automated notifications/ emails regarding the various statuses of notices so that the eSender’s email address is included in copy. As part of the improvement, the Publication notification email includes a link to the published notice on TED. As a reminder, mandatory property “noticeAuthorEmail” in the metadata must be a valid email address and is intended to identify the buyer, i.e. must correspond to the Contracting Authority, so that the Publications Office can notify them about the workflow of their notice, e.g. the publication/rejection of their notices. 
 
     
 
@@ -167,7 +167,7 @@ SDK version:: 1.12
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version of Preview is in Production as of 16 May 2024.
+NOTE: The current application version of Preview is in Production as of 24 May 2024.
 
 
 === TED Central Validation Service 
