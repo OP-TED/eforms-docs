@@ -1,0 +1,10 @@
+= `BT-737`: Documents Unofficial Language
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-737-Lot`:: Documents Unofficial Language
+  `BT-737-Part`:: Documents Unofficial Language

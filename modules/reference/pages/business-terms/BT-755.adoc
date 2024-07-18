@@ -1,0 +1,10 @@
+= `BT-755`: Accessibility Justification
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-755-Lot`:: Accessibility Justification
+  `BT-755-Lot-Language`:: Accessibility Justification Language

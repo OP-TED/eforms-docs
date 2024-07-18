@@ -1,0 +1,19 @@
+= `foreign-subsidy-measure-conclusion` codelist
+:navtitle: Codelists
+
+The FSR introduces a new set of rules that enables the Commission to address distortions caused by foreign subsidies.
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/foreign-subsidy-measure-conclusion
+Structure:: flat
+Used in:: xref:business-terms/BT-682.adoc[`BT-682`] Foreign Subsidies Measures
+
+== Codes
+[horizontal]
+  `fsr-adm-clos`::: Notification submitted, administrative closure of FSR preliminary review procedure
+  `fsr-commit`::: Notification submitted, decision with commitments
+  `fsr-irregul`::: Notification submitted, decision on irregular tender or request to participate
+  `fsr-meat`::: Declaration submitted, standard MEAT award    
+  `fsr-no-obj`::: Notification submitted, decision with no objection
+  `fsr-proh`::: Notification submitted, decision prohibiting the award
+  `fsr-stand`::: Declaration submitted, standard award procedure

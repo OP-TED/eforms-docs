@@ -1,0 +1,15 @@
+= `exclusion-grounds-source` codelist
+:navtitle: Codelists
+
+Source for the exclusion grounds.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/document-used-in-public-procurement.adoc[`document-used-in-public-procurement`]
+Structure:: flat
+Used in:: xref:business-terms/BT-806.adoc[`BT-806`] Exclusion Grounds Source
+
+== Codes
+[horizontal]
+  `epo-notice`::: Notice
+  `epo-procurement-document`::: Procurement Document
+  `epo-sub-espd`::: European Single Procurement Document (ESPD)

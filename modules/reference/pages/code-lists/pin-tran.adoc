@@ -1,0 +1,12 @@
+= `pin-tran` codelist
+:navtitle: Codelists
+
+List of allowed Notice Subtype codes for a notice of PIN for Public Transportation Service Contract Notice Type.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/notice-subtype.adoc[`notice-subtype`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `T01`::: T01

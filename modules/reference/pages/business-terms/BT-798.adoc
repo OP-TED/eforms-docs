@@ -1,0 +1,10 @@
+= `BT-798`: Review Request Withdrawn Reasons
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-798-Review`:: Review Request Withdrawn Reasons
+  `BT-798-Review-Language`:: Review Request Withdrawn Reasons Language

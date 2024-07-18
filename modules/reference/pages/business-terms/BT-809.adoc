@@ -1,0 +1,10 @@
+= `BT-809`: Selection Criteria
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-809-Lot`:: Selection Criteria
+  `BT-809-Lot-List`:: Selection Criteria Listname

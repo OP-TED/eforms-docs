@@ -1,0 +1,8 @@
+= `OPP-050`: Buyers Group Lead Indicator
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-050-Organization`:: Buyers Group Lead Indicator

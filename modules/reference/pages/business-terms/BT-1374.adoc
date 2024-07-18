@@ -1,0 +1,5 @@
+= `BT-1374`: Funds Lot Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER

@@ -1,0 +1,128 @@
+= `BT-197`: Unpublished Justification Code
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-197(BT-09)-Procedure`:: Unpublished Justification Code
+  `BT-197(BT-09)-Procedure-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-105)-Procedure`:: Unpublished Justification Code
+  `BT-197(BT-105)-Procedure-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-106)-Procedure`:: Unpublished Justification Code
+  `BT-197(BT-106)-Procedure-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-1118)-NoticeResult`:: Unpublished Justification Code
+  `BT-197(BT-1118)-NoticeResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-118)-NoticeResult`:: Unpublished Justification Code
+  `BT-197(BT-118)-NoticeResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-1252)-Procedure`:: Unpublished Justification Code
+  `BT-197(BT-1252)-Procedure-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-135)-Procedure`:: Unpublished Justification Code
+  `BT-197(BT-135)-Procedure-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-1351)-Procedure`:: Unpublished Justification Code
+  `BT-197(BT-1351)-Procedure-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-136)-Procedure`:: Unpublished Justification Code
+  `BT-197(BT-136)-Procedure-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-142)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-142)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-144)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-144)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-156)-NoticeResult`:: Unpublished Justification Code
+  `BT-197(BT-156)-NoticeResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-1561)-NoticeResult`:: Unpublished Justification Code
+  `BT-197(BT-1561)-NoticeResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-160)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-160)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-161)-NoticeResult`:: Unpublished Justification Code
+  `BT-197(BT-161)-NoticeResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-162)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-162)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-163)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-163)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-171)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-171)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-191)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-191)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-193)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-193)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-539)-Lot`:: Unpublished Justification Code
+  `BT-197(BT-539)-Lot-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-539)-LotsGroup`:: Unpublished Justification Code
+  `BT-197(BT-539)-LotsGroup-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-540)-Lot`:: Unpublished Justification Code
+  `BT-197(BT-540)-Lot-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-540)-LotsGroup`:: Unpublished Justification Code
+  `BT-197(BT-540)-LotsGroup-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-541)-Lot-Fixed`:: Unpublished Justification Code
+  `BT-197(BT-541)-Lot-Fixed-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-541)-Lot-Threshold`:: Unpublished Justification Code
+  `BT-197(BT-541)-Lot-Threshold-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-541)-Lot-Weight`:: Unpublished Justification Code
+  `BT-197(BT-541)-Lot-Weight-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-541)-LotsGroup-Fixed`:: Unpublished Justification Code
+  `BT-197(BT-541)-LotsGroup-Fixed-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-541)-LotsGroup-Threshold`:: Unpublished Justification Code
+  `BT-197(BT-541)-LotsGroup-Threshold-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-541)-LotsGroup-Weight`:: Unpublished Justification Code
+  `BT-197(BT-541)-LotsGroup-Weight-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-5421)-Lot`:: Unpublished Justification Code
+  `BT-197(BT-5421)-Lot-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-5421)-LotsGroup`:: Unpublished Justification Code
+  `BT-197(BT-5421)-LotsGroup-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-5422)-Lot`:: Unpublished Justification Code
+  `BT-197(BT-5422)-Lot-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-5422)-LotsGroup`:: Unpublished Justification Code
+  `BT-197(BT-5422)-LotsGroup-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-5423)-Lot`:: Unpublished Justification Code
+  `BT-197(BT-5423)-Lot-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-5423)-LotsGroup`:: Unpublished Justification Code
+  `BT-197(BT-5423)-LotsGroup-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-543)-Lot`:: Unpublished Justification Code
+  `BT-197(BT-543)-Lot-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-543)-LotsGroup`:: Unpublished Justification Code
+  `BT-197(BT-543)-LotsGroup-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-553)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-553)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-554)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-554)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-555)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-555)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-556)-NoticeResult`:: Unpublished Justification Code
+  `BT-197(BT-556)-NoticeResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-635)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-635)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-636)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-636)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-660)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-660)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-709)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-709)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-710)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-710)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-711)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-711)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-712)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-712)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-720)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-720)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-730)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-730)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-731)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-731)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-733)-Lot`:: Unpublished Justification Code
+  `BT-197(BT-733)-Lot-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-733)-LotsGroup`:: Unpublished Justification Code
+  `BT-197(BT-733)-LotsGroup-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-734)-Lot`:: Unpublished Justification Code
+  `BT-197(BT-734)-Lot-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-734)-LotsGroup`:: Unpublished Justification Code
+  `BT-197(BT-734)-LotsGroup-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-759)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-759)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-760)-LotResult`:: Unpublished Justification Code
+  `BT-197(BT-760)-LotResult-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-773)-Tender`:: Unpublished Justification Code
+  `BT-197(BT-773)-Tender-List`:: Unpublished Justification Code Listname
+  `BT-197(BT-88)-Procedure`:: Unpublished Justification Code
+  `BT-197(BT-88)-Procedure-List`:: Unpublished Justification Code Listname

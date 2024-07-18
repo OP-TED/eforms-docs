@@ -1,0 +1,15 @@
+= `document-used-in-public-procurement` codelist
+:navtitle: Codelists
+
+This code list describes documents used in Public Procurement. A set of interrelated business information representing the business facts and associated metadata. The information may be conveyed in any language
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/document-used-in-public-procurement
+Tailored by:: xref:code-lists/exclusion-grounds-source.adoc[`exclusion-grounds-source`], xref:code-lists/selection-criteria-source.adoc[`selection-criteria-source`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `epo-notice`::: Notice
+  `epo-procurement-document`::: Procurement Document
+  `epo-sub-espd`::: European Single Procurement Document (ESPD)

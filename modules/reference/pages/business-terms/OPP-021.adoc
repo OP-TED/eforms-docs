@@ -1,0 +1,9 @@
+= `OPP-021`: Used asset
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-021-Contract`:: Used asset
+  `OPP-021-Contract-Language`:: Used asset Language

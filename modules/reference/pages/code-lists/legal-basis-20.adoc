@@ -1,0 +1,15 @@
+= `legal-basis-20` codelist
+:navtitle: Codelists
+
+Allowed Legal Basis values for notice subtype 20
+[horizontal]
+Version:: 20220615-0
+Subset of:: xref:code-lists/legal-basis.adoc[`legal-basis`]
+Structure:: flat
+Used in:: xref:business-terms/BT-01.adoc[`BT-01`] Procedure Legal Basis
+
+== Codes
+[horizontal]
+  `32014L0024`::: Directive 2014/24/EU
+  `32018R1046`::: Regulation (EU, Euratom) 2018/1046
+  `other`::: Other

@@ -1,0 +1,10 @@
+= `BT-634`: Procurement Relaunch
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-634-Lot`:: Procurement Relaunch
+  `BT-634-Procedure`:: Procurement Relaunch

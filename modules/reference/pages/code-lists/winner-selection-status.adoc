@@ -1,0 +1,15 @@
+= `winner-selection-status` codelist
+:navtitle: Codelists
+
+This table provides the list of codes and values used to indicate whether a tenderer was chosen to be awarded with a contract and whether the competition is open.
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/winner-selection-status
+Structure:: flat
+Used in:: xref:business-terms/BT-142.adoc[`BT-142`] Winner Chosen
+
+== Codes
+[horizontal]
+  `clos-nw`::: No winner was chosen and the competition is closed.
+  `open-nw`::: The winner was not yet chosen, but the competition is still ongoing.
+  `selec-w`::: At least one winner was chosen.

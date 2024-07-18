@@ -1,0 +1,10 @@
+= `BT-201`: Modification Reason Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-201-Contract`:: Modification Reason Description
+  `BT-201-Contract-Language`:: Modification Reason Description Language
