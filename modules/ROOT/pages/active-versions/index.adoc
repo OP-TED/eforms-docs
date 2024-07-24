@@ -82,7 +82,8 @@ IMPORTANT: The table below is updated manually and may not be always accurate. T
 |22 April 2025
 |===
 
-NOTE: The Preview environment has the same active range as the Production environment. 
+NOTE: New SDK versions may become available earlier in the Preview environment. Please consult the TED API.
+ 
 
 [#version-range]
 == Getting  active SDK versions through TED API
