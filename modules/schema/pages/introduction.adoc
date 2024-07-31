@@ -9,9 +9,9 @@ The objective of this document is to provide the person in charge of the
 XML generation with the information necessary for integration of the
 schemas.
 
-There are three schemas foreseen to cover the 40 situations listed in
-the eForms Regulation
-(https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R2303[Regulation (EU) 2022/2303]):
+There are three schemas foreseen to cover the 46 situations listed in
+the eForms Regulation amendment
+(https://eur-lex.europa.eu/eli/reg_impl/2023/2884/oj[Implementing Regulation (EU) 2023/2884]):
 
 * Prior Information Notice (PIN),
 
