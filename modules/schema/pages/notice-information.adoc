@@ -7,7 +7,7 @@ concern the information listed in <<noticeRelatedInformationTable>>. This table 
 Business Terms, a shortened description, its cardinality and the XML
 elements used to mark the information. The specified cardinality is
 more restrictive than the one in the schema; it is used to express
-requirements stated in https://eur-lex.europa.eu/eli/reg_impl/2023/2884/oj[ Implementing Regulation (EU) 2023/2884].
+requirements stated in the https://eur-lex.europa.eu/eli/reg_impl/2023/2884/oj[Implementing Regulation (EU) 2023/2884].
 
 [[noticeRelatedInformationTable]]
 .Notice related information
