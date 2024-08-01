@@ -7,8 +7,7 @@ concern the information listed in <<noticeRelatedInformationTable>>. This table 
 Business Terms, a shortened description, its cardinality and the XML
 elements used to mark the information. The specified cardinality is
 more restrictive than the one in the schema; it is used to express
-requirements stated in https://ec.europa.eu/docsroom/documents/52697[the 2022
-Regulation Annex].
+requirements stated in the https://eur-lex.europa.eu/eli/reg_impl/2023/2884/oj[Implementing Regulation (EU) 2023/2884].
 
 [[noticeRelatedInformationTable]]
 .Notice related information
@@ -84,6 +83,8 @@ The Notice Publication information (Date, OJEU and OJS Notice IDs) shall be mark
         <efbc:PublicationDate>2023-03-14+01:00</efbc:PublicationDate>
    </efac:Publication>
 ----
+
+This information is added by the Publications Office of the European Union just before the notice gets published.
 
 [[UBLversionSection]]
 == UBL version ID
@@ -234,9 +235,10 @@ applies to the procurement.
 The value is the corresponding CELEX number (e.g. "_32014L0024_" for
 Directive 2014/24). Only some values of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/legal-basis[dedicated
-codelist] may be used in the context of the eProcurement. The "other"
-value shall exclusively be used for below threshold notices. Further
-needed Legal Basis may be specified as specified in xref:procedure-lot-part-information.adoc#crossBorderLawSection[Cross Border Law (Procedure) (BT-09)].
+codelist] may be used in the context of the eProcurement. National and other local 
+Legal Bases should be expressed as specified in https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#otherLegalBasisSection[Legal Basis (BT-01)].
+
+Cross Border legislation may be indicated as specified in https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#crossBorderLawSection[Cross Border Law (Procedure) (BT-09)].
 
 A notice for a procedure under Directive 2014/24 shall have its legal
 basis information identified using:
@@ -329,7 +331,7 @@ be the same for all notices.
 [[organizationsSection]]
 == Organizations
 
-Organizations informations are grouped into a dedicated element in an extension and referred to in the rest of the XML instance as explained in xref:eforms:schema:parties.adoc[] where details on information mark-up may be found.
+Organizations information is grouped into a dedicated element in an extension and referred to in the rest of the XML instance as explained in xref:eforms:schema:parties.adoc[] where details on information mark-up may be found.
 
 The "_cac:ContractingParty_" element allows for encoding of the parties
 involved in the procurement procedure, like "buyer" (including
