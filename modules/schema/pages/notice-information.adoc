@@ -238,7 +238,7 @@ https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/legal-bas
 codelist] may be used in the context of the eProcurement. National and other local 
 Legal Bases should be expressed as specified in https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#otherLegalBasisSection[Legal Basis (BT-01)].
 
-Cross Boarder legislation may be indicated as specified in https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#crossBorderLawSection[Cross Border Law (Procedure) (BT-09)].
+Cross Border legislation may be indicated as specified in https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-information.html#crossBorderLawSection[Cross Border Law (Procedure) (BT-09)].
 
 A notice for a procedure under Directive 2014/24 shall have its legal
 basis information identified using:
