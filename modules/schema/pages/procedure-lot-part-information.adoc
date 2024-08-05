@@ -316,7 +316,7 @@ ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:
 a|
 [source,xpath,subs=attributes]
 ----
-ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:SelectionCriteria{zwsp}/cbc:CriterionTypeCode
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:SelectionCriteria{zwsp}/cbc:TendererRequirementTypeCode
 ----
 
 |*Selection Criterion Description (BT-750)* |xref:selectionCriteriaSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
@@ -1080,7 +1080,7 @@ Selection criteria apply at "_Lot_" level.
 There are different selection criteria (BT-809) which are identified using a value of the
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/selection-criterion[selection-criterion] 
 codelist.
-This information is marked using the "_cbc:CriterionTypeCode_" element.
+This information is marked using the "_cbc:TendererRequirementTypeCode_" element, child of the "_efac:SelectionCriteria_" aggregate element.
 
 The information source for Selection Criteria (BT-821-Lot) may be:
 
@@ -1139,6 +1139,34 @@ information may/shall be reported.
 
 [source,xml]
 ----
+ 	<efac:SelectionCriteria>
+        <!-- Selection Criteria (BT-809) -->
+		<cbc:TendererRequirementTypeCode listName="selection-criterion">slc-suit-reg-prof</cbc:TendererRequirementTypeCode>
+        <!-- Selection Criteria Description (BT-750) -->
+		<cbc:Description languageID="ENG">Bidders will be required to state if any of the exclusion grounds as ...</cbc:Description>
+		<cbc:Description languageID="FRA">Les soumissionaires devront indiquer toute ...</cbc:Description>
+        <!--  Selection Criteria Second Stage Invite (BT-40) -->
+        <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
+        <efac:CriterionParameter>
+            <!-- Selection Criteria Second Stage Invite Number Threshold (BT-7532) -->
+            <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
+            <!--  Selection Criteria Second Stage Invite Number (BT-752)-->
+            <efbc:ParameterNumeric>2</efbc:ParameterNumeric>
+        </efac:CriterionParameter>
+    </efac:SelectionCriteria>
+	<efac:SelectionCriteria>
+		<cbc:TendererRequirementTypeCode listName="selection-criterion">slc-abil-staff-tech-work</cbc:TendererRequirementTypeCode>
+		<cbc:Description languageID="ENG">Bidders will be required to provide examples that demonstrate that they have the relevant experience ...</cbc:Description>
+        <cbc:Description languageID="FRA">Les soumissionaires devront fournir des exemples qui démontrent ...</cbc:Description>
+        <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
+        <efac:CriterionParameter>
+            <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
+            <efbc:ParameterNumeric>5</efbc:ParameterNumeric>
+        </efac:CriterionParameter>
+	</efac:SelectionCriteria>
+    
+    <!-- interrupted mark-up -->
+
     <cac:TendererQualificationRequest>
         <!-- Selection Criteria Source (BT-821) -->
         <cac:SpecificTendererRequirement>
@@ -1148,29 +1176,6 @@ information may/shall be reported.
             <cbc:TendererRequirementTypeCode listName="selection-criteria-source">epo-notice</cbc:TendererRequirementTypeCode>
         </cac:SpecificTendererRequirement>
     </cac:TendererQualificationRequest>
-    
-    <!-- interrupted mark-up -->
-
-    <efac:SelectionCriteria>
-        <cbc:CriterionTypeCode listName="selection-criterion">slc-stand-to-avg</cbc:CriterionTypeCode>
-        <cbc:Description languageID="ENG">Turnover over contract value rate</cbc:Description>
-        <cbc:Description languageID="FRA">Rapport Chiffre d'affaire sur valeur du contrat.</cbc:Description>
-        <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
-        <efac:CriterionParameter>
-            <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
-            <efbc:ParameterNumeric>2</efbc:ParameterNumeric>
-        </efac:CriterionParameter>
-    </efac:SelectionCriteria>
-    <efac:SelectionCriteria>
-        <cbc:CriterionTypeCode listName="selection-criterion">slc-abil-facil-res</cbc:CriterionTypeCode>
-        <cbc:Description languageID="ENG">Minimum number of years of experience on similar projects</cbc:Description>
-        <cbc:Description languageID="FRA">Nombre minimal d'années d'expérience avec des projets similaires</cbc:Description>
-        <efbc:SecondStageIndicator>true</efbc:SecondStageIndicator>
-        <efac:CriterionParameter>
-            <efbc:ParameterCode listName="number-threshold">min-score</efbc:ParameterCode>
-            <efbc:ParameterNumeric>5</efbc:ParameterNumeric>
-        </efac:CriterionParameter>
-    </efac:SelectionCriteria>
 ----
 
 [[variantsSection]]
