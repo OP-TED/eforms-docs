@@ -42,7 +42,7 @@ h| Form Type |_To indicate the Form Type (i.e. major "phase"
 before, or during, the procurement procedure)._
 
 h| Procedure Type |_To provide the type of procedure (e.g.
-"Competitive dialog" ...)._
+"Competitive dialogue" ...)._
 
 h| Dispatch Date |_The date and time, the
 notice is sent by the notice author to OP for publication._
