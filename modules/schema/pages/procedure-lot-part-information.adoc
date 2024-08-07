@@ -2644,7 +2644,7 @@ For procedures types codified with the "oth-mult" or "oth-single" values
 (i.e. PIN CFC social & CN social), the procedure features (BT-88) must
 also be specified.
 
-For a competitive dialog, the Procedure Type shall be marked:
+For a competitive dialogue, the Procedure Type shall be marked:
 
 [source,xml]
 ----
