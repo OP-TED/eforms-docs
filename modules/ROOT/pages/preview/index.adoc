@@ -82,7 +82,7 @@ Users can define personalised settings for the legal basis and notice types that
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
 
-==== Improvements as of SDK 1.15
+==== Improvements as of application version 1.15
 
 Notices submitted through the eNotices2 user interface now have an extra organisation (ORG-0000) to identify the eSender service provider. This organisation is not visible in the form-filling tool and is automatically filled in with the details of the EU Publications Office when the notice is submitted for publication on TED.
 
