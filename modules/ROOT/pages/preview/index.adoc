@@ -126,7 +126,7 @@ The following issue has been identified as of SDK 1.11:
 
 The following issues have been identified as of application version 1.15.2:
 
-* BT-1375-Procedure : lot distribution for the group will show an error in the live validation even if there are 2 or more different lots correctly referenced. The user can ignore this and validate on CVS. If valid, the notice can be submitted.
+* BT-1375-Procedure: lot distribution for the group will show an error in the live validation even if there are 2 or more different lots correctly referenced. The user can ignore this and validate on CVS. If valid, the notice can be submitted.
 * Procedure section and lot: The type of procedure must be chosen before entering the lot sections. Since many fields are procedure type dependent, this is to ensure that the form filling tool will respond correctly with the live validations.
 
 
