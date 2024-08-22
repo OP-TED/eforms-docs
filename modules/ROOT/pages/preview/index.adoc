@@ -82,8 +82,19 @@ Users can define personalised settings for the legal basis and notice types that
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
 
-As of SDK version 1.6, the lot distribution for lot groups has changed; there is a new section for that in the procedure. 
+==== Improvements as of SDK 1.15
 
+Notices submitted through the eNotices2 user interface now have an extra organisation (ORG-0000) to identify the eSender service provider. This organisation is not visible in the form-filling tool and is automatically filled in with the details of the EU Publications Office when the notice is submitted for publication on TED.
+
+==== “Live” validation 
+The form-filling tool now has “live” validation, which means that it adapts dynamically to the values in the fields to help to fill in the required fields and to avoid business errors. This includes the following features:
+
+* All strictly mandatory fields are identified by an asterisk.
+* Fields that become mandatory under certain conditions will appear only when the conditions are fulfilled. Once they are mandatory, these fields will also be identified by an asterisk.
+* If fields become forbidden due to the values that have been entered, they will be marked with a new icon so that they can be easily identified and corrected.
+
+
+ 
 
 
 ==== Known issues 
@@ -144,7 +155,9 @@ We are currently in the process of providing more guidance for users of the eNot
    * In Contract notices of the Defence directive, BT-71-Lot should not be filled in.
    * For structured organisations, to get started, please fill in Organisation Name, Organisation Identifier and Organisation Part Name under My Form Settings > Main Buyer Settings. 
    * When filling in the subcontracting section of a tender (GR-LotTender-Subcontracting), you should complete the field BT-773-Tender. If you need to enter the value or the percentage of the subcontracting, you should also set the corresponding indicator (fields BT-730-Tender and BT-731-Tender) to ‘yes’. 
- 
+   * We encourage users to fill in forms by starting with the procedure section, then completing the information about lots, and then, if relevant, finishing with the results.
+   * Some fields are excluded from the live validations, namely the fields to publish some information later (unpublished fields). If you don’t need any confidential fields, it is possible to hide this option via Form Settings -> Confidential fields -> Set all non-confidential. This setting will then apply to newly created notices.
+
 
 ==== Tips for eSenders
 
