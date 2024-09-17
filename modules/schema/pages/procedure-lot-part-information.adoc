@@ -285,6 +285,21 @@ a|
 ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efbc:ProcurementCategoryCode
 ----
 
+11+^|*Energy Efficiency Directive (++*++)* 
+
+|*EED Applicable (BT-810)* |xref:EEDDirectiveLotSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |*?* 
+a|
+[source,xpath,subs=attributes]
+----
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:STrategicProcurement{zwsp}/efbc:ApplicableLegalBasis
+----
+
+|*EED List (BT-811)* |xref:EEDDirectiveLotSection[xrefstyle=short] |-- |-- h|* |-- |-- h|* |-- h|* 
+a|
+[source,xpath,subs=attributes]
+----
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efbc:AssetCategoryCode
+----
 
 11+^|*EU Funds Information (++*++)* 
 
@@ -1019,6 +1034,49 @@ the given Lot):
 
 This information is also possible at Lot level for Result notices, especially 
 if the Lot is listed but not awarded.
+
+
+[[EEDDirectiveLotSection]]
+=== EED information at Lot level
+
+At Lot level, only the following information is expected:
+
+* EED Applicable (BT-810, field BT-810-Lot), 
+
+* EED List (item) (BT-811, field BT-811(b)-Lot) when EED is applicable, and optionally
+
+* EED List (basis) (BT-811, field BT-811(a)-Lot), for each item, when known at Competition time.
+
+The Energy Efficiency Directive (EED) Applicable Business Term is used to specify whether this 
+directive applies or not. When used, it should contain either of the two 
+values "true" or "false".
+When BT-810 exists and has its value set to "true", the EED List (item) (BT-811) 
+must also be specified, at least once, using one of the values of the https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/energy-efficiency-item[Energy Efficiency Item] 
+codelist. This BT is repeatable.
+
+A sample mark-up is provided below for a case where the directive applies 
+and procurement concerns "Dishwashers" as well as "Light sources and control gears" (the structure occurs in the extensions of the TenderingTerms of 
+the given Lot):
+
+[source,xml]
+----
+<efac:StrategicProcurement>
+    <efbc:ApplicableLegalBasis listName="eed-scope">true</efbc:ApplicableLegalBasis>
+    <efac:StrategicProcurementInformation>
+        <efac:ProcurementDetails>
+            <efbc:AssetCategoryCode listName="energy-efficiency-item">dishwas</efbc:AssetCategoryCode>
+            <efbc:LegalFrameworkCode listName="energy-efficiency-basis">enrg-lab</efbc:LegalFrameworkCode>
+        </efac:ProcurementDetails>
+    </efac:StrategicProcurementInformation>
+    <efac:StrategicProcurementInformation>
+        <efac:ProcurementDetails>
+            <efbc:AssetCategoryCode listName="energy-efficiency-item">ligh-gea</efbc:AssetCategoryCode>
+        </efac:ProcurementDetails>
+    </efac:StrategicProcurementInformation>
+</efac:StrategicProcurement>
+----
+
+This information can also be indicated at Lot level for Result notices.
 
 
 [[EUFundsSection]]

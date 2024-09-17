@@ -200,6 +200,8 @@ and maximal),
 * Reference(s) to the contract(s) settled as a result of the
 made decision,
 
+* Energy Efficiency information when the Energy Efficiency Directive applies,
+
 * Statistical results for some strategic procurement projectsfootnote:[At the LotResult level, 
 CVD information may be provided so long the Lot has been awarded and the CVD directive 
 applies to the Lot. It is then possible to report the CVD Contract Type (BT-735-LotResult), 
@@ -454,6 +456,52 @@ _Shall follow the scheme "CON-XXXX"_
 efac:SettledContract{zwsp}/cbc:ID
 ---- 
 
+|*EED List (Item) (BT-811)* |Products, works or services covered by the Energy Labelling Directive, 
+the Ecodesign Directive, European Union GPP criteria, Regulation 2020/740 or further provisions in Article 7 
+EED. For reporting purposes, buildings covered by the obligation in Article 7 EED are also included.  
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efbc:AssetCategoryCode
+---- 
+
+|*EED List (Basis) (BT-811)* |Legal framework applied to the products, works or services (Energy Labelling Directive, 
+Ecodesign Directive, European Union GPP criteria ...)  
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efbc:LegalFrameworkCode
+---- 
+
+|*Energy Efficiency Label (BT-812)* |Energy efficiency labels of the provided products (A&#43;&#43;&#43;, A&#43;&#43;, A&#43;, A to G).  
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efac:AssetLabel{zwsp}/efbc:LabelCode
+---- 
+
+|*Energy Consumption in kWh/year (BT-813)* |Yearly energy consumption in kWh for products for which no label exists as well as for services, 
+works and buildings.  
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efac:AssetMetric[efbc:AssetMetricCode="nrg-con-yr"]{zwsp}/efbc:AssetMetricNumeric
+---- 
+
+|*Energy Savings in kWh/year (BT-814)* |Yearly energy savings in kWh for products, services, works and buildings.  
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efac:AssetMetric[efbc:AssetMetricCode="nrg-sav-yr"]{zwsp}/efbc:AssetMetricNumeric
+---- 
+
+|*Energy Efficiency Quantity (BT-815)* |The quantity provided or estimated. For products, the number of products. For buildings, the useful floor area in m^2^. For works or services the value will usually be 1.    
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efac:StrategicProcurementStatistics{zwsp}/efbc:StatisticsNumeric
+---- 
+
 |*CVD Contract Type (BT-735)* |The type of contract of the procurement procedure 
 within the scope of Clean Vehicles Directive 2009/33/EC. |*** a|
 [source,xpath,subs=attributes]
@@ -577,6 +625,66 @@ An XML instance excerpt is provided below for illustration:
         <efac:SettledContract>
             <cbc:ID schemeName="contract">CON-0003</cbc:ID>
         </efac:SettledContract>
+        <efac:StrategicProcurement>
+            <efac:StrategicProcurementInformation>
+                <efac:ProcurementDetails>
+                    <!--  BT-811(b)-LotResult : "EED List (Item)"  -->
+                    <efbc:AssetCategoryCode listName="energy-efficiency-item">tum-dry</efbc:AssetCategoryCode>
+                    <!--  BT-811(a)-LotResult : "EED List (Basis)"  -->
+                    <efbc:LegalFrameworkCode listName="energy-efficiency-basis">enrg-lab</efbc:LegalFrameworkCode>
+                    <efac:AssetLabel>
+                        <!--  BT-812-LotResult : "Energy Efficiency Label"  -->
+                        <efbc:LabelCode listName="energy-efficiency-label">ENERB</efbc:LabelCode>
+                    </efac:AssetLabel>
+                    <efac:StrategicProcurementStatistics>
+                        <!--  BT-815-LotResult : "Energy Efficiency Quantity"  -->
+                        <efbc:StatisticsNumeric>50</efbc:StatisticsNumeric>
+                    </efac:StrategicProcurementStatistics>
+                </efac:ProcurementDetails>
+                <efac:ProcurementDetails>
+                    <!--  BT-811(b)-LotResult : "EED List (Item)"  -->
+                    <efbc:AssetCategoryCode listName="energy-efficiency-item">cook-appl</efbc:AssetCategoryCode>
+                    <!--  BT-811(a)-LotResult : "EED List (Basis)"  -->
+                    <efbc:LegalFrameworkCode listName="energy-efficiency-basis">enrg-lab</efbc:LegalFrameworkCode>
+                    <efac:AssetLabel>
+                        <!--  BT-812-LotResult : "Energy Efficiency Label"  -->
+                        <efbc:LabelCode listName="energy-efficiency-label">ENERA2</efbc:LabelCode>
+                    </efac:AssetLabel>
+                    <efac:AssetMetric>
+                        <!--  OPT-081-LotResult : "Savings Metric"  -->
+                        <efbc:AssetMetricCode listName="metric-type">nrg-sav-yr</efbc:AssetMetricCode>
+                        <!--  BT-814-LotResult : "Energy Savings in kWh/year"  -->
+                        <efbc:AssetMetricNumeric>55000</efbc:AssetMetricNumeric>
+                    </efac:AssetMetric>
+                    <efac:StrategicProcurementStatistics>
+                        <!--  BT-815-LotResult : "Energy Efficiency Quantity"  -->
+                        <efbc:StatisticsNumeric>25</efbc:StatisticsNumeric>
+                    </efac:StrategicProcurementStatistics>
+                </efac:ProcurementDetails>
+                <efac:ProcurementDetails>
+                    <!--  BT-811(b)-LotResult : "EED List (Item)"  -->
+                    <efbc:AssetCategoryCode listName="energy-efficiency-item">wa-pu</efbc:AssetCategoryCode>
+                    <!--  BT-811(a)-LotResult : "EED List (Basis)"  -->
+                    <efbc:LegalFrameworkCode listName="energy-efficiency-basis">eco-des</efbc:LegalFrameworkCode>
+                    <efac:AssetMetric>
+                        <!--  OPT-080-LotResult : "Consumption Metric"  -->
+                        <efbc:AssetMetricCode listName="metric-type">nrg-con-yr</efbc:AssetMetricCode>
+                        <!--  BT-813-LotResult : "Energy Consumption in kWh/year"  -->
+                        <efbc:AssetMetricNumeric>140000</efbc:AssetMetricNumeric>
+                    </efac:AssetMetric>
+                     <efac:AssetMetric>
+                        <!--  OPT-081-LotResult : "Savings Metric"  -->
+                        <efbc:AssetMetricCode listName="metric-type">nrg-sav-yr</efbc:AssetMetricCode>
+                        <!--  BT-814-LotResult : "Energy Savings in kWh/year"  -->
+                        <efbc:AssetMetricNumeric>25000</efbc:AssetMetricNumeric>
+                    </efac:AssetMetric>
+                   <efac:StrategicProcurementStatistics>
+                        <!--  BT-815-LotResult : "Energy Efficiency Quantity"  -->
+                        <efbc:StatisticsNumeric>100</efbc:StatisticsNumeric>
+                    </efac:StrategicProcurementStatistics>
+                </efac:ProcurementDetails>
+            </efac:StrategicProcurementInformation>
+        </efac:StrategicProcurement>
         <efac:StrategicProcurement>
             <efac:StrategicProcurementInformation>
                 <efbc:ProcurementCategoryCode listName="cvd-contract-type">oth-serv-contract</efbc:ProcurementCategoryCode>
