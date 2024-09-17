@@ -1055,7 +1055,7 @@ must also be specified, at least once, using one of the values of the https://op
 codelist. This BT is repeatable.
 
 A sample mark-up is provided below for a case where the directive applies 
-and procurement concerns "Power transformers" as well as "Water pumps" (the structure occurs in the extensions of the TenderingTerms of 
+and procurement concerns "Dishwashers" as well as "Light sources and control gears" (the structure occurs in the extensions of the TenderingTerms of 
 the given Lot):
 
 [source,xml]
@@ -1076,7 +1076,7 @@ the given Lot):
 </efac:StrategicProcurement>
 ----
 
-This information is also possible at Lot level for Result notices.
+This information can also be indicated at Lot level for Result notices.
 
 
 [[EUFundsSection]]

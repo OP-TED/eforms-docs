@@ -457,7 +457,7 @@ efac:SettledContract{zwsp}/cbc:ID
 ---- 
 
 |*EED List (Item) (BT-811)* |Products, works or services covered by the Energy Labelling Directive, 
-the Ecodesign Directive, Union GPP criteria, Regulation 2020/740 or further provisions in Article 7 
+the Ecodesign Directive, European Union GPP criteria, Regulation 2020/740 or further provisions in Article 7 
 EED. For reporting purposes, buildings covered by the obligation in Article 7 EED are also included.  
 |*** a|
 [source,xpath,subs=attributes]
@@ -466,14 +466,14 @@ efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:
 ---- 
 
 |*EED List (Basis) (BT-811)* |Legal framework applied to the products, works or services (Energy Labelling Directive, 
-Ecodesign Directive, Union GPP criteria ...)  
+Ecodesign Directive, European Union GPP criteria ...)  
 |*** a|
 [source,xpath,subs=attributes]
 ----
 efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efbc:LegalFrameworkCode
 ---- 
 
-|*Energy Efficiency Label (BT-812)* |Energy efficiency labels of the provided products (A+++, A++, A+, A to G).  
+|*Energy Efficiency Label (BT-812)* |Energy efficiency labels of the provided products (A&#43;&#43;&#43;, A&#43;&#43;, A&#43;, A to G).  
 |*** a|
 [source,xpath,subs=attributes]
 ----
@@ -495,7 +495,7 @@ efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:
 efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efac:AssetMetric[efbc:AssetMetricCode="nrg-sav-yr"]{zwsp}/efbc:AssetMetricNumeric
 ---- 
 
-|*Energy Efficiency Quantity (BT-815)* |Yearly energy savings in kWh for products, services, works and buildings.  
+|*Energy Efficiency Quantity (BT-815)* |The quantity provided or estimated. For products, the number of products. For buildings, the useful floor area in m^2^. For works or services the value will usually be 1.    
 |*** a|
 [source,xpath,subs=attributes]
 ----
