@@ -202,6 +202,8 @@ made decision,
 
 * Energy Efficiency information when the Energy Efficiency Directive applies,
 
+* International Procurement Instrument information when IPI applies,
+
 * Statistical results for some strategic procurement projectsfootnote:[At the LotResult level, 
 CVD information may be provided so long the Lot has been awarded and the CVD directive 
 applies to the Lot. It is then possible to report the CVD Contract Type (BT-735-LotResult), 
@@ -456,6 +458,35 @@ _Shall follow the scheme "CON-XXXX"_
 efac:SettledContract{zwsp}/cbc:ID
 ---- 
 
+|*Specific IPI Measure (BT-685)* |Information on the applicable IPI Measure 
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:AppliedMeasure{zwsp}/efbc:MeasureCode
+---- 
+
+|*Number of tender applications that fall under this IPI Measure (BT-686)* |Number of requests to participate and tenders to which this IPI Measure was applied, 
+in the case of a public contract; number of requests to participate and projects, in the case of a design contest. 
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:AppliedMeasure{zwsp}/efac:MeasureStatistics{zwsp}/efbc:StatisticsNumeric
+---- 
+
+|*Exception to the application of the IPI Measure (BT-687)* |Exception from the application of the IPI Measure. 
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:AppliedMeasure{zwsp}/efac:MeasureException{zwsp}/efbc:ExceptionCode
+---- 
+
+|*Overriding reasons relating to the public interest (BT-688)* |A description and justification for the application of overriding reasons relating to the public interest. 
+|*** a|
+[source,xpath,subs=attributes]
+----
+efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:AppliedMeasure{zwsp}/efac:MeasureException{zwsp}/efbc:ExceptionDescription
+---- 
+
 |*EED List (Item) (BT-811)* |Products, works or services covered by the Energy Labelling Directive, 
 the Ecodesign Directive, European Union GPP criteria, Regulation 2020/740 or further provisions in Article 7 
 EED. For reporting purposes, buildings covered by the obligation in Article 7 EED are also included.  
@@ -625,6 +656,25 @@ An XML instance excerpt is provided below for illustration:
         <efac:SettledContract>
             <cbc:ID schemeName="contract">CON-0003</cbc:ID>
         </efac:SettledContract>
+        <efac:StrategicProcurement>
+            <efac:StrategicProcurementInformation>
+                <!-- Information on IPI Measures (BG-681) -->
+                <efac:AppliedMeasure>
+                    <!-- Specific IPI Measure (BT-685) -->
+                    <efbc:MeasureCode listName="international-procurement-instrument-measure">measure-alpha</efbc:MeasureCode>
+                    <efac:MeasureException>
+                        <!-- exception to the application of the IPI Measure (BT-687) -->
+                        <efbc:ExceptionCode listName="international-procurement-instrument-application">pub-int</efbc:ExceptionCode>
+                        <!-- Overriding reasons relating to the public interest (BT-688) -->
+                        <efbc:ExceptionDescription languageID="EN">because ...</efbc:ExceptionDescription>
+                    </efac:MeasureException>
+                    <!-- Number of tender applications that fall under this IPI Measure (BT-686) -->
+                    <efac:MeasureStatistics>
+                        <efbc:StatisticsNumeric>3</efbc:StatisticsNumeric>
+                    </efac:MeasureStatistics>
+                </efac:AppliedMeasure>
+            </efac:StrategicProcurementInformation>
+        </efac:StrategicProcurement>
         <efac:StrategicProcurement>
             <efac:StrategicProcurementInformation>
                 <efac:ProcurementDetails>

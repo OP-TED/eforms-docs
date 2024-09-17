@@ -301,6 +301,15 @@ a|
 ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:StrategicProcurement{zwsp}/efac:StrategicProcurementInformation{zwsp}/efac:ProcurementDetails{zwsp}/efbc:AssetCategoryCode
 ----
 
+11+^|*International Procurement Instrument (++*++)* 
+
+|*IPI Measures are Applicable (BT-684)* |xref:IPIMeasureLotSection[xrefstyle=short] |-- |-- |-- |-- |-- |-- |-- |*?* 
+a|
+[source,xpath,subs=attributes]
+----
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:STrategicProcurement{zwsp}/efbc:ApplicableLegalBasis
+----
+
 11+^|*EU Funds Information (++*++)* 
 
 |*EU Funds Financing Identifier (BT-5010)* |xref:EUFundsSection[xrefstyle=short] |-- |-- |*?* |-- |-- |*?* |-- |-- 
@@ -1078,6 +1087,25 @@ the given Lot):
 
 This information can also be indicated at Lot level for Result notices.
 
+[[IPIMeasureLotSection]]
+=== International Procurement Instrument (IPI) information at Lot level
+
+At Lot level, for a Result notice, the following information is allowed:
+
+* IPI Measures are Applicable (BT-684, field BT-684-Lot)
+
+The "IPI Measures are applicable" Business Term is used to specify whether some measures may apply or not. 
+When used, it should contain either of the two values "true" or "false".
+When set to "true" and the competition is over, further details have to be provided in the LotResult for the corresponding lot.
+
+A sample mark-up is provided below for a case where measures apply:
+
+[source,xml]
+----
+<efac:StrategicProcurement>
+    <efbc:ApplicableLegalBasis listName="ipi-scope">true</efbc:ApplicableLegalBasis>
+</efac:StrategicProcurement>
+----
 
 [[EUFundsSection]]
 === EU Funds (BG-61)
