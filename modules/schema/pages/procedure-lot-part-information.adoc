@@ -275,7 +275,7 @@ s|-- |_Not allowed (0)_ a|(+++*+++) +
 a|
 [source,xpath,subs=attributes]
 ----
-ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:STrategicProcurement{zwsp}/efbc:ApplicableLegalBasis
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:StrategicProcurement{zwsp}/efbc:ApplicableLegalBasis{zwsp}[@listName='cvd-scope']
 ----
 
 |*CVD Contract Type (BT-735)* |xref:CVDDirectiveLotSection[xrefstyle=short] |-- |-- h|* |-- |-- h|* |-- h|* 
@@ -291,7 +291,7 @@ ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:
 a|
 [source,xpath,subs=attributes]
 ----
-ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:STrategicProcurement{zwsp}/efbc:ApplicableLegalBasis
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:StrategicProcurement{zwsp}/efbc:ApplicableLegalBasis{zwsp}[@listName='eed-scope']
 ----
 
 |*EED List (BT-811)* |xref:EEDDirectiveLotSection[xrefstyle=short] |-- |-- h|* |-- |-- h|* |-- h|* 
@@ -307,7 +307,7 @@ ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:
 a|
 [source,xpath,subs=attributes]
 ----
-ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:STrategicProcurement{zwsp}/efbc:ApplicableLegalBasis
+ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:StrategicProcurement{zwsp}/efbc:ApplicableLegalBasis{zwsp}[@listName='ipi-scope']
 ----
 
 11+^|*EU Funds Information (++*++)* 
@@ -1094,7 +1094,7 @@ At Lot level, for a Result notice, the following information is allowed:
 
 * IPI Measures are Applicable (BT-684, field BT-684-Lot)
 
-The "IPI Measures are applicable" Business Term is used to specify whether some measures may apply or not. 
+The "IPI Measures are Applicable" Business Term is used to specify whether some measures may apply or not. 
 When used, it should contain either of the two values "true" or "false".
 When set to "true" and the competition is over, further details have to be provided in the LotResult for the corresponding lot.
 

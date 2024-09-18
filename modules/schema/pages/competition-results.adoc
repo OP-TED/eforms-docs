@@ -661,7 +661,7 @@ An XML instance excerpt is provided below for illustration:
                 <!-- Information on IPI Measures (BG-681) -->
                 <efac:AppliedMeasure>
                     <!-- Specific IPI Measure (BT-685) -->
-                    <efbc:MeasureCode listName="international-procurement-instrument-measure">measure-alpha</efbc:MeasureCode>
+                    <efbc:MeasureCode listName="international-procurement-instrument-measure">empty</efbc:MeasureCode>
                     <efac:MeasureException>
                         <!-- exception to the application of the IPI Measure (BT-687) -->
                         <efbc:ExceptionCode listName="international-procurement-instrument-application">pub-int</efbc:ExceptionCode>
@@ -811,6 +811,8 @@ An XML instance excerpt is provided below for illustration:
     <!-- Interrupted Mark-up -->
 </efac:NoticeResult>
 ----
+
+_The code value used in the example for Specific IPI Measure (BT-685) ("empty") is a mock code, as real code values were not available at the time of writing._
 
 [[lotTenderSection]]
 == Lot Tender
