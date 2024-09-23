@@ -55,11 +55,13 @@ that has the "Planning" form type).
 
 The Regulation identifies different form types:
 
+* Consultation,
 * Planning,
 * Competition,
 * Direct Award Pre-notification (DAP),
 * Result,
 * Contract Modification,
+* Completion,
 * Change.
 
 <<formTypesFigure>> below provides an indicative time-based representation of the
@@ -69,6 +71,13 @@ successions or coexistence of the different types of forms.
 [[formTypesFigure]]
 .The different Form Types
 image::image006.jpg[image,744,370]
+
+=== Consultation forms
+
+Consultation forms are early forms that help the buyers get, from economis 
+operators, a clear view on available  products, works and services for a 
+foreseen competition. At this stage, notices are not associated to any 
+Procedure and do not have any EU Procedure Identifier assigned.
 
 === Planning forms
 
@@ -105,6 +114,12 @@ During the contract execution, a contract may need modification. If the
 start of a new procurement procedure is not needed, then the Contract
 Modification forms are used to produce a modification notice reporting
 the modifications applied to the contract.
+
+=== Completion forms
+
+After the contract is closed, should it be finished or terminated, 
+completion forms may be used to report on actual values (e.g.: spent 
+amounts, aggregated information on reviews).
 
 === Change forms
 
@@ -169,7 +184,7 @@ which form types, document types, notice types, a reference to the
 column number of Annex II of Regulation (EU) 2022/2303, and a short
 description, are provided.
 
-The concept of Notice Subtype has also been introduded for a quick, easy
+The concept of Notice Subtype has also been introduced for a quick, easy
 and univocal reference to a specific context allowing the identification
 of the applicable rules set. For the eForms Regulation Annex, the
 subtype value corresponds to the column number.
@@ -180,9 +195,11 @@ subtype value corresponds to the column number.
 |===
 |Form Type |Document Type |Notice Type |Regulation Annex Table 2 column (Subtype) ^|Description
 
-.3+|Planning .3+|PIN |PIN profile |1-3 <|Notice of the publication of a prior information notice (or a periodic indicative notice) on a buyer profile
+|Consultation .4+|PIN |PMC |E1 <|Voluntary Pre-Market Consultation notice
 
-|PIN only |4-6 <|Prior information notice, or periodic indicative notice, used only for information
+.3+|Planning |PIN profile |1-3 <|Notice of the publication of a prior information notice (or a periodic indicative notice) on a buyer profile
+
+|PIN only |4-6, E2 <|Prior information notice, or periodic indicative notice, used only for information
 
 |PIN time limit |7-9 <|Prior information notice, or periodic indicative notice, used to shorten time limits for receipt of tenders
 
@@ -192,7 +209,7 @@ subtype value corresponds to the column number.
 
 .5+|CN |QS |15 <|Notice on the existence of a qualification system
 
-|CN general |16-19 <|Contract, or concession, notice -- standard regime
+|CN general |16-19, E3 <|Contract, or concession, notice -- standard regime
 
 |CN social |20-21 <|Contract notice -- light regime
 
@@ -200,9 +217,9 @@ subtype value corresponds to the column number.
 
 |CN design |23-24 <|Design contest notice
 
-|DAP .5+|CAN |CAN VEAT |25-28 <|Voluntary ex-ante transparency notice
+|DAP .6+|CAN |CAN VEAT |25-28 <|Voluntary ex-ante transparency notice
 
-.3+|Result |CAN general |29-32 <|Contract, or concession, award notice --
+.3+|Result |CAN general |29-32, E4 <|Contract, or concession, award notice --
 standard regime
 
 |CAN social |33-35 <|Contract, or concession, award notice -- light
@@ -210,8 +227,10 @@ regime
 
 |CAN design |36-37 <|Design contest result notice
 
-|CM |Contract modification |38-40 <|Contract modification notice
+|CM |Contract modification |38-40, E6 <|Contract modification notice
 
-|Change |* |Change notice |1-40 <|Change associated to any of the
+|Completion |Contract completion notice |E5 <|Voluntary Contract Completion notice
+
+|Change |* |* |1-40, E1-E6 <|Change associated to any of the
 above notice type
 |===
