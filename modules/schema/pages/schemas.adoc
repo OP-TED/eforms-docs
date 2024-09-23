@@ -14,14 +14,16 @@ _Contract Notice_ shall comply with the _ContractNotice_ schema).
 |===
 ^|*Notice category* ^|*Notice Type* ^|*Schema*
 
+h|Pre-Market Consultation a|
+* PMC
+.2+a|PriorInformationNotice
+
 h|Prior Information / Periodic Indicative Notice a|
 * PIN profile
 * PIN only
 * PIN time limit
 * PIN CFC general
 * PIN CFC social
-
-|PriorInformationNotice
 
 h|Contract Notice a|
 * QS
@@ -33,7 +35,7 @@ h|Contract Notice a|
 |ContractNotice
 
 h|Direct Award Pre-notification Notice a|* CAN VEAT
-.3+a|ContractAwardNotice
+.4+a|ContractAwardNotice
 
 h|Contract Award Notice a|
 * CAN general
@@ -42,7 +44,9 @@ h|Contract Award Notice a|
 
 h|Contract Modification Notice a|* Contract modification
 
-h|Change Notice a|* Change notice | _Any of the 3_
+h|Contract Completion Notice a|* Contract completion
+
+h|Change Notice a|* _Any_ | _Any of the 3_
 |===
 
 The schemas are built using elements from different namespaces (some
