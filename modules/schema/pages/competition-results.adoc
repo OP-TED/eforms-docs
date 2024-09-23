@@ -3,19 +3,22 @@
 
 = Direct Award Pre-announcement, Competition Results, Contract Completion
 
-Direct Award Pre-announcement is a voluntary form (Voluntary Ex-Ante 
-Transparency Notice) that allows an early announcement of the intent to 
-sign a directly awarded contract. (NB: for the transportation directives, 
-T01/T02 are to be used instead).
-Contract Completion Notice is a voluntary form that allows, once the 
-procurement procedure is over, to report actual aggregated amounts 
-(i.e. payments, penalties) and review requests statuses.
-These two previous forms have a lot in common with the Result one.
 
 Competition results are shared using Result notices. Such notices have a
 single "_efac:NoticeResult_" element containing information about the
 latest award decisions and potentially about the lots still to be
 awarded.
+
+Direct Award Pre-announcement is a voluntary form (Voluntary Ex-Ante 
+Transparency Notice) that allows an early announcement of the intent to 
+sign a directly awarded contract. (NB: for the transportation directives, 
+T01/T02 are to be used instead).
+
+Contract Completion Notice is a voluntary form that allows, once the 
+procurement procedure is over, to report actual aggregated amounts 
+(i.e. payments, penalties) and review requests statuses.
+
+These two previous forms have a lot in common with the Competition Results notice.
 
 == Notice Result
 
@@ -40,16 +43,18 @@ notice.
 This section should be interpreted slightly differently for the DAP and 
 Contract Completion notices although they share the same structure.
 
-For the DAP:
+For the DAP notice:
+
 * This section is about the intention to award a contract without a formal 
 competition (with some justification),
 * There are no statistics about concurrently received tenders,
-* The contract is about to get signed in a near future,
+* The contract is about to get signed in the near future,
 
-For the contract completion:
-* This section contains details about terminated (completed or not) contracts,
-* Information is provided on a per lot (lotresult ???) bases,
-* It additionally provide details on the requested reviews
+For the Contract Completion notice:
+
+* This section contains details about completed (terminated or not) contracts,
+* Information is provided on a per lot basis,
+* It may additionally provide details on the requested reviews
 
 All these topics will be further detailed in the following sections with 
 occasionally some additional information when ambiguity may exist between 
@@ -199,9 +204,7 @@ image::image014.jpg[image,width=433,height=234]
 == Lot Result
 
 A Notice Result shall contain at least one LotResult with a made
-decisionfootnote:[i.e. for which "_cbc:TenderResultCode_" is either "close-nw" or "selec-w".].
-
-This does not apply to a DAP notice for which LotResult is optional and award implicit.
+decisionfootnote:[i.e. for which "_cbc:TenderResultCode_" is either "close-nw" or "selec-w".]. This does not apply to a DAP notice for which LotResult is optional and awards are implicit.
 
 LotResult applies exclusively to a single lot. This element contains
 various information (cf. table below and against figure):
