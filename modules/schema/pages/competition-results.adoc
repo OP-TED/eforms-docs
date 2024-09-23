@@ -1,12 +1,24 @@
 :xrefstyle: short
 :page-toclevels: -1
 
-= Competition Results
+= Direct Award Pre-announcement, Competition Results, Contract Completion
 
-Competition results are shared using result notices. Such notices have a
+
+Competition results are shared using Result notices. Such notices have a
 single "_efac:NoticeResult_" element containing information about the
 latest award decisions and potentially about the lots still to be
 awarded.
+
+Direct Award Pre-announcement is a voluntary form (Voluntary Ex-Ante 
+Transparency Notice) that allows an early announcement of the intent to 
+sign a directly awarded contract. (NB: for the transportation directives, 
+T01/T02 are to be used instead).
+
+Contract Completion Notice is a voluntary form that allows, once the 
+procurement procedure is over, to report actual aggregated amounts 
+(i.e. payments, penalties) and review requests statuses.
+
+These two previous forms have a lot in common with the Competition Results notice.
 
 == Notice Result
 
@@ -28,7 +40,25 @@ whose awarding decision has been made and is shared in the notice.
 * The aggregated amounts covering all awarded lots of the
 notice.
 
-All these topics will be further detailed in the following sections.
+This section should be interpreted slightly differently for the DAP and 
+Contract Completion notices although they share the same structure.
+
+For the DAP notice:
+
+* This section is about the intention to award a contract without a formal 
+competition (with some justification),
+* There are no statistics about concurrently received tenders,
+* The contract is about to get signed in the near future,
+
+For the Contract Completion notice:
+
+* This section contains details about completed (terminated or not) contracts,
+* Information is provided on a per lot basis,
+* It may additionally provide details on the requested reviews
+
+All these topics will be further detailed in the following sections with 
+occasionally some additional information when ambiguity may exist between 
+the various form types.
 
 [[noticeResultStructureFigure]]
 .Overall structure of the Notice Result section
@@ -174,7 +204,7 @@ image::image014.jpg[image,width=433,height=234]
 == Lot Result
 
 A Notice Result shall contain at least one LotResult with a made
-decisionfootnote:[i.e. for which "_cbc:TenderResultCode_" is either "close-nw" or "selec-w".].
+decisionfootnote:[i.e. for which "_cbc:TenderResultCode_" is either "close-nw" or "selec-w".]. This does not apply to a DAP notice for which LotResult is optional and awards are implicit.
 
 LotResult applies exclusively to a single lot. This element contains
 various information (cf. table below and against figure):
@@ -218,7 +248,8 @@ image::image015.jpg[image,327,494]
 
 
 For each lot, there may not exist more than one LotResult within the
-same notice.
+same notice except for cases like Contracts involving a Framework Agreement 
+or a Dynamic Purchasing System and for which the notice is used for reporting purposes.
 
 [[lotResultComponentsTable]]
 .LotResult components
