@@ -1631,7 +1631,7 @@ a|
 *(BT-785)*
 
 a|
-An identifier of the review request(s) that led to this decision or a 
+An identifier of the review request that led to this decision or a 
 review decision that is being appealed by this review request. Review 
 decision which was initiated by the review body (“ex officio”) are not 
 preceded by a review request.
@@ -1723,7 +1723,7 @@ a|
 a|
 The decision type (e.g. accepted, rejected because the complainant did not have legal standing).
 
-|*?* |efac:AppealDecision{zwsp}/efbc:DecisionTypeCode 
+|*** |efac:AppealDecision{zwsp}/efbc:DecisionTypeCode 
 
 a|
 *Review Irregularity Type*
@@ -1895,7 +1895,7 @@ was submitted to (for a Review Request) or the Review Body that made the decisio
 
 *Review Decision Type (BT-790-Review)*
 
-This non-repeatable field identifies the type of made decision and should 
+This repeatable field identifies the type of made decision and should 
 contain a code of the https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/review-decision-type[review-decision-type] codelist.
 
 It is forbidden for a Review Request and a Review Decision when the Request has been 
