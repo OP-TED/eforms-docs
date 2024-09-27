@@ -1617,7 +1617,7 @@ a|
 
 a|
 An identifier of a review request or a review decision. When appealed to a 
-higher review body instance, a review requests must receive a new identifier.
+higher review body instance, a review request must receive a new identifier.
 
 |*1* a|
 [source,xpath,subs=attributes]
@@ -1632,8 +1632,8 @@ a|
 
 a|
 An identifier of the review request that led to this decision or a 
-review decision that is being appealed by this review request. Review 
-decision which was initiated by the review body (“ex officio”) are not 
+review decision that is being appealed by this review request. A review 
+decision which was initiated by the review body (“ex officio”) is not 
 preceded by a review request.
 
 |*?* a|
@@ -1834,7 +1834,7 @@ comply with the “review” scheme (i.e. REV-XXXX, where X are digits.). It is
 mandatory for any Review Request or Review Decision, is usually system generated 
 and should be unique in the notice.
 
-It is used for internal reference in the notice (e.g. to identify the review 
+It is used as a technical reference within the notice (e.g. to identify the review 
 that would be subject to a change).
 
 *Review Identifier (BT-784-Review)*
@@ -1853,14 +1853,14 @@ match the Review Identifier (BT-784-Review) of that previous stage.
 
 *Review Notice Section Identifier (BT-786-Review)*
 
-This repeatable field allows to identify the sections of the notice subject to 
+This repeatable field allows the identification of the sections of the notice subject to 
 the alleged (in the case of a Review Request, a Review Decision with a withdrawn 
 Review Request or a Review  Decision rejecting all the alleged irregularities) or 
 confirmed (even partly) irregularities.
 
 *Review Applicant Identifier (BT-808-Review)*
 
-This optional repeatable field allows to identify the organisations that request the Review 
+This optional repeatable field allows the identification of the organisations that request the Review 
 or that appealed a previous decision (which could be any of the 2 parties, initial 
 requester or buyer). It should contain the technical identifier of the concerned 
 organisation.
@@ -1933,17 +1933,17 @@ It is only allowed when Review Remedy Type is specified.
 
 *Review URL (BT-794-Review)*
 
-This optional non-repeatable field allows to specify a web address for the documents of the 
+This optional non-repeatable field allows the specification of a web address for the documents of the 
 Review Request or Review Decision.
 
 *Review Request Fee (BT-795-Review)*
 
-This optional field is only allowed for a Review Decision and allows to specify the fee paid 
+This optional field is only allowed for a Review Decision and allows the specification of the fee paid 
 for lodging the review request.
 
 *Review Request Withdrawn (BT-796-Review)*
 
-This indicator is only allowed for a Review Decision and allows to specify whether the 
+This indicator is only allowed for a Review Decision and allows the specification of whether the 
 Request has been withdrawn. It may only be set to "true" when no Decision has been made.
 
 *Review Request Withdrawn Date (BT-797-Review)*
@@ -1953,7 +1953,7 @@ This field is mandatory when the Request has been withdrawn, else it is forbidde
 *Review Request Withdrawn Reasons (BT-798-Review)*
 
 This optional multilingual field may only be specified when the Request has been withdrawn. 
-It allows to provide details on the background reason that lead to the Request withdrawal.
+It allows details to be provided on the background reason that lead to the Request withdrawal.
 
 A sample mark-up extract is provided hereafter:
 
