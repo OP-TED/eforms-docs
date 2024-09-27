@@ -1649,3 +1649,523 @@ and ORG-0015):
     </efac:TenderingParty>
 </efac:NoticeResult>
 ----
+
+[[reviewSection]]
+== Review Section
+
+For transparency reasons, the information on the review procedure can be published through eForms in Result and Completion notices.
+
+The following fields allow to capture the state of the reviews at any stage. There is currently no legal obligation to publish information on the review procedure.
+
+[[reviewComponentsTable]]
+.Review components
+[width="100%",cols="<.^15%,<.^50%,^.^5%,<.^30%",]
+|===
+^|*eForms BT* ^|*Description* |*Cardin.* ^|*XSD element* 
+
+4+^|*Review Information (+++*+++)* 
+
+a|
+*Review Technical Identifier*
+
+*(BT-804)*
+
+a|
+A technical identifier linked to this review information
+
+|*1* a|
+[source,xpath,subs=attributes]
+----
+cbc:ID
+---- 
+
+a|
+*Review Request or Decision*
+
+*(BT-783)*
+
+a|
+Whether the information concerns a review request or a review decision.
+
+|*1* a|
+[source,xpath,subs=attributes]
+----
+efbc:AppealStageCode
+---- 
+
+a|
+*Review Identifier*
+
+*(BT-784)*
+
+a|
+An identifier of a review request or a review decision. When appealed to a 
+higher review body instance, a review request must receive a new identifier.
+
+|*1* a|
+[source,xpath,subs=attributes]
+----
+efbc:AppealID
+---- 
+
+a|
+*Review Previous Identifier*
+
+*(BT-785)*
+
+a|
+An identifier of the review request that led to this decision or a 
+review decision that is being appealed by this review request. A review 
+decision which was initiated by the review body (“ex officio”) is not 
+preceded by a review request.
+
+|*?* a|
+[source,xpath,subs=attributes]
+----
+efbc:PreviousAppealID
+---- 
+
+a|
+*Review Notice Section Identifier*
+
+*(BT-786)*
+
+a|
+An identifier to a section within this notice. The 
+information in the review section refers to this section or these sections.
+
+|*** |efac:AppealedItem{zwsp}/cbc:ID 
+
+a|
+*Review Applicant Identifier*
+
+*(BT-808)*
+
+a|
+The identifier of the applicant.
+
+|*** |efac:AppealingParty{zwsp}/cac:Party{zwsp}/cac:PartyIdentification{zwsp}/cbc:ID 
+
+a|
+*Review Date*
+
+*(BT-787)*
+
+a|
+The date when the review request was submitted, the review decision was made or the case closed.
+
+|*1* |cbc:Date
+
+a|
+*Review Title*
+
+*(BT-788)*
+
+a|
+The title of the review request or review decision.
+
+|*1* |cbc:Title
+
+a|
+*Review Description*
+
+*(BT-789)*
+
+a|
+The description of the review request or review decision or any other additional information.
+
+|*1* |cbc:Description 
+
+a|
+*Review Body Type*
+
+*(BT-799)*
+
+a|
+The type of review body (e.g. buyer; first instance review body; second instance review body; 
+other, e.g. a civil court setting damages).
+
+|*1* |efac:AppealProcessingParty{zwsp}/efbc:AppealProcessingPartyTypeCode 
+
+a|
+*Review Body Identifier*
+
+*(BT-807)*
+
+a|
+The review body (e.g. buyer; first instance review body; second instance review body; 
+other, e.g. a civil court setting damages).
+
+|*?* |efac:AppealProcessingParty{zwsp}/cac:Party{zwsp}/cac:PartyIdentification{zwsp}/cbc:ID 
+
+a|
+*Review Decision Type*
+
+*(BT-790)*
+
+a|
+The decision type (e.g. accepted, rejected because the complainant did not have legal standing).
+
+|*** |efac:AppealDecision{zwsp}/efbc:DecisionTypeCode 
+
+a|
+*Review Irregularity Type*
+
+*(BT-791)*
+
+a|
+The types of irregularity alleged in the review request or confirmed in the review decision.
+
+|*** |efac:AppealIrregularity{zwsp}/efbc:IrregularityTypeCode 
+
+a|
+*Review Remedy Type*
+
+*(BT-792)*
+
+a|
+The remedy (e.g. interim measures, setting aside of a decision, damages) requested in the 
+review request or applied by the review decision.
+
+|*** |efac:AppealRemedy/efbc:RemedyTypeCode 
+
+a|
+*Review Remedy Value*
+
+*(BT-793)*
+
+a|
+The value of the remedy (e.g. damages, fines).
+
+|*?* |efbc:AppealRemedyValue 
+
+a|
+*Review URL*
+
+*(BT-794)*
+
+a|
+The uniform resource locator (e.g. the web address) of the documents concerning the 
+review request or a review decision.
+
+|*?* |cbc:URI 
+
+a|
+*Review Request Fee*
+
+*(BT-795)*
+
+a|
+The fee paid for lodging the review request.
+
+|*?* |cbc:FeeAmount 
+
+a|
+*Review Request Withdrawn*
+
+*(BT-796)*
+
+a|
+The review request was withdrawn.
+
+|*?* |efbc:WithdrawnAppealIndicator 
+
+a|
+*Review Request Withdrawn Date*
+
+*(BT-797)*
+
+a|
+The date when the request for review was withdrawn.
+
+|*?* |efbc:WithdrawnAppealDate 
+
+a|
+*Review Request Withdrawn Reasons*
+
+*(BT-798)*
+
+a|
+The reasons for withdrawing the request for review.
+
+|*?* |efbc:WithdrawnAppealReasons
+
+4+a|
+*Context:*
+
+(+++*+++)
+[source,xpath,subs=attributes]
+----
+/ContractAwardNotice{zwsp}/ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:Appeals{zwsp}/efac:AppealInformation
+----
+
+|===
+
+
+*Review Request or Decision (BT-783-Review)*
+
+This field is the entry point for any Review Request or Decision information.
+
+It may only have a value from the “_review-information-type_” codelist and 
+specifies whether the information is about a Review Request (“req”) or a Review 
+Decision (“dec”).
+
+*Review Technical Identifier (BT-804-Review)*
+
+This is the Review Decision (or Review Request) Technical Identifier and shall 
+comply with the “review” scheme (i.e. REV-XXXX, where X are digits.). It is 
+mandatory for any Review Request or Review Decision, is usually system generated 
+and should be unique in the notice.
+
+It is used as a technical reference within the notice (e.g. to identify the review 
+that would be subject to a change).
+
+*Review Identifier (BT-784-Review)*
+
+This is the internal (or business) identifier of the Review Request or Review 
+Decision. There is no predefined scheme. This is the identifier that should be 
+referred to when linking to the previous review stage by using the Review Previous 
+Identifier field (BT-785-Review) from another Review Information. This information 
+is mandatory for any Review Request and Review Decision.
+
+*Review Previous Identifier (BT-785-Review)*
+
+This field is used to link a Review Decision to its previous stage (should it be 
+a Request or a Decision). It is mandatory when a previous stage exists and should 
+match the Review Identifier (BT-784-Review) of that previous stage.
+
+*Review Notice Section Identifier (BT-786-Review)*
+
+This repeatable field allows the identification of the sections of the notice subject to 
+the alleged (in the case of a Review Request, a Review Decision with a withdrawn 
+Review Request or a Review  Decision rejecting all the alleged irregularities) or 
+confirmed (even partly) irregularities.
+
+*Review Applicant Identifier (BT-808-Review)*
+
+This optional repeatable field allows the identification of the organisations that request the Review 
+or that appealed a previous decision (which could be any of the 2 parties, initial 
+requester or buyer). It should contain the technical identifier of the concerned 
+organisation.
+
+*Review Date (BT-787-Review)*
+
+This non-repeatable field is mandatory for Review Decision and Review Request. 
+For a Review Request, it represents the date the Request was submitted, and for a 
+Review Decision, the date the decision was made.
+
+*Review Title (BT-788-Review)*
+
+This multilingual field is mandatory and contains the title of the Review Request 
+or Review Decision.
+
+*Review Description (BT-789-Review)*
+
+This multilingual field is mandatory and contains the description or any other 
+relevant information of the Review Request or Review Decision.
+
+*Review Body Type (BT-799-Review)*
+
+This non-repeatable mandatory field identifies the type of the Review Body the 
+Review Request was submitted to (for a Review Request) or of the Review Body that 
+made the decision (for a Review Decision). It should contain a code of the https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/review-body-type[review-body-type] codelist.
+
+*Review Body Identifier (BT-807-Review)*
+
+This optional non-repeatable field identifies the Review Body the Review Request 
+was submitted to (for a Review Request) or the Review Body that made the decision 
+(for a Review Decision). It should contain the technical identifier of that organisation.
+
+*Review Decision Type (BT-790-Review)*
+
+This repeatable field identifies the type of made decision and should 
+contain a code of the https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/review-decision-type[review-decision-type] codelist.
+
+It is forbidden for a Review Request and a Review Decision when the Request has been 
+withdrawn. It is mandatory for a Review Decision when the Request has not been withdrawn.
+
+*Review Irregularity Type (BT-791-Review)*
+
+This repeatable field is mandatory for Review Request and Review Decision. It 
+should contain a code from the https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/irregularity-type[irregularity-type] codelist.
+
+For a Review Request or a Review Decision for which the Request has been withdrawn or 
+rejected, this field should be used to list all the initially alleged irregularities.
+
+For a Review Decision for which at least part of the alleged irregularities have been 
+confirmed, this field should be used to list all the confirmed irregularities.
+
+*Review Remedy Type (BT-792-Review)*
+
+This repeatable field identifies the remedies requested in the Review Request or applied 
+by the Review Decision. It should contain a code from the https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/remedy-type[remedy-type] codelist.
+
+For a Review Decision, this field is mandatory when at least some alleged irregularities 
+have been confirmed and forbidden when none has been confirmed (should the request have 
+been withdrawn or the decision reject all the irregularities).
+
+This field is allowed for a Review Request and should be specified when requested remedies 
+were part of the Request.
+
+*Review Remedy Value (BT-793-Review)*
+
+This non-repeatable field is used to specify the requested (Review Request) or the determined 
+(Review Decision) remedy amount.
+
+It is only allowed when Review Remedy Type is specified.
+
+*Review URL (BT-794-Review)*
+
+This optional non-repeatable field allows the specification of a web address for the documents of the 
+Review Request or Review Decision.
+
+*Review Request Fee (BT-795-Review)*
+
+This optional field is only allowed for a Review Decision and allows the specification of the fee paid 
+for lodging the review request.
+
+*Review Request Withdrawn (BT-796-Review)*
+
+This indicator is only allowed for a Review Decision and allows the specification of whether the 
+Request has been withdrawn. It may only be set to "true" when no Decision has been made.
+
+*Review Request Withdrawn Date (BT-797-Review)*
+
+This field is mandatory when the Request has been withdrawn, else it is forbidden.
+
+*Review Request Withdrawn Reasons (BT-798-Review)*
+
+This optional multilingual field may only be specified when the Request has been withdrawn. 
+It allows details to be provided on the background reason that lead to the Request withdrawal.
+
+A sample mark-up extract is provided hereafter:
+
+[source,xml]
+----
+<efac:Appeals> 
+	<efac:AppealInformation>
+		<!-- Review Technical ID (BT-804) -->
+		<cbc:ID schemeName="review">REV-0001</cbc:ID>
+		<!-- Review Date (BT-787) -->
+		<cbc:Date>2024-02-26+02:00</cbc:Date>
+		<!-- Review Title (BT-788) -->
+		<cbc:Title languageID="ENG">Review request for attribution of Lot 2</cbc:Title>
+		<cbc:Title languageID="FRA">Demande de révision de l'attribution du lot 2</cbc:Title>
+		<!-- Review Description (BT-789) -->
+		<cbc:Description languageID="ENG">Given the deadline for ...</cbc:Description>
+		<cbc:Description languageID="FRA">Etant donnée la date limite ...</cbc:Description>
+		<!-- Review URL (BT-794) -->
+		<cbc:URI>https://review-request.com/rev/1227-hauzyx</cbc:URI>
+		<!-- Review Identifier (BT-784) -->
+		<efbc:AppealID>COMP/RR/92973-24</efbc:AppealID>
+		<!-- Review Request or Decision (BT-783) -->
+		<efbc:AppealStageCode listName="review-information-type">req</efbc:AppealStageCode>
+		<!-- Review Request Irregularity Type (BT-791) -->
+		<efac:AppealIrregularity>
+			<efbc:IrregularityTypeCode listName="irregularity-type">insuf-timl</efbc:IrregularityTypeCode>
+		</efac:AppealIrregularity>
+		<efac:AppealIrregularity>
+			<efbc:IrregularityTypeCode listName="irregularity-type">mod-inco</efbc:IrregularityTypeCode>
+		</efac:AppealIrregularity>
+		<!-- Review Notice Section Identifier (BT-786) -->
+		<efac:AppealedItem>
+			<cbc:ID>RES-0003</cbc:ID>
+		</efac:AppealedItem>
+		<efac:AppealedItem>
+			<cbc:ID>LOT-0002</cbc:ID>
+		</efac:AppealedItem>
+		<!-- Review Applicant Identifier (BT-808) -->
+		<!-- Orgs 13 & 15 appealing together -->
+		<efac:AppealingParty>
+			<cac:Party>
+				<cac:PartyIdentification>
+					<cbc:ID schemeName="organisation">ORG-0013</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:Party>
+		</efac:AppealingParty>
+		<efac:AppealingParty>
+			<cac:Party>
+				<cac:PartyIdentification>
+					<cbc:ID schemeName="organisation">ORG-0015</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:Party>
+		</efac:AppealingParty>
+		<efac:AppealProcessingParty>
+			<!-- Review Body Type (BT-799) -->
+			<efbc:AppealProcessingPartyTypeCode listName="review-body-type">1-inst</efbc:AppealProcessingPartyTypeCode>
+			<!-- Review Body Identifier (BT-807) -->
+			<!-- The Review Body the initial Review Request has been submitted to -->
+			<cac:Party>
+				<cac:PartyIdentification>
+					<cbc:ID schemeName="organisation">ORG-0023</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:Party>
+		</efac:AppealProcessingParty>
+		<!-- Review Remedy Type (BT-792) -->
+		<efac:AppealRemedy>
+			<efbc:RemedyTypeCode listName="remedy-type">alt-penalty</efbc:RemedyTypeCode>
+		</efac:AppealRemedy>
+		<efac:AppealRemedy>
+			<efbc:RemedyTypeCode listName="remedy-type">damage</efbc:RemedyTypeCode>
+		</efac:AppealRemedy>
+	</efac:AppealInformation>
+	<efac:AppealInformation>
+		<!-- Review Technical Identifier (BT-804) -->
+		<cbc:ID schemeName="review">REV-0002</cbc:ID>
+		<!-- Review Date (BT-787) -->
+		<cbc:Date>2024-02-28+02:00</cbc:Date>
+		<!-- Review Title (BT-788) -->
+		<cbc:Title languageID="ENG">Rejection of the Review Request ...</cbc:Title>
+		<cbc:Title languageID="FRA">Rejet de la demande de révision ...</cbc:Title>
+		<!-- Review Description (BT-789) -->
+		<cbc:Description languageID="ENG">The Review requested by ...</cbc:Description>
+		<cbc:Description languageID="FRA">La demande de révision initiée par ...</cbc:Description>
+		<!-- Review Request Fee (BT-795) -->
+		<cbc:FeeAmount currencyID="EUR">9999</cbc:FeeAmount>
+		<!-- Review URL (BT-794) -->
+		<cbc:URI>http://my-court.com/decision/case-ABC</cbc:URI>
+		<!-- Review Identifier (BT-784) -->
+		<efbc:AppealID>2024/03/151-23 - Case Alpha ag. Omega</efbc:AppealID>
+		<!-- Review Remedy Value (BT-793) -->
+		<efbc:AppealRemedyValue currencyID="EUR">11499</efbc:AppealRemedyValue>
+		<!-- Review Request or Decision (BT-783) -->
+		<efbc:AppealStageCode listName="review-information-type">dec</efbc:AppealStageCode>
+		<!-- Previous Review Identifier (BT-785) -->
+		<efbc:PreviousAppealID>ABCD/9983 - ghs/JE</efbc:PreviousAppealID>
+		<!-- Review Request Irregularity Type (BT-791) -->
+		<efac:AppealIrregularity>
+			<efbc:IrregularityTypeCode listName="irregularity-type">insuf-timl</efbc:IrregularityTypeCode>
+		</efac:AppealIrregularity>
+		<!-- Review Notice Section Identifier (BT-786) -->
+		<efac:AppealedItem>
+			<cbc:ID>LOT-0002</cbc:ID>
+		</efac:AppealedItem>
+		<efac:AppealProcessingParty>
+			<!-- Review Body Type (BT-799) -->
+			<efbc:AppealProcessingPartyTypeCode listName="review-body-type">1-inst</efbc:AppealProcessingPartyTypeCode>
+			<!-- Review Body Identifier (BT-807) -->
+			<!-- The Review Body that made the decision -->
+			<cac:Party>
+				<cac:PartyIdentification>
+					<cbc:ID schemeName="organisation">ORG-0023</cbc:ID>
+				</cac:PartyIdentification>
+			</cac:Party>
+		</efac:AppealProcessingParty>
+		<!-- Review Decision Type (BT-790) -->
+		<efac:AppealDecision>
+			<efbc:DecisionTypeCode listName="review-decision-type">other</efbc:DecisionTypeCode>
+		</efac:AppealDecision>
+		<!-- Review Remedy Type (BT-792) -->
+		<efac:AppealRemedy>
+			<efbc:RemedyTypeCode listName="remedy-type">interim</efbc:RemedyTypeCode>
+		</efac:AppealRemedy>
+		<efac:AppealRemedy>
+			<efbc:RemedyTypeCode listName="remedy-type">set-aside</efbc:RemedyTypeCode>
+		</efac:AppealRemedy>
+	</efac:AppealInformation>
+	<efac:AppealInformation>
+		<!-- Another decision or request -->
+	</efac:AppealInformation>
+</efac:Appeals>
+
+----
