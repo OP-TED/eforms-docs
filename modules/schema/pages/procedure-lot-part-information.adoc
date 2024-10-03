@@ -2783,7 +2783,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 
 [[procedureTypePerNoticeSubtypeTableCompetitionForms]]
 .Procedure Type per Notice Subtype Table - Competition forms
-[cols=">.^10%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%",]
+[cols=">.^10%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%",]
 [%noheader]
 |===
 |eForms subtype |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |E3 |20 |21 |22 |23 |24 
@@ -2813,7 +2813,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |open |-- |-- |-- |-- |A  |A  |-- |X |X |X |X |X |X |X |-- |-- |-- |-- |X 
 |restricted |-- |-- |-- |-- |A |A |A |X |X |X |X |X |X |X |-- |-- |-- |-- |X 
 |neg-w-call |-- |-- |-- |-- |A |A |A |X |X |X |X |X |-- |-- |-- |-- |-- |-- |X 
-|neg-wo-call |X |X |X |X |X |X |X |X |X |X |X |X |X |-- |-- |-- |-- |-- |-- |-- |X 
+|neg-wo-call |X |X |X |X |X |X |X |X |X |X |X |X |-- |-- |-- |-- |-- |-- |X 
 |comp-dial |-- |-- |-- |-- |X |A |X |X |X |X |X |X |-- |-- |-- |-- |-- |-- |X 
 |innovation |-- |-- |-- |-- |X |A |-- |X |X |X |X |X |-- |-- |-- |-- |-- |-- |X 
 |oth-single |X |X |X |X |X |X |X |X |X |X |X |X |X |X |-- |-- |-- |-- |X 
