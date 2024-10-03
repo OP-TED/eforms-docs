@@ -179,13 +179,13 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: August 2024
+Indicative planning:: October 2024
 Application version:: 1.16
-SDK version:: 1.12
+SDK version:: 1.13
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version is currently scheduled to be put in Production in August 2024.
+NOTE: The current application version is in Production as of August 2024.
 
 
 === TED Central Validation Service 
@@ -212,7 +212,7 @@ API documentation:: https://viewer.preview.ted.europa.eu/swagger-ui/index.html
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.6.1
+Application version:: 1.7.0
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Final version of the application with full rendering of HTML and PDF and using the view-templates defined in the SDK   
 
@@ -237,7 +237,7 @@ Scope:: Users can generate an API key. As of 5 July in Preview and 10 July 2023 
 
 ==== Planned updates
 [horizontal]
-Indicative planning:: Q3 2024
+Indicative planning:: Q2 2025
 Scope:: Public profiles will be made available at a later stage as a catalogue of eSenders and will eventually replace the list of eSenders on SIMAP.
 
 
