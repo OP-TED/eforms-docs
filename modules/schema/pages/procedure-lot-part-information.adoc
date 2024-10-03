@@ -2762,64 +2762,64 @@ code; A: allowed code and procedure may additionally be accelerated) :
 
 [[procedureTypePerNoticeSubtypeTablePlanningForms]]
 .Procedure Type per Notice Subtype Table - Planning forms
-[cols=">.^18%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%",]
+[cols=">.^18%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%,^.^8%",]
 [%noheader]
 |===
-|eForms subtype |1 |2 |3 |4 |5 |6 |7 |8 |9 
-|Legal basis |D24 |D25 |D81 |D24 |D25 |D81 |D24 |D25 |D81 
-|Forbidden - Optional - Mandatory |F |F |F |F |F |F |O |O |O 
-|open |-- |-- |-- |-- |-- |-- |X |X |-- 
-|restricted |-- |-- |-- |-- |-- |-- |X |-- |X 
-|neg-w-call |-- |-- |-- |-- |-- |-- |X |X |X 
-|neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|comp-dial |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|innovation |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|oth-single |-- |-- |-- |-- |-- |-- |X |X |-- 
-|oth-mult |-- |-- |-- |-- |-- |-- |X |X |-- 
-|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|eForms subtype |E1 |1 |2 |3 |4 |5 |6 |E2 |7 |8 |9 
+|Legal basis |ANY |D24 |D25 |D81 |D24 |D25 |D81 |OT |D24 |D25 |D81 
+|Forbidden - Optional - Mandatory |F |F |F |F |F |F |F |F |O |O |O 
+|open |-- |-- |-- |-- |-- |-- |-- |X |X |-- 
+|restricted |-- |-- |-- |-- |-- |-- |-- |-- |X |-- |X 
+|neg-w-call |-- |-- |-- |-- |-- |-- |-- |-- |X |X |X 
+|neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|comp-dial |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|innovation |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|oth-single |-- |-- |-- |-- |-- |-- |-- |-- |X |X |-- 
+|oth-mult |-- |-- |-- |-- |-- |-- |-- |-- |X |X |-- 
+|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |===
 
 
 [[procedureTypePerNoticeSubtypeTableCompetitionForms]]
 .Procedure Type per Notice Subtype Table - Competition forms
-[cols=">.^10%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%",]
+[cols=">.^10%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%,^.^6%",]
 [%noheader]
 |===
-|eForms subtype |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |20 |21 |22 |23 |24 
-|Legal basis |D24 |D25 |D24 |D25 |D23 |D25 |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D24 |D25 
-|Forbidden - Optional - Mandatory |M |M |O |O |F |F |M |M |M |F |O |O |F |M |M 
-|open |-- |-- |-- |-- |-- |-- |A |A |-- |-- |X |X |-- |X |X 
-|restricted |X |X |X |X |-- |-- |A |A |A |-- |X |X |-- |X |X 
-|neg-w-call |X |X |X |X |-- |-- |A |A |A |-- |X |X |-- |-- |-- 
-|neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|comp-dial |X |X |X |X |-- |-- |X |A |X |-- |X |X |-- |-- |-- 
-|innovation |X |X |X |X |-- |-- |X |A |-- |-- |X |X |-- |-- |-- 
-|oth-single |X |X |X |X |-- |-- |X |X |X |-- |X |X |-- |X |X 
-|oth-mult |X |X |X |X |-- |-- |X |X |X |-- |X |X |-- |X |X 
-|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|eForms subtype |10 |11 |12 |13 |14 |15 |16 |17 |18 |19 |E3 |20 |21 |22 |23 |24 
+|Legal basis |D24 |D25 |D24 |D25 |D23 |D25 |D24 |D25 |D81 |D23 |ANY |D24 |D25 |D81 |D24 |D25 
+|Forbidden - Optional - Mandatory |M |M |O |O |O |O |M |M |M |O |O |O |O |O |M |M 
+|open |-- |-- |-- |-- |-- |-- |A |A |-- |X |X |X |X |-- |X |X 
+|restricted |X |X |X |X |X |X |A |A |A |X |X |X |X |-- |X |X 
+|neg-w-call |-- |-- |-- |-- |-- |-- |A |A |A |X |X |X |X |X |-- |-- 
+|neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|comp-dial |X |X |X |X |X |X |X |A |X |X |X |X |X |X |-- |-- 
+|innovation |X |X |X |X |X |X |X |A |-- |X |X |X |X |X |-- |-- 
+|oth-single |-- |-- |-- |-- |-- |-- |X |X |X |X |X |X |X |X |X |X 
+|oth-mult |X |X |X |X |X |X |X |X |X |X |X |X |X |X |X |X 
+|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |===
 
 
 [[procedureTypePerNoticeSubtypeTableResultForms]]
 .Procedure Type per Notice Subtype Table - DAP, Result and Contract Modification forms
-[cols=">.^15%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%",]
+[cols=">.^15%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%,^.^5%",]
 [%noheader]
 |===
-|eForms subtype |25 |26 |27 |28 |29 |30 |31 |32 |33 |34 |35 |36 |37 |38 |39 |40 
-|Legal basis |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D23 |D24 |D25 |D23 |D24 |D25 |D24 |D25 |D23 
+|eForms subtype |25 |26 |27 |28 |29 |30 |31 |32 |E4 |33 |34 |35 |36 |37 |38 |39 |E6 |40 |E5 
+|Legal basis |D24 |D25 |D81 |D23 |D24 |D25 |D81 |D23 |OT |D24 |D25 |D23 |D24 |D25 |D24 |D25 |OT |D23 |ANY 
 |Forbidden - Optional - Mandatory |M |M |M |M |M |M |M |F |O |O |F |M |M |F |F |F 
-|open |-- |-- |-- |-- |A  |A  |-- |-- |X |X |-- |X |X |-- |-- |-- 
-|restricted |-- |-- |-- |-- |A |A |A |-- |X |X |-- |X |X |-- |-- |-- 
-|neg-w-call |-- |-- |-- |-- |A |A |A |-- |X |X |-- |-- |-- |-- |-- |-- 
-|neg-wo-call |X |X |X |X |X |X |X |-- |X |X |-- |-- |-- |-- |-- |-- 
-|comp-dial |-- |-- |-- |-- |X |A |X |-- |X |X |-- |-- |-- |-- |-- |-- 
-|innovation |-- |-- |-- |-- |X |A |-- |-- |X |X |-- |-- |-- |-- |-- |-- 
-|oth-single |X |X |X |X |X |X |X |-- |X |X |-- |X |X |-- |-- |-- 
-|oth-mult |X |X |X |X |X |X |X |-- |X |X |-- |X |X |-- |-- |--  
-|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
-|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|open |-- |-- |-- |-- |A  |A  |-- |X |X |X |X |X |X |X |-- |-- |-- |-- |X 
+|restricted |-- |-- |-- |-- |A |A |A |X |X |X |X |X |X |X |-- |-- |-- |-- |X 
+|neg-w-call |-- |-- |-- |-- |A |A |A |X |X |X |X |X |-- |-- |-- |-- |-- |-- |X 
+|neg-wo-call |X |X |X |X |X |X |X |X |X |X |X |X |X |-- |-- |-- |-- |-- |-- |-- |X 
+|comp-dial |-- |-- |-- |-- |X |A |X |X |X |X |X |X |-- |-- |-- |-- |-- |-- |X 
+|innovation |-- |-- |-- |-- |X |A |-- |X |X |X |X |X |-- |-- |-- |-- |-- |-- |X 
+|oth-single |X |X |X |X |X |X |X |X |X |X |X |X |X |X |-- |-- |-- |-- |X 
+|oth-mult |X |X |X |X |X |X |X |X |X |X |X |X |X |X |-- |-- |-- |-- |X 
+|comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
+|exp-int-rail |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |===
 
 
