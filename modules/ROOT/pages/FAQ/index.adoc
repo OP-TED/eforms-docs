@@ -124,6 +124,9 @@ https://op.europa.eu/en/web/ted-eforms/agenda-q1-20-march-2024
 * eForms presentations from the TED eSender Workshop in June 2024 +
 https://op.europa.eu/en/web/ted-eforms/agenda-q2-20-june-2024
 +
+eForms presentations from the TED eSender Workshop in September 2024 +
+https://op.europa.eu/en/web/ted-eforms/agenda-q3-26-september-2024
++
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
 +
@@ -859,7 +862,9 @@ The time spent validating and submitting a notice does depend on the number of l
 +
 We are constantly working on reducing the time required to process notices, which then allows us to process bigger notices before the timeout. This includes improvements in our applications, and changes in the content of the eForms SDK. For example, the restructuring of the Schematron files in SDK 1.10.0 significantly reduces the time needed to validate large notices. 
 +
-For larger Result notices, OP’s recommendation is to break them up into smaller notices; this may reduce the possibility of a timeout and also make the notice more legible for readers and end users. 
+Validation is several times faster in later SDK versions, with particular improvements with versions 1.10 and 1.13. If you intend to submit very big notices, we recommend upgrading to a later SDK version.
++
+For larger Result notices, OP’s recommendation is still to break them up into smaller notices; this may reduce the possibility of a timeout and also make the notice more legible for readers and end users. 
 
 
 
