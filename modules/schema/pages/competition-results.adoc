@@ -173,8 +173,9 @@ image::image014.jpg[image,width=433,height=234]
 
 == Lot Result
 
-A Notice Result shall contain at least one LotResult with a made
-decisionfootnote:[i.e. for which "_cbc:TenderResultCode_" is either "close-nw" or "selec-w".].
+A Result notice shall contain at least one LotResult with a made
+decisionfootnote:[i.e. for which "_cbc:TenderResultCode_" is either "close-nw" or "selec-w".]. 
+This does not apply to a DAP or Contract Modification notice.
 
 LotResult applies exclusively to a single lot. This element contains
 various information (cf. table below and against figure):
