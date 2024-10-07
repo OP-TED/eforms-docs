@@ -192,6 +192,7 @@ See link:https://docs.ted.europa.eu/eforms/latest/schema/procedure-lot-part-info
 +
 OPP-090 should be used exclusively to point to a TED XML notice if it may not be covered by other fields, i.e.:
 +
+--
 * Change Notice Version Identifier (BT-758),
 +
 * Modification Previous Notice Section Identifier (BT-1501),
@@ -199,7 +200,7 @@ OPP-090 should be used exclusively to point to a TED XML notice if it may not be
 * Previous Planning Identifier (BT-125), or
 +
 * Framework Notice Identifier (OPT-100).
-
+--
 +
 Any referenced notice must have been already published. Referring to a TED XML notice, the format may only be ‘XXXXXX-YYYY’, i.e. Notice Publication ID.
 
@@ -411,7 +412,8 @@ notice, given they were already all in the same previous notice; this is importa
 has multiple winners, as a modification on the lot will affect all the associated contracts.
 +
 While the Contract Modification section is repeatable, each occurrence should: 
-
++
+--
 * refer to one and only one contract (BT-1501(s)-Contract), 
 * have the main reason for that contract modification expressed as code (BT-200-Contract), 
 * have further details about the reason for modification expressed as text (BT-201Contract), 
@@ -419,6 +421,7 @@ While the Contract Modification section is repeatable, each occurrence should:
 * identify the sections of the notice in which modifications have been made (a list may be found in the link:https://docs.ted.europa.eu/eforms/latest/schema/identifiers.html#_referring_to_sections_of_a_notice[documentation])
 (BT-1501(s)-Contract), 
 * identify the notice on which it is based (BT-1501(n)-Contract).
+--
 +
 All data not pertaining to the modified contract(s) must be removed from the contract modification notice 
 i.e. all lots, groups of lots, Tenders, Tendering parties, Contracts, Organizations not related to any modified contract(s). 
@@ -433,16 +436,18 @@ and no concurrent Contract Modification Notices may be submitted.
 
 What is the notice status of an eForms notice through its lifecycle?::
 
-A user working on the user interface of eNotices2 will be able to see the following notice status: 
-- Draft: The notice is being drafted. 
-- Submitted: The notice is successfully received, validated and sent to OP (received by TED-Monitor-2022). 
-- Published: The notice is published online on TED. 
-- Stopped: Publication of the notice was stopped by the buyer/ eSender before publication and the request was accepted. 
-- Not published: The notice was received but not published on TED.
-- Deleted: The notice has been deleted by front-end user.
-- Archived: The notice has been archived by front-end user.
-- Publishing: Publication process in progress, i.e. the notice has been added to the daily export for TED. 
-
+A user working on the user interface of eNotices2 will be able to see the following notice status:
++
+--
+* Draft: The notice is being drafted. 
+* Submitted: The notice is successfully received, validated and sent to OP (received by TED-Monitor-2022). 
+* Published: The notice is published online on TED. 
+* Stopped: Publication of the notice was stopped by the buyer/ eSender before publication and the request was accepted. 
+* Not published: The notice was received but not published on TED.
+* Deleted: The notice has been deleted by front-end user.
+* Archived: The notice has been archived by front-end user.
+* Publishing: Publication process in progress, i.e. the notice has been added to the daily export for TED. 
+--
 +
 The following notice statuses can be queried via the API for eSenders:
 DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING.
@@ -856,9 +861,11 @@ We currently have a timeout of 3 minutes for any request to our APIs. This appli
 +
 The time spent validating and submitting a notice does depend on the number of lots and the number of organisations, but those are not the only factors. Other factors are: 
 + 
+--
 * The type of notice: a result notice has more information to validate than a competition notice with the same number of lots and organisations. 
 * The number of other types of entities: buyers, tenders, tendering parties, contracts, etc. 
 * The number of references to entities: we check that the identifier in each reference corresponds to an entity in the notice. 
+--
 +
 We are constantly working on reducing the time required to process notices, which then allows us to process bigger notices before the timeout. This includes improvements in our applications, and changes in the content of the eForms SDK. For example, the restructuring of the Schematron files in SDK 1.10.0 significantly reduces the time needed to validate large notices. 
 +
@@ -1485,9 +1492,10 @@ With eForms, is the Publications Office validating the dispatch date of notices?
 
 Regarding dispatch dates, also referred to across the directives as ‘transmitted’, ‘sent’ or ‘dispatched’, there are two business terms:
 +
+--
 * dispatch date (BT-05) – when the notice is sent by the buyer to the eSender (or submitted via eNotices2),
 * (since November 2022 amendment) eSender dispatch date (BT-803) – when the notice is sent by the eSender via the API; it is optional, but it could be mandatory in the future. 
-
+--
 +
 There shouldn’t be any time discrepancies when it comes to the dispatch date (i.e. it cannot be 1 day before the day of submission or after the current time, etc.), 
 it should always reflect the real situation. 
