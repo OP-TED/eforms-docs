@@ -867,11 +867,11 @@ The time spent validating and submitting a notice does depend on the number of l
 * The number of references to entities: we check that the identifier in each reference corresponds to an entity in the notice. 
 --
 +
-We are constantly working on reducing the time required to process notices, which then allows us to process bigger notices before the timeout. This includes improvements in our applications, and changes in the content of the eForms SDK. For example, the restructuring of the Schematron files in SDK 1.10.0 significantly reduces the time needed to validate large notices. 
+We are constantly working on reducing the time required to process notices, which then allows us to process bigger notices before the timeout. This includes improvements in our applications, and changes in the content of the eForms SDK.
 +
-Validation is several times faster in later SDK versions, with particular improvements with versions 1.10 and 1.13. If you intend to submit very big notices, we recommend upgrading to a later SDK version.
+Validation of large notices can be several times faster in later SDK versions, with particular improvements with versions 1.10 and 1.13. If you intend to submit very big notices, we recommend upgrading to a later SDK version.
 +
-For larger Result notices, OP’s recommendation is still to break them up into smaller notices; this may reduce the possibility of a timeout and also make the notice more legible for readers and end users. 
+For large Result notices, we recommend breaking them up into smaller notices; this will reduce the possibility of a timeout and also make the notice more legible for readers and end users.
 
 
 
