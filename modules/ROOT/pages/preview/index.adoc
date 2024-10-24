@@ -174,6 +174,9 @@ We are currently in the process of providing more guidance for users of the eNot
     * Currently, there are some checks performed by eNotices2 API upon submission of a notice, e.g. eNotices2 will check (and reject) a notice with the same id and version id if it already exists in the system. In the future, such checks will be performed by CVS. 
     * With application version 1.13.2 we have added "expectedPublicationDate" to the list of notice metadata, which is retrieved as the results list of the searched notices, or the notice being stopped.  
     * As of application version 1.14.0, which went into Production environment on 16 May, we have improved the automated notifications/ emails regarding the various statuses of notices so that the eSender’s email address is included in copy. As part of the improvement, the Publication notification email includes a link to the published notice on TED. As a reminder, mandatory property “noticeAuthorEmail” in the metadata must be a valid email address and is intended to identify the buyer, i.e. must correspond to the Contracting Authority, so that the Publications Office can notify them about the workflow of their notice, e.g. the publication/rejection of their notices. 
+    * Application version 1.16.3 brings two new features to the Publication API for better tracking of notices: 
+- createdAt: Shows when each notice was first created in eNotices2, in UTC format (e.g., 2022-07-25T14:30:00Z). 
+- transmittedAt: Records the dispatch date of the notice as per BT-803 (Notice Dispatch Date eSender) in UTC (e.g., 2022-07-25T14:30:00Z); this will be "null" if not provided and is only for future notices.
 
     
 
