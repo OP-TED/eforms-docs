@@ -55,7 +55,7 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.15.2
+Application version:: 1.16.3
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 
@@ -152,7 +152,6 @@ We are currently in the process of providing more guidance for users of the eNot
    * In multi-stage procedures (BT-105), the second stage indicator should be set to 'yes' on one of those 3 groups where the criterion is used. 
    * Please avoid using the section “Information about late submission” except for the mandatory fields and the “Description of the NDA”.
    * Any date field which has a time attached must always have a value in the time field.
-   * In Contract notices of the Defence directive, BT-71-Lot should not be filled in.
    * For structured organisations, to get started, please fill in Organisation Name, Organisation Identifier and Organisation Part Name under My Form Settings > Main Buyer Settings. 
    * When filling in the subcontracting section of a tender (GR-LotTender-Subcontracting), you should complete the field BT-773-Tender. If you need to enter the value or the percentage of the subcontracting, you should also set the corresponding indicator (fields BT-730-Tender and BT-731-Tender) to ‘yes’. 
    * We encourage users to fill in forms by starting with the procedure section, then completing the information about lots, and then, if relevant, finishing with the results.
@@ -174,18 +173,22 @@ We are currently in the process of providing more guidance for users of the eNot
     * Currently, there are some checks performed by eNotices2 API upon submission of a notice, e.g. eNotices2 will check (and reject) a notice with the same id and version id if it already exists in the system. In the future, such checks will be performed by CVS. 
     * With application version 1.13.2 we have added "expectedPublicationDate" to the list of notice metadata, which is retrieved as the results list of the searched notices, or the notice being stopped.  
     * As of application version 1.14.0, which went into Production environment on 16 May, we have improved the automated notifications/ emails regarding the various statuses of notices so that the eSender’s email address is included in copy. As part of the improvement, the Publication notification email includes a link to the published notice on TED. As a reminder, mandatory property “noticeAuthorEmail” in the metadata must be a valid email address and is intended to identify the buyer, i.e. must correspond to the Contracting Authority, so that the Publications Office can notify them about the workflow of their notice, e.g. the publication/rejection of their notices. 
+    * Application version 1.16.3 brings two new features to the Publication API for better tracking of notices, as requested by eSenders, which are available in Production from 31 October 2024 onwards: 
+- createdAt: Shows when each notice was first created in eNotices2, in UTC format (e.g., 2022-07-25T14:30:00Z). 
+- transmittedAt: Records the dispatch date of the notice as per BT-803 (Notice Dispatch Date eSender) in UTC (e.g., 2022-07-25T14:30:00Z); this will be "null" if not provided and is only for future notices.
+
 
     
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: October 2024
+Indicative planning:: November 2024
 Application version:: 1.16
 SDK version:: 1.13
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: The current application version is in Production as of August 2024.
+NOTE: Current application version in Production as of 31 October 2024.
 
 
 === TED Central Validation Service 
@@ -194,7 +197,7 @@ API documentation:: https://cvs.preview.ted.europa.eu/swagger-ui/
 
 ==== Currently available 
 [horizontal]
-Application version:: 1.7.0
+Application version:: 1.8.0
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 Scope:: Complete implementation, including the execution of the validation rules (Schematron).
 
