@@ -899,7 +899,7 @@ Please note that the Publications Office does not manually add email addresses t
 +
 Making the developer profile public is entirely optional. The information eSenders provide in “Public profile” will be used (with their consent) 
 to automatically generate a list of eSenders using eForms, which is the next step in the development. These lists will eventually replace the page
-link:https://simap.ted.europa.eu/web/simap/list-of-ted-esenders[SIMAP-List of TED eSenders], which will not be maintained with eForms.
+link:https://ted.europa.eu/en/simap/list-of-ted-esenders[SIMAP-List of TED eSenders], which will not be maintained with eForms.
 +
 The latest developments and next steps of the TED Developer Portal were presented in the 
 link:https://op.europa.eu/documents/11465927/12140313/2023-03-28+TED+Developer+Portal+-+4th+eForms+technical+workshop.pptx/2daf351f-50be-dd34-4044-4d30e908e0ed?t=1679990131820[4th eForms Technical Workshop] of 28 March 2023.
@@ -985,11 +985,11 @@ one of the following: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt
 
 
 
-What dates do search parameters "submittedAt", "createdAt", "updadedAt", "transmittedAt" and “expectedPublicationDate” represent?::
+What dates do search parameters "submittedAt", "createdAt", "updatedAt", "transmittedAt" and “expectedPublicationDate” represent?::
 
 * "submittedAt" reflects the value that an eSender inputs in Notice Dispatch Date (BT-05). It is up to the eSender to input a value; as long as the notice passes CVS validation and lawfulness, it will be published.
 +
-* "updadedAt" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that. In the future, OP is planning to introduce search parameters for the date/ time of Notice Dispatch Date eSender (BT-803) in the XML (if any), as well as a search parameter for the date/ time a notice was created in eNotices2 application.
+* "updatedAt" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that.
 +
 * "createdAt" is the date and time the instance/notice was created in eNotices2.
 +
