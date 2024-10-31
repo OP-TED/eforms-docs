@@ -124,7 +124,7 @@ https://op.europa.eu/en/web/ted-eforms/agenda-q1-20-march-2024
 * eForms presentations from the TED eSender Workshop in June 2024 +
 https://op.europa.eu/en/web/ted-eforms/agenda-q2-20-june-2024
 +
-eForms presentations from the TED eSender Workshop in September 2024 +
+* eForms presentations from the TED eSender Workshop in September 2024 +
 https://op.europa.eu/en/web/ted-eforms/agenda-q3-26-september-2024
 +
 * TED developer documentation portal +
@@ -480,7 +480,7 @@ E1, E2, E3, E4 and E5 refer to forms that are not part of
 the eForms regulation, but they were included in the “Extended Annex” to
 regulation 2019/1780 available at: https://ec.europa.eu/docsroom/documents/43488
 +
-These optional forms will be implemented in 2024, as defined in the second amendment to the eForms implementing regulation. The new voluntary forms will be included in SDK release 1.13, scheduled to be released no later than the end of October 2024. 
+These optional forms will be implemented in 2024, as defined in the second amendment to the eForms implementing regulation. The new voluntary forms will be included in SDK release 1.13, scheduled to be released in mid-November 2024. 
 +
 They would extend (E) the set of the other forms and correspond to the
 following notices:  
@@ -892,9 +892,14 @@ The identifier of your eSender profile should also be used as the identifier of 
 We recommend that you only have one eSender account in Production, while your developers and testers 
 can have the accounts they need in the Preview environment.
 +
-Making the profile public is entirely optional. The information eSenders provide in “Public profile” will be used (with their consent) 
+Human-generated emails, such as announcements about downtimes, events, and specific messages from the Publications Office and OJS eSenders team, 
+will be sent to both the main email address of each eSender and any 'additional emails' they have specified in the TED Developer Portal's Preview and Production environments. 
+To ensure receipt of these communications from the OP, eSenders must update their developer profiles with all additional email addresses. 
+Please note that the Publications Office does not manually add email addresses to their distribution list.
++
+Making the developer profile public is entirely optional. The information eSenders provide in “Public profile” will be used (with their consent) 
 to automatically generate a list of eSenders using eForms, which is the next step in the development. These lists will eventually replace the page
-link:https://simap.ted.europa.eu/web/simap/list-of-ted-esenders[SIMAP-List of TED eSenders], which will not be maintained with eForms.
+link:https://ted.europa.eu/en/simap/list-of-ted-esenders[SIMAP-List of TED eSenders], which will not be maintained with eForms.
 +
 The latest developments and next steps of the TED Developer Portal were presented in the 
 link:https://op.europa.eu/documents/11465927/12140313/2023-03-28+TED+Developer+Portal+-+4th+eForms+technical+workshop.pptx/2daf351f-50be-dd34-4044-4d30e908e0ed?t=1679990131820[4th eForms Technical Workshop] of 28 March 2023.
@@ -907,7 +912,7 @@ Please read the link:https://docs.ted.europa.eu/api/index.html[TED Developer doc
 
 
 
-Will there be some API available, which users can use to transform/ convert TED XML to eForms?::
+Is there some API available, which users can use to transform/ convert TED XML to eForms?::
 
 OP has developed a converter which takes a TED XML and converts it to a partial eForms XML. “Partial” because eForms notices 
 contain more information than TED XML notices, often in a different format. For notice types that the converter does not cover, 
@@ -980,13 +985,17 @@ one of the following: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt
 
 
 
-What are search parameters "submittedAt", "updadedAt" and “expectedPublicationDate” and what dates do they represent?::
+What dates do search parameters "submittedAt", "createdAt", "updatedAt", "transmittedAt" and “expectedPublicationDate” represent?::
 
-"submittedAt" reflects the value that an eSender inputs in Notice Dispatch Date (BT-05). It is up to the eSender to input a value; as long as the notice passes CVS validation and lawfulness, it will be published.
+* "submittedAt" reflects the value that an eSender inputs in Notice Dispatch Date (BT-05). It is up to the eSender to input a value; as long as the notice passes CVS validation and lawfulness, it will be published.
 +
-"updadedAt" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that. In the future, OP is planning to introduce search parameters for the date/ time of Notice Dispatch Date eSender (BT-803) in the XML (if any), as well as a search parameter for the date/ time a notice was created in eNotices2 application.
+* "updatedAt" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that.
 +
-“expectedPublicationDate” is assigned by our internal system (TED Monitor) and is the next available OJS issue date based on the link:https://ted.europa.eu/en/release-calendar[release calendar] from the date the notice was successfully submitted. Notices will be published by default as soon as possible when the eSender has not indicated a Notice Preferred Publication Date (BT-738).
+* "createdAt" is the date and time the instance/notice was created in eNotices2.
++
+* "transmittedAt" corresponds to the date and time of the BT-803 (Notice Dispatch Date eSender) in the XML, if present. When not provided, the value will be returned as "null".
++
+* “expectedPublicationDate” is assigned by our internal system (TED Monitor) and is the next available OJS issue date based on the link:https://ted.europa.eu/en/release-calendar[release calendar] from the date the notice was successfully submitted. Notices will be published by default as soon as possible when the eSender has not indicated a Notice Preferred Publication Date (BT-738).
 
 
 
