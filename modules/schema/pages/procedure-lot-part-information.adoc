@@ -2818,11 +2818,11 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |Legal basis |D24 |D25 |D24 |D25 |D23 |D25 |D24 |D25 |D81 |D23 |OT |D24 |D25 |D81 |D24 |D25 
 |Forbidden - Optional - Mandatory |M |M |O |O |O |O |M |M |M |O |O |O |O |O |M |M 
 |open |-- |-- |-- |-- |-- |-- |A |A |-- |X |X |X |X |-- |X |X 
-|restricted |X |X |X |X |X |X |A |A |A |X |X |X |X |-- |X |X 
-|neg-w-call |-- |-- |-- |-- |-- |-- |A |A |A |X |X |X |X |X |-- |-- 
+|restricted |X |X |X |X |X |X |A |A |A |X |X |X |X |X |X |X 
+|neg-w-call |-- |-- |-- |-- |-- |X |A |A |A |X |X |X |X |X |-- |-- 
 |neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |comp-dial |X |X |X |X |X |X |X |A |X |X |X |X |X |X |-- |-- 
-|innovation |X |X |X |X |X |X |X |A |-- |X |X |X |X |X |-- |-- 
+|innovation |X |X |X |X |X |X |X |A |-- |X |X |X |X |-- |-- |-- 
 |oth-single |-- |-- |-- |-- |-- |-- |X |X |X |X |X |X |X |X |X |X 
 |oth-mult |X |X |X |X |X |X |X |X |X |X |X |X |X |X |X |X 
 |comp-tend |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
