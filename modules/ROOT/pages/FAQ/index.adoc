@@ -465,12 +465,13 @@ the notice will obtain status “Not published”, which can be queried through 
 
 What is the meaning of notice status “Publishing”?::
 
-Every working day, (generally around 16:00 CET depending on the number of notices to be published), the Publications Office 
-initiates the process of publication of the next OJ S. If a notice is in the daily export to TED and the process has been initiated, 
-the status of a “submitted” notice will then change to "publishing". “Stop publication” action is no longer possible 
-for notices in status “publishing”. Once the notice has been published, you will be able to submit a change notice for publication in the OJ S 
-cancelling the initial notice, i.e. by creating a change notice with reason “notice cancelled”. Both the original notice 
-and the change notice will be published in the OJ S in this case. 
+Every working day, according to the OJS https://ted.europa.eu/en/release-calendar[release calendar], 
+the Publications Office initiates the process of publication of the next OJ S. The back-end application (TED Monitor) 
+selects all “submitted” notices that have the expected publication date of the OJ S issue and includes them in the daily export.
++
+The export can happen at any time between midday and midnight, depending on the circumstances but it currently happens around 15:00 CET. 
+Once a notice has been exported, its status will change to “publishing” and it is no longer possible to stop its publication. 
+The status will change to “published” after the notice has been published on TED, not later than 9:00 on the publication date of the OJ S issue.
 
 
 
@@ -951,14 +952,18 @@ An overview of eForms notice statuses was presented during the 3rd eForms Techni
 link:https://op.europa.eu/en/web/ted-eforms/agenda[The lifecycle of eForms notices]
 
 
-When can I stop publication of a notice via the API?::
+When can I stop the publication of a notice?::
 
 Only when the notice is in status “SUBMITTED”. Once the status of the notice has changed to "PUBLISHING" or "PUBLISHED", 
 it is no longer allowed to perform this action. When a submitted notice has entered the daily export to TED 
-and OP has initiated the process of publication of the next OJ S (which happens around 16:00 CET on workdays), 
-its status will change to “PUBLISHING” and subsequently to “PUBLISHED” (once published in TED). In this case it will only be possible 
-to submit a change notice for publication in the OJ S cancelling the initial notice, i.e. by creating a change notice with ReasonCode “cancel” 
-from change-corrig-justification.gc. Both the original notice and its change notice will be published in the OJ S. 
+and the OP has initiated the process of publication of the next OJ S, its status will change to “PUBLISHING” 
+and subsequently to “PUBLISHED” (once published in TED). 
++
+During the few minutes that it takes to carry out the export process, it is also not possible to stop the publication of a notice in 
+“SUBMITTED” status. After the notice has been exported or published, and if the notice really should be considered null and void, 
+it will only be possible to submit a change notice for publication in the OJ S cancelling the initial notice, 
+i.e., by creating a change notice with ReasonCode “cancel” from change-corrig-justification.gc. 
+Both the original notice and its change notice will be published in the OJ S. 
 
 
 
