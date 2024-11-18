@@ -2819,7 +2819,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |Forbidden - Optional - Mandatory |M |M |O |O |O |O |M |M |M |O |O |O |O |O |M |M 
 |open |-- |-- |-- |-- |-- |-- |A |A |-- |X |X |X |X |-- |X |X 
 |restricted |X |X |X |X |X |X |A |A |A |X |X |X |X |X |X |X 
-|neg-w-call |-- |-- |-- |-- |-- |X |A |A |A |X |X |X |X |X |-- |-- 
+|neg-w-call |X |X |X |X |X |X |A |A |A |X |X |X |X |X |-- |-- 
 |neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |comp-dial |X |X |X |X |X |X |X |A |X |X |X |X |X |X |-- |-- 
 |innovation |X |X |X |X |X |X |X |A |-- |X |X |X |X |-- |-- |-- 
