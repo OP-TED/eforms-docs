@@ -868,12 +868,6 @@ Person*
 
 | <|Review Requester |M |M |O |EM |M |CM |CM |M |O |M |M |O |EM |CM |0
 
-| <|Not-Tenderer Review Requester |M |*M* |O |EM |M |CM |CM |M |O |O |O
-|O |O |O |O
-
-| <|Non-contractant review requester |*M* |*M* |*O* |*O* |*O* |*O* |*O*
-|*O* |*O* |*O* |*O* |*O* |*O* |*O* |*O*
-
 | <|*eSender (#)* |M |*M* |O |EM |M |CM |CM |M |O |O |O |O |O |O |O
 
 17+|*SUBROLES* 
@@ -1109,12 +1103,6 @@ _And_
 [source,xpath,subs=attributes]
 ----
 /*/cac:ProcurementProjectLot{zwsp}/cac:TenderingTerms{zwsp}/cac:EmploymentLegislationDocumentReference{zwsp}/cac:IssuerParty
-----
-
-|*Review Requester* <|Organization that requested a review request.
-a|[source,xpath,subs=attributes]
-----
-/ContractAwardNotice{zwsp}/ext:UBLExtensions{zwsp}/ext:UBLExtension{zwsp}/ext:ExtensionContent{zwsp}/efext:EformsExtension{zwsp}/efac:AppealsInformation{zwsp}/efac:AppealStatus{zwsp}/efac:AppealingParty
 ----
 
 |*Beneficial owner* <|Beneficial Owner of the winning organization
@@ -1613,14 +1601,6 @@ general* 3+|*PIN CFC social* |*QS* 4+|*CN general* 2+|*CN social*
 
 |Tenderer |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |--
 |-- |-- |-- |M |M |M |M |M |M |M |M |M |M |M |M |M |M |M |M
-
-|Not-Tenderer Review Requester |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |--
-|-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |O |O |O |O |O |O |O |O |O |O |O |O |O |O
-|O |O
-
-|Non-contractant review requester |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |--
-|-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |O |O |O |O |O |O |O |O |O |O |O |O |O
-|O |O |O
 
 |*eSender (#)* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M*
 |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M* |*M*
