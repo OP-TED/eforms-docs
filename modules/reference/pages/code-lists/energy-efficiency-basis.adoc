@@ -1,0 +1,16 @@
+= `energy-efficiency-basis` codelist
+:navtitle: Codelists
+
+Legal Framework for the items, like Energy Labelling Delegated acts, implementing measures (Directive 2009/125/EC), or Regulation 2020/740; products and services covered by the GPP; works, services or buildings.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-811.adoc[`BT-811`] EED List
+
+== Codes
+[horizontal]
+  `eco-des`::: Ecodesign rules
+  `eed-spec`::: Energy Efficiency Directive-specific works and  services not covered by GPP
+  `enrg-lab`::: Energy Label
+  `gpp-crit`::: Green Public Procurement criteria
+  `nzeb-bui`::: Nearly-zero energy buildings

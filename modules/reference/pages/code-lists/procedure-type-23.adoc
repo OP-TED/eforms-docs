@@ -1,0 +1,16 @@
+= `procedure-type-23` codelist
+:navtitle: Codelists
+
+Allowed procedure type for notice subtype 23
+[horizontal]
+Version:: 20220928-0
+Subset of:: xref:code-lists/procurement-procedure-type.adoc[`procurement-procedure-type`]
+Structure:: flat
+Used in:: xref:business-terms/BT-105.adoc[`BT-105`] Procedure Type
+
+== Codes
+[horizontal]
+  `open`::: Open
+  `oth-mult`::: Other multiple stage procedure
+  `oth-single`::: Other single stage procedure
+  `restricted`::: Restricted

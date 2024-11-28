@@ -1,0 +1,15 @@
+= `reserved-procurement` codelist
+:navtitle: Codelists
+
+List of codes to specify whether participation is reserved or not.
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/reserved-procurement
+Structure:: flat
+Used in:: xref:business-terms/BT-71.adoc[`BT-71`] Reserved Participation
+
+== Codes
+[horizontal]
+  `none`::: Participation is not reserved.
+  `res-pub-ser`::: Participation is reserved to organisations pursuing a public service mission and fulfilling other relevant conditions in the legislation.
+  `res-ws`::: Participation is reserved to sheltered workshops and economic operators aiming at the social and professional integration of disabled or disadvantaged persons.

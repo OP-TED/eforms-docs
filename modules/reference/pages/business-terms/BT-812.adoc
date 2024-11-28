@@ -1,0 +1,10 @@
+= `BT-812`: Energy Efficiency Label
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-812-LotResult`:: Energy Efficiency Label
+  `BT-812-LotResult-List`:: Energy Efficiency Label Listname

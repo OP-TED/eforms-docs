@@ -1,0 +1,53 @@
+= `nuts-nld-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Netherlands
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `NL112`::: Delfzijl en omgeving
+  `NL114`::: Oost-Groningen
+  `NL115`::: Overig Groningen
+  `NL126`::: Zuidoost-Friesland
+  `NL127`::: Noord-Friesland
+  `NL128`::: Zuidwest-Friesland
+  `NL131`::: Noord-Drenthe
+  `NL132`::: Zuidoost-Drenthe
+  `NL133`::: Zuidwest-Drenthe
+  `NL211`::: Noord-Overijssel
+  `NL212`::: Zuidwest-Overijssel
+  `NL213`::: Twente
+  `NL221`::: Veluwe
+  `NL224`::: Zuidwest-Gelderland
+  `NL225`::: Achterhoek
+  `NL226`::: Arnhem/Nijmegen
+  `NL230`::: Flevoland
+  `NL321`::: Kop van Noord-Holland
+  `NL323`::: IJmond
+  `NL325`::: Zaanstreek
+  `NL327`::: Het Gooi en Vechtstreek
+  `NL328`::: Alkmaar en omgeving
+  `NL32A`::: Agglomeratie Haarlem
+  `NL32B`::: Groot-Amsterdam
+  `NL341`::: Zeeuwsch-Vlaanderen
+  `NL342`::: Overig Zeeland
+  `NL350`::: Utrecht
+  `NL361`::: Agglomeratie ’s-Gravenhage
+  `NL362`::: Delft en Westland
+  `NL363`::: Agglomeratie Leiden en Bollenstreek
+  `NL364`::: Zuidoost-Zuid-Holland
+  `NL365`::: Oost-Zuid-Holland
+  `NL366`::: Groot-Rijnmond
+  `NL411`::: West-Noord-Brabant
+  `NL414`::: Zuidoost-Noord-Brabant
+  `NL415`::: Midden-Noord-Brabant
+  `NL416`::: Noordoost-Noord-Brabant
+  `NL421`::: Noord-Limburg
+  `NL422`::: Midden-Limburg
+  `NL423`::: Zuid-Limburg
+  `NLZZZ`::: Extra-Regio NUTS 3

@@ -1,0 +1,15 @@
+= `contract-nature` codelist
+:navtitle: Codelists
+
+List of codes used to specify the main and additional natures of a purchase
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/contract-nature
+Structure:: flat
+Used in:: xref:business-terms/BT-23.adoc[`BT-23`] Main Nature, xref:business-terms/BT-531.adoc[`BT-531`] Additional Nature
+
+== Codes
+[horizontal]
+  `services`::: Services
+  `supplies`::: Supplies
+  `works`::: Works

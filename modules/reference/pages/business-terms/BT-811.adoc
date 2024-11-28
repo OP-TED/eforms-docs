@@ -1,0 +1,16 @@
+= `BT-811`: EED List
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-811(a)-Lot`:: EED List (Basis)
+  `BT-811(a)-Lot-List`:: EED List (Basis) Listname
+  `BT-811(a)-LotResult`:: EED List (Basis)
+  `BT-811(a)-LotResult-List`:: EED List (Basis) Listname
+  `BT-811(b)-Lot`:: EED List (Item)
+  `BT-811(b)-Lot-List`:: EED List (Item) Listname
+  `BT-811(b)-LotResult`:: EED List (Item)
+  `BT-811(b)-LotResult-List`:: EED List (Item) Listname

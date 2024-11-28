@@ -1,0 +1,10 @@
+= `BT-720`: Tender Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-720-Tender`:: Tender Value
+  `BT-720-Tender-Currency`:: Tender Value Currency

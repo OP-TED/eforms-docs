@@ -1,0 +1,13 @@
+= `ipi-scope` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the procurement falls within the scope of the International Procurement Instrument (IPI) Regulation (EU) 2022/1031.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+Used in:: xref:business-terms/BT-684.adoc[`BT-684`] IPI Measures are Applicable
+
+== Codes
+[horizontal]
+  `false`::: False

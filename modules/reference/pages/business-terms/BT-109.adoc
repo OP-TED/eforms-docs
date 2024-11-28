@@ -1,0 +1,10 @@
+= `BT-109`: Framework Duration Justification
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-109-Lot`:: Framework Duration Justification
+  `BT-109-Lot-Language`:: Framework Duration Justification Language

@@ -1,0 +1,10 @@
+= `BT-135`: Direct Award Justification Text
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-135-Procedure`:: Direct Award Justification Text
+  `BT-135-Procedure-Language`:: Direct Award Justification Text Language

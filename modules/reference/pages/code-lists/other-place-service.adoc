@@ -1,0 +1,15 @@
+= `other-place-service` codelist
+:navtitle: Codelists
+
+This table provides the broad geopolitical areas linked to the location of works and the place of performance or delivery within the context of public procurement.
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/other-place-service
+Structure:: flat
+Used in:: xref:business-terms/BT-727.adoc[`BT-727`] Place Performance Services Other
+
+== Codes
+[horizontal]
+  `anyw`::: Anywhere
+  `anyw-cou`::: Anywhere in the given country
+  `anyw-eea`::: Anywhere in the European Economic Area

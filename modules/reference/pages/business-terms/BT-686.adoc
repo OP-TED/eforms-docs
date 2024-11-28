@@ -1,0 +1,9 @@
+= `BT-686`: Number of tender applications that fall under this IPI Measure
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-686-LotResult`:: Number of tender applications that fall under this IPI Measure

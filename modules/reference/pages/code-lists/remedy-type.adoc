@@ -1,0 +1,17 @@
+= `remedy-type` codelist
+:navtitle: Codelists
+
+This table describes the measures taken following a review.
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/remedy-type
+Structure:: flat
+Used in:: xref:business-terms/BT-792.adoc[`BT-792`] Review Remedy Type
+
+== Codes
+[horizontal]
+  `alt-penalty`::: Alternative penalty
+  `damage`::: Damages
+  `ineffectiveness`::: Ineffectiveness
+  `interim`::: Interim measure
+  `set-aside`::: Set aside

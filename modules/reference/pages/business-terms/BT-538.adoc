@@ -1,0 +1,12 @@
+= `BT-538`: Duration Other
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-538-Lot`:: Duration Other
+  `BT-538-Lot-List`:: Duration Other Listname
+  `BT-538-Part`:: Duration Other
+  `BT-538-Part-List`:: Duration Other Listname

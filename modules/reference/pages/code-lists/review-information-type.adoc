@@ -1,0 +1,13 @@
+= `review-information-type` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the information is about a Review Request or a Review Decision.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-783.adoc[`BT-783`] Review Request or Decision
+
+== Codes
+[horizontal]
+  `dec`::: Decision
+  `req`::: Request

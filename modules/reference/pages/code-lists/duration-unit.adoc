@@ -1,0 +1,16 @@
+= `duration-unit` codelist
+:navtitle: Codelists
+
+List of codes for eforms allowed duration unit of measure
+[horizontal]
+Version:: 20190918-0
+Subset of:: xref:code-lists/timeperiod.adoc[`timeperiod`]
+Structure:: flat
+Used in:: xref:business-terms/BT-36.adoc[`BT-36`] Duration Period, xref:business-terms/BT-98.adoc[`BT-98`] Tender Validity Deadline
+
+== Codes
+[horizontal]
+  `DAY`::: Day
+  `MONTH`::: Month
+  `WEEK`::: Week
+  `YEAR`::: Year

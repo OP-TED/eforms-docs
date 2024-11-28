@@ -1,0 +1,9 @@
+= `BT-814`: Energy Efficiency Unit
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-814-LotResult`:: Energy Savings in kWh/year

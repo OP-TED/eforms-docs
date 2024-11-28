@@ -1,0 +1,12 @@
+= `international-procurement-instrument-measure` codelist
+:navtitle: Codelists
+
+Specific International Procurement Instrument Measure
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-685.adoc[`BT-685`] Specific IPI Measure
+
+== Codes
+[horizontal]
+  `empty`::: There is currently no Implementing Act

@@ -1,0 +1,10 @@
+= `BT-682`: Foreign Subsidies Measures
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-682-Tender`:: Foreign Subsidies Measures
+  `BT-682-Tender-List`:: Foreign Subsidies Measures Listname

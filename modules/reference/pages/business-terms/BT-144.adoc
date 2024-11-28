@@ -1,0 +1,10 @@
+= `BT-144`: Not Awarded Reason
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-144-LotResult`:: Not Awarded Reason
+  `BT-144-LotResult-List`:: Not Awarded Reason Listname

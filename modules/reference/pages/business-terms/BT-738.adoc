@@ -1,0 +1,9 @@
+= `BT-738`: Notice Preferred Publication Date
+:navtitle: Business Terms
+
+[horizontal]
+Type:: DATE
+
+== Fields
+[horizontal]
+  `BT-738-notice`:: Notice Preferred Publication Date

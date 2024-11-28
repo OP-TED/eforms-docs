@@ -1,0 +1,14 @@
+= `BT-541`: Award Criterion Number
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-541-Lot-FixedNumber`:: Award Criterion Fixed Number
+  `BT-541-Lot-ThresholdNumber`:: Award Criterion Threshold Number
+  `BT-541-Lot-WeightNumber`:: Award Criterion Weight Number
+  `BT-541-LotsGroup-FixedNumber`:: Award Criterion Fixed Number
+  `BT-541-LotsGroup-ThresholdNumber`:: Award Criterion Threshold Number
+  `BT-541-LotsGroup-WeightNumber`:: Award Criterion Weight Number

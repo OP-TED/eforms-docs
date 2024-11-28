@@ -1,0 +1,14 @@
+= `nuts-mne-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Montenegro
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `ME000`::: Црна Гора
+  `MEZZZ`::: Extra-Regio NUTS 3

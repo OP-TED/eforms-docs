@@ -1,0 +1,9 @@
+= `OPT-080`: Consumption Metric
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-080-LotResult`:: Consumption Metric
+  `OPT-080-LotResult-List`:: Consumption Metric Listname

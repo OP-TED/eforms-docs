@@ -1,0 +1,36 @@
+= `eu-official-language` codelist
+:navtitle: Codelists
+
+List of codes of the EU official languages
+[horizontal]
+Version:: 20220928-0
+Subset of:: xref:code-lists/language.adoc[`language`]
+Structure:: flat
+Used in:: xref:business-terms/BT-01.adoc[`BT-01`] Procedure Legal Basis, xref:business-terms/BT-09.adoc[`BT-09`] Cross Border Law, xref:business-terms/BT-21.adoc[`BT-21`] Title, xref:business-terms/BT-24.adoc[`BT-24`] Description, xref:business-terms/BT-45.adoc[`BT-45`] Rewards Other, xref:business-terms/BT-54.adoc[`BT-54`] Options Description, xref:business-terms/BT-57.adoc[`BT-57`] Renewal Description, xref:business-terms/BT-67.adoc[`BT-67`] Exclusion Grounds, xref:business-terms/BT-70.adoc[`BT-70`] Terms Performance, xref:business-terms/BT-75.adoc[`BT-75`] Guarantee Required Description, xref:business-terms/BT-76.adoc[`BT-76`] Tenderer Legal Form Description, xref:business-terms/BT-77.adoc[`BT-77`] Terms Financial, xref:business-terms/BT-88.adoc[`BT-88`] Procedure Features, xref:business-terms/BT-95.adoc[`BT-95`] Recurrence Description, xref:business-terms/BT-99.adoc[`BT-99`] Review Deadline Description, xref:business-terms/BT-109.adoc[`BT-109`] Framework Duration Justification, xref:business-terms/BT-111.adoc[`BT-111`] Framework Buyer Categories, xref:business-terms/BT-122.adoc[`BT-122`] Electronic Auction Description, xref:business-terms/BT-133.adoc[`BT-133`] Public Opening Place, xref:business-terms/BT-134.adoc[`BT-134`] Public Opening Description, xref:business-terms/BT-135.adoc[`BT-135`] Direct Award Justification Text, xref:business-terms/BT-141.adoc[`BT-141`] Change Description, xref:business-terms/BT-163.adoc[`BT-163`] Concession Value Description, xref:business-terms/BT-196.adoc[`BT-196`] Unpublished Justification Description, xref:business-terms/BT-201.adoc[`BT-201`] Modification Reason Description, xref:business-terms/BT-202.adoc[`BT-202`] Modification Description, xref:business-terms/BT-300.adoc[`BT-300`] Additional Information, xref:business-terms/BT-500.adoc[`BT-500`] Organisation Name, xref:business-terms/BT-540.adoc[`BT-540`] Award Criterion Description, xref:business-terms/BT-543.adoc[`BT-543`] Award Criteria Complicated, xref:business-terms/BT-554.adoc[`BT-554`] Subcontracting Description, xref:business-terms/BT-688.adoc[`BT-688`] Overriding reasons relating to the public interest, xref:business-terms/BT-702.adoc[`BT-702`] Notice Official Language, xref:business-terms/BT-721.adoc[`BT-721`] Contract Title, xref:business-terms/BT-728.adoc[`BT-728`] Place Performance Additional Information, xref:business-terms/BT-732.adoc[`BT-732`] Security Clearance Description, xref:business-terms/BT-733.adoc[`BT-733`] Award Criteria Order Justification, xref:business-terms/BT-734.adoc[`BT-734`] Award Criterion Name, xref:business-terms/BT-745.adoc[`BT-745`] Submission Nonelectronic Description, xref:business-terms/BT-750.adoc[`BT-750`] Selection Criteria Description, xref:business-terms/BT-755.adoc[`BT-755`] Accessibility Justification, xref:business-terms/BT-762.adoc[`BT-762`] Change Reason Description, xref:business-terms/BT-772.adoc[`BT-772`] Late Tenderer Information Description, xref:business-terms/BT-777.adoc[`BT-777`] Strategic Procurement Description, xref:business-terms/BT-780.adoc[`BT-780`] Tender Payment Value Additional Information, xref:business-terms/BT-781.adoc[`BT-781`] Duration Additional Information, xref:business-terms/BT-788.adoc[`BT-788`] Review Title, xref:business-terms/BT-789.adoc[`BT-789`] Review Description, xref:business-terms/BT-798.adoc[`BT-798`] Review Request Withdrawn Reasons, xref:business-terms/BT-802.adoc[`BT-802`] Non Disclosure Agreement Description, xref:business-terms/BT-1351.adoc[`BT-1351`] Procedure Accelerated Justification, xref:business-terms/BT-6110.adoc[`BT-6110`] Contract EU Funds Details, xref:business-terms/BT-6140.adoc[`BT-6140`] EU Funds Details, xref:business-terms/OPP-021.adoc[`OPP-021`] Used asset, xref:business-terms/OPP-031.adoc[`OPP-031`] Contract conditions Decription (other than revenue allocation), xref:business-terms/OPP-034.adoc[`OPP-034`] Penalties and Rewards Description, xref:business-terms/OPP-130.adoc[`OPP-130`] Additional information, xref:business-terms/OPT-070.adoc[`OPT-070`] Reserved Execution Justification, xref:business-terms/OPT-072.adoc[`OPT-072`] Quality Target Description
+
+== Codes
+[horizontal]
+  `BUL`::: Bulgarian
+  `CES`::: Czech
+  `DAN`::: Danish
+  `DEU`::: German
+  `ELL`::: Greek
+  `ENG`::: English
+  `EST`::: Estonian
+  `FIN`::: Finnish
+  `FRA`::: French
+  `GLE`::: Irish
+  `HRV`::: Croatian
+  `HUN`::: Hungarian
+  `ITA`::: Italian
+  `LAV`::: Latvian
+  `LIT`::: Lithuanian
+  `MLT`::: Maltese
+  `NLD`::: Dutch
+  `POL`::: Polish
+  `POR`::: Portuguese
+  `RON`::: Romanian
+  `SLK`::: Slovak
+  `SLV`::: Slovenian
+  `SPA`::: Spanish
+  `SWE`::: Swedish

@@ -1,0 +1,43 @@
+= `exclusion-ground` codelist
+:navtitle: Codelists
+
+Criteria that prevent certain entities from participating in public contracts due to criminal offenses, tax breaches, or other specified misconduct, aiming to ensure fairness and integrity in public procurement processes
+[horizontal]
+Version:: 20240925-0
+URI:: http://publications.europa.eu/resource/dataset/exclusion-ground
+Structure:: flat
+Used in:: xref:business-terms/BT-67.adoc[`BT-67`] Exclusion Grounds
+
+== Codes
+[horizontal]
+  `exg-crim`::: Grounds relating to criminal convictions
+  `exg-crim-corrpt`::: Corruption
+  `exg-crim-fraud`::: Fraud
+  `exg-crim-laund`::: Money laundering or terrorist financing
+  `exg-crim-part`::: Participation in a criminal organisation
+  `exg-crim-terror`::: Terrorist offences or offences linked to terrorist activities
+  `exg-crim-traffick`::: Child labour and including other forms of trafficking in human beings
+  `exg-mis`::: Grounds relating to insolvency, conflicts of interests or professional misconduct
+  `exg-mis-bre-env-law`::: Breaching of obligations in the fields of environmental law
+  `exg-mis-bre-lab-law`::: Breaching of obligations in the fields of labour law
+  `exg-mis-bre-soc-law`::: Breaching of obligations in the fields of social law
+  `exg-mis-distortion`::: Agreements with other economic operators aimed at distorting competition
+  `exg-mis-misconduct`::: Grave professional misconduct
+  `exg-mis-misrepresent`::: Misrepresentation, withheld information, unable to provide required documents and obtained confidential information of this procedure
+  `exg-mis-off-cond`::: Offence concerning its professional conduct in the domain of defence procurement
+  `exg-mis-partic-confl`::: Conflict of interest due to its participation in the procurement procedure
+  `exg-mis-prep-confl`::: Direct or indirect involvement in the preparation of this procurement procedure
+  `exg-mis-sanction`::: Early termination, damages, or other comparable sanctions
+  `exg-mis-unrel-sec`::: Lack of reliability to exclude risks to the security of the country
+  `exg-natl`::: Purely national exclusion grounds
+  `exg-natl-bre-nat-law`::: Breaching of obligations set under purely national exclusion grounds
+  `exg-pmt`::: Grounds relating to the payment of taxes or social security contributions 
+  `exg-pmt-bre-ssc`::: Breaching obligation relating to payment of social security contributions
+  `exg-pmt-bre-tax`::: Breaching obligation relating to payment of taxes
+  `exg-sitn`::: Grounds relating to the situation of the economic operator
+  `exg-sitn-as-susp`::: Business activities are suspended
+  `exg-sitn-bankr`::: Bankruptcy
+  `exg-sitn-cred-arran`::: Arrangement with creditors
+  `exg-sitn-insolvency`::: Insolvency
+  `exg-sitn-liq-admin`::: Assets being administered by liquidator
+  `exg-sitn-other`::: Analogous situation like bankruptcy, insolvency or arrangement with creditors under national law

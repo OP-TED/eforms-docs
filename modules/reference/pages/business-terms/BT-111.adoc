@@ -1,0 +1,10 @@
+= `BT-111`: Framework Buyer Categories
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-111-Lot`:: Framework Buyer Categories
+  `BT-111-Lot-Language`:: Framework Buyer Categories Language

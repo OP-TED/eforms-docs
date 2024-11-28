@@ -1,0 +1,21 @@
+= `nuts-irl-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Ireland
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `IE041`::: Border
+  `IE042`::: West
+  `IE051`::: Mid-West
+  `IE052`::: South-East
+  `IE053`::: South-West
+  `IE061`::: Dublin
+  `IE062`::: Mid-East
+  `IE063`::: Midland
+  `IEZZZ`::: Extra-Regio NUTS 3

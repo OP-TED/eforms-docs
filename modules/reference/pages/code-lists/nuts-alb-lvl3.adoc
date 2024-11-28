@@ -1,0 +1,25 @@
+= `nuts-alb-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Albania
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `AL011`::: Dibër
+  `AL012`::: Durrës
+  `AL013`::: Kukës
+  `AL014`::: Lezhë
+  `AL015`::: Shkodër
+  `AL021`::: Elbasan
+  `AL022`::: Tiranë
+  `AL031`::: Berat
+  `AL032`::: Fier
+  `AL033`::: Gjirokastër
+  `AL034`::: Korcë
+  `AL035`::: Vlorë
+  `ALZZZ`::: Extra-Regio NUTS 3

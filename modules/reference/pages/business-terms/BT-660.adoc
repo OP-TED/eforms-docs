@@ -1,0 +1,10 @@
+= `BT-660`: Framework Re-estimated Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-660-LotResult`:: Framework Re-estimated Value
+  `BT-660-LotResult-Currency`:: Framework Re-estimated Value Currency

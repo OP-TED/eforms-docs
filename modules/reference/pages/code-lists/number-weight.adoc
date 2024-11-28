@@ -1,0 +1,19 @@
+= `number-weight` codelist
+:navtitle: Codelists
+
+This table provides the codes linked to the type of weight values used in award criteria within the context of public procurement.
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/number-weight
+Structure:: flat
+Used in:: xref:business-terms/BT-5421.adoc[`BT-5421`] Award Criterion Number Weight, xref:business-terms/BT-7531.adoc[`BT-7531`] Selection Criteria Second Stage Invite Number Weight
+
+== Codes
+[horizontal]
+  `dec-exa`::: Weight (decimal, exact)
+  `dec-mid`::: Weight (decimal, middle of a range)
+  `ord-imp`::: Order of importance
+  `per-exa`::: Weight (percentage, exact)
+  `per-mid`::: Weight (percentage, middle of a range)
+  `poi-exa`::: Weight (points, exact)
+  `poi-mid`::: Weight (points, middle of a range)

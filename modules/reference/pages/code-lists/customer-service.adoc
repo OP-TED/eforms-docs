@@ -1,0 +1,20 @@
+= `customer-service` codelist
+:navtitle: Codelists
+
+This table provides a list of customer services.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/OPT-071.adoc[`OPT-071`] Quality Target Code
+
+== Codes
+[horizontal]
+  `assistance`::: Assistance for persons with reduced mobility
+  `cancel`::: Cancellations of services
+  `clean`::: Cleanliness of rolling stock and station facilities
+  `complaint`::: Complaint handling
+  `info`::: Information
+  `other`::: Other quality targets
+  `reliability`::: Punctuality and reliability
+  `sat-surv`::: Customer Satisfaction Survey
+  `ticket`::: Tickets
