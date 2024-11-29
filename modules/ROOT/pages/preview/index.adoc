@@ -55,11 +55,11 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.16.3
+Application version:: 1.16.4
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 
-In this version, the application is expected to allow users to create the 40 eForms notice types plus the 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest.
+In this version, the application is expected to allow users to create the 40 eForms notice types, 6 voluntary forms, and 5 other notice types which include the 2 transport regulation notices, the European economic interest grouping and European company/cooperative registration forms, and the call for expression of interest.
 
 In the codelist fields, prefilling of values is supported.  
 
@@ -75,16 +75,32 @@ Users can create workgroups between themselves and test the definitions of roles
 
 Users can define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available: 
 
-* Optional fields can be set to mandatory or hidden, however; please see the application https://enotices2.preview.ted.europa.eu/help[Help] page for more information: “I want to submit a notice but I have too many validation errors. What can I do?” 
+* The option to hide optional fields in the forms settings should NOT be used, as the live validations are not taken into account.  
 
 * Confidential fields can be set to be always confidential or non-confidential.  
 
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
 
-==== Improvements as of application version 1.15
+==== Improvements as of application version 1.16
 
-Notices submitted through the eNotices2 user interface now have an extra organisation (ORG-0000) to identify the eSender service provider. This organisation is not visible in the form-filling tool and is automatically filled in with the details of the EU Publications Office when the notice is submitted for publication on TED.
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[Commission Implementing Regulation (EU) 2023/2884 of 20 December 2023].
+
+The implementation can be seen in changes in almost all SDK components: schemas, fields, codelists, schematrons, notice-types, view-templates, translations and examples.
+
+The following fields and forms have been added:
+
+* International Procurement Instrument (IPI) in Result notices
+* Energy Efficiency Directive (EED) in Competition and Result notices
+* E1 Pre-Market Consultation, with new _consultation_ form type and _pmc_ notice-type
+* E2 voluntary Planning
+* E3 voluntary Competition
+* E4 voluntary Result
+* E5 Contract Completion, new _completion_ form type and _compl_ notice-type, including new Review section, also added to all Result notices (subtypes 29-37, E4, E5)
+* E6 Contract Modification for defence directive 2009/81/EC
+
+The European Commission has published https://code.europa.eu/eproc/eforms/docs/-/tree/main/guides[policy guides for IPI, EED and Review].
+
 
 ==== “Live” validation 
 The form-filling tool now has “live” validation, which means that it adapts dynamically to the values in the fields to help to fill in the required fields and to avoid business errors. This includes the following features:
@@ -99,7 +115,6 @@ The form-filling tool now has “live” validation, which means that it adapts 
 
 ==== Known issues 
 
-* Some use cases and features are still in the process of being implemented. 
 
 * Some validation errors are currently displayed as a pop-up window, without pointing to the error location. Please set a default currency to avoid validation errors in the notices created in the user interface that can lead to a message that the: “notice is probably incomplete”. 
 
@@ -110,24 +125,6 @@ The form-filling tool now has “live” validation, which means that it adapts 
 * Conversion from older SDK versions may have issues. If editing a notice leads to an error (server error) or 'Notice Locked', the workaround is to export (download) the xml and reimport it somewhere else in eNotices2, even if it is in the same procedure. 
 
 * Feature “Add a new language” and using the automatic translation service to prefill your new notice linguistic version will lock the notice while the notice is being processed for eTranslation. If there is no language version added, it means translation has failed. 
-
-* OPP-080-Tender field cannot be used in T02. This issue is resolved in Preview as of 24 July 2024 and will be resolved in Production with the next release (as of SDK 1.12).
-
-
-The following issues have been identified as of application version 1.12.3: 
-
-* If you have procurement documents, then OPT-140-lot must always be filled in. 
-* If you have a prize, then BT-44-lot must always be filled in. 
-* If you have selection or award criteria, please make sure that there is a weight and a number. 
- 
-The following issue has been identified as of SDK 1.11:
-
-* With the implementation of the new rules, both fields BT-759-LotResult and BT-760-LotResult, Received Submissions Count and Received Submissions Type, have become mandatory in Result notices. In order to avoid a validation error both must be completed.
-
-The following issues have been identified as of application version 1.15.2:
-
-* BT-1375-Procedure: lot distribution for the group will show an error in the live validation even if there are 2 or more different lots correctly referenced. The user can ignore this and validate on CVS. If valid, the notice can be submitted.
-* Procedure section and lot: The type of procedure must be chosen before entering the lot sections. Since many fields are procedure type dependent, this is to ensure that the form filling tool will respond correctly with the live validations.
 
 
 ==== Known eNotices2 API issues 
@@ -182,13 +179,13 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: November 2024
-Application version:: 1.16
+Indicative planning:: January 2025
+Application version:: 1.17
 SDK version:: 1.13
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: Current application version in Production as of 31 October 2024.
+NOTE: Current application version in Production as of 5 December 2024.
 
 
 === TED Central Validation Service 
