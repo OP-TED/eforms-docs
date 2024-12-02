@@ -292,7 +292,7 @@ meant to provide a quick overview for change managers and developers.
 === Side-by-side comparison tool 
 
 Detailed and interactive side-by-side comparison of any two versions of
-the eForms SDK is provided by the This is a tool that was developed to
+the eForms SDK is provided by the link:https://docs.ted.europa.eu/eforms-sdk-explorer[SDK Explorer, window=_blank]. This is a tool that was developed to
 assist change managers and developers in reviewing and assessing the
 impact of changes between any two versions of the eForms SDK. This tool
 is particularly useful to change managers and developers of applications
