@@ -1,10 +1,11 @@
 
-* xref:FAQ/index.adoc[Frequently Asked Questions]
-* xref:preview/index.adoc[Preview Environment]
+* xref:FAQ/index.adoc[eForms FAQ]
 * xref:roadmap/index.adoc[SDK Roadmap]
-* xref:active-versions/index.adoc[Active SDK Versions]
+* xref:articles/eforms-change-management.adoc[Change Management Strategy]
 * xref:versioning/index.adoc[SDK Versioning]
-* xref:articles/eforms-change-management.adoc[eForms Change Management]
+* xref:active-versions/index.adoc[Active SDK Versions]
+* xref:preview/index.adoc[Preview Environment]
+* link:https://docs.ted.europa.eu/eforms-sdk-explorer[SDK Explorer, window=_blank]
 
 * [.separated]#**General Reference** `{eforms_latest_version}`#
 * xref:eforms:schema:index.adoc[eForms Specification]
