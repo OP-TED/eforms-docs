@@ -1,4 +1,5 @@
 = Navigating eForms Change Management
+:page-aliases: home:eforms:articles/eforms-change-management.adoc
 
 This article aims to explain the principles, reasoning, and methods used
 to control the impact of changes with the eForms SDK. By examining why
