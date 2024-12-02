@@ -1,0 +1,345 @@
+= Navigating eForms Change Management
+
+This article aims to explain the principles, reasoning, and methods used
+to control the impact of changes with the eForms SDK. By examining why
+changes occur, how they are propagated and controlled, and what
+safeguards are in place, we hope to demystify the process and help you
+explore the different options that are available to you for increasing
+your resilience to change and its impact.
+
+== Understanding the role of the SDK
+
+Before diving into practical details, let us start with a couple of
+definitions to make sure that we are all looking at the eForms SDK from
+the same perspective:
+
+1. *eForms is* a specification for creating, encoding, transmitting, and
+publishing public procurement notices. It is established and maintained
+through a regulatory framework. 
+
+2. *Public procurement notices are*
+created, encoded, and transmitted to a central hub (the Publications
+Office) through a hybrid network of eSender applications. All nodes and
+hubs of this network are managed and operated independently but ensure
+that transmitted notices always adhere to the eForms specification by
+sharing a common communications protocol with the central hub. This
+protocol is materialised through the eForms SDK.
+
+3. *The eForms SDK is* a means of encoding and distributing the eForms
+specification in a way that can be directly used by computer
+applications. Its purpose is to allow computer applications to: +
+ a. Create and *encode* notices that adhere to the latest eForms
+specification.
+
+ b. Read and interpret (*decode*) notices that were created in the past
+(and thus adhere to a regulatory framework that may have changed since
+their creation).
+
+*The role of the eForms SDK is* therefore *to distribute* the
+information that computer applications need to encode and decode public
+procurement notices in continuous adherence to the ever-evolving *eForms
+specification*.
+
+A key element in the design of the eForms SDK is the ability to adapt to
+change and provide a basis for the creation and interpretation of
+notices created across different periods of the regulatory framework's
+evolution.
+
+== Drivers of change
+
+The publication of public procurement notices aims primarily to promote
+transparency and equal opportunities across borders. While each notice
+is a snapshot of a procurement procedure, the collection of all notices
+offers a rich dataset valuable to policy makers and economic operators.
+One of the objectives of the eForms regulation is to leverage this data
+for informed decision-making contributing to the digital transformation.
+Thus, it is crucial for the SDK to be updated regularly to align with
+regulatory changes, to enhance the quality and reliability of data, and
+to optimise the data collection processes.
+
+The following are the possible reasons that may trigger the need for
+changes in the eForms SDK:
+
+1. *Regulatory changes* in the eForms specification: Any regulatory
+change must be communicated to all the information systems that need to
+encode public procurement notices to ensure continued regulatory
+compliance. Such regulatory changes may for example introduce new forms
+or fields etc.
+
+2. *Fixes and incremental updates*: These are improvements *in the
+information encoded* and transmitted with the SDK. Examples of such
+improvements are fixes of trivial mistakes like inaccurate translations,
+enhancement of the notice forms, improvement of validation rules, etc.
+
+3. *Protocol updates*: These are efforts to improve *the way the
+information is encoded* inside the SDK itself. Evolution of technology
+as well as acquired experience and lessons learnt may drive the need for
+significant improvements in the way the eForms specification is encoded
+in the SDK itself. For example, improvements in the eForms Expression
+Language (EFX) may be deemed necessary to improve performance in
+validation or visualisation of notices.
+
+_In short, the collection and publication of public procurement notices
+and data is an *ever-evolving process* that aims to progressively
+improve its own efficiency, and effectiveness. *Managing change in a
+systematic and sustainable way* is therefore a core requirement of this
+process which the eForms SDK versioning system and release process aim
+to achieve._
+
+== Controlling change
+
+Given that change is inevitable, the Publications Office has adopted a
+new approach to control and normalise its impact. This approach, which
+is new to eForms, is based on two key components:
+
+1. The *metadata-driven* paradigm: This is based on the idea that changes
+in the regulatory environment and the eForms specification should only
+influence the _behaviour_ of the applications; not their _logic_ or
+_structure_. To achieve this, we have established *a protocol* with
+which we can encode and transmit all the *parameters* that an
+application may need to automatically adjust its *behaviour* to any
+change that may occur.
+
+2. A clear and robust *versioning system*:This is essential for the clear
+packaging, labelling (identification) and distribution of successive
+sets of changes. Changes are bundled in *controlled sets*, packaged,
+labelled, and distributed as *released versions* of the eForms SDK.
+
+Each SDK version is a labelled and sealed (*unchangeable*) package that
+contains a named *snapshot* of the eForms technical specification at a
+given point in time.
+
+The versioning system that we use allocates three numbers to each SDK
+version: the major, minor and patch version number encoded as
+major.minor.patch (e.g. 1.2.3). 
+
+[NOTE]
+*For more information* on SDK versioning
+rules please https://docs.ted.europa.eu/eforms-common/versioning/[follow this link]
+
+- *Regulatory changes, fixes and other incremental updates* are packaged
+in *maintenance* *releases* and are indicated by increasing the minor
+and/or patch version numbers only.
+- *Protocol changes are always major* changes and are indicated by increasing the major version number. Since the release of SDK 1.0.0 in August 2022, the SDK has not undergone any
+protocol change and its current major version number remains 1, while version 2 is under development and is due to be released in 2025.
+
+It is possible that a large regulatory change may trigger the need for a
+protocol change. An example of such a
+dramatic change was the need to discontinue the legacy "Standard Forms"
+(also known as TEDXML) and to replace them with "eForms". One of the
+roles of the eForms SDK and a reason for its introduction was *to
+eliminate the need for such aggressive changes in the future* by
+introducing a more flexible system that can support the propagation of
+incremental updates regardless of the nature of the changes that trigger
+them.
+
+_In short, the version control system together with the metadata-driven
+approach adopted by the eForms SDK allows for the incremental
+distribution of different kinds of changes in a systematic and
+sustainable way. By enabling the classification of changes into three
+different groups based on their impact and
+by encoding them as metadata, it allows metadata-driven applications to
+adapt to most changes automatically and minimises the need for (as well
+as the impact of) major changes._
+
+== Frequency of change
+
+Since the initial launch of SDK 1.0.0 in August 2022, the Publications
+Office has completed twelve (12) additional maintenance releases (minor
+versions) while SDK 1.13.0 is currently (October 2024) under acceptance
+testing. In total *13 minor versions* of the eForms SDK have been
+released *in the first 26 months* of its existence, indicating that the
+average frequency of SDK releases was once every two months.
+
+As the eForms technical specification gradually matures, the frequency
+of SDK releases is gradually dropping to once every quarter or less.
+
+In short, the *frequency of maintenance releases* of the eForms SDK
+is proportional to the demand for change/adaptation mostly driven by regulatory needs. Process constraints limit the maximum number of maintenance releases that can be issued in a
+year to no more than six.
+
+The *frequency of major releases* of the SDK is very low and currently
+is estimated to be at one major release every three years.
+
+== Adapting to change 
+
+Although the SDK provides a solid basis for the systematic encoding and
+distribution of changes across the eSender network, each individual
+application must adopt (or be adapted to) these changes. Therefore, the
+*design paradigm* chosen by different applications might yield
+*different levels of resilience* to change. For example, applications
+that follow a metadata-driven paradigm, will be able to process and
+adopt most changes automatically, whereas other applications might need
+developer intervention to adapt to any type of change.
+
+Developers of eSender applications that do not follow a metadata-driven
+paradigm are encouraged to consider the benefits of gradually adopting
+it as it will have significant impact on the long-term maintainability
+of their systems.
+
+Considering the different speeds at which different eSenders can adapt
+to changes in the SDK, the Publications Office has put together a
+comprehensive strategy for the roll-out, and management of the lifecycle
+of SDK versions. This strategy *aims to help every eSender* in their
+efforts to adapt their systems to eForms and provides several *alternative solutions* for the continuous evolution of eSender applications.
+
+=== Cumulative updates
+
+Each SDK version contains all the updates that were issued with all its
+previous versions. This means that eSender applications do not need to
+adapt to each SDK version successively. Instead, they can *go directly
+to the latest* version. This provides eSenders with the ability to
+schedule their SDK update cycles as it best fits their calendar and
+*skip as many versions* of the SDK as needed to go directly from their
+current adopted version to the latest one available at the time of their
+scheduled update.
+
+This way different eSenders, depending on the adaptability of their
+current systems can follow the evolution of the eForms regulatory
+environment and technical implementation at their *own pace*.
+
+=== Multiple active versions
+
+To allow eSender applications more time to adopt new versions of the
+SDK, older SDK versions are not automatically discontinued when new
+versions are released. eSenders can *choose their own timing* for
+adopting a new SDK version. The Publications Office will continue to
+accept for publication notices created with an SDK version other than
+the latest one. Some limitations of course apply; see "version lifespan"
+below.
+
+=== Patching
+
+To allow eSenders that have not yet switched to the latest version of
+the SDK to benefit from as many as possible of the latest updates, the
+Publications Office issues patch releases for previous versions of the
+SDK shortly after a new version is released. Patch releases typically
+contain updated translations and notice visualisation templates and most
+eSender applications, regardless of whether they follow a
+metadata-driven approach, can use these patch updates with minimal or no
+intervention.
+
+=== Version lifespan
+
+The version lifespan policy is designed to *counterbalance* the multiple
+active versions policy described above. It is essential in limiting the
+number of versions of the SDK that are actively being used by eSenders
+to a reasonable and manageable total. There are several reasons for
+which we need to limit the number of SDK versions that are actively
+being used to create and submit new notices:
+
+1. Patching older SDK versions is a *resource intensive* operation. Limiting the number of maintained SDK versions is essential in ensuring our continued ability to issue
+patches.
+
+2. Outdated SDK versions may contain *outdated validation rules*.
+Preventing the active usage of outdated validation rules is essential
+for the progressive increase in the quality and reliability of the
+collected data.
+
+3. *Regulatory restrictions* may require the discontinuation of outdated
+SDK versions.
+
+Without this counterbalancing policy limiting the lifespan of SDK
+versions, our ability to maintain multiple active versions of the SDK
+would not be sustainable as their total number would perpetually
+increase. The quality and reliability of the collected data would also
+be compromised in the long term. It is therefore essential for securing the benefits of an
+individualised pace of adaptation for each eSender and the flexibility
+that it provides to the eSender network.
+
+[NOTE]
+*For more information* on the SDK version lifespan policy please https://docs.ted.europa.eu/eforms-common/active-versions/[follow this link].
+
+_In short, the metadata-driven approach and version lifecycle management
+policy adopted for the eForms SDK, provide several degrees of freedom to
+eSenders for adapting to the inevitable recurring changes in the
+regulatory and technical environment. They allow more time for adopting
+new versions, independent timing of adaptations, continuous quality
+improvements and process optimisations, as well as various levels of
+automation, without compromising the regulatory objectives._
+
+== Communication
+
+In our ever evolving regulatory and operational environment, clear
+communication is essential for our data collection and dissemination
+network. Recognising the need for continuous multifaceted communication
+we have tried to put in place several channels to address the needs of
+different audiences.
+
+=== Machine-to-machine communication
+
+The SDK itself is the medium used for machine-to-machine communication.
+All the information needed by applications is *transmitted through the
+SDK*. Applications can call TEDAPI periodically to discover new SDK
+versions and monitor the lifespan of all active versions.
+
+Applications that want to automatically download and process new SDK
+versions can retrieve them from its *central distribution repository*
+(Maven Central).
+
+The nature of changes is indicated to applications by the version number
+of the SDK. Metadata-driven applications are largely unaffected by
+maintenance releases (minor and patch versions). To consume new major
+versions, applications need to be first appropriately updated by
+developers to support the updated protocol.
+
+=== Change overviews
+
+Every new SDK version comes with release notes and a changelog that list
+the most important changes that the new version introduces. This is
+meant to provide a quick overview for change managers and developers.
+
+=== Side-by-side comparison tool 
+
+Detailed and interactive side-by-side comparison of any two versions of
+the eForms SDK is provided by the This is a tool that was developed to
+assist change managers and developers in reviewing and assessing the
+impact of changes between any two versions of the eForms SDK. This tool
+is particularly useful to change managers and developers of applications
+that are not metadata driven.
+
+=== Detailed documentation
+
+The Publications Office provides a developer documentation portal where
+it maintains detailed documentation of all active versions of the eForms
+SDK. The documentation portal contains extensive reference material on the content of each SDK version as well as the protocol definition for each major version. It
+also provides developer guides addressing specific technical and
+architectural topics intended to help developers to understand the
+semantics and models used by the SDK and design their applications
+appropriately.
+
+=== Feedback and assistance
+
+A discussions forum is available on GitHub where developers can provide
+feedback and ask technical questions. Although this is primarily a
+self-help forum where developers can help each other with shared issues, the development team of the eForms SDK actively monitors
+the discussions, processes feedback, responds to questions and plans remediation actions when needed. This forum is also used by the Publications Office to announce
+new releases and upcoming developments.
+
+Additionally, a helpdesk is available to assist non-technical users with
+any issues related to new SDK releases.
+
+
+=== Workshops
+
+The Publications Office also holds workshops on a regular basis where
+business and technical matters are discussed with the eSender and re-user
+communities.
+
+== Conclusion
+
+Just as cars rely on suspension systems to absorb shocks and keep the
+ride smooth, the tools and methods we have put together for eForms are
+designed to handle the bumps that come with the inevitable regulatory
+and technical changes. The metadata-driven approach, versioning and
+release strategy introduced with the eForms SDK are designed to act as a
+suspension, allowing eSenders and re-users to navigate change without
+disruptive shocks. Their effectiveness however is subject to their
+adoption by each individual eSender.
+
+With or without these new tools and processes in place, the transition
+from Standard Forms to eForms would have been a difficult undertaking
+for everyone. Our collective efforts however to embrace change,
+systematise our approach to managing it, and increase our flexibility as
+a data collection and dissemination network, will progressively yield
+benefits both at the operational and overall quality levels.
