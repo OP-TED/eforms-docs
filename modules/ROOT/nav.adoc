@@ -1,7 +1,7 @@
 
 * xref:FAQ/index.adoc[eForms FAQ]
 * xref:roadmap/index.adoc[SDK Roadmap]
-* xref:articles/eforms-change-management.adoc[Change Management Strategy]
+* xref:articles/eforms-change-management.adoc[eForms Change Management]
 * xref:versioning/index.adoc[SDK Versioning]
 * xref:active-versions/index.adoc[Active SDK Versions]
 * xref:preview/index.adoc[Preview Environment]
