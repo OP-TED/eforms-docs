@@ -24,7 +24,7 @@ If you want to avoid the round-trip to the TED Validation API, or you want to co
 
 The validation rules provided in the `schematrons` folder are meant to validate fully formed XML files. If you want to provide validation inside your application while the user is still filling in their form, then this set of rules is not suitable for the job.
 
-To allow applications to performed so-called "live validation" (a.k.a. "client-side validation"), we have included a set of suitable validation rules as constraints attached to every field in `/fields/fields.json`.
+To allow applications to perform so-called "live validation" (a.k.a. "client-side validation"), we have included a set of suitable validation rules as constraints attached to every field in `/fields/fields.json`.
 
 These constraints are provided as EFX expressions. To reuse them you will need to translate them to a language that is suitable for execution in your application (i.e. JavaScript). 
 
