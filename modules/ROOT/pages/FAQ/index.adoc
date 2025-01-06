@@ -1389,8 +1389,7 @@ The conditions are visible in the Schematron rules as well as in the eForms expr
 
 Are the error messages returned by CVS translated?::
 
-Translations of the messages that can be returned by CVS when rules are not respected are still work in progress 
-and are progressively added in the https://github.com/OP-TED/eForms-SDK/tree/develop/translations[translations] file on the SDK on GitHub.
+Translations of the messages that can be returned by CVS when rules are not respected can be found in the https://github.com/OP-TED/eForms-SDK/tree/develop/translations[translations] file on the SDK on GitHub.
 When calling CVS API, the “text” element in the validation report will be returned in the language you passed as a parameter to your request. 
 
 
@@ -1442,16 +1441,6 @@ Some of these rules are in the documentation, e.g. which field must use which co
 human-readable documentation or an entity-relationship diagram, but OP is working on human-readable versions of the business rules 
 that can be linked to the technical validation rules. For the time being, all information is communicated through the SDK, 
 but ideas for documenting rules are welcome. 
-
-
-
-Will we receive translations for the error messages that are foreseen in the Schematron validation files?::
-
-We are currently working on creating translations for the error messages in the Schematron validation files. 
-These will be included in a future release of the eForms SDK. 
-+
-In the future, users will be able to decide in which of the 24 languages they would like to receive the returned validation report 
-in Schematron Validation Report Language (SVRL). 
 
 
 
