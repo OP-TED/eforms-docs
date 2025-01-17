@@ -9,18 +9,16 @@ Is there a general presentation of eForms available?::
 
 The policy background of eForms is available on the link:https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en[DG GROW website].
 +
-All previous editions of eForms Technical Workshops/ events can be found link:https://op.europa.eu/en/web/ted-eforms/previous-editions[online]. As the successor to previous eForms technical workshops, the Publications Office is organising a series of link:https://op.europa.eu/en/web/ted-eforms/home[workshops] in 2024 to exchange information with eSenders and their developers.
-
+The Publications Office (OP) organises regular eForms workshops; all past editions of TED eSender events can be found link:https://op.europa.eu/en/web/ted-eforms/previous-editions[online]. 
++
+Following the link:https://op.europa.eu/en/web/ted-eforms/home[2024 series], OP is now preparing the TED eSender workshops schedule for 2025.
 
 
 What systems are available to eSenders?:: 
 
-OP has developed and made available since 14 November 2022 a range of applications (TED Apps for eForms) to manage the collection, validation, processing, 
+OP has developed and made available since 14 November 2022 a range of applications (TED Apps) to manage the collection, validation, processing, 
 visualisation and dissemination of eForms notices.  The relevant applications are also available through a 
 link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment to help eSenders develop and test their own applications. 
-A guide on how to test in "Preview" was presented in link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
-link:https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-Sep29-eForms-Technical-Workshop.pptx/d0237e8e-500d-4b11-526c-e66c23ec773c?t=1664438251508["TED Developer Portal and using eForms APIs"].
-
 
 
 Until when were the eNotices and eSentool applications available?:: 
@@ -28,10 +26,9 @@ Until when were the eNotices and eSentool applications available?::
 The submission of notices via eSentool and eNotices was closed on 31 January 2024. 
 eNotices and eSentool remained available for users to view their published notices until 30 June and 30 April 2024 respectively. 
 +
-The new eNotices2 application performs both functions once carried out by eNotices and eSentool applications; 
-it has been available since 14 November 2022 and ran in parallel with eNotices and eSentool applications during the transition period. 
+The eNotices2 application and TED API (successor to eSentool) have been available since 14 November 2022, running in parallel with the legacy applications during the transition period. 
 +
-Authorised applications can send complete notices to the API data interface of eNotices2, 
+Authorised applications can send complete notices to the API data interface of eNotices2 (Publication API), 
 and if they are valid, they will be published in the Supplement to the Official Journal 
 of the European Union (OJ S). Individuals with an eNotices2 account can
 create notices within eNotices2 using its interactive web forms. 
@@ -44,7 +41,7 @@ by an individual Member State.
  
  
  
-With eSentool, several people could access the same front-end eSender account. Are eSenders able to organise themselves the same way in eNotices2?::
+Can multiple users share access to the same eSender account in eNotices2?::
 
 eNotices2 web user interface was designed with front-end users of eNotices2 in mind. 
 eSenders are API users and other than logging in eNotices2 once to pair their API key, 
@@ -55,15 +52,9 @@ and no API function can be performed on a notice that has been manually transfer
 We would, therefore, discourage any manual operations on notices via the user interface of eNotices2; 
 these sort of groupings and permissions should be handled in the eSender’s application instead. 
 +
-For generating an API key via the TED Developer Portal, only one EU Login (and its email address) is allowed per account. 
-As an eSender, you should use a functional/ shared email address to generate your API key and your eNotices2 account.  
-+
-The TED Developer Portal offers the possibility to eSenders to add additional contact emails to their “Developer Profile” 
-so that they can receive communication from the Publications Office, such as important announcements, events and downtime notifications.
-+
-Any automated notifications coming from eNotices2 application that OP may develop in the future for eSenders will still be addressed 
-to the one email address/ EU Login of the eNotices2 account. As of application version 1.14.0 of eNotices2, the eSender’s email address is also included in copy of the automated notifications regarding the various statuses of notices. 
-
+eSenders should create instead a “profile” in the TED Developer Portal using a functional email address in order to generate an API key. 
+The Publications Office will send communication such as important announcements, events, and downtime notifications 
+to the main email address of the eSender as well as any additional contact emails the eSender has specified in their “Developer Profile”. 
 
 
 Is there a fixed publication schedule with eForms?::
@@ -127,6 +118,9 @@ https://op.europa.eu/en/web/ted-eforms/agenda-q2-20-june-2024
 * eForms presentations from the TED eSender Workshop in September 2024 +
 https://op.europa.eu/en/web/ted-eforms/agenda-q3-26-september-2024
 +
+* eForms presentations from the TED-together event in December 2024 +
+https://op.europa.eu/en/web/ted-together/agenda_2024_12_03
++
 * TED developer documentation portal +
 https://docs.ted.europa.eu/
 +
@@ -134,7 +128,7 @@ https://docs.ted.europa.eu/
 https://github.com/OP-TED/eForms-SDK
 --
 +
-For any questions or issues, please contact the TED helpdesk at: ted@publications.europa  
+For any questions or issues, please contact the TED helpdesk at: ted@publications.europa.eu  
 +
 
 For developers, please see our link:https://docs.ted.europa.eu/eforms/latest/guide/index.html[eForms Developer Guide].
@@ -173,13 +167,12 @@ An overview of the
 link:https://op.europa.eu/documents/11465927/11661400/2023-01-02-Lifecycle+of+eForms+notices-3rd+eForms+Technical+Workshop.pptx/a83fc6b8-191e-3e20-a412-7b94ba5317cc?t=1675250338281[lifecycle of eForms notices] was presented during the 3rd eForms Technical Workshop.
 
 
-What is planned with eForms regarding the OJ S publication number?::
+What changed with eForms regarding the OJ S publication number?::
 
-Starting on 14 November 2023, any notices submitted as eForms will have a publication number of 8 digits, 
-meaning that any application handling eForms must use this format. As of SDK 1.7, eForms notices have up to 8 digits (leading zeros allowed). 
-On TED, eForms notices will therefore have a publication number of up to 8 digits
-and the legacy TED-XML notices will continue to have a 6-digit publication number. 
-
+Starting on 14 November 2023, notices submitted as eForms now have a publication number of up to 8 digits, 
+allowing leading zeros. Applications handling eForms must accommodate this format. 
+Since SDK 1.7, eForms notices have adopted this 8-digit format, while legacy TED XML notices continue to use 6-digit publication numbers. 
+On TED, eForms notices are displayed with publication numbers of up to 8 digits, ensuring compatibility with the new standard. 
 
 
 In order to continue a procedure that was started in the legacy TED XML, how should the previous publication field be filled in given that the Procedure Identifier was not used?:: 
@@ -222,7 +215,7 @@ To link from an eForms Notice to a published TED XML notice:
 In the documentation we can read that we must use a UUID version 4 for the Procedure Identifier. Are there any limitations? Can we use every possible identifier and is it possible that two or more eSenders use the same number identifier in this case?::
 
 The Procedure UUID is not linked to the eSender but to the procedure. Same Procedure UUID documents will be linked together in the same family of documents; 
-this is the case - for instance -  for a continued procedure. In practice, it would be possible to send same family documents 
+this is the case - for instance -  for a continued procedure. In practice, it would be possible to send same-family documents 
 (linked together through the same Procedure ID) through different eSenders/ platforms. 
 +
 There are no limitations at this stage and version 4 UUID was chosen as the chances that the same UUID will be generated is close enough to zero to be negligible. 
@@ -266,7 +259,7 @@ and for which none of the above may apply.
 
 
 
-How do we make a correction to a notice published in TED XML schema, after transitioning to eForms?::
+How can we correct a notice in the eForms schema if the original notice was published in the TED XML schema?::
 
 In the same way that it is possible to link TED XML notices to eForms 
 for procedures that started with TED schema and ended with eForms. 
@@ -326,7 +319,7 @@ The Change notice Business Group works as a separate section that will be attach
 changes, or otherwise modifies a "parent" notice (identified by NoticeID and VersionID) with the use of BG-9 and in particular BT-140 Change Reason Code. 
 +
 A Change notice must contain all the information reported in the initial notice, with changes applied, as well as a section 
-describing the latest changes (to the immediately preceding Notice): 
+describing the latest changes (to the immediately preceding/ last published version of the notice): 
 +
 Changes may apply to notices of any form type. A Change notice may only concern a single notice and contains all the information from 
 that initial notice with applied changes in addition to the information on those changes (with one exception: 
@@ -367,8 +360,8 @@ The association of a Change notice to its parent notice is performed using BT-75
 (each change refers to the relevant section using BT-13716). When changes appear at different points in time, 
 then successive Change notices have to be submitted, each referring to the previous one.
 +
-Changes may only be applied on published notices, therefore, the use case where a second change should be applied 
-while the first one has not been published should be addressed either way: 
+Changes may only be applied to published notices. Therefore, if a second change is to be applied before the first one is published, 
+it must be addressed in one of the following ways:
 +
 --
 * Complete and submit the first Change notice to have it published and then proceed with the second.
@@ -409,7 +402,7 @@ For each contract that is modified for the first time, the link must be made to 
 or its latest Change. 
 +
 The Contract Modification section of the notice is repeatable and multiple contracts may be modified with a single
-notice, given they were already all in the same previous notice; this is important for situations where a lot 
+notice, provided they were already all in the same previous notice; this is important for situations where a lot 
 has multiple winners, as a modification on the lot will affect all the associated contracts.
 +
 While the Contract Modification section is repeatable, each occurrence should: 
@@ -481,9 +474,9 @@ E1, E2, E3, E4 and E5 refer to forms that are not part of
 the eForms regulation, but they were included in the “Extended Annex” to
 regulation 2019/1780 available at: https://ec.europa.eu/docsroom/documents/43488
 +
-These optional forms will be implemented in 2024, as defined in the second amendment to the eForms implementing regulation. The new voluntary forms will be included in SDK release 1.13, scheduled to be released in mid-November 2024. 
+These optional forms were implemented in 2024, as defined in the second amendment to the eForms implementing regulation. The new voluntary forms were included in SDK release 1.13. 
 +
-They would extend (E) the set of the other forms and correspond to the
+They extend (E) the set of the other forms and correspond to the
 following notices:  
 +
 - Preliminary Market Consultation (E1) 
@@ -535,21 +528,20 @@ When Place Performance Services Other (BT-727) has the value "anyw-cou" (Anywher
 
 
 
-How will tailoring by Member States be handled by TED and the Publications Office?:: 
+How is tailoring by Member States handled by TED and the Publications Office?:: 
 
 National specificities and their implementation at national, regional
 and local level are outside OP's remit. 
 +
-In the eNotices2 form-filling tool user interface, users are able to fill in and
+In the eNotices2 form-filling tool user interface, users can fill in and
 send notices based on the eForms regulation. eNotices2 is not aware of
 and does not apply any compliance with Member State tailoring; for
 example, it will not check if an optional field (according to the EU
 regulation) is mandatory at national level.  
 +
-The same applies to notices sent by eSenders via the TED API 
-(the successor to eSentool). All notices go through the same checks of
-the Central Validation Service, not applying any Member State
-tailoring. It is up to each user (or eSender) to ensure that their
+The same applies to notices sent by eSenders via the TED API, which undergo the same validation checks, 
+without considering any Member State-specific tailoring.
+It is up to each user (or eSender) to ensure that their
 notices comply with the national implementation of eForms.  +
  
 
@@ -600,19 +592,25 @@ the organisation can “hide” these optional fields from view should they wish
 
 Will you continue to send email notifications, e.g. to the Contracting Authorities, to remind them to publish a contract award notice?::
 
-We have foreseen quite an extensive notification system, which will contain several methods for communication with eNotices2 users, 
+We have foreseen quite an extensive notification system, which contains several methods for communication with eNotices2 users, 
 including email communications. We also provide the means to retrieve the information about the contracting authority 
 sending notices through an eSender via the Notice Author concept. We have not yet decided if the reminder 
-to publish a Contract Award Notice will be sent through an email notification, though it will likely be the case at some point.
+to publish a Contract Award Notice will be sent through an email notification.
 
 
 
-Will eNotices2 send email notifications for notices submitted by Web Services about publication or non-publication?::
+Does eNotices2 send email notifications for notices submitted by Web Services about publication or non-publication?::
 
-eSenders need to rely primarily on their API queries for the status of their notices. 
+eSenders should primarily rely on their API queries to track the status of their notices.
 +
-The automated notifications of eNotices2 regarding the various notice statuses are primarily addressed to the Notice Author email address that the eSender needs to provide in the metadata. These emails have been improved as of application version 1.14.0 to also include the eSender’s email address in copy. As part of the improvement, the Publication notification email includes a link to the published notice on TED. 
-
+Additionally, automated notifications from eNotices2 regarding notice statuses are sent to the Notice Author email address 
+provided by the eSender in the metadata (mandatory property: noticeAuthorEmail). 
++
+These notifications were enhanced in application version 1.14.0 to also include the eSender’s main email address as a CC. 
+As part of this improvement, publication notification emails now include a direct link to the published notice on TED. 
+The language set by the eSender in the metadata (mandatory property: noticeAuthorLocale) 
+determines in which of the 24 EU official languages the Contracting Authority is notified by the Publications Office 
+about the status of their notices.
 
 
 == Visualisation and display of eForms notices 
@@ -651,7 +649,7 @@ All recordings and presentations from link:https://op.europa.eu/en/web/ted-reuse
 
 What preview solution do you provide with eForms TED API?::
 
-TED Viewer 2022 is available through an API in order to visualise the notice in HTML and PDF. 
+TED Viewer 2022 is available through an API (Visualisation API) in order to visualise the notice in HTML and PDF. 
 It is possible to preview a notice before sending it for publication.
 
 
@@ -808,7 +806,8 @@ Users can check the version range of the currently available SDK at any given ti
 link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html#version-range[Getting active SDK versions through TED API] in the documentation and link:https://cvs.ted.europa.eu/swagger-ui/index.html[Swagger]. 
 +
 The Central Validation Service (CVS) is remotely available so that you can check the validity of eForms
-notices. As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation 
+notices before submitting them for publication. 
+As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation 
 will not be taken into account for the CVS.
 +
 SDK active versions and their planned removal/ end of support can be found on our 
@@ -818,7 +817,7 @@ link:https://docs.ted.europa.eu/home/eforms/active-versions/index.html[Active SD
 
 What is the authentication method used for eForms and TED API?::
 
-TED Apps for eForms use an API Key that verifies the user’s identity and through it, the user will be able to connect to various services, 
+TED Apps use an API Key that verifies the user’s identity and through it, the user will be able to connect to various services, 
 i.e. to submit/ validate/ visualise/ search (for one's own) notices. Any user can be a Web Services user as long as they have a valid API key. 
 
 
@@ -827,14 +826,14 @@ Where can I get an API key?::
 
 API keys can be generated from the TED Developer Portal. Only one API key is allowed/ active at a time per EU Login.  
 +
-API keys are only valid for the environment they were created in. For instance, to send notices to Production via the eNotices2 API, 
+API keys are only valid for the environment they were created in. For instance, to send notices to Production via the Publication API, 
 you would need to generate your key in the link:https://developer.ted.europa.eu/home[Developer Portal in Production].
 +
 For a key to work in a link:https://docs.ted.europa.eu/home/eforms/preview/index.html[Preview] environment, e.g. CVS API in Preview, 
 it needs to be generated in the link:https://developer.preview.ted.europa.eu/home[Developer Portal in Preview].
 +
-To use TED API of eNotices2 (either in Preview or in Production), an eSender should log in at least once in the corresponding environment 
-of the User Interface to pair their API key with their eNotices2 account. To avoid authentication issues after generating a key, eSenders should perform at least one valid API request to eNotices2 with their key.
+To use the Publication API (either in Preview or in Production), an eSender should log in at least once in the corresponding environment 
+of the eNotices2 User Interface to pair their API key with their eNotices2 account. To avoid authentication issues after generating a key, eSenders should perform at least one valid API request to eNotices2 with their key.
 +
 A guide on how to test in "Preview" was presented in
 link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
@@ -976,7 +975,7 @@ provided that the submitted notice triggers a lawfulness warning. For more detai
 
 
 
-When using TED API of eNotices2, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLocale". What should an eSender input in the parameters?::
+When using the Publication API, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLocale". What should an eSender input in the parameters?::
 
 Notice author email (mandatory property “noticeAuthorEmail” in the metadata) must be a valid email address. 
 The email is used to identify the person responsible for the notice, i.e. the Contracting Authority. 
@@ -992,15 +991,15 @@ one of the following: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt
 
 What dates do search parameters "submittedAt", "createdAt", "updatedAt", "transmittedAt" and “expectedPublicationDate” represent?::
 
-* "submittedAt" reflects the value that an eSender inputs in Notice Dispatch Date (BT-05). It is up to the eSender to input a value; as long as the notice passes CVS validation and lawfulness, it will be published.
+* "*submittedAt*" reflects the value that an eSender inputs in Notice Dispatch Date (BT-05). It is up to the eSender to input a value; as long as the notice passes CVS validation and lawfulness, it will be published.
 +
-* "updatedAt" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that.
+* "*updatedAt*" reflects the date the most recent update was done on the notice. For instance, if you stop publication on a submitted notice, the "updatedAt" date will also be updated to reflect that.
 +
-* "createdAt" is the date and time the instance/notice was created in eNotices2.
+* "*createdAt*" is the date and time the instance/notice was created in eNotices2.
 +
-* "transmittedAt" corresponds to the date and time of the BT-803 (Notice Dispatch Date eSender) in the XML, if present. When not provided, the value will be returned as "null".
+* "*transmittedAt*" corresponds to the date and time of the BT-803 (Notice Dispatch Date eSender) in the XML, if present. When not provided, the value will be returned as "null".
 +
-* “expectedPublicationDate” is assigned by our internal system (TED Monitor) and is the next available OJS issue date based on the link:https://ted.europa.eu/en/release-calendar[release calendar] from the date the notice was successfully submitted. Notices will be published by default as soon as possible when the eSender has not indicated a Notice Preferred Publication Date (BT-738).
+* “*expectedPublicationDate*” is assigned by our internal system (TED Monitor) and is the next available OJS issue date based on the link:https://ted.europa.eu/en/release-calendar[release calendar] from the date the notice was successfully submitted. Notices will be published by default as soon as possible when the eSender has not indicated a Notice Preferred Publication Date (BT-738).
 
 
 
