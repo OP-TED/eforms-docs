@@ -2375,7 +2375,7 @@ cac:ProcessJustification{zwsp}/cbc:ProcessReason
 |*Direct Award Justification Previous Procedure Identifier (BT-1252)* |xref:directAwardSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
-cbc:Description
+cac:ProcessJustification{zwsp}/cbc:Description
 ----
 
 |*Direct Award Justification (BT-136) {zwsp}/ Code* |xref:directAwardSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
