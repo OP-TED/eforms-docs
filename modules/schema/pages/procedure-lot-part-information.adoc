@@ -2378,13 +2378,13 @@ cac:ProcessJustification{zwsp}/cbc:ProcessReason
 cbc:Description
 ----
 
-|*Direct Award Justification (BT-136) {zwsp}/ Code* |xref:directAwardSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Direct Award Justification (BT-136) {zwsp}/ Code* |xref:directAwardSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:ProcessJustification{zwsp}/cbc:ProcessReasonCode
 ----
 
-|*Direct Award Justification (BT-135) {zwsp}/ Text* |xref:directAwardSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Direct Award Justification (BT-135) {zwsp}/ Text* |xref:directAwardSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:ProcessJustification{zwsp}/cbc:ProcessReason
