@@ -2372,19 +2372,19 @@ a|
 cac:ProcessJustification{zwsp}/cbc:ProcessReason
 ----
 
-|*Direct Award Justification Previous Procedure Identifier (BT-1252)* |xref:directAwardSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Direct Award Justification Previous Procedure Identifier (BT-1252)* |xref:directAwardSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
-cbc:Description
+cac:ProcessJustification{zwsp}/cbc:Description
 ----
 
-|*Direct Award Justification (BT-136) {zwsp}/ Code* |xref:directAwardSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Direct Award Justification (BT-136) {zwsp}/ Code* |xref:directAwardSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:ProcessJustification{zwsp}/cbc:ProcessReasonCode
 ----
 
-|*Direct Award Justification (BT-135) {zwsp}/ Text* |xref:directAwardSection[xrefstyle=short] h|? |-- |-- |-- |-- |-- |-- |-- a|
+|*Direct Award Justification (BT-135) {zwsp}/ Text* |xref:directAwardSection[xrefstyle=short] h|* |-- |-- |-- |-- |-- |-- |-- a|
 [source,xpath,subs=attributes]
 ----
 cac:ProcessJustification{zwsp}/cbc:ProcessReason
