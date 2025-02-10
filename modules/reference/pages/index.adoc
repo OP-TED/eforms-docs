@@ -3,6 +3,7 @@
 This section of the eForms SDK documentation is auto-generated from our central metadata repository. 
 The information in this section is therefore identical to the metadata included in the corresponding version of the eForms SDK ({page-component-version}).
 
+NOTE: Changes made in patch versions are not reflected in this section of the documentation.
 
 == Contents
 
