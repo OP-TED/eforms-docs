@@ -204,10 +204,6 @@ NOTE: The validation mode "dynamic" checks data that may vary in time, e.g. the 
 
 * Since SDK 1.7, the dispatch date (BT-05) rule checks the value against the current date. The rule may be currently more permissive, but as of SDK 2.0, it will strictly only allow the dispatch date to be between 0 and 24 hours before actual reception date/ time.
 
-* A concurrency bug might cause incorrect validation reports to be returned if validation requests are processed simultaneously for different notice subtypes.
-This only affects notices validated with SDK version 1.9 or below. In SDK 1.10 and later, the schematron rules have a different structure that does not trigger this bug.
-This does not affect the version in Production, and will be resolved in the next version.
-
 
 === TED Viewer
 
