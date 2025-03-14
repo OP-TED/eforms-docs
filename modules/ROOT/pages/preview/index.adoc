@@ -11,7 +11,7 @@ Users should consider that there is a limit to the capacity of the Preview syste
 
 The application features, URLs as well as the data present in the "Preview" environment, are subject to unannounced changes. 
 
-CAUTION: URLs and API keys in "Production" and "Preview" environments are not interchangeable. For accessing the web applications in the "Preview" environment (eNotices2 and the TED Developer Portal), you need an EU-Login acceptance environment account which you can get at https://ecas.acceptance.ec.europa.eu/cas. To access eNotices2 API in Preview, you need to generate a key from the TED Developer Portal in Preview: https://developer.preview.ted.europa.eu/home
+https://docs.ted.europa.eu/api/latest/index.html[Read more about TED API]
 
 == TED Apps for eForms
 
@@ -127,12 +127,6 @@ The form-filling tool now has “live” validation, which means that it adapts 
 * Feature “Add a new language” and using the automatic translation service to prefill your new notice linguistic version will lock the notice while the notice is being processed for eTranslation. If there is no language version added, it means translation has failed. 
 
 
-==== Known eNotices2 API issues 
-The eNotices2 API URLs and parameters will change in later releases. The link:https://enotices2.preview.ted.europa.eu/esenders/swagger-ui/[Swagger UI] provides basic documentation of the four functions.
-
-* Please note that the HTTP responses are still a work in progress; in certain cases, error code 500 is returned instead of 400. We are in the process of identifying these cases and correcting the responses and their corresponding messages to clearly indicate that the error is on client side and not on the server side. For instance, an error code 400 would mean that the notice is rejected by eNotices2 API and does not even get validated by CVS. In this case, the instance/ notice cannot be created in eNotices2. 
-
-
 NOTE: The Preview environment is for testing purposes; new SDK releases will first be made available on Preview before deployment in Production. Please note, however, that Preview only simulates Production and notices submitted in Preview are not published in a test environment of TED. "Publishing” and “Published” are mock statuses that will be assigned to submitted notices at around 15.00 and 16:00 respectively when they enter the export. If there is a preferred publication date, Preview will show status “published” as soon as the export finishes, which is the previous working day at around 16:00 CET. As an example, if the preferred publication date falls on a Monday, the status will change to "published" the previous Friday at around 16:00 CET, when the export takes place (provided Friday is not a public holiday). 
 
 NOTE: Notices submitted in Preview are only checked for lawfulness upon request. Please note that the lawfulness feature is activated in Preview as of 24 May 2023; this means that any notices submitted in Preview that trigger a lawfulness warning will remain in status "submitted" unless we receive your request to manually reject it. The feature has been activated so that eSenders can test the status "NOT_PUBLISHED" that a notice will receive when manually rejected by OP. Precondition for this is that the notice triggers lawfulness warning and we receive your request to reject it by business ID (i.e. notice ID + version ID).
@@ -173,7 +167,7 @@ We are currently in the process of providing more guidance for users of the eNot
     * Application version 1.16.3 brings two new features to the Publication API for better tracking of notices, as requested by eSenders, which are available in Production from 31 October 2024 onwards: 
 - createdAt: Shows when each notice was first created in eNotices2, in UTC format (e.g., 2022-07-25T14:30:00Z). 
 - transmittedAt: Records the dispatch date of the notice as per BT-803 (Notice Dispatch Date eSender) in UTC (e.g., 2022-07-25T14:30:00Z); this will be "null" if not provided and is only for future notices.
-
+  * eSenders are encouraged to transition to TEDAPI v3 by the end of September 2025 and read the https://docs.ted.europa.eu/api/latest/index.html[revised TED API Docs].
 
     
 
