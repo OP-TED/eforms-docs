@@ -11,7 +11,7 @@ The policy background of eForms is available on the link:https://ec.europa.eu/gr
 +
 The Publications Office (OP) organises regular eForms workshops; all past editions of TED eSender events can be found link:https://op.europa.eu/en/web/ted-eforms/previous-editions[online]. 
 +
-Following the link:https://op.europa.eu/en/web/ted-eforms/home[2024 series], OP is now preparing the TED eSender workshops schedule for 2025.
+Following the 2024 series, OP has now announced the link:https://op.europa.eu/en/web/ted-eforms/home[TED eSender workshops schedule for 2025].
 
 
 What systems are available to eSenders?:: 
@@ -19,6 +19,8 @@ What systems are available to eSenders?::
 OP has developed and made available since 14 November 2022 a range of applications (TED Apps) to manage the collection, validation, processing, 
 visualisation and dissemination of eForms notices.  The relevant applications are also available through a 
 link:https://docs.ted.europa.eu/home/eforms/preview/[“Preview”] environment to help eSenders develop and test their own applications. 
++
+Read more about https://docs.ted.europa.eu/api/latest/index.html[TED API] and the https://docs.ted.europa.eu/api/latest/intro.html[available APIs].
 
 
 Until when were the eNotices and eSentool applications available?:: 
@@ -430,7 +432,7 @@ and no concurrent Contract Modification Notices may be submitted.
 
 What is the notice status of an eForms notice through its lifecycle?::
 
-A user working on the user interface of eNotices2 will be able to see the following notice status:
+A user working on the user interface of eNotices2 will be able to see the following notice statuses:
 +
 --
 * Draft: The notice is being drafted. 
@@ -445,7 +447,7 @@ A user working on the user interface of eNotices2 will be able to see the follow
 +
 The following notice statuses can be queried via the API for eSenders:
 DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING.
-For more information, see the relevant section: https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services. 
+For more information, see the relevant https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[section]. 
 
 
 
@@ -566,10 +568,6 @@ The development of eNotices2 started in 2020 and the application went in product
 with the aim to implement the eForms requirements while mitigating the inherent complexity of the eForms
 regulation as much as possible. eNotices2 is also available in link:https://docs.ted.europa.eu/home/eforms/preview/index.html#_enotices2["Preview"] for testing purposes.
 +
-Presentations are available at the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021[2021 eSenders seminar]. A demo of eNotices2 
-front-end application was presented during the  
-link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[eForms Technical Workshop of May 2022].
-+
 eNotices2 webinar video recordings are available here:
 +
 * 2023-09-19 - link:https://www.youtube.com/watch?v=Znx2ljypv6s[Explanation on how to fill-in a Contract Notice]
@@ -608,7 +606,7 @@ provided by the eSender in the metadata (mandatory property: noticeAuthorEmail).
 +
 These notifications were enhanced in application version 1.14.0 to also include the eSender’s main email address as a CC. 
 As part of this improvement, publication notification emails now include a direct link to the published notice on TED. 
-The language set by the eSender in the metadata (mandatory property: noticeAuthorLocale) 
+The language set by the eSender in the metadata (mandatory property: noticeAuthorLang) 
 determines in which of the 24 EU official languages the Contracting Authority is notified by the Publications Office 
 about the status of their notices.
 
@@ -649,7 +647,7 @@ All recordings and presentations from link:https://op.europa.eu/en/web/ted-reuse
 
 What preview solution do you provide with eForms TED API?::
 
-TED Viewer 2022 is available through an API (Visualisation API) in order to visualise the notice in HTML and PDF. 
+TED Viewer 2022 is available through the https://docs.ted.europa.eu/api/latest/visualise.html[Visualisation API] in order to visualise the notice in HTML and PDF. 
 It is possible to preview a notice before sending it for publication.
 
 
@@ -803,7 +801,7 @@ The environments available are Production and Preview.
 The Preview environment will be available indefinitely so that users can test validation of notices against new versions of the SDK. 
 The latter will first be implemented in Preview environment before going into Production. 
 Users can check the version range of the currently available SDK at any given time via the CVS API and version-range. See 
-link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html#version-range[Getting active SDK versions through TED API] in the documentation and link:https://cvs.ted.europa.eu/swagger-ui/index.html[Swagger]. 
+link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html#version-range[Getting active SDK versions through TED API] and the https://docs.ted.europa.eu/api/latest/developer%20operations.html[TED API documentation]. 
 +
 The Central Validation Service (CVS) is remotely available so that you can check the validity of eForms
 notices before submitting them for publication. 
@@ -819,6 +817,8 @@ What is the authentication method used for eForms and TED API?::
 
 TED Apps use an API Key that verifies the user’s identity and through it, the user will be able to connect to various services, 
 i.e. to submit/ validate/ visualise/ search (for one's own) notices. Any user can be a Web Services user as long as they have a valid API key. 
++
+Read more about https://docs.ted.europa.eu/api/latest/api.html[API key management]
 
 
 
@@ -835,15 +835,14 @@ it needs to be generated in the link:https://developer.preview.ted.europa.eu/hom
 To use the Publication API (either in Preview or in Production), an eSender should log in at least once in the corresponding environment 
 of the eNotices2 User Interface to pair their API key with their eNotices2 account. To avoid authentication issues after generating a key, eSenders should perform at least one valid API request to eNotices2 with their key.
 +
-A guide on how to test in "Preview" was presented in
-link:https://op.europa.eu/en/web/eforms-2022/agenda[Day 1 of the second eForms Technical Workshop]: 
-link:https://op.europa.eu/documents/10630606/0/TED-Developer-Portal-eForms-APIs-Sep29-eForms-Technical-Workshop.pptx/d0237e8e-500d-4b11-526c-e66c23ec773c?t=1664438251508["TED Developer Portal and using eForms APIs"].
+Read more on https://docs.ted.europa.eu/api/latest/index.html#_testing_your_apps[Testing your apps].
 
 
 
 Does my API key expire?::
 
-Yes, your key has a validity of 2 years from the date it was generated from the TED Developer Portal 
+Yes, your key has a https://docs.ted.europa.eu/api/latest/api.html#_api_key_life_span[life span] of 2 years 
+from the date it was generated from the TED Developer Portal 
 (you may have different API keys generated in both in Preview and Production environments). 
 28 days before expiration, the owner of the key will receive an email with a token/ link to prolong their key; 
 the token is valid for 21 days and can prolong the key’s validity period to 1 year from its previous expiration date. 
@@ -878,9 +877,6 @@ For large Result notices, we recommend breaking them up into smaller notices; th
 
 What is the purpose of the Developer Profile?::
 
-The Developer Profile was first presented to eSenders and their developers in the 
-link:https://op.europa.eu/en/web/eforms-2022/agenda[2nd eForms Technical Workshop] of September 2022 (TED Developer Portal and using eForms APIs). 
-+
 The TED Developer Portal is envisioned to be a central hub for TED developer services. OP will be gradually adding features 
 for developer groups that are interested in TED developer products or data services. One of the first features is the Developer Profile
 which eSenders must complete in Preview and Production environments.
@@ -900,10 +896,6 @@ Please note that the Publications Office does not manually add email addresses t
 Making the developer profile public is entirely optional. The information eSenders provide in “Public profile” will be used (with their consent) 
 to automatically generate a list of eSenders using eForms, which is the next step in the development. These lists will eventually replace the page
 link:https://ted.europa.eu/en/simap/list-of-ted-esenders[SIMAP-List of TED eSenders], which will not be maintained with eForms.
-+
-The latest developments and next steps of the TED Developer Portal were presented in the 
-link:https://op.europa.eu/documents/11465927/12140313/2023-03-28+TED+Developer+Portal+-+4th+eForms+technical+workshop.pptx/2daf351f-50be-dd34-4044-4d30e908e0ed?t=1679990131820[4th eForms Technical Workshop] of 28 March 2023.
-
 
 
 Where can I find the URLs and TED API documentation?::  
@@ -921,7 +913,9 @@ If a field in a TED XML notice doesn’t exist in eForms, it’s only possible t
 +
 The XSLT code for the TED XML to eForms Converter (TEDXDC) is published on link:https://github.com/OP-TED/ted-xml-data-converter[GitHub]. 
 The current release of the tool can partially convert all the main forms for the R2.0.9 schema: PIN, CN and CAN. 
-The converter is available as an API in link:https://enotices2.ted.europa.eu/esenders/webjars/swagger-ui/index.html#/[Production] and link:https://enotices2.preview.ted.europa.eu/esenders/webjars/swagger-ui/index.html#/[Preview] environmnets.
+The converter is available as an API in Production and Preview environmnets.
++
+Read more about the https://docs.ted.europa.eu/api/latest/convert.html[Conversion API]
 
 
 
@@ -975,7 +969,7 @@ provided that the submitted notice triggers a lawfulness warning. For more detai
 
 
 
-When using the Publication API, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLocale". What should an eSender input in the parameters?::
+When using the Publication API, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLang". What should an eSender input in the parameters?::
 
 Notice author email (mandatory property “noticeAuthorEmail” in the metadata) must be a valid email address. 
 The email is used to identify the person responsible for the notice, i.e. the Contracting Authority. 
@@ -983,8 +977,8 @@ The email is used to identify the person responsible for the notice, i.e. the Co
 eSenders must make sure to provide a valid email address to identify the buyer when submitting notices for publication to the Production environment, 
 so that the Publications Office can notify them regarding e.g. the rejection/ publication of their notices.
 +
-Mandatory property “noticeAuthorLocale” in the metadata indicates the EU official language in which the Contracting Authority 
-wishes to be notified by the Publications Office. Locale value should conform to ISO 639-1 Language Code List and must be 
+Mandatory property “noticeAuthorLang” in the metadata indicates the EU official language in which the Contracting Authority 
+wishes to be notified by the Publications Office. Language value should conform to ISO 639-1 Language Code List and must be 
 one of the following: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv. 
 
 
