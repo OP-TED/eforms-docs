@@ -55,7 +55,7 @@ WARNING: Please be aware that the interface and the notice forms still need furt
 
 ==== Currently available
 [horizontal] 
-Application version:: 1.16.4
+Application version:: 1.17.4
 SDK versions::  You can find the SDK active versions per environment at: https://docs.ted.europa.eu/home/eforms/active-versions/index.html
 
 
@@ -75,10 +75,7 @@ Users can create workgroups between themselves and test the definitions of roles
 
 Users can define personalised settings for the legal basis and notice types that they want to use, as well as default languages in the notice, and tailoring of some fields is available: 
 
-* The option to hide optional fields in the forms settings should NOT be used, as the live validations are not taken into account.  
-
 * Confidential fields can be set to be always confidential or non-confidential.  
-
 
 In the notice sections a search feature has been added and pagination for up to 2000 lots is supported. 
 
@@ -173,13 +170,13 @@ We are currently in the process of providing more guidance for users of the eNot
 
 ==== Planned updates 
 [horizontal]
-Indicative planning:: January 2025
-Application version:: 1.17
-SDK version:: 1.13
+Indicative planning:: Q2 2025
+Application version:: 1.18
+SDK version:: 1.14
 
 This version of the application is focused on improvements to the UI experience and the correction of bugs.
 
-NOTE: Current application version in Production as of 5 December 2024.
+NOTE: Current application version is in Production as of 20 March 2025.
 
 
 === TED Central Validation Service 
