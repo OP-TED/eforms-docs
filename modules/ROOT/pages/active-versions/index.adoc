@@ -71,19 +71,19 @@ IMPORTANT: The table below is updated manually and may not be always accurate. T
 
 |1.10
 |1 December 2024
-|30 April 2025
+|31 July 2025
 
 |1.11
 |22 April 2025
-|30 April 2025
+|31 July 2025
 
 |1.12
 |18 July 2025
-|18 July 2025
+|30 June 2026
 
 |1.13
 |28 November 2025
-|28 November 2025
+|31 March 2027
 |===
 
 NOTE: New SDK versions may become available earlier in the Preview environment. Please consult the TED API.
