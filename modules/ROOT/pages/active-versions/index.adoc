@@ -67,7 +67,7 @@ IMPORTANT: The table below is updated manually and may not be always accurate. T
 
 |1.9
 |9 October 2024
-|30 April 2025
+|7 May 2025
 
 |1.10
 |1 December 2024
