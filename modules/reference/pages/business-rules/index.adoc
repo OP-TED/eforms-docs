@@ -9115,7 +9115,7 @@ a|Co_constraint.
 .Co-constraint in EFX
 [source, EFX]
 ----
-BT-500-Organization-Company[BT-500-Organization-Company/@languageID is not empty] not like '.*(T|t)(E|e)(S|s)(T|t).*'
+BT-500-Organization-Company[BT-500-Organization-Company/@languageID is not empty] not like '.*(T\|t)(E\|e)(S\|s)(T\|t).*'
 ----
 *Always applies* in every notice sub-type.
 |`WARN`
