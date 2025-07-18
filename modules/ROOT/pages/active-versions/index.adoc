@@ -71,11 +71,11 @@ IMPORTANT: The table below is updated manually and may not be always accurate. T
 
 |1.10
 |1 December 2024
-|31 July 2025
+|31 August 2025
 
 |1.11
 |22 April 2025
-|31 July 2025
+|31 August 2025
 
 |1.12
 |18 July 2025
