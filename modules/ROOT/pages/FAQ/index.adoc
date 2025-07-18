@@ -84,50 +84,39 @@ https://ec.europa.eu/growth/single-market/public-procurement/digital/eforms_en
 * SIMAP: information about European public procurement +
 https://simap.ted.europa.eu/web/simap/eforms
 +
-* eForms presentations from the TED eSenders annual seminar in November 2021 +
-https://op.europa.eu/en/web/ted-esenders-webinar-2021/agenda
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-esenders-webinar-2021/agenda[TED eSender annual seminar in November 2021] +
 +
-* eForms presentations from the eForms Technical Workshop in May 2022 +
-https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[eForms Technical Workshop in May 2022] +
 +
-* eForms presentations from the second eForms Technical Workshop in September 2022 +
-https://op.europa.eu/en/web/eforms-2022/agenda
+* eForms presentations from the link:https://op.europa.eu/en/web/eforms-2022/agenda[2nd eForms Technical Workshop in September 2022] +
 +
-* eForms presentations from the TED eSenders annual seminar in December 2022 +
-https://op.europa.eu/en/web/ted-esenders-webinar-2022/agenda
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-esenders-webinar-2022/agenda[TED eSender annual seminar in December 2022] +
 +
-* eForms presentations from the third eForms Technical Workshop in February 2023 +
-https://op.europa.eu/en/web/ted-eforms/agenda
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda[3rd eForms Technical Workshop in February 2023] +
 +
-* eForms presentations from the fourth eForms Technical Workshop in March 2023 +
-https://op.europa.eu/en/web/ted-eforms/agenda-4th-eforms-03-2023
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-4th-eforms-03-2023[4th eForms Technical Workshop in March 2023] +
 +
-* eForms presentations from the fifth eForms Technical Workshop in May 2023 +
-https://op.europa.eu/en/web/ted-eforms/agenda-5th-eforms-05-2023
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-5th-eforms-05-2023[5th eForms Technical Workshop in May 2023] +
 +
-* eForms presentations from the sixth eForms Technical Workshop in September 2023 +
-https://op.europa.eu/en/web/ted-eforms/agenda-6th-eforms-09-2023
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-6th-eforms-09-2023[6th eForms Technical Workshop in September 2023] +
 +
-* eForms presentations from the TED eSenders annual seminar in December 2023 +
-https://op.europa.eu/en/web/ted-eforms/agenda-annual-esenders-seminar-2023
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-annual-esenders-seminar-2023[TED eSender annual seminar in December 2023] +
 +
-* eForms presentations from the TED eSender Workshop in March 2024 +
-https://op.europa.eu/en/web/ted-eforms/agenda-q1-20-march-2024
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-q1-20-march-2024[TED eSender Workshop in March 2024] +
 +
-* eForms presentations from the TED eSender Workshop in June 2024 +
-https://op.europa.eu/en/web/ted-eforms/agenda-q2-20-june-2024
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-q2-20-june-2024[TED eSender Workshop in June 2024] +
 +
-* eForms presentations from the TED eSender Workshop in September 2024 +
-https://op.europa.eu/en/web/ted-eforms/agenda-q3-26-september-2024
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-q3-26-september-2024[TED eSender Workshop in September 2024] +
 +
-* eForms presentations from the TED-together event in December 2024 +
-https://op.europa.eu/en/web/ted-together/agenda_2024_12_03
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-together/agenda_2024_12_03[TED-together event in December 2024] +
 +
-* TED developer documentation portal +
-https://docs.ted.europa.eu/
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-q1-28-march-2025[TED eSender Workshop in March 2025] +
 +
-* eForms Software Development Kit on GitHub +
-https://github.com/OP-TED/eForms-SDK
+* eForms presentations from the link:https://op.europa.eu/en/web/ted-eforms/agenda-q2-26-june-2025[TED eSender Workshop in June 2025] +
++
+* link:https://docs.ted.europa.eu/[TED developer documentation portal] +
++
+* link:https://github.com/OP-TED/eForms-SDK[eForms Software Development Kit on GitHub] +
 --
 +
 For any questions or issues, please contact the TED helpdesk at: ted@publications.europa.eu  
