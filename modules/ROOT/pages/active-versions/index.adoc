@@ -92,7 +92,7 @@ NOTE: New SDK versions may become available earlier in the Preview environment. 
 [#version-range]
 == Getting  active SDK versions through TED API
 
-TED API provides information on the set of active SDK versions in JSON format through the xref:api:ROOT:developer-operations.adoc#Retrieve the active range of SDK versions[version-range operation] of the xref:api:ROOT:developer-operations.adoc#Retrieve the active range of SDK versions[Developer Operations API].
+TED API provides information on the set of active SDK versions in JSON format through the xref:api:ROOT:developer-operations.adoc#Retrieve the active range of SDK versions[version-range operation] of the xref:api:ROOT:developer-operations.adoc#retrieve[Developer Operations API].
 
 [source,json]
 ----
