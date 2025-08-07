@@ -11,7 +11,7 @@ The policy background of eForms is available on the link:https://ec.europa.eu/gr
 +
 The Publications Office (OP) organises regular eForms workshops; all past editions of TED eSender events can be found link:https://op.europa.eu/en/web/ted-eforms/previous-editions[online]. 
 +
-Following the 2024 series, OP has now announced the link:https://op.europa.eu/en/web/ted-eforms/home[TED eSender workshops schedule for 2025].
+Following the 2024 series, OP has announced the link:https://op.europa.eu/en/web/ted-eforms/home[TED eSender workshops schedule for 2025].
 
 
 What systems are available to eSenders?:: 
@@ -30,7 +30,7 @@ eNotices and eSentool remained available for users to view their published notic
 +
 The eNotices2 application and TED API (successor to eSentool) have been available since 14 November 2022, running in parallel with the legacy applications during the transition period. 
 +
-Authorised applications can send complete notices to the API data interface of eNotices2 (Publication API), 
+Authorised applications can send complete notices to the API data interface of eNotices2 (https://docs.ted.europa.eu/api/latest/publish.html[Publication API]), 
 and if they are valid, they will be published in the Supplement to the Official Journal 
 of the European Union (OJ S). Individuals with an eNotices2 account can
 create notices within eNotices2 using its interactive web forms. 
@@ -54,14 +54,14 @@ and no API function can be performed on a notice that has been manually transfer
 We would, therefore, discourage any manual operations on notices via the user interface of eNotices2; 
 these sort of groupings and permissions should be handled in the eSender’s application instead. 
 +
-eSenders should create instead a “profile” in the TED Developer Portal using a functional email address in order to generate an API key. 
+eSenders should create instead a “profile” in the https://developer.ted.europa.eu/home[TED Developer Portal] using a *functional email address* in order to generate an API key. 
 The Publications Office will send communication such as important announcements, events, and downtime notifications 
 to the main email address of the eSender as well as any additional contact emails the eSender has specified in their “Developer Profile”. 
 
 
 Is there a fixed publication schedule with eForms?::
 
-The release calendar on TED includes the dates on which there will be an issue of the OJ S. 
+The https://ted.europa.eu/en/release-calendar[release calendar] on TED includes the dates on which there will be an issue of the OJ S. 
 The OJ S will continue to be published from Monday to Friday apart from certain national holidays. 
 +
 When submitting a notice, users can select a preferred publication date, or can choose publication “as soon as possible”. 
@@ -119,7 +119,7 @@ https://simap.ted.europa.eu/web/simap/eforms
 * link:https://github.com/OP-TED/eForms-SDK[eForms Software Development Kit on GitHub] +
 --
 +
-For any questions or issues, please contact the TED helpdesk at: ted@publications.europa.eu  
+For any questions or issues, please contact the TED helpdesk at: ted@publications.europa.eu. 
 +
 
 For developers, please see our link:https://docs.ted.europa.eu/eforms/latest/guide/index.html[eForms Developer Guide].
@@ -148,14 +148,19 @@ Table 1 of the Annex as the authoritative source of information.
 +
 You may also find useful the “Initial mapping of current TED-XML schema to eForms (13/04/2022)”, 
 as well as the "Table of correspondence between TED-XML standard forms and eForms (03/08/2023)", 
-which were both shared on SIMAP: https://simap.ted.europa.eu/web/simap/eforms
+which were both shared on SIMAP: https://simap.ted.europa.eu/web/simap/eforms.
 
 
 
 What is the lifecycle of an eForms notice?::
 
 An overview of the 
-link:https://op.europa.eu/documents/11465927/11661400/2023-01-02-Lifecycle+of+eForms+notices-3rd+eForms+Technical+Workshop.pptx/a83fc6b8-191e-3e20-a412-7b94ba5317cc?t=1675250338281[lifecycle of eForms notices] was presented during the 3rd eForms Technical Workshop.
+link:https://op.europa.eu/documents/11465927/11661400/2023-01-02-Lifecycle+of+eForms+notices-3rd+eForms+Technical+Workshop.pptx/a83fc6b8-191e-3e20-a412-7b94ba5317cc?t=1675250338281[lifecycle of eForms notices] was presented 
+during the https://op.europa.eu/en/web/ted-eforms/agenda[3rd eForms Technical Workshop].
++
+The lifecycle is represented by statuses such as DRAFT, SUBMITTED, PUBLISHED, PUBLISHING, STOPPED, NOT PUBLISHED, DELETED, ARCHIVED, and VALIDATION FAILED. Details on each status can be found throughout this FAQ; try searching by status name.
++
+See also section "Understanding the Notice Workflow" in our https://docs.ted.europa.eu/api/latest/index.html#_tips_for_esenders[Tips for eSenders].
 
 
 What changed with eForms regarding the OJ S publication number?::
@@ -269,7 +274,7 @@ attached to any notice, to indicate that this notice corrects, changes, or other
 a "parent" notice with the use of BG-9 and in particular BT-140 Change Reason Code. Both the original notice and its change notice will be published.
 +
 See link:https://docs.ted.europa.eu/eforms/latest/schema/change-notice.html#changesAssociatedElementsTable[Changes-associated elements] in the documentation
-and questions concerning change notices on GitHub: https://github.com/OP-TED/eForms-SDK/discussions/88# 
+and questions concerning change notices on GitHub: https://github.com/OP-TED/eForms-SDK/discussions/88#.
 
 
 
@@ -436,7 +441,7 @@ A user working on the user interface of eNotices2 will be able to see the follow
 +
 The following notice statuses can be queried via the API for eSenders:
 DRAFT, SUBMITTED, STOPPED, PUBLISHED, DELETED, NOT_PUBLISHED, ARCHIVED, VALIDATION_FAILED, PUBLISHING.
-For more information, see the relevant https://docs.ted.europa.eu/home/eforms/FAQ/index.html#_apis_and_web_services[section]. 
+For more information, see the relevant https://docs.ted.europa.eu/eforms-common/FAQ/index.html#_apis_and_web_services[section]. 
 
 
 
@@ -449,7 +454,7 @@ the notice will obtain status “Not published”, which can be queried through 
 
 What is the meaning of notice status “Publishing”?::
 
-Every working day, according to the OJS https://ted.europa.eu/en/release-calendar[release calendar], 
+Every working day, according to the OJ S https://ted.europa.eu/en/release-calendar[release calendar], 
 the Publications Office initiates the process of publication of the next OJ S. The back-end application (TED Monitor) 
 selects all “submitted” notices that have the expected publication date of the OJ S issue and includes them in the daily export.
 +
@@ -615,8 +620,7 @@ was published in July 2021 at: https://simap.ted.europa.eu/documents/10184/320
 An updated link:https://simap.ted.europa.eu/documents/10184/320101/eforms_2022-05-10-html/6be809e4-ac8a-4bc1-96d9-11b5fc366e6a[HTML file] was published 
 in May 2022. It provides sample data to make it easier to see the TED Viewer structure, understand how the elements fit together 
 and allows to switch between different notice types. The biggest structural change compared to samples from July 2021 
-is the decision to group almost all the organisation information in one section. The current version is not yet final 
-but it is quite close to what the eForms TED Viewer will produce. 
+is the decision to group almost all the organisation information in one section. 
 +
 The link:https://github.com/OP-TED/eForms-SDK/tree/develop/view-templates[view-templates] available in the SDK 
 contain the technical definition of how an HTML/ PDF is generated by TED Viewer 2022. 
@@ -701,7 +705,7 @@ The eForms documentation will indicate the version of the eForms SDK
 that modified it. Likewise, the sample XML files will indicate the
 version of the eForms SDK used when they were created or last modified. 
 +
-For more information on SDK versioning: https://docs.ted.europa.eu/eforms/latest/versioning
+For more information on SDK versioning: https://docs.ted.europa.eu/eforms/latest/versioning.
 +
 The purpose of the SDK is to assist eForms developers in creating applications that generate eForms notices in order to send them to eNotices2. 
 Our link:https://docs.ted.europa.eu/eforms/latest/guide/index.html[eForms Developer Guide] aims to address some of the most common issues 
@@ -716,7 +720,7 @@ More information about the SDK was presented at the link:https://op.europa.eu/en
 +
 The link:https://op.europa.eu/en/web/ted-esenders-workshop-2022/agenda[May 2022 eForms Technical Workshop] focused on building metadata-driven applications using the SDK.
 +
-For more information and examples of metadata driven applications: https://docs.ted.europa.eu/eforms/latest/metadata-driven-applications.html
+For more information and examples of metadata driven applications: https://docs.ted.europa.eu/eforms/latest/metadata-driven-applications.html.
 
 
 
@@ -724,7 +728,10 @@ Is there a roadmap (release plan) for future eForms SDK releases or a set releas
 
 The eForms SDK is a complicated development and information is made available as fast as possible. 
 +
-The lifespan of the various SDK versions is documented on the link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html[Active SDK versions] page, however, eSenders should always consult the information provided by the TED API. 
+The lifespan of the various SDK versions is documented on the link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html[Active SDK versions] page, however, 
+eSenders should always consult the https://docs.ted.europa.eu/eforms-common/active-versions/index.html#version-range[information provided by the TED API]. 
++
+See also the https://docs.ted.europa.eu/api/latest/developer-operations.html[Developer Operations API].
 
 
 
@@ -780,25 +787,24 @@ You can use the "watch" repository feature of Github to receive notifications fo
 [qanda]
  
 
+Where can I find the URLs and TED API documentation?::  
+
+Please read the link:https://docs.ted.europa.eu/api/latest/index.html[TED API docs]. 
+
+
+
 Is there a TED qualification environment available for eForms? How can we test the submission of eForms notices?:: 
 
 There is no qualification procedure for eForms and any user with an API key and an eNotices2 account is able to submit notices via the TED API. 
-eSenders, however, are required to be familiar with the link:https://enotices2.ted.europa.eu/cookies-legal-notice[“Terms of service”].
+eSenders, however, are required to be familiar with the link:https://enotices2.ted.europa.eu/terms[“Terms of service”].
 +
-The environments available are Production and Preview. 
+The environments available are Production and https://docs.ted.europa.eu/eforms-common/preview/index.html[Preview]. 
 +
-The Preview environment will be available indefinitely so that users can test validation of notices against new versions of the SDK. 
+The Preview environment will be available indefinitely so that users can test validation of notices against new https://docs.ted.europa.eu/eforms-common/active-versions/index.html[versions of the SDK]. 
 The latter will first be implemented in Preview environment before going into Production. 
-Users can check the version range of the currently available SDK at any given time via the CVS API and version-range. See 
-link:https://docs.ted.europa.eu/eforms-common/active-versions/index.html#version-range[Getting active SDK versions through TED API] and the https://docs.ted.europa.eu/api/latest/developer%20operations.html[TED API documentation]. 
 +
-The Central Validation Service (CVS) is remotely available so that you can check the validity of eForms
-notices before submitting them for publication. 
-As our developments have no awareness of national tailoring, the application of the eForms regulation in national legislation 
-will not be taken into account for the CVS.
-+
-SDK active versions and their planned removal/ end of support can be found on our 
-link:https://docs.ted.europa.eu/home/eforms/active-versions/index.html[Active SDK versions] page. 
+The Central Validation Service (CVS) is remotely available via the https://docs.ted.europa.eu/api/latest/validate.html[Validation API]
+so that you can check the validity of eForms notices before submitting them for publication. 
 
 
 
@@ -807,7 +813,7 @@ What is the authentication method used for eForms and TED API?::
 TED Apps use an API Key that verifies the user’s identity and through it, the user will be able to connect to various services, 
 i.e. to submit/ validate/ visualise/ search (for one's own) notices. Any user can be a Web Services user as long as they have a valid API key. 
 +
-Read more about https://docs.ted.europa.eu/api/latest/api.html[API key management]
+Read more about https://docs.ted.europa.eu/api/latest/api.html[API key management].
 
 
 
@@ -871,7 +877,7 @@ for developer groups that are interested in TED developer products or data servi
 which eSenders must complete in Preview and Production environments.
 +
 The Developer Profile can be used by eSenders to set up/ manage their eSender profile as part of the sign-up process in the TED Developer Portal 
-and before they are able to generate an (or a new) API Key. For eSenders, we would recommend using a functional/ shared email address 
+and before they are able to generate an (or a new) API Key. For eSenders, we would recommend using a *functional/ shared email address* 
 instead of a personal email address to set up your eSender profile in the Developer Portal in the Production environment. 
 The identifier of your eSender profile should also be used as the identifier of your eSender organisation in the XML of the eForms notices you submit. 
 We recommend that you only have one eSender account in Production, while your developers and testers 
@@ -883,13 +889,7 @@ To ensure receipt of these communications from the OP, eSenders must update thei
 Please note that the Publications Office does not manually add email addresses to their distribution list.
 +
 Making the developer profile public is entirely optional. The information eSenders provide in “Public profile” will be used (with their consent) 
-to automatically generate a list of eSenders using eForms, which is the next step in the development. These lists will eventually replace the page
-link:https://ted.europa.eu/en/simap/list-of-ted-esenders[SIMAP-List of TED eSenders], which will not be maintained with eForms.
-
-
-Where can I find the URLs and TED API documentation?::  
-
-Please read the link:https://docs.ted.europa.eu/api/index.html[TED Developer docs]. 
+to generate a list of eSenders using eForms.
 
 
 
@@ -904,7 +904,7 @@ The XSLT code for the TED XML to eForms Converter (TEDXDC) is published on link:
 The current release of the tool can partially convert all the main forms for the R2.0.9 schema: PIN, CN and CAN. 
 The converter is available as an API in Production and Preview environmnets.
 +
-Read more about the https://docs.ted.europa.eu/api/latest/convert.html[Conversion API]
+Read more about the https://docs.ted.europa.eu/api/latest/convert.html[Conversion API].
 
 
 
@@ -930,8 +930,7 @@ or exported directly from the User Interface of eNotices2. The same notice busin
 +
 Via the concept of Notice Author, an email notification is sent to the Contracting Authority, detailing what failed validation. 
 +
-An overview of eForms notice statuses was presented during the 3rd eForms Technical Workshop - 
-link:https://op.europa.eu/en/web/ted-eforms/agenda[The lifecycle of eForms notices]
+Swagger URLs for the API are available on the https://docs.ted.europa.eu/api/latest/publish.html[Publication API] page.
 
 
 When can I stop the publication of a notice?::
@@ -955,7 +954,8 @@ Production and Preview environments of eNotices2 are closely aligned. However, n
 are not published in a test environment of TED and "Publishing” and “Published” are only mock statuses that are assigned to submitted notices 
 at around 15.00 and 16:00 respectively when these enter the export. Status “not published” is done upon request in Preview 
 provided that the submitted notice triggers a lawfulness warning. For more details, please see the Preview environment page.
-
++
+See also section "Understanding the Notice Workflow" in our https://docs.ted.europa.eu/api/latest/index.html#_tips_for_esenders[Tips for eSenders].
 
 
 When using the Publication API, it is required to specify in the metadata "noticeAuthorEmail" and "noticeAuthorLang". What should an eSender input in the parameters?::
@@ -969,7 +969,8 @@ so that the Publications Office can notify them regarding e.g. the rejection/ pu
 Mandatory property “noticeAuthorLang” in the metadata indicates the EU official language in which the Contracting Authority 
 wishes to be notified by the Publications Office. Language value should conform to ISO 639-1 Language Code List and must be 
 one of the following: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv. 
-
++
+Swagger URLs for the API are available on the https://docs.ted.europa.eu/api/latest/publish.html[Publication API] page.
 
 
 What dates do search parameters "submittedAt", "createdAt", "updatedAt", "transmittedAt" and “expectedPublicationDate” represent?::
@@ -983,6 +984,8 @@ What dates do search parameters "submittedAt", "createdAt", "updatedAt", "transm
 * "*transmittedAt*" corresponds to the date and time of the BT-803 (Notice Dispatch Date eSender) in the XML, if present. When not provided, the value will be returned as "null".
 +
 * “*expectedPublicationDate*” is assigned by our internal system (TED Monitor) and is the next available OJS issue date based on the link:https://ted.europa.eu/en/release-calendar[release calendar] from the date the notice was successfully submitted. Notices will be published by default as soon as possible when the eSender has not indicated a Notice Preferred Publication Date (BT-738).
++
+Swagger URLs for the API are available on the https://docs.ted.europa.eu/api/latest/publish.html[Publication API] page.
 
 
 
@@ -1117,22 +1120,6 @@ How should we fill in BT-3201 Tender Identifier?::
 
 For TenderID, as for most identifiers, a dedicated scheme similar to that defined for other identifiers, has been specified. 
 Information is available in the documentation in the link:https://github.com/OP-TED/eForms-SDK[eForms SDK].
-
- 
-What happens when CA_ACTIVITY_OTHER is given in current F02?:: 
-
-The current TED XML element CA_ACTIVITY_OTHER allows free-text content. This often leads to inconsistencies in reporting the main activity of
-the contracting authority.  
-+
-In eForms, this possibility has been removed and only one value from the list of values in the "main-activity" code list is allowed. 
-
-
-How can I deal with multiple NUTS codes in OBJECT_DESCR?:: 
-
-In the current TED XML, the location(s) of each Lot is indicated with only one MAIN_SITE element, but multiple NUTS elements. 
-+
-In eForms, there is the possibility to have more information about each location: a full address, a description and a NUTS code. These are held
-in the cac:RealizedLocation element. This element is repeatable within each Lot. 
 
 
 
@@ -1331,8 +1318,6 @@ When will the business rules and field validation rules be made available?::
 
 The current Schematron validation rules together with some examples of
 valid and invalid XML files are published on GitHub as part of the link:https://github.com/OP-TED/eForms-SDK[eForms SDK]. 
-+
-We will keep updating these artefacts regularly as they evolve. 
 
 
 
@@ -1372,7 +1357,7 @@ The conditions are visible in the Schematron rules as well as in the eForms expr
 Are the error messages returned by CVS translated?::
 
 Translations of the messages that can be returned by CVS when rules are not respected can be found in the https://github.com/OP-TED/eForms-SDK/tree/develop/translations[translations] file on the SDK on GitHub.
-When calling CVS API, the “text” element in the validation report will be returned in the language you passed as a parameter to your request. 
+When calling the https://docs.ted.europa.eu/api/latest/validate.html[Validation API], the “text” element in the validation report will be returned in the language you passed as a parameter to your request. 
 
 
 
@@ -1426,17 +1411,18 @@ but ideas for documenting rules are welcome.
 
 
 
-If a field is mandatory but left empty or if a code choice is mandatory but not chosen, will the notice be rejected and not published? Are there no "content" checks beyond that, for example if a monetary value doesn't make sense?::  
+If a field is mandatory but left empty or if a code choice is mandatory but not chosen, will the notice be rejected and not published?::  
 
 If mandatory fields are not filled in, it will not be possible to submit the corresponding notice and the notice will, therefore, be rejected.
-There will be several additional business rules that will check the validity of the content of different fields, i.e., combinations of
-fields, in a way equivalent to what is done today with the existing forms.  
+There are several additional business rules that check the validity of the content of different fields, i.e., combinations of
+fields.
 +
-As with the current TED notices, there will be rules that will block (reject) the submission of eForms notices, particularly in cases that
-violate or contradict the Procurement Directives. All these rules are currently under construction and implemented using Schematron. Only
-after 14 November 2022, when eForms are introduced, will the Publications Office inform users in advance of any new rules to come. 
+There are rules that will block (reject) the submission of eForms notices, particularly in cases that
+violate or contradict the Procurement Directives. All these rules are implemented using Schematron.
 +
-Notice validation will be automated through the Central Validation System. Human validation will only be done for notices that have a “lawfulness” warning. 
+Notice validation is automated through the Central Validation System. See https://docs.ted.europa.eu/api/latest/validate.html[Validation API].
++
+Human validation will only be done for notices that have a https://docs.ted.europa.eu/eforms/latest/reference/business-rules/index.html#_lawfulness[“lawfulness”] warning. 
 This means that the notice contains information that suggests it should not be published in the Supplement to the Official Journals of the EU. For example, 
 notices from countries outside the EEA or that do not have an agreement with the EU. The notices will be subject to a manual check at OP 
 to decide if they should be published or rejected. 
