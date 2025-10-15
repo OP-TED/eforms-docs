@@ -357,6 +357,22 @@ The `pattern` property indicates that the value of the field must match a specif
 +
 In the regular expression, the backslash character "\" is escaped as "\\".
 
+`numericRange`::
+The `numericRange` property indicates that the numerical value of the field must be in a specific range.
++
+[source,json]
+----
+"numericRange" : {
+  "value" : {
+    "minNumber" : 0, // <1>
+    "maxNumber" : 9999 // <2>
+  },
+  "severity" : "ERROR"
+}
+----
+<1> The value of this field must be greater than or equal to the indicated value. If omitted there is no lower limit to the range.
+<2> The value of this field must be lower than or equal to the indicated value. If omitted there is no upper limit to the range.
+
 `assert`::
 The `assert` property gives an assertion, as a boolean EFX expression, that is expected to evaluate to "true". This is used to specify rules on the field value, and those rules can depend on other fields.
 +
