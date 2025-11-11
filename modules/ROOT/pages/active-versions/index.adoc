@@ -45,8 +45,6 @@ The Publications Office also updates active SDK versions by releasing patches th
 
 The table below indicates the end of the standard and extended lifespan for the SDK versions that are currently active. 
 
-NOTE: To accommodate the needs of eSenders during the current transitional period, the Publications Office has decided to extend the lifespan of the SDK versions expiring in 2024. This is an exceptional measure in view of the efforts of eSenders to stabilise their processes for incorporating updates to the eForms specification into their applications. 
-
 IMPORTANT: The table below is updated manually and may not be always accurate. The information provided by the TED API should always be consulted as the single source of truth. For more details see  <<version-range>> below.
 
 
