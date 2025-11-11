@@ -55,26 +55,6 @@ IMPORTANT: The table below is updated manually and may not be always accurate. T
 |End of standard lifespan
 |End of extended lifespan
 
-|1.7
-|11 May 2024
-|30 April 2025
-
-|1.8
-|26 July 2024
-|30 April 2025
-
-|1.9
-|9 October 2024
-|7 May 2025
-
-|1.10
-|1 December 2024
-|31 August 2025
-
-|1.11
-|22 April 2025
-|31 August 2025
-
 |1.12
 |18 July 2025
 |30 June 2026
