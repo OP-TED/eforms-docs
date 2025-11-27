@@ -4,7 +4,7 @@ To provide your users with a read only view of a notice you have the following o
 
 == Using the TED Visualisation API
 
-You can call the TED Visualisation API to obtain a notice rendered in PDF or HTML. You can find more information on calling the specific API endpoint xref:api::endpoints/viewer-ted-europa-eu.adoc[here].
+You can call the TED Visualisation API to obtain a notice rendered in PDF or HTML. You can find more information on calling the specific API endpoint xref:api::endpoints/visualise.adoc[here].
 
 [horizontal]
 Pros:: 

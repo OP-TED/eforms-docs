@@ -78,7 +78,7 @@ Guiding the user, (by pointing out which fields they need to fill-in and what pr
 Obviously, providing client-side validation is the most user friendly solution that you would want to consider. However, client-side validation is application specific and will definitely require considerable effort to be developed especially if the entire validation logic provided in the SDK has to be manually recoded instead of being directly reused. 
 
 === Server-side validation
-The best solution for validating notices would be to validate them through the xref:api::endpoints/cvs-ted-europa-eu.adoc[TED Validation API]. 
+The best solution for validating notices would be to validate them through the xref:api::endpoints/validate.adoc[TED Validation API]. 
 
 This will allow you to verify the validity of notices as you create them without having to code and maintain thousands of business rules manually. There are several drawbacks of course to this approach: 
 
@@ -102,7 +102,7 @@ TIP: At the Publications Office, we use a custom EFX interpreter to translate th
 You could use the EFX Toolkit to kick-start a similar solution that works for your target language (Javascript, PHP etc.). However, without the SDK, you will need to implement your own solution for this or possibly even abandon the idea of client-side validation. 
 
 == Visualising notices
-For visualising notices you can use the xref:api::endpoints/viewer-ted-europa-eu.adoc[TED Visualisation API]. This will render the notice as HTML or PDF for you. 
+For visualising notices you can use the xref:api::endpoints/visualise.adoc[TED Visualisation API]. This will render the notice as HTML or PDF for you. 
 
 An obvious drawback for this solution is  that it is not available when your application is offline. However, this is not a concern for applications that do not have a requirement to "work offline".
 
@@ -165,7 +165,7 @@ Validating a notice:: Validation can be impacted not only by changes in the busi
 +  
 So, an additional challenge for an application that is not metadata-driven will be to maintain the proper "versions" of the business rules and schema to perform validation for different versions of the eForms specifications. + 
 +  
-TIP: To minimize the impact of this type of change on your traditional application, use the xref:api::endpoints/cvs-ted-europa-eu.adoc[TED Validation API] to validate notices.
+TIP: To minimize the impact of this type of change on your traditional application, use the xref:api::endpoints/validate.adoc[TED Validation API] to validate notices.
 
 Saving a notice XML:: The same challenges mentioned in the previous two cases, also extend to this functionality of your application. In practice an application that is not metadata-driven will not be able to cope with several versions of the eForms specification in parallel. +
  + 
@@ -175,5 +175,5 @@ TIP: If you need to edit existing notices without converting them to the latest 
 
 Visualising a notice:: Unless you use the TED Visualisation API you will need to maintain different "versions" of your notice visualisation templates in order to correctly visualise notices on demand. + 
 + 
-TIP: To minimize the impact of this type of change on your traditional application, use the xref:api::endpoints/viewer-ted-europa-eu.adoc[TED Visualisation API] to visualise notices.
+TIP: To minimize the impact of this type of change on your traditional application, use the xref:api::endpoints/visualise.adoc[TED Visualisation API] to visualise notices.
 
