@@ -1,0 +1,44 @@
+= `energy-efficiency-item` codelist
+:navtitle: Codelists
+
+Products covered by the Energy Labelling Delegated acts, implementing measures (Directive 2009/125/EC), or Regulation 2020/740; products and services covered by the GPP; works, services or buildings.
+[horizontal]
+Version:: 20241211-0
+URI:: http://publications.europa.eu/resource/dataset/energy-efficiency-item
+Structure:: flat
+Used in:: xref:business-terms/BT-811.adoc[`BT-811`] EED List
+
+== Codes
+[horizontal]
+  `air-cond`::: Air conditioners including air-to-air heat pumps
+  `building`::: Buildings
+  `circul`::: Circulators
+  `computer`::: Computers
+  `cook-appl`::: Domestic cooking appliances - ovens, range hoods, hobs
+  `dishwas`::: Dishwashers
+  `el-mo-vsd`::: Electric motors and variable speed drives
+  `fuel-boil`::: Solid fuel boilers
+  `hea-cool`::: Air heating/cooling products
+  `hous-freez`::: Household fridges and freezers
+  `indus-fan`::: Industrial fans
+  `ligh-gea`::: Light sources and control gears
+  `lo-spa-hea`::: Local Space Heaters
+  `mob-pho-ta`::: Mobile phones and tablets
+  `pow-suppl`::: External power supplies
+  `pow-tra`::: Power transformers
+  `pro-refrig`::: Professional refrigeration equipment
+  `products`::: Products
+  `refri-appl`::: Refrigerating appliances with a direct sales function
+  `ser-da-sto`::: Servers and data storage products
+  `services`::: Services
+  `spa-com-hea`::: Space and combination heaters
+  `tum-dry`::: Tumble driers
+  `tv-nat-law`::: TVs - electronic displays national law
+  `tyres`::: Tyres
+  `vac-clea`::: Vacuum cleaners
+  `ventila`::: Ventilation units
+  `wa-hea-tan`::: Water heaters - storage tanks and solar devices
+  `wa-pu`::: Water pumps
+  `was-ma-dry`::: Washing machines and washer-dryers
+  `weld-eq`::: Welding equipment
+  `works`::: Works

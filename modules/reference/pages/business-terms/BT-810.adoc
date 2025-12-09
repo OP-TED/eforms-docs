@@ -1,0 +1,10 @@
+= `BT-810`: EED Applicable
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-810-Lot`:: EED Applicable
+  `BT-810-Lot-List`:: EED Applicable Listname

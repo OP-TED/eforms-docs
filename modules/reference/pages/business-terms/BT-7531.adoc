@@ -1,0 +1,10 @@
+= `BT-7531`: Selection Criteria Second Stage Invite Number Weight
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-7531-Lot`:: Selection Criteria Second Stage Invite Number Weight
+  `BT-7531-Lot-List`:: Selection Criteria Second Stage Invite Number Weight Listname

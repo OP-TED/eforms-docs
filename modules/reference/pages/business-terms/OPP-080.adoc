@@ -1,0 +1,9 @@
+= `OPP-080`: Kilometers Public Transport
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-080-Tender`:: Kilometers Public Transport
+  `OPP-080-Tender-Unit`:: Kilometers Public Transport Unit

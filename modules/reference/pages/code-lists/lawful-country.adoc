@@ -1,0 +1,58 @@
+= `lawful-country` codelist
+:navtitle: Codelists
+
+List of countries for which there is a legal basis for publication in the Supplement to the Official Journal of the European Union
+[horizontal]
+Version:: 20230915-0
+Subset of:: xref:code-lists/country.adoc[`country`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `ALB`::: Albania
+  `ATF`::: French Southern and Antarctic Lands
+  `AUT`::: Austria
+  `BEL`::: Belgium
+  `BGR`::: Bulgaria
+  `BIH`::: Bosnia and Herzegovina
+  `BLM`::: Saint Barthélemy
+  `CHE`::: Switzerland
+  `CPT`::: Clipperton
+  `CYP`::: Cyprus
+  `CZE`::: Czechia
+  `DEU`::: Germany
+  `DNK`::: Denmark
+  `ESP`::: Spain
+  `EST`::: Estonia
+  `FIN`::: Finland
+  `FRA`::: France
+  `GEO`::: Georgia
+  `GRC`::: Greece
+  `HRV`::: Croatia
+  `HUN`::: Hungary
+  `IRL`::: Ireland
+  `ISL`::: Iceland
+  `ITA`::: Italy
+  `LIE`::: Liechtenstein
+  `LTU`::: Lithuania
+  `LUX`::: Luxembourg
+  `LVA`::: Latvia
+  `MDA`::: Moldova
+  `MKD`::: North Macedonia
+  `MLT`::: Malta
+  `MNE`::: Montenegro
+  `NCL`::: New Caledonia
+  `NLD`::: Netherlands
+  `NOR`::: Norway
+  `POL`::: Poland
+  `PRT`::: Portugal
+  `PYF`::: French Polynesia
+  `ROU`::: Romania
+  `SPM`::: Saint Pierre and Miquelon
+  `SRB`::: Serbia
+  `SVK`::: Slovakia
+  `SVN`::: Slovenia
+  `SWE`::: Sweden
+  `TUR`::: Türkiye
+  `UKR`::: Ukraine
+  `WLF`::: Wallis and Futuna

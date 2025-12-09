@@ -1,0 +1,14 @@
+= `indicator` codelist
+:navtitle: Codelists
+
+List of eforms allowed indicator values
+[horizontal]
+Version:: 1.0
+Tailored by:: xref:code-lists/accelerated-procedure.adoc[`accelerated-procedure`], xref:code-lists/cvd-scope.adoc[`cvd-scope`], xref:code-lists/eed-scope.adoc[`eed-scope`], xref:code-lists/esignature-submission.adoc[`esignature-submission`], xref:code-lists/fsr.adoc[`fsr`], xref:code-lists/ipi-scope.adoc[`ipi-scope`], xref:code-lists/nda.adoc[`nda`], xref:code-lists/required.adoc[`required`], xref:code-lists/subcontracting-allowed.adoc[`subcontracting-allowed`], xref:code-lists/tender-guarantee-required.adoc[`tender-guarantee-required`]
+Structure:: flat
+Used in:: xref:business-terms/BT-40.adoc[`BT-40`] Selection Criteria Second Stage Invite, xref:business-terms/BT-41.adoc[`BT-41`] Following Contract, xref:business-terms/BT-42.adoc[`BT-42`] Jury Decision Binding, xref:business-terms/BT-52.adoc[`BT-52`] Successive Reduction, xref:business-terms/BT-92.adoc[`BT-92`] Electronic Ordering, xref:business-terms/BT-93.adoc[`BT-93`] Electronic Payment, xref:business-terms/BT-94.adoc[`BT-94`] Recurrence, xref:business-terms/BT-115.adoc[`BT-115`] GPA Coverage, xref:business-terms/BT-119.adoc[`BT-119`] Dynamic Purchasing System Termination, xref:business-terms/BT-120.adoc[`BT-120`] No Negotiation Necessary, xref:business-terms/BT-193.adoc[`BT-193`] Tender Variant, xref:business-terms/BT-633.adoc[`BT-633`] Organisation Natural Person, xref:business-terms/BT-634.adoc[`BT-634`] Procurement Relaunch, xref:business-terms/BT-661.adoc[`BT-661`] Maximum Candidates Indicator, xref:business-terms/BT-718.adoc[`BT-718`] Change Procurement Documents, xref:business-terms/BT-726.adoc[`BT-726`] Suitable For SMEs, xref:business-terms/BT-730.adoc[`BT-730`] Subcontracting Value Known, xref:business-terms/BT-731.adoc[`BT-731`] Subcontracting Percentage Known, xref:business-terms/BT-746.adoc[`BT-746`] Winner Listed, xref:business-terms/BT-756.adoc[`BT-756`] PIN Competition Termination, xref:business-terms/BT-767.adoc[`BT-767`] Electronic Auction, xref:business-terms/BT-768.adoc[`BT-768`] Contract Framework Agreement, xref:business-terms/BT-796.adoc[`BT-796`] Review Request Withdrawn, xref:business-terms/BT-1711.adoc[`BT-1711`] Tender Ranked, xref:business-terms/OPP-020.adoc[`OPP-020`] Assets related contract extension indicator, xref:business-terms/OPP-050.adoc[`OPP-050`] Buyers Group Lead Indicator, xref:business-terms/OPP-051.adoc[`OPP-051`] Awarding CPB Buyer Indicator, xref:business-terms/OPP-052.adoc[`OPP-052`] Acquiring CPB Buyer Indicator, xref:business-terms/OPT-170.adoc[`OPT-170`] Tendering Party Leader 
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

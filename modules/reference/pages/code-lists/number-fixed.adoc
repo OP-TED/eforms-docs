@@ -1,0 +1,14 @@
+= `number-fixed` codelist
+:navtitle: Codelists
+
+This table provides the codes linked to fix values within the context of public procurement.
+[horizontal]
+Version:: 20250924-0
+URI:: http://publications.europa.eu/resource/dataset/number-fixed
+Structure:: flat
+Used in:: xref:business-terms/BT-5422.adoc[`BT-5422`] Award Criterion Number Fixed
+
+== Codes
+[horizontal]
+  `fix-tot`::: Fixed value (total)
+  `fix-unit`::: Fixed value (per unit)

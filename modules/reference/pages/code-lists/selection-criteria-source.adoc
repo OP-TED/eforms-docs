@@ -1,0 +1,15 @@
+= `selection-criteria-source` codelist
+:navtitle: Codelists
+
+Source for the selection criteria.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/document-used-in-public-procurement.adoc[`document-used-in-public-procurement`]
+Structure:: flat
+Used in:: xref:business-terms/BT-821.adoc[`BT-821`] Selection Criteria Source
+
+== Codes
+[horizontal]
+  `epo-acc-espd-request`::: European Single Procurement Document Request
+  `epo-notice`::: Notice
+  `epo-procurement-document`::: Procurement Document

@@ -1,0 +1,13 @@
+= `player-type` codelist
+:navtitle: Codelists
+
+Type of role/subrole player
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/OPT-301.adoc[`OPT-301`] Party (ID reference)
+
+== Codes
+[horizontal]
+  `organization`::: The player for the role/subrole is of type "Organisation".
+  `touchpoint`::: The player for the role/subrole is of type "Touchpoint".

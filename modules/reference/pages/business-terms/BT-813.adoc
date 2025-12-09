@@ -1,0 +1,9 @@
+= `BT-813`: Energy Consumption in kWh/year
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-813-LotResult`:: Energy Consumption in kWh/year

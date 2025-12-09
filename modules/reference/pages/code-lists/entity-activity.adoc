@@ -1,0 +1,22 @@
+= `entity-activity` codelist
+:navtitle: Codelists
+
+List of Main Activity codes allowed for a Contracting Entity
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/main-activity.adoc[`main-activity`]
+Structure:: flat
+Used in:: xref:business-terms/BT-610.adoc[`BT-610`] Activity Entity
+
+== Codes
+[horizontal]
+  `airport`::: Airport-related activities
+  `electricity`::: Electricity-related activities
+  `gas-heat`::: Production, transport or distribution of gas or heat
+  `gas-oil`::: Extraction of gas or oil
+  `port`::: Port-related activities
+  `post`::: Postal services
+  `rail`::: Railway services
+  `solid-fuel`::: Exploration or extraction of coal or other solid fuels
+  `urttb`::: Urban railway, tramway, trolleybus or bus services
+  `water`::: Water-related activities

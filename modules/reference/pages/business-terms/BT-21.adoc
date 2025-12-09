@@ -1,0 +1,16 @@
+= `BT-21`: Title
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-21-Lot`:: Title
+  `BT-21-Lot-Language`:: Title Language
+  `BT-21-LotsGroup`:: Title
+  `BT-21-LotsGroup-Language`:: Title Language
+  `BT-21-Part`:: Title
+  `BT-21-Part-Language`:: Title Language
+  `BT-21-Procedure`:: Title
+  `BT-21-Procedure-Language`:: Title Language

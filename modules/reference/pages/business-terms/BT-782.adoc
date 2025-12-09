@@ -1,0 +1,10 @@
+= `BT-782`: Tender Penalties
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-782-Tender`:: Tender Penalties
+  `BT-782-Tender-Currency`:: Tender Penalties Currency

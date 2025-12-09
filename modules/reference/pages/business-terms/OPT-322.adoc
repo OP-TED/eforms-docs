@@ -1,0 +1,9 @@
+= `OPT-322`: LotResult Technical Identifier
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-322-LotResult`:: LotResult Technical Identifier
+  `OPT-322-LotResult-Scheme`:: LotResult Technical Identifier Schemename

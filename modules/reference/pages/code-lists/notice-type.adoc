@@ -1,0 +1,34 @@
+= `notice-type` codelist
+:navtitle: Codelists
+
+This table provides a list of public procurement notices according to procurement legislation published once a project is approved.
+[horizontal]
+Version:: 20250924-0
+URI:: http://publications.europa.eu/resource/dataset/notice-type
+Tailored by:: xref:code-lists/bri.adoc[`bri`], xref:code-lists/competition.adoc[`competition`], xref:code-lists/completion.adoc[`completion`], xref:code-lists/consultation.adoc[`consultation`], xref:code-lists/cont-modif.adoc[`cont-modif`], xref:code-lists/dir-awa-pre.adoc[`dir-awa-pre`], xref:code-lists/planning.adoc[`planning`], xref:code-lists/result.adoc[`result`]
+Structure:: flat
+Used in:: xref:business-terms/BT-02.adoc[`BT-02`] Notice Type
+
+== Codes
+[horizontal]
+  `brin-ecs`::: European Company / European Cooperative Society notice
+  `brin-eeig`::: European Economic Interest Grouping notice
+  `can-desg`::: Design contest result notice
+  `can-modif`::: Contract modification notice
+  `can-social`::: Contract or concession award notice – light regime
+  `can-standard`::: Contract or concession award notice – standard regime
+  `can-tran`::: Contract award notice for public passenger transport services
+  `cn-desg`::: Design contest notice
+  `cn-social`::: Contract notice – light regime
+  `cn-standard`::: Contract or concession notice – standard regime
+  `compl`::: Contract completion notice
+  `pin-buyer`::: Notice of the publication of a prior information notice or a periodic information notice on a buyer profile
+  `pin-cfc-social`::: Prior information notice or a periodic indicative notice used as a call for competition – light regime
+  `pin-cfc-standard`::: Prior information notice or a periodic indicative notice used as a call for competition – standard regime
+  `pin-only`::: Prior information notice or a periodic indicative notice used only for information
+  `pin-rtl`::: Prior information notice or a periodic indicative notice used to shorten time limits for receipt of tenders
+  `pin-tran`::: Prior information notice for public passenger transport services
+  `pmc`::: Pre-market consultation notice
+  `qu-sy`::: Notice on the existence of a qualification system
+  `subco`::: Subcontracting notice
+  `veat`::: Voluntary ex-ante transparency notice

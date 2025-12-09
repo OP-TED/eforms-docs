@@ -1,0 +1,10 @@
+= `BT-688`: Overriding reasons relating to the public interest
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-688-LotResult`:: Overriding reasons relating to the public interest
+  `BT-688-LotResult-Language`:: Overriding reasons relating to the public interest Language

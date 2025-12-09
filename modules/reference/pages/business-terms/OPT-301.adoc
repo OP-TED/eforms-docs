@@ -1,0 +1,55 @@
+= `OPT-301`: Party (ID reference)
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-301-Lot-AddInfo`:: Additional Info Provider Technical Identifier Reference
+  `OPT-301-Lot-AddInfo-Scheme`:: Additional Info Provider Technical Identifier Reference Schemename
+  `OPT-301-Lot-DocProvider`:: Document Provider Technical Identifier Reference
+  `OPT-301-Lot-DocProvider-Scheme`:: Document Provider Technical Identifier Reference Schemename
+  `OPT-301-Lot-EmployLegis`:: Employment Legislation Organization Technical Identifier Reference
+  `OPT-301-Lot-EmployLegis-Scheme`:: Employment Legislation Organization Technical Identifier Reference Schemename
+  `OPT-301-Lot-EnvironLegis`:: Environmental Legislation Organization Technical Identifier Reference
+  `OPT-301-Lot-EnvironLegis-Scheme`:: Environmental Legislation Organization Technical Identifier Reference Schemename
+  `OPT-301-Lot-FiscalLegis`:: Fiscal Legislation Organization Technical Identifier Reference
+  `OPT-301-Lot-FiscalLegis-Scheme`:: Fiscal Legislation Organization Technical Identifier Reference Schemename
+  `OPT-301-Lot-Mediator`:: Mediator Technical Identifier Reference
+  `OPT-301-Lot-Mediator-Scheme`:: Mediator Technical Identifier Reference Schemename
+  `OPT-301-Lot-ReviewInfo`:: Review Info Provider Technical Identifier Reference
+  `OPT-301-Lot-ReviewInfo-Scheme`:: Review Info Provider Technical Identifier Reference Schemename
+  `OPT-301-Lot-ReviewOrg`:: Review Organization Technical Identifier Reference
+  `OPT-301-Lot-ReviewOrg-Scheme`:: Review Organization Technical Identifier Reference Schemename
+  `OPT-301-Lot-TenderEval`:: Tender Evaluator Technical Identifier Reference
+  `OPT-301-Lot-TenderEval-Scheme`:: Tender Evaluator Technical Identifier Reference Schemename
+  `OPT-301-Lot-TenderReceipt`:: Tender Recipient Technical Identifier Reference
+  `OPT-301-Lot-TenderReceipt-Scheme`:: Tender Recipient Technical Identifier Reference Schemename
+  `OPT-301-LotResult-Financing`:: Financing Party (ID reference)
+  `OPT-301-LotResult-Financing-Scheme`:: Financing Party (ID reference) Schemename
+  `OPT-301-LotResult-Paying`:: Payer Party (ID reference)
+  `OPT-301-LotResult-Paying-Scheme`:: Payer Party (ID reference) Schemename
+  `OPT-301-Part-AddInfo`:: Additional Info Provider Technical Identifier Reference
+  `OPT-301-Part-AddInfo-Scheme`:: Additional Info Provider Technical Identifier Reference Schemename
+  `OPT-301-Part-DocProvider`:: Document Provider Technical Identifier Reference
+  `OPT-301-Part-DocProvider-Scheme`:: Document Provider Technical Identifier Reference Schemename
+  `OPT-301-Part-EmployLegis`:: Employment Legislation Organization Technical Identifier Reference
+  `OPT-301-Part-EmployLegis-Scheme`:: Employment Legislation Organization Technical Identifier Reference Schemename
+  `OPT-301-Part-EnvironLegis`:: Environmental Legislation Organization Technical Identifier Reference
+  `OPT-301-Part-EnvironLegis-Scheme`:: Environmental Legislation Organization Technical Identifier Reference Schemename
+  `OPT-301-Part-FiscalLegis`:: Fiscal Legislation Organization Technical Identifier Reference
+  `OPT-301-Part-FiscalLegis-Scheme`:: Fiscal Legislation Organization Technical Identifier Reference Schemename
+  `OPT-301-Part-Mediator`:: Mediator Technical Identifier Reference
+  `OPT-301-Part-Mediator-Scheme`:: Mediator Technical Identifier Reference Schemename
+  `OPT-301-Part-ReviewInfo`:: Review Info Provider Technical Identifier Reference
+  `OPT-301-Part-ReviewInfo-Scheme`:: Review Info Provider Technical Identifier Reference Schemename
+  `OPT-301-Part-ReviewOrg`:: Review Organization Technical Identifier Reference
+  `OPT-301-Part-ReviewOrg-Scheme`:: Review Organization Technical Identifier Reference Schemename
+  `OPT-301-Part-TenderEval`:: Tender Evaluator Technical Identifier Reference
+  `OPT-301-Part-TenderEval-Scheme`:: Tender Evaluator Technical Identifier Reference Schemename
+  `OPT-301-Part-TenderReceipt`:: Tender Recipient Technical Identifier Reference
+  `OPT-301-Part-TenderReceipt-Scheme`:: Tender Recipient Technical Identifier Reference Schemename
+  `OPT-301-Tenderer-MainCont`:: Main Contractor ID Reference
+  `OPT-301-Tenderer-MainCont-Scheme`:: Main Contractor ID Reference Schemename
+  `OPT-301-Tenderer-SubCont`:: Subcontractor ID Reference
+  `OPT-301-Tenderer-SubCont-Scheme`:: Subcontractor ID Reference Schemename

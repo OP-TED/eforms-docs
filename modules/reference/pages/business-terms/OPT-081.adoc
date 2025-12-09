@@ -1,0 +1,9 @@
+= `OPT-081`: Savings Metric
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-081-LotResult`:: Savings Metric
+  `OPT-081-LotResult-List`:: Savings Metric Listname

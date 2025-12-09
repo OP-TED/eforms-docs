@@ -1,0 +1,10 @@
+= `BT-15`: Documents URL
+:navtitle: Business Terms
+
+[horizontal]
+Type:: URL
+
+== Fields
+[horizontal]
+  `BT-15-Lot`:: Documents URL
+  `BT-15-Part`:: Documents URL

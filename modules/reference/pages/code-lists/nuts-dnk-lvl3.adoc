@@ -1,0 +1,24 @@
+= `nuts-dnk-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Denmark
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `DK011`::: Byen København
+  `DK012`::: Københavns omegn
+  `DK013`::: Nordsjælland
+  `DK014`::: Bornholm
+  `DK021`::: Østsjælland
+  `DK022`::: Vest- og Sydsjælland
+  `DK031`::: Fyn
+  `DK032`::: Sydjylland
+  `DK041`::: Vestjylland
+  `DK042`::: Østjylland
+  `DK050`::: Nordjylland
+  `DKZZZ`::: Extra-Regio NUTS 3

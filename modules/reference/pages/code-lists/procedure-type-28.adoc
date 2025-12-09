@@ -1,0 +1,15 @@
+= `procedure-type-28` codelist
+:navtitle: Codelists
+
+Allowed procedure type for notice subtype 28
+[horizontal]
+Version:: 20220928-0
+Subset of:: xref:code-lists/procurement-procedure-type.adoc[`procurement-procedure-type`]
+Structure:: flat
+Used in:: xref:business-terms/BT-105.adoc[`BT-105`] Procedure Type
+
+== Codes
+[horizontal]
+  `neg-wo-call`::: Negotiated without prior call for competition
+  `oth-mult`::: Other multiple stage procedure
+  `oth-single`::: Other single stage procedure

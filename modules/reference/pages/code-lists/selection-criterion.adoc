@@ -1,0 +1,43 @@
+= `selection-criterion` codelist
+:navtitle: Codelists
+
+Requirements for participation in the procurement process, focusing on tenderers suitability, economic and financial standing, and technical and professional ability, and ensuring tender relevance and proportionality to the contract
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-809.adoc[`BT-809`] Selection Criteria
+
+== Codes
+[horizontal]
+  `slc-abil-facil-res`::: Study, technical and research facilities
+  `slc-abil-facil-tools`::: Tools, plant, or technical equipment
+  `slc-abil-mgmt-env`::: Environmental management measures
+  `slc-abil-mgmt-qual`::: Measures for ensuring quality
+  `slc-abil-mgmt-supply`::: Supply chain management
+  `slc-abil-qual-inst`::: Certificates by quality control institutes
+  `slc-abil-qual-smp-w-autent`::: Samples, descriptions, or photographs with certification of authenticity for supply contracts
+  `slc-abil-qual-smp-wo-autent`::: Samples, descriptions, or photographs without certification of authenticity
+  `slc-abil-ref-services`::: References on specified services
+  `slc-abil-ref-supply`::: References on specified deliveries
+  `slc-abil-ref-work`::: References on specified works
+  `slc-abil-staff-qual`::: Relevant educational and professional qualifications
+  `slc-abil-staff-tech-ctrl`::: Technicians or technical bodies for quality control
+  `slc-abil-staff-tech-work`::: Technicians or technical bodies to carry out the work
+  `slc-abil-staff-yrly-avg-mp`::: Average yearly manpower
+  `slc-abil-staff-yrly-no-mgmt`::: Number of managerial staff
+  `slc-abil-subc`::: Subcontracting proportion
+  `slc-sche-env-cert-indep`::: Certificates by independent bodies about environmental management systems or standards
+  `slc-sche-qu-cert-indep`::: Certificates by independent bodies about quality assurance standards
+  `slc-sec-inf`::: Security of information
+  `slc-sec-proc`::: Security to process, store and transmit classified information
+  `slc-sec-supply`::: Security of supply
+  `slc-stand-ins`::: Professional risk indemnity insurance
+  `slc-stand-other`::: Other economic or financial requirements
+  `slc-stand-ratio`::: Financial ratio
+  `slc-stand-to-avg`::: Average yearly turnover
+  `slc-stand-to-gen`::: General yearly turnover
+  `slc-stand-to-spec`::: Specific yearly turnover
+  `slc-stand-to-spec-avg`::: Specific average yearly turnover
+  `slc-suit-auth-mbrshp`::: Authorisation or membership of a particular organisation needed for service contracts
+  `slc-suit-reg-prof`::: Enrolment in a relevant professional register
+  `slc-suit-reg-trade`::: Enrolment in a trade register

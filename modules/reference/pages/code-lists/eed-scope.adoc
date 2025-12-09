@@ -1,0 +1,14 @@
+= `eed-scope` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the procurement falls within the scope of Directive (EU) 2023/1791 of the European Parliament and of the Council of 13 September 2023 on energy efficiency and amending Regulation 2023/955 (EED).
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+Used in:: xref:business-terms/BT-810.adoc[`BT-810`] EED Applicable
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

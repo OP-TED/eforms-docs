@@ -1,0 +1,15 @@
+= `international-procurement-instrument-application` codelist
+:navtitle: Codelists
+
+Specific International Procurement Instrument Application
+[horizontal]
+Version:: 20241211-0
+URI:: http://publications.europa.eu/resource/dataset/international-procurement-instrument-application
+Structure:: flat
+Used in:: xref:business-terms/BT-687.adoc[`BT-687`] Exception to the application of the IPI Measure
+
+== Codes
+[horizontal]
+  `no-exc`::: No exception
+  `one-tend`::: Exception only one tender
+  `pub-int`::: Exception public interest

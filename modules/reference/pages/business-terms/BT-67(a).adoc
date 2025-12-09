@@ -1,0 +1,10 @@
+= `BT-67(a)`: The criteria (or criterion) of the given type are (is) used, unused, or (in case of prior information notice used as a call for competition or to reduce time limits) the use is not yet known.
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-67(a)-Procedure`:: Exclusion Ground
+  `BT-67(a)-Procedure-List`:: Exclusion Ground Listname

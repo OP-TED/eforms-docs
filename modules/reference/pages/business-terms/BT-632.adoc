@@ -1,0 +1,10 @@
+= `BT-632`: Tool Name
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-632-Lot`:: Tool Name
+  `BT-632-Part`:: Tool Name

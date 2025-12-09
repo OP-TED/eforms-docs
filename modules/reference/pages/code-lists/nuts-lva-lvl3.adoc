@@ -1,0 +1,18 @@
+= `nuts-lva-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Latvia
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `LV005`::: Latgale
+  `LV009`::: Zemgale
+  `LV00A`::: Rīga
+  `LV00B`::: Kurzeme
+  `LV00C`::: Vidzeme
+  `LVZZZ`::: Extra-Regio NUTS 3

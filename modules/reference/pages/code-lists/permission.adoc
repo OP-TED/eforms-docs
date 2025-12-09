@@ -1,0 +1,16 @@
+= `permission` codelist
+:navtitle: Codelists
+
+This table provides the codes linked to the different values of permission and/or obligation.
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/permission
+Tailored by:: xref:code-lists/ecatalog-submission.adoc[`ecatalog-submission`], xref:code-lists/einvoicing.adoc[`einvoicing`], xref:code-lists/esubmission.adoc[`esubmission`]
+Structure:: flat
+Used in:: xref:business-terms/BT-63.adoc[`BT-63`] Variants, xref:business-terms/BT-769.adoc[`BT-769`] Multiple Tenders
+
+== Codes
+[horizontal]
+  `allowed`::: Allowed
+  `not-allowed`::: Not allowed
+  `required`::: Required

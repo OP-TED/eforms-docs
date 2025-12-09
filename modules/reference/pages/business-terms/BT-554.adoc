@@ -1,0 +1,10 @@
+= `BT-554`: Subcontracting Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-554-Tender`:: Subcontracting Description
+  `BT-554-Tender-Language`:: Subcontracting Description Language

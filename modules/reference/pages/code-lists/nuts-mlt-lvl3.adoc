@@ -1,0 +1,15 @@
+= `nuts-mlt-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Malta
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `MT001`::: Malta
+  `MT002`::: Gozo and Comino / Għawdex u Kemmuna
+  `MTZZZ`::: Extra-Regio NUTS 3

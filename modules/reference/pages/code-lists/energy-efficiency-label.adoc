@@ -1,0 +1,22 @@
+= `energy-efficiency-label` codelist
+:navtitle: Codelists
+
+Labels can be provided for products covered by Energy Labelling (by a delegated act adopted under Regulation (EU) 2017/1369, Directive 2010/30/EU or by a related Commission implementing act) referred to in the Energy Efficiency Directive.
+[horizontal]
+Version:: 20241211-0
+URI:: http://publications.europa.eu/resource/dataset/energy-efficiency-label
+Structure:: flat
+Used in:: xref:business-terms/BT-812.adoc[`BT-812`] Energy Efficiency Label
+
+== Codes
+[horizontal]
+  `ENERA`::: A
+  `ENERA1`::: A+
+  `ENERA2`::: A++
+  `ENERA3`::: A+++
+  `ENERB`::: B
+  `ENERC`::: C
+  `ENERD`::: D
+  `ENERE`::: E
+  `ENERF`::: F
+  `ENERG`::: G

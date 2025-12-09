@@ -1,0 +1,9 @@
+= `BT-815`: Energy Efficiency Quantity
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-815-LotResult`:: Energy Efficiency Quantity

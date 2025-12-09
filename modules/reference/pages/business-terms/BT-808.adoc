@@ -1,0 +1,10 @@
+= `BT-808`: Review Applicant Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-808-Review`:: Review Applicant Identifier
+  `BT-808-Review-Scheme`:: Review Applicant Identifier Schemename

@@ -1,0 +1,23 @@
+= `nuts-ltu-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Lithuania
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `LT011`::: Vilniaus apskritis
+  `LT021`::: Alytaus apskritis
+  `LT022`::: Kauno apskritis
+  `LT023`::: Klaipėdos apskritis
+  `LT024`::: Marijampolės apskritis
+  `LT025`::: Panevėžio apskritis
+  `LT026`::: Šiaulių apskritis
+  `LT027`::: Tauragės apskritis
+  `LT028`::: Telšių apskritis
+  `LT029`::: Utenos apskritis
+  `LTZZZ`::: Extra-Regio NUTS 3

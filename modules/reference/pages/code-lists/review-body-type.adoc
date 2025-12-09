@@ -1,0 +1,19 @@
+= `review-body-type` codelist
+:navtitle: Codelists
+
+This table covers the list of organisations providing the review of a given procedure.
+[horizontal]
+Version:: 20240612-0
+URI:: http://publications.europa.eu/resource/dataset/review-body-type
+Structure:: flat
+Used in:: xref:business-terms/BT-799.adoc[`BT-799`] Review Body Type
+
+== Codes
+[horizontal]
+  `1-inst`::: First instance
+  `2-inst`::: Second instance
+  `3-inst`::: Third instance
+  `4-inst`::: Fourth instance
+  `5-inst`::: Fifth instance
+  `buyer`::: Buyer
+  `other`::: Other

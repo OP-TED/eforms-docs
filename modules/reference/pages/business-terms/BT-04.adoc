@@ -1,0 +1,9 @@
+= `BT-04`: Procedure Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-04-notice`:: Procedure Identifier

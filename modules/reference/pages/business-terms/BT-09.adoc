@@ -1,0 +1,11 @@
+= `BT-09`: Cross Border Law
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-09(a)-Procedure`:: Cross Border Law
+  `BT-09(b)-Procedure`:: Cross Border Law Description
+  `BT-09(b)-Procedure-Language`:: Cross Border Law Description Language
