@@ -9,7 +9,7 @@ IMPORTANT: You are currently reading the documentation that was published for eF
 The latest version of eForms SDK is xref:{page-component-latest-version}@ROOT:index.adoc[*{page-component-latest-version}*]. 
 endif::[]
 
-NOTE: The documentation is only available for xref:_@eforms-common::active-versions:index.adoc[active versions] of the eForms SDK. For the documentation on older SDK versions, you can visit the https://wayback.archive-it.org/12090/*/https:/docs.ted.europa.eu/[archived versions] of this website on the EU web archive.
+NOTE: The documentation is only available for xref:eforms-common::active-versions/index.adoc[active versions] of the eForms SDK. For the documentation on older SDK versions, you can visit the https://wayback.archive-it.org/12090/*/https:/docs.ted.europa.eu/[archived versions] of this website on the EU web archive.
 
 The following topics are included in this version of the eForms Documentation:
 
