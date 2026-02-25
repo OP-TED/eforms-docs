@@ -62,7 +62,12 @@ IMPORTANT: The table below is updated manually and may not be always accurate. T
 |1.13
 |31 March 2026
 |31 March 2027
+
+|1.14
+|2 December 2026
+|31 March 2027
 |===
+
 
 NOTE: New SDK versions may become available earlier in the Preview environment. Please consult the TED API.
  
