@@ -1,29 +1,62 @@
 = eForms SDK 2.0.0
 :page-aliases: home:eforms:sdk2/index.adoc
 
-WARNING: This is a pre-release version of this document. 
+WARNING: This is a pre-release version of this document.
  The eForms SDK 2.0.0 is still under development.
  This notice will be removed when the document is finalized.
 
+== Objective
+
+The goal of SDK 2 is to introduce a new version of EFX (the eForms Expression Language) that:
+
+* enhances the template definition vocabulary to allow more accurate and user-friendly notice visualisation that is easier to maintain and share,
+* improves the ability of the language to express business rules with completeness and simplicity, enabling porting of validation rules to engines other than Schematron and supporting live validation on different target platforms,
+* enhances the language in ways that improve its expressiveness and readability, making it easier to write, read, maintain and interpret.
+
 == What's new
 
-The main goal of version 2.0.0 of the eForms SDK is to update the EFX grammar. We have tried to focus exclusively on the EFX grammar and avoid any other changes in order to minimise the impact on existing applications. Here is an overview of the changes:
+EFX-2 has two distinct language flavors -- *EFX Templates* and *EFX Rules* -- both built on the shared *EFX Expressions* syntax which they extend for their specific applications.
 
-* Updated EFX grammar
-* _No other changes currently foreseen_
+=== EFX Expressions
 
-=== EFX 2
+The shared expression syntax has been enhanced with:
 
-EFX 1 had a number of limitations that we are trying to address in EFX 2. More specifically, 
+* *`WITH \... COMPUTE` syntax*: Expressions can now be written as `WITH context COMPUTE expression`, improving readability over the EFX-1 syntax.
+* *Improved type safety*: The grammar enforces a stricter distinction between scalar and sequence types. Ambiguities in late-binding have been removed, and variables and parameters can now be declared with sequence types.
+* *Working with sequences*: Sequence literal syntax now uses `[...]` instead of `(...)`. New conditions allow testing sequences directly (`is empty`, `has duplicates`, `is unique`). Iterations support a `DISTINCT` modifier and can return sequences for concatenation.
+* *New built-in functions* for working with numbers, strings, dates/times/durations, sequences, and type conversions.
+* *Field properties*: Access to privacy-related properties of fields withheld from publication, linked field properties, and raw value access.
+* *Node presence testing*: Presence conditions can now be applied to node references in addition to field references.
+* The `measure` type has been renamed to `duration` to free the keyword for other types of measure. Duration functions have been renamed accordingly.
 
-* we have enriched the syntax for creating EFX Templates in order to overcome current limitations in notice visualisation.
-* we have added a number of new functions that give us more control over formatting, text manipulation and internationalisation.
-* we have introduced aliases for Fields and Nodes, in order to make EFX Expressions more readable.   
+=== EFX Templates
 
-In short EFX 2 allows us to improve notice visualisation while making EFX expressions simpler to read and write.
+The template language has been enhanced in three areas:
 
-For details on what has changed on EFX 2, see the dedicate page on xref:sdk2/efx2.adoc[*"What's new in EFX 2"*].
+* *Template syntax and logic*: Template lines now use `WITH context DISPLAY template;` syntax with optional context and conditional rendering (`WHEN`/`OTHERWISE`). Navigation and Summary sections provide better structure for view templates.
+* *Reuse and maintainability*: Callable templates, user-defined functions, and dictionaries reduce duplication and improve performance.
+* *Richer output*: Hyperlink blocks, character references, escape sequences, and locale-aware formatting functions.
+
+=== EFX Rules
+
+EFX-2 introduces a complete rules language, allowing business rules to be authored directly in EFX:
+
+* *Rules file structure*: Rules are organised into validation stages, with stage-level variables and include directives for composition.
+* *Rule syntax*: Rule-sets group multiple rules sharing the same context. Rules use `ASSERT` (must be true to pass) or `REPORT` (triggers when true), with conditional branching, severity levels, notice type targeting, and scope annotations.
+* *Dynamic rules*: API endpoint declarations and dynamic functions allow validation to consider information retrieved from other notices through a specialised API.
+
+For details on what has changed in EFX 2, see the dedicated page on xref:sdk2/efx2.adoc[*"What's new in EFX 2"*].
+
+=== SDK Metadata
+
+SDK 2 focuses its breaking changes exclusively on the EFX language. The metadata file formats and directory layout remain the same as SDK 1, so that applications can migrate to SDK 2 without having to rewrite their metadata import logic. All EFX expressions embedded in SDK metadata use EFX-2 syntax.
+
+SDK 2.0.0 will be released alongside SDK 1.15.0 with identical eForms metadata content, differing only in EFX expression syntax.
+
+==== Forward-compatible metadata
+
+SDK 2 also introduces *forward-compatible* metadata files in `fwd/` subfolders. These new formats preview the structure planned for SDK 3 and are fully supported. Both backward-compatible and forward-compatible formats describe the same eForms metadata -- a notice produced using either format is identical. This allows applications to gradually adopt the new formats during the lifetime of SDK 2. When SDK 3 is released, the backward-compatible files will be removed and replaced by the forward-compatible versions.
 
 == Migration
 
-_A complete migration guide will be provided._
+_A complete migration guide will be provided with SDK 2.0.0-rc.1._

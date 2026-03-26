@@ -2,37 +2,48 @@
 :page-aliases: eforms:ROOT:roadmap.adoc, home:eforms:roadmap/index.adoc
 
 
-SDK versions are released several times per year to improve the provided metadata and implement regulatory changes. Releases are announced in the link:https://github.com/OP-TED/eForms-SDK/discussions/categories/announcements[eForms developer forum on GitHub], where you can watch for updates or follow the discussions. 
+SDK versions are released several times per year to improve the provided metadata and implement regulatory changes. Releases are announced in the link:https://github.com/OP-TED/eForms-SDK/discussions/categories/announcements[eForms developer forum on GitHub], where you can watch for updates or follow the discussions.
 
-This page provides an overview of the upcoming releases and the changes that are planned for them. As it is updated manually it may not always be up to date. The last revision to this page was made in March 2024.
+This page provides an overview of the upcoming releases and the changes that are planned for them. The last revision to this page was made in March 2026.
 
-== eForms SDK 1.x.x
+== eForms SDK 1.15.0
 
-Since the release of the eForms SDK 1.0.0 in August 2022, we have continued to release updates to the SDK that incrementally improve the eForms metadata that is included in it. These updates are all backwards compatible with the SDK 1.0.0 and therefore they can be used by applications that have already been adapted to the SDK 1.0.0. 
-
-// === SDK 1.12.0
-// SDK 1.12.0, which will be released shortly after SDK 1.11.0, will not include any metadata updates but **will extend the conceptual model** by introducing **Business Entities**  in `fields.json`. 
-
-// This new concept will allow us to better link notice type definitions with the conceptual model. More specifically it allows us to link instances of repeatable nodes and fields with instance identifiers in cases where it was not previously possible. For example, applications will be able to provide better user experiences when filling-in change notices, as well as in other cross-referencing use cases of `id-ref` fields.
-
-// The introduction of this new concept will not break backwards compatibility. We wil provide more details on the concept of Business Entities in the March 2024 eSender meeting. Appropriate documentation for the new feature will also be made available together with the release of SDK 1.12.0.
-
-// === Other releases during 2024
-In 2024, there will be at least two SDK releases to satisfy the changes and deadlines required by the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[December 2023 amendment to the eForms implementing regulation]. 
-
-SDK release 1.12 will include: the technical changes for link:https://op.europa.eu/documents/d/ted-eforms/2024-03-20_technical_issues-esender_workshop[business entities], the link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_001_fsr.md[additional fields for FSR] (Foreign Subsidies Regulation), the changes to link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_003_esc.md[exclusion grounds and selection grounds] (as foreseen in the link:https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2884[December 2023 amendment] to the eForms regulation), as well as some incremental updates and improvements. SDK 1.12 should be released no later than the end of June 2024. 
-
-The following SDK release 1.13 will be a very significant release including: the link:https://code.europa.eu/eproc/eforms/docs/-/blob/main/guides/gde_002_ipi.md[additional fields for IPI] (International Procurement Instrument) and for EED (Energy Efficiency Directive) and the six new voluntary forms E1 to E6. SDK 1.13 should be released no later than the end of October 2024. 
+SDK 1.15.0 is currently in development and will be released together with SDK 2.0.0. In terms of eForms metadata content, SDK 1.15.0 and SDK 2.0.0 will be identical. SDK 1.15.0 will be the last version of the SDK 1.x series; future releases will be made only on SDK 2.
 
 == eForms SDK 2.0.0
 
-In parallel, we have been working on the next major version of the eForms SDK. We initially tried to complete and release SDK 2.0.0 by June 2023 to give enough time to eSenders to adopt it before going live with eForms on October 2023. However we realised that the timing was not right for most eSenders and decided to freeze further development until after the full roll-out of eForms across the eSender network with SDK 1. We intend to restart the effort on completing the work for SDK 2.0.0 in the second half of 2024. We are aiming to release SDK 2.0.0 by the end of 2024 or early 2025. 
+=== Overview
 
-The new version aims at improving the grammar of EFX to make it more flexible and easier to read and write. Its main goal is to improve the expressiveness of EFX Templates so that we can overcome current limitations in notice visualisation. We are also adding new functions that will allow us to better manipulate and format notice data, as well as improve our current internationalisation capabilities. 
+The goal of SDK 2 is to introduce a new version of EFX (the eForms Expression Language) that enhances the template definition vocabulary for better notice visualisation, improves the ability to express business rules with completeness and simplicity, and makes the language easier to write, read, maintain and interpret.
 
-For more details on what is coming with SDK 2.0.0, you can consult the xref:sdk2/index.adoc[SDK 2 preliminary documentation] that we have made available. You can find more xref:sdk2/efx2.adoc[details on EFX 2 here]. 
+For details on what is new in SDK 2.0.0, consult the xref:sdk2/index.adoc[SDK 2 documentation]. You can find more xref:sdk2/efx2.adoc[details on EFX 2 here].
 
-NOTE: Please note that the SDK 2 documentation is still a work in progress and that it will be updated as we make progress on the development of SDK 2.0.0. 
+=== Release timeline
+
+==== Alpha (current)
+
+* *SDK 2.0.0-alpha.2* was released in March 2026. This release includes the complete EFX-2 grammar with all three language flavors (EFX Expressions, EFX Templates, and EFX Rules), as well as updated SDK metadata.
+
+==== Beta (target: April-June 2026)
+
+* *SDK 2.0.0-beta.1* is targeted for release before the end of April 2026. Beta.1 will remove some legacy EFX-1 syntax in order to simplify parsing. After beta.1, the grammar is not expected to change significantly. Any changes after beta.1 are not expected to break compatibility with beta.1.
+
+==== RC (target: June-August 2026)
+
+* During May and June, the SDK will be reviewed together with the teams developing the OJS applications (eNotices2, TED Central Validation Service, TED API, TED Viewer, TED Monitor, and TED website) to finalise the SDK and related libraries (eforms-core-java, efx-toolkit-java) and sample applications.
+* *SDK 2.0.0-rc.1* is targeted for release around the end of June or early July 2026.
+* During the RC period, development of OJS applications using SDK 2 will be finalised and tested. The final version of the SDK will be released only after the applications have been fully developed and tested.
+
+==== Final release (target: September 2026)
+
+* *SDK 2.0.0* is targeted for release around September 2026, subject to how developments evolve.
+* SDK 1.15.0 will be released at the same time. Both versions will contain identical eForms metadata content (fields, nodes, notice types, codelists, schemas), differing only in EFX expression syntax (EFX-1 in SDK 1.15, EFX-2 in SDK 2.0). SDK 1.15.0 will be the last SDK 1.x release.
+
+=== Feedback
+
+During the beta and RC periods, we welcome feedback from the eSender community. Please use the link:https://github.com/OP-TED/eForms-SDK/discussions[GitHub Discussions in the SDK repository] to share your feedback.
+
+NOTE: The SDK 2 documentation is a work in progress and will be updated as development progresses.
 
 [discrete]
 = Relevant links
