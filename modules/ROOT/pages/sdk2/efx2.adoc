@@ -1,149 +1,438 @@
 = What's new in EFX 2
 :page-aliases: home:eforms:sdk2/efx2.adoc
 
-WARNING: This is a pre-release version of this document. 
+WARNING: This is a pre-release version of this document.
  The eForms SDK 2.0.0 is still under development.
  This notice will be removed when the document is finalized.
 
-EFX 2 is the version of EFX released with SDK 2.0.0. EFX 2 focuses mostly on adding features and flexibility to EFX Templates. However, it also includes several improvements for EFX Expressions.
+EFX-2 is the version of EFX released with SDK 2.0.0. EFX-2 has two distinct language flavors -- *EFX Templates* and *EFX Rules* -- both built on the shared *EFX Expressions* syntax which they extend for their specific applications.
 
-== Backwards compatibility
+== Backward compatibility
 
-EFX 2 contains new features, that are not supported by EFX 1. Although, most EFX 1 expressions are still valid EFX 2 expressions, some EFX 1 expressions need to be slightly modified before they can be parsed by an EFX 2 parser. More specifically, EFX 1 expressions that use *codelist identifiers* need to be modified. See the section "Breaking change in codelist identifiers" for more details.
+EFX-2 contains new features that are not supported by EFX-1. Most EFX-1 expressions are still valid EFX-2 expressions, but several changes require modifications:
+
+* Sequence literals now use `[...]` instead of `(...)`.
+* Codelist identifiers now use `[...codelistName]` instead of `(codelistName)`. The `#codelistName` notation is still supported but will be removed by beta.1.
+* The `measure` type has been renamed to `duration`, and related functions have been renamed accordingly (`add-measure` -> `add-duration`, `subtract-measure` -> `subtract-duration`).
+* XPath axis specifiers have been removed.
+* Cross-notice references (`notice(...)`) have been removed, replaced by dynamic API functions in EFX Rules.
+* The EFX-1 expression syntax (`{context} ${expression}`) is still supported but will likely be removed by beta.1 in favour of `WITH context COMPUTE expression`.
+* The EFX-1 template line syntax (`{context} template`) is still supported but will likely be removed by beta.1 in favour of `WITH context DISPLAY template;`.
+
+== EFX Expressions
+
+EFX Expressions are the shared building blocks used in both EFX Templates and EFX Rules.
+
+=== `WITH \... COMPUTE` syntax
+
+Expressions can now be written as `WITH context COMPUTE expression`, improving readability over the EFX-1 `{context} ${expression}` syntax.
+
+[source, efx]
+----
+// EFX-1 style:
+{BT-23-Procedure} ${BT-23-Procedure in #main-activity}
+
+// EFX-2 style:
+WITH BT-23-Procedure COMPUTE BT-23-Procedure in [...main-activity]
+----
+
+=== Improved type safety
+
+The grammar has been reorganised to enforce a stricter distinction between scalar and sequence types. Ambiguities in late-binding have been removed. Variables and parameters can now be declared with sequence types using the `type*` notation:
+
+[source, efx]
+----
+// Sequence parameter declaration
+text*:$codes
+
+// Sequence variable declaration
+text*:$lot-ids = [for text:$id in BT-137-Lot return $id]
+----
+
+=== Working with sequences
+
+Sequence literal syntax now uses `[...]` instead of `(...)` to remove ambiguity with parenthesised expressions:
+
+[source, efx]
+----
+// EFX-1 style:
+BT-23-Procedure in ('works', 'supplies', 'services')
+
+// EFX-2 style:
+BT-23-Procedure in ['works', 'supplies', 'services']
+----
+
+The codelist expansion operator has been changed to `[...codelistName]` for consistency. The `#codelistName` notation is still supported but will be removed by beta.1.
+
+[source, efx]
+----
+// New codelist expansion:
+BT-23-Procedure in [...main-activity]
+
+// Legacy notation (to be removed):
+BT-23-Procedure in #main-activity
+----
+
+New conditions allow testing sequences directly:
+
+* `sequence is [not] empty` -- tests whether a sequence has any elements.
+* `sequence has [no] duplicates` -- tests whether all elements in a sequence are distinct.
+* `expression is [not] unique in sequence` -- tests whether a value appears exactly once in a sequence.
+
+Iterations now support a `DISTINCT` modifier to deduplicate results, and can return sequences to concatenate results:
+
+[source, efx]
+----
+// Deduplicated iteration results:
+for text:$code in BT-263-Procedure return distinct $code
+
+// Returning sequences from iterations (concatenation):
+// Each lot contains multiple additional classifications (repeatable node),
+// so accessing BT-263-Lot returns a sequence that gets concatenated.
+for context:$lot in ND-Lot return $lot::BT-263-Lot
+----
+
+=== Node presence testing
+
+Presence conditions (`is present` / `is not present`) can now be applied to node references in addition to field references:
+
+[source, efx]
+----
+ND-Lot is present
+ND-Part is not present
+----
+
+=== Field context indexing
+
+Field contexts now support indexers, allowing expressions to select a specific occurrence of a repeatable field context by position:
+
+[source, efx]
+----
+// Access the second lot's procurement scope:
+ND-Lot[2]::BT-262-Lot
+----
+
+=== Field properties
+
+*Privacy controls:* Expressions can now access privacy-related properties of fields withheld from publication:
+
+* `field:privacyCode` -- the privacy code of the field.
+* `field:publicationDate` -- the publication date for a withheld field.
+* `field:justificationCode` -- the justification code for withholding.
+* `field:justificationDescription` -- the justification description.
+* `field:wasWithheld`, `field:isWithheld`, `field:isWithholdable`, `field:isDisclosed`, `field:isMasked` -- boolean properties indicating privacy status.
+
+*Linked field properties:* Field references can carry a `:property` suffix to access values of linked fields without explicitly referencing them by name, improving readability:
+
+[source, efx]
+----
+// Access the publication date of BT-105-Procedure without referencing BT-197 directly:
+BT-105-Procedure:publicationDate
+
+// Access the justification code:
+BT-105-Procedure:justificationCode
+----
+
+*Raw value access:* `field:rawValue` provides access to the raw string value of a field, bypassing type-specific parsing:
+
+[source, efx]
+----
+BT-05(a)-notice:rawValue
+----
+
+=== New built-in functions
+
+==== Working with numbers
+
+`min`, `max`, `average` -- aggregate functions on numeric sequences. +
+`absolute` -- absolute value. +
+`round`, `round-down`, `round-up` -- rounding functions.
+
+==== Working with strings
+
+`substring-before`, `substring-after` -- split strings around a delimiter. +
+`normalize-space` -- collapse and trim whitespace. +
+`trim`, `trim-left`, `trim-right` -- whitespace trimming. +
+`pad-left`, `pad-right` -- string padding. +
+`repeat` -- repeat a string N times. +
+`replace`, `replace-regex` -- string replacement (literal and regex). +
+`split` -- split a string into a sequence by delimiter. +
+`url-encode` -- URL encoding. +
+`capitalize-first` -- capitalize the first character. +
+`index-of-substring` -- find the position of a substring within a string. +
+`empty` -- test whether a string is empty.
+
+==== Working with dates, times and durations
+
+`year`, `month`, `day` -- extract components from a date. +
+`hours`, `minutes`, `seconds` -- extract components from a time. +
+`years`, `months`, `days` -- extract components from a duration. +
+`current-date`, `current-time` -- return the current date or time.
+
+==== Working with sequences
+
+`sort`, `reverse` -- sequence ordering. +
+`subsequence` -- extract a sub-range from a sequence. +
+`index-of` -- find the position of an element in a sequence. +
+`get-duplicates` -- extract duplicate values from a sequence. +
+`count-duplicates` -- count the number of duplicate values.
+
+==== Type conversions
+
+`text(boolean)`, `text(date)`, `text(time)`, `text(duration)` -- convert values to string. +
+`number(boolean)` -- convert boolean to number. +
+`indicator(number)` -- convert number to boolean.
+
+=== `measure` renamed to `duration`
+
+The `measure` type in EFX-1 was only used for durations, which are a special case because they carry the unit in their value (e.g. `P10D`) to allow calculations. Renaming to `duration` frees the `measure` keyword for other types of measure that can be treated as simple numbers. Related function names have also been updated: `add-measure` -> `add-duration`, `subtract-measure` -> `subtract-duration`.
+
+=== XPath axes removed
+
+Axis specifiers (`preceding`, `following`, `ancestor`, `descendant`, etc.) were hard to translate to non-XPath target languages and did not add real value to the expressivity of EFX. They have been removed.
 
 
 == EFX Templates
 
-=== Template variables
+The template language has been enhanced in three areas: more expressive template logic, better reuse and maintainability, and richer output capabilities.
 
-One of the difficulties we had with EFX 1 was the complexity of expressions required to navigate complex relationships in the XML files. The main cause of this difficulty was the fact that the context of a template line in EFX 1 was unique to each line and there was no way to share context between template lines. As a result it was impossible to navigate complex relationships in nested template lines without writing unnecessarily complex expressions.
+=== Template syntax and logic
 
-To solve this issue, EFX 2 introduces template variables. Template variables are declared within the context declaration block of a template line, and are visible within the template block headed by that line. A "template block" is a group of nested template lines. 
+==== EFX-2 template syntax
 
-The new syntax for context declaration block is as follows:
-
-[source]
-----
-// For example: {context:$ctx = fieldAlias1, number:$number = numericFieldAlias2}
-contextDeclarationBlock: StartExpression contextDeclaration (Comma templateVariableList)? EndExpression;
-
-contextDeclaration: contextVariableInitializer | fieldContext | nodeContext;
-
-templateVariableList: templateVariableInitializer (Comma templateVariableInitializer)*;
-
-// For example: context:$ctx = fieldAlias
-contextVariableInitializer: ContextTypeCast Variable Assignment fieldContext;
-
-// For example: text:$variable = concat(fieldAlias1, fieldAlias2)
-templateVariableInitializer
-    : TextTypeCast Variable Assignment stringExpression
-    | BooleanTypeCast Variable Assignment booleanExpression
-    | NumericTypeCast Variable Assignment numericExpression
-    | DateTypeCast Variable Assignment dateExpression
-    | TimeTypeCast Variable Assignment timeExpression
-    | DurationTypeCast Variable Assignment durationExpression
-    ;
-----
-
-==== Impact of change
-
-NOTE: This change only impacts implementers that have created custom EFX parsers with EFX Template parsing functionality. Custom parsers that are not used for EFX Template parsing are not impacted by this change. EFX Template features are used only for generating visualisation templates for eForms notices.
-
-If you have developed a custom EFX Template parser, then you will need to update your parser to support the new syntax. The intervention that wil be required involves tracking of the scope of template variables. Your parser already tracks template line nesting. As the scope of template variables is limited to template blocks, you will be able to track the variable scope together with template line nesting. 
-
-If you have  developed a custom EFX Template parser, you probably also have developed your own notice visualisation application that uses your translated templates. This application will also need to be updated to implement the new capabilities introduced by template variables. Your application already has a notion of template "fragments" that correspond to the template blocks defined in the source EFX template file. The intervention required for your visualisation application, involves enabling your existing template fragments to take and use parameters. Template variables are evaluated in the template line (fragment) where they are declared, and are passed as parameters to nested template fragments.
-
-
-== EFX Expressions
-
-=== Field and Node aliases
-
-One of the issues of EFX 1 is that it adopted the existing Field and Node identifiers for referencing Fields and Nodes in EFX expressions. The problem is that these identifiers were defined before the introduction of EFX, and their naming conventions did not take under consideration the readability of expressions that may contain them. As a result, it is hard to understand what an EFX 1 expression is trying to achieve without looking-up the definitions of the Fields and Nodes that are referenced in the expression. 
-
-To make EFX Expressions more readable, EFX 2 introduces the concept of Field and Node aliases. A Field or Node alias is an alternative name that can be used to reference a Field or Node in an EFX expression. We decided to add these aliases (instead of renaming existing identifiers) in order to maintain backwards compatibility with EFX 1 expressions and to avoid disrupting ongoing development efforts.
-
-==== Naming conventions
-* Node aliases are written in PascalCase. Therefore node aliases always start with an uppercase letter. For example: The node with identifier "ND-Root" now has an alias "Root"; the node with identifier "ND-Lot" now has an alias "Lot". 
-* Field aliases are written in camelCase. Therefore field aliases always start with a lowercase letter. For example: The field with identifier "BT-Name" now has an alias "name"; the field with identifier "FD-Description" now has an alias "description".
-* When an alias is composed of several parts, then those parts are separated by an underscore and are written in descending order from container to content (container_content). Each part follows the capitalisation of the corresponding type (Nodes_Are_PascalCase, fields_are_camelCase).
-
-===== Examples:
-[source, text]
-----
-* NR-Root -> Root
-* ND-Lot -> Lot
-* ND-LotProcurementScope -> Lot_ProcurementScope
-* BT-262-Lot -> lot_mainClassificationCode
-* BT-262-Part -> part_mainClassificationCode
-* BT-262-Procedure -> procedure_mainClassificationCode
-----
-
-As Field identifiers use short Business Term numbers, it is reasonable that the introduction of descriptive aliases will increase the length of EFX expressions. However their readability will also improve drastically.
- 
-=== Breaking change in codelist identifiers
-
-In EFX 1, there are five different uses of identifiers:
-
-* Node identifiers (eg. `ND-NodeName`)
-* Field identifiers (eg. `BT-123-Context`)
-* Variable identifiers (eg. `$variableName`) 
-* Attribute identifiers (eg. `@attributeName`)
-* Codelist identifiers (eg. `(codeListName)`)
-
-As EFX 1 only supports built-in functions, function names are not included in this list.
-
-The introduction of aliases for Fields and Nodes makes the current notation of codelist identifiers ambiguous, because the parenthesis used to wrap a codelist name in EFX 1 are also used for controlling the order of evaluation and for grouping function arguments. For example, the identifier `(accessibility)` could refer to the Codelist named `accessibility`, or to a Field with alias `accessibility`. In order to avoid this ambiguity, we decided to change the notation of Codelist identifiers. The new notation uses a prefix `codelist:` to distinguish Codelist identifiers from other identifiers. For example, the identifier `(accessibility)` now becomes `codelist:accessibility`.
-
-Therefore, in EFX 2 the five different uses of identifiers listed above become:
-
-|===
-|Identifier type |EFX 1 |EFX 2| Comment
-|Node |`ND-NodeName` |`ND-NodeName` or `Context_NodeName`| Improved readability
-|Field |`BT-123-Context` |`BT-123-Context` or `context_fieldName`| Improved readability
-|Variable |`$variableName` |`$variableName` | No change
-|Attribute |`@attributeName` |`@attributeName` | No change
-|Codelist |`(accessibility)` |`codelist:accessibility` | New notation (breaking change)
-|===
-
-CAUTION: This change is a *breaking change*. Therefore, EFX 1 expressions that use codelist identifiers need to be slightly modified before they can be parsed by an EFX 2 parser.
-
-=== Indexers
-
-Sequences now support an index notation which allows an expression to access the element of a sequence at a specific index. The index notation is similar to the one used on XPath (but is also common to several other programming languages). Like XPath, (but unlike other programming languages), the index notation uses a 1-based index. 
-
-For example: 
+Template lines now use `WITH context DISPLAY template;` instead of the EFX-1 `{context} template` syntax. Template lines are now semicolon-terminated, and the context declaration is optional -- allowing template lines that display content without iterating over a context.
 
 [source, efx]
 ----
-('a', 'b', 'c')[2]
+// EFX-1 style:
+{BT-22-Procedure} #{name}: $value
+
+// EFX-2 style:
+WITH BT-22-Procedure DISPLAY #{name}: $value;
+
+// Without context (static content):
+2 DISPLAY #{auxiliary|text|procedure};
 ----
 
-The above expression returns the string `b` because the index `2` refers to the second element in the sequence.
+The EFX-1 syntax is still supported for backward compatibility but will likely be removed by beta.1.
 
+==== Conditional templates
 
-=== New functions:
-
-==== `string-join` function
-
-The `string-join` function allows to join a list of strings into a single string. The function takes two arguments: the list of strings to join, and the separator to use between each string.
-
-The following example shows how to use the string join function:
+Template lines can now conditionally render different content using `WHEN` / `OTHERWISE`:
 
 [source, efx]
 ----
-string-join(("a", "b", "c"), ", ")
+WITH BT-105-Procedure
+  WHEN BT-105-Procedure:isMasked DISPLAY #{name}: #{auxiliary|text|unpublished}
+  OTHERWISE DISPLAY #{name}: #{BT-105-Procedure};
 ----
 
-The result of the above expression is the string `a, b, c`.
+==== Navigation and Summary sections
 
-==== `preferred-language` function
+View templates can now be structured with `---- NAVIGATION ----` and `---- SUMMARY ----` section headers, separating the main content from navigation aids and summary views.
 
-The `preferred-language` function is used to determine the identifier of the language that should be displayed, among the languages available in a given multilingual text field. It is meant to be used in a predicate to select the appropriate linguistic version of a multilingual text field.
+=== Reuse and maintainability
 
-The function, only takes a simple reference to a multilingual text field as a parameter. Using the field reference, it can determine the available linguistic versions of the field's text.
+==== Callable templates
 
-This function is only available to EFX templates (not to EFX expressions).
+Templates can be defined once and reused across the template file:
 
-==== `preferred-language-text` function
+[source, efx]
+----
+// Declaration:
+LET template:role-and-name(text:$label-id, text:$org-tpo-id)
+  WHEN $org-tpo-id in OPT-200-Organization-Company
+    DISPLAY #{${$label-id}}: ${BT-500-Organization-Company[OPT-200-Organization-Company == $org-tpo-id]:preferredLanguageText}
+  OTHERWISE
+    DISPLAY #{${$label-id}}: ${BT-500-Organization-TouchPoint[OPT-201-Organization-TouchPoint == $org-tpo-id]:preferredLanguageText};
 
-This functions is used to retrieve the text of a multilingual text field in the preferred language. In essence it uses the `preferred-language` function to determine the preferred language, and then returns the text of the field in that language.
+// Invocation:
+WITH OPT-301-Lot-ReviewOrg
+  INVOKE role-and-name('auxiliary|text|organisation-review', OPT-301-Lot-ReviewOrg);
+----
+
+==== User-defined functions
+
+Reusable typed functions can be declared with scalar or sequence return types:
+
+[source, efx]
+----
+LET indicator:?exists-common-value(text*:$seq1, text*:$seq2) =
+  count(value-intersect($seq1, $seq2)) > 0;
+----
+
+Functions are invoked using the `?name(args)` syntax.
+
+==== Dictionaries
+
+Dictionaries pre-compute key-value lookups, improving performance by avoiding repeated traversals:
+
+[source, efx]
+----
+LET $lot-name-by-lot-id INDEX BT-21-Lot BY BT-137-Lot;
+
+// Later, look up the lot name by its identifier:
+$lot-name-by-lot-id[BT-13713-LotResult]
+----
+
+=== Richer output
+
+==== Hyperlink blocks
+
+Template content can be linked to URLs using the `@{url}` syntax:
+
+[source, efx]
+----
+WITH BT-505-Organization-Company DISPLAY $value @{$value};
+----
+
+==== Character references and escape sequences
+
+Template text now supports HTML character references (`&amp;`, `&#169;`, `&#xA9;`) and escape sequences.
+
+==== Formatting functions
+
+Locale-aware date/time formatting is available through `format-short`, `format-medium`, and `format-long` (template-only functions):
+
+[source, efx]
+----
+// Format a date for display:
+format-medium(BT-05(a)-notice)
+
+// Format a date and time together:
+format-short(BT-05(a)-notice, BT-05(b)-notice)
+----
+
+
+== EFX Rules
+
+EFX-2 introduces a complete rules language, allowing business rules to be authored directly in EFX.
+
+=== Rules file structure
+
+A rules file consists of optional global declarations followed by one or more validation stages:
+
+[source, efx]
+----
+#include "stage-1a.efx"
+
+---- STAGE 2a ----
+
+WITH ND-AuctionTerms
+  ASSERT BT-122-Lot is not present
+    AS ERROR R-J6A-ZY4
+    FOR BT-122-Lot
+    IN 1-6, 15, 23-40, CEI, E1-E2, E4-E6, T01-T02, X01-X02
+  ASSERT BT-767-Lot is present
+    AS ERROR R-LTD-XCL
+    FOR BT-767-Lot
+    IN 16-18, 22, 29-31
+----
+
+==== Validation stages
+
+Rules are organised into stages (`---- STAGE stage-id ----`), each representing a validation phase (e.g. "1a", "3b", "4"). Each stage contains optional stage-level variable declarations and one or more rule-sets.
+
+=== Dynamic rules
+
+Dynamic rules allow validation to consider information retrieved from other notices through a specialised API. This replaces the EFX-1 cross-notice reference syntax (`notice(...)`) which was impractical and never used.
+
+[source, efx]
+----
+ENDPOINT "ted-api" AT "https://api.ted.europa.eu/v1";
+LET dynamic:?checkPreviousNotice(text:$noticeId) CALL API "ted-api" ON ERROR WARN;
+----
+
+* *API endpoint declarations*: `ENDPOINT "name" AT "url"` for named API endpoints, overridable at runtime.
+* *Dynamic/API functions*: `LET dynamic:?name(params) CALL API "endpoint"` with `ON ERROR WARN|REJECT` clauses.
+
+=== Rule syntax
+
+==== Rule-sets
+
+Multiple rules can share the same context via a single `WITH` clause, avoiding repetition of context declarations.
+
+==== ASSERT and REPORT
+
+Two rule types with distinct semantics:
+
+* `ASSERT` defines a condition that *must be true* for the rule to pass. The rule fires (reports a violation) when the condition is false.
+* `REPORT` defines a condition that, *when true*, triggers a report.
+
+==== Conditional rules
+
+Rules can be conditionally applied using `WHEN` / `OTHERWISE`:
+
+[source, efx]
+----
+WITH ND-Root
+  WHEN ND-Lot is present
+    ASSERT BT-137-Lot is present
+      AS ERROR R-ABC-123 FOR BT-137-Lot IN 7-40
+  OTHERWISE
+    ASSERT ND-Part is present
+      AS ERROR R-ABC-124 FOR ND-Part IN 4-6, E2;
+----
+
+==== Severity and rule ID
+
+Each rule specifies a severity (`ERROR`, `WARNING`, `INFO`) and an identifier following the `R-XXX-XXX` pattern, used for error message translation lookup:
+
+[source, efx]
+----
+AS ERROR R-001-001
+AS WARNING R-002-003
+AS INFO R-003-001
+----
+
+==== FOR clause
+
+`FOR field|node` specifies which field or node the rule validates. This is used to organise validators by target for efficient lookup.
+
+==== Notice type targeting
+
+`IN` specifies which notice types the rule applies to. Supports individual types, ranges, and wildcards:
+
+[source, efx]
+----
+IN 1-3, 10-13, E1-E3    // Explicit ranges
+IN *                      // All notice types
+IN ANY                    // All notice types
+----
+
+==== Scope annotations
+
+`SCOPE` specifies rule applicability and categorisation:
+
+* `@PRE` -- rule applies only during live validation (while editing).
+* `@POST` -- rule applies only after submission.
+* `#flag` -- categorisation flag (e.g. `#lawfulness`), carried over to SVRL output.
+
+Omitting `@PRE`/`@POST` means the rule applies in both contexts.
+
+
+== Shared between EFX Templates and EFX Rules
+
+=== Include directives
+
+Template and rules files can be composed from fragments using `#include "path/to/file.efx"`.
+
+=== Variable declarations
+
+`LET type:$var = expression` for declaring typed variables (both scalar and sequence types), available as global declarations in templates and as global or stage-level declarations in rules.
+
+=== Context declaration with inline variables
+
+The context declaration block (`WITH`) now supports local variable declarations before and/or after the context, allowing variables to be computed and reused within the scope of a template-block or rule-set.
+
+[source, efx]
+----
+WITH ND-Organization,
+  text:$orgid = OPT-200-Organization-Company,
+  text*:$tpoid = OPT-201-Organization-TouchPoint
+  DISPLAY ${BT-500-Organization-Company:preferredLanguageText};
+----
+
+=== Comments
+
+`//` comments are now supported everywhere (expressions, templates, rules).
