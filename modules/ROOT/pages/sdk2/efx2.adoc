@@ -66,11 +66,11 @@ The codelist expansion operator has been changed to `[...codelistName]` for cons
 
 [source, efx]
 ----
-// New codelist expansion:
-BT-23-Procedure in [...main-activity]
-
 // Legacy notation (to be removed):
 BT-23-Procedure in #main-activity
+
+// New codelist expansion:
+BT-23-Procedure in [...main-activity]
 ----
 
 New conditions allow testing sequences directly:
@@ -114,15 +114,17 @@ ND-Lot[2]::BT-262-Lot
 
 === Field properties
 
-*Privacy controls:* Expressions can now access privacy-related properties of fields withheld from publication:
+EFX-2 introduces the ability to access properties of a field using the `field:property` syntax. Three categories of field properties are available:
+
+==== Privacy controls
+
+Expressions can access privacy-related properties of fields withheld from publication. These properties allow rules and templates to reason about the privacy status of fields without having to reference the underlying privacy fields (e.g. BT-197, BT-198) by name:
 
 * `field:privacyCode` -- the privacy code of the field.
 * `field:publicationDate` -- the publication date for a withheld field.
 * `field:justificationCode` -- the justification code for withholding.
 * `field:justificationDescription` -- the justification description.
 * `field:wasWithheld`, `field:isWithheld`, `field:isWithholdable`, `field:isDisclosed`, `field:isMasked` -- boolean properties indicating privacy status.
-
-*Linked field properties:* Field references can carry a `:property` suffix to access values of linked fields without explicitly referencing them by name, improving readability:
 
 [source, efx]
 ----
@@ -133,7 +135,9 @@ BT-105-Procedure:publicationDate
 BT-105-Procedure:justificationCode
 ----
 
-*Raw value access:* `field:rawValue` provides access to the raw string value of a field, bypassing type-specific parsing:
+==== Raw value access
+
+`field:rawValue` provides access to the raw string value of a field, bypassing type-specific parsing:
 
 [source, efx]
 ----
