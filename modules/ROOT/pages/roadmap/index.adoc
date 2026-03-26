@@ -6,9 +6,9 @@ SDK versions are released several times per year to improve the provided metadat
 
 This page provides an overview of the upcoming releases and the changes that are planned for them. The last revision to this page was made in March 2026.
 
-== eForms SDK 1.15.0
+== eForms SDK 1.15
 
-SDK 1.15.0 is currently in development and will be released together with SDK 2.0.0. In terms of eForms metadata content, SDK 1.15.0 and SDK 2.0.0 will be identical. SDK 1.15.0 will be the last version of the SDK 1.x series; future releases will be made only on SDK 2.
+SDK 1.15 is currently in development and will be released in alignment with SDK 2.0. With the exception of fields withheld from publication ("unpublished" fields) and dynamic rules, SDK 1.15 will have business equivalence with SDK 2.0. SDK 1.15 will be the last version of the SDK 1.x series; future releases will be made only on SDK 2.
 
 == eForms SDK 2.0.0
 
@@ -28,16 +28,16 @@ For details on what is new in SDK 2.0.0, consult the xref:sdk2/index.adoc[SDK 2 
 
 * *SDK 2.0.0-beta.1* is targeted for release before the end of April 2026. Beta.1 will remove some legacy EFX-1 syntax in order to simplify parsing. After beta.1, the grammar is not expected to change significantly. Any changes after beta.1 are not expected to break compatibility with beta.1.
 
-==== RC (target: June-August 2026)
+==== RC (target: July-August 2026)
 
+* SDK 1.15 is targeted for release in June 2026. SDK 1.15 will serve as the metadata baseline for SDK 2.0 rc.1.
 * During May and June, the SDK will be reviewed together with the teams developing the OJS applications (eNotices2, TED Central Validation Service, TED API, TED Viewer, TED Monitor, and TED website) to finalise the SDK and related libraries (eforms-core-java, efx-toolkit-java) and sample applications.
-* *SDK 2.0.0-rc.1* is targeted for release around the end of June or early July 2026.
+* *SDK 2.0.0-rc.1* is targeted for release by July 2026.
 * During the RC period, development of OJS applications using SDK 2 will be finalised and tested. The final version of the SDK will be released only after the applications have been fully developed and tested.
 
 ==== Final release (target: September 2026)
 
-* *SDK 2.0.0* is targeted for release around September 2026, subject to how developments evolve.
-* SDK 1.15.0 will be released at the same time. Both versions will contain identical eForms metadata content (fields, nodes, notice types, codelists, schemas), differing only in EFX expression syntax (EFX-1 in SDK 1.15, EFX-2 in SDK 2.0). SDK 1.15.0 will be the last SDK 1.x release.
+* *SDK 2.0* is targeted for release around September 2026, subject to how developments evolve.
 
 === Feedback
 
