@@ -4,11 +4,16 @@
 
 SDK versions are released several times per year to improve the provided metadata and implement regulatory changes. Releases are announced in the link:https://github.com/OP-TED/eForms-SDK/discussions/categories/announcements[eForms developer forum on GitHub], where you can watch for updates or follow the discussions.
 
-This page provides an overview of the upcoming releases and the changes that are planned for them. The last revision to this page was made in March 2026.
+This page provides an overview of the upcoming releases and the changes that are planned for them. The last revision to this page was made in June 2026.
+
 
 == eForms SDK 1.15
 
-SDK 1.15 is currently in development and will be released in alignment with SDK 2.0. With the exception of fields withheld from publication ("unpublished" fields) and dynamic rules, SDK 1.15 will have business equivalence with SDK 2.0. SDK 1.15 will be the last version of the SDK 1.x series; future releases will be made only on SDK 2.
+SDK 1.15 is currently in testing and is expected to be released July 2026. SDK 1.15 was originally intended to be released together with SDK 2.0 as the last release of the SDK 1.x line. However, its release is being expedited to address specific XML generation issues we experienced in eNotices2. SDK 1.15.0 will also introduce some maintenance updates in validation rules, codelists, translations, view templates and notice type definitions. The remaining work that was initially intended for SDK 1.15, including the updates to fields withheld from publication will be released with SDK 1.16.
+
+== eForms SDK 1.16
+
+SDK 1.16 is currently in development and will be released in sync with SDK 2.0. With the exception of dynamic rules, SDK 1.16 will have business equivalence with SDK 2.0 and will include an updated and simplified encoding of undisclosed fields. SDK 1.16 will be the last version of the SDK 1.x series; future releases will be made only on SDK 2.
 
 == eForms SDK 2.0.0
 
@@ -24,20 +29,20 @@ For details on what is new in SDK 2.0.0, consult the xref:sdk2/index.adoc[SDK 2 
 
 * *SDK 2.0.0-alpha.2* was released in March 2026. This release includes the complete EFX-2 grammar with all three language flavors (EFX Expressions, EFX Templates, and EFX Rules), as well as updated SDK metadata.
 
-==== Beta (target: April-June 2026)
+==== Beta (delayed; target: August 2026)
 
-* *SDK 2.0.0-beta.1* is targeted for release before the end of April 2026. Beta.1 will remove some legacy EFX-1 syntax in order to simplify parsing. After beta.1, the grammar is not expected to change significantly. Any changes after beta.1 are not expected to break compatibility with beta.1.
+* *SDK 2.0.0-beta.1* is targeted for release August 2026 together with SDK 1.16.0-beta.1. Beta.1 will remove some legacy EFX-1 syntax in order to simplify parsing. After beta.1, the grammar is not expected to change significantly. Any changes after beta.1 are not expected to break compatibility with beta.1.
 
-==== RC (target: July-August 2026)
+==== RC (target: Autumn 2026)
 
-* SDK 1.15 is targeted for release in June 2026. SDK 1.15 will serve as the metadata baseline for SDK 2.0 rc.1.
-* During May and June, the SDK will be reviewed together with the teams developing the OJS applications (eNotices2, TED Central Validation Service, TED API, TED Viewer, TED Monitor, and TED website) to finalise the SDK and related libraries (eforms-core-java, efx-toolkit-java) and sample applications.
-* *SDK 2.0.0-rc.1* is targeted for release by July 2026.
+* SDK 1.16.0-beta.1 will serve as the metadata baseline for SDK 2.0.0-rc.1.
+* The SDK 2 beta will be reviewed together with the teams developing the OJS applications (eNotices2, TED Central Validation Service, TED API, TED Viewer, TED Monitor, and TED website) to finalise the SDK and related libraries (eforms-core-java, efx-toolkit-java) and sample applications.
+* *SDK 2.0.0-rc.1* is targeted for release in Autumn 2026.
 * During the RC period, development of OJS applications using SDK 2 will be finalised and tested. The final version of the SDK will be released only after the applications have been fully developed and tested.
 
-==== Final release (target: September 2026)
+==== Final release (target: Autumn 2026)
 
-* *SDK 2.0* is targeted for release around September 2026, subject to how developments evolve.
+* *SDK 2.0* is targeted for release in Autumn 2026, subject to how adaptation of related OJS applications evolves.
 
 === Feedback
 
