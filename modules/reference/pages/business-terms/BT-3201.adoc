@@ -1,0 +1,9 @@
+= `BT-3201`: Tender Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-3201-Tender`:: Tender Identifier

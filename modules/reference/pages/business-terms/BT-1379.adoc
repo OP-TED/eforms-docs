@@ -1,0 +1,5 @@
+= `BT-1379`: Requirements Lot Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER

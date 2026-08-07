@@ -1,0 +1,15 @@
+= `reserved-execution` codelist
+:navtitle: Codelists
+
+List of codes to express whether a contract execution is reserved or not.
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/applicability.adoc[`applicability`]
+Structure:: flat
+Used in:: xref:business-terms/BT-736.adoc[`BT-736`] Reserved Execution
+
+== Codes
+[horizontal]
+  `no`::: No
+  `not-known`::: Not yet known
+  `yes`::: Yes

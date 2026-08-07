@@ -1,0 +1,10 @@
+= `BT-1118`: Notice Framework Approximate Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-1118-NoticeResult`:: Notice Framework Approximate Value
+  `BT-1118-NoticeResult-Currency`:: Notice Framework Approximate Value Currency

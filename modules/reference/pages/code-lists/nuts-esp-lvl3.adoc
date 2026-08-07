@@ -1,0 +1,72 @@
+= `nuts-esp-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Spain
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `ES111`::: A Coruña
+  `ES112`::: Lugo
+  `ES113`::: Ourense
+  `ES114`::: Pontevedra
+  `ES120`::: Asturias
+  `ES130`::: Cantabria
+  `ES211`::: Araba/Álava
+  `ES212`::: Gipuzkoa
+  `ES213`::: Bizkaia
+  `ES220`::: Navarra
+  `ES230`::: La Rioja
+  `ES241`::: Huesca
+  `ES242`::: Teruel
+  `ES243`::: Zaragoza
+  `ES300`::: Madrid
+  `ES411`::: Ávila
+  `ES412`::: Burgos
+  `ES413`::: León
+  `ES414`::: Palencia
+  `ES415`::: Salamanca
+  `ES416`::: Segovia
+  `ES417`::: Soria
+  `ES418`::: Valladolid
+  `ES419`::: Zamora
+  `ES421`::: Albacete
+  `ES422`::: Ciudad Real
+  `ES423`::: Cuenca
+  `ES424`::: Guadalajara
+  `ES425`::: Toledo
+  `ES431`::: Badajoz
+  `ES432`::: Cáceres
+  `ES511`::: Barcelona
+  `ES512`::: Girona
+  `ES513`::: Lleida
+  `ES514`::: Tarragona
+  `ES521`::: Alicante / Alacant
+  `ES522`::: Castellón / Castelló
+  `ES523`::: Valencia / València
+  `ES531`::: Eivissa y Formentera
+  `ES532`::: Mallorca
+  `ES533`::: Menorca
+  `ES611`::: Almería
+  `ES612`::: Cádiz
+  `ES613`::: Córdoba
+  `ES614`::: Granada
+  `ES615`::: Huelva
+  `ES616`::: Jaén
+  `ES617`::: Málaga
+  `ES618`::: Sevilla
+  `ES620`::: Murcia
+  `ES630`::: Ceuta
+  `ES640`::: Melilla
+  `ES703`::: El Hierro
+  `ES704`::: Fuerteventura
+  `ES705`::: Gran Canaria
+  `ES706`::: La Gomera
+  `ES707`::: La Palma
+  `ES708`::: Lanzarote
+  `ES709`::: Tenerife
+  `ESZZZ`::: Extra-Regio NUTS 3

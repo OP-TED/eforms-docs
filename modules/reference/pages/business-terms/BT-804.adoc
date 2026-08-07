@@ -1,0 +1,10 @@
+= `BT-804`: Review Technical Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-804-Review`:: Review Technical Identifier
+  `BT-804-Review-Scheme`:: Review Technical Identifier Schemename

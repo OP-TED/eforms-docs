@@ -1,0 +1,10 @@
+= `BT-803`: Notice Dispatch Date eSender
+:navtitle: Business Terms
+
+[horizontal]
+Type:: DATE
+
+== Fields
+[horizontal]
+  `BT-803(d)-notice`:: Notice Dispatch Date eSender (date)
+  `BT-803(t)-notice`:: Notice Dispatch Date eSender (time)

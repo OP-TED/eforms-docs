@@ -1,0 +1,10 @@
+= `BT-779`: Tender Payment Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-779-Tender`:: Tender Payment Value
+  `BT-779-Tender-Currency`:: Tender Payment Value Currency

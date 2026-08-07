@@ -1,0 +1,12 @@
+= `BT-765`: Framework Agreement
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-765-Lot`:: Framework Agreement
+  `BT-765-Lot-List`:: Framework Agreement Listname
+  `BT-765-Part`:: Framework Agreement
+  `BT-765-Part-List`:: Framework Agreement Listname

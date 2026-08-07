@@ -1,0 +1,9 @@
+= `BT-113`: Framework Maximum Participants Number
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-113-Lot`:: Framework Maximum Participants Number

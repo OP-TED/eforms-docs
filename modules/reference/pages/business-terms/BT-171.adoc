@@ -1,0 +1,9 @@
+= `BT-171`: Tender Rank
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-171-Tender`:: Tender Rank

@@ -1,0 +1,14 @@
+= `BT-5141`: Place Performance Country Code
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-5141-Lot`:: Place Performance Country Code
+  `BT-5141-Lot-List`:: Place Performance Country Code Listname
+  `BT-5141-Part`:: Place Performance Country Code
+  `BT-5141-Part-List`:: Place Performance Country Code Listname
+  `BT-5141-Procedure`:: Place Performance Country Code
+  `BT-5141-Procedure-List`:: Place Performance Country Code Listname

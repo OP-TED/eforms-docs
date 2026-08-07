@@ -1,0 +1,10 @@
+= `BT-708`: Documents Official Language
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-708-Lot`:: Documents Official Language
+  `BT-708-Part`:: Documents Official Language

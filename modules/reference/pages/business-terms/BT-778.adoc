@@ -1,0 +1,5 @@
+= `BT-778`: Framework Maximum Participants
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR

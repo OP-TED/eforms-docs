@@ -1,0 +1,16 @@
+= `cvd-contract-type` codelist
+:navtitle: Codelists
+
+The type of contract of the procurement procedure within the scope of Clean Vehicles Directive 2009/33/EC.
+[horizontal]
+Version:: 20241211-0
+URI:: http://publications.europa.eu/resource/dataset/cvd-contract-type
+Structure:: flat
+EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/cvd-contract-type[View on EU Vocabularies^]
+Used in:: xref:business-terms/BT-735.adoc[`BT-735`] CVD Contract Type
+
+== Codes
+[horizontal]
+  `oth-serv-contr`::: Other service contract
+  `pass-tran-serv`::: Passenger road transport services
+  `veh-acq`::: Vehicle purchase, lease or rent

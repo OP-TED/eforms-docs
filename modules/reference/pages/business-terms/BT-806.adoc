@@ -1,0 +1,10 @@
+= `BT-806`: Exclusion Grounds Source
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-806-Procedure`:: Exclusion Grounds Source
+  `BT-806-Procedure-List`:: Exclusion Grounds Source Listname

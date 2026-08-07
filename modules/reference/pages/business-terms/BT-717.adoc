@@ -1,0 +1,10 @@
+= `BT-717`: Clean Vehicles Directive
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-717-Lot`:: Clean Vehicles Directive
+  `BT-717-Lot-List`:: Clean Vehicles Directive Listname

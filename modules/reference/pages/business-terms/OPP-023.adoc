@@ -1,0 +1,8 @@
+= `OPP-023`: Predominance (%)
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-023-Contract`:: Predominance (%)

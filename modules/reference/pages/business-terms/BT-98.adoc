@@ -1,0 +1,11 @@
+= `BT-98`: Tender Validity Deadline
+:navtitle: Business Terms
+
+[horizontal]
+Type:: DURATION
+
+== Fields
+[horizontal]
+  `BT-98-Lot`:: Tender Validity Deadline
+  `BT-98-Lot-Unit`:: Tender Validity Deadline Unit
+  `OPA-98-Lot-Number`:: Numeric value of the tender validity deadline

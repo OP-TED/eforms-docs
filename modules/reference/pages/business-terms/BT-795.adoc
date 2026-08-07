@@ -1,0 +1,10 @@
+= `BT-795`: Review Request Fee
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-795-Review`:: Review Request Fee
+  `BT-795-Review-Currency`:: Review Request Fee Currency

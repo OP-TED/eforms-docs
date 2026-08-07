@@ -1,0 +1,9 @@
+= `BT-151`: Contract URL
+:navtitle: Business Terms
+
+[horizontal]
+Type:: URL
+
+== Fields
+[horizontal]
+  `BT-151-Contract`:: Contract URL

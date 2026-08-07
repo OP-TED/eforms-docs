@@ -1,0 +1,9 @@
+= `BT-5010`: EU Funds Financing Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-5010-Lot`:: EU Funds Financing Identifier

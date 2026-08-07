@@ -1,0 +1,10 @@
+= `BT-774`: Green Procurement
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-774-Lot`:: Green Procurement
+  `BT-774-Lot-List`:: Green Procurement Listname

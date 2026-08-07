@@ -1,0 +1,11 @@
+= `BT-712`: Buyer Review Complainants
+:navtitle: Business Terms
+
+[horizontal]
+Type:: NUMBER
+
+== Fields
+[horizontal]
+  `BT-712(a)-LotResult`:: Buyer Review Complainants (Code)
+  `BT-712(a)-LotResult-List`:: Buyer Review Complainants (Code) Listname
+  `BT-712(b)-LotResult`:: Buyer Review Complainants (Number)

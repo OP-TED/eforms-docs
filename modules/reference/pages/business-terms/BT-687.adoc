@@ -1,0 +1,10 @@
+= `BT-687`: Exception to the application of the IPI Measure
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-687-LotResult`:: Exception to the application of the IPI Measure
+  `BT-687-LotResult-List`:: Exception to the application of the IPI Measure Listname

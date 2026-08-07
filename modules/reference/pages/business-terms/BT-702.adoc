@@ -1,0 +1,10 @@
+= `BT-702`: Notice Official Language
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-702(a)-notice`:: Notice Official Language
+  `BT-702(b)-notice`:: Notice Official Language

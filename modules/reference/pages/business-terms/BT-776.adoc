@@ -1,0 +1,10 @@
+= `BT-776`: Procurement of Innovation
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-776-Lot`:: Procurement of Innovation
+  `BT-776-Lot-List`:: Procurement of Innovation Listname

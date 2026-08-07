@@ -1,0 +1,10 @@
+= `BT-732`: Security Clearance Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-732-Lot`:: Security Clearance Description
+  `BT-732-Lot-Language`:: Security Clearance Description Language

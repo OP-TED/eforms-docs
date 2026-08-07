@@ -1,0 +1,13 @@
+= `subcontracting-allowed` codelist
+:navtitle: Codelists
+
+List of codes to specify whether subcontracting is allowed or not.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

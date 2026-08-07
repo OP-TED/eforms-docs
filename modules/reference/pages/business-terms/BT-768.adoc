@@ -1,0 +1,9 @@
+= `BT-768`: Contract Framework Agreement
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-768-Contract`:: Contract Framework Agreement

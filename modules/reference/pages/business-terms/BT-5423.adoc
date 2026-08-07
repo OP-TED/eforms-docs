@@ -1,0 +1,12 @@
+= `BT-5423`: Award Criterion Number Threshold
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-5423-Lot`:: Award Criterion Number Threshold
+  `BT-5423-Lot-List`:: Award Criterion Number Threshold Listname
+  `BT-5423-LotsGroup`:: Award Criterion Number Threshold
+  `BT-5423-LotsGroup-List`:: Award Criterion Number Threshold Listname

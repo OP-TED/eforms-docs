@@ -1,0 +1,12 @@
+= `BT-512`: Organisation Post Code
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-512-Business`:: Postal code
+  `BT-512-Organization-Company`:: Organisation Post Code
+  `BT-512-Organization-TouchPoint`:: Post Code
+  `BT-512-UBO`:: Post Code

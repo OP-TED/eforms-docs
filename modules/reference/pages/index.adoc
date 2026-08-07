@@ -1,0 +1,57 @@
+= eForms Metadata Reference
+
+This section of the eForms SDK documentation is auto-generated from our central metadata repository. 
+The information in this section is therefore identical to the metadata included in the corresponding version of the eForms SDK ({page-component-version}).
+
+NOTE: Changes made in patch versions are not reflected in this section of the documentation.
+
+== Contents
+
+* xref:eforms:reference:business-terms/index.adoc[Business Terms] +
+All Business Terms organized by Business Group, together with the fields that implement them. 
+* xref:eforms:reference:business-rules/index.adoc[Business Rules] +
+Every Business Rule included in SDK {page-component-version} together with all details on when and how it is applied.
+* xref:eforms:reference:code-lists/index.adoc[Codelists] +
+All codelists included in eFroms SDK {page-component-version}, together with their respective codes, their usage in eForms fields as well as their relationships to each-other (tailored codelists).
+
+== Downloads
+
+NOTE: The following downloads are provided for business users that want to inspect eForms metadata in a tabular format.
+The downloads are provided in the CSV file format.
+The values are quoted and comma separated.
+The first line contains column headings.
+
+=== Nodes and fields
+
+Download node and field metadata as CSV files:
+
+* xref:attachment$nodes.csv[Nodes]
+* xref:attachment$fields.csv[Fields]
+
+=== Notice subtypes
+
+Download information on notice subtypes as a CSV file:
+
+* xref:attachment$notices.csv[Notice subtypes]
+
+=== Business rules
+
+Download rules in CSV format.
+
+All rule types:
+
+* xref:attachment$business-rules.csv[All]
+
+Specific rule types:
+
+* xref:attachment$forbidden-rules.csv[Forbidden]
+* xref:attachment$mandatory-rules.csv[Mandatory]
+* xref:attachment$codelist-rules.csv[Codelist]
+* xref:attachment$pattern-rules.csv[Pattern]
+* xref:attachment$interval-rules.csv[Interval]
+* xref:attachment$coconstraint-rules.csv[Co-constraints]
+* xref:attachment$repeatability-rules.csv[Repeatability]
+* xref:attachment$changeability-rules.csv[Changeability]
+* xref:attachment$lawfulness-rules.csv[Lawfulness]
+
+NOTE: This information provided in this page is specific to eForms SDK {page-component-version}.

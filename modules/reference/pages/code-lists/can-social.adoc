@@ -1,0 +1,14 @@
+= `can-social` codelist
+:navtitle: Codelists
+
+List of allowed Notice Subtype codes for a notice of CAN Social Notice Type .
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/notice-subtype.adoc[`notice-subtype`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `33`::: 33
+  `34`::: 34
+  `35`::: 35

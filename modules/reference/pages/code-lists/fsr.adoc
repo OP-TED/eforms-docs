@@ -1,0 +1,14 @@
+= `fsr` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the Foreign Subsidies Regulation applies.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+Used in:: xref:business-terms/BT-681.adoc[`BT-681`] Foreign Subsidies Regulation
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

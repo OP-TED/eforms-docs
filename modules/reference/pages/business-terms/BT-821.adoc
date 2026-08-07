@@ -1,0 +1,10 @@
+= `BT-821`: Selection Criteria Source
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-821-Lot`:: Selection Criteria Source
+  `BT-821-Lot-List`:: Selection Criteria Source Listname

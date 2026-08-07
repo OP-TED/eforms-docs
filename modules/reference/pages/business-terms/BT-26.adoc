@@ -1,0 +1,14 @@
+= `BT-26`: Classification Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-26(a)-Lot`:: Classification Type (e.g. CPV)
+  `BT-26(a)-Part`:: Classification Type (e.g. CPV)
+  `BT-26(a)-Procedure`:: Classification Type (e.g. CPV)
+  `BT-26(m)-Lot`:: Classification Type (e.g. CPV)
+  `BT-26(m)-Part`:: Classification Type (e.g. CPV)
+  `BT-26(m)-Procedure`:: Classification Type (e.g. CPV)

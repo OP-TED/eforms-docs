@@ -1,0 +1,25 @@
+= `nuts-svn-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Slovenia
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `SI031`::: Pomurska
+  `SI032`::: Podravska
+  `SI033`::: Koroška
+  `SI034`::: Savinjska
+  `SI035`::: Zasavska
+  `SI036`::: Posavska
+  `SI037`::: Jugovzhodna Slovenija
+  `SI038`::: Primorsko-notranjska
+  `SI041`::: Osrednjeslovenska
+  `SI042`::: Gorenjska
+  `SI043`::: Goriška
+  `SI044`::: Obalno-kraška
+  `SIZZZ`::: Extra-Regio NUTS 3

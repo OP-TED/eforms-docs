@@ -1,0 +1,8 @@
+= `OPP-120`: Name of Publication
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-120-Business`:: Name of Publication

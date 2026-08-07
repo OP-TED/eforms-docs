@@ -1,0 +1,13 @@
+= `revenue-allocation` codelist
+:navtitle: Codelists
+
+Revenue allocation
+[horizontal]
+Version:: 20230927-0
+Subset of:: xref:code-lists/contract-detail.adoc[`contract-detail`]
+Structure:: flat
+Used in:: xref:business-terms/OPP-035.adoc[`OPP-035`] Revenues allocation of tickets sales code
+
+== Codes
+[horizontal]
+  `all-rev-tic`::: Allocation of revenues of sales from tickets

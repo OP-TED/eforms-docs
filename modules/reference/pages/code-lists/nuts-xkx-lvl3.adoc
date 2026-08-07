@@ -1,0 +1,20 @@
+= `nuts-xkx-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Kosovo
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `XK001`::: Prishtinë/Priština
+  `XK002`::: Mitrovicë/Mitrovica
+  `XK003`::: Pejë/Peć
+  `XK004`::: Prizren/Prizren
+  `XK005`::: Ferizaj/Uroševac
+  `XK006`::: Gjilan/Gnjilane
+  `XK007`::: Gjakovë/Đakovica
+  `XKZZZ`::: Extra-Regio NUTS 3

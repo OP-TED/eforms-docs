@@ -1,0 +1,10 @@
+= `BT-685`: Specific IPI Measure
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-685-LotResult`:: Specific IPI Measure
+  `BT-685-LotResult-List`:: Specific IPI Measure Listname

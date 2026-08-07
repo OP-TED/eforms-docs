@@ -1,0 +1,12 @@
+= `pmc` codelist
+:navtitle: Codelists
+
+List of allowed Notice Type codes for a Pre-market Consultation Notice Type
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/notice-subtype.adoc[`notice-subtype`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `E1`::: E1

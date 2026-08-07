@@ -1,0 +1,10 @@
+= `BT-77`: Terms Financial
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-77-Lot`:: Terms Financial
+  `BT-77-Lot-Language`:: Terms Financial Language

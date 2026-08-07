@@ -1,0 +1,10 @@
+= `BT-122`: Electronic Auction Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-122-Lot`:: Electronic Auction Description
+  `BT-122-Lot-Language`:: Electronic Auction Description Language

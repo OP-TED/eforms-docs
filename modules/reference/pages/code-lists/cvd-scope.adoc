@@ -1,0 +1,14 @@
+= `cvd-scope` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the procurement falls within the scope of the European Parliament and Council 2009/33/EC (Clean Vehicles Directive – CVD).
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+Used in:: xref:business-terms/BT-717.adoc[`BT-717`] Clean Vehicles Directive
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

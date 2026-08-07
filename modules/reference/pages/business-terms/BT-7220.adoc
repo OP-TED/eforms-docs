@@ -1,0 +1,10 @@
+= `BT-7220`: EU Funds Programme
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-7220-Lot`:: EU Funds Programme
+  `BT-7220-Lot-List`:: EU Funds Programme Listname

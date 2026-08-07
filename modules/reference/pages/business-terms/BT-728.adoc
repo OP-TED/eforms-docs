@@ -1,0 +1,14 @@
+= `BT-728`: Place Performance Additional Information
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-728-Lot`:: Place Performance Additional Information
+  `BT-728-Lot-Language`:: Place Performance Additional Information Language
+  `BT-728-Part`:: Place Performance Additional Information
+  `BT-728-Part-Language`:: Place Performance Additional Information Language
+  `BT-728-Procedure`:: Place Performance Additional Information
+  `BT-728-Procedure-Language`:: Place Performance Additional Information Language

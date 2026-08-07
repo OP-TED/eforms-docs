@@ -1,0 +1,39 @@
+= `nuts-prt-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Portugal
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `PT111`::: Alto Minho
+  `PT112`::: Cávado
+  `PT119`::: Ave
+  `PT11A`::: Área Metropolitana do Porto
+  `PT11B`::: Alto Tâmega e Barroso
+  `PT11C`::: Tâmega e Sousa
+  `PT11D`::: Douro
+  `PT11E`::: Terras de Trás-os-Montes
+  `PT150`::: Algarve
+  `PT191`::: Região de Aveiro
+  `PT192`::: Região de Coimbra
+  `PT193`::: Região de Leiria
+  `PT194`::: Viseu Dão Lafões
+  `PT195`::: Beira Baixa
+  `PT196`::: Beiras e Serra da Estrela
+  `PT1A0`::: Grande Lisboa
+  `PT1B0`::: Península de Setúbal
+  `PT1C1`::: Alentejo Litoral
+  `PT1C2`::: Baixo Alentejo
+  `PT1C3`::: Alto Alentejo
+  `PT1C4`::: Alentejo Central
+  `PT1D1`::: Oeste
+  `PT1D2`::: Médio Tejo
+  `PT1D3`::: Lezíria do Tejo
+  `PT200`::: Região Autónoma dos Açores
+  `PT300`::: Região Autónoma da Madeira
+  `PTZZZ`::: Extra-Regio NUTS 3

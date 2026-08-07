@@ -1,0 +1,3 @@
+"ruleId","ruleType","fieldId","description","noticeSubtype","condition","expression","target","severity","cvsStage"
+"BR-BT-00514-0310","lawfulness","BT-514-Organization-Company","The  buyer should be in a country for which the publication is expressly authorized","NULL","the organisation (OPT-200-Organization-Company) is a Buyer (OPT-300-Procedure-Buyer)","NULL","all","WARN","5"
+"BR-OPP-00070-0120","lawfulness","OPP-070-notice","Any CEI notice shall go for Lawfulness check","NULL","NULL","co-constraint","all","WARN","5"

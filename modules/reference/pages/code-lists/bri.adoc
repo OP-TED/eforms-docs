@@ -1,0 +1,13 @@
+= `bri` codelist
+:navtitle: Codelists
+
+List of allowed Notice Type codes for a Business Register Information document
+[horizontal]
+Version:: 20210929-0
+Subset of:: xref:code-lists/notice-type.adoc[`notice-type`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `brin-ecs`::: European Company / European Cooperative Society notice
+  `brin-eeig`::: European Economic Interest Grouping notice

@@ -1,0 +1,10 @@
+= `BT-750`: Selection Criteria Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-750-Lot`:: Selection Criteria Description
+  `BT-750-Lot-Language`:: Selection Criteria Description Language

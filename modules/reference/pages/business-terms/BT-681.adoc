@@ -1,0 +1,10 @@
+= `BT-681`: Foreign Subsidies Regulation
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-681-Lot`:: Foreign Subsidies Regulation
+  `BT-681-Lot-List`:: Foreign Subsidies Regulation Listname

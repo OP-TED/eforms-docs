@@ -1,0 +1,10 @@
+= `BT-684`: IPI Measures are Applicable
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-684-Lot`:: IPI Measures are Applicable
+  `BT-684-Lot-List`:: IPI Measures are Applicable Listname

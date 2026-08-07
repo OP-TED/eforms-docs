@@ -1,0 +1,10 @@
+= `BT-118`: Notice Framework Maximum Value
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-118-NoticeResult`:: Notice Framework Maximum Value
+  `BT-118-NoticeResult-Currency`:: Notice Framework Maximum Value Currency

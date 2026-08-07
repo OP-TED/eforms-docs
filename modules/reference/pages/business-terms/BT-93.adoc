@@ -1,0 +1,9 @@
+= `BT-93`: Electronic Payment
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-93-Lot`:: Electronic Payment

@@ -1,0 +1,9 @@
+= `OPP-033`: Penalties & Rewards Code
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-033-Tender`:: Penalties and Rewards Code
+  `OPP-033-Tender-List`:: Penalties and Rewards Code Listname

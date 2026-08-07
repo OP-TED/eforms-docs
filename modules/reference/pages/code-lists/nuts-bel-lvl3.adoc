@@ -1,0 +1,57 @@
+= `nuts-bel-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Belgium
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `BE100`::: Arr. de Bruxelles-Capitale/Arr. Brussel-Hoofdstad
+  `BE211`::: Arr. Antwerpen
+  `BE212`::: Arr. Mechelen
+  `BE213`::: Arr. Turnhout
+  `BE223`::: Arr. Tongeren
+  `BE224`::: Arr. Hasselt
+  `BE225`::: Arr. Maaseik
+  `BE231`::: Arr. Aalst
+  `BE232`::: Arr. Dendermonde
+  `BE233`::: Arr. Eeklo
+  `BE234`::: Arr. Gent
+  `BE235`::: Arr. Oudenaarde
+  `BE236`::: Arr. Sint-Niklaas
+  `BE241`::: Arr. Halle-Vilvoorde
+  `BE242`::: Arr. Leuven
+  `BE251`::: Arr. Brugge
+  `BE252`::: Arr. Diksmuide
+  `BE253`::: Arr. Ieper
+  `BE254`::: Arr. Kortrijk
+  `BE255`::: Arr. Oostende
+  `BE256`::: Arr. Roeselare
+  `BE257`::: Arr. Tielt
+  `BE258`::: Arr. Veurne
+  `BE310`::: Arr. Nivelles
+  `BE323`::: Arr. Mons
+  `BE328`::: Arr. Tournai-Mouscron
+  `BE329`::: Arr. La Louvière
+  `BE32A`::: Arr. Ath
+  `BE32B`::: Arr. Charleroi
+  `BE32C`::: Arr. Soignies
+  `BE32D`::: Arr. Thuin
+  `BE331`::: Arr. Huy
+  `BE332`::: Arr. Liège
+  `BE334`::: Arr. Waremme
+  `BE335`::: Arr. Verviers — communes francophones
+  `BE336`::: Bezirk Verviers — Deutschsprachige Gemeinschaft
+  `BE341`::: Arr. Arlon
+  `BE342`::: Arr. Bastogne
+  `BE343`::: Arr. Marche-en-Famenne
+  `BE344`::: Arr. Neufchâteau
+  `BE345`::: Arr. Virton
+  `BE351`::: Arr. Dinant
+  `BE352`::: Arr. Namur
+  `BE353`::: Arr. Philippeville
+  `BEZZZ`::: Extra-Regio NUTS 3

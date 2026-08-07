@@ -1,0 +1,10 @@
+= `BT-807`: Review Body Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER
+
+== Fields
+[horizontal]
+  `BT-807-Review`:: Review Body Identifier
+  `BT-807-Review-Scheme`:: Review Body Identifier Schemename

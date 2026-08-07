@@ -1,0 +1,16 @@
+= `BT-514`: Organisation Country Code
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-514-Business`:: Country
+  `BT-514-Business-List`:: Country Listname
+  `BT-514-Organization-Company`:: Organisation Country Code
+  `BT-514-Organization-Company-List`:: Organisation Country Code Listname
+  `BT-514-Organization-TouchPoint`:: Country Code
+  `BT-514-Organization-TouchPoint-List`:: Country Code Listname
+  `BT-514-UBO`:: Country Code
+  `BT-514-UBO-List`:: Country Code Listname

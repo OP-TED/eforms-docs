@@ -1,0 +1,10 @@
+= `BT-1351`: Procedure Accelerated Justification
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-1351-Procedure`:: Procedure Accelerated Justification
+  `BT-1351-Procedure-Language`:: Procedure Accelerated Justification Language

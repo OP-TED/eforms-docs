@@ -1,0 +1,12 @@
+= `dir-awa-pre` codelist
+:navtitle: Codelists
+
+List of allowed Notice Type codes for a Direct Award Preannouncement Form Type
+[horizontal]
+Version:: 20210929-0
+Subset of:: xref:code-lists/notice-type.adoc[`notice-type`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `veat`::: Voluntary ex-ante transparency notice

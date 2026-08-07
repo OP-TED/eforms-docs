@@ -1,0 +1,10 @@
+= `BT-722`: Contract EU Funds Programme
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-722-Contract`:: Contract EU Funds Programme
+  `BT-722-Contract-List`:: Contract EU Funds Programme Listname

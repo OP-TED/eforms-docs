@@ -1,0 +1,12 @@
+= `BT-766`: Dynamic Purchasing System
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-766-Lot`:: Dynamic Purchasing System
+  `BT-766-Lot-List`:: Dynamic Purchasing System Listname
+  `BT-766-Part`:: Dynamic Purchasing System
+  `BT-766-Part-List`:: Dynamic Purchasing System Listname

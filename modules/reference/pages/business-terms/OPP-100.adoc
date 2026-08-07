@@ -1,0 +1,9 @@
+= `OPP-100`: Notice Purpose
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-100-Business`:: Notice Purpose
+  `OPP-100-Business-List`:: Notice Purpose Listname

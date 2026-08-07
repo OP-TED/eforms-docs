@@ -1,0 +1,10 @@
+= `BT-805`: Green Procurement Criteria
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-805-Lot`:: Green Procurement Criteria
+  `BT-805-Lot-List`:: Green Procurement Criteria Listname

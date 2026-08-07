@@ -1,0 +1,15 @@
+= `planning` codelist
+:navtitle: Codelists
+
+List of allowed Notice Type codes for a Planning Form Type
+[horizontal]
+Version:: 20210929-0
+Subset of:: xref:code-lists/notice-type.adoc[`notice-type`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `pin-buyer`::: Notice of the publication of a prior information notice or a periodic information notice on a buyer profile
+  `pin-only`::: Prior information notice or a periodic indicative notice used only for information
+  `pin-rtl`::: Prior information notice or a periodic indicative notice used to shorten time limits for receipt of tenders
+  `pin-tran`::: Prior information notice for public passenger transport services

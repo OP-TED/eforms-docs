@@ -1,0 +1,5 @@
+= `BT-1371`: Previous Planning Lot Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: IDENTIFIER

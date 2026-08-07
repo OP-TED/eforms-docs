@@ -1,0 +1,16 @@
+= `BT-22`: Internal Identifier
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-22-Lot`:: Internal Identifier
+  `BT-22-Lot-Scheme`:: Internal Identifier Schemename
+  `BT-22-LotsGroup`:: Internal Identifier
+  `BT-22-LotsGroup-Scheme`:: Internal Identifier Schemename
+  `BT-22-Part`:: Internal Identifier
+  `BT-22-Part-Scheme`:: Internal Identifier Schemename
+  `BT-22-Procedure`:: Internal Identifier
+  `BT-22-Procedure-Scheme`:: Internal Identifier Schemename

@@ -1,0 +1,17 @@
+= `contract-term` codelist
+:navtitle: Codelists
+
+TODO
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/contract-detail.adoc[`contract-detail`]
+Structure:: flat
+Used in:: xref:business-terms/OPP-030.adoc[`OPP-030`] Contract conditions Code
+
+== Codes
+[horizontal]
+  `cost-comp`::: Cost parameters for compensation payments
+  `exc-right`::: Exclusive rights are granted
+  `other`::: Other
+  `publ-ser-obl`::: Public service obligations
+  `soc-stand`::: Social standards

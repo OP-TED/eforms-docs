@@ -1,0 +1,10 @@
+= `BT-781`: Duration Additional Information
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-781-Lot`:: Duration Additional Information
+  `BT-781-Lot-Language`:: Duration Additional Information Language

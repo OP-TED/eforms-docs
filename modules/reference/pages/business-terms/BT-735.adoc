@@ -1,0 +1,12 @@
+= `BT-735`: CVD Contract Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-735-Lot`:: CVD Contract Type
+  `BT-735-Lot-List`:: CVD Contract Type Listname
+  `BT-735-LotResult`:: CVD Contract Type
+  `BT-735-LotResult-List`:: CVD Contract Type Listname

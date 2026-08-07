@@ -1,0 +1,10 @@
+= `BT-134`: Public Opening Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-134-Lot`:: Public Opening Description
+  `BT-134-Lot-Language`:: Public Opening Description Language

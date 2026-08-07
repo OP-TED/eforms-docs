@@ -1,0 +1,16 @@
+= `BT-507`: Organisation Country Subdivision
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-507-Business`:: NUTS code
+  `BT-507-Business-List`:: NUTS code Listname
+  `BT-507-Organization-Company`:: Organisation Country Subdivision
+  `BT-507-Organization-Company-List`:: Organisation Country Subdivision Listname
+  `BT-507-Organization-TouchPoint`:: Country Subdivision
+  `BT-507-Organization-TouchPoint-List`:: Country Subdivision Listname
+  `BT-507-UBO`:: Country Subdivision
+  `BT-507-UBO-List`:: Country Subdivision Listname

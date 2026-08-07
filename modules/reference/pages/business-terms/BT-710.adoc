@@ -1,0 +1,10 @@
+= `BT-710`: Tender Value Lowest
+:navtitle: Business Terms
+
+[horizontal]
+Type:: VALUE
+
+== Fields
+[horizontal]
+  `BT-710-LotResult`:: Tender Value Lowest
+  `BT-710-LotResult-Currency`:: Tender Value Lowest Currency

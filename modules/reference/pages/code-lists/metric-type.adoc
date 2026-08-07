@@ -1,0 +1,13 @@
+= `metric-type` codelist
+:navtitle: Codelists
+
+List of codes used to characterize the type of metric covered by the specified numbers. 
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/OPT-080.adoc[`OPT-080`] Consumption Metric, xref:business-terms/OPT-081.adoc[`OPT-081`] Savings Metric
+
+== Codes
+[horizontal]
+  `nrg-con-yr`::: Energy Consumption in kWh/year
+  `nrg-sav-yr`::: Energy Savings in kWh/year

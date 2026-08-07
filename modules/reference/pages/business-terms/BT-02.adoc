@@ -1,0 +1,9 @@
+= `BT-02`: Notice Type
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-02-notice`:: Notice Type

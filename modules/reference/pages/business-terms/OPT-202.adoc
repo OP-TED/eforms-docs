@@ -1,0 +1,9 @@
+= `OPT-202`: Beneficial Owner Technical Identifier
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPT-202-UBO`:: Beneficial Owner Technical Identifier
+  `OPT-202-UBO-Scheme`:: Beneficial Owner Technical Identifier Schemename

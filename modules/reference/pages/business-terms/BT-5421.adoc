@@ -1,0 +1,12 @@
+= `BT-5421`: Award Criterion Number Weight
+:navtitle: Business Terms
+
+[horizontal]
+Type:: CODE
+
+== Fields
+[horizontal]
+  `BT-5421-Lot`:: Award Criterion Number Weight
+  `BT-5421-Lot-List`:: Award Criterion Number Weight Listname
+  `BT-5421-LotsGroup`:: Award Criterion Number Weight
+  `BT-5421-LotsGroup-List`:: Award Criterion Number Weight Listname

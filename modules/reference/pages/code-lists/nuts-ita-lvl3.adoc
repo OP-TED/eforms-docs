@@ -1,0 +1,120 @@
+= `nuts-ita-lvl3` codelist
+:navtitle: Codelists
+
+List of level 3 NUTS codes for Italy
+[horizontal]
+Version:: 1.13.0-SNAPSHOT
+URI:: http://publications.europa.eu/resource/dataset/nuts
+Subset of:: xref:code-lists/nuts.adoc[`nuts`]
+Structure:: flat
+
+== Codes
+[horizontal]
+  `ITC11`::: Torino
+  `ITC12`::: Vercelli
+  `ITC13`::: Biella
+  `ITC14`::: Verbano-Cusio-Ossola
+  `ITC15`::: Novara
+  `ITC16`::: Cuneo
+  `ITC17`::: Asti
+  `ITC18`::: Alessandria
+  `ITC20`::: Valle d’Aosta/Vallée d’Aoste
+  `ITC31`::: Imperia
+  `ITC32`::: Savona
+  `ITC33`::: Genova
+  `ITC34`::: La Spezia
+  `ITC41`::: Varese
+  `ITC42`::: Como
+  `ITC43`::: Lecco
+  `ITC44`::: Sondrio
+  `ITC46`::: Bergamo
+  `ITC47`::: Brescia
+  `ITC48`::: Pavia
+  `ITC49`::: Lodi
+  `ITC4A`::: Cremona
+  `ITC4B`::: Mantova
+  `ITC4C`::: Milano
+  `ITC4D`::: Monza e della Brianza
+  `ITF11`::: L’Aquila
+  `ITF12`::: Teramo
+  `ITF13`::: Pescara
+  `ITF14`::: Chieti
+  `ITF21`::: Isernia
+  `ITF22`::: Campobasso
+  `ITF31`::: Caserta
+  `ITF32`::: Benevento
+  `ITF33`::: Napoli
+  `ITF34`::: Avellino
+  `ITF35`::: Salerno
+  `ITF43`::: Taranto
+  `ITF44`::: Brindisi
+  `ITF45`::: Lecce
+  `ITF46`::: Foggia
+  `ITF47`::: Bari
+  `ITF48`::: Barletta-Andria-Trani
+  `ITF51`::: Potenza
+  `ITF52`::: Matera
+  `ITF61`::: Cosenza
+  `ITF62`::: Crotone
+  `ITF63`::: Catanzaro
+  `ITF64`::: Vibo Valentia
+  `ITF65`::: Reggio Calabria
+  `ITG11`::: Trapani
+  `ITG12`::: Palermo
+  `ITG13`::: Messina
+  `ITG14`::: Agrigento
+  `ITG15`::: Caltanissetta
+  `ITG16`::: Enna
+  `ITG17`::: Catania
+  `ITG18`::: Ragusa
+  `ITG19`::: Siracusa
+  `ITG2D`::: Sassari
+  `ITG2E`::: Nuoro
+  `ITG2F`::: Cagliari
+  `ITG2G`::: Oristano
+  `ITG2H`::: Sud Sardegna
+  `ITH10`::: Bolzano-Bozen
+  `ITH20`::: Trento
+  `ITH31`::: Verona
+  `ITH32`::: Vicenza
+  `ITH33`::: Belluno
+  `ITH34`::: Treviso
+  `ITH35`::: Venezia
+  `ITH36`::: Padova
+  `ITH37`::: Rovigo
+  `ITH41`::: Pordenone
+  `ITH42`::: Udine
+  `ITH43`::: Gorizia
+  `ITH44`::: Trieste
+  `ITH51`::: Piacenza
+  `ITH52`::: Parma
+  `ITH53`::: Reggio nell’Emilia
+  `ITH54`::: Modena
+  `ITH55`::: Bologna
+  `ITH56`::: Ferrara
+  `ITH57`::: Ravenna
+  `ITH58`::: Forlì-Cesena
+  `ITH59`::: Rimini
+  `ITI11`::: Massa-Carrara
+  `ITI12`::: Lucca
+  `ITI13`::: Pistoia
+  `ITI14`::: Firenze
+  `ITI15`::: Prato
+  `ITI16`::: Livorno
+  `ITI17`::: Pisa
+  `ITI18`::: Arezzo
+  `ITI19`::: Siena
+  `ITI1A`::: Grosseto
+  `ITI21`::: Perugia
+  `ITI22`::: Terni
+  `ITI31`::: Pesaro e Urbino
+  `ITI32`::: Ancona
+  `ITI33`::: Macerata
+  `ITI34`::: Ascoli Piceno
+  `ITI35`::: Fermo
+  `ITI41`::: Viterbo
+  `ITI42`::: Rieti
+  `ITI43`::: Roma
+  `ITI44`::: Latina
+  `ITI45`::: Frosinone
+  `ITZZZ`::: Extra-Regio NUTS 3

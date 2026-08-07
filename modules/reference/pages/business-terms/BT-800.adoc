@@ -1,0 +1,10 @@
+= `BT-800`: Deadline Receipt Answers
+:navtitle: Business Terms
+
+[horizontal]
+Type:: DATE
+
+== Fields
+[horizontal]
+  `BT-800(d)-Lot`:: Deadline Receipt Answers (Date)
+  `BT-800(t)-Lot`:: Deadline Receipt Answers (Time)

@@ -1,0 +1,10 @@
+= `BT-132`: Public Opening Date
+:navtitle: Business Terms
+
+[horizontal]
+Type:: DATE
+
+== Fields
+[horizontal]
+  `BT-132(d)-Lot`:: Public Opening Date
+  `BT-132(t)-Lot`:: Public Opening Date

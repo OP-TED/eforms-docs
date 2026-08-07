@@ -1,0 +1,11 @@
+= `BT-502`: Organisation Contact Point
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-502-Business`:: Contact person
+  `BT-502-Organization-Company`:: Organisation Contact Point
+  `BT-502-Organization-TouchPoint`:: Contact Point

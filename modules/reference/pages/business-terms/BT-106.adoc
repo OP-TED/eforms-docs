@@ -1,0 +1,10 @@
+= `BT-106`: Procedure Accelerated
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-106-Procedure`:: Procedure Accelerated
+  `BT-106-Procedure-List`:: Procedure Accelerated Listname

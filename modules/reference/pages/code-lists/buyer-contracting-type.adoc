@@ -1,0 +1,13 @@
+= `buyer-contracting-type` codelist
+:navtitle: Codelists
+
+List of codes to specify whether a Buyer is a Contracting Entity or not.
+[horizontal]
+Version:: 1.0
+Structure:: flat
+Used in:: xref:business-terms/BT-740.adoc[`BT-740`] Buyer Contracting Entity
+
+== Codes
+[horizontal]
+  `cont-ent`::: Contracting Entity
+  `not-cont-ent`::: Not Contracting Entity

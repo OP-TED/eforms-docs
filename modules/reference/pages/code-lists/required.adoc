@@ -1,0 +1,14 @@
+= `required` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the associated requirement applies or not.
+[horizontal]
+Version:: 1.0
+Subset of:: xref:code-lists/indicator.adoc[`indicator`]
+Structure:: flat
+Used in:: xref:business-terms/BT-578.adoc[`BT-578`] Security Clearance, xref:business-terms/BT-761.adoc[`BT-761`] Tenderer Legal Form
+
+== Codes
+[horizontal]
+  `false`::: False
+  `true`::: True

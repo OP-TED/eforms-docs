@@ -1,0 +1,15 @@
+= `esubmission` codelist
+:navtitle: Codelists
+
+List of codes to specify whether the electronic submission is allowed or not.
+[horizontal]
+Version:: 20220316-0
+Subset of:: xref:code-lists/permission.adoc[`permission`]
+Structure:: flat
+Used in:: xref:business-terms/BT-17.adoc[`BT-17`] Submission Electronic
+
+== Codes
+[horizontal]
+  `allowed`::: Allowed
+  `not-allowed`::: Not allowed
+  `required`::: Required

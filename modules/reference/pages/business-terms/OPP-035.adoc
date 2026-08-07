@@ -1,0 +1,9 @@
+= `OPP-035`: Revenues allocation of tickets sales code
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-035-Tender`:: Revenues Allocation of tickets sales code
+  `OPP-035-Tender-List`:: Revenues Allocation of tickets sales code Listname

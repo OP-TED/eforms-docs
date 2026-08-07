@@ -1,0 +1,9 @@
+= `OPP-010`: Notice Publication Number
+:navtitle: Business Terms
+
+[horizontal]
+
+== Fields
+[horizontal]
+  `OPP-010-notice`:: Notice Publication Number
+  `OPP-010-notice-Scheme`:: Notice Publication Number Schemename

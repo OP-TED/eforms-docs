@@ -1,0 +1,10 @@
+= `BT-740`: Buyer Contracting Entity
+:navtitle: Business Terms
+
+[horizontal]
+Type:: INDICATOR
+
+== Fields
+[horizontal]
+  `BT-740-Procedure-Buyer`:: Buyer Contracting Entity
+  `BT-740-Procedure-Buyer-List`:: Buyer Contracting Entity Listname

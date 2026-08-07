@@ -1,0 +1,16 @@
+= `BT-24`: Description
+:navtitle: Business Terms
+
+[horizontal]
+Type:: TEXT
+
+== Fields
+[horizontal]
+  `BT-24-Lot`:: Description
+  `BT-24-Lot-Language`:: Description Language
+  `BT-24-LotsGroup`:: Description
+  `BT-24-LotsGroup-Language`:: Description Language
+  `BT-24-Part`:: Description
+  `BT-24-Part-Language`:: Description Language
+  `BT-24-Procedure`:: Description
+  `BT-24-Procedure-Language`:: Description Language
