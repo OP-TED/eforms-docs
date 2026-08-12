@@ -45,4 +45,5 @@ Structure:: flat
   `SVN`::: Slovenia
   `SWE`::: Sweden
   `TUR`::: Türkiye
+  `UKR`::: Ukraine
   `XKX`::: Kosovo

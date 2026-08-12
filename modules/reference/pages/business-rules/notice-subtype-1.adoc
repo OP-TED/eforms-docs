@@ -4578,7 +4578,7 @@ a|
 *Always forbidden* in notice sub-type 1.
 |`ERROR`
 h|`BR-OPT-00999-0004`
-h|`OPT-999`
+h|`OPT-999-notice`
 a|
 
 *Always forbidden* in notice sub-type 1.
@@ -4599,7 +4599,13 @@ h|`BR-BT-00001-0108`
 h|`BT-01(f)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 500.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-01(e)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00002-0004`
 h|`BT-02-notice`
@@ -4659,19 +4665,37 @@ h|`BR-BT-00026-0004`
 h|`BT-26(m)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 163.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-262-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00026-0304`
 h|`BT-26(a)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 166.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-263-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00140-0004`
 h|`BT-140-notice`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 209.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-758-notice is not present)
+----
 |`ERROR`
 h|`BR-BT-00262-0004`
 h|`BT-262-Procedure`
@@ -4719,13 +4743,25 @@ h|`BR-BT-00507-0004`
 h|`BT-507-Organization-Company`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 182.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Organization-Company not in (nuts-country))
+----
 |`ERROR`
 h|`BR-BT-00507-0055`
 h|`BT-507-Organization-TouchPoint`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 183.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Organization-TouchPoint not in (nuts-country))
+----
 |`ERROR`
 h|`BR-BT-00508-0004`
 h|`BT-508-Procedure-Buyer`
@@ -4767,7 +4803,13 @@ h|`BR-BT-00513-0055`
 h|`BT-513-Organization-TouchPoint`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 387.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Organization-TouchPoint is not present)
+----
 |`ERROR`
 h|`BR-BT-00514-0004`
 h|`BT-514-Organization-Company`
@@ -4791,7 +4833,13 @@ h|`BR-BT-00719-0004`
 h|`BT-719-notice`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 211.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-718-notice == TRUE
+----
 |`ERROR`
 h|`BR-BT-00728-0155`
 h|`BT-728-Procedure`
@@ -4815,7 +4863,13 @@ h|`BR-BT-00803-0004`
 h|`BT-803(t)-notice`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 510.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-803(d)-notice is not present)
+----
 |`ERROR`
 h|`BR-BT-05071-0004`
 h|`BT-5071-Procedure`
@@ -4845,7 +4899,13 @@ h|`BR-BT-05141-0004`
 h|`BT-5141-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 95.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-727-Procedure in ('anyw', 'anyw-eea'))
+----
 |`ERROR`
 h|`BR-OPP-00070-0004`
 h|`OPP-070-notice`
@@ -4869,7 +4929,13 @@ h|`BR-OPT-00030-0004`
 h|`OPT-030-Procedure-SProvider`
 a|
 
-*Always mandatory* in notice sub-type 1.
+*Mandatory if* Negation of 558.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-300-Procedure-SProvider is not present)
+----
 |`ERROR`
 h|`BR-OPT-00200-0004`
 h|`OPT-200-Organization-Company`

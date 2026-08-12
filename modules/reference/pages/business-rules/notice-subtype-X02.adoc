@@ -4554,7 +4554,7 @@ a|
 *Always forbidden* in notice sub-type X02.
 |`ERROR`
 h|`BR-OPT-00999-0002`
-h|`OPT-999`
+h|`OPT-999-notice`
 a|
 
 *Always forbidden* in notice sub-type X02.
@@ -4599,7 +4599,13 @@ h|`BR-BT-00140-0002`
 h|`BT-140-notice`
 a|
 
-*Always mandatory* in notice sub-type X02.
+*Mandatory if* Negation of 209.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-758-notice is not present)
+----
 |`ERROR`
 h|`BR-BT-00500-0157`
 h|`BT-500-Business`
@@ -4617,7 +4623,13 @@ h|`BR-BT-00507-0155`
 h|`BT-507-Business`
 a|
 
-*Always mandatory* in notice sub-type X02.
+*Mandatory if* Negation of 389.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Business not in (nuts-country))
+----
 |`ERROR`
 h|`BR-BT-00512-0155`
 h|`BT-512-Business`
@@ -4635,7 +4647,13 @@ h|`BR-BT-00513-0155`
 h|`BT-513-Business`
 a|
 
-*Always mandatory* in notice sub-type X02.
+*Mandatory if* Negation of 394.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Business is not present)
+----
 |`ERROR`
 h|`BR-BT-00514-0155`
 h|`BT-514-Business`
@@ -4665,7 +4683,13 @@ h|`BR-BT-00803-0002`
 h|`BT-803(t)-notice`
 a|
 
-*Always mandatory* in notice sub-type X02.
+*Mandatory if* Negation of 510.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-803(d)-notice is not present)
+----
 |`ERROR`
 h|`BR-OPP-00070-0002`
 h|`OPP-070-notice`
@@ -4689,25 +4713,49 @@ h|`BR-OPP-00110-0002`
 h|`OPP-110-Business`
 a|
 
-*Always mandatory* in notice sub-type X02.
+*Mandatory if* Negation of 213.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-501-Business-European is not present)
+----
 |`ERROR`
 h|`BR-OPP-00111-0002`
 h|`OPP-111-Business`
 a|
 
-*Always mandatory* in notice sub-type X02.
+*Mandatory if* Negation of 213.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-501-Business-European is not present)
+----
 |`ERROR`
 h|`BR-OPP-00112-0002`
 h|`OPP-112-Business`
 a|
 
-*Always mandatory* in notice sub-type X02.
+*Mandatory if* Negation of 213.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-501-Business-European is not present)
+----
 |`ERROR`
 h|`BR-OPP-00113-0002`
 h|`OPP-113-Business-European`
 a|
 
-*Always mandatory* in notice sub-type X02.
+*Mandatory if* Negation of 213.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-501-Business-European is not present)
+----
 |`ERROR`
 h|`BR-OPP-00120-0002`
 h|`OPP-120-Business`

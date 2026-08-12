@@ -3,11 +3,11 @@
 
 List of currency codes
 [horizontal]
-Version:: 20250924-0
+Version:: 20260105-0
 URI:: http://publications.europa.eu/resource/dataset/currency
 Structure:: flat
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[View on EU Vocabularies^]
-Used in:: xref:business-terms/BT-27.adoc[`BT-27`] Estimated Value, xref:business-terms/BT-118.adoc[`BT-118`] Notice Framework Maximum Value, xref:business-terms/BT-156.adoc[`BT-156`] Group Framework Maximum Value, xref:business-terms/BT-157.adoc[`BT-157`] Group Framework Maximum Value, xref:business-terms/BT-160.adoc[`BT-160`] Concession Revenue Buyer, xref:business-terms/BT-161.adoc[`BT-161`] Notice Value, xref:business-terms/BT-162.adoc[`BT-162`] Concession Revenue User, xref:business-terms/BT-271.adoc[`BT-271`] Framework Maximum Value, xref:business-terms/BT-553.adoc[`BT-553`] Subcontracting Value, xref:business-terms/BT-644.adoc[`BT-644`] Prize Value, xref:business-terms/BT-660.adoc[`BT-660`] Framework Re-estimated Value, xref:business-terms/BT-709.adoc[`BT-709`] Framework Maximum Value, xref:business-terms/BT-710.adoc[`BT-710`] Tender Value Lowest, xref:business-terms/BT-711.adoc[`BT-711`] Tender Value Highest, xref:business-terms/BT-720.adoc[`BT-720`] Tender Value, xref:business-terms/BT-779.adoc[`BT-779`] Tender Payment Value, xref:business-terms/BT-782.adoc[`BT-782`] Tender Penalties, xref:business-terms/BT-793.adoc[`BT-793`] Review Remedy Value, xref:business-terms/BT-795.adoc[`BT-795`] Review Request Fee, xref:business-terms/BT-1118.adoc[`BT-1118`] Notice Framework Approximate Value, xref:business-terms/BT-1561.adoc[`BT-1561`] Group Framework Re-estimated Value
+Used in:: xref:business-terms/BT-1118.adoc[`BT-1118`] Notice Framework Approximate Value, xref:business-terms/BT-27.adoc[`BT-27`] Estimated Value, xref:business-terms/BT-795.adoc[`BT-795`] Review Request Fee, xref:business-terms/BT-709.adoc[`BT-709`] Framework Maximum Value, xref:business-terms/BT-162.adoc[`BT-162`] Concession Revenue User, xref:business-terms/BT-271.adoc[`BT-271`] Framework Maximum Value, xref:business-terms/BT-156.adoc[`BT-156`] Group Framework Maximum Value, xref:business-terms/BT-161.adoc[`BT-161`] Notice Value, xref:business-terms/BT-157.adoc[`BT-157`] Group Framework Maximum Value, xref:business-terms/BT-1561.adoc[`BT-1561`] Group Framework Re-estimated Value, xref:business-terms/BT-644.adoc[`BT-644`] Prize Value, xref:business-terms/BT-711.adoc[`BT-711`] Tender Value Highest, xref:business-terms/BT-118.adoc[`BT-118`] Notice Framework Maximum Value, xref:business-terms/BT-793.adoc[`BT-793`] Review Remedy Value, xref:business-terms/BT-779.adoc[`BT-779`] Tender Payment Value, xref:business-terms/BT-160.adoc[`BT-160`] Concession Revenue Buyer, xref:business-terms/BT-720.adoc[`BT-720`] Tender Value, xref:business-terms/BT-660.adoc[`BT-660`] Framework Re-estimated Value, xref:business-terms/BT-782.adoc[`BT-782`] Tender Penalties, xref:business-terms/BT-553.adoc[`BT-553`] Subcontracting Value, xref:business-terms/BT-710.adoc[`BT-710`] Tender Value Lowest
 
 == Codes
 [horizontal]
@@ -15,7 +15,6 @@ Used in:: xref:business-terms/BT-27.adoc[`BT-27`] Estimated Value, xref:business
   `AFN`::: Afghani
   `ALL`::: Lek
   `AMD`::: Dram
-  `ANG`::: Netherlands Antillean guilder
   `AOA`::: Kwanza
   `ARS`::: Argentine peso
   `AUD`::: Australian dollar
@@ -24,7 +23,6 @@ Used in:: xref:business-terms/BT-27.adoc[`BT-27`] Estimated Value, xref:business
   `BAM`::: Convertible mark
   `BBD`::: Barbados dollar
   `BDT`::: Taka
-  `BGN`::: Lev
   `BHD`::: Bahraini dinar
   `BIF`::: Burundi franc
   `BMD`::: Bermuda dollar

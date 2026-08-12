@@ -5,4 +5,4 @@
 
 == Fields
 [horizontal]
-  `OPT-999`:: Dummy Tender Award Date
+  `OPT-999-notice`:: Dummy Tender Award Date

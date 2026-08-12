@@ -4614,7 +4614,7 @@ a|
 *Always forbidden* in notice sub-type E2.
 |`ERROR`
 h|`BR-OPT-00999-0010`
-h|`OPT-999`
+h|`OPT-999-notice`
 a|
 
 *Always forbidden* in notice sub-type E2.
@@ -4635,7 +4635,13 @@ h|`BR-BT-00001-0114`
 h|`BT-01(f)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 500.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-01(e)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00002-0010`
 h|`BT-02-notice`
@@ -4665,13 +4671,25 @@ h|`BR-BT-00013-0216`
 h|`BT-13(t)-Part`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 697.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-13(d)-Part is not present)
+----
 |`ERROR`
 h|`BR-BT-00015-0010`
 h|`BT-15-Part`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 13.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-14-Part == 'non-restricted-document'
+----
 |`ERROR`
 h|`BR-BT-00021-0010`
 h|`BT-21-Procedure`
@@ -4713,25 +4731,49 @@ h|`BR-BT-00026-0010`
 h|`BT-26(m)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 163.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-262-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00026-0210`
 h|`BT-26(m)-Part`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 162.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-262-Part is not present)
+----
 |`ERROR`
 h|`BR-BT-00026-0310`
 h|`BT-26(a)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 166.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-263-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00026-0510`
 h|`BT-26(a)-Part`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 165.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-263-Part is not present)
+----
 |`ERROR`
 h|`BR-BT-00137-0010`
 h|`BT-137-Part`
@@ -4743,7 +4785,13 @@ h|`BR-BT-00140-0010`
 h|`BT-140-notice`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 209.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-758-notice is not present)
+----
 |`ERROR`
 h|`BR-BT-00262-0010`
 h|`BT-262-Procedure`
@@ -4803,7 +4851,13 @@ h|`BR-BT-00507-0061`
 h|`BT-507-Organization-TouchPoint`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 183.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Organization-TouchPoint not in (nuts-country))
+----
 |`ERROR`
 h|`BR-BT-00509-0061`
 h|`BT-509-Organization-TouchPoint`
@@ -4833,7 +4887,13 @@ h|`BR-BT-00513-0061`
 h|`BT-513-Organization-TouchPoint`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 387.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Organization-TouchPoint is not present)
+----
 |`ERROR`
 h|`BR-BT-00514-0010`
 h|`BT-514-Organization-Company`
@@ -4845,13 +4905,25 @@ h|`BR-BT-00514-0061`
 h|`BT-514-Organization-TouchPoint`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 181.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-500-Organization-TouchPoint is not present)
+----
 |`ERROR`
 h|`BR-BT-00615-0010`
 h|`BT-615-Part`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 15.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-14-Part == 'restricted-document'
+----
 |`ERROR`
 h|`BR-BT-00701-0010`
 h|`BT-701-notice`
@@ -4869,7 +4941,13 @@ h|`BR-BT-00719-0010`
 h|`BT-719-notice`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 211.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-718-notice == TRUE
+----
 |`ERROR`
 h|`BR-BT-00728-0194`
 h|`BT-728-Procedure`
@@ -4917,7 +4995,13 @@ h|`BR-BT-00803-0010`
 h|`BT-803(t)-notice`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 510.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-803(d)-notice is not present)
+----
 |`ERROR`
 h|`BR-BT-05071-0229`
 h|`BT-5071-Procedure`
@@ -4971,19 +5055,37 @@ h|`BR-BT-05141-0229`
 h|`BT-5141-Procedure`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 95.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-727-Procedure in ('anyw', 'anyw-eea'))
+----
 |`ERROR`
 h|`BR-BT-05141-0233`
 h|`BT-5141-Part`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 94.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-727-Part in ('anyw', 'anyw-eea'))
+----
 |`ERROR`
 h|`BR-OPP-00050-0010`
 h|`OPP-050-Organization`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 355.
+
+.Condition in EFX
+[source, EFX]
+----
+not(not(OPT-200-Organization-Company in OPT-300-Procedure-Buyer) or (count(OPT-300-Procedure-Buyer) < 2))
+----
 |`ERROR`
 h|`BR-OPP-00070-0010`
 h|`OPP-070-notice`
@@ -5007,13 +5109,25 @@ h|`BR-OPT-00030-0010`
 h|`OPT-030-Procedure-SProvider`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 558.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-300-Procedure-SProvider is not present)
+----
 |`ERROR`
 h|`BR-OPT-00140-0010`
 h|`OPT-140-Part`
 a|
 
-*Always mandatory* in notice sub-type E2.
+*Mandatory if* Negation of 14.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-14-Part is not present)
+----
 |`ERROR`
 h|`BR-OPT-00200-0010`
 h|`OPT-200-Organization-Company`

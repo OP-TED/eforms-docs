@@ -7,7 +7,7 @@ Version:: 20241211-0
 URI:: http://publications.europa.eu/resource/dataset/contract-nature
 Structure:: flat
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/contract-nature[View on EU Vocabularies^]
-Used in:: xref:business-terms/BT-23.adoc[`BT-23`] Main Nature, xref:business-terms/BT-531.adoc[`BT-531`] Additional Nature
+Used in:: xref:business-terms/BT-531.adoc[`BT-531`] Additional Nature, xref:business-terms/BT-23.adoc[`BT-23`] Main Nature
 
 == Codes
 [horizontal]

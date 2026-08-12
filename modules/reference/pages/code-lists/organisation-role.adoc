@@ -3,7 +3,7 @@
 
 This table provides the list of the different functions of the organisations in a procurement procedure.
 [horizontal]
-Version:: 20250924-0
+Version:: 20260318-0
 URI:: http://publications.europa.eu/resource/dataset/organisation-role
 Tailored by:: xref:code-lists/organisation-role-service.adoc[`organisation-role-service`], xref:code-lists/review-requester-type.adoc[`review-requester-type`]
 Structure:: flat
@@ -15,9 +15,9 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `buyer`::: Buyer
   `cpb-acq`::: Central purchasing body acquiring supplies and/or services intended for other buyers
   `cpb-awa`::: Central purchasing body awarding public contracts or concluding framework agreements for works, supplies or services intended for other buyers
-  `info-emp`::: Organisation providing information concerning the general regulatory framework for employment protection and working conditions applicable in the place where the contract is to be performed
-  `info-envir`::: Organisation providing information concerning the general regulatory framework for environmental protection applicable in the place where the contract is to be performed
-  `info-tax`::: Organisation providing information concerning the general regulatory framework for taxes applicable in the place where the contract is to be performed
+  `info-emp`::: Organisation providing information on employment legislation
+  `info-envir`::: Organisation providing information on environmental legislation
+  `info-tax`::: Organisation providing information on fiscal legislation
   `mediator`::: Mediation organisation
   `rev-req`::: Organisation (or person) requesting review that has or has had an interest in a contract and who has been or risks being harmed by an alleged infringement
   `reviewer`::: Review organisation

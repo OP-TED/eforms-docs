@@ -3,12 +3,12 @@
 
 List of three characters language codes correlated with the ISO 639 international standard with additional codes for some languages without assigned ISO code.
 [horizontal]
-Version:: 20250618-0
+Version:: 20260617-0
 URI:: http://publications.europa.eu/resource/dataset/language
 Tailored by:: xref:code-lists/eu-official-language.adoc[`eu-official-language`]
 Structure:: flat
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[View on EU Vocabularies^]
-Used in:: xref:business-terms/BT-97.adoc[`BT-97`] Submission Language, xref:business-terms/BT-708.adoc[`BT-708`] Documents Official Language, xref:business-terms/BT-737.adoc[`BT-737`] Documents Unofficial Language
+Used in:: xref:business-terms/BT-708.adoc[`BT-708`] Documents Official Language, xref:business-terms/BT-737.adoc[`BT-737`] Documents Unofficial Language, xref:business-terms/BT-97.adoc[`BT-97`] Submission Language
 
 == Codes
 [horizontal]
@@ -68,7 +68,7 @@ Used in:: xref:business-terms/BT-97.adoc[`BT-97`] Submission Language, xref:busi
   `ISL`::: Icelandic
   `ITA`::: Italian
   `JPN`::: Japanese
-  `KAL`::: Greenlandic
+  `KAL`::: Kalaallisut
   `KAT`::: Georgian
   `KAZ`::: Kazakh
   `KHM`::: Khmer
@@ -92,7 +92,7 @@ Used in:: xref:business-terms/BT-97.adoc[`BT-97`] Submission Language, xref:busi
   `MLT`::: Maltese
   `MON`::: Mongolian
   `MRI`::: Māori
-  `MSA`::: Malaysian
+  `MSA`::: Malay
   `MYA`::: Burmese
   `NAU`::: Nauruan
   `NBL`::: Southern Ndebele
@@ -103,9 +103,9 @@ Used in:: xref:business-terms/BT-97.adoc[`BT-97`] Submission Language, xref:busi
   `NOB`::: Norwegian Bokmål
   `NOR`::: Norwegian
   `NSO`::: Northern Sotho
-  `NYA`::: Chewa
+  `NYA`::: Chichewa
   `OCI`::: Occitan
-  `OSS`::: Ossetic
+  `OSS`::: Iron Ossetic
   `PAN`::: Punjabi
   `PAP`::: Papiamento
   `PAU`::: Palauan

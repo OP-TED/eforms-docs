@@ -3,7 +3,7 @@
 
 List of level 3 NUTS codes for Finland
 [horizontal]
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 URI:: http://publications.europa.eu/resource/dataset/nuts
 Subset of:: xref:code-lists/nuts.adoc[`nuts`]
 Structure:: flat

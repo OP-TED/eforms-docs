@@ -5,7 +5,7 @@ Notice reference type
 [horizontal]
 Version:: 1.0
 Structure:: flat
-Used in:: xref:business-terms/BT-125.adoc[`BT-125`] Previous Planning Identifier, xref:business-terms/BT-1501.adoc[`BT-1501`] Modification Previous Notice Section Identifier, xref:business-terms/OPT-100.adoc[`OPT-100`] Framework Notice Identifier
+Used in:: xref:business-terms/OPT-100.adoc[`OPT-100`] Framework Notice Identifier, xref:business-terms/BT-125.adoc[`BT-125`] Previous Planning Identifier, xref:business-terms/BT-1501.adoc[`BT-1501`] Modification Previous Notice Section Identifier
 
 == Codes
 [horizontal]

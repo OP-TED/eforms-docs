@@ -3,12 +3,12 @@
 
 List of three characters country codes, correlated with the ISO 3166 international standard and additional authority codes for some countries without assigned ISO code.
 [horizontal]
-Version:: 20250924-0
+Version:: 20260617-0
 URI:: http://publications.europa.eu/resource/dataset/country
 Tailored by:: xref:code-lists/eea-country.adoc[`eea-country`], xref:code-lists/eu-country.adoc[`eu-country`], xref:code-lists/lawful-country.adoc[`lawful-country`], xref:code-lists/nuts-country.adoc[`nuts-country`], xref:code-lists/postcode-country.adoc[`postcode-country`]
 Structure:: flat
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[View on EU Vocabularies^]
-Used in:: xref:business-terms/BT-191.adoc[`BT-191`] Country Origin, xref:business-terms/BT-514.adoc[`BT-514`] Organisation Country Code, xref:business-terms/BT-706.adoc[`BT-706`] Winner Owner Nationality, xref:business-terms/BT-5141.adoc[`BT-5141`] Place Performance Country Code, xref:business-terms/OPP-112.adoc[`OPP-112`] Place of registration - Country
+Used in:: xref:business-terms/BT-514.adoc[`BT-514`] Organisation Country Code, xref:business-terms/BT-5141.adoc[`BT-5141`] Place Performance Country Code, xref:business-terms/BT-191.adoc[`BT-191`] Country Origin, xref:business-terms/BT-706.adoc[`BT-706`] Winner Owner Nationality, xref:business-terms/OPP-112.adoc[`OPP-112`] Place of registration - Country
 
 == Codes
 [horizontal]

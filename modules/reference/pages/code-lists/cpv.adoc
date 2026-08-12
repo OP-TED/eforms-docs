@@ -8,7 +8,7 @@ URI:: http://publications.europa.eu/resource/dataset/cpv
 Tailored by:: xref:code-lists/social-service-cpv.adoc[`social-service-cpv`]
 Structure:: hierarchical
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://data.europa.eu/cpv/Cpv2008/Code[View on EU Vocabularies^]
-Used in:: xref:business-terms/BT-262.adoc[`BT-262`] Main Classification Code, xref:business-terms/BT-263.adoc[`BT-263`] Additional Classification Codes
+Used in:: xref:business-terms/BT-263.adoc[`BT-263`] Additional Classification Codes, xref:business-terms/BT-262.adoc[`BT-262`] Main Classification Code
 
 == Codes
 [horizontal]

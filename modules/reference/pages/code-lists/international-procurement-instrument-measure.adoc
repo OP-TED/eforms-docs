@@ -3,10 +3,11 @@
 
 Specific International Procurement Instrument Measure
 [horizontal]
-Version:: 1.0
+Version:: 20251210-0
+URI:: http://publications.europa.eu/resource/dataset/international-procurement-instrument-measure
 Structure:: flat
 Used in:: xref:business-terms/BT-685.adoc[`BT-685`] Specific IPI Measure
 
 == Codes
 [horizontal]
-  `32025R1197`::: Regulation (EU) 2025/1197: Medical devices originating in the People’s Republic of China
+  `32025R1197`::: Medical devices originating in China – Regulation (EU) 2025/1197

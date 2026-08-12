@@ -7,7 +7,7 @@ Version:: 20240612-0
 URI:: http://publications.europa.eu/resource/dataset/number-weight
 Structure:: flat
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/number-weight[View on EU Vocabularies^]
-Used in:: xref:business-terms/BT-5421.adoc[`BT-5421`] Award Criterion Number Weight, xref:business-terms/BT-7531.adoc[`BT-7531`] Selection Criteria Second Stage Invite Number Weight
+Used in:: xref:business-terms/BT-7531.adoc[`BT-7531`] Selection Criteria Second Stage Invite Number Weight, xref:business-terms/BT-5421.adoc[`BT-5421`] Award Criterion Number Weight
 
 == Codes
 [horizontal]

@@ -1,6 +1,18 @@
 = Business rules for notice sub-type `35`
 :navtitle: Business Rules
 
+== `co_constraint`
+[cols="<3,3,<6,>1", role="fixed-layout"]
+|====
+h| Business Rule h| Field h|Details h|Severity
+h|`BR-OPT-00322-0060`
+h|`OPT-322-LotResult`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
+|====
+
 == `forbidden`
 [cols="<3,3,<6,>1", role="fixed-layout"]
 |====
@@ -4961,30 +4973,6 @@ a|
 
 *Always forbidden* in notice sub-type 35.
 |`ERROR`
-h|`BR-BT-00811-0044`
-h|`BT-811(a)-Lot`
-a|
-
-*Forbidden if*  Energy Efficiency Directive (EED) (BT-810) is not true.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-810-Lot == 'true')
-----
-|`ERROR`
-h|`BR-BT-00811-0095`
-h|`BT-811(a)-LotResult`
-a|
-
-*Forbidden if* Energy Efficiency Directive (EED) (BT-810) is not true for the given Lot, or the Lot has not been awarded.
-
-.Condition in EFX
-[source, EFX]
-----
-(BT-13713-LotResult in BT-137-Lot[not(BT-810-Lot == 'true')]) or not(BT-142-LotResult == 'selec-w')
-----
-|`ERROR`
 h|`BR-BT-00811-0244`
 h|`BT-811(b)-Lot`
 a|
@@ -5007,6 +4995,30 @@ a|
 [source, EFX]
 ----
 (BT-13713-LotResult in BT-137-Lot[not(BT-810-Lot == 'true')]) or not(BT-142-LotResult == 'selec-w')
+----
+|`ERROR`
+h|`BR-BT-00811-0376`
+h|`BT-811(a)-Lot`
+a|
+
+*Forbidden if* Negation of 3.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-105-Procedure not in ('open','restricted','neg-w-call','comp-dial','innovation'))
+----
+|`ERROR`
+h|`BR-BT-00811-0389`
+h|`BT-811(a)-LotResult`
+a|
+
+*Forbidden if* Negation of 4.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-106-Procedure == 'true'
 ----
 |`ERROR`
 h|`BR-BT-00812-0044`
@@ -6099,7 +6111,13 @@ h|`BR-BT-00001-0148`
 h|`BT-01(f)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 500.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-01(e)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00002-0044`
 h|`BT-02-notice`
@@ -6135,13 +6153,25 @@ h|`BR-BT-00009-0095`
 h|`BT-09(b)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 395.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-09(a)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00010-0044`
 h|`BT-10-Procedure-Buyer`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 692.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-11-Procedure-Buyer not in ('body-pl','body-pl-cga','body-pl-la','body-pl-ra','cga','def-cont','eu-ins-bod-ag','int-org','la','org-sub','org-sub-cga','org-sub-la','org-sub-ra','ra'))
+----
 |`ERROR`
 h|`BR-BT-00011-0044`
 h|`BT-11-Procedure-Buyer`
@@ -6189,31 +6219,61 @@ h|`BR-BT-00026-0044`
 h|`BT-26(m)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 163.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-262-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00026-0144`
 h|`BT-26(m)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 161.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-262-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00026-0344`
 h|`BT-26(a)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 166.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-263-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00026-0444`
 h|`BT-26(a)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 164.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-263-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00135-0044`
 h|`BT-135-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 60.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-136-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00137-0146`
 h|`BT-137-Lot`
@@ -6225,7 +6285,13 @@ h|`BR-BT-00140-0044`
 h|`BT-140-notice`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 209.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-758-notice is not present)
+----
 |`ERROR`
 h|`BR-BT-00142-0044`
 h|`BT-142-LotResult`
@@ -6237,7 +6303,13 @@ h|`BR-BT-00144-0044`
 h|`BT-144-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 62.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-142-LotResult == 'clos-nw'
+----
 |`ERROR`
 h|`BR-BT-00145-0044`
 h|`BT-145-Contract`
@@ -6255,31 +6327,61 @@ h|`BR-BT-00150-0044`
 h|`BT-150-Contract`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 203.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-142-LotResult == 'selec-w'
+----
 |`ERROR`
 h|`BR-BT-00160-0044`
 h|`BT-160-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 550.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-321-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00161-0044`
 h|`BT-161-NoticeResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 339.
+
+.Condition in EFX
+[source, EFX]
+----
+not(not(BT-142-LotResult[BT-13713-LotResult in BT-137-Lot[BT-765-Lot not in ('fa-mix','fa-w-rc','fa-wo-rc')]] == 'selec-w') and not(BT-768-Contract == TRUE))
+----
 |`ERROR`
 h|`BR-BT-00162-0044`
 h|`BT-162-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 550.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-321-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00163-0044`
 h|`BT-163-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 550.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-321-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00165-0044`
 h|`BT-165-Organization-Company`
@@ -6297,277 +6399,553 @@ h|`BR-BT-00197-2856`
 h|`BT-197(BT-142)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 273.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-142)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-2865`
 h|`BT-197(BT-144)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 274.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-144)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-2880`
 h|`BT-197(BT-160)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 276.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-160)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-2893`
 h|`BT-197(BT-161)-NoticeResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 277.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-161)-NoticeResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-2898`
 h|`BT-197(BT-162)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 278.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-162)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-2903`
 h|`BT-197(BT-163)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 279.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-163)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-2923`
 h|`BT-197(BT-193)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 282.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-193)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3006`
 h|`BT-197(BT-553)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 297.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-553)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3019`
 h|`BT-197(BT-554)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 298.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-554)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3032`
 h|`BT-197(BT-555)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 299.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-555)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3071`
 h|`BT-197(BT-712)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 304.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-712)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3084`
 h|`BT-197(BT-720)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 305.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-720)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3097`
 h|`BT-197(BT-730)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 306.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-730)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3110`
 h|`BT-197(BT-731)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 307.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-731)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3139`
 h|`BT-197(BT-759)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 312.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-759)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3148`
 h|`BT-197(BT-760)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 313.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-760)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3161`
 h|`BT-197(BT-773)-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 314.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-773)-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3633`
 h|`BT-197(BT-635)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 505.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-635)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3647`
 h|`BT-197(BT-636)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 506.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-636)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3842`
 h|`BT-197(BT-09)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 265.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-09)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3860`
 h|`BT-197(BT-88)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 315.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-88)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3874`
 h|`BT-197(BT-136)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 272.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-136)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3882`
 h|`BT-197(BT-1252)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 269.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-1252)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3890`
 h|`BT-197(BT-135)-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 270.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-135)-Procedure is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3898`
 h|`BT-197(BT-733)-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 309.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-733)-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3908`
 h|`BT-197(BT-543)-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 296.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-543)-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3918`
 h|`BT-197(BT-5421)-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 290.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-5421)-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3928`
 h|`BT-197(BT-5422)-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 292.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-5422)-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3938`
 h|`BT-197(BT-5423)-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 294.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-5423)-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3958`
 h|`BT-197(BT-734)-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 311.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-734)-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3968`
 h|`BT-197(BT-539)-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 284.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-539)-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3978`
 h|`BT-197(BT-540)-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 286.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-540)-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3988`
 h|`BT-197(BT-733)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 308.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-733)-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-3998`
 h|`BT-197(BT-543)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 295.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-543)-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4008`
 h|`BT-197(BT-5421)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 289.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-5421)-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4018`
 h|`BT-197(BT-5422)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 291.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-5422)-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4028`
 h|`BT-197(BT-5423)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 293.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-5423)-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4048`
 h|`BT-197(BT-734)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 310.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-734)-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4058`
 h|`BT-197(BT-539)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 283.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-539)-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4068`
 h|`BT-197(BT-540)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 285.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-540)-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4317`
 h|`BT-197(BT-541)-LotsGroup-Weight`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 584.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-541)-LotsGroup-Weight is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4327`
 h|`BT-197(BT-541)-Lot-Weight`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 581.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-541)-Lot-Weight is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4517`
 h|`BT-197(BT-541)-LotsGroup-Fixed`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 585.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-541)-LotsGroup-Fixed is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4527`
 h|`BT-197(BT-541)-Lot-Fixed`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 582.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-541)-Lot-Fixed is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4717`
 h|`BT-197(BT-541)-LotsGroup-Threshold`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 586.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-541)-LotsGroup-Threshold is not present)
+----
 |`ERROR`
 h|`BR-BT-00197-4727`
 h|`BT-197(BT-541)-Lot-Threshold`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 583.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-195(BT-541)-Lot-Threshold is not present)
+----
 |`ERROR`
 h|`BR-BT-00262-0044`
 h|`BT-262-Procedure`
@@ -6621,13 +6999,25 @@ h|`BR-BT-00507-0044`
 h|`BT-507-Organization-Company`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 182.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Organization-Company not in (nuts-country))
+----
 |`ERROR`
 h|`BR-BT-00507-0095`
 h|`BT-507-Organization-TouchPoint`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 183.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Organization-TouchPoint not in (nuts-country))
+----
 |`ERROR`
 h|`BR-BT-00512-0044`
 h|`BT-512-Organization-Company`
@@ -6663,7 +7053,13 @@ h|`BR-BT-00513-0095`
 h|`BT-513-Organization-TouchPoint`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 387.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-514-Organization-TouchPoint is not present)
+----
 |`ERROR`
 h|`BR-BT-00514-0044`
 h|`BT-514-Organization-Company`
@@ -6675,67 +7071,133 @@ h|`BR-BT-00540-0044`
 h|`BT-540-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 502.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-539-LotsGroup is not present)
+----
 |`ERROR`
 h|`BR-BT-00540-0096`
 h|`BT-540-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 501.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-539-Lot is not present)
+----
 |`ERROR`
 h|`BR-BT-00553-0063`
 h|`BT-553-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 68.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-730-Tender == TRUE
+----
 |`ERROR`
 h|`BR-BT-00555-0063`
 h|`BT-555-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 70.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-731-Tender == TRUE
+----
 |`ERROR`
 h|`BR-BT-00610-0044`
 h|`BT-610-Procedure-Buyer`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 330.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-11-Procedure-Buyer not in ('pub-undert','pub-undert-cga','pub-undert-la','pub-undert-ra','spec-rights-entity'))
+----
 |`ERROR`
 h|`BR-BT-00635-0044`
 h|`BT-635-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 358.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-636-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00682-0044`
 h|`BT-682-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 613.
+
+.Condition in EFX
+[source, EFX]
+----
+not(not(BT-13714-Tender in BT-137-Lot[BT-681-Lot == 'true']) and not(BT-13714-Tender in BT-330-Procedure[BT-1375-Procedure in BT-137-Lot[BT-681-Lot == 'true']]))
+----
 |`ERROR`
 h|`BR-BT-00685-0057`
 h|`BT-685-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 638.
+
+.Condition in EFX
+[source, EFX]
+----
+not((BT-13713-LotResult in BT-137-Lot[not(BT-684-Lot == 'true')]) or (BT-142-LotResult is not present) or (BT-142-LotResult == 'open-nw'))
+----
 |`ERROR`
 h|`BR-BT-00686-0057`
 h|`BT-686-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 639.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-685-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00687-0057`
 h|`BT-687-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 639.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-685-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00688-0057`
 h|`BT-688-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 640.
+
+.Condition in EFX
+[source, EFX]
+----
+not(not (BT-687-LotResult == 'pub-int'))
+----
 |`ERROR`
 h|`BR-BT-00701-0044`
 h|`BT-701-notice`
@@ -6753,13 +7215,25 @@ h|`BR-BT-00712-0095`
 h|`BT-712(b)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 359.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-712(a)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00719-0044`
 h|`BT-719-notice`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 211.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-718-notice == TRUE
+----
 |`ERROR`
 h|`BR-BT-00720-0044`
 h|`BT-720-Tender`
@@ -6801,13 +7275,25 @@ h|`BR-BT-00730-0063`
 h|`BT-730-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 67.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-773-Tender == 'yes'
+----
 |`ERROR`
 h|`BR-BT-00731-0063`
 h|`BT-731-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 69.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-773-Tender == 'yes'
+----
 |`ERROR`
 h|`BR-BT-00740-0044`
 h|`BT-740-Procedure-Buyer`
@@ -6819,7 +7305,13 @@ h|`BR-BT-00755-0044`
 h|`BT-755-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 365.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-754-Lot == 'n-inc-just'
+----
 |`ERROR`
 h|`BR-BT-00757-0044`
 h|`BT-757-notice`
@@ -6831,55 +7323,109 @@ h|`BR-BT-00759-0044`
 h|`BT-759-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 262.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-760-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00760-0044`
 h|`BT-760-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 663.
+
+.Condition in EFX
+[source, EFX]
+----
+not((BT-142-LotResult == 'open-nw') or ((BT-142-LotResult == 'clos-nw') and (BT-144-LotResult == 'no-rece')))
+----
 |`ERROR`
 h|`BR-BT-00777-0044`
 h|`BT-777-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 364.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-06-Lot is not present or BT-06-Lot == 'none')
+----
 |`ERROR`
 h|`BR-BT-00784-0095`
 h|`BT-784-Review`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 646.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-783-Review is not present)
+----
 |`ERROR`
 h|`BR-BT-00787-0095`
 h|`BT-787-Review`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 646.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-783-Review is not present)
+----
 |`ERROR`
 h|`BR-BT-00788-0095`
 h|`BT-788-Review`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 646.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-783-Review is not present)
+----
 |`ERROR`
 h|`BR-BT-00789-0095`
 h|`BT-789-Review`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 646.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-783-Review is not present)
+----
 |`ERROR`
 h|`BR-BT-00790-0095`
 h|`BT-790-Review`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 654.
+
+.Condition in EFX
+[source, EFX]
+----
+not(not (BT-783-Review == 'dec') or (BT-796-Review == TRUE))
+----
 |`ERROR`
 h|`BR-BT-00791-0095`
 h|`BT-791-Review`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 646.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-783-Review is not present)
+----
 |`ERROR`
 h|`BR-BT-00792-0095`
 h|`BT-792-Review`
@@ -6909,55 +7455,109 @@ h|`BR-BT-00797-0095`
 h|`BT-797-Review`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 653.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-796-Review == TRUE
+----
 |`ERROR`
 h|`BR-BT-00799-0095`
 h|`BT-799-ReviewBody`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 646.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-783-Review is not present)
+----
 |`ERROR`
 h|`BR-BT-00803-0044`
 h|`BT-803(t)-notice`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 510.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-803(d)-notice is not present)
+----
 |`ERROR`
 h|`BR-BT-00804-0095`
 h|`BT-804-Review`
 a|
 
-*Always mandatory* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00811-0143`
-h|`BT-811(a)-LotResult`
-a|
+*Mandatory if* Negation of 646.
 
-*Always mandatory* in notice sub-type 35.
+.Condition in EFX
+[source, EFX]
+----
+not(BT-783-Review is not present)
+----
 |`ERROR`
 h|`BR-BT-00811-0329`
 h|`BT-811(b)-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 631.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-810-Lot == 'true'
+----
 |`ERROR`
 h|`BR-BT-00811-0343`
 h|`BT-811(b)-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 632.
+
+.Condition in EFX
+[source, EFX]
+----
+not((BT-13713-LotResult in BT-137-Lot[not(BT-810-Lot == 'true')]) or not(BT-142-LotResult == 'selec-w'))
+----
+|`ERROR`
+h|`BR-BT-00811-0402`
+h|`BT-811(a)-LotResult`
+a|
+
+*Mandatory if* Negation of 703.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-811(b)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-00812-0060`
 h|`BT-812-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 634.
+
+.Condition in EFX
+[source, EFX]
+----
+not(not(BT-811(a)-LotResult == 'enrg-lab'))
+----
 |`ERROR`
 h|`BR-BT-00813-0060`
 h|`BT-813-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 635.
+
+.Condition in EFX
+[source, EFX]
+----
+not((BT-811(a)-LotResult is not present) or (BT-811(a)-LotResult == 'enrg-lab'))
+----
 |`ERROR`
 h|`BR-BT-00814-0060`
 h|`BT-814-LotResult`
@@ -6975,19 +7575,37 @@ h|`BR-BT-00815-0060`
 h|`BT-815-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 637.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-811(a)-LotResult is not present)
+----
 |`ERROR`
 h|`BR-BT-03201-0044`
 h|`BT-3201-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 550.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-321-Tender is not present)
+----
 |`ERROR`
 h|`BR-BT-03202-0044`
 h|`BT-3202-Contract`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 555.
+
+.Condition in EFX
+[source, EFX]
+----
+not((OPT-316-Contract is not present) or (OPT-321-Tender is not present))
+----
 |`ERROR`
 h|`BR-BT-05071-0044`
 h|`BT-5071-Procedure`
@@ -7041,67 +7659,133 @@ h|`BR-BT-05141-0044`
 h|`BT-5141-Procedure`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 95.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-727-Procedure in ('anyw', 'anyw-eea'))
+----
 |`ERROR`
 h|`BR-BT-05141-0146`
 h|`BT-5141-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 93.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-727-Lot in ('anyw', 'anyw-eea'))
+----
 |`ERROR`
 h|`BR-BT-05421-0148`
 h|`BT-5421-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 578.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-541-LotsGroup-WeightNumber is not present)
+----
 |`ERROR`
 h|`BR-BT-05421-0198`
 h|`BT-5421-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 575.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-541-Lot-WeightNumber is not present)
+----
 |`ERROR`
 h|`BR-BT-05422-0148`
 h|`BT-5422-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 579.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-541-LotsGroup-FixedNumber is not present)
+----
 |`ERROR`
 h|`BR-BT-05422-0198`
 h|`BT-5422-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 576.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-541-Lot-FixedNumber is not present)
+----
 |`ERROR`
 h|`BR-BT-05423-0148`
 h|`BT-5423-LotsGroup`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 580.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-541-LotsGroup-ThresholdNumber is not present)
+----
 |`ERROR`
 h|`BR-BT-05423-0198`
 h|`BT-5423-Lot`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 577.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-541-Lot-ThresholdNumber is not present)
+----
 |`ERROR`
 h|`BR-BT-13713-0044`
 h|`BT-13713-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 554.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-142-LotResult == 'selec-w'
+----
 |`ERROR`
 h|`BR-BT-13714-0044`
 h|`BT-13714-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 91.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-3201-Tender is not present)
+----
 |`ERROR`
 h|`BR-OPP-00050-0044`
 h|`OPP-050-Organization`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 355.
+
+.Condition in EFX
+[source, EFX]
+----
+not(not(OPT-200-Organization-Company in OPT-300-Procedure-Buyer) or (count(OPT-300-Procedure-Buyer) < 2))
+----
 |`ERROR`
 h|`BR-OPP-00070-0044`
 h|`OPP-070-notice`
@@ -7125,31 +7809,61 @@ h|`BR-OPT-00030-0044`
 h|`OPT-030-Procedure-SProvider`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 558.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-300-Procedure-SProvider is not present)
+----
 |`ERROR`
 h|`BR-OPT-00080-0060`
 h|`OPT-080-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 635.
+
+.Condition in EFX
+[source, EFX]
+----
+not((BT-811(a)-LotResult is not present) or (BT-811(a)-LotResult == 'enrg-lab'))
+----
 |`ERROR`
 h|`BR-OPT-00081-0060`
 h|`OPT-081-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 656.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-814-LotResult is not present)
+----
 |`ERROR`
 h|`BR-OPT-00100-0044`
 h|`OPT-100-Contract`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 206.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-768-Contract == TRUE
+----
 |`ERROR`
 h|`BR-OPT-00170-0044`
 h|`OPT-170-Tenderer`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 676.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-210-Tenderer[count(OPT-300-Tenderer) < 2] is present)
+----
 |`ERROR`
 h|`BR-OPT-00200-0044`
 h|`OPT-200-Organization-Company`
@@ -7161,13 +7875,25 @@ h|`BR-OPT-00210-0044`
 h|`OPT-210-Tenderer`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 551.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-310-Tender is not present)
+----
 |`ERROR`
 h|`BR-OPT-00300-0094`
 h|`OPT-300-Tenderer`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 177.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-321-Tender is not present)
+----
 |`ERROR`
 h|`BR-OPT-00300-0144`
 h|`OPT-300-Procedure-Buyer`
@@ -7179,7 +7905,13 @@ h|`BR-OPT-00301-0195`
 h|`OPT-301-Tenderer-MainCont`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 626.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-301-Tenderer-SubCont is not present)
+----
 |`ERROR`
 h|`BR-OPT-00301-0902`
 h|`OPT-301-Lot-AddInfo`
@@ -7197,25 +7929,49 @@ h|`BR-OPT-00310-0044`
 h|`OPT-310-Tender`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 550.
+
+.Condition in EFX
+[source, EFX]
+----
+not(OPT-321-Tender is not present)
+----
 |`ERROR`
 h|`BR-OPT-00315-0044`
 h|`OPT-315-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 66.
+
+.Condition in EFX
+[source, EFX]
+----
+not(not(BT-142-LotResult == 'selec-w') or (OPT-322-LotResult is not present))
+----
 |`ERROR`
 h|`BR-OPT-00316-0044`
 h|`OPT-316-Contract`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 627.
+
+.Condition in EFX
+[source, EFX]
+----
+not(BT-150-Contract is not present)
+----
 |`ERROR`
 h|`BR-OPT-00320-0044`
 h|`OPT-320-LotResult`
 a|
 
-*Always mandatory* in notice sub-type 35.
+*Mandatory if* Negation of 553.
+
+.Condition in EFX
+[source, EFX]
+----
+not((OPT-322-LotResult is not present) or ((BT-13713-LotResult is present) and not(BT-13714-Tender in BT-13713-LotResult) and not(BT-1375-Procedure[BT-330-Procedure in BT-13714-Tender] in BT-13713-LotResult)) or ((BT-13713-LotResult is not present) and (OPT-321-Tender is not present)) or (BT-142-LotResult == 'open-nw'))
+----
 |`ERROR`
 h|`BR-OPT-00321-0044`
 h|`OPT-321-Tender`
@@ -7236,7 +7992,7 @@ a|
 *Always mandatory* in notice sub-type 35.
 |`ERROR`
 h|`BR-OPT-00999-0044`
-h|`OPT-999`
+h|`OPT-999-notice`
 a|
 
 *Always mandatory* in notice sub-type 35.

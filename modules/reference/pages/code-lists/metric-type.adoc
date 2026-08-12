@@ -5,7 +5,7 @@ List of codes used to characterize the type of metric covered by the specified n
 [horizontal]
 Version:: 1.0
 Structure:: flat
-Used in:: xref:business-terms/OPT-080.adoc[`OPT-080`] Consumption Metric, xref:business-terms/OPT-081.adoc[`OPT-081`] Savings Metric
+Used in:: xref:business-terms/OPT-081.adoc[`OPT-081`] Savings Metric, xref:business-terms/OPT-080.adoc[`OPT-080`] Consumption Metric
 
 == Codes
 [horizontal]

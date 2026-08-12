@@ -3,7 +3,7 @@
 
 This table provides the codes and values used in case of justification of corrections applied to a notice within the context of public procurement.
 [horizontal]
-Version:: 20240925-0
+Version:: 20260318-0
 URI:: http://publications.europa.eu/resource/dataset/change-corrig-justification
 Structure:: flat
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/change-corrig-justification[View on EU Vocabularies^]

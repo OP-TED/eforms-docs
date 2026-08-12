@@ -5,7 +5,7 @@ List of codes for the geographical nomenclature subdivision of the economic terr
 [horizontal]
 Version:: 2024
 URI:: http://publications.europa.eu/resource/dataset/nuts
-Tailored by:: xref:code-lists/nuts-alb-lvl3.adoc[`nuts-alb-lvl3`], xref:code-lists/nuts-aut-lvl3.adoc[`nuts-aut-lvl3`], xref:code-lists/nuts-bel-lvl3.adoc[`nuts-bel-lvl3`], xref:code-lists/nuts-bgr-lvl3.adoc[`nuts-bgr-lvl3`], xref:code-lists/nuts-che-lvl3.adoc[`nuts-che-lvl3`], xref:code-lists/nuts-cyp-lvl3.adoc[`nuts-cyp-lvl3`], xref:code-lists/nuts-cze-lvl3.adoc[`nuts-cze-lvl3`], xref:code-lists/nuts-deu-lvl3.adoc[`nuts-deu-lvl3`], xref:code-lists/nuts-dnk-lvl3.adoc[`nuts-dnk-lvl3`], xref:code-lists/nuts-esp-lvl3.adoc[`nuts-esp-lvl3`], xref:code-lists/nuts-est-lvl3.adoc[`nuts-est-lvl3`], xref:code-lists/nuts-fin-lvl3.adoc[`nuts-fin-lvl3`], xref:code-lists/nuts-fra-lvl3.adoc[`nuts-fra-lvl3`], xref:code-lists/nuts-grc-lvl3.adoc[`nuts-grc-lvl3`], xref:code-lists/nuts-hrv-lvl3.adoc[`nuts-hrv-lvl3`], xref:code-lists/nuts-hun-lvl3.adoc[`nuts-hun-lvl3`], xref:code-lists/nuts-irl-lvl3.adoc[`nuts-irl-lvl3`], xref:code-lists/nuts-isl-lvl3.adoc[`nuts-isl-lvl3`], xref:code-lists/nuts-ita-lvl3.adoc[`nuts-ita-lvl3`], xref:code-lists/nuts-lie-lvl3.adoc[`nuts-lie-lvl3`], xref:code-lists/nuts-ltu-lvl3.adoc[`nuts-ltu-lvl3`], xref:code-lists/nuts-lux-lvl3.adoc[`nuts-lux-lvl3`], xref:code-lists/nuts-lva-lvl3.adoc[`nuts-lva-lvl3`], xref:code-lists/nuts-lvl3.adoc[`nuts-lvl3`], xref:code-lists/nuts-mkd-lvl3.adoc[`nuts-mkd-lvl3`], xref:code-lists/nuts-mlt-lvl3.adoc[`nuts-mlt-lvl3`], xref:code-lists/nuts-mne-lvl3.adoc[`nuts-mne-lvl3`], xref:code-lists/nuts-nld-lvl3.adoc[`nuts-nld-lvl3`], xref:code-lists/nuts-nor-lvl3.adoc[`nuts-nor-lvl3`], xref:code-lists/nuts-pol-lvl3.adoc[`nuts-pol-lvl3`], xref:code-lists/nuts-prt-lvl3.adoc[`nuts-prt-lvl3`], xref:code-lists/nuts-rou-lvl3.adoc[`nuts-rou-lvl3`], xref:code-lists/nuts-srb-lvl3.adoc[`nuts-srb-lvl3`], xref:code-lists/nuts-svk-lvl3.adoc[`nuts-svk-lvl3`], xref:code-lists/nuts-svn-lvl3.adoc[`nuts-svn-lvl3`], xref:code-lists/nuts-swe-lvl3.adoc[`nuts-swe-lvl3`], xref:code-lists/nuts-tur-lvl3.adoc[`nuts-tur-lvl3`], xref:code-lists/nuts-xkx-lvl3.adoc[`nuts-xkx-lvl3`]
+Tailored by:: xref:code-lists/nuts-alb-lvl3.adoc[`nuts-alb-lvl3`], xref:code-lists/nuts-aut-lvl3.adoc[`nuts-aut-lvl3`], xref:code-lists/nuts-bel-lvl3.adoc[`nuts-bel-lvl3`], xref:code-lists/nuts-bgr-lvl3.adoc[`nuts-bgr-lvl3`], xref:code-lists/nuts-che-lvl3.adoc[`nuts-che-lvl3`], xref:code-lists/nuts-cyp-lvl3.adoc[`nuts-cyp-lvl3`], xref:code-lists/nuts-cze-lvl3.adoc[`nuts-cze-lvl3`], xref:code-lists/nuts-deu-lvl3.adoc[`nuts-deu-lvl3`], xref:code-lists/nuts-dnk-lvl3.adoc[`nuts-dnk-lvl3`], xref:code-lists/nuts-esp-lvl3.adoc[`nuts-esp-lvl3`], xref:code-lists/nuts-est-lvl3.adoc[`nuts-est-lvl3`], xref:code-lists/nuts-fin-lvl3.adoc[`nuts-fin-lvl3`], xref:code-lists/nuts-fra-lvl3.adoc[`nuts-fra-lvl3`], xref:code-lists/nuts-grc-lvl3.adoc[`nuts-grc-lvl3`], xref:code-lists/nuts-hrv-lvl3.adoc[`nuts-hrv-lvl3`], xref:code-lists/nuts-hun-lvl3.adoc[`nuts-hun-lvl3`], xref:code-lists/nuts-irl-lvl3.adoc[`nuts-irl-lvl3`], xref:code-lists/nuts-isl-lvl3.adoc[`nuts-isl-lvl3`], xref:code-lists/nuts-ita-lvl3.adoc[`nuts-ita-lvl3`], xref:code-lists/nuts-lie-lvl3.adoc[`nuts-lie-lvl3`], xref:code-lists/nuts-ltu-lvl3.adoc[`nuts-ltu-lvl3`], xref:code-lists/nuts-lux-lvl3.adoc[`nuts-lux-lvl3`], xref:code-lists/nuts-lva-lvl3.adoc[`nuts-lva-lvl3`], xref:code-lists/nuts-lvl3.adoc[`nuts-lvl3`], xref:code-lists/nuts-mkd-lvl3.adoc[`nuts-mkd-lvl3`], xref:code-lists/nuts-mlt-lvl3.adoc[`nuts-mlt-lvl3`], xref:code-lists/nuts-mne-lvl3.adoc[`nuts-mne-lvl3`], xref:code-lists/nuts-nld-lvl3.adoc[`nuts-nld-lvl3`], xref:code-lists/nuts-nor-lvl3.adoc[`nuts-nor-lvl3`], xref:code-lists/nuts-pol-lvl3.adoc[`nuts-pol-lvl3`], xref:code-lists/nuts-prt-lvl3.adoc[`nuts-prt-lvl3`], xref:code-lists/nuts-rou-lvl3.adoc[`nuts-rou-lvl3`], xref:code-lists/nuts-srb-lvl3.adoc[`nuts-srb-lvl3`], xref:code-lists/nuts-svk-lvl3.adoc[`nuts-svk-lvl3`], xref:code-lists/nuts-svn-lvl3.adoc[`nuts-svn-lvl3`], xref:code-lists/nuts-swe-lvl3.adoc[`nuts-swe-lvl3`], xref:code-lists/nuts-tur-lvl3.adoc[`nuts-tur-lvl3`], xref:code-lists/nuts-ukr-lvl3.adoc[`nuts-ukr-lvl3`], xref:code-lists/nuts-xkx-lvl3.adoc[`nuts-xkx-lvl3`]
 Structure:: hierarchical
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/nuts[View on EU Vocabularies^]
 
@@ -82,6 +82,13 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `ATZ`::: Extra-Regio NUTS 1
   `ATZZ`::: Extra-Regio NUTS 2
   `ATZZZ`::: Extra-Regio NUTS 3
+  `BA`::: Bosna i Hercegovina
+  `BA0`::: Bosna i Hercegovina
+  `BA01`::: Federacija Bosne i Hercegovine
+  `BA02`::: Republika Srpska
+  `BA03`::: Brčko District BiH
+  `BAZ`::: Extra-Regio NUTS 1
+  `BAZZ`::: Extra-Regio NUTS 2
   `BE`::: Belgique/België
   `BE1`::: Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest
   `BE10`::: Région de Bruxelles-Capitale / Brussels Hoofdstedelijk Gewest
@@ -1901,6 +1908,183 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `TRZ`::: Extra-Regio NUTS 1
   `TRZZ`::: Extra-Regio NUTS 2
   `TRZZZ`::: Extra-Regio NUTS 3
+  `UA`::: Україна
+  `UA1`::: Макрорегіон_01
+  `UA11`::: Полтавська Область
+  `UA111`::: Кременчуцький Район
+  `UA112`::: Лубенський Район
+  `UA113`::: Миргородський Район
+  `UA114`::: Полтавський Район
+  `UA12`::: Сумська Область
+  `UA121`::: Конотопський Район
+  `UA122`::: Охтирський Район
+  `UA123`::: Роменський Район
+  `UA124`::: Сумський Район
+  `UA125`::: Шосткинський Район
+  `UA13`::: Харківська Область
+  `UA131`::: Богодухівський Район
+  `UA132`::: Ізюмський Район
+  `UA133`::: Красноградський Район
+  `UA134`::: Куп'Янський Район
+  `UA135`::: Лозівський Район
+  `UA136`::: Харківський Район
+  `UA137`::: Чугуївський Район
+  `UA14`::: Чернігівська Область
+  `UA141`::: Корюківський Район
+  `UA142`::: Ніжинський Район
+  `UA143`::: Новгород-Сіверський Район
+  `UA144`::: Прилуцький Район
+  `UA145`::: Чернігівський Район
+  `UA2`::: Макрорегіон_02
+  `UA21`::: Донецька Область
+  `UA211`::: Бахмутський Район
+  `UA212`::: Волноваський Район
+  `UA213`::: Горлівський Район
+  `UA214`::: Донецький Район
+  `UA215`::: Кальміуський Район
+  `UA216`::: Краматорський Район
+  `UA217`::: Маріупольський Район
+  `UA218`::: Покровський Район
+  `UA22`::: Луганська Область
+  `UA221`::: Алчевський Район
+  `UA222`::: Довжанський Район
+  `UA223`::: Луганський Район
+  `UA224`::: Ровеньківський Район
+  `UA225`::: Сватівський Район
+  `UA226`::: Сєвєродонецький Район
+  `UA227`::: Старобільський Район
+  `UA228`::: Щастинський Район
+  `UA3`::: Макрорегіон_03
+  `UA31`::: Дніпропетровська Область
+  `UA311`::: Дніпровський Район
+  `UA312`::: Кам'Янський Район
+  `UA313`::: Криворізький Район
+  `UA314`::: Нікопольський Район
+  `UA315`::: Новомосковський Район
+  `UA316`::: Павлоградський Район
+  `UA317`::: Синельниківський Район
+  `UA32`::: Запорізька Область
+  `UA321`::: Бердянський Район
+  `UA322`::: Василівський Район
+  `UA323`::: Запорізький Район
+  `UA324`::: Мелітопольський Район
+  `UA325`::: Пологівський Район
+  `UA33`::: Кіровоградська Область
+  `UA331`::: Голованівський Район
+  `UA332`::: Кропивницький Район
+  `UA333`::: Новоукраїнський Район
+  `UA334`::: Олександрійський Район
+  `UA4`::: Макрорегіон_04
+  `UA41`::: Миколаївська Область
+  `UA411`::: Баштанський Район
+  `UA412`::: Вознесенський Район
+  `UA413`::: Миколаївський Район
+  `UA414`::: Первомайський Район
+  `UA42`::: Одеська Область
+  `UA421`::: Березівський Район
+  `UA422`::: Білгород-Дністровський Район
+  `UA423`::: Болградський Район
+  `UA424`::: Ізмаїльський Район
+  `UA425`::: Одеський Район
+  `UA426`::: Подільський Район
+  `UA427`::: Роздільнянський Район
+  `UA43`::: Херсонська Область
+  `UA431`::: Бериславський Район
+  `UA432`::: Генічеський Район
+  `UA433`::: Каховський Район
+  `UA434`::: Скадовський Район
+  `UA435`::: Херсонський Район
+  `UA44`::: Ар Крим
+  `UA441`::: Бахчисарайський Район
+  `UA442`::: Білогірський Район
+  `UA443`::: Джанкойський Район
+  `UA444`::: Євпаторійський Район
+  `UA445`::: Керченський Район
+  `UA446`::: Курманський Район
+  `UA447`::: Перекопський Район
+  `UA448`::: Сімферопольський Район
+  `UA449`::: Феодосійський Район
+  `UA44A`::: Ялтинський Район
+  `UA45`::: М. Севастополь
+  `UA450`::: М. Севастополь
+  `UA5`::: Макрорегіон_05
+  `UA51`::: Вінницька Область
+  `UA511`::: Вінницький Район
+  `UA512`::: Гайсинський Район
+  `UA513`::: Жмеринський Район
+  `UA514`::: Могилів-Подільський Район
+  `UA515`::: Тульчинський Район
+  `UA516`::: Хмільницький Район
+  `UA52`::: Тернопільська Область
+  `UA521`::: Кременецький Район
+  `UA522`::: Тернопільський Район
+  `UA523`::: Чортківський Район
+  `UA53`::: Хмельницька Область
+  `UA531`::: Кам'Янець-Подільський Район
+  `UA532`::: Хмельницький Район
+  `UA533`::: Шепетівський Район
+  `UA6`::: Макрорегіон_06
+  `UA61`::: Київська Область
+  `UA611`::: Білоцерківський Район
+  `UA612`::: Бориспільський Район
+  `UA613`::: Броварський Район
+  `UA614`::: Бучанський Район
+  `UA615`::: Вишгородський Район
+  `UA616`::: Обухівський Район
+  `UA617`::: Фастівський Район
+  `UA62`::: Черкаська Область
+  `UA621`::: Звенигородський Район
+  `UA622`::: Золотоніський Район
+  `UA623`::: Уманський Район
+  `UA624`::: Черкаський Район
+  `UA63`::: М. Київ
+  `UA630`::: М. Київ
+  `UA7`::: Макрорегіон_07
+  `UA71`::: Закарпатська Область
+  `UA711`::: Берегівський Район
+  `UA712`::: Мукачівський Район
+  `UA713`::: Рахівський Район
+  `UA714`::: Тячівський Район
+  `UA715`::: Ужгородський Район
+  `UA716`::: Хустський Район
+  `UA72`::: Івано-Франківська Область
+  `UA721`::: Верховинський Район
+  `UA722`::: Івано-Франківський Район
+  `UA723`::: Калуський Район
+  `UA724`::: Коломийський Район
+  `UA725`::: Косівський Район
+  `UA726`::: Надвірнянський Район
+  `UA73`::: Львівська Область
+  `UA731`::: Дрогобицький Район
+  `UA732`::: Золочівський Район
+  `UA733`::: Львівський Район
+  `UA734`::: Самбірський Район
+  `UA735`::: Стрийський Район
+  `UA736`::: Червоноградський Район
+  `UA737`::: Яворівський Район
+  `UA74`::: Чернівецька Область
+  `UA741`::: Вижницький Район
+  `UA742`::: Дністровський Район
+  `UA743`::: Чернівецький Район
+  `UA8`::: Макрорегіон_08
+  `UA81`::: Волинська Область
+  `UA811`::: Володимирський Район
+  `UA812`::: Камінь-Каширський Район
+  `UA813`::: Ковельський Район
+  `UA814`::: Луцький Район
+  `UA82`::: Житомирська Область
+  `UA821`::: Бердичівський Район
+  `UA822`::: Житомирський Район
+  `UA823`::: Коростенський Район
+  `UA824`::: Звягельський Район
+  `UA83`::: Рівненська Область
+  `UA831`::: Вараський Район
+  `UA832`::: Дубенський Район
+  `UA833`::: Рівненський Район
+  `UA834`::: Сарненський Район
+  `UAZ`::: Extra-Regio level 1
+  `UAZZ`::: Extra-Regio level 2
+  `UAZZZ`::: Extra-Regio level 3
   `XK`::: Kosovë/Kosovo
   `XK0`::: Kosovë/Kosovo
   `XK00`::: Kosovë/Kosovo

@@ -3,7 +3,7 @@
 
 The Corporate body authority table is a controlled vocabulary which provides the varying names of EU corporate bodies for a given time span.
 [horizontal]
-Version:: 20250618-0
+Version:: 20260617-0
 URI:: http://publications.europa.eu/resource/dataset/corporate-body
 Structure:: flat
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[View on EU Vocabularies^]

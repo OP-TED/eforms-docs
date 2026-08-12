@@ -38,7 +38,7 @@ See xref:code-lists/buyer-legal-type.adoc[details & codes]
 === `change-corrig-justification`
 This table provides the codes and values used in case of justification of corrections applied to a notice within the context of public procurement.
 [horizontal]
-Version:: 20240925-0
+Version:: 20260318-0
 
 See xref:code-lists/change-corrig-justification.adoc[details & codes]
 
@@ -76,7 +76,7 @@ See xref:code-lists/contract-nature.adoc[details & codes]
 === `corporate-body`
 The Corporate body authority table is a controlled vocabulary which provides the varying names of EU corporate bodies for a given time span.
 [horizontal]
-Version:: 20250618-0
+Version:: 20260617-0
 
 See xref:code-lists/corporate-body.adoc[details & codes]
 
@@ -86,7 +86,7 @@ See xref:code-lists/corporate-body.adoc[details & codes]
 List of three characters country codes, correlated with the ISO 3166 international standard and additional authority codes for some countries without assigned ISO code.
 [horizontal]
 Tailored by:: <<_eea_country,`eea-country`>>, <<_eu_country,`eu-country`>>, <<_lawful_country,`lawful-country`>>, <<_nuts_country,`nuts-country`>>, <<_postcode_country,`postcode-country`>>
-Version:: 20250924-0
+Version:: 20260617-0
 
 See xref:code-lists/country.adoc[details & codes]
 
@@ -114,7 +114,7 @@ See xref:code-lists/criterion.adoc[details & codes]
 === `currency`
 List of currency codes
 [horizontal]
-Version:: 20250924-0
+Version:: 20260105-0
 
 See xref:code-lists/currency.adoc[details & codes]
 
@@ -160,7 +160,7 @@ See xref:code-lists/dps-usage.adoc[details & codes]
 === `economic-operator-size`
 This table provides the different categories in which the tenderers to whom a contract can be awarded are classified, according to their size (using as criteria the number of employees).
 [horizontal]
-Version:: 20250924-0
+Version:: 20260617-0
 
 See xref:code-lists/economic-operator-size.adoc[details & codes]
 
@@ -265,6 +265,15 @@ See xref:code-lists/international-procurement-instrument-application.adoc[detail
 
 '''
 
+=== `international-procurement-instrument-measure`
+Specific International Procurement Instrument Measure
+[horizontal]
+Version:: 20251210-0
+
+See xref:code-lists/international-procurement-instrument-measure.adoc[details & codes]
+
+'''
+
 === `irregularity-type`
 This code list refers generally to the types of irregularities described in Section 2 of the Annex to the Commission Decision C(2019) 3452.
 [horizontal]
@@ -278,7 +287,7 @@ See xref:code-lists/irregularity-type.adoc[details & codes]
 List of three characters language codes correlated with the ISO 639 international standard with additional codes for some languages without assigned ISO code.
 [horizontal]
 Tailored by:: <<_eu_official_language,`eu-official-language`>>
-Version:: 20250618-0
+Version:: 20260617-0
 
 See xref:code-lists/language.adoc[details & codes]
 
@@ -389,7 +398,7 @@ See xref:code-lists/number-weight.adoc[details & codes]
 === `nuts`
 List of codes for the geographical nomenclature subdivision of the economic territory of the European Union (EU) into regions at three different levels (NUTS 1, 2 and 3 respectively, moving from larger to smaller territorial units).
 [horizontal]
-Tailored by:: <<_nuts_alb_lvl3,`nuts-alb-lvl3`>>, <<_nuts_aut_lvl3,`nuts-aut-lvl3`>>, <<_nuts_bel_lvl3,`nuts-bel-lvl3`>>, <<_nuts_bgr_lvl3,`nuts-bgr-lvl3`>>, <<_nuts_che_lvl3,`nuts-che-lvl3`>>, <<_nuts_cyp_lvl3,`nuts-cyp-lvl3`>>, <<_nuts_cze_lvl3,`nuts-cze-lvl3`>>, <<_nuts_deu_lvl3,`nuts-deu-lvl3`>>, <<_nuts_dnk_lvl3,`nuts-dnk-lvl3`>>, <<_nuts_esp_lvl3,`nuts-esp-lvl3`>>, <<_nuts_est_lvl3,`nuts-est-lvl3`>>, <<_nuts_fin_lvl3,`nuts-fin-lvl3`>>, <<_nuts_fra_lvl3,`nuts-fra-lvl3`>>, <<_nuts_grc_lvl3,`nuts-grc-lvl3`>>, <<_nuts_hrv_lvl3,`nuts-hrv-lvl3`>>, <<_nuts_hun_lvl3,`nuts-hun-lvl3`>>, <<_nuts_irl_lvl3,`nuts-irl-lvl3`>>, <<_nuts_isl_lvl3,`nuts-isl-lvl3`>>, <<_nuts_ita_lvl3,`nuts-ita-lvl3`>>, <<_nuts_lie_lvl3,`nuts-lie-lvl3`>>, <<_nuts_ltu_lvl3,`nuts-ltu-lvl3`>>, <<_nuts_lux_lvl3,`nuts-lux-lvl3`>>, <<_nuts_lva_lvl3,`nuts-lva-lvl3`>>, <<_nuts_lvl3,`nuts-lvl3`>>, <<_nuts_mkd_lvl3,`nuts-mkd-lvl3`>>, <<_nuts_mlt_lvl3,`nuts-mlt-lvl3`>>, <<_nuts_mne_lvl3,`nuts-mne-lvl3`>>, <<_nuts_nld_lvl3,`nuts-nld-lvl3`>>, <<_nuts_nor_lvl3,`nuts-nor-lvl3`>>, <<_nuts_pol_lvl3,`nuts-pol-lvl3`>>, <<_nuts_prt_lvl3,`nuts-prt-lvl3`>>, <<_nuts_rou_lvl3,`nuts-rou-lvl3`>>, <<_nuts_srb_lvl3,`nuts-srb-lvl3`>>, <<_nuts_svk_lvl3,`nuts-svk-lvl3`>>, <<_nuts_svn_lvl3,`nuts-svn-lvl3`>>, <<_nuts_swe_lvl3,`nuts-swe-lvl3`>>, <<_nuts_tur_lvl3,`nuts-tur-lvl3`>>, <<_nuts_xkx_lvl3,`nuts-xkx-lvl3`>>
+Tailored by:: <<_nuts_alb_lvl3,`nuts-alb-lvl3`>>, <<_nuts_aut_lvl3,`nuts-aut-lvl3`>>, <<_nuts_bel_lvl3,`nuts-bel-lvl3`>>, <<_nuts_bgr_lvl3,`nuts-bgr-lvl3`>>, <<_nuts_che_lvl3,`nuts-che-lvl3`>>, <<_nuts_cyp_lvl3,`nuts-cyp-lvl3`>>, <<_nuts_cze_lvl3,`nuts-cze-lvl3`>>, <<_nuts_deu_lvl3,`nuts-deu-lvl3`>>, <<_nuts_dnk_lvl3,`nuts-dnk-lvl3`>>, <<_nuts_esp_lvl3,`nuts-esp-lvl3`>>, <<_nuts_est_lvl3,`nuts-est-lvl3`>>, <<_nuts_fin_lvl3,`nuts-fin-lvl3`>>, <<_nuts_fra_lvl3,`nuts-fra-lvl3`>>, <<_nuts_grc_lvl3,`nuts-grc-lvl3`>>, <<_nuts_hrv_lvl3,`nuts-hrv-lvl3`>>, <<_nuts_hun_lvl3,`nuts-hun-lvl3`>>, <<_nuts_irl_lvl3,`nuts-irl-lvl3`>>, <<_nuts_isl_lvl3,`nuts-isl-lvl3`>>, <<_nuts_ita_lvl3,`nuts-ita-lvl3`>>, <<_nuts_lie_lvl3,`nuts-lie-lvl3`>>, <<_nuts_ltu_lvl3,`nuts-ltu-lvl3`>>, <<_nuts_lux_lvl3,`nuts-lux-lvl3`>>, <<_nuts_lva_lvl3,`nuts-lva-lvl3`>>, <<_nuts_lvl3,`nuts-lvl3`>>, <<_nuts_mkd_lvl3,`nuts-mkd-lvl3`>>, <<_nuts_mlt_lvl3,`nuts-mlt-lvl3`>>, <<_nuts_mne_lvl3,`nuts-mne-lvl3`>>, <<_nuts_nld_lvl3,`nuts-nld-lvl3`>>, <<_nuts_nor_lvl3,`nuts-nor-lvl3`>>, <<_nuts_pol_lvl3,`nuts-pol-lvl3`>>, <<_nuts_prt_lvl3,`nuts-prt-lvl3`>>, <<_nuts_rou_lvl3,`nuts-rou-lvl3`>>, <<_nuts_srb_lvl3,`nuts-srb-lvl3`>>, <<_nuts_svk_lvl3,`nuts-svk-lvl3`>>, <<_nuts_svn_lvl3,`nuts-svn-lvl3`>>, <<_nuts_swe_lvl3,`nuts-swe-lvl3`>>, <<_nuts_tur_lvl3,`nuts-tur-lvl3`>>, <<_nuts_ukr_lvl3,`nuts-ukr-lvl3`>>, <<_nuts_xkx_lvl3,`nuts-xkx-lvl3`>>
 Version:: 2024
 
 See xref:code-lists/nuts.adoc[details & codes]
@@ -400,7 +409,7 @@ See xref:code-lists/nuts.adoc[details & codes]
 This table provides the list of the different functions of the organisations in a procurement procedure.
 [horizontal]
 Tailored by:: <<_organisation_role_service,`organisation-role-service`>>, <<_review_requester_type,`review-requester-type`>>
-Version:: 20250924-0
+Version:: 20260318-0
 
 See xref:code-lists/organisation-role.adoc[details & codes]
 
@@ -419,7 +428,7 @@ See xref:code-lists/other-place-service.adoc[details & codes]
 This table provides the codes linked to the different values of permission and/or obligation.
 [horizontal]
 Tailored by:: <<_ecatalog_submission,`ecatalog-submission`>>, <<_einvoicing,`einvoicing`>>, <<_esubmission,`esubmission`>>
-Version:: 20240612-0
+Version:: 20260318-0
 
 See xref:code-lists/permission.adoc[details & codes]
 
@@ -438,7 +447,7 @@ See xref:code-lists/procurement-procedure-type.adoc[details & codes]
 === `received-submission-type`
 This table provides the list of relevant categories used to classify tenders or requests to participate received within the context of public procurement.
 [horizontal]
-Version:: 20250924-0
+Version:: 20260617-0
 
 See xref:code-lists/received-submission-type.adoc[details & codes]
 
@@ -456,7 +465,7 @@ See xref:code-lists/remedy-type.adoc[details & codes]
 === `requirement-stage`
 This table describes when and whether a given requirement must be provided in a procedure.
 [horizontal]
-Version:: 20240612-0
+Version:: 20260318-0
 
 See xref:code-lists/requirement-stage.adoc[details & codes]
 

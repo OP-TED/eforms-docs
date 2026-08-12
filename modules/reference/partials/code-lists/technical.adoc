@@ -430,15 +430,6 @@ See xref:code-lists/indicator.adoc[details & codes]
 
 '''
 
-=== `international-procurement-instrument-measure`
-Specific International Procurement Instrument Measure
-[horizontal]
-Version:: 1.0
-
-See xref:code-lists/international-procurement-instrument-measure.adoc[details & codes]
-
-'''
-
 === `ipi-scope`
 List of codes to specify whether the procurement falls within the scope of the International Procurement Instrument (IPI) Regulation (EU) 2022/1031.
 [horizontal]
@@ -1049,7 +1040,7 @@ See xref:code-lists/notice-subtype.adoc[details & codes]
 List of level 3 NUTS codes for Albania
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-alb-lvl3.adoc[details & codes]
 
@@ -1059,7 +1050,7 @@ See xref:code-lists/nuts-alb-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Austria
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-aut-lvl3.adoc[details & codes]
 
@@ -1069,7 +1060,7 @@ See xref:code-lists/nuts-aut-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Belgium
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-bel-lvl3.adoc[details & codes]
 
@@ -1079,7 +1070,7 @@ See xref:code-lists/nuts-bel-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Bulgaria
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-bgr-lvl3.adoc[details & codes]
 
@@ -1089,7 +1080,7 @@ See xref:code-lists/nuts-bgr-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Switzerland
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-che-lvl3.adoc[details & codes]
 
@@ -1109,7 +1100,7 @@ See xref:code-lists/nuts-country.adoc[details & codes]
 List of level 3 NUTS codes for Cyprus
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-cyp-lvl3.adoc[details & codes]
 
@@ -1119,7 +1110,7 @@ See xref:code-lists/nuts-cyp-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Czech Republic
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-cze-lvl3.adoc[details & codes]
 
@@ -1129,7 +1120,7 @@ See xref:code-lists/nuts-cze-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Germany
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-deu-lvl3.adoc[details & codes]
 
@@ -1139,7 +1130,7 @@ See xref:code-lists/nuts-deu-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Denmark
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-dnk-lvl3.adoc[details & codes]
 
@@ -1149,7 +1140,7 @@ See xref:code-lists/nuts-dnk-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Spain
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-esp-lvl3.adoc[details & codes]
 
@@ -1159,7 +1150,7 @@ See xref:code-lists/nuts-esp-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Estonia
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-est-lvl3.adoc[details & codes]
 
@@ -1169,7 +1160,7 @@ See xref:code-lists/nuts-est-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Finland
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-fin-lvl3.adoc[details & codes]
 
@@ -1179,7 +1170,7 @@ See xref:code-lists/nuts-fin-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for France
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-fra-lvl3.adoc[details & codes]
 
@@ -1189,7 +1180,7 @@ See xref:code-lists/nuts-fra-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Greece
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-grc-lvl3.adoc[details & codes]
 
@@ -1199,7 +1190,7 @@ See xref:code-lists/nuts-grc-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Croatia
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-hrv-lvl3.adoc[details & codes]
 
@@ -1209,7 +1200,7 @@ See xref:code-lists/nuts-hrv-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Hungary
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-hun-lvl3.adoc[details & codes]
 
@@ -1219,7 +1210,7 @@ See xref:code-lists/nuts-hun-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Ireland
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-irl-lvl3.adoc[details & codes]
 
@@ -1229,7 +1220,7 @@ See xref:code-lists/nuts-irl-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Iceland
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-isl-lvl3.adoc[details & codes]
 
@@ -1239,7 +1230,7 @@ See xref:code-lists/nuts-isl-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Italy
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-ita-lvl3.adoc[details & codes]
 
@@ -1249,7 +1240,7 @@ See xref:code-lists/nuts-ita-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Lichtenstein
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-lie-lvl3.adoc[details & codes]
 
@@ -1259,7 +1250,7 @@ See xref:code-lists/nuts-lie-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Lithuania
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-ltu-lvl3.adoc[details & codes]
 
@@ -1269,7 +1260,7 @@ See xref:code-lists/nuts-ltu-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Luxembourg
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-lux-lvl3.adoc[details & codes]
 
@@ -1279,7 +1270,7 @@ See xref:code-lists/nuts-lux-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Latvia
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-lva-lvl3.adoc[details & codes]
 
@@ -1289,7 +1280,7 @@ See xref:code-lists/nuts-lva-lvl3.adoc[details & codes]
 List of all level 3 NUTS codes
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-lvl3.adoc[details & codes]
 
@@ -1299,7 +1290,7 @@ See xref:code-lists/nuts-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Former Yugoslav Republic of Macedonia
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-mkd-lvl3.adoc[details & codes]
 
@@ -1309,7 +1300,7 @@ See xref:code-lists/nuts-mkd-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Malta
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-mlt-lvl3.adoc[details & codes]
 
@@ -1319,7 +1310,7 @@ See xref:code-lists/nuts-mlt-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Montenegro
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-mne-lvl3.adoc[details & codes]
 
@@ -1329,7 +1320,7 @@ See xref:code-lists/nuts-mne-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Netherlands
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-nld-lvl3.adoc[details & codes]
 
@@ -1339,7 +1330,7 @@ See xref:code-lists/nuts-nld-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Norway
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-nor-lvl3.adoc[details & codes]
 
@@ -1349,7 +1340,7 @@ See xref:code-lists/nuts-nor-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Poland
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-pol-lvl3.adoc[details & codes]
 
@@ -1359,7 +1350,7 @@ See xref:code-lists/nuts-pol-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Portugal
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-prt-lvl3.adoc[details & codes]
 
@@ -1369,7 +1360,7 @@ See xref:code-lists/nuts-prt-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Romania
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-rou-lvl3.adoc[details & codes]
 
@@ -1379,7 +1370,7 @@ See xref:code-lists/nuts-rou-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Serbia
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-srb-lvl3.adoc[details & codes]
 
@@ -1389,7 +1380,7 @@ See xref:code-lists/nuts-srb-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Slovakia
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-svk-lvl3.adoc[details & codes]
 
@@ -1399,7 +1390,7 @@ See xref:code-lists/nuts-svk-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Slovenia
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-svn-lvl3.adoc[details & codes]
 
@@ -1409,7 +1400,7 @@ See xref:code-lists/nuts-svn-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Sweden
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-swe-lvl3.adoc[details & codes]
 
@@ -1419,9 +1410,19 @@ See xref:code-lists/nuts-swe-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Turkey
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-tur-lvl3.adoc[details & codes]
+
+'''
+
+=== `nuts-ukr-lvl3`
+List of level 3 NUTS codes for Ukraine
+[horizontal]
+Subset of:: <<_nuts,`nuts`>>
+Version:: 2024
+
+See xref:code-lists/nuts-ukr-lvl3.adoc[details & codes]
 
 '''
 
@@ -1429,7 +1430,7 @@ See xref:code-lists/nuts-tur-lvl3.adoc[details & codes]
 List of level 3 NUTS codes for Kosovo
 [horizontal]
 Subset of:: <<_nuts,`nuts`>>
-Version:: 1.13.0-SNAPSHOT
+Version:: 2024
 
 See xref:code-lists/nuts-xkx-lvl3.adoc[details & codes]
 

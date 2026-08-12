@@ -3,7 +3,7 @@
 
 This table describes when and whether a given requirement must be provided in a procedure.
 [horizontal]
-Version:: 20240612-0
+Version:: 20260318-0
 URI:: http://publications.europa.eu/resource/dataset/requirement-stage
 Structure:: flat
 EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/requirement-stage[View on EU Vocabularies^]
