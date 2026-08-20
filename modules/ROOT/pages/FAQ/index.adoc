@@ -280,7 +280,7 @@ All unrelated data (other lots, contracts, tenders, tenderers, organisations, gr
 * For a contract modified for the first time, the reference must point to the *original Contract Award Notice* (or its latest Change notice, if applicable).
 
 * Each Contract Modification section must:
-** refer to *one and only one contract* (BT-1501(s) – Contract)
+** refer to *one and only one contract* (BT-1501(c) – Contract)
 ** specify the *main reason* for the modification as a code (BT-200 – Contract)
 ** provide *textual details* of the reason (BT-201 – Contract)
 ** include a *high-level description* of what has changed (BT-202 – Contract)
@@ -300,7 +300,7 @@ Examples of Contract Modification Notices can be found in the link:https://githu
 Which notice types exist outside the core eForms set?::
 +
 --
-In addition to the standard eForms established by Implementing Regulation (EU) 2019/1780, other notice types exist within the Publications Office systems. These fall into three categories.
+In addition to the standard eForms established by Implementing Regulation (EU) 2019/1780, other notice types exist within the Publications Office systems. These fall into two categories.
 
 *Voluntary extended forms (E1–E5)*
 
