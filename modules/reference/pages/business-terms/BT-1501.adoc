@@ -9,5 +9,4 @@ Type:: IDENTIFIER
   `BT-1501(c)-Contract`:: Modified Contract Reference
   `BT-1501(c)-Contract-Scheme`:: Modified Contract Reference Schemename
   `BT-1501(n)-Contract`:: Modification Previous Notice Identifier
-  `BT-1501(n)-Contract-Scheme`:: Modification Previous Notice Identifier Schemename
   `BT-1501(p)-Contract`:: Modified Notice Part Reference

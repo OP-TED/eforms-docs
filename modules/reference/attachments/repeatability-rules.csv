@@ -6,8 +6,6 @@
 "BR-BT-00016-0102","non_repeatable","BT-16-Organization-Company","There shall not be more than a single occurrence for Organisation Part Name (BT-16-Organization-Company)","NULL","NULL","NULL","all","ERROR","2"
 "BR-BT-00016-0103","non_repeatable","BT-16-Organization-TouchPoint","There shall not be more than a single occurrence for Part Name (BT-16-Organization-TouchPoint)","NULL","NULL","NULL","all","ERROR","2"
 "BR-BT-00018-0156","non_repeatable","BT-18-Lot","There shall not be more than a single occurrence for Submission URL (BT-18-Lot)","NULL","NULL","NULL","all","ERROR","2"
-"BR-BT-00026-0617","non_repeatable","BT-26(m)-Part","There shall not be more than a single occurrence for Classification Type (e.g. CPV) (BT-26(m)-Part)","NULL","NULL","NULL","all","ERROR","2"
-"BR-BT-00076-0074","non_repeatable","BT-76-Lot","There shall not be more than a single occurrence for Tenderer Legal Form Description (BT-76-Lot)","NULL","NULL","NULL","all","ERROR","2"
 "BR-BT-00131-0152","non_repeatable","BT-131(d)-Lot","There shall not be more than a single occurrence for Deadline Receipt Tenders (BT-131(d)-Lot)","NULL","NULL","NULL","all","ERROR","2"
 "BR-BT-00131-0153","non_repeatable","BT-131(t)-Lot","There shall not be more than a single occurrence for Deadline Receipt Tenders (BT-131(t)-Lot)","NULL","NULL","NULL","all","ERROR","2"
 "BR-BT-00262-0307","non_repeatable","BT-262-Lot","There shall not be more than a single occurrence for Main Classification Code (BT-262-Lot)","NULL","NULL","NULL","all","ERROR","2"

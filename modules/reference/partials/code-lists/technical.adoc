@@ -999,30 +999,12 @@ See xref:code-lists/no-esubmission-justification.adoc[details & codes]
 
 '''
 
-=== `non-publication-identifier`
-List of codes for the identification of the information whose publication shall be delayed.
-[horizontal]
-Version:: 1.0
-
-See xref:code-lists/non-publication-identifier.adoc[details & codes]
-
-'''
-
 === `notice-purpose`
 List of codes to specify the purpose of the Business Register Information Notice
 [horizontal]
 Version:: 1.0
 
 See xref:code-lists/notice-purpose.adoc[details & codes]
-
-'''
-
-=== `notice-reference`
-Notice reference type
-[horizontal]
-Version:: 1.0
-
-See xref:code-lists/notice-reference.adoc[details & codes]
 
 '''
 

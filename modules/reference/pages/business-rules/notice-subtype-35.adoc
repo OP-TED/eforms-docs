@@ -5,7 +5,199 @@
 [cols="<3,3,<6,>1", role="fixed-layout"]
 |====
 h| Business Rule h| Field h|Details h|Severity
+h|`BR-BT-00001-0342`
+h|`BT-01-notice`
+a|
+
+*Applies if* legal basis is  'other'.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-01-notice == 'other')
+----
+|`ERROR`
+h|`BR-BT-00023-0211`
+h|`BT-23-Lot`
+a|
+
+*Applies if* Main Nature (BT-23-Lot) exists..
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Lot is present)
+----
+|`ERROR`
+h|`BR-BT-00023-0216`
+h|`BT-23-Procedure`
+a|
+
+*Applies if* Main Nature (BT-23-Procedure) exists..
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Procedure is present)
+----
+|`ERROR`
+h|`BR-BT-00115-0158`
+h|`BT-115-Lot`
+a|
+
+*Applies if* Main Nature (BT-23-Lot) value is equal to 'services'.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-115-Lot is present) and (BT-23-Lot == 'services')
+----
+|`ERROR`
+h|`BR-BT-00137-0227`
+h|`BT-137-Lot`
+a|
+
+*Applies if* there is at least one LotResult.
+
+.Condition in EFX
+[source, EFX]
+----
+BT-13713-LotResult is present
+----
+|`ERROR`
+h|`BR-BT-00137-0251`
+h|`BT-137-Lot`
+a|
+
+*Applies if* Lot has no DPS and no Framework Agreement.
+
+.Condition in EFX
+[source, EFX]
+----
+((BT-766-Lot is not present) or (BT-766-Lot == 'none')) and ((BT-765-Lot is not present) or (BT-765-Lot == 'none'))
+----
+|`ERROR`
+h|`BR-BT-00145-0130`
+h|`BT-145-Contract`
+a|
+
+*Applies if* Contract Conclusion Date (BT-145-Contract) and notice dispatch date (BT-05(a)-notice) exist.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-145-Contract is present) and (BT-05(a)-notice is present)
+----
+|`ERROR`
+h|`BR-BT-00195-0114`
+h|`BT-195-notice`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00198-0110`
+h|`BT-198-notice`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-00740-0113`
+h|`BT-740-Procedure-Buyer`
+a|
+
+*Applies if* Buyer Legal Type (BT-11) value is equal to ('Public undertaking' or 'Entity with special rights').
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-11-Procedure-Buyer in ('pub-undert', 'pub-undert-cga', 'pub-undert-ra', 'pub-undert-la', 'spec-rights-entity')) and not(BT-02-notice == 'can-modif') and (BT-740-Procedure-Buyer is present)
+----
+|`ERROR`
+h|`BR-BT-00740-0124`
+h|`BT-740-Procedure-Buyer`
+a|
+
+*Applies if* Buyer Legal Type (BT-11) value is equal to ('Organisation awarding a contract subsidised by a contracting authority' or 'International organisation' or 'Defense Contractor').
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-11-Procedure-Buyer in ('org-sub', 'org-sub-cga', 'org-sub-ra', 'org-sub-la', 'eu-ins-bod-ag', 'def-cont', 'int-org')) and not(BT-02-notice == 'can-modif') and (BT-740-Procedure-Buyer is present)
+----
+|`ERROR`
+h|`BR-BT-13713-0131`
+h|`BT-13713-LotResult`
+a|
+
+*Applies if* Tenders statistics are provided.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-760-LotResult is present)
+----
+|`ERROR`
+h|`BR-BT-13713-0141`
+h|`BT-13713-LotResult`
+a|
+
+*Applies if* Tenders statistics are provided.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-760-LotResult is present)
+----
+|`ERROR`
+h|`BR-BT-13713-0151`
+h|`BT-13713-LotResult`
+a|
+
+*Applies if* Tenders statistics are provided.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-760-LotResult is present)
+----
+|`ERROR`
+h|`BR-BT-13713-0161`
+h|`BT-13713-LotResult`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
+h|`BR-BT-13713-0171`
+h|`BT-13713-LotResult`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPP-00070-0126`
+h|`OPP-070-notice`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00316-0107`
+h|`OPT-316-Contract`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00321-0107`
+h|`OPT-321-Tender`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
 h|`BR-OPT-00322-0060`
+h|`OPT-322-LotResult`
+a|
+
+*Always applies* in notice sub-type 35.
+|`ERROR`
+h|`BR-OPT-00322-0072`
 h|`OPT-322-LotResult`
 a|
 
@@ -683,7 +875,7 @@ a|
 not(BT-142-LotResult == 'clos-nw')
 ----
 |`ERROR`
-h|`BR-BT-00145-0060`
+h|`BR-BT-00145-0106`
 h|`BT-145-Contract`
 a|
 
@@ -704,7 +896,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-142-LotResult == 'selec-w')
+not(some text:$compResult in BT-142-LotResult satisfies $compResult == 'selec-w')
 ----
 |`ERROR`
 h|`BR-BT-00151-0044`
@@ -752,7 +944,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-142-LotResult[BT-13713-LotResult in BT-137-Lot[BT-765-Lot not in ('fa-mix','fa-w-rc','fa-wo-rc')]] == 'selec-w') and not(BT-768-Contract == TRUE)
+not(some text:$compResult in BT-142-LotResult[BT-13713-LotResult in BT-137-Lot[BT-765-Lot not in ('fa-mix','fa-w-rc','fa-wo-rc')]] satisfies $compResult == 'selec-w') and not(some indicator:$inFAContract in BT-768-Contract satisfies $inFAContract == TRUE)
 ----
 |`ERROR`
 h|`BR-BT-00162-0053`
@@ -815,2548 +1007,40 @@ a|
 OPT-321-Tender in OPT-320-LotResult[BT-142-LotResult == 'clos-nw']
 ----
 |`ERROR`
-h|`BR-BT-00195-0044`
-h|`BT-195(BT-118)-NoticeResult`
+h|`BR-BT-00196-0060`
+h|`BT-196-notice`
 a|
 
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-0095`
-h|`BT-195(BT-161)-NoticeResult`
-a|
-
-*Forbidden if* Notice Value (BT-161-NoticeResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-161-NoticeResult is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0146`
-h|`BT-195(BT-556)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-0197`
-h|`BT-195(BT-156)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-0248`
-h|`BT-195(BT-142)-LotResult`
-a|
-
-*Forbidden if* Winner Chosen (BT-142-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-142-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0298`
-h|`BT-195(BT-710)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-0349`
-h|`BT-195(BT-711)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-0400`
-h|`BT-195(BT-709)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-0451`
-h|`BT-195(BT-712)-LotResult`
-a|
-
-*Forbidden if* Buyer Review Complainants (Code) (BT-712(a)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-712(a)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0501`
-h|`BT-195(BT-144)-LotResult`
-a|
-
-*Forbidden if* Not Awarded Reason (BT-144-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-144-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0551`
-h|`BT-195(BT-760)-LotResult`
-a|
-
-*Forbidden if* Received Submissions Type (BT-760-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-760-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0602`
-h|`BT-195(BT-759)-LotResult`
-a|
-
-*Forbidden if* Received Submissions Count (BT-759-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-759-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0653`
-h|`BT-195(BT-171)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-0704`
-h|`BT-195(BT-193)-Tender`
-a|
-
-*Forbidden if* Tender Variant (BT-193-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-193-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0755`
-h|`BT-195(BT-720)-Tender`
-a|
-
-*Forbidden if* Tender Value (BT-720-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-720-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0806`
-h|`BT-195(BT-162)-Tender`
-a|
-
-*Forbidden if* Concession Revenue User (BT-162-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-162-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0857`
-h|`BT-195(BT-160)-Tender`
-a|
-
-*Forbidden if* Concession Revenue Buyer (BT-160-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-160-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0908`
-h|`BT-195(BT-163)-Tender`
-a|
-
-*Forbidden if* Concession Value Description (BT-163-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-163-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-0959`
-h|`BT-195(BT-191)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-1010`
-h|`BT-195(BT-553)-Tender`
-a|
-
-*Forbidden if* Subcontracting Value (BT-553-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-553-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1061`
-h|`BT-195(BT-554)-Tender`
-a|
-
-*Forbidden if* Subcontracting Description (BT-554-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-554-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1112`
-h|`BT-195(BT-555)-Tender`
-a|
-
-*Forbidden if* Subcontracting Percentage (BT-555-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-555-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1163`
-h|`BT-195(BT-773)-Tender`
-a|
-
-*Forbidden if* Subcontracting (BT-773-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-773-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1214`
-h|`BT-195(BT-731)-Tender`
-a|
-
-*Forbidden if* Subcontracting Percentage Known (BT-731-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-731-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1265`
-h|`BT-195(BT-730)-Tender`
-a|
-
-*Forbidden if* Subcontracting Value Known (BT-730-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-730-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1469`
-h|`BT-195(BT-09)-Procedure`
-a|
-
-*Forbidden if* Cross Border Law (BT-09(b)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-09(b)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1520`
-h|`BT-195(BT-105)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-1571`
-h|`BT-195(BT-88)-Procedure`
-a|
-
-*Forbidden if* Procedure Features (BT-88-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-88-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1622`
-h|`BT-195(BT-106)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-1673`
-h|`BT-195(BT-1351)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-1724`
-h|`BT-195(BT-136)-Procedure`
-a|
-
-*Forbidden if* Direct Award Justification Code (BT-136-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-136-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1775`
-h|`BT-195(BT-1252)-Procedure`
-a|
-
-*Forbidden if* Direct Award Justification Previous Procedure Identifier (BT-1252-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-1252-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1826`
-h|`BT-195(BT-135)-Procedure`
-a|
-
-*Forbidden if* Direct Award Justification Text (BT-135-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-135-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1877`
-h|`BT-195(BT-733)-LotsGroup`
-a|
-
-*Forbidden if* Award Criteria Order Justification (BT-733-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-733-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1928`
-h|`BT-195(BT-543)-LotsGroup`
-a|
-
-*Forbidden if* Award Criteria Complicated (BT-543-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-543-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00195-1979`
-h|`BT-195(BT-5421)-LotsGroup`
-a|
-
-*Forbidden if* Award Criterion Number Weight (BT-5421-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-5421-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2030`
-h|`BT-195(BT-5422)-LotsGroup`
-a|
-
-*Forbidden if* Award Criterion Number Fixed (BT-5422-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-5422-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2081`
-h|`BT-195(BT-5423)-LotsGroup`
-a|
-
-*Forbidden if* Award Criterion Number Threshold (BT-5423-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-5423-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2183`
-h|`BT-195(BT-734)-LotsGroup`
-a|
-
-*Forbidden if* Award Criterion Name (BT-734-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-734-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2234`
-h|`BT-195(BT-539)-LotsGroup`
-a|
-
-*Forbidden if* Award Criterion Type (BT-539-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-539-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2285`
-h|`BT-195(BT-540)-LotsGroup`
-a|
-
-*Forbidden if* Award Criterion Description (BT-540-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-540-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2336`
-h|`BT-195(BT-733)-Lot`
-a|
-
-*Forbidden if* Award Criteria Order Justification (BT-733-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-733-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2387`
-h|`BT-195(BT-543)-Lot`
-a|
-
-*Forbidden if* Award Criteria Complicated (BT-543-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-543-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2438`
-h|`BT-195(BT-5421)-Lot`
-a|
-
-*Forbidden if* Award Criterion Number Weight (BT-5421-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-5421-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2489`
-h|`BT-195(BT-5422)-Lot`
-a|
-
-*Forbidden if* Award Criterion Number Fixed (BT-5422-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-5422-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2540`
-h|`BT-195(BT-5423)-Lot`
-a|
-
-*Forbidden if* Award Criterion Number Threshold (BT-5423-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-5423-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2642`
-h|`BT-195(BT-734)-Lot`
-a|
-
-*Forbidden if* Award Criterion Name (BT-734-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-734-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2693`
-h|`BT-195(BT-539)-Lot`
-a|
-
-*Forbidden if* Award Criterion Type (BT-539-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-539-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2744`
-h|`BT-195(BT-540)-Lot`
-a|
-
-*Forbidden if* Award Criterion Description (BT-540-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-540-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2848`
-h|`BT-195(BT-635)-LotResult`
-a|
-
-*Forbidden if* Buyer Review Requests Count (BT-635-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-635-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00195-2898`
-h|`BT-195(BT-636)-LotResult`
-a|
-
-*Forbidden if* Buyer Review Requests Irregularity Type (BT-636-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-636-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00195-3002`
-h|`BT-195(BT-1118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-3054`
-h|`BT-195(BT-1561)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-3108`
-h|`BT-195(BT-660)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00195-3243`
-h|`BT-195(BT-541)-LotsGroup-Weight`
-a|
-
-*Forbidden if* Award Criterion Number (BT-541-LotsGroup-WeightNumber) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-541-LotsGroup-WeightNumber is not present
-----
-|`ERROR`
-h|`BR-BT-00195-3293`
-h|`BT-195(BT-541)-Lot-Weight`
-a|
-
-*Forbidden if* Award Criterion Number (BT-541-Lot-WeightNumber) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-541-Lot-WeightNumber is not present
-----
-|`ERROR`
-h|`BR-BT-00195-3343`
-h|`BT-195(BT-541)-LotsGroup-Fixed`
-a|
-
-*Forbidden if* Award Criterion Number (BT-541-LotsGroup-FixedNumber) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-541-LotsGroup-FixedNumber is not present
-----
-|`ERROR`
-h|`BR-BT-00195-3393`
-h|`BT-195(BT-541)-Lot-Fixed`
-a|
-
-*Forbidden if* Award Criterion Number (BT-541-Lot-FixedNumber) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-541-Lot-FixedNumber is not present
-----
-|`ERROR`
-h|`BR-BT-00195-3443`
-h|`BT-195(BT-541)-LotsGroup-Threshold`
-a|
-
-*Forbidden if* Award Criterion Number (BT-541-LotsGroup-ThresholdNumber) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-541-LotsGroup-ThresholdNumber is not present
-----
-|`ERROR`
-h|`BR-BT-00195-3493`
-h|`BT-195(BT-541)-Lot-Threshold`
-a|
-
-*Forbidden if* Award Criterion Number (BT-541-Lot-ThresholdNumber) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-541-Lot-ThresholdNumber is not present
-----
-|`ERROR`
-h|`BR-BT-00196-0044`
-h|`BT-196(BT-118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-0148`
-h|`BT-196(BT-556)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-0200`
-h|`BT-196(BT-156)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-0304`
-h|`BT-196(BT-710)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-0356`
-h|`BT-196(BT-711)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-0408`
-h|`BT-196(BT-709)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-0668`
-h|`BT-196(BT-171)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-0980`
-h|`BT-196(BT-191)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-1500`
-h|`BT-196(BT-09)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-09)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-09)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00196-1552`
-h|`BT-196(BT-105)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-1604`
-h|`BT-196(BT-88)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-88)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-88)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00196-1656`
-h|`BT-196(BT-106)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-1708`
-h|`BT-196(BT-1351)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-1760`
-h|`BT-196(BT-136)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-136)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-136)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00196-1812`
-h|`BT-196(BT-1252)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-1252)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-1252)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00196-1864`
-h|`BT-196(BT-135)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-135)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-135)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00196-1916`
-h|`BT-196(BT-733)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-733)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-733)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00196-1968`
-h|`BT-196(BT-543)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-543)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-543)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2020`
-h|`BT-196(BT-5421)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5421)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5421)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2072`
-h|`BT-196(BT-5422)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5422)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5422)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2124`
-h|`BT-196(BT-5423)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5423)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5423)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2228`
-h|`BT-196(BT-734)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-734)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-734)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2280`
-h|`BT-196(BT-539)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-539)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-539)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2332`
-h|`BT-196(BT-540)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-540)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-540)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2384`
-h|`BT-196(BT-733)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-733)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-733)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2436`
-h|`BT-196(BT-543)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-543)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-543)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2488`
-h|`BT-196(BT-5421)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5421)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5421)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2540`
-h|`BT-196(BT-5422)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5422)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5422)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2592`
-h|`BT-196(BT-5423)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5423)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5423)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2696`
-h|`BT-196(BT-734)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-734)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-734)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2748`
-h|`BT-196(BT-539)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-539)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-539)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00196-2800`
-h|`BT-196(BT-540)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-540)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-540)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3213`
-h|`BT-196(BT-142)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-142)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-142)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3222`
-h|`BT-196(BT-144)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-144)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-144)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3237`
-h|`BT-196(BT-160)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-160)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-160)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3250`
-h|`BT-196(BT-161)-NoticeResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-161)-NoticeResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-161)-NoticeResult is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3255`
-h|`BT-196(BT-162)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-162)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-162)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3260`
-h|`BT-196(BT-163)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-163)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-163)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3280`
-h|`BT-196(BT-193)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-193)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-193)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3363`
-h|`BT-196(BT-553)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-553)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-553)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3376`
-h|`BT-196(BT-554)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-554)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-554)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3389`
-h|`BT-196(BT-555)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-555)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-555)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3428`
-h|`BT-196(BT-712)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-712)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-712)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3441`
-h|`BT-196(BT-720)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-720)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-720)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3454`
-h|`BT-196(BT-730)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-730)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-730)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3467`
-h|`BT-196(BT-731)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-731)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-731)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3496`
-h|`BT-196(BT-759)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-759)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-759)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3505`
-h|`BT-196(BT-760)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-760)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-760)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3518`
-h|`BT-196(BT-773)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-773)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-773)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3567`
-h|`BT-196(BT-635)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-635)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-635)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3617`
-h|`BT-196(BT-636)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-636)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-636)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00196-3686`
-h|`BT-196(BT-1118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-3746`
-h|`BT-196(BT-1561)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-4105`
-h|`BT-196(BT-660)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00196-4239`
-h|`BT-196(BT-541)-LotsGroup-Weight`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Weight) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-LotsGroup-Weight is not present
-----
-|`ERROR`
-h|`BR-BT-00196-4284`
-h|`BT-196(BT-541)-Lot-Weight`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Weight) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-Lot-Weight is not present
-----
-|`ERROR`
-h|`BR-BT-00196-4339`
-h|`BT-196(BT-541)-LotsGroup-Fixed`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Fixed) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-LotsGroup-Fixed is not present
-----
-|`ERROR`
-h|`BR-BT-00196-4384`
-h|`BT-196(BT-541)-Lot-Fixed`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Fixed) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-Lot-Fixed is not present
-----
-|`ERROR`
-h|`BR-BT-00196-4439`
-h|`BT-196(BT-541)-LotsGroup-Threshold`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Threshold) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-LotsGroup-Threshold is not present
-----
-|`ERROR`
-h|`BR-BT-00196-4484`
-h|`BT-196(BT-541)-Lot-Threshold`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Threshold) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-Lot-Threshold is not present
-----
-|`ERROR`
-h|`BR-BT-00197-0044`
-h|`BT-197(BT-118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-0146`
-h|`BT-197(BT-556)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-0197`
-h|`BT-197(BT-156)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-0299`
-h|`BT-197(BT-710)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-0350`
-h|`BT-197(BT-711)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-0401`
-h|`BT-197(BT-709)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-0656`
-h|`BT-197(BT-171)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-0962`
-h|`BT-197(BT-191)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-1472`
-h|`BT-197(BT-09)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-09)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-09)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00197-1523`
-h|`BT-197(BT-105)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-1574`
-h|`BT-197(BT-88)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-88)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-88)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00197-1625`
-h|`BT-197(BT-106)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-1676`
-h|`BT-197(BT-1351)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-1727`
-h|`BT-197(BT-136)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-136)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-136)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00197-1778`
-h|`BT-197(BT-1252)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-1252)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-1252)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00197-1829`
-h|`BT-197(BT-135)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-135)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-135)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00197-1880`
-h|`BT-197(BT-733)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-733)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-733)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00197-1931`
-h|`BT-197(BT-543)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-543)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-543)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00197-1982`
-h|`BT-197(BT-5421)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5421)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5421)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2033`
-h|`BT-197(BT-5422)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5422)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5422)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2084`
-h|`BT-197(BT-5423)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5423)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5423)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2186`
-h|`BT-197(BT-734)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-734)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-734)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2237`
-h|`BT-197(BT-539)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-539)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-539)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2288`
-h|`BT-197(BT-540)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-540)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-540)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2339`
-h|`BT-197(BT-733)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-733)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-733)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2390`
-h|`BT-197(BT-543)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-543)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-543)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2441`
-h|`BT-197(BT-5421)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5421)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5421)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2492`
-h|`BT-197(BT-5422)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5422)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5422)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2543`
-h|`BT-197(BT-5423)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5423)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5423)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2645`
-h|`BT-197(BT-734)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-734)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-734)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2696`
-h|`BT-197(BT-539)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-539)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-539)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00197-2747`
-h|`BT-197(BT-540)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-540)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-540)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3215`
-h|`BT-197(BT-142)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-142)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-142)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3224`
-h|`BT-197(BT-144)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-144)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-144)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3239`
-h|`BT-197(BT-160)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-160)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-160)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3252`
-h|`BT-197(BT-161)-NoticeResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-161)-NoticeResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-161)-NoticeResult is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3257`
-h|`BT-197(BT-162)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-162)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-162)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3262`
-h|`BT-197(BT-163)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-163)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-163)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3282`
-h|`BT-197(BT-193)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-193)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-193)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3365`
-h|`BT-197(BT-553)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-553)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-553)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3378`
-h|`BT-197(BT-554)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-554)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-554)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3391`
-h|`BT-197(BT-555)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-555)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-555)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3430`
-h|`BT-197(BT-712)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-712)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-712)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3443`
-h|`BT-197(BT-720)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-720)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-720)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3456`
-h|`BT-197(BT-730)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-730)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-730)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3469`
-h|`BT-197(BT-731)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-731)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-731)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3498`
-h|`BT-197(BT-759)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-759)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-759)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3507`
-h|`BT-197(BT-760)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-760)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-760)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3520`
-h|`BT-197(BT-773)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-773)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-773)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3569`
-h|`BT-197(BT-635)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-635)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-635)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3619`
-h|`BT-197(BT-636)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-636)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-636)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00197-3688`
-h|`BT-197(BT-1118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-3749`
-h|`BT-197(BT-1561)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-4111`
-h|`BT-197(BT-660)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00197-4239`
-h|`BT-197(BT-541)-LotsGroup-Weight`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Weight) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-LotsGroup-Weight is not present
-----
-|`ERROR`
-h|`BR-BT-00197-4284`
-h|`BT-197(BT-541)-Lot-Weight`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Weight) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-Lot-Weight is not present
-----
-|`ERROR`
-h|`BR-BT-00197-4439`
-h|`BT-197(BT-541)-LotsGroup-Fixed`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Fixed) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-LotsGroup-Fixed is not present
-----
-|`ERROR`
-h|`BR-BT-00197-4484`
-h|`BT-197(BT-541)-Lot-Fixed`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Fixed) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-Lot-Fixed is not present
-----
-|`ERROR`
-h|`BR-BT-00197-4639`
-h|`BT-197(BT-541)-LotsGroup-Threshold`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Threshold) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-LotsGroup-Threshold is not present
-----
-|`ERROR`
-h|`BR-BT-00197-4684`
-h|`BT-197(BT-541)-Lot-Threshold`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Threshold) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-Lot-Threshold is not present
-----
-|`ERROR`
-h|`BR-BT-00198-0044`
-h|`BT-198(BT-118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-0148`
-h|`BT-198(BT-556)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-0200`
-h|`BT-198(BT-156)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-0304`
-h|`BT-198(BT-710)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-0356`
-h|`BT-198(BT-711)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-0408`
-h|`BT-198(BT-709)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-0668`
-h|`BT-198(BT-171)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-0980`
-h|`BT-198(BT-191)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-1500`
-h|`BT-198(BT-09)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-09)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-09)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00198-1552`
-h|`BT-198(BT-105)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-1604`
-h|`BT-198(BT-88)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-88)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-88)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00198-1656`
-h|`BT-198(BT-106)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-1708`
-h|`BT-198(BT-1351)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-1760`
-h|`BT-198(BT-136)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-136)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-136)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00198-1812`
-h|`BT-198(BT-1252)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-1252)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-1252)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00198-1864`
-h|`BT-198(BT-135)-Procedure`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-135)-Procedure) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-135)-Procedure is not present
-----
-|`ERROR`
-h|`BR-BT-00198-1916`
-h|`BT-198(BT-733)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-733)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-733)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00198-1968`
-h|`BT-198(BT-543)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-543)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-543)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2020`
-h|`BT-198(BT-5421)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5421)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5421)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2072`
-h|`BT-198(BT-5422)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5422)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5422)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2124`
-h|`BT-198(BT-5423)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5423)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5423)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2228`
-h|`BT-198(BT-734)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-734)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-734)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2280`
-h|`BT-198(BT-539)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-539)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-539)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2332`
-h|`BT-198(BT-540)-LotsGroup`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-540)-LotsGroup) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-540)-LotsGroup is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2384`
-h|`BT-198(BT-733)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-733)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-733)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2436`
-h|`BT-198(BT-543)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-543)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-543)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2488`
-h|`BT-198(BT-5421)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5421)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5421)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2540`
-h|`BT-198(BT-5422)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5422)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5422)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2592`
-h|`BT-198(BT-5423)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-5423)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-5423)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2696`
-h|`BT-198(BT-734)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-734)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-734)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2748`
-h|`BT-198(BT-539)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-539)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-539)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00198-2800`
-h|`BT-198(BT-540)-Lot`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-540)-Lot) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-540)-Lot is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3216`
-h|`BT-198(BT-142)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-142)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-142)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3225`
-h|`BT-198(BT-144)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-144)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-144)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3240`
-h|`BT-198(BT-160)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-160)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-160)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3253`
-h|`BT-198(BT-161)-NoticeResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-161)-NoticeResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-161)-NoticeResult is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3258`
-h|`BT-198(BT-162)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-162)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-162)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3263`
-h|`BT-198(BT-163)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-163)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-163)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3283`
-h|`BT-198(BT-193)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-193)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-193)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3366`
-h|`BT-198(BT-553)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-553)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-553)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3379`
-h|`BT-198(BT-554)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-554)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-554)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3392`
-h|`BT-198(BT-555)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-555)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-555)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3431`
-h|`BT-198(BT-712)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-712)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-712)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3444`
-h|`BT-198(BT-720)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-720)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-720)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3457`
-h|`BT-198(BT-730)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-730)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-730)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3470`
-h|`BT-198(BT-731)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-731)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-731)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3499`
-h|`BT-198(BT-759)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-759)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-759)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3508`
-h|`BT-198(BT-760)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-760)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-760)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00198-3521`
-h|`BT-198(BT-773)-Tender`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-773)-Tender) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-773)-Tender is not present
-----
-|`ERROR`
-h|`BR-BT-00198-4145`
-h|`BT-198(BT-635)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-635)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-635)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00198-4195`
-h|`BT-198(BT-636)-LotResult`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-636)-LotResult) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-636)-LotResult is not present
-----
-|`ERROR`
-h|`BR-BT-00198-4264`
-h|`BT-198(BT-1118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-4328`
-h|`BT-198(BT-1561)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-4691`
-h|`BT-198(BT-660)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 35.
-|`ERROR`
-h|`BR-BT-00198-4839`
-h|`BT-198(BT-541)-LotsGroup-Weight`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Weight) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-LotsGroup-Weight is not present
-----
-|`ERROR`
-h|`BR-BT-00198-4884`
-h|`BT-198(BT-541)-Lot-Weight`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Weight) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-Lot-Weight is not present
-----
-|`ERROR`
-h|`BR-BT-00198-4939`
-h|`BT-198(BT-541)-LotsGroup-Fixed`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Fixed) is not present.
-
-.Condition in EFX
-[source, EFX]
-----
-BT-195(BT-541)-LotsGroup-Fixed is not present
-----
-|`ERROR`
-h|`BR-BT-00198-4984`
-h|`BT-198(BT-541)-Lot-Fixed`
-a|
-
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Fixed) is not present.
+*Forbidden if* BT-197-notice is not present.
 
 .Condition in EFX
 [source, EFX]
 ----
-BT-195(BT-541)-Lot-Fixed is not present
+BT-197-notice is not present
 ----
 |`ERROR`
-h|`BR-BT-00198-5039`
-h|`BT-198(BT-541)-LotsGroup-Threshold`
+h|`BR-BT-00197-0060`
+h|`BT-197-notice`
 a|
 
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-LotsGroup-Threshold) is not present.
+*Forbidden if* BT-195-notice is not present.
 
 .Condition in EFX
 [source, EFX]
 ----
-BT-195(BT-541)-LotsGroup-Threshold is not present
+BT-195-notice is not present
 ----
 |`ERROR`
-h|`BR-BT-00198-5084`
-h|`BT-198(BT-541)-Lot-Threshold`
+h|`BR-BT-00198-0060`
+h|`BT-198-notice`
 a|
 
-*Forbidden if* Unpublished Identifier (BT-195(BT-541)-Lot-Threshold) is not present.
+*Forbidden if* BT-195-notice is not present.
 
 .Condition in EFX
 [source, EFX]
 ----
-BT-195(BT-541)-Lot-Threshold is not present
+BT-195-notice is not present
 ----
 |`ERROR`
 h|`BR-BT-00200-0044`
@@ -4082,7 +1766,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-13714-Tender in BT-137-Lot[BT-681-Lot == 'true']) and not(BT-13714-Tender in BT-330-Procedure[BT-1375-Procedure in BT-137-Lot[BT-681-Lot == 'true']])
+not(BT-13714-Tender in BT-137-Lot[BT-681-Lot == 'true']) and not(BT-13714-Tender in BT-330-Procedure[some text:$groupLot in BT-1375-Procedure satisfies $groupLot in BT-137-Lot[BT-681-Lot == 'true']])
 ----
 |`ERROR`
 h|`BR-BT-00685-0044`
@@ -4382,7 +2066,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-5421-LotsGroup == 'ord-imp')
+not(some text:$weight in BT-5421-LotsGroup satisfies $weight == 'ord-imp')
 ----
 |`ERROR`
 h|`BR-BT-00733-0096`
@@ -4394,7 +2078,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-5421-Lot == 'ord-imp')
+not(some text:$weight in BT-5421-Lot satisfies $weight == 'ord-imp')
 ----
 |`ERROR`
 h|`BR-BT-00734-0044`
@@ -4628,7 +2312,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-142-LotResult == 'selec-w') or BT-765-Lot not in ('fa-mix','fa-w-rc','fa-wo-rc')
+not(some text:$compResult in BT-142-LotResult satisfies $compResult == 'selec-w') or (every text:$faType in BT-765-Lot satisfies $faType not in ('fa-mix','fa-w-rc','fa-wo-rc'))
 ----
 |`ERROR`
 h|`BR-BT-00769-0044`
@@ -5001,24 +2685,24 @@ h|`BR-BT-00811-0376`
 h|`BT-811(a)-Lot`
 a|
 
-*Forbidden if* Negation of 3.
+*Forbidden if* BT-811(b)-Lot is not present.
 
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-105-Procedure not in ('open','restricted','neg-w-call','comp-dial','innovation'))
+BT-811(b)-Lot is not present
 ----
 |`ERROR`
 h|`BR-BT-00811-0389`
 h|`BT-811(a)-LotResult`
 a|
 
-*Forbidden if* Negation of 4.
+*Forbidden if* BT-811(b)-LotResult is not present.
 
 .Condition in EFX
 [source, EFX]
 ----
-BT-106-Procedure == 'true'
+BT-811(b)-LotResult is not present
 ----
 |`ERROR`
 h|`BR-BT-00812-0044`
@@ -5795,7 +3479,7 @@ a|
 BT-814-LotResult is not present
 ----
 |`ERROR`
-h|`BR-OPT-00090-0095`
+h|`BR-OPT-00090-0114`
 h|`OPT-090-Lot`
 a|
 
@@ -6056,7 +3740,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-142-LotResult == 'selec-w') or (OPT-322-LotResult is not present)
+not(some text:$compResult in BT-142-LotResult satisfies $compResult == 'selec-w') or (OPT-322-LotResult is not present)
 ----
 |`ERROR`
 h|`BR-OPT-00316-0061`
@@ -6080,7 +3764,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-(OPT-322-LotResult is not present) or ((BT-13713-LotResult is present) and not(BT-13714-Tender in BT-13713-LotResult) and not(BT-1375-Procedure[BT-330-Procedure in BT-13714-Tender] in BT-13713-LotResult)) or ((BT-13713-LotResult is not present) and (OPT-321-Tender is not present)) or (BT-142-LotResult == 'open-nw')
+(OPT-322-LotResult is not present) or ((BT-13713-LotResult is present) and not(some text:$tenderLot in BT-13714-Tender satisfies $tenderLot in BT-13713-LotResult) and not(some text:$groupLot in BT-1375-Procedure[BT-330-Procedure in BT-13714-Tender] satisfies $groupLot in BT-13713-LotResult)) or ((BT-13713-LotResult is not present) and (OPT-321-Tender is not present)) or (BT-142-LotResult == 'open-nw')
 ----
 |`ERROR`
 h|`BR-OPT-00321-0065`
@@ -6092,7 +3776,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-142-LotResult == 'selec-w') and not(BT-144-LotResult != 'no-rece')
+not(some text:$compResult in BT-142-LotResult satisfies $compResult == 'selec-w') and not(some text:$nonAwardReason in BT-144-LotResult satisfies $nonAwardReason != 'no-rece')
 ----
 |`ERROR`
 |====
@@ -6311,7 +3995,7 @@ a|
 BT-142-LotResult == 'clos-nw'
 ----
 |`ERROR`
-h|`BR-BT-00145-0044`
+h|`BR-BT-00145-0121`
 h|`BT-145-Contract`
 a|
 
@@ -6332,7 +4016,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-BT-142-LotResult == 'selec-w'
+some text:$compResult in BT-142-LotResult satisfies $compResult == 'selec-w'
 ----
 |`ERROR`
 h|`BR-BT-00160-0044`
@@ -6356,7 +4040,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(not(BT-142-LotResult[BT-13713-LotResult in BT-137-Lot[BT-765-Lot not in ('fa-mix','fa-w-rc','fa-wo-rc')]] == 'selec-w') and not(BT-768-Contract == TRUE))
+not(not(some text:$compResult in BT-142-LotResult[BT-13713-LotResult in BT-137-Lot[BT-765-Lot not in ('fa-mix','fa-w-rc','fa-wo-rc')]] satisfies $compResult == 'selec-w') and not(some indicator:$inFAContract in BT-768-Contract satisfies $inFAContract == TRUE))
 ----
 |`ERROR`
 h|`BR-BT-00162-0044`
@@ -6395,556 +4079,16 @@ a|
 (OPT-200-Organization-Company in OPT-300-Tenderer[OPT-210-Tenderer in OPT-310-Tender[OPT-321-Tender in BT-3202-Contract]]) or (OPT-200-Organization-Company in OPT-301-Tenderer-SubCont[OPT-210-Tenderer in OPT-310-Tender[OPT-321-Tender in BT-3202-Contract]])
 ----
 |`ERROR`
-h|`BR-BT-00197-2856`
-h|`BT-197(BT-142)-LotResult`
+h|`BR-BT-00197-0080`
+h|`BT-197-notice`
 a|
 
-*Mandatory if* Negation of 273.
+*Mandatory if* BT-195-notice is present.
 
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-195(BT-142)-LotResult is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-2865`
-h|`BT-197(BT-144)-LotResult`
-a|
-
-*Mandatory if* Negation of 274.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-144)-LotResult is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-2880`
-h|`BT-197(BT-160)-Tender`
-a|
-
-*Mandatory if* Negation of 276.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-160)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-2893`
-h|`BT-197(BT-161)-NoticeResult`
-a|
-
-*Mandatory if* Negation of 277.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-161)-NoticeResult is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-2898`
-h|`BT-197(BT-162)-Tender`
-a|
-
-*Mandatory if* Negation of 278.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-162)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-2903`
-h|`BT-197(BT-163)-Tender`
-a|
-
-*Mandatory if* Negation of 279.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-163)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-2923`
-h|`BT-197(BT-193)-Tender`
-a|
-
-*Mandatory if* Negation of 282.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-193)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3006`
-h|`BT-197(BT-553)-Tender`
-a|
-
-*Mandatory if* Negation of 297.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-553)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3019`
-h|`BT-197(BT-554)-Tender`
-a|
-
-*Mandatory if* Negation of 298.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-554)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3032`
-h|`BT-197(BT-555)-Tender`
-a|
-
-*Mandatory if* Negation of 299.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-555)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3071`
-h|`BT-197(BT-712)-LotResult`
-a|
-
-*Mandatory if* Negation of 304.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-712)-LotResult is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3084`
-h|`BT-197(BT-720)-Tender`
-a|
-
-*Mandatory if* Negation of 305.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-720)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3097`
-h|`BT-197(BT-730)-Tender`
-a|
-
-*Mandatory if* Negation of 306.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-730)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3110`
-h|`BT-197(BT-731)-Tender`
-a|
-
-*Mandatory if* Negation of 307.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-731)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3139`
-h|`BT-197(BT-759)-LotResult`
-a|
-
-*Mandatory if* Negation of 312.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-759)-LotResult is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3148`
-h|`BT-197(BT-760)-LotResult`
-a|
-
-*Mandatory if* Negation of 313.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-760)-LotResult is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3161`
-h|`BT-197(BT-773)-Tender`
-a|
-
-*Mandatory if* Negation of 314.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-773)-Tender is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3633`
-h|`BT-197(BT-635)-LotResult`
-a|
-
-*Mandatory if* Negation of 505.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-635)-LotResult is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3647`
-h|`BT-197(BT-636)-LotResult`
-a|
-
-*Mandatory if* Negation of 506.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-636)-LotResult is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3842`
-h|`BT-197(BT-09)-Procedure`
-a|
-
-*Mandatory if* Negation of 265.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-09)-Procedure is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3860`
-h|`BT-197(BT-88)-Procedure`
-a|
-
-*Mandatory if* Negation of 315.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-88)-Procedure is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3874`
-h|`BT-197(BT-136)-Procedure`
-a|
-
-*Mandatory if* Negation of 272.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-136)-Procedure is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3882`
-h|`BT-197(BT-1252)-Procedure`
-a|
-
-*Mandatory if* Negation of 269.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-1252)-Procedure is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3890`
-h|`BT-197(BT-135)-Procedure`
-a|
-
-*Mandatory if* Negation of 270.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-135)-Procedure is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3898`
-h|`BT-197(BT-733)-LotsGroup`
-a|
-
-*Mandatory if* Negation of 309.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-733)-LotsGroup is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3908`
-h|`BT-197(BT-543)-LotsGroup`
-a|
-
-*Mandatory if* Negation of 296.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-543)-LotsGroup is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3918`
-h|`BT-197(BT-5421)-LotsGroup`
-a|
-
-*Mandatory if* Negation of 290.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-5421)-LotsGroup is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3928`
-h|`BT-197(BT-5422)-LotsGroup`
-a|
-
-*Mandatory if* Negation of 292.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-5422)-LotsGroup is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3938`
-h|`BT-197(BT-5423)-LotsGroup`
-a|
-
-*Mandatory if* Negation of 294.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-5423)-LotsGroup is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3958`
-h|`BT-197(BT-734)-LotsGroup`
-a|
-
-*Mandatory if* Negation of 311.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-734)-LotsGroup is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3968`
-h|`BT-197(BT-539)-LotsGroup`
-a|
-
-*Mandatory if* Negation of 284.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-539)-LotsGroup is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3978`
-h|`BT-197(BT-540)-LotsGroup`
-a|
-
-*Mandatory if* Negation of 286.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-540)-LotsGroup is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3988`
-h|`BT-197(BT-733)-Lot`
-a|
-
-*Mandatory if* Negation of 308.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-733)-Lot is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-3998`
-h|`BT-197(BT-543)-Lot`
-a|
-
-*Mandatory if* Negation of 295.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-543)-Lot is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4008`
-h|`BT-197(BT-5421)-Lot`
-a|
-
-*Mandatory if* Negation of 289.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-5421)-Lot is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4018`
-h|`BT-197(BT-5422)-Lot`
-a|
-
-*Mandatory if* Negation of 291.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-5422)-Lot is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4028`
-h|`BT-197(BT-5423)-Lot`
-a|
-
-*Mandatory if* Negation of 293.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-5423)-Lot is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4048`
-h|`BT-197(BT-734)-Lot`
-a|
-
-*Mandatory if* Negation of 310.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-734)-Lot is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4058`
-h|`BT-197(BT-539)-Lot`
-a|
-
-*Mandatory if* Negation of 283.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-539)-Lot is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4068`
-h|`BT-197(BT-540)-Lot`
-a|
-
-*Mandatory if* Negation of 285.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-540)-Lot is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4317`
-h|`BT-197(BT-541)-LotsGroup-Weight`
-a|
-
-*Mandatory if* Negation of 584.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-541)-LotsGroup-Weight is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4327`
-h|`BT-197(BT-541)-Lot-Weight`
-a|
-
-*Mandatory if* Negation of 581.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-541)-Lot-Weight is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4517`
-h|`BT-197(BT-541)-LotsGroup-Fixed`
-a|
-
-*Mandatory if* Negation of 585.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-541)-LotsGroup-Fixed is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4527`
-h|`BT-197(BT-541)-Lot-Fixed`
-a|
-
-*Mandatory if* Negation of 582.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-541)-Lot-Fixed is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4717`
-h|`BT-197(BT-541)-LotsGroup-Threshold`
-a|
-
-*Mandatory if* Negation of 586.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-541)-LotsGroup-Threshold is not present)
-----
-|`ERROR`
-h|`BR-BT-00197-4727`
-h|`BT-197(BT-541)-Lot-Threshold`
-a|
-
-*Mandatory if* Negation of 583.
-
-.Condition in EFX
-[source, EFX]
-----
-not(BT-195(BT-541)-Lot-Threshold is not present)
+BT-195-notice is present
 ----
 |`ERROR`
 h|`BR-BT-00262-0044`
@@ -7148,7 +4292,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(not(BT-13714-Tender in BT-137-Lot[BT-681-Lot == 'true']) and not(BT-13714-Tender in BT-330-Procedure[BT-1375-Procedure in BT-137-Lot[BT-681-Lot == 'true']]))
+not(not(BT-13714-Tender in BT-137-Lot[BT-681-Lot == 'true']) and not(BT-13714-Tender in BT-330-Procedure[some text:$groupLot in BT-1375-Procedure satisfies $groupLot in BT-137-Lot[BT-681-Lot == 'true']]))
 ----
 |`ERROR`
 h|`BR-BT-00685-0057`
@@ -7755,12 +4899,12 @@ h|`BR-BT-13713-0044`
 h|`BT-13713-LotResult`
 a|
 
-*Mandatory if* Negation of 554.
+*Mandatory if* Negation of 552.
 
 .Condition in EFX
 [source, EFX]
 ----
-BT-142-LotResult == 'selec-w'
+not(OPT-322-LotResult is not present)
 ----
 |`ERROR`
 h|`BR-BT-13714-0044`
@@ -7946,7 +5090,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(not(BT-142-LotResult == 'selec-w') or (OPT-322-LotResult is not present))
+not(not(some text:$compResult in BT-142-LotResult satisfies $compResult == 'selec-w') or (OPT-322-LotResult is not present))
 ----
 |`ERROR`
 h|`BR-OPT-00316-0044`
@@ -7970,7 +5114,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not((OPT-322-LotResult is not present) or ((BT-13713-LotResult is present) and not(BT-13714-Tender in BT-13713-LotResult) and not(BT-1375-Procedure[BT-330-Procedure in BT-13714-Tender] in BT-13713-LotResult)) or ((BT-13713-LotResult is not present) and (OPT-321-Tender is not present)) or (BT-142-LotResult == 'open-nw'))
+not((OPT-322-LotResult is not present) or ((BT-13713-LotResult is present) and not(some text:$tenderLot in BT-13714-Tender satisfies $tenderLot in BT-13713-LotResult) and not(some text:$groupLot in BT-1375-Procedure[BT-330-Procedure in BT-13714-Tender] satisfies $groupLot in BT-13713-LotResult)) or ((BT-13713-LotResult is not present) and (OPT-321-Tender is not present)) or (BT-142-LotResult == 'open-nw'))
 ----
 |`ERROR`
 h|`BR-OPT-00321-0044`
@@ -7982,7 +5126,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-BT-142-LotResult == 'selec-w'
+some text:$compResult in BT-142-LotResult satisfies $compResult == 'selec-w'
 ----
 |`ERROR`
 h|`BR-OPT-00322-0044`

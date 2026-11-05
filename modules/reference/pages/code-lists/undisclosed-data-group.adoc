@@ -1,0 +1,26 @@
+= `undisclosed-data-group` codelist
+:navtitle: Codelists
+
+This table is used in eForms to define sets of fields subject to temporary non-disclosure.
+[horizontal]
+Version:: 20260923-0
+URI:: http://publications.europa.eu/resource/dataset/undisclosed-data-group
+Structure:: flat
+EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/undisclosed-data-group[View on EU Vocabularies^]
+Used in:: xref:business-terms/BT-195.adoc[`BT-195`] Unpublished Identifier
+
+== Codes
+[horizontal]
+  `con-esti`::: withheld concession estimates
+  `cri-awrd`::: withheld award criteria
+  `eop-info`::: withheld information about economic operators
+  `not-fram`::: withheld information about the framework agreement values
+  `not-valu`::: withheld notice value
+  `ori-info`::: withheld origin of product or service
+  `rev-info`::: withheld review information
+  `sub-info`::: withheld subcontracting information
+  `sub-lohi`::: withheld value of the lowest and highest tender submitted
+  `sub-stat`::: withheld statistical information on received submissions
+  `ten-rank`::: withheld tender rank
+  `ten-valu`::: withheld tender value
+  `ten-vari`::: withheld tender variant

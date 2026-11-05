@@ -121,7 +121,7 @@ Structure:: flat
   `NLD`::: Netherlands
   `NOR`::: Norway
   `NPL`::: Nepal
-  `NRU`::: Nauru
+  `NRU`::: Naoero
   `NZL`::: New Zealand
   `OMN`::: Oman
   `PAK`::: Pakistan

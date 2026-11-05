@@ -6,7 +6,7 @@ List of codes for eforms allowed duration unit of measure
 Version:: 20190918-0
 Subset of:: xref:code-lists/timeperiod.adoc[`timeperiod`]
 Structure:: flat
-Used in:: xref:business-terms/BT-36.adoc[`BT-36`] Duration Period, xref:business-terms/BT-98.adoc[`BT-98`] Tender Validity Deadline
+Used in:: xref:business-terms/BT-98.adoc[`BT-98`] Tender Validity Deadline, xref:business-terms/BT-36.adoc[`BT-36`] Duration Period
 
 == Codes
 [horizontal]

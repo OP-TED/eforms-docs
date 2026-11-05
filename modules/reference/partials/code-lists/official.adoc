@@ -76,7 +76,7 @@ See xref:code-lists/contract-nature.adoc[details & codes]
 === `corporate-body`
 The Corporate body authority table is a controlled vocabulary which provides the varying names of EU corporate bodies for a given time span.
 [horizontal]
-Version:: 20260617-0
+Version:: 20260923-0
 
 See xref:code-lists/corporate-body.adoc[details & codes]
 
@@ -86,7 +86,7 @@ See xref:code-lists/corporate-body.adoc[details & codes]
 List of three characters country codes, correlated with the ISO 3166 international standard and additional authority codes for some countries without assigned ISO code.
 [horizontal]
 Tailored by:: <<_eea_country,`eea-country`>>, <<_eu_country,`eu-country`>>, <<_lawful_country,`lawful-country`>>, <<_nuts_country,`nuts-country`>>, <<_postcode_country,`postcode-country`>>
-Version:: 20260617-0
+Version:: 20260923-0
 
 See xref:code-lists/country.adoc[details & codes]
 
@@ -287,7 +287,7 @@ See xref:code-lists/irregularity-type.adoc[details & codes]
 List of three characters language codes correlated with the ISO 639 international standard with additional codes for some languages without assigned ISO code.
 [horizontal]
 Tailored by:: <<_eu_official_language,`eu-official-language`>>
-Version:: 20260617-0
+Version:: 20260923-0
 
 See xref:code-lists/language.adoc[details & codes]
 
@@ -447,7 +447,7 @@ See xref:code-lists/procurement-procedure-type.adoc[details & codes]
 === `received-submission-type`
 This table provides the list of relevant categories used to classify tenders or requests to participate received within the context of public procurement.
 [horizontal]
-Version:: 20260617-0
+Version:: 20260923-0
 
 See xref:code-lists/received-submission-type.adoc[details & codes]
 
@@ -550,6 +550,15 @@ Tailored by:: <<_duration,`duration`>>, <<_duration_unit,`duration-unit`>>
 Version:: 20240313-0
 
 See xref:code-lists/timeperiod.adoc[details & codes]
+
+'''
+
+=== `undisclosed-data-group`
+This table is used in eForms to define sets of fields subject to temporary non-disclosure.
+[horizontal]
+Version:: 20260923-0
+
+See xref:code-lists/undisclosed-data-group.adoc[details & codes]
 
 '''
 

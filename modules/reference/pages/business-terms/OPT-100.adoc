@@ -6,4 +6,3 @@
 == Fields
 [horizontal]
   `OPT-100-Contract`:: Framework Notice Identifier
-  `OPT-100-Contract-Scheme`:: Framework Notice Identifier Schemename

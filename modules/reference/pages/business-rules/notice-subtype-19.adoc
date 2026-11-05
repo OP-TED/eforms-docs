@@ -1,6 +1,102 @@
 = Business rules for notice sub-type `19`
 :navtitle: Business Rules
 
+== `co_constraint`
+[cols="<3,3,<6,>1", role="fixed-layout"]
+|====
+h| Business Rule h| Field h|Details h|Severity
+h|`BR-BT-00001-0326`
+h|`BT-01-notice`
+a|
+
+*Applies if* legal basis is  'other'.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-01-notice == 'other')
+----
+|`ERROR`
+h|`BR-BT-00023-0208`
+h|`BT-23-Lot`
+a|
+
+*Applies if* Main Nature (BT-23-Lot) exists..
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Lot is present)
+----
+|`ERROR`
+h|`BR-BT-00023-0213`
+h|`BT-23-Procedure`
+a|
+
+*Applies if* Main Nature (BT-23-Procedure) exists..
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-23-Procedure is present)
+----
+|`ERROR`
+h|`BR-BT-00044-0082`
+h|`BT-44-Lot`
+a|
+
+*Always applies* in notice sub-type 19.
+|`ERROR`
+h|`BR-BT-00115-0155`
+h|`BT-115-Lot`
+a|
+
+*Applies if* Main Nature (BT-23-Lot) value is equal to 'services'.
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-115-Lot is present) and (BT-23-Lot == 'services')
+----
+|`ERROR`
+h|`BR-BT-00137-0244`
+h|`BT-137-Lot`
+a|
+
+*Always applies* in notice sub-type 19.
+|`ERROR`
+h|`BR-BT-00740-0107`
+h|`BT-740-Procedure-Buyer`
+a|
+
+*Applies if* Buyer Legal Type (BT-11) value is equal to ('Public undertaking' or 'Entity with special rights').
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-11-Procedure-Buyer in ('pub-undert', 'pub-undert-cga', 'pub-undert-ra', 'pub-undert-la', 'spec-rights-entity')) and not(BT-02-notice == 'can-modif') and (BT-740-Procedure-Buyer is present)
+----
+|`ERROR`
+h|`BR-BT-00740-0117`
+h|`BT-740-Procedure-Buyer`
+a|
+
+*Applies if* Buyer Legal Type (BT-11) value is equal to ('Organisation awarding a contract subsidised by a contracting authority' or 'International organisation' or 'Defense Contractor').
+
+.Condition in EFX
+[source, EFX]
+----
+(BT-11-Procedure-Buyer in ('org-sub', 'org-sub-cga', 'org-sub-ra', 'org-sub-la', 'eu-ins-bod-ag', 'def-cont', 'int-org')) and not(BT-02-notice == 'can-modif') and (BT-740-Procedure-Buyer is present)
+----
+|`ERROR`
+h|`BR-OPP-00070-0135`
+h|`OPP-070-notice`
+a|
+
+*Always applies* in notice sub-type 19.
+|`ERROR`
+|====
+
 == `forbidden`
 [cols="<3,3,<6,>1", role="fixed-layout"]
 |====
@@ -422,7 +518,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-806-Procedure == 'epo-notice')
+not(some text:$exclusGroundSource in BT-806-Procedure satisfies $exclusGroundSource == 'epo-notice')
 ----
 |`ERROR`
 h|`BR-BT-00070-0079`
@@ -797,1442 +893,26 @@ a|
 
 *Always forbidden* in notice sub-type 19.
 |`ERROR`
-h|`BR-BT-00195-0025`
-h|`BT-195(BT-118)-NoticeResult`
+h|`BR-BT-00195-0011`
+h|`BT-195-notice`
 a|
 
 *Always forbidden* in notice sub-type 19.
 |`ERROR`
-h|`BR-BT-00195-0076`
-h|`BT-195(BT-161)-NoticeResult`
+h|`BR-BT-00196-0011`
+h|`BT-196-notice`
 a|
 
 *Always forbidden* in notice sub-type 19.
 |`ERROR`
-h|`BR-BT-00195-0127`
-h|`BT-195(BT-556)-NoticeResult`
+h|`BR-BT-00197-0011`
+h|`BT-197-notice`
 a|
 
 *Always forbidden* in notice sub-type 19.
 |`ERROR`
-h|`BR-BT-00195-0178`
-h|`BT-195(BT-156)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0229`
-h|`BT-195(BT-142)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0279`
-h|`BT-195(BT-710)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0330`
-h|`BT-195(BT-711)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0381`
-h|`BT-195(BT-709)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0432`
-h|`BT-195(BT-712)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0482`
-h|`BT-195(BT-144)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0532`
-h|`BT-195(BT-760)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0583`
-h|`BT-195(BT-759)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0634`
-h|`BT-195(BT-171)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0685`
-h|`BT-195(BT-193)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0736`
-h|`BT-195(BT-720)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0787`
-h|`BT-195(BT-162)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0838`
-h|`BT-195(BT-160)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0889`
-h|`BT-195(BT-163)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0940`
-h|`BT-195(BT-191)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-0991`
-h|`BT-195(BT-553)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1042`
-h|`BT-195(BT-554)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1093`
-h|`BT-195(BT-555)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1144`
-h|`BT-195(BT-773)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1195`
-h|`BT-195(BT-731)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1246`
-h|`BT-195(BT-730)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1450`
-h|`BT-195(BT-09)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1501`
-h|`BT-195(BT-105)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1552`
-h|`BT-195(BT-88)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1603`
-h|`BT-195(BT-106)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1654`
-h|`BT-195(BT-1351)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1705`
-h|`BT-195(BT-136)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1756`
-h|`BT-195(BT-1252)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1807`
-h|`BT-195(BT-135)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1858`
-h|`BT-195(BT-733)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1909`
-h|`BT-195(BT-543)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-1960`
-h|`BT-195(BT-5421)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2011`
-h|`BT-195(BT-5422)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2062`
-h|`BT-195(BT-5423)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2164`
-h|`BT-195(BT-734)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2215`
-h|`BT-195(BT-539)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2266`
-h|`BT-195(BT-540)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2317`
-h|`BT-195(BT-733)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2368`
-h|`BT-195(BT-543)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2419`
-h|`BT-195(BT-5421)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2470`
-h|`BT-195(BT-5422)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2521`
-h|`BT-195(BT-5423)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2623`
-h|`BT-195(BT-734)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2674`
-h|`BT-195(BT-539)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2725`
-h|`BT-195(BT-540)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2829`
-h|`BT-195(BT-635)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2879`
-h|`BT-195(BT-636)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-2983`
-h|`BT-195(BT-1118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-3035`
-h|`BT-195(BT-1561)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-3089`
-h|`BT-195(BT-660)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-3224`
-h|`BT-195(BT-541)-LotsGroup-Weight`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-3274`
-h|`BT-195(BT-541)-Lot-Weight`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-3324`
-h|`BT-195(BT-541)-LotsGroup-Fixed`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-3374`
-h|`BT-195(BT-541)-Lot-Fixed`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-3424`
-h|`BT-195(BT-541)-LotsGroup-Threshold`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00195-3474`
-h|`BT-195(BT-541)-Lot-Threshold`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0025`
-h|`BT-196(BT-118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0077`
-h|`BT-196(BT-161)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0129`
-h|`BT-196(BT-556)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0181`
-h|`BT-196(BT-156)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0233`
-h|`BT-196(BT-142)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0285`
-h|`BT-196(BT-710)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0337`
-h|`BT-196(BT-711)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0389`
-h|`BT-196(BT-709)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0441`
-h|`BT-196(BT-712)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0493`
-h|`BT-196(BT-144)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0545`
-h|`BT-196(BT-760)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0597`
-h|`BT-196(BT-759)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0649`
-h|`BT-196(BT-171)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0701`
-h|`BT-196(BT-193)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0753`
-h|`BT-196(BT-720)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0805`
-h|`BT-196(BT-162)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0857`
-h|`BT-196(BT-160)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0909`
-h|`BT-196(BT-163)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-0961`
-h|`BT-196(BT-191)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1013`
-h|`BT-196(BT-553)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1065`
-h|`BT-196(BT-554)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1117`
-h|`BT-196(BT-555)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1169`
-h|`BT-196(BT-773)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1221`
-h|`BT-196(BT-731)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1273`
-h|`BT-196(BT-730)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1481`
-h|`BT-196(BT-09)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1533`
-h|`BT-196(BT-105)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1585`
-h|`BT-196(BT-88)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1637`
-h|`BT-196(BT-106)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1689`
-h|`BT-196(BT-1351)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1741`
-h|`BT-196(BT-136)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1793`
-h|`BT-196(BT-1252)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1845`
-h|`BT-196(BT-135)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1897`
-h|`BT-196(BT-733)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-1949`
-h|`BT-196(BT-543)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2001`
-h|`BT-196(BT-5421)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2053`
-h|`BT-196(BT-5422)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2105`
-h|`BT-196(BT-5423)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2209`
-h|`BT-196(BT-734)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2261`
-h|`BT-196(BT-539)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2313`
-h|`BT-196(BT-540)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2365`
-h|`BT-196(BT-733)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2417`
-h|`BT-196(BT-543)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2469`
-h|`BT-196(BT-5421)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2521`
-h|`BT-196(BT-5422)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2573`
-h|`BT-196(BT-5423)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2677`
-h|`BT-196(BT-734)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2729`
-h|`BT-196(BT-539)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-2781`
-h|`BT-196(BT-540)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-3548`
-h|`BT-196(BT-635)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-3598`
-h|`BT-196(BT-636)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-3676`
-h|`BT-196(BT-1118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-3736`
-h|`BT-196(BT-1561)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-4095`
-h|`BT-196(BT-660)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-4224`
-h|`BT-196(BT-541)-LotsGroup-Weight`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-4269`
-h|`BT-196(BT-541)-Lot-Weight`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-4324`
-h|`BT-196(BT-541)-LotsGroup-Fixed`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-4369`
-h|`BT-196(BT-541)-Lot-Fixed`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-4424`
-h|`BT-196(BT-541)-LotsGroup-Threshold`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00196-4469`
-h|`BT-196(BT-541)-Lot-Threshold`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0025`
-h|`BT-197(BT-118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0076`
-h|`BT-197(BT-161)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0127`
-h|`BT-197(BT-556)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0178`
-h|`BT-197(BT-156)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0229`
-h|`BT-197(BT-142)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0280`
-h|`BT-197(BT-710)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0331`
-h|`BT-197(BT-711)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0382`
-h|`BT-197(BT-709)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0433`
-h|`BT-197(BT-712)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0484`
-h|`BT-197(BT-144)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0535`
-h|`BT-197(BT-760)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0586`
-h|`BT-197(BT-759)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0637`
-h|`BT-197(BT-171)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0688`
-h|`BT-197(BT-193)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0739`
-h|`BT-197(BT-720)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0790`
-h|`BT-197(BT-162)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0841`
-h|`BT-197(BT-160)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0892`
-h|`BT-197(BT-163)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0943`
-h|`BT-197(BT-191)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-0994`
-h|`BT-197(BT-553)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1045`
-h|`BT-197(BT-554)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1096`
-h|`BT-197(BT-555)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1147`
-h|`BT-197(BT-773)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1198`
-h|`BT-197(BT-731)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1249`
-h|`BT-197(BT-730)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1453`
-h|`BT-197(BT-09)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1504`
-h|`BT-197(BT-105)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1555`
-h|`BT-197(BT-88)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1606`
-h|`BT-197(BT-106)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1657`
-h|`BT-197(BT-1351)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1708`
-h|`BT-197(BT-136)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1759`
-h|`BT-197(BT-1252)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1810`
-h|`BT-197(BT-135)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1861`
-h|`BT-197(BT-733)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1912`
-h|`BT-197(BT-543)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-1963`
-h|`BT-197(BT-5421)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2014`
-h|`BT-197(BT-5422)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2065`
-h|`BT-197(BT-5423)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2167`
-h|`BT-197(BT-734)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2218`
-h|`BT-197(BT-539)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2269`
-h|`BT-197(BT-540)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2320`
-h|`BT-197(BT-733)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2371`
-h|`BT-197(BT-543)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2422`
-h|`BT-197(BT-5421)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2473`
-h|`BT-197(BT-5422)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2524`
-h|`BT-197(BT-5423)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2626`
-h|`BT-197(BT-734)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2677`
-h|`BT-197(BT-539)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-2728`
-h|`BT-197(BT-540)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-3550`
-h|`BT-197(BT-635)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-3600`
-h|`BT-197(BT-636)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-3678`
-h|`BT-197(BT-1118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-3739`
-h|`BT-197(BT-1561)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-4101`
-h|`BT-197(BT-660)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-4224`
-h|`BT-197(BT-541)-LotsGroup-Weight`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-4269`
-h|`BT-197(BT-541)-Lot-Weight`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-4835`
-h|`BT-197(BT-541)-LotsGroup-Fixed`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-4870`
-h|`BT-197(BT-541)-Lot-Fixed`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-4905`
-h|`BT-197(BT-541)-LotsGroup-Threshold`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00197-4940`
-h|`BT-197(BT-541)-Lot-Threshold`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0025`
-h|`BT-198(BT-118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0077`
-h|`BT-198(BT-161)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0129`
-h|`BT-198(BT-556)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0181`
-h|`BT-198(BT-156)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0233`
-h|`BT-198(BT-142)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0285`
-h|`BT-198(BT-710)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0337`
-h|`BT-198(BT-711)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0389`
-h|`BT-198(BT-709)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0441`
-h|`BT-198(BT-712)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0493`
-h|`BT-198(BT-144)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0545`
-h|`BT-198(BT-760)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0597`
-h|`BT-198(BT-759)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0649`
-h|`BT-198(BT-171)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0701`
-h|`BT-198(BT-193)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0753`
-h|`BT-198(BT-720)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0805`
-h|`BT-198(BT-162)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0857`
-h|`BT-198(BT-160)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0909`
-h|`BT-198(BT-163)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-0961`
-h|`BT-198(BT-191)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1013`
-h|`BT-198(BT-553)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1065`
-h|`BT-198(BT-554)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1117`
-h|`BT-198(BT-555)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1169`
-h|`BT-198(BT-773)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1221`
-h|`BT-198(BT-731)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1273`
-h|`BT-198(BT-730)-Tender`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1481`
-h|`BT-198(BT-09)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1533`
-h|`BT-198(BT-105)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1585`
-h|`BT-198(BT-88)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1637`
-h|`BT-198(BT-106)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1689`
-h|`BT-198(BT-1351)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1741`
-h|`BT-198(BT-136)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1793`
-h|`BT-198(BT-1252)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1845`
-h|`BT-198(BT-135)-Procedure`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1897`
-h|`BT-198(BT-733)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-1949`
-h|`BT-198(BT-543)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2001`
-h|`BT-198(BT-5421)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2053`
-h|`BT-198(BT-5422)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2105`
-h|`BT-198(BT-5423)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2209`
-h|`BT-198(BT-734)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2261`
-h|`BT-198(BT-539)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2313`
-h|`BT-198(BT-540)-LotsGroup`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2365`
-h|`BT-198(BT-733)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2417`
-h|`BT-198(BT-543)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2469`
-h|`BT-198(BT-5421)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2521`
-h|`BT-198(BT-5422)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2573`
-h|`BT-198(BT-5423)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2677`
-h|`BT-198(BT-734)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2729`
-h|`BT-198(BT-539)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-2781`
-h|`BT-198(BT-540)-Lot`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4126`
-h|`BT-198(BT-635)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4176`
-h|`BT-198(BT-636)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4254`
-h|`BT-198(BT-1118)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4318`
-h|`BT-198(BT-1561)-NoticeResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4681`
-h|`BT-198(BT-660)-LotResult`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4824`
-h|`BT-198(BT-541)-LotsGroup-Weight`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4869`
-h|`BT-198(BT-541)-Lot-Weight`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4924`
-h|`BT-198(BT-541)-LotsGroup-Fixed`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-4969`
-h|`BT-198(BT-541)-Lot-Fixed`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-5024`
-h|`BT-198(BT-541)-LotsGroup-Threshold`
-a|
-
-*Always forbidden* in notice sub-type 19.
-|`ERROR`
-h|`BR-BT-00198-5069`
-h|`BT-198(BT-541)-Lot-Threshold`
+h|`BR-BT-00198-0011`
+h|`BT-198-notice`
 a|
 
 *Always forbidden* in notice sub-type 19.
@@ -3176,7 +1856,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-5421-LotsGroup == 'ord-imp')
+not(some text:$weight in BT-5421-LotsGroup satisfies $weight == 'ord-imp')
 ----
 |`ERROR`
 h|`BR-BT-00733-0077`
@@ -3188,7 +1868,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-5421-Lot == 'ord-imp')
+not(some text:$weight in BT-5421-Lot satisfies $weight == 'ord-imp')
 ----
 |`ERROR`
 h|`BR-BT-00734-0025`
@@ -3620,7 +2300,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-821-Lot == 'epo-notice')
+not(some text:$selectCritSource in BT-821-Lot satisfies $selectCritSource == 'epo-notice')
 ----
 |`ERROR`
 h|`BR-BT-00811-0076`
@@ -3651,12 +2331,12 @@ h|`BR-BT-00811-0364`
 h|`BT-811(a)-Lot`
 a|
 
-*Forbidden if* Negation of 3.
+*Forbidden if* BT-811(b)-Lot is not present.
 
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-105-Procedure not in ('open','restricted','neg-w-call','comp-dial','innovation'))
+BT-811(b)-Lot is not present
 ----
 |`ERROR`
 h|`BR-BT-00812-0025`
@@ -4367,7 +3047,7 @@ a|
 
 *Always forbidden* in notice sub-type 19.
 |`ERROR`
-h|`BR-OPT-00090-0076`
+h|`BR-OPT-00090-0107`
 h|`OPT-090-Lot`
 a|
 
@@ -4868,7 +3548,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-BT-806-Procedure == 'epo-notice'
+some text:$exclusGroundSource in BT-806-Procedure satisfies $exclusGroundSource == 'epo-notice'
 ----
 |`ERROR`
 h|`BR-BT-00071-0075`
@@ -5282,7 +3962,7 @@ a|
 .Condition in EFX
 [source, EFX]
 ----
-BT-821-Lot == 'epo-notice'
+some text:$selectCritSource in BT-821-Lot satisfies $selectCritSource == 'epo-notice'
 ----
 |`ERROR`
 h|`BR-BT-00811-0316`
@@ -5307,12 +3987,12 @@ h|`BR-BT-01311-0025`
 h|`BT-1311(d)-Lot`
 a|
 
-*Mandatory if* Negation of 645.
+*Mandatory if* Negation of 643.
 
 .Condition in EFX
 [source, EFX]
 ----
-not(BT-105-Procedure not in ('restricted','neg-w-call','comp-dial','innovation','oth-mult') and (BT-630(d)-Lot is not present))
+not(BT-105-Procedure not in ('restricted','neg-w-call','comp-dial','innovation','oth-mult'))
 ----
 |`ERROR`
 h|`BR-BT-01311-0077`

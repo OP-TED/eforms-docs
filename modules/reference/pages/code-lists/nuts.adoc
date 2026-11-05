@@ -1452,7 +1452,7 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `NO0`::: Norge
   `NO02`::: Innlandet
   `NO020`::: Innlandet
-  `NO06`::: Trøndelag
+  `NO06`::: Trøndelag/Trööndelage
   `NO060`::: Trøndelag/Trööndelage
   `NO07`::: Nord-Norge
   `NO071`::: Nordland/Nordlánnda
@@ -1924,7 +1924,7 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `UA13`::: Харківська Область
   `UA131`::: Богодухівський Район
   `UA132`::: Ізюмський Район
-  `UA133`::: Красноградський Район
+  `UA133`::: Берестинський Район
   `UA134`::: Куп'Янський Район
   `UA135`::: Лозівський Район
   `UA136`::: Харківський Район
@@ -1951,7 +1951,7 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `UA223`::: Луганський Район
   `UA224`::: Ровеньківський Район
   `UA225`::: Сватівський Район
-  `UA226`::: Сєвєродонецький Район
+  `UA226`::: Сіверськодонецький Район
   `UA227`::: Старобільський Район
   `UA228`::: Щастинський Район
   `UA3`::: Макрорегіон_03
@@ -1960,7 +1960,7 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `UA312`::: Кам'Янський Район
   `UA313`::: Криворізький Район
   `UA314`::: Нікопольський Район
-  `UA315`::: Новомосковський Район
+  `UA315`::: Самарівський Район
   `UA316`::: Павлоградський Район
   `UA317`::: Синельниківський Район
   `UA32`::: Запорізька Область
@@ -1994,7 +1994,7 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `UA433`::: Каховський Район
   `UA434`::: Скадовський Район
   `UA435`::: Херсонський Район
-  `UA44`::: Ар Крим
+  `UA44`::: Автономна Республіка Крим
   `UA441`::: Бахчисарайський Район
   `UA442`::: Білогірський Район
   `UA443`::: Джанкойський Район
@@ -2060,7 +2060,7 @@ EU Vocabularies:: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/r
   `UA733`::: Львівський Район
   `UA734`::: Самбірський Район
   `UA735`::: Стрийський Район
-  `UA736`::: Червоноградський Район
+  `UA736`::: Шептицький Район
   `UA737`::: Яворівський Район
   `UA74`::: Чернівецька Область
   `UA741`::: Вижницький Район
