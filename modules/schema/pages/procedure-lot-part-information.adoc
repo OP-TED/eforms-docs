@@ -1183,7 +1183,8 @@ is set to 'epo-notice'), then Selection Criterion code (BT-809-Lot) and Selectio
 When the notice is not identified as a Source for Selection Criteria, then Selection Criterion code 
 (BT-809-Lot) and Selection Criterion Description (BT-750-Lot) are forbidden.
 
-Selection Criteria Second Stage Invite (BT-40) is only allowed when BT-809-Lot exists.
+Selection Criteria Second Stage Invite (BT-40) is mandatory when BT-809-Lot exists and when the 
+notice is identified as source of selection criteria (BT-821-Lot = "notice"), else it is forbidden.
 
 The indication that the criteria/criterion is used for 
 selection of candidates for a second stage is given by the presence of the 
@@ -2797,7 +2798,7 @@ code; A: allowed code and procedure may additionally be accelerated) :
 |Legal basis |ANY |D24 |D25 |D81 |D24 |D25 |D81 |OT |D24 |D25 |D81 
 |Forbidden - Optional - Mandatory |F |F |F |F |F |F |F |F |O |O |O 
 |open |-- |-- |-- |-- |-- |-- |-- |-- |X |X |-- 
-|restricted |-- |-- |-- |-- |-- |-- |-- |-- |X |-- |X 
+|restricted |-- |-- |-- |-- |-- |-- |-- |-- |X |X |X 
 |neg-w-call |-- |-- |-- |-- |-- |-- |-- |-- |X |X |X 
 |neg-wo-call |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
 |comp-dial |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- |-- 
