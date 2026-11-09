@@ -2,16 +2,6 @@
 
 = Withheld publication of information
 
-[IMPORTANT]
-====
-The documentation for eForms SDK 1.16 is still being prepared.
-This page has not yet been updated for SDK 1.16 and does not represent it.
-Until it is revised, consult the
-https://github.com/OP-TED/eForms-SDK/releases/tag/1.16.0[SDK 1.16.0 release notes]
-for the changes to this area, in particular the new approach to undisclosed
-fields which replaces the "unpublished fields" approach described below.
-====
-
 Some information required by eForms may remain non-public
 ("unpublished") for a defined periodfootnote:[as reminded in the "eForms Implementation Handbook" p. 27. Also see Dir 24 Art. 50(4), Dir 25 Art. 70(3),].
 This feature may be used for Result, Contract Modification and Contract
