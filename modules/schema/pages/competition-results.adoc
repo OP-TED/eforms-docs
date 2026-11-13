@@ -81,9 +81,7 @@ Value, estimated or actual, for all awarded lots of the noticefootnote:[When a g
 
 For any group of lots of the notice having a group framework agreement,
 the reference to the Group of lots as well as the Group Framework Value 
-(Maximum and/or Reestimated) shall be specified. Group Framework Values and 
-the associated reference to the lot may be "unpublished"; when done so, 
-the dates of publication for all unpublished elements shall be the same.
+(Maximum and/or Reestimated) shall be specified.
 
 All these amounts have to be expressed using codes of the
 https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/currency[Currency]
@@ -101,6 +99,9 @@ later on.
 ^|*eForms BT* ^|*Description* |*Cardin.* ^|*XSD element*
 
 4+^|*Notice Result associated amounts (+++*+++)* 
+
+|*_Withholdable fields_* | 
+_BT-161-NoticeResult, BT-118-NoticeResult,  BT-1118-NoticeResult_ | |
 
 |*Notice Value (BT-161)* |The value of all contracts awarded in this
 notice, including options and renewals. |*1* a|
@@ -128,8 +129,6 @@ efbc:OverallApproximateFrameworkContractsAmount
 ---- 
 
 4+^|*Group Framework Value (+++**+++)* 
-
-|*_Unpublish fields_* | | |
 
 |*Group Framework Maximum Value Lot Identifier (BT-556)* |Identifier of the
 group of lots within this procedure. |*1* a|
@@ -260,10 +259,8 @@ or a Dynamic Purchasing System and for which the notice is used for reporting pu
 
 4+^|*Lot Result (+++*+++)* 
 
-|*_"Unpublish" fields_* a|
-_(BT-710, BT-711, BT-142)_
-
-_Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]_
+|*_Withholdable fields_* a|
+_BT-710-LotResult, BT-711-LotResult_
 
 | |
 
@@ -337,10 +334,8 @@ a|
 cac:PayerParty{zwsp}/cac:PartyIdentification{zwsp}/cbc:ID
 ---- 
 
-|*_"Unpublish" fields_* a|
-_BT-712_
-
-Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
+|*_Withholdable fields_* a|
+_BT-712(a)-LotResult, BT-712(b)-LotResult, BT-635-LotResult, BT-636-LotResult_
 
 | | 
 
@@ -378,13 +373,6 @@ efac:AppealRequestsStatistics[efbc:StatisticsCode{zwsp}/@listName='irregularity-
 ----
 
 
-|*_"Unpublish" fields_* a|
-_BT-144_
-
-Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
-
-|*?* | 
-
 |*Not Awarded Reason (BT-144)* a|
 The reason for not choosing a winner.
 
@@ -409,10 +397,8 @@ _Shall follow the "TEN-XXXX" scheme._
 efac:LotTender{zwsp}/cbc:ID
 ---- 
 
-|*_"Unpublish" fields (Framework)_* a|
-_BT-709, BT-660_
-
-Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
+|*_Withholdable fields_* a|
+_BT-660-LotResult, BT-709-LotResult_
 
 | | 
 
@@ -434,12 +420,10 @@ a|
 efac:FrameworkAgreementValues{zwsp}/cbc:MaximumValueAmount
 ---- 
 
-|*_"Unpublish" fields_* a|
-(BT-759, BT-760)
+|*_Withholdable fields_* a|
+_BT-760-LotResult, BT-759-LotResult_
 
-Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
-
-|*** | 
+| | 
 
 |*Received Submissions Type (BT-760)* |The type of tenders or requests
 to participate received. The total number of tenders received must be
@@ -896,8 +880,8 @@ image::image016.jpg[image,width=317,height=407]
 
 4+^|*Lot Tender (+++*+++)* 
 
-|*_"Unpublish" fields_* a|
-_(BT-171, BT-193, BT-720)_
+|*_Withholdable fields_* a|
+_BT-171-Tender, BT-193-Tender, BT-720-Tender_
 
 _Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
 
@@ -948,10 +932,17 @@ a|
 efbc:TenderVariantIndicator
 ---- 
 
-|*_"Unpublish" fields_* a|
-_(BT-160, BT-162, BT-163)_
+|*Tender Value (BT-720)* |The value of the tender or another result;
+including options and renewals. In case of the modification notice, the
+value of the modification. |*?*
+a|
+[source,xpath,subs=attributes]
+----
+cac:LegalMonetaryTotal{zwsp}/cbc:PayableAmount
+---- 
 
-_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
+|*_Withholdable fields_* a|
+_BT-160-Tender, BT-162-Tender, BT-163-Tender_
 
 | |
 
@@ -980,19 +971,9 @@ a|
 efac:ConcessionRevenue{zwsp}/efbc:ValueDescription
 ---- 
 
-|*Tender Value (BT-720)* |The value of the tender or another result;
-including options and renewals. In case of the modification notice, the
-value of the modification. |*?*
-a|
-[source,xpath,subs=attributes]
-----
-cac:LegalMonetaryTotal{zwsp}/cbc:PayableAmount
----- 
 
-|*_"Unpublish" fields_* a|
-_(BT-191)_
-
-_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
+|*_Withholdable fields_* a|
+_BT-191-Tender_
 
 | |
 
@@ -1514,6 +1495,11 @@ image::image018.jpg[image,width=422,height=223]
 
 4+^|*Tendering Party (+++*+++)* 
 
+|*_Withholdable fields_* a|
+_OPT-211-Tenderer, OPT-170-Tenderer_
+
+| |
+
 a|
 *Tendering Party ID*
 
@@ -1530,6 +1516,20 @@ Reference to the Tendering Party will be made from the Tender
 [source,xpath,subs=attributes]
 ----
 cbc:ID
+---- 
+
+a|
+*Tendering Party Name*
+
+*(OPT-211)*
+
+a|
+The name of the Tendering Party
+
+|*?* a|
+[source,xpath,subs=attributes]
+----
+cbc:Name
 ---- 
 
 a|
