@@ -81,9 +81,7 @@ Value, estimated or actual, for all awarded lots of the noticefootnote:[When a g
 
 For any group of lots of the notice having a group framework agreement,
 the reference to the Group of lots as well as the Group Framework Value 
-(Maximum and/or Reestimated) shall be specified. Group Framework Values and 
-the associated reference to the lot may be "unpublished"; when done so, 
-the dates of publication for all unpublished elements shall be the same.
+(Maximum and/or Reestimated) shall be specified.
 
 All these amounts have to be expressed using codes of the
 https://op.europa.eu/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/currency[Currency]
@@ -102,14 +100,14 @@ later on.
 
 4+^|*Notice Result associated amounts (+++*+++)* 
 
-|*Notice Value (BT-161)* |The value of all contracts awarded in this
+|*Notice Value (BT-161)* _(withholdable)_ |The value of all contracts awarded in this
 notice, including options and renewals. |*1* a|
 [source,xpath,subs=attributes]
 ----
 cbc:TotalAmount
 ---- 
 
-|*Notice Framework Maximum Value (BT-118)* |The maximum value which
+|*Notice Framework Maximum Value (BT-118)* _(withholdable)_ |The maximum value which
 can be spent within the framework agreement(s) announced in this notice
 over its whole duration, in all lots, including options and renewals.
 |*1* a|
@@ -118,7 +116,7 @@ over its whole duration, in all lots, including options and renewals.
 efbc:OverallMaximumFrameworkContractsAmount
 ---- 
 
-|*Notice Framework Approximate Value (BT-1118)* |The approximate value to be spent 
+|*Notice Framework Approximate Value (BT-1118)* _(withholdable)_ |The approximate value to be spent 
 within the framework agreement(s) announced in this notice over its/their 
 whole duration, in all lots
 |*1* a|
@@ -128,8 +126,6 @@ efbc:OverallApproximateFrameworkContractsAmount
 ---- 
 
 4+^|*Group Framework Value (+++**+++)* 
-
-|*_Unpublish fields_* | | |
 
 |*Group Framework Maximum Value Lot Identifier (BT-556)* |Identifier of the
 group of lots within this procedure. |*1* a|
@@ -260,12 +256,6 @@ or a Dynamic Purchasing System and for which the notice is used for reporting pu
 
 4+^|*Lot Result (+++*+++)* 
 
-|*_"Unpublish" fields_* a|
-_(BT-710, BT-711, BT-142)_
-
-_Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]_
-
-| |
 
 |*LotResult Technical ID (OPT-322)* |Unique identifier for the LotResult. 
 _Shall follow the scheme "RES-XXXX"._ |*1* a|
@@ -274,7 +264,7 @@ _Shall follow the scheme "RES-XXXX"._ |*1* a|
 cbc:ID
 ---- 
 
-|*Tender Value highest (BT-711)* |Value of the admissible tender with
+|*Tender Value highest (BT-711)* _(withholdable)_ |Value of the admissible tender with
 the highest value. A tender shall be considered admissible where it has
 been submitted by a tenderer, who has not been excluded and who meets
 the selection criteria, and when it is in conformity with the technical
@@ -287,7 +277,7 @@ taken into account. |*1* a|
 cbc:HigherTenderAmount
 ---- 
 
-|*Tender Value Lowest (BT-710)* |Value of the admissible tender with the
+|*Tender Value Lowest (BT-710)* _(withholdable)_ |Value of the admissible tender with the
 lowest value. A tender shall be considered admissible where it has been
 submitted by a tenderer, who has not been excluded and who meets the
 selection criteria, and when it is in conformity with the technical
@@ -337,14 +327,7 @@ a|
 cac:PayerParty{zwsp}/cac:PartyIdentification{zwsp}/cbc:ID
 ---- 
 
-|*_"Unpublish" fields_* a|
-_BT-712_
-
-Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
-
-| | 
-
-|*Buyer Review Complainants (BT-712)* |The number of organisations that
+|*Buyer Review Complainants (BT-712)* _(withholdable)_ |The number of organisations that
 requested the buyer to review any of its decisions (e.g. the technical
 specifications, award decision). |*?*
 a|
@@ -354,7 +337,7 @@ efac:AppealRequestsStatistics[efbc:StatisticsCode{zwsp}/@listName='review-type']
 ----
 
 
-|*Buyer Review Requests Irregularity Type (BT-636)* a|
+|*Buyer Review Requests Irregularity Type (BT-636)* _(withholdable)_ a|
 The type of irregularity alleged in the review requests.
 
 (Code from the
@@ -369,7 +352,7 @@ efac:AppealRequestsStatistics[efbc:StatisticsCode{zwsp}/@listName='irregularity-
 ----
 
 
-|*Buyer Review Requests Count (BT-635)* |The number of requests the
+|*Buyer Review Requests Count (BT-635)* _(withholdable)_ |The number of requests the
 buyer received to review any of its decisions. |***
 a|
 [source,xpath,subs=attributes]
@@ -377,13 +360,6 @@ a|
 efac:AppealRequestsStatistics[efbc:StatisticsCode{zwsp}/@listName='irregularity-type']{zwsp}/efbc:StatisticsNumeric
 ----
 
-
-|*_"Unpublish" fields_* a|
-_BT-144_
-
-Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
-
-|*?* | 
 
 |*Not Awarded Reason (BT-144)* a|
 The reason for not choosing a winner.
@@ -409,14 +385,7 @@ _Shall follow the "TEN-XXXX" scheme._
 efac:LotTender{zwsp}/cbc:ID
 ---- 
 
-|*_"Unpublish" fields (Framework)_* a|
-_BT-709, BT-660_
-
-Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
-
-| | 
-
-|*Framework Re-estimated Value (BT-660)* |The estimated value which can be
+|*Framework Re-estimated Value (BT-660)* _(withholdable)_ |The estimated value which can be
 spent within a framework agreement over its whole duration, including
 options and renewals. |*?*
 a|
@@ -425,7 +394,7 @@ a|
 efac:FrameworkAgreementValues{zwsp}/efbc:ReestimatedValueAmount
 ---- 
 
-|*Framework Maximum Value (BT-709)* |The maximum value which can be
+|*Framework Maximum Value (BT-709)* _(withholdable)_ |The maximum value which can be
 spent within a framework agreement over its whole duration, including
 options and renewals. |*?*
 a|
@@ -434,14 +403,8 @@ a|
 efac:FrameworkAgreementValues{zwsp}/cbc:MaximumValueAmount
 ---- 
 
-|*_"Unpublish" fields_* a|
-(BT-759, BT-760)
 
-Cf. xref:withheld-publication.adoc#lotResultLevelSection[LotResult Level]
-
-|*** | 
-
-|*Received Submissions Type (BT-760)* |The type of tenders or requests
+|*Received Submissions Type (BT-760)* _(withholdable)_ |The type of tenders or requests
 to participate received. The total number of tenders received must be
 given. When a notice does not fall under Directive 2009/81/EC and is not
 about social or other specific services, the number of tenders received
@@ -462,7 +425,7 @@ a|
 efac:ReceivedSubmissionsStatistics{zwsp}/efbc:StatisticsCode
 ---- 
 
-|*Received Submissions Count (BT-759)* |Number of tenders or requests to
+|*Received Submissions Count (BT-759)* _(withholdable)_ |Number of tenders or requests to
 participate received. Tenders including variants or multiple tenders
 submitted (for one lot) by the same tenderer should be counted as one
 tenderfootnote:[When referring to "tender", it should be understood "LotTender". When a
@@ -896,20 +859,13 @@ image::image016.jpg[image,width=317,height=407]
 
 4+^|*Lot Tender (+++*+++)* 
 
-|*_"Unpublish" fields_* a|
-_(BT-171, BT-193, BT-720)_
-
-_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
-
-| | 
-
 |*Tender Technical Identifier (OPT-321)* |A unique technical identifier of a tender. Shall follow the TEN-XXXX scheme. |*1* a|
 [source,xpath,subs=attributes]
 ----
 cbc:ID
 ---- 
 
-|*Tender Rank (BT-171)* |The position of the tender (i.e. whether the
+|*Tender Rank (BT-171)* _(withholdable)_ |The position of the tender (i.e. whether the
 tender ended up first, second, third, etc.) in a design contest, some
 framework agreements with multiple winners (e.g. cascades) or an
 innovation partnership. |*?* a|
@@ -941,46 +897,14 @@ a|
 efbc:TenderRankedIndicator
 ---- 
 
-|*Tender Variant (BT-193)* |The tender is a variant. |*?*
+|*Tender Variant (BT-193)* _(withholdable)_ |The tender is a variant. |*?*
 a|
 [source,xpath,subs=attributes]
 ----
 efbc:TenderVariantIndicator
 ---- 
 
-|*_"Unpublish" fields_* a|
-_(BT-160, BT-162, BT-163)_
-
-_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
-
-| |
-
-|*Concession Revenue Buyer (BT-160)* |The estimated revenue coming from
-the buyer who granted the concession (e.g. prizes and payments). |*?*
-a|
-[source,xpath,subs=attributes]
-----
-efac:ConcessionRevenue{zwsp}/efbc:RevenueBuyerAmount
----- 
-
-|*Concession Revenue User (BT-162)* |The estimated revenue coming from
-the users of the concession (e.g. fees and fines). |*?*
-a|
-[source,xpath,subs=attributes]
-----
-efac:ConcessionRevenue{zwsp}/efbc:RevenueUserAmount
----- 
-
-|*Concession Value Description (BT-163)* |The description of the method
-used for calculating the estimated value of the concession and any other
-relevant information concerning the value of the concession. |*?*
-a|
-[source,xpath,subs=attributes]
-----
-efac:ConcessionRevenue{zwsp}/efbc:ValueDescription
----- 
-
-|*Tender Value (BT-720)* |The value of the tender or another result;
+|*Tender Value (BT-720)* _(withholdable)_ |The value of the tender or another result;
 including options and renewals. In case of the modification notice, the
 value of the modification. |*?*
 a|
@@ -989,14 +913,33 @@ a|
 cac:LegalMonetaryTotal{zwsp}/cbc:PayableAmount
 ---- 
 
-|*_"Unpublish" fields_* a|
-_(BT-191)_
+|*Concession Revenue Buyer (BT-160)* _(withholdable)_ |The estimated revenue coming from
+the buyer who granted the concession (e.g. prizes and payments). |*?*
+a|
+[source,xpath,subs=attributes]
+----
+efac:ConcessionRevenue{zwsp}/efbc:RevenueBuyerAmount
+---- 
 
-_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
+|*Concession Revenue User (BT-162)* _(withholdable)_ |The estimated revenue coming from
+the users of the concession (e.g. fees and fines). |*?*
+a|
+[source,xpath,subs=attributes]
+----
+efac:ConcessionRevenue{zwsp}/efbc:RevenueUserAmount
+---- 
 
-| |
+|*Concession Value Description (BT-163)* _(withholdable)_ |The description of the method
+used for calculating the estimated value of the concession and any other
+relevant information concerning the value of the concession. |*?*
+a|
+[source,xpath,subs=attributes]
+----
+efac:ConcessionRevenue{zwsp}/efbc:ValueDescription
+---- 
 
-|*Country Origin (BT-191)* |A country of origin of the product or the
+
+|*Country Origin (BT-191)* _(withholdable)_ |A country of origin of the product or the
 service. Values must come from the 
 https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/country[country]
 codelist and the "_listName_" attribute be set to 'country'. |*?* a|
@@ -1076,14 +1019,7 @@ efac:ContractTerm[efbc:TermCode{zwsp}/text()='all-rev-tic']{zwsp}/efbc:TermPerce
 ----
 
 
-|*_"Unpublish" fields_* a|
-_subcontract terms (BT-553, BT-554, BT-555, BT-730, BT-731, BT-773)_
-
-_Cf. xref:withheld-publication.adoc#lotTenderLevelSection[LotTender Level]_
-
-| |
-
-|*Subcontracting Value (BT-553)* |The estimated value of the part of the
+|*Subcontracting Value (BT-553)* _(withholdable)_ |The estimated value of the part of the
 contract that the contractor will subcontract to third parties. |*?*
 a|
 [source,xpath,subs=attributes]
@@ -1091,7 +1027,7 @@ a|
 efac:SubcontractingTerm{zwsp}/efbc:TermAmount
 ---- 
 
-|*Subcontracting Description (BT-554)* |The description of the part of
+|*Subcontracting Description (BT-554)* _(withholdable)_ |The description of the part of
 the contract that the contractor will subcontract to third parties. |*?*
 a|
 [source,xpath,subs=attributes]
@@ -1099,7 +1035,7 @@ a|
 efac:SubcontractingTerm{zwsp}/efbc:TermDescription
 ---- 
 
-|*Subcontracting Percentage (BT-555)* |The estimated percentage of the
+|*Subcontracting Percentage (BT-555)* _(withholdable)_ |The estimated percentage of the
 contract that the contractor will subcontract to third parties compared
 to the whole contract. |*?* a|
 [source,xpath,subs=attributes]
@@ -1107,14 +1043,14 @@ to the whole contract. |*?* a|
 efac:SubcontractingTerm{zwsp}/efbc:TermPercent
 ---- 
 
-|*Subcontracting (BT-773)* |Whether at least a part of the contract will
+|*Subcontracting (BT-773)* _(withholdable)_ |Whether at least a part of the contract will
 be subcontracted. Possible values are from the "applicability" codelist and restricted to "yes" and "no". |*?* a|
 [source,xpath,subs=attributes]
 ----
 efac:SubcontractingTerm{zwsp}/efbc:TermCode
 ---- 
 
-|*Subcontracting Percentage Known (BT-731)* |The buyer knows at least
+|*Subcontracting Percentage Known (BT-731)* _(withholdable)_ |The buyer knows at least
 the estimated percentage of the contract that the contractor will
 subcontract to third parties compared to the whole contract. Only two values are possible "true" and "false". |*?*
 a|
@@ -1123,7 +1059,7 @@ a|
 efac:SubcontractingTerm{zwsp}/efbc:PercentageKnownIndicator
 ---- 
 
-|*Subcontracting Value Known (BT-730)* |The buyer knows at least the
+|*Subcontracting Value Known (BT-730)* _(withholdable)_ |The buyer knows at least the
 estimated value of the part of the contract that the contractor will
 subcontract to third parties. Only two values are possible "true" and "false". |*?*
 a|
@@ -1514,6 +1450,7 @@ image::image018.jpg[image,width=422,height=223]
 
 4+^|*Tendering Party (+++*+++)* 
 
+
 a|
 *Tendering Party ID*
 
@@ -1530,6 +1467,20 @@ Reference to the Tendering Party will be made from the Tender
 [source,xpath,subs=attributes]
 ----
 cbc:ID
+---- 
+
+a|
+*Tendering Party Name*
+
+*(OPT-211)* _(withholdable)_
+
+a|
+The name of the Tendering Party
+
+|*?* a|
+[source,xpath,subs=attributes]
+----
+cbc:Name
 ---- 
 
 a|
@@ -1553,7 +1504,7 @@ efac:Tenderer{zwsp}/cbc:ID
 a|
 *Tendering Party Leader*
 
-*(OPT-170)*
+*(OPT-170)* _(withholdable)_
 
 a|
 Indicator used to specify whether the tenderer has the lead in the case

@@ -54,7 +54,7 @@ LotsGroup
 
 |BT-150 |Contract Identifier |BT-150-Contract |Defined and encoded by the Contracting
 Authority. Should be unique between all Contract Identifiers of the
-procedure |NA |No restriction yet
+procedure |NA |100 characters max
 
 |BT-22 |Internal Identifier a|BT-22-Lot
 
@@ -64,11 +64,11 @@ BT-22-Part
 
 BT-22-Procedure
 |CAs define it. No restriction besides
-string length. |InternalID |100 characters max.
+string length. |InternalID |100 characters max
 
 |BT-3201 |Tender Identifier |BT-3201-Tender |Defined and encoded by the Contracting
 Authority. Should be unique between all Tender Identifiers of the
-procedure |NA |No restriction yet
+procedure |NA |100 characters max
 
 |BT-501 |Organisation Identifier a|BT-501-Business-European
 
@@ -76,28 +76,28 @@ BT-501-Business-National
 
 BT-501-Organization-Company
 |Discussions ongoing. It will be
-encoded by the Contracting Authority | |No restriction yet
+encoded by the Contracting Authority | |100 characters max
 
 |BT-5010 |EU Funds Financing Identifier |BT-5010-Lot |An identifier of the European Union 
 programme used to at least partially finance the contract. The most concrete information 
 must be given (e.g. the unique European identification number of the relevant programme 
 when available, for example the CCI number for CPR funds, or grant agreement number, 
-national identifier, project acronym, contract number). | | 
+national identifier, project acronym, contract number). | |100 characters max 
 
 |BT-5011 |Contract EU Funds Financing Identifier |BT-5011-Contract |Financing Identifier; the 
 most concrete information must be given (e.g. grant agreement number, 
-national identifier, project acronym, contract number) | | 
+national identifier, project acronym, contract number) | |100 characters max 
 
 |BT-701 |Notice Identifier |BT-701-notice |Generated & assigned by OP/eSender |NA |UUID
 v4
 
 |BT-757 |Notice Version |BT-757-notice |01 for the initial version, assigned by the User
 Interface. Any new version should have a higher version number than any
-previous one. |NA |2 digits.
+previous one. |NA |2 digits
 
 |BT-784 |Review Identifier |BT-784-Review |An identifier of a review request or a review 
 decision. When appealed to a higher review body instance, a review request must receive a 
-new identifier. | |
+new identifier. | |100 characters max
 
 |OPP-010 |Notice Publication Number |OPP-010-notice |Information added by OP prior to
 publication |ojs-notice-id |XXXXXXXXXX-YYYY
@@ -107,7 +107,7 @@ publication |ojs-notice-id |XXXXXXXXXX-YYYY
 
 |OPP-124 |Gazette Issue Identifier |OPP-124-Business |Identifier of the local Gazette in which 
 information has been published
-| | 
+| |100 characters max 
 
 |OPT-001 |UBL version ID (UBL) |OPT-001-notice |Currently based on version 2.3 of the
 standard. |NA |2.3
@@ -141,7 +141,7 @@ the standard | |No restriction
 
 OPT-140-Part
 |Technical ID required by the
-standard | |No restriction
+standard | |100 characters max
 
 |OPT-200 |Organisation Technical Identifier |OPT-200-Organization-Company |Identifier used in the notice to
 refer to the Organisation |organization |ORG-XXXX
@@ -270,7 +270,7 @@ notices. |ojs-notice-id |XXXXXXXX-YYYY
 
 |BT-785 |Review Previous Identifier |BT-785-Review |Identifier of the review request(s) 
 that led to this decision or a review decision that is being appealed by this review request.
-| |
+| |100 characters max
 
 |BT-786 |Review Notice Section Identifier |BT-786-Review |An identifier of one or more sections 
 within this notice. The information in the review section refers to this section or these sections.
