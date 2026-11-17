@@ -18,20 +18,16 @@ Summary of changes
 
 * One group of Fields includes all information related to Tenderers
 
-* There can be only one Justification Code, Justification Description and Disclosure Date per notice. These will apply to all withheld information in the notice
+* There can be only one Justification Code, Justification Additional Information and Disclosure Date per notice. These will apply to all withheld information in the notice
 
 * The terminology used has changed 
 ====
 
 Some information required by eForms may remain non-public
-("undisclosed") for a defined periodfootnote:[as reminded in the "eForms Implementation Handbook" p. 27. Also see Dir 24 Art. 50(4), Dir 25 Art. 70(3),].
+("undisclosed") indefinitely or for a defined periodfootnote:[as reminded in the "eForms Implementation Handbook" p. 27. Also see Dir 24 Art. 50(4), Dir 25 Art. 70(3),].
 This feature may be used for Result, Contract Modification and Contract
 Completion notices only.
 
-For most undisclosed information groups, the non-disclosure feature is
-available independently from the directive. The "Withheld award criteria"
-group is exclusively accessible for the sectoral directive
-(i.e. directive 25).
 
 The reason for keeping the information private shall be specified using
 a code from the codelist
@@ -44,7 +40,7 @@ To activate the mechanism, four business terms have to be used:
 
 * Non-disclosure Justification Code (BT-197)
 
-* Non-disclosure Justification Description (BT-196)
+* Non-disclosure Justification Additional Information (BT-196)
 
 * Disclosure Date (BT-198)
 
@@ -77,13 +73,17 @@ The groups of fields to be withheld should be indicated using one or more codes 
 [[withholdableGroupsSection]]
 == Withholdable Groups
 
-=== Withheld award criteria
 
-This group is selected to be withheld using the code "cri-awrd". 
+[[withholdableGroupsTable]]
+.Withholdable Groups
+[width="100%",cols="<.^15%,<.^75%",]
+|===
 
-The use of this group is restricted to the sectoral directive only (i.e. directive 25).
+^|*undisclosed-data-group code* ^|*List of fields* 
 
-* Award Criterion Type (BT-539-Lot)
+2+^|*Withheld award criteria*
+
+^|*_cri-awrd_* a|* Award Criterion Type (BT-539-Lot)
 
 * Award Criterion Description (BT-540-Lot)
 
@@ -105,14 +105,7 @@ The use of this group is restricted to the sectoral directive only (i.e. directi
 
 * Award Criterion Name (BT-734-Lot)
 
-
-
-
-=== Withheld information about the framework agreement values
-
-This group is selected to be withheld using the code "not-fram" 
-
-* Notice Framework Maximum Value (BT-118-NoticeResult)
+^|*_not-fram_* a|* Notice Framework Maximum Value (BT-118-NoticeResult)
 
 * Notice Framework Approximate Value (BT-1118-NoticeResult)
 
@@ -122,88 +115,58 @@ This group is selected to be withheld using the code "not-fram"
 
 
 
+2+^|*Withheld notice value*
 
-=== Withheld notice value
-
-This group is selected to be withheld using the code "not-valu" 
-
-* Notice Value (BT-161-NoticeResult)
+^|*_not-valu_* a|* Notice Value (BT-161-NoticeResult)
 
 
-=== Withheld value of the lowest and highest tender submitted
+2+^|*Withheld value of the lowest and highest tender submitted*
 
-This group is selected to be withheld using the code "sub-lohi" 
-
-* Tender Value Lowest (BT-710-LotResult)
+^|*_sub-lohi_* a|* Tender Value Lowest (BT-710-LotResult)
 
 * Tender Value Highest (BT-711-LotResult)
 
 
-=== Withheld tender value
+2+^|*Withheld tender value*
 
-This group is selected to be withheld using the code "ten-valu" 
-
-* Tender Value (BT-720-Tender)
+|*_ten-valu_* a|* Tender Value (BT-720-Tender)
 
 
 
-=== Withheld concession estimates
+2+^|*Withheld concession estimates*
 
-This group is selected to be withheld using the code "con-esti" 
-
-* Concession Revenue User (BT-162-Tender)
+|*_con-esti_* a|* Concession Revenue User (BT-162-Tender)
 
 * Concession Revenue Buyer (BT-160-Tender)
 
 * Concession Value Description (BT-163-Tender)
 
 
+2+^|*Withheld statistical information on received submissions*
 
-
-=== Withheld statistical information on received submissions
-
-This group is selected to be withheld using the code "sub-stat" 
-
-* Received Submissions Count (BT-759-LotResult)
+|*_sub-stat_* a|* Received Submissions Count (BT-759-LotResult)
 
 * Received Submissions Type (BT-760-LotResult)
 
 
+2+^|*Withheld tender rank*
+
+|*_ten-rank_* a|* Tender Rank (BT-171-Tender)
 
 
+2+^|*Withheld tender variant*
 
-=== Withheld tender rank
-
-This group is selected to be withheld using the code "ten-rank" 
-
-* Tender Rank (BT-171-Tender)
+|*_ten-vari_* a|* Tender Variant (BT-193-Tender)
 
 
+2+^|*Withheld origin of product or service*
+
+|*_ori-info_* a|* Country Origin (BT-191-Tender)
 
 
-=== Withheld tender variant
+2+^|*Withheld subcontracting information*
 
-This group is selected to be withheld using the code "ten-vari" 
-
-* Tender Variant (BT-193-Tender)
-
-
-
-
-=== Withheld origin of product or service
-
-This group is selected to be withheld using the code "ori-info" 
-
-* Country Origin (BT-191-Tender)
-
-
-
-
-=== Withheld subcontracting information
-
-This group is selected to be withheld using the code "sub-info" 
-
-* Subcontracting (BT-773-Tender)
+|*_sub-info_* a|* Subcontracting (BT-773-Tender)
 
 * Subcontracting Value Known (BT-730-Tender)
 
@@ -216,13 +179,9 @@ This group is selected to be withheld using the code "sub-info"
 * Subcontracting Description (BT-554-Tender)
 
 
+2+^|*Withheld review information*
 
-
-=== Withheld review information
-
-This group is selected to be withheld using the code "rev-info" 
-
-* Buyer Review Complainants (Code) (BT-712(a)-LotResult)
+|*_rev-info_* a|* Buyer Review Complainants (Code) (BT-712(a)-LotResult)
 
 * Buyer Review Complainants (Number) (BT-712(b)-LotResult)
 
@@ -231,15 +190,12 @@ This group is selected to be withheld using the code "rev-info"
 * Buyer Review Requests Irregularity Type (BT-636-LotResult)
 
 
+2+^|*Withheld information about economic operators*
+
+2+^|*Note: For the Organisation Fields included in this group, only those instances that are related to economic operators are withheld. The instances of Organisation Fields related to the Buyer may not be withheld*
 
 
-=== Withheld information about economic operators
-
-This group is selected to be withheld using the code "eop-info" 
-
-Note: For the Organisation Fields included in this group, only those instances that are related to economic operators are withheld. The instances of Organisation Fields related to the Buyer may not be withheld.
-
-* Organisation Name (BT-500-Organization-Company)
+|*_eop-info_* a|* Organisation Name (BT-500-Organization-Company)
 
 * Organisation Identifier (BT-501-Organization-Company)
 
@@ -307,13 +263,14 @@ Note: For the Organisation Fields included in this group, only those instances t
 
 * Tendering Party Leader (OPT-170-Tenderer)
 
+|===
 
 
 
 [[noLongerWithholdableSection]]
 == Fields that are no longer withholdable
 
-The following fields are no longer withholdable from SDK 1.16 (better wording for this?)
+The following fields are no longer withholdable from SDK 1.16
 
 
 * BT-09(a)-Procedure (Cross Border Law)
@@ -370,212 +327,10 @@ The following fields are no longer withholdable from SDK 1.16 (better wording fo
 
 
 
+[[withholdableMarkupSection]]
+== Markup of withholdable groups
 
-*_ _*
-
-*_ _*
-
-
-*_ALTERNATIVE TABLE INSTEAD OF BULLETED LIST_*
-
-
-[[withholdableGroupsTable]]
-.Withholdable Groups
-[width="100%",cols="<.^15%,<.^75%",]
-|===
-
-^|*undisclosed-data-group code* ^|*List of fields* 
-
-2+^|*Withheld award criteria*
-
-2+^|*The use of this group is restricted to the sectoral directive only (i.e. directive 25)*
-
-^|*_cri-awrd_* a|Award Criterion Type (BT-539-Lot)
-
-Award Criterion Description (BT-540-Lot)
-
-Award Criterion Weight Number (BT-541-Lot-WeightNumber)
-
-Award Criterion Fixed Number (BT-541-Lot-FixedNumber)
-
-Award Criterion Threshold Number (BT-541-Lot-ThresholdNumber)
-
-Award Criterion Number Weight (BT-5421-Lot)
-
-Award Criterion Number Fixed (BT-5422-Lot)
-
-Award Criterion Number Threshold (BT-5423-Lot)
-
-Award Criteria Complicated (BT-543-Lot)
-
-Award Criteria Order Justification (BT-733-Lot)
-
-Award Criterion Name (BT-734-Lot)
-
-^|*_not-fram_* a|Notice Framework Maximum Value (BT-118-NoticeResult)
-
-Notice Framework Approximate Value (BT-1118-NoticeResult)
-
-Framework Maximum Value (BT-709-LotResult)
-
-Framework Re-estimated Value (BT-660-LotResult)
-
-
-
-2+^|*Withheld notice value*
-
-^|*_not-valu_* a|Notice Value (BT-161-NoticeResult)
-
-
-2+^|*Withheld value of the lowest and highest tender submitted*
-
-^|*_sub-lohi_* a|Tender Value Lowest (BT-710-LotResult)
-
-Tender Value Highest (BT-711-LotResult)
-
-
-2+^|*Withheld tender value*
-
-|*_ten-valu_* a|Tender Value (BT-720-Tender)
-
-
-
-2+^|*Withheld concession estimates*
-
-|*_con-esti_* a|Concession Revenue User (BT-162-Tender)
-
-Concession Revenue Buyer (BT-160-Tender)
-
-Concession Value Description (BT-163-Tender)
-
-
-2+^|*Withheld statistical information on received submissions*
-
-|*_sub-stat_* a|Received Submissions Count (BT-759-LotResult)
-
-Received Submissions Type (BT-760-LotResult)
-
-
-2+^|*Withheld tender rank*
-
-|*_ten-rank_* a|Tender Rank (BT-171-Tender)
-
-
-2+^|*Withheld tender variant*
-
-|*_ten-vari_* a|Tender Variant (BT-193-Tender)
-
-
-2+^|*Withheld origin of product or service*
-
-|*_ori-info_* a|Country Origin (BT-191-Tender)
-
-
-2+^|*Withheld subcontracting information*
-
-|*_sub-info_* a|Subcontracting (BT-773-Tender)
-
-Subcontracting Value Known (BT-730-Tender)
-
-Subcontracting Value (BT-553-Tender)
-
-Subcontracting Percentage Known (BT-731-Tender)
-
-Subcontracting Percentage (BT-555-Tender)
-
-Subcontracting Description (BT-554-Tender)
-
-
-2+^|*Withheld review information*
-
-|*_rev-info_* a|Buyer Review Complainants (Code) (BT-712(a)-LotResult)
-
-Buyer Review Complainants (Number) (BT-712(b)-LotResult)
-
-Buyer Review Requests Count (BT-635-LotResult)
-
-Buyer Review Requests Irregularity Type (BT-636-LotResult)
-
-
-2+^|*Withheld information about economic operators*
-
-2+^|*Note: For the Organisation Fields included in this group, only those instances that are related to economic operators are withheld. The instances of Organisation Fields related to the Buyer may not be withheld*
-
-
-|*_eop-info_* a|Organisation Name (BT-500-Organization-Company)
-
-Organisation Identifier (BT-501-Organization-Company)
-
-Organisation Part Name (BT-16-Organization-Company)
-
-Organisation Internet Address (BT-505-Organization-Company)
-
-Organisation eDelivery Gateway (BT-509-Organization-Company)
-
-Organisation City (BT-513-Organization-Company)
-
-Organisation Post Code (BT-512-Organization-Company)
-
-Organisation Country Code (BT-514-Organization-Company)
-
-Organisation Contact Point (BT-502-Organization-Company)
-
-Organisation Contact Email Address (BT-506-Organization-Company)
-
-Organisation Contact Telephone Number (BT-503-Organization-Company)
-
-Organisation Contact Fax (BT-739-Organization-Company)
-
-Winner Size (BT-165-Organization-Company)
-
-Organisation Country Subdivision (BT-507-Organization-Company)
-
-Street (BT-510(a)-Organization-Company)
-
-Streetline 1 (BT-510(b)-Organization-Company)
-
-Streetline 2 (BT-510(c)-Organization-Company)
-
-Organisation Natural Person (BT-633-Organization)
-
-Winner Listed (BT-746-Organization)
-
-UBO Name (BT-500-UBO)
-
-City (BT-513-UBO)
-
-Post Code (BT-512-UBO)
-
-Country Code (BT-514-UBO)
-
-UBO Email Address (BT-506-UBO)
-
-UBO Telephone Number (BT-503-UBO)
-
-UBO Contact Fax (BT-739-UBO)
-
-Country Subdivision (BT-507-UBO)
-
-Street (BT-510(a)-UBO)
-
-Streetline 1 (BT-510(b)-UBO)
-
-Streetline 2 (BT-510(c)-UBO)
-
-Winner Owner Nationality (BT-706-UBO)
-
-First Name (OPT-160-UBO)
-
-Tendering Party Name (OPT-211-Tenderer)
-
-Tendering Party Leader (OPT-170-Tenderer)
-
-|===
-
-
-
-
-A mark-up sample is provided below to illustrate the use of the Undisclosed Information Group (BT-195-notice).
+A markup sample is provided below to illustrate the use of the Undisclosed Information Group (BT-195-notice).
 
 [source,xml]
 ----
