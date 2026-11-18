@@ -2,29 +2,8 @@
 
 = Withheld publication of information
 
-[IMPORTANT]
-====
-From SDK 1.16, the information that may be withheld from publication, and the markup used to achieve this, has completely changed.
-
-Summary of changes 
-
-* Information to be withheld from publication is now arranged in 14 groups of similar Fields
-
-* All Fields in an information group to be withheld from publication will be withheld
-
-* Individual instances of Fields can no longer be withheld
-
-* Some Fields can no longer be withheld from publication
-
-* One group of Fields includes all information related to Tenderers
-
-* There can be only one Justification Code, Justification Additional Information and Disclosure Date per notice. These will apply to all withheld information in the notice
-
-* The terminology used has changed 
-====
-
 Some information required by eForms may remain non-public
-("undisclosed") indefinitely or for a defined periodfootnote:[as reminded in the "eForms Implementation Handbook" p. 27. Also see Dir 24 Art. 50(4), Dir 25 Art. 70(3),].
+("undisclosed") indefinitely or for a defined period.
 This feature may be used for Result, Contract Modification and Contract
 Completion notices only.
 
@@ -64,9 +43,19 @@ The information is encoded using dedicated elements:
 </efac:NoticeInformationNondisclosure>
 ----
 
-The information to be withheld should use the extension mechanism at notice level (element ContractAwardNotice). This single structure replaces the implementation in previous versions of the SDK where unpublished information fields were located at the same level as the fields to be withheld.
+The information to be withheld should use the extension mechanism at 
+notice level (element ContractAwardNotice). This single structure 
+replaces the implementation in previous versions of the SDK where 
+unpublished information fields were located at the same level as the 
+fields to be withheld.
 
-The groups of fields to be withheld should be indicated using one or more codes from the codelist https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/undisclosed-data-group[undisclosed-data-group] in the repeatable field Undisclosed Information Group (BT-195-notice). 
+The groups of fields to be withheld should be indicated using one 
+or more codes from the codelist https://op.europa.eu/web/eu-vocabularies/at-dataset/-/resource/dataset/undisclosed-data-group[undisclosed-data-group] 
+in the repeatable field Undisclosed Information Group (BT-195-notice). 
+
+Further information about undisclosed fields is available 
+https://docs.acceptance.ted.europa.eu/eforms/latest/schema/withheld-publication.html[on the TED website].
+
 
 :xrefstyle: short
 
@@ -192,7 +181,10 @@ The groups of fields to be withheld should be indicated using one or more codes 
 
 2+^|*Withheld information about economic operators*
 
-2+^|*Note: For the Organisation Fields included in this group, only those instances that are related to economic operators are withheld. The instances of Organisation Fields related to the Buyer may not be withheld*
+2+^|*Note: For the Organisation Fields included in this group, only 
+those instances that are related to economic operators are withheld. 
+The instances of Organisation Fields related to the Buyer may not 
+be withheld*
 
 
 |*_eop-info_* a|* Organisation Name (BT-500-Organization-Company)
@@ -267,70 +259,11 @@ The groups of fields to be withheld should be indicated using one or more codes 
 
 
 
-[[noLongerWithholdableSection]]
-== Fields that are no longer withholdable
-
-The following fields are no longer withholdable from SDK 1.16
-
-
-* BT-09(a)-Procedure (Cross Border Law)
-
-* BT-09(b)-Procedure (Cross Border Law Description)
-
-* BT-88-Procedure (Procedure Features)
-
-* BT-105-Procedure (Procedure Type)
-
-* BT-106-Procedure (Procedure Accelerated)
-
-* BT-135-Procedure (Direct Award Justification Text)
-
-* BT-136-Procedure (Direct Award Justification Code)
-
-* BT-1252-Procedure (Direct Award Justification Previous Procedure Identifier)
-
-* BT-1351-Procedure (Procedure Accelerated Justification)
-
-* BT-142-LotResult (Winner Chosen)
-
-* BT-144-LotResult (Not Awarded Reason)
-
-* BT-539-LotsGroup (Award Criterion Type)
-
-* BT-540-LotsGroup (Award Criterion Description)
-
-* BT-541-LotsGroup (Award Criterion Number)
-
-* BT-541-LotsGroup-FixedNumber (Award Criterion Fixed Number)
-
-* BT-541-LotsGroup-ThresholdNumber (Award Criterion Threshold Number)
-
-* BT-541-LotsGroup-WeightNumber (Award Criterion Weight Number)
-
-* BT-5421-LotsGroup (Award Criterion Number Weight)
-
-* BT-5422-LotsGroup (Award Criterion Number Fixed)
-
-* BT-5423-LotsGroup (Award Criterion Number Threshold)
-
-* BT-543-LotsGroup (Award Criteria Complicated)
-
-* BT-733-LotsGroup (Award Criteria Order Justification)
-
-* BT-734-LotsGroup (Award Criterion Name)
-
-* BT-556-NoticeResult (Group Framework Value Lot Identifier)
-
-* BT-156-NoticeResult (Group Framework Maximum Value)
-
-* BT-1561-NoticeResult (Group Framework Re-estimated Value)
-
-
-
 [[withholdableMarkupSection]]
 == Markup of withholdable groups
 
-A markup sample is provided below to illustrate the use of the Undisclosed Information Group (BT-195-notice).
+A markup sample is provided below to illustrate the use of the 
+Undisclosed Information Group (BT-195-notice).
 
 [source,xml]
 ----
@@ -392,6 +325,4 @@ A markup sample is provided below to illustrate the use of the Undisclosed Infor
     <!-- Interrupted mark-up -->
 </ContractAwardNotice>
 ----
-
-
 
