@@ -54,7 +54,7 @@ or more codes from the codelist https://op.europa.eu/web/eu-vocabularies/at-data
 in the repeatable field Undisclosed Information Group (BT-195-notice). 
 
 Further information about undisclosed fields is available 
-https://docs.acceptance.ted.europa.eu/eforms/latest/schema/withheld-publication.html[on the TED website].
+https://ted.europa.eu/en/simap/undisclosed[on the TED website].
 
 
 :xrefstyle: short
