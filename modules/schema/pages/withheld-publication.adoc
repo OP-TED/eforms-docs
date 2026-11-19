@@ -94,6 +94,8 @@ https://ted.europa.eu/en/simap/undisclosed[on the TED website].
 
 * Award Criterion Name (BT-734-Lot)
 
+2+^|*Withheld information about the framework agreement values*
+
 ^|*_not-fram_* a|* Notice Framework Maximum Value (BT-118-NoticeResult)
 
 * Notice Framework Approximate Value (BT-1118-NoticeResult)
